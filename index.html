@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mochi Chinese (米米汉语) — Cuốn Sổ Tay Tri Thức & Từ Điển Của Ngọc Ánh 🌸</title>
+  
+  <!-- Phông chữ Google Fonts: Nunito, Quicksand, Noto Sans SC -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Nunito:wght@400;500;600;700;800;900&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mochi: {
+              pink: '#F59BB0',
+              pinkLight: '#FFF0F4',
+              pinkSoft: '#FDE2E8',
+              pinkHover: '#E8839B',
+              purple: '#A98CF0',
+              purpleLight: '#F4EFFF',
+              amber: '#FFD9A8',
+              amberLight: '#FFF9F0',
+              mint: '#74C69D',
+              mintLight: '#EDF9F3',
+              canvas: '#FFF8FB',
+              text: '#4A4A4A',
+            }
+          },
+          borderRadius: {
+            '2xl': '1.25rem',
+            '3xl': '1.75rem',
+            '4xl': '2.25rem',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#FFF8FB] text-[#4A4A4A] min-h-screen flex flex-col pb-20 md:pb-0 selection:bg-pink-100 selection:text-pink-700">
+
+  <!-- =========================================================================
+       A. HEADER & NAVIGATION BAR
+       ========================================================================= -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-[#F7EBF0] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-[#F59BB0] to-[#FFD9A8] flex items-center justify-center text-2xl shadow-sm shadow-pink-200 group-hover:scale-105 transition-transform">
+          🐰
+        </div>
+        <div>
+          <div class="text-xl sm:text-2xl font-extrabold font-heading text-gray-800 tracking-tight flex items-center gap-1">
+            Mochi <span class="text-[#F59BB0]">Chinese</span>
+            <span class="text-xs font-chinese px-1.5 py-0.5 rounded-md bg-pink-50 text-pink-600 font-bold">米米</span>
+          </div>
+          <div class="text-[11px] text-gray-500 font-medium tracking-wide">Sổ tay & Từ điển tiếng Trung 🌸</div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu (Streamlined, Non-wrapping, High-end) -->
+      <nav class="hidden xl:flex items-center gap-2 text-xs font-bold text-gray-600">
+        <a href="#dictionary" class="header-nav-link whitespace-nowrap px-3 py-1.5 rounded-full hover:bg-pink-50 hover:text-pink-600 transition-colors flex items-center gap-1">
+          <span>Bách khoa</span>
+          <span class="text-xs">📖</span>
+        </a>
+        <a href="#translator-studio" class="header-nav-link whitespace-nowrap px-3 py-1.5 rounded-full hover:bg-purple-50 hover:text-purple-600 transition-colors flex items-center gap-1">
+          <span>Dịch thuật</span>
+          <span class="text-xs">🌐</span>
+        </a>
+        <a href="#native-chat" class="header-nav-link whitespace-nowrap px-3 py-1.5 rounded-full hover:bg-pink-50 hover:text-pink-600 transition-colors flex items-center gap-1">
+          <span>Đàm thoại</span>
+          <span class="text-xs">💬</span>
+        </a>
+        <a href="#writing-studio" class="header-nav-link whitespace-nowrap px-3 py-1.5 rounded-full hover:bg-purple-50 hover:text-purple-600 transition-colors flex items-center gap-1">
+          <span>Luyện viết AI</span>
+          <span class="text-xs">✍️</span>
+        </a>
+        <a href="#catalog-lessons-section" class="header-nav-link whitespace-nowrap px-3 py-1.5 rounded-full hover:bg-pink-50 hover:text-pink-600 transition-colors flex items-center gap-1">
+          <span>Bài học</span>
+          <span class="text-xs">🎓</span>
+        </a>
+        <a href="#roadmap" class="header-nav-link whitespace-nowrap px-3 py-1.5 rounded-full hover:bg-pink-50 hover:text-pink-600 transition-colors flex items-center gap-1">
+          <span>Lộ trình & Ngành</span>
+          <span class="text-xs">🗺️</span>
+        </a>
+        <a href="#flashcards" class="header-nav-link whitespace-nowrap px-3 py-1.5 rounded-full hover:bg-pink-50 hover:text-pink-600 transition-colors flex items-center gap-1">
+          <span>Flashcard</span>
+          <span class="text-xs">🎴</span>
+        </a>
+        <a href="#progress" class="header-nav-link whitespace-nowrap px-3 py-1.5 rounded-full hover:bg-pink-50 hover:text-pink-600 transition-colors flex items-center gap-1">
+          <span>Sổ tay</span>
+          <span class="text-xs">🌸</span>
+        </a>
+      </nav>
+
+      <!-- Action Utilities & Profile Switcher -->
+      <div class="flex items-center gap-2.5 sm:gap-3">
+        
+        <!-- Pinyin Toggle Button -->
+        <button class="btn-toggle-pinyin px-3 py-1.5 rounded-full border text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm" title="Bật/Tắt Pinyin">
+          <span class="font-chinese text-sm">拼</span>
+          <span class="hidden sm:inline">Pinyin</span>
+        </button>
+
+        <!-- Profile Switcher Button (Ngọc Ánh / Bạn Đồng Hành) -->
+        <button id="profile-switcher-btn" class="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-50 hover:bg-pink-100 border border-pink-200 text-xs font-bold transition-all shadow-xs" title="Chuyển đổi góc học tập">
+          <span id="header-profile-avatar" class="text-base">🐰🌸</span>
+          <span id="header-profile-name" class="text-gray-800">Ngọc Ánh</span>
+          <i data-lucide="refresh-cw" class="w-3 h-3 text-pink-500 ml-0.5"></i>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="btn-mobile-menu" class="lg:hidden p-2 rounded-2xl bg-pink-50 text-gray-700 hover:bg-pink-100 transition-colors" aria-label="Mở menu">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       THANH MỤC LỤC TRƯỢT NHANH BÊN TRÁI (FLOATING QUICK-NAV RAIL & SCROLLSPY)
+       ========================================================================= -->
+  <aside id="quick-nav-rail" class="hidden xl:flex fixed left-3 top-1/2 -translate-y-1/2 z-40 flex-col items-center gap-1.5 p-2 rounded-3xl bg-white/95 backdrop-blur-md border border-pink-200/90 shadow-xl shadow-pink-100/60 transition-all duration-300">
+    <!-- Nút Lên đầu trang -->
+    <button id="btn-quick-scroll-top" class="w-8 h-8 rounded-2xl bg-pink-50 hover:bg-pink-100 text-pink-600 flex items-center justify-center text-xs transition-transform active:scale-90 mb-1 shadow-2xs" title="Lên đầu trang">
+      <i data-lucide="chevrons-up" class="w-4 h-4"></i>
+    </button>
+
+    <div class="w-6 h-px bg-pink-100 my-0.5"></div>
+
+    <!-- 11 Nút mục lục phân hệ kèm Tooltip -->
+    <a href="#hero" class="quick-nav-dot group relative w-8 h-8 rounded-2xl flex items-center justify-center text-gray-500 hover:text-pink-600 hover:bg-pink-50 transition-all" data-target="hero">
+      <i data-lucide="home" class="w-4 h-4"></i>
+      <span class="quick-nav-tooltip pointer-events-none absolute left-full ml-3 px-2.5 py-1 rounded-xl bg-gray-800 text-white text-[11px] font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md z-50">Trang chủ 🌸</span>
+    </a>
+
+    <a href="#discovery-section" class="quick-nav-dot group relative w-8 h-8 rounded-2xl flex items-center justify-center text-gray-500 hover:text-pink-600 hover:bg-pink-50 transition-all" data-target="discovery-section">
+      <i data-lucide="sparkles" class="w-4 h-4"></i>
+      <span class="quick-nav-tooltip pointer-events-none absolute left-full ml-3 px-2.5 py-1 rounded-xl bg-gray-800 text-white text-[11px] font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md z-50">Khám phá hôm nay 🎲</span>
+    </a>
+
+    <a href="#dictionary" class="quick-nav-dot group relative w-8 h-8 rounded-2xl flex items-center justify-center text-gray-500 hover:text-pink-600 hover:bg-pink-50 transition-all" data-target="dictionary">
+      <i data-lucide="book-open" class="w-4 h-4"></i>
+      <span class="quick-nav-tooltip pointer-events-none absolute left-full ml-3 px-2.5 py-1 rounded-xl bg-gray-800 text-white text-[11px] font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md z-50">Bách khoa tra cứu 📖</span>
+    </a>
+
+    <a href="#translator-studio" class="quick-nav-dot group relative w-8 h-8 rounded-2xl flex items-center justify-center text-gray-500 hover:text-purple-600 hover:bg-purple-50 transition-all" data-target="translator-studio">
+      <i data-lucide="languages" class="w-4 h-4"></i>
+      <span class="quick-nav-tooltip pointer-events-none absolute left-full ml-3 px-2.5 py-1 rounded-xl bg-gray-800 text-white text-[11px] font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md z-50">Dịch thuật Song Ngữ & AI 🌐</span>
+    </a>
+
+    <a href="#native-chat" class="quick-nav-dot group relative w-8 h-8 rounded-2xl flex items-center justify-center text-gray-500 hover:text-pink-600 hover:bg-pink-50 transition-all" data-target="native-chat">
+      <i data-lucide="messages-square" class="w-4 h-4"></i>
+      <span class="quick-nav-tooltip pointer-events-none absolute left-full ml-3 px-2.5 py-1 rounded-xl bg-gray-800 text-white text-[11px] font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md z-50">Đàm thoại thực chiến 💬</span>
+    </a>
+
+    <a href="#writing-studio" class="quick-nav-dot group relative w-8 h-8 rounded-2xl flex items-center justify-center text-gray-500 hover:text-purple-600 hover:bg-purple-50 transition-all" data-target="writing-studio">
+      <i data-lucide="feather" class="w-4 h-4"></i>
+      <span class="quick-nav-tooltip pointer-events-none absolute left-full ml-3 px-2.5 py-1 rounded-xl bg-gray-800 text-white text-[11px] font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md z-50">Luyện viết & Chấm điểm ✍️</span>
+    </a>
+
+    <a href="#catalog-lessons-section" class="quick-nav-dot group relative w-8 h-8 rounded-2xl flex items-center justify-center text-gray-500 hover:text-pink-600 hover:bg-pink-50 transition-all" data-target="catalog-lessons-section">
+      <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+      <span class="quick-nav-tooltip pointer-events-none absolute left-full ml-3 px-2.5 py-1 rounded-xl bg-gray-800 text-white text-[11px] font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md z-50">Bài học HSK 1 - 9 & Ngành 🎓</span>
+    </a>
+
+    <a href="#flashcards" class="quick-nav-dot group relative w-8 h-8 rounded-2xl flex items-center justify-center text-gray-500 hover:text-purple-600 hover:bg-purple-50 transition-all" data-target="flashcards">
+      <i data-lucide="layers" class="w-4 h-4"></i>
+      <span class="quick-nav-tooltip pointer-events-none absolute left-full ml-3 px-2.5 py-1 rounded-xl bg-gray-800 text-white text-[11px] font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md z-50">Kho Flashcard 3D 🎴</span>
+    </a>
+
+    <a href="#roadmap" class="quick-nav-dot group relative w-8 h-8 rounded-2xl flex items-center justify-center text-gray-500 hover:text-pink-600 hover:bg-pink-50 transition-all" data-target="roadmap">
+      <i data-lucide="compass" class="w-4 h-4"></i>
+      <span class="quick-nav-tooltip pointer-events-none absolute left-full ml-3 px-2.5 py-1 rounded-xl bg-gray-800 text-white text-[11px] font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md z-50">Lộ trình 7 Cấp độ 🗺️</span>
+    </a>
+
+    <a href="#categories" class="quick-nav-dot group relative w-8 h-8 rounded-2xl flex items-center justify-center text-gray-500 hover:text-pink-600 hover:bg-pink-50 transition-all" data-target="categories">
+      <i data-lucide="palette" class="w-4 h-4"></i>
+      <span class="quick-nav-tooltip pointer-events-none absolute left-full ml-3 px-2.5 py-1 rounded-xl bg-gray-800 text-white text-[11px] font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md z-50">5 Chuyên mục học 🎨</span>
+    </a>
+
+    <a href="#practice" class="quick-nav-dot group relative w-8 h-8 rounded-2xl flex items-center justify-center text-gray-500 hover:text-pink-600 hover:bg-pink-50 transition-all" data-target="practice">
+      <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+      <span class="quick-nav-tooltip pointer-events-none absolute left-full ml-3 px-2.5 py-1 rounded-xl bg-gray-800 text-white text-[11px] font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md z-50">Luyện tập Quiz 🎯</span>
+    </a>
+
+    <a href="#progress" class="quick-nav-dot group relative w-8 h-8 rounded-2xl flex items-center justify-center text-gray-500 hover:text-pink-600 hover:bg-pink-50 transition-all" data-target="progress">
+      <i data-lucide="book-heart" class="w-4 h-4"></i>
+      <span class="quick-nav-tooltip pointer-events-none absolute left-full ml-3 px-2.5 py-1 rounded-xl bg-gray-800 text-white text-[11px] font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md z-50">Sổ tay cá nhân 📒</span>
+    </a>
+
+    <div class="w-6 h-px bg-pink-100 my-0.5"></div>
+
+    <!-- Nút Xuống cuối trang -->
+    <button id="btn-quick-scroll-bottom" class="w-8 h-8 rounded-2xl bg-pink-50 hover:bg-pink-100 text-pink-600 flex items-center justify-center text-xs transition-transform active:scale-90 mt-1 shadow-2xs" title="Xuống cuối trang">
+      <i data-lucide="chevrons-down" class="w-4 h-4"></i>
+    </button>
+  </aside>
+
+
+  <!-- =========================================================================
+       B. HERO SECTION
+       ========================================================================= -->
+  <section id="hero" class="relative pt-8 pb-8 sm:pt-12 sm:pb-12 overflow-hidden">
+    <div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-pink-100/60 blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 -right-24 w-80 h-80 rounded-full bg-purple-100/50 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+        
+        <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+          
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2">
+            <div id="hero-owner-badge" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-100 text-pink-700 border border-pink-200 text-xs font-bold shadow-sm animate-gentle-pulse">
+              <span>🌸</span>
+              <span>Góc học tập của Ngọc Ánh</span>
+            </div>
+          </div>
+
+          <div id="hero-personal-greeting" class="text-xs sm:text-sm font-semibold text-pink-600 bg-pink-50/90 px-4 py-2.5 rounded-2xl border border-pink-200/80 inline-block shadow-xs">
+            Chào buổi sáng rạng rỡ, Ngọc Ánh! Cùng Mochi nạp 15 phút từ vựng tràn đầy năng lượng nha 🌸
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-gray-800 font-heading leading-tight tracking-tight">
+            Cuốn sổ tay <br class="hidden sm:inline">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#F59BB0] via-[#E8839B] to-[#A98CF0]">
+              học tiếng Trung ngọt ngào
+            </span> của nàng 💕
+          </h1>
+
+          <p id="hero-personal-motto" class="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
+            Cô gái đáng yêu và chăm chỉ nhất! Chinh phục tiếng Trung thật tự tin và tỏa sáng nha Ánh Ánh 💕
+          </p>
+
+          <!-- 3 Nút hành động nhanh -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
+            <a href="#dictionary" class="px-6 py-3.5 bg-[#F59BB0] hover:bg-[#E8839B] text-white font-bold rounded-full shadow-lg shadow-pink-200 transition-all transform hover:scale-105 active:scale-95 flex items-center gap-2 text-sm">
+              <span>Tra Từ Điển Mini</span>
+              <i data-lucide="book-open" class="w-4 h-4"></i>
+            </a>
+            <a href="#catalog-lessons-section" class="px-6 py-3.5 bg-white hover:bg-pink-50 text-gray-700 font-bold rounded-full border border-pink-200 shadow-sm transition-all flex items-center gap-2 text-sm">
+              <span>22 Bài học HSK 1 - 9 & Ngành</span>
+              <span class="text-xs">📚</span>
+            </a>
+            <a href="#discovery-section" class="px-5 py-3.5 bg-purple-50 hover:bg-purple-100 text-purple-700 font-bold rounded-full border border-purple-200 shadow-sm transition-all flex items-center gap-1.5 text-sm">
+              <span>Bốc thăm hôm nay 🎲</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cột phải: Live Card tương tác + Mascot Thỏ Mochi -->
+        <div class="lg:col-span-5 flex flex-col items-center justify-center relative">
+          
+          <div class="absolute -top-10 -right-4 sm:-right-2 w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-tr from-pink-200 to-amber-100 rounded-3xl p-2 shadow-lg border-2 border-white flex flex-col items-center justify-center z-20 animate-float">
+            <span class="text-3xl sm:text-4xl">🐰</span>
+            <span class="text-[10px] font-bold text-pink-700">Mochi nè!</span>
+          </div>
+
+          <div class="w-full max-w-md mochi-card p-6 sm:p-7 relative z-10">
+            <div class="flex items-center justify-between mb-4">
+              <span class="badge-pill bg-pink-100 text-pink-700">💡 Thẻ từ vựng vàng hôm nay</span>
+              <span class="text-xs text-gray-400 font-medium">Bấm nghe thử 👇</span>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-[#FFF8FA] border border-pink-100/80 mb-4">
+              <div class="flex items-start justify-between">
+                <div>
+                  <div class="pinyin-text text-sm text-purple-600 font-bold mb-0.5">xīnkǔ le</div>
+                  <div class="font-chinese text-3xl font-extrabold text-gray-800 tracking-wide">辛苦了</div>
+                </div>
+                <button class="w-11 h-11 rounded-2xl bg-[#F59BB0] text-white flex items-center justify-center shadow-md hover:scale-105 active:scale-95 transition-transform" data-tts="辛苦了" title="Bấm nghe phát âm">
+                  <i data-lucide="volume-2" class="w-5 h-5"></i>
+                </button>
+              </div>
+
+              <div class="mt-3 text-sm font-bold text-gray-700">
+                "Vất vả cho bạn rồi! / Cảm ơn vì đã vất vả nhé!"
+              </div>
+              <p class="mt-1 text-xs text-gray-500 leading-relaxed">
+                Câu cửa miệng vàng để sếp thương, đồng nghiệp quý mỗi khi xong việc hoặc tan ca chiều 🍵
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <div class="flex items-center gap-2 text-xs text-gray-600 font-medium">
+                <span class="text-emerald-500 font-bold">✓</span>
+                <span>Phát âm chuẩn ngữ điệu Bắc Kinh</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600 font-medium">
+                <span class="text-emerald-500 font-bold">✓</span>
+                <span>Bách khoa tra cứu HSK 1 - 9 & Ngành</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       HỘP KHÁM PHÁ MỖI NGÀY (DAILY DISCOVERY WIDGET 🎲)
+       ========================================================================= -->
+  <section id="discovery-section" class="max-w-5xl mx-auto px-4 sm:px-6 mb-12 relative z-30">
+    <div class="flex items-center justify-between mb-3 px-1">
+      <div class="flex items-center gap-2">
+        <span class="text-lg">🎲</span>
+        <h3 class="font-bold text-gray-800 text-sm sm:text-base">Mỗi ngày một điều mới mẻ</h3>
+      </div>
+      <button id="btn-random-discovery" class="px-3.5 py-1.5 rounded-full bg-white hover:bg-pink-50 border border-pink-200 text-pink-600 text-xs font-bold transition-all shadow-xs flex items-center gap-1.5">
+        <i data-lucide="shuffle" class="w-3.5 h-3.5"></i>
+        <span>Hôm nay học gì nhỉ? (Đổi bất ngờ)</span>
+      </button>
+    </div>
+
+    <!-- Khung hiển thị điều bất ngờ hôm nay -->
+    <div id="daily-discovery-box"></div>
+  </section>
+
+  <!-- =========================================================================
+       TỪ ĐIỂN TRUNG - VIỆT MINI (POCKET DICTIONARY)
+       ========================================================================= -->
+  <!-- =========================================================================
+       BÁCH KHOA TOÀN THƯ & TỪ ĐIỂN TRUNG - VIỆT (CHINESE ENCYCLOPEDIA)
+       ========================================================================= -->
+  <section id="dictionary" class="py-14 sm:py-18 bg-white border-y border-[#F7EBF0]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-8">
+        <span class="badge-pill bg-pink-100 text-pink-700 mb-2">Bách Khoa Toàn Thư Tiếng Trung</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-gray-800 font-heading mb-3">
+          Kho Tri Thức & Từ Điển Toàn Năng
+        </h2>
+        <p class="text-xs sm:text-sm text-gray-500">
+          Tra cứu từ vựng phong phú HSK 1 - 9 & 6 Ngành nghề, bảng 54 bộ thủ cốt lõi, sổ tay 25 ngữ pháp vàng và kho thành ngữ 4 chữ chọn lọc.
+        </p>
+      </div>
+
+      <!-- 4 Tab Bách Khoa Tra Cứu -->
+      <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-8">
+        <button id="tab-btn-dict" class="encyclopedia-tab active px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-bold border border-pink-200 flex items-center gap-2">
+          <span>📖</span>
+          <span>Bách Khoa Từ Điển</span>
+        </button>
+        <button id="tab-btn-radicals" class="encyclopedia-tab px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-bold bg-white text-gray-700 border border-pink-100 hover:border-pink-300 flex items-center gap-2">
+          <span>🀄</span>
+          <span>54 Bộ Thủ Cốt Lõi</span>
+        </button>
+        <button id="tab-btn-grammar" class="encyclopedia-tab px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-bold bg-white text-gray-700 border border-pink-100 hover:border-pink-300 flex items-center gap-2">
+          <span>📐</span>
+          <span>Sổ Tay 25 Ngữ Pháp</span>
+        </button>
+        <button id="tab-btn-chengyu" class="encyclopedia-tab px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-bold bg-white text-gray-700 border border-pink-100 hover:border-pink-300 flex items-center gap-2">
+          <span>👑</span>
+          <span>Kho Thành Ngữ 4 Chữ</span>
+        </button>
+      </div>
+
+      <!-- VIEW 1: BÁCH KHOA TỪ ĐIỂN TỔNG HỢP -->
+      <div id="encyclopedia-view-dict" class="space-y-6">
+        <!-- Ô tìm kiếm từ điển, Bộ lọc HSK & Nút tốc độ phát âm -->
+        <div class="max-w-4xl mx-auto space-y-4">
+          <div class="mochi-card p-2 sm:p-2.5 flex items-center gap-3 border-pink-200 shadow-md">
+            <div class="p-2.5 rounded-2xl bg-pink-50 text-pink-500 shrink-0">
+              <i data-lucide="search" class="w-5 h-5"></i>
+            </div>
+            <input id="dict-search-input" type="text" placeholder="Gõ chữ Hán (你好), Pinyin (ni hao), Hán Việt (nhĩ hảo) hoặc nghĩa (xin chào)..." class="w-full bg-transparent text-xs sm:text-sm font-semibold text-gray-700 placeholder:text-gray-400 focus:outline-none">
+            
+            <!-- Nút chỉnh tốc độ đọc (0.7x Chậm / 1.0x Chuẩn) -->
+            <button id="btn-toggle-speech-rate" class="px-3 py-1.5 rounded-full bg-pink-50 hover:bg-pink-100 text-pink-600 border border-pink-200 text-xs font-bold transition-all flex items-center gap-1.5 shrink-0" title="Đổi tốc độ phát âm">
+              <span id="speech-rate-label">🐰 1.0x</span>
+            </button>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-3 px-1">
+            <div id="dict-hsk-filter-tabs" class="flex flex-wrap items-center gap-1.5 sm:gap-2">
+              <!-- Render HSK filter buttons -->
+            </div>
+            <span id="dict-results-count" class="text-xs text-gray-400 font-semibold">Đang tải...</span>
+          </div>
+        </div>
+
+        <!-- Lưới thẻ từ điển -->
+        <div id="dictionary-cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Render dictionary cards -->
+        </div>
+
+        <!-- Thanh phân trang từ điển -->
+        <div id="dict-pagination-container" class="flex items-center justify-center gap-2 pt-6"></div>
+      </div>
+
+      <!-- VIEW 2: BẢNG 54 BỘ THỦ CỐT LÕI -->
+      <div id="encyclopedia-view-radicals" class="hidden space-y-6">
+        <div class="p-4 rounded-2xl bg-purple-50/70 border border-purple-100 text-xs sm:text-sm text-purple-800 flex items-center justify-between">
+          <span>💡 <strong>Bí kíp:</strong> Nắm vững 54 bộ thủ này giúp nàng suy luận nghĩa và cách viết của 85% chữ Hán thông dụng!</span>
+          <span class="text-xs text-gray-500 font-semibold">54 Bộ thủ</span>
+        </div>
+        <div id="radicals-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+      </div>
+
+      <!-- VIEW 3: SỔ TAY 25 CẤU TRÚC NGỮ PHÁP -->
+      <div id="encyclopedia-view-grammar" class="hidden space-y-5">
+        <div class="p-4 rounded-2xl bg-amber-50/70 border border-amber-200/60 text-xs sm:text-sm text-amber-900">
+          📐 <strong>Sổ tay ngữ pháp:</strong> Các công thức cấu trúc then chốt từ Sơ cấp đến Trung - Cao cấp, kèm câu ví dụ thực tế.
+        </div>
+        <div id="grammar-cards-grid" class="space-y-4"></div>
+      </div>
+
+      <!-- VIEW 4: KHO THÀNH NGỮ 4 CHỮ (CHENGYU) -->
+      <div id="encyclopedia-view-chengyu" class="hidden space-y-6">
+        <div class="p-4 rounded-2xl bg-pink-50/70 border border-pink-100 text-xs sm:text-sm text-pink-800">
+          👑 <strong>Thành ngữ 4 chữ (四字成语):</strong> Tinh hoa văn hóa ngôn ngữ, giúp câu nói và văn bản công sở của nàng sang trọng và chuẩn mực.
+        </div>
+        <div id="chengyu-cards-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ỨNG DỤNG DỊCH THUẬT CHUYÊN DỤNG TRUNG - VIỆT (MOCHI TRANSLATE STUDIO)
+       ========================================================================= -->
+  <section id="translator-studio" class="py-14 sm:py-20 bg-gradient-to-b from-[#FFFDFE] via-white to-[#FAF6F9] border-b border-[#F7EBF0]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-8">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-100 text-purple-700 text-xs font-bold mb-3 shadow-2xs">
+          <span>🌐</span>
+          <span>Google Translate Chuyên Dụng Tiếng Trung & Tiếng Việt</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-black text-gray-800 font-heading mb-3">
+          Trạm Dịch Thuật Đa Năng <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#F59BB0] via-[#A98CF0] to-[#E8839B]">AI Song Ngữ</span>
+        </h2>
+        <p class="text-xs sm:text-base text-gray-600 leading-relaxed">
+          Dịch chuẩn xác câu từ, kèm đầy đủ <strong>phiên âm Pinyin có thanh điệu</strong>, <strong>âm Hán Việt</strong>, <strong>bóc tách chiết tự từng từ</strong>, phát âm chuẩn Bắc Kinh, cùng công nghệ <strong>Dịch Ảnh 📸</strong> và <strong>Dịch Video 🎬</strong> thông minh.
+        </p>
+      </div>
+
+      <!-- 3 Tab Dịch Thuật: Văn Bản, Ảnh AI, Video AI -->
+      <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 mb-8">
+        <button id="tab-btn-trans-text" class="translator-tab active px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-bold border transition-all flex items-center gap-2 shadow-xs">
+          <i data-lucide="file-text" class="w-4 h-4"></i>
+          <span>Dịch Văn Bản Song Ngữ 📝</span>
+        </button>
+        <button id="tab-btn-trans-image" class="translator-tab px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-bold border transition-all flex items-center gap-2 bg-white text-gray-700 border-pink-100 hover:border-pink-300">
+          <i data-lucide="camera" class="w-4 h-4"></i>
+          <span>Dịch Ảnh AI (OCR) 📸</span>
+        </button>
+        <button id="tab-btn-trans-video" class="translator-tab px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-bold border transition-all flex items-center gap-2 bg-white text-gray-700 border-pink-100 hover:border-pink-300">
+          <i data-lucide="video" class="w-4 h-4"></i>
+          <span>Dịch Video AI & Phụ Đề 🎬</span>
+        </button>
+      </div>
+
+      <!-- TAB 1: DỊCH VĂN BẢN (2 KHUNG GOOGLE TRANSLATE CHUYÊN DỤNG) -->
+      <div id="trans-view-text" class="space-y-6">
+        <!-- Language Bar & Swap Button -->
+        <div class="flex items-center justify-between max-w-4xl mx-auto px-2">
+          <div class="flex items-center gap-2">
+            <span id="trans-source-lang-label" class="px-4 py-1.5 rounded-full bg-pink-50 text-pink-700 border border-pink-200 text-xs font-bold shadow-2xs">
+              🇻🇳 Tiếng Việt
+            </span>
+          </div>
+
+          <button id="btn-trans-swap-lang" class="w-9 h-9 rounded-full bg-white hover:bg-pink-50 text-pink-600 border border-pink-200 flex items-center justify-center shadow-xs transition-transform active:rotate-180" title="Đổi chiều dịch (Việt ⇄ Trung)">
+            <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
+          </button>
+
+          <div class="flex items-center gap-2">
+            <span id="trans-target-lang-label" class="px-4 py-1.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200 text-xs font-bold shadow-2xs">
+              🇨🇳 Tiếng Trung (Giản thể & Pinyin)
+            </span>
+          </div>
+        </div>
+
+        <!-- 2 Khung Dịch Song Ngữ -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-5xl mx-auto">
+          <!-- Khung nguồn -->
+          <div class="mochi-card p-5 flex flex-col justify-between space-y-3 border-pink-200 shadow-sm">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Văn bản cần dịch:</span>
+                <span id="trans-char-count" class="text-[11px] text-gray-400 font-semibold">0 ký tự</span>
+              </div>
+              <textarea id="trans-source-input" class="w-full h-44 sm:h-52 bg-transparent text-sm sm:text-base font-medium text-gray-800 focus:outline-none resize-none leading-relaxed placeholder:text-gray-300" placeholder="Gõ hoặc dán câu tiếng Việt hoặc tiếng Trung cần dịch tại đây... (Ví dụ: Anh yêu em, Chào buổi sáng, Hôm nay đi uống trà sữa không?)...">Anh yêu em</textarea>
+            </div>
+
+            <!-- Gợi ý cụm từ nhanh -->
+            <div class="pt-2 border-t border-gray-100">
+              <div class="text-[11px] text-gray-400 font-semibold mb-1.5">💡 Thử nhanh các câu thông dụng:</div>
+              <div class="flex flex-wrap gap-1.5">
+                <button class="btn-trans-quick-chip px-2.5 py-1 rounded-lg bg-pink-50 hover:bg-pink-100 text-pink-700 text-[11px] font-semibold transition-colors" data-phrase="Anh yêu em">Anh yêu em 💕</button>
+                <button class="btn-trans-quick-chip px-2.5 py-1 rounded-lg bg-pink-50 hover:bg-pink-100 text-pink-700 text-[11px] font-semibold transition-colors" data-phrase="Chào buổi sáng">Chào buổi sáng 🌸</button>
+                <button class="btn-trans-quick-chip px-2.5 py-1 rounded-lg bg-purple-50 hover:bg-purple-100 text-purple-700 text-[11px] font-semibold transition-colors" data-phrase="Hôm nay em có mệt không?">Hôm nay em có mệt không? 🍵</button>
+                <button class="btn-trans-quick-chip px-2.5 py-1 rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-800 text-[11px] font-semibold transition-colors" data-phrase="Cùng đi uống trà sữa nhé!">Cùng đi uống trà sữa nhé! 🧋</button>
+                <button class="btn-trans-quick-chip px-2.5 py-1 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-800 text-[11px] font-semibold transition-colors" data-phrase="Rất vui được hợp tác với bạn">Rất vui được hợp tác 💼</button>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-2 border-t border-gray-100">
+              <button id="btn-trans-clear" class="px-3 py-1.5 rounded-xl hover:bg-gray-100 text-gray-400 hover:text-gray-600 text-xs font-semibold transition-colors">
+                Xóa văn bản
+              </button>
+              <button id="btn-trans-execute" class="px-6 py-2.5 rounded-full bg-gradient-to-r from-[#F59BB0] to-[#A98CF0] hover:opacity-90 text-white text-xs sm:text-sm font-bold shadow-md shadow-pink-100 transition-transform active:scale-95 flex items-center gap-1.5">
+                <span>Dịch chuyên sâu ✨</span>
+                <i data-lucide="sparkles" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Khung kết quả -->
+          <div class="mochi-card p-5 flex flex-col justify-between space-y-3 bg-[#FAF8FB]/90 border-purple-200 shadow-sm relative">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Bản dịch tiếng Trung & Pinyin:</span>
+                <div class="flex items-center gap-1.5">
+                  <button id="btn-trans-tts" class="p-1.5 rounded-full bg-white hover:bg-pink-100 text-pink-600 border border-pink-200 shadow-2xs" title="Nghe phát âm">
+                    <i data-lucide="volume-2" class="w-4 h-4"></i>
+                  </button>
+                  <button id="btn-trans-copy" class="p-1.5 rounded-full bg-white hover:bg-purple-100 text-purple-600 border border-purple-200 shadow-2xs" title="Sao chép bản dịch">
+                    <i data-lucide="copy" class="w-4 h-4"></i>
+                  </button>
+                  <button id="btn-trans-pin" class="p-1.5 rounded-full bg-white hover:bg-amber-100 text-amber-500 border border-amber-200 shadow-2xs" title="Ghim vào sổ tay">
+                    <i data-lucide="bookmark" class="w-4 h-4"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Nội dung bản dịch chính -->
+              <div id="trans-result-hanzi" class="font-chinese text-2xl sm:text-3xl font-black text-gray-800 leading-normal min-h-[50px] select-text">
+                我爱你
+              </div>
+              <div id="trans-result-pinyin" class="pinyin-text text-sm sm:text-base font-bold text-purple-600 mt-1">
+                wǒ ài nǐ
+              </div>
+              <div id="trans-result-hanviet" class="text-xs text-gray-500 font-semibold mt-0.5">
+                Hán Việt: Ngã ái nhĩ
+              </div>
+            </div>
+
+            <!-- Bóc tách từng chữ (Word-by-word Breakdown) -->
+            <div class="pt-3 border-t border-gray-200/80">
+              <div class="text-[11px] text-gray-400 font-semibold mb-2 flex items-center justify-between">
+                <span>🔍 Phân tích chiết tự từng từ trong câu:</span>
+                <span class="text-[10px] text-pink-500 font-bold">Chạm chữ để tập viết ✍️</span>
+              </div>
+              <div id="trans-result-breakdown" class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded-xl bg-white border border-pink-200 text-xs font-chinese font-bold text-pink-600 shadow-2xs cursor-pointer hover:bg-pink-50">我 (wǒ) - tôi</span>
+                <span class="px-2.5 py-1 rounded-xl bg-white border border-purple-200 text-xs font-chinese font-bold text-purple-600 shadow-2xs cursor-pointer hover:bg-purple-50">爱 (ài) - yêu</span>
+                <span class="px-2.5 py-1 rounded-xl bg-white border border-pink-200 text-xs font-chinese font-bold text-pink-600 shadow-2xs cursor-pointer hover:bg-pink-50">你 (nǐ) - em/bạn</span>
+              </div>
+            </div>
+
+            <div class="pt-2 border-t border-gray-200/60 text-[11px] text-gray-400 flex items-center justify-between">
+              <span id="trans-engine-badge" class="badge-pill bg-pink-100 text-pink-700 text-[10px]">Động cơ Hán ngữ Song Ngữ Mochi</span>
+              <button id="btn-trans-bridge-canvas" class="text-purple-600 font-bold hover:underline flex items-center gap-1 text-xs" data-char="爱">
+                <span>Luyện viết chữ "爱" trên ô Mễ Tự</span>
+                <i data-lucide="chevron-right" class="w-3 h-3"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2: DỊCH ẢNH AI (PHOTO OCR & TRANSLATION) -->
+      <div id="trans-view-image" class="hidden space-y-6 max-w-5xl mx-auto">
+        <div class="mochi-card p-6 border-pink-200">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+            <!-- Cột trái: Tải ảnh hoặc chọn ảnh mẫu -->
+            <div class="lg:col-span-5 space-y-4">
+              <div class="text-xs font-bold text-gray-700 mb-1">Tải ảnh chứa chữ tiếng Trung lên:</div>
+              <div id="ocr-dropzone" class="border-2 border-dashed border-pink-300 rounded-3xl p-6 text-center hover:bg-pink-50/50 transition-colors cursor-pointer relative bg-[#FFF8FA]">
+                <input type="file" id="input-ocr-file" accept="image/*" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+                <div class="text-3xl mb-2">📸</div>
+                <div class="text-xs sm:text-sm font-bold text-gray-700">Kéo thả ảnh hoặc chạm để tải lên</div>
+                <div class="text-[11px] text-gray-400 mt-1">Hỗ trợ PNG, JPG, WEBP hoặc dán ảnh (Ctrl+V)</div>
+              </div>
+
+              <!-- 3 Ảnh mẫu thực tế -->
+              <div>
+                <div class="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-2">Hoặc thử nhanh 3 ảnh thực tế:</div>
+                <div class="grid grid-cols-3 gap-2">
+                  <button class="btn-sample-ocr p-2 rounded-2xl border border-pink-200 bg-white hover:bg-pink-50 transition-all text-left group" data-sample-id="menu-milktea">
+                    <div class="text-lg">🧋</div>
+                    <div class="text-[10px] font-bold text-gray-700 truncate group-hover:text-pink-600">Menu Trà sữa</div>
+                  </button>
+                  <button class="btn-sample-ocr p-2 rounded-2xl border border-purple-200 bg-white hover:bg-purple-50 transition-all text-left group" data-sample-id="taobao-label">
+                    <div class="text-lg">📦</div>
+                    <div class="text-[10px] font-bold text-gray-700 truncate group-hover:text-purple-600">Kiện Taobao</div>
+                  </button>
+                  <button class="btn-sample-ocr p-2 rounded-2xl border border-amber-200 bg-white hover:bg-amber-50 transition-all text-left group" data-sample-id="beijing-sign">
+                    <div class="text-lg">🏮</div>
+                    <div class="text-[10px] font-bold text-gray-700 truncate group-hover:text-amber-800">Biển Bắc Kinh</div>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Preview Ảnh -->
+              <div id="ocr-preview-container" class="rounded-2xl overflow-hidden border border-gray-200 max-h-56">
+                <img id="ocr-preview-img" src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?w=500&q=80" alt="Preview" class="w-full h-full object-cover" />
+              </div>
+            </div>
+
+            <!-- Cột phải: Kết quả nhận diện OCR & Dịch nghĩa -->
+            <div class="lg:col-span-7 space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-gray-700 font-heading">Kết quả bóc tách chữ Hán & Dịch nghĩa:</span>
+                <span id="ocr-status-badge" class="badge-pill bg-purple-100 text-purple-700 text-[10px]">✨ Nhận diện bởi Gemini Vision</span>
+              </div>
+
+              <!-- Danh sách dòng chữ bóc tách -->
+              <div id="ocr-results-container" class="space-y-2.5 max-h-96 overflow-y-auto pr-1">
+                <!-- Javascript renders lines -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 3: DỊCH VIDEO AI & TẠO PHỤ ĐỀ SONG NGỮ -->
+      <div id="trans-view-video" class="hidden space-y-6 max-w-5xl mx-auto">
+        <div class="mochi-card p-6 border-purple-200">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+            
+            <!-- Cột trái: Video Player -->
+            <div class="lg:col-span-6 space-y-3">
+              <div class="rounded-3xl overflow-hidden bg-black aspect-video relative shadow-md">
+                <video id="trans-video-player" controls class="w-full h-full">
+                  <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                  Trình duyệt không hỗ trợ thẻ video.
+                </video>
+              </div>
+
+              <div class="flex items-center justify-between text-xs">
+                <label class="cursor-pointer px-4 py-2 rounded-full bg-white hover:bg-pink-50 text-pink-600 border border-pink-200 font-bold transition-all shadow-xs flex items-center gap-1.5">
+                  <i data-lucide="upload" class="w-3.5 h-3.5"></i>
+                  <span>Tải video của bạn lên</span>
+                  <input type="file" id="input-video-file" accept="video/mp4,video/webm" class="hidden" />
+                </label>
+
+                <div class="flex items-center gap-2">
+                  <button id="btn-video-export-srt" class="px-3 py-1.5 rounded-full bg-purple-50 hover:bg-purple-100 text-purple-700 font-bold transition-all flex items-center gap-1" title="Tải phụ đề SRT">
+                    <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                    <span>Xuất .SRT</span>
+                  </button>
+                  <button id="btn-video-export-txt" class="px-3 py-1.5 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 font-bold transition-all" title="Tải văn bản">
+                    <span>.TXT</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cột phải: Khung Phụ Đề Song Ngữ Tương Tác -->
+            <div class="lg:col-span-6 space-y-3">
+              <div class="flex items-center justify-between">
+                <div>
+                  <div class="text-xs font-bold text-gray-700 font-heading">Phụ đề song ngữ tương tác:</div>
+                  <div class="text-[11px] text-gray-400">Bấm vào dòng nào để tua video đến đúng giây đó</div>
+                </div>
+                <span class="badge-pill bg-emerald-100 text-emerald-800 text-[10px]">Đồng bộ thời gian thực</span>
+              </div>
+
+              <!-- Danh sách dòng phụ đề theo timeline -->
+              <div id="video-subtitles-container" class="space-y-2 max-h-80 overflow-y-auto pr-1">
+                <!-- Javascript renders timestamped subtitle rows -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ĐÀM THOẠI THỰC CHIẾN VỚI NGƯỜI BẢN XỨ (NATIVE CHAT STUDIO)
+       ========================================================================= -->
+  <section id="native-chat" class="py-14 sm:py-20 bg-gradient-to-b from-[#FFF9FB] via-white to-[#FDF4F8] border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-100 text-pink-700 text-xs font-bold mb-3 shadow-2xs">
+          <span>💬</span>
+          <span>Không Gian Đàm Thoại 1-1 Chuẩn Bản Xứ</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-black text-gray-800 font-heading mb-3">
+          Trò chuyện cùng <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#F59BB0] to-[#A98CF0]">Người Trung Quốc thực tế</span>
+        </h2>
+        <p class="text-xs sm:text-base text-gray-600 leading-relaxed">
+          Thực hành phản xạ với 5 đối tượng giao tiếp đời thực: Sếp nghiêm cẩn, Đồng nghiệp thân thiết, Khách hàng sắc sảo, Bạn thân vui tính và Dì ruột ấm áp.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Cột trái: Danh sách 5 Nhân vật đối thoại -->
+        <div class="lg:col-span-4 space-y-3">
+          <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 px-1">
+            Chọn người bạn muốn trò chuyện:
+          </div>
+          <div id="chat-persona-list" class="space-y-2.5">
+            <!-- Rendered by JS -->
+          </div>
+
+          <div class="p-4 rounded-2xl bg-pink-50/70 border border-pink-100 text-xs text-pink-900 space-y-1.5 mt-4">
+            <div class="font-bold flex items-center gap-1.5">
+              <span>💡 Mẹo luyện phản xạ:</span>
+            </div>
+            <p class="text-gray-600 leading-relaxed">
+              Mỗi câu thoại đều có thể bật/tắt Pinyin và dịch nghĩa. Hãy bấm nút loa 🔊 để nghe ngữ điệu và phát âm chuẩn bản xứ của từng nhân vật nhé!
+            </p>
+          </div>
+        </div>
+
+        <!-- Cột phải: Cửa sổ Chat tương tác (WeChat style) -->
+        <div class="lg:col-span-8">
+          <div class="bg-white rounded-3xl border border-pink-200/80 shadow-lg overflow-hidden flex flex-col h-[640px] sm:h-[680px]">
+            
+            <!-- Chat Header -->
+            <div id="chat-window-header" class="px-5 py-4 border-b border-gray-100 bg-gradient-to-r from-pink-50/90 via-purple-50/50 to-white flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="relative">
+                  <div id="chat-current-avatar" class="w-11 h-11 rounded-2xl bg-pink-100 flex items-center justify-center text-2xl shadow-xs">
+                    👔
+                  </div>
+                  <span class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 bg-emerald-500 border-2 border-white rounded-full"></span>
+                </div>
+                <div>
+                  <div class="flex items-center gap-2">
+                    <h3 id="chat-current-name" class="font-bold text-gray-800 text-sm sm:text-base font-heading">Trương Tổng (张总)</h3>
+                    <span id="chat-current-badge" class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">Chuyên nghiệp</span>
+                  </div>
+                  <div id="chat-current-desc" class="text-xs text-gray-500 truncate max-w-xs sm:max-w-md">Sếp / Lãnh đạo người Trung • Kính ngữ công sở</div>
+                </div>
+              </div>
+
+              <!-- Tiện ích trong chat: Bật tắt Pinyin, Dịch & Cài đặt AI Gemini -->
+              <div class="flex items-center gap-1.5">
+                <button id="btn-chat-ai-toggle" class="px-3 py-1 rounded-full text-xs font-bold border border-amber-300 bg-amber-50 text-amber-800 hover:bg-amber-100 transition-all flex items-center gap-1 shadow-2xs" title="Cài đặt Chế độ AI Người Thật">
+                  <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-500"></i>
+                  <span id="chat-ai-status-label">Chế độ AI</span>
+                </button>
+                <button id="btn-chat-toggle-pinyin" class="px-2.5 py-1 rounded-full text-xs font-bold border border-purple-200 bg-purple-50 text-purple-700 hover:bg-purple-100 transition-colors" title="Bật/Tắt Pinyin trong đoạn chat">
+                  Pinyin
+                </button>
+                <button id="btn-chat-toggle-trans" class="px-2.5 py-1 rounded-full text-xs font-bold border border-pink-200 bg-pink-50 text-pink-700 hover:bg-pink-100 transition-colors" title="Bật/Tắt nghĩa tiếng Việt">
+                  Dịch
+                </button>
+                <button id="btn-chat-reset" class="p-2 rounded-full hover:bg-gray-100 text-gray-400 hover:text-gray-600 transition-colors" title="Bắt đầu lại cuộc hội thoại">
+                  <i data-lucide="refresh-cw" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Chat Messages Container -->
+            <div id="chat-messages-container" class="flex-1 p-4 sm:p-6 overflow-y-auto space-y-4 bg-[#FAF8FB]/60">
+              <!-- Rendered messages by JS -->
+            </div>
+
+            <!-- Gợi ý câu trả lời thông minh (Smart Reply Chips) -->
+            <div class="px-4 py-2.5 bg-white border-t border-gray-100">
+              <div class="text-[11px] font-bold text-gray-400 mb-1.5 flex items-center gap-1">
+                <span>✨ Gợi ý câu trả lời nhanh:</span>
+              </div>
+              <div id="chat-quick-replies" class="flex flex-wrap gap-2">
+                <!-- Javascript renders quick replies -->
+              </div>
+            </div>
+
+            <!-- Chat Input Area -->
+            <div class="p-3 sm:p-4 bg-white border-t border-gray-100 flex items-center gap-2">
+              <input type="text" id="chat-user-input" class="flex-1 px-4 py-2.5 rounded-full border border-gray-200 text-xs sm:text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-100 transition-all font-chinese" placeholder="Gõ câu trả lời bằng tiếng Trung hoặc chọn gợi ý bên trên..." />
+              <button id="btn-chat-send" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-[#F59BB0] to-[#E8839B] hover:from-[#e0899e] hover:to-[#d6728a] text-white text-xs sm:text-sm font-bold shadow-sm transition-transform active:scale-95 flex items-center gap-1.5">
+                <span>Gửi</span>
+                <i data-lucide="send" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       PHÒNG LUYỆN VIẾT ĐOẠN VĂN & CHẤM ĐIỂM ĐA CHIỀU (WRITING STUDIO)
+       ========================================================================= -->
+  <section id="writing-studio" class="py-14 sm:py-20 bg-white border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-100 text-purple-700 text-xs font-bold mb-3 shadow-2xs">
+          <span>✍️</span>
+          <span>Phòng Luyện Viết & Chấm Điểm Sâu Sắc</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-black text-gray-800 font-heading mb-3">
+          Luyện viết tiếng Trung <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#A98CF0] to-[#F59BB0]">Được chấm điểm tỉ mỉ</span>
+        </h2>
+        <p class="text-xs sm:text-base text-gray-600 leading-relaxed">
+          Không chấm máy móc. Hệ thống chỉ rõ <strong>Ưu điểm</strong> khen ngợi chân thành, chỉ ra <strong>Điểm gượng gạo/Lỗi sai</strong> cần sửa, và gợi ý cách diễn đạt chuẩn như người bản xứ.
+        </p>
+      </div>
+
+      <!-- Danh sách chọn Đề bài thực tế -->
+      <div class="mb-8">
+        <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3 text-center sm:text-left">
+          Chọn chủ đề thực hành viết:
+        </div>
+        <div id="writing-prompts-selector" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Khung đề bài chi tiết -->
+      <div id="writing-prompt-detail-card" class="p-5 sm:p-6 rounded-3xl bg-pink-50/50 border border-pink-200/80 mb-8 space-y-4">
+        <!-- Rendered prompt info (title, scenario, requirements, clues) -->
+      </div>
+
+      <!-- Bàn viết & Khung chấm bài -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Cột trái: Khung soạn thảo của học viên -->
+        <div class="lg:col-span-6 space-y-4">
+          <div class="bg-white p-5 sm:p-6 rounded-3xl border border-gray-200 shadow-xs space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-gray-700 flex items-center gap-1.5">
+                <span>📝 Bài viết của nàng:</span>
+              </span>
+              <span id="writing-word-counter" class="text-xs font-bold text-gray-400 bg-gray-50 px-3 py-1 rounded-full border border-gray-100">
+                0 chữ Hán
+              </span>
+            </div>
+
+            <textarea id="writing-input-textarea" class="w-full h-64 sm:h-72 p-4 rounded-2xl border border-pink-200 focus:border-pink-400 focus:ring-2 focus:ring-pink-100 text-sm sm:text-base font-chinese text-gray-800 leading-relaxed resize-none transition-all placeholder-gray-300" placeholder="Hãy viết đoạn văn tiếng Trung của bạn tại đây... (Ví dụ: 张总您好：非常抱歉打扰您...)..."></textarea>
+
+            <div class="flex flex-wrap items-center justify-between gap-3 pt-2">
+              <div class="flex items-center gap-2">
+                <button id="btn-insert-sample-essay" class="px-3.5 py-1.5 rounded-full bg-purple-50 hover:bg-purple-100 text-purple-700 text-xs font-bold border border-purple-200 transition-colors flex items-center gap-1">
+                  <span>💡 Dán bài mẫu để tham khảo</span>
+                </button>
+                <button id="btn-clear-essay" class="px-3.5 py-1.5 rounded-full hover:bg-gray-100 text-gray-500 text-xs font-bold transition-colors">
+                  Xóa bài
+                </button>
+              </div>
+
+              <button id="btn-grade-essay" class="px-6 py-2.5 rounded-full bg-gradient-to-r from-[#A98CF0] to-[#F59BB0] hover:from-[#9574E8] hover:to-[#E8839B] text-white text-xs sm:text-sm font-bold shadow-md shadow-purple-100 transition-transform active:scale-95 flex items-center gap-2">
+                <span>Chấm điểm thông minh ✨</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cột phải: Bảng kết quả chấm điểm chuyên sâu -->
+        <div class="lg:col-span-6">
+          <div id="writing-evaluation-container" class="bg-gray-50/70 rounded-3xl border border-gray-200 p-6 min-h-[380px] flex flex-col justify-center items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-pink-100 text-pink-500 flex items-center justify-center text-3xl mb-3 shadow-2xs">
+              📊
+            </div>
+            <h4 class="text-base font-bold text-gray-700 font-heading mb-1">
+              Chưa có bài viết nào được chấm
+            </h4>
+            <p class="text-xs text-gray-500 max-w-sm">
+              Hãy chọn một chủ đề bên trên, gõ bài viết tiếng Trung của bạn hoặc bấm "Dán bài mẫu để tham khảo", sau đó bấm nút <strong>Chấm điểm thông minh ✨</strong>.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       THƯ VIỆN 15 BÀI HỌC THEO CẤP ĐỘ (MULTI-LEVEL LESSON CATALOG)
+       ========================================================================= -->
+  <section id="catalog-lessons-section" class="py-14 sm:py-20 bg-[#FFFDFE]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="badge-pill bg-purple-100 text-purple-700 mb-2">Kho Tàng Bài Học Có Chiều Sâu</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-gray-800 font-heading mb-3">
+          Kho Tàng Bài Học Có Chiều Sâu
+        </h2>
+        <p class="text-xs sm:text-sm text-gray-500">
+          22 Bài học chuyên biệt từ Nhập môn, HSK 1 - 9 đến 6 Ngành nghề thực chiến trọng điểm.
+        </p>
+      </div>
+
+      <!-- Bộ lọc Cấp độ bài học -->
+      <div id="catalog-level-tabs" class="flex flex-wrap items-center justify-center gap-2 mb-10">
+        <!-- Javascript renders catalog level tabs -->
+      </div>
+
+      <!-- Lưới bài học theo cấp (Tối đa 6 bài/trang) -->
+      <div id="catalog-lessons-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Javascript renders lessons -->
+      </div>
+
+      <!-- Thanh Phân Trang Bài Học (Pagination 6 bài/trang) -->
+      <div id="catalog-pagination-container" class="flex items-center justify-center gap-2 pt-8"></div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       KHO FLASHCARD LẬT 3D TƯƠNG TÁC (3D FLASHCARD VAULT)
+       ========================================================================= -->
+  <section id="flashcards" class="py-14 sm:py-18 bg-white border-y border-[#F7EBF0]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-xl mx-auto mb-8">
+        <span class="badge-pill bg-purple-100 text-purple-700 mb-2">Kho Thẻ Ghi Nhớ 3D</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-gray-800 font-heading mb-2">
+          Kho từ vựng & thành ngữ chọn lọc
+        </h2>
+        <p class="text-xs sm:text-sm text-gray-500">
+          Chạm vào thẻ để lật mặt xem nghĩa, nghe giọng đọc bản xứ và lưu vào sổ tay.
+        </p>
+      </div>
+
+      <!-- Bộ lọc chủ đề Flashcard -->
+      <div id="flashcard-category-filters" class="flex flex-wrap items-center justify-center gap-2 mb-6"></div>
+
+      <!-- Thẻ Flashcard 3D -->
+      <div class="flashcard-perspective w-full max-w-md mx-auto h-[320px] mb-6">
+        <div id="flashcard-3d-inner" class="flashcard-inner">
+          <div id="flashcard-front-content" class="flashcard-front"></div>
+          <div id="flashcard-back-content" class="flashcard-back"></div>
+        </div>
+      </div>
+
+      <!-- Thanh điều khiển Flashcard -->
+      <div class="flex items-center justify-between max-w-md mx-auto px-2">
+        <button id="btn-flashcard-prev" class="px-4 py-2 rounded-full border border-gray-200 text-xs font-bold text-gray-600 hover:bg-gray-50 flex items-center gap-1.5 transition-all">
+          <i data-lucide="arrow-left" class="w-4 h-4"></i>
+          <span>Từ trước</span>
+        </button>
+
+        <div class="flex items-center gap-2">
+          <span id="flashcard-counter-indicator" class="text-xs font-bold text-purple-600 bg-purple-50 px-3 py-1 rounded-full">
+            1 / 30
+          </span>
+          <button id="btn-flashcard-shuffle" class="p-2 rounded-full hover:bg-pink-50 text-gray-400 hover:text-pink-500 transition-colors" title="Xáo trộn ngẫu nhiên">
+            <i data-lucide="shuffle" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <button id="btn-flashcard-next" class="px-4 py-2 rounded-full bg-[#A98CF0] hover:bg-[#9370E8] text-white text-xs font-bold flex items-center gap-1.5 shadow-sm transition-all">
+          <span>Từ tiếp theo</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <!-- Đánh dấu Đã thuộc / Cần ôn lại -->
+      <div class="flex flex-wrap items-center justify-center gap-3 max-w-md mx-auto mt-6 pt-4 border-t border-gray-100">
+        <button id="btn-flashcard-master" class="px-4 py-2 rounded-full bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 text-xs font-bold transition-all flex items-center gap-1.5 shadow-2xs">
+          <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i>
+          <span>Đã thuộc từ này ✔️</span>
+        </button>
+        <button id="btn-flashcard-review" class="px-4 py-2 rounded-full bg-amber-50 hover:bg-amber-100 text-amber-700 border border-amber-200 text-xs font-bold transition-all flex items-center gap-1.5 shadow-2xs">
+          <i data-lucide="rotate-cw" class="w-3.5 h-3.5 text-amber-600"></i>
+          <span>Cần ôn lại 🔄</span>
+        </button>
+        <span id="flashcard-mastery-stat" class="text-xs font-bold text-gray-500 bg-gray-50 px-3 py-1.5 rounded-full border border-gray-100">
+          Đã thuộc: 0
+        </span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION: LỘ TRÌNH 5 CẤP ĐỘ TỔNG QUAN
+       ========================================================================= -->
+  <section id="roadmap" class="py-14 sm:py-20 bg-[#FFFDFE]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="badge-pill bg-purple-100 text-purple-700 mb-2">Lộ Trình Từng Bước</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-gray-800 font-heading mb-2">
+          Mục Tiêu Từng Nấc Thang Học Tập
+        </h2>
+        <p class="text-xs sm:text-sm text-gray-500">
+          Từ người mới bắt đầu đến tự tin đàm phán hợp đồng nơi công sở.
+        </p>
+      </div>
+
+      <div id="roadmap-tabs" class="flex items-center gap-3 overflow-x-auto pb-4 mb-6 no-scrollbar"></div>
+      <div id="roadmap-detail-card"></div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION: 5 CHUYÊN MỤC HỌC CỐT LÕI (5 PILLARS & CANVAS VẼ CHỮ)
+       ========================================================================= -->
+  <section id="categories" class="py-14 sm:py-20 bg-white border-y border-[#F7EBF0]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="badge-pill bg-pink-100 text-pink-700 mb-2">5 Kỹ Năng Trọng Tâm</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-gray-800 font-heading mb-3">
+          Tập Viết • Đọc Hiểu • Giao Tiếp • Luyện Tai • Đi Làm
+        </h2>
+        <p class="text-xs sm:text-sm text-gray-500">
+          Thực hành vẽ chữ Hán trên ô Mễ Tự Cách, luyện nghe podcast ấm áp và giao tiếp tự nhiên.
+        </p>
+      </div>
+
+      <div id="category-tabs" class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-10"></div>
+      <div id="category-display" class="mochi-card p-6 sm:p-10"></div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION: LUYỆN TẬP MINI QUIZ
+       ========================================================================= -->
+  <section id="practice" class="py-14 sm:py-20 bg-[#FFFDFE]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-xl mx-auto mb-10">
+        <span class="badge-pill bg-purple-100 text-purple-700 mb-2">Luyện Tập Vui Vẻ</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-gray-800 font-heading mb-2">
+          Mini Quiz Nhanh Trong 1 Phút
+        </h2>
+        <p class="text-xs sm:text-sm text-gray-500">
+          Trắc nghiệm vui, luyện nghe chọn đáp án và ghép câu công sở hoàn chỉnh.
+        </p>
+      </div>
+
+      <div id="practice-quiz-container"></div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CUỐN SỔ TAY CÁ NHÂN & TIẾN ĐỘ CỦA NÀNG (NOTEBOOK & PROGRESS)
+       ========================================================================= -->
+  <section id="progress" class="py-14 sm:py-20 bg-white border-t border-[#F7EBF0]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="badge-pill bg-amber-100 text-amber-800 mb-2">Góc Sổ Tay Cá Nhân</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-gray-800 font-heading mb-2">
+          Cuốn Sổ Tay Tri Thức & Tiến Độ Của Nàng
+        </h2>
+        <p class="text-xs sm:text-sm text-gray-500">
+          Nơi lưu giữ mục tiêu, từ vựng yêu thích và chuỗi ngày siêng năng tích lũy từng ngày.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <!-- Cột trái: Streak & Mục tiêu -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="mochi-card p-6 sm:p-7">
+            <div class="flex items-center justify-between mb-4">
+              <div>
+                <div class="text-xs font-bold text-gray-400 uppercase tracking-wider">Chuỗi ngày siêng năng</div>
+                <div class="text-xl sm:text-2xl font-extrabold text-gray-800 font-heading flex items-center gap-2">
+                  <span>Streak</span>
+                  <span class="text-pink-600" id="streak-days-count">7</span>
+                  <span>ngày liên tiếp! 🔥</span>
+                </div>
+              </div>
+              <span class="text-3xl animate-float">🌸</span>
+            </div>
+
+            <div id="streak-week-list" class="grid grid-cols-7 gap-2 my-5"></div>
+
+            <div class="p-3.5 rounded-2xl bg-pink-50/70 border border-pink-100 text-xs text-pink-700 leading-relaxed font-medium">
+              "Hôm nay học thêm một chữ, mai này bớt lo âu một phần! Bạn đang làm rất tốt nha 💕"
+            </div>
+          </div>
+
+          <div class="mochi-card p-6 sm:p-7">
+            <div class="flex items-center justify-between mb-3">
+              <div>
+                <div class="text-xs font-bold text-gray-400 uppercase tracking-wider">Mục tiêu học hôm nay</div>
+                <div class="text-lg font-bold text-gray-800 font-heading" id="daily-goal-text">3 / 5 bài học</div>
+              </div>
+              <span class="text-sm font-extrabold text-emerald-600" id="daily-goal-percent">60%</span>
+            </div>
+
+            <div class="w-full h-3 bg-gray-100 rounded-full overflow-hidden mb-4">
+              <div id="daily-goal-bar" class="h-full bg-gradient-to-r from-pink-400 to-[#74C69D] rounded-full transition-all duration-500" style="width: 60%"></div>
+            </div>
+          </div>
+
+          <div class="mochi-card p-6">
+            <div class="flex items-center justify-between mb-4">
+              <h4 class="text-base font-bold text-gray-800 font-heading flex items-center gap-2">
+                <span>🎖️</span> Huy hiệu học tập
+              </h4>
+              <span class="text-xs text-gray-400">Đã mở khóa 4/5</span>
+            </div>
+            <div id="user-badges-list" class="space-y-2.5"></div>
+          </div>
+        </div>
+
+        <!-- Cột phải: Sổ tay ghi chú & Từ đã ghim -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="mochi-card p-6 sm:p-7">
+            <div class="flex items-center justify-between mb-4">
+              <div>
+                <h4 class="text-lg font-bold text-gray-800 font-heading flex items-center gap-2">
+                  <span>📝</span> Sổ tay của nàng
+                </h4>
+                <div class="text-xs text-gray-400">Ghi chú mục tiêu và động lực học tiếng Trung</div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button id="btn-export-notebook" class="px-3 py-1.5 rounded-full bg-purple-50 hover:bg-purple-100 text-purple-600 border border-purple-200 text-xs font-bold transition-all flex items-center gap-1 shadow-2xs" title="Tải sổ tay về máy">
+                  <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                  <span>Xuất sổ tay</span>
+                </button>
+                <button id="btn-add-personal-note" class="px-3.5 py-1.5 rounded-full bg-pink-50 hover:bg-pink-100 text-pink-600 border border-pink-200 text-xs font-bold transition-colors flex items-center gap-1 shadow-2xs">
+                  <span>+ Thêm ghi chú</span>
+                </button>
+              </div>
+            </div>
+
+            <div id="personal-notes-list" class="space-y-3 mb-6"></div>
+
+            <div class="pt-5 border-t border-gray-100">
+              <div class="flex items-center justify-between mb-3">
+                <h5 class="text-xs font-bold text-gray-500 uppercase tracking-wider flex items-center gap-1.5">
+                  <span>🔖</span> Từ vựng nàng đã ghim từ Từ Điển
+                </h5>
+              </div>
+              <div id="saved-words-chips" class="flex flex-wrap gap-2"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="bg-white border-t border-[#F7EBF0] pt-14 pb-12 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-12">
+        
+        <div class="lg:col-span-4 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-[#F59BB0] to-[#FFD9A8] flex items-center justify-center text-xl shadow-sm">
+              🐰
+            </div>
+            <span class="text-xl font-extrabold font-heading text-gray-800">Mochi Chinese</span>
+          </div>
+          <p class="text-xs sm:text-sm text-gray-500 leading-relaxed">
+            Cuốn sổ tay & từ điển tiếng Trung trực tuyến dịu dàng dành riêng cho nàng. Nhẹ nhàng, mỗi lần mở web là một điều mới mẻ!
+          </p>
+        </div>
+
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-bold text-gray-800 text-sm">Chuyên mục chính</h4>
+          <ul class="space-y-2 text-xs text-gray-500">
+            <li><a href="#dictionary" class="hover:text-pink-600">Từ điển Trung - Việt mini</a></li>
+            <li><a href="#catalog-lessons-section" class="hover:text-pink-600">15 Bài học phân theo cấp độ</a></li>
+            <li><a href="#discovery-section" class="hover:text-pink-600">Bốc thăm khám phá hôm nay</a></li>
+            <li><a href="#categories" class="hover:text-pink-600">Ô tập viết Mễ Tự Cách (米字格)</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-5 space-y-3">
+          <h4 class="font-bold text-gray-800 text-sm">Đăng ký nhận từ vựng mỗi sáng 💌</h4>
+          <p class="text-xs text-gray-500">
+            Gửi 1 từ vựng mặn mà và câu giao tiếp thực tế mỗi sáng vào lúc 8:00.
+          </p>
+          <div class="flex gap-2">
+            <input type="email" placeholder="Email của nàng nè..." class="w-full px-4 py-2.5 rounded-full border border-gray-200 text-xs focus:outline-none focus:border-pink-300 focus:ring-2 focus:ring-pink-100">
+            <button class="px-5 py-2.5 bg-[#F59BB0] hover:bg-[#E8839B] text-white text-xs font-bold rounded-full shadow-sm shrink-0 transition-all" onclick="showMochiToast('Cảm ơn nàng! Mochi sẽ gửi thư mỗi sáng nha 🌸')">
+              Đăng ký
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
+        <div>© 2026 Mochi Chinese. Made with 💕 for lovely learners.</div>
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:underline">Điều khoản</a>
+          <a href="#" class="hover:underline">Chính sách bảo mật</a>
+          <a href="#" class="hover:underline">Câu hỏi thường gặp</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       MODAL BÀI HỌC CHI TIẾT
+       ========================================================================= -->
+  <div id="lesson-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 mochi-modal-backdrop hidden">
+    <div class="relative w-full max-w-2xl max-h-[90vh] bg-white rounded-3xl shadow-2xl overflow-y-auto border border-pink-100 animate-gentle-pulse-once">
+      <button id="btn-close-modal" class="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-white/90 text-gray-500 hover:text-gray-800 flex items-center justify-center shadow-sm border border-gray-200 transition-transform hover:scale-110">
+        ✕
+      </button>
+      <div id="lesson-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL CHI TIẾT MỤC TỪ BÁCH KHOA & CẦU NỐI TẬP VIẾT
+       ========================================================================= -->
+  <div id="word-detail-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 mochi-modal-backdrop hidden">
+    <div class="relative w-full max-w-xl max-h-[90vh] bg-white rounded-3xl shadow-2xl overflow-y-auto border border-pink-100">
+      <button id="btn-close-word-modal" class="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-white/90 text-gray-500 hover:text-gray-800 flex items-center justify-center shadow-sm border border-gray-200 transition-transform hover:scale-110">
+        ✕
+      </button>
+      <div id="word-detail-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL SOẠN GHI CHÚ SỔ TAY PASTEL
+       ========================================================================= -->
+  <div id="note-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 mochi-modal-backdrop hidden">
+    <div class="relative w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden border border-pink-100">
+      <div class="p-6 bg-gradient-to-r from-pink-50 via-purple-50 to-amber-50 border-b border-pink-100 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">📝</span>
+          <h4 class="font-extrabold font-heading text-base text-gray-800">Ghi Chú Vào Sổ Tay Của Nàng</h4>
+        </div>
+        <button id="btn-close-note-modal" class="w-7 h-7 rounded-full bg-white text-gray-400 hover:text-gray-700 flex items-center justify-center shadow-2xs border border-gray-200">
+          ✕
+        </button>
+      </div>
+
+      <div class="p-6 space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1.5">Tiêu đề ghi chú:</label>
+          <input id="note-title-input" type="text" placeholder="Ví dụ: Mục tiêu tuần này, Mẹo thi HSK..." class="w-full px-4 py-2.5 rounded-2xl border border-gray-200 text-xs sm:text-sm font-semibold text-gray-700 focus:outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-100">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1.5">Nội dung tâm đắc:</label>
+          <textarea id="note-content-input" rows="4" placeholder="Nàng muốn lưu lại điều gì hôm nay nè..." class="w-full px-4 py-2.5 rounded-2xl border border-gray-200 text-xs sm:text-sm text-gray-700 focus:outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-100 resize-none"></textarea>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-2">Chọn màu giấy pastel xinh xắn:</label>
+          <div id="note-color-picker" class="flex items-center gap-3">
+            <div class="color-swatch bg-[#FFFDF0] border border-amber-200 selected" data-color="bg-[#FFFDF0]"></div>
+            <div class="color-swatch bg-[#FFF0F4] border border-pink-200" data-color="bg-[#FFF0F4]"></div>
+            <div class="color-swatch bg-[#F5EFFF] border border-purple-200" data-color="bg-[#F5EFFF]"></div>
+            <div class="color-swatch bg-[#F0FBF6] border border-emerald-200" data-color="bg-[#F0FBF6]"></div>
+            <div class="color-swatch bg-[#FFF6EE] border border-orange-200" data-color="bg-[#FFF6EE]"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-5 bg-gray-50 border-t border-gray-100 flex items-center justify-end gap-2">
+        <button id="btn-cancel-note" class="px-4 py-2 text-xs font-bold text-gray-500 hover:text-gray-800">
+          Hủy bỏ
+        </button>
+        <button id="btn-save-note-modal" class="px-5 py-2.5 bg-[#F59BB0] hover:bg-[#E8839B] text-white text-xs font-bold rounded-full shadow-sm transition-all">
+          Lưu vào Sổ Tay 🌸
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MOBILE DRAWER MENU
+       ========================================================================= -->
+  <div id="drawer-backdrop" class="fixed inset-0 bg-black/30 z-50 backdrop-blur-xs hidden"></div>
+  
+  <div id="mobile-drawer" class="fixed top-0 right-0 h-full w-4/5 max-w-sm bg-white z-50 shadow-2xl p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-out border-l border-pink-100">
+    <div>
+      <div class="flex items-center justify-between pb-4 border-b border-gray-100 mb-6">
+        <div class="flex items-center gap-2">
+          <span class="text-2xl">🐰</span>
+          <span class="font-extrabold font-heading text-lg text-gray-800">Mochi Chinese</span>
+        </div>
+        <button id="btn-close-drawer" class="p-2 rounded-full hover:bg-gray-100 text-gray-500">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <nav class="space-y-3 text-sm font-bold text-gray-700">
+        <a href="#hero" class="block p-3 rounded-2xl hover:bg-pink-50 hover:text-pink-600 transition-colors">Trang chủ</a>
+        <a href="#dictionary" class="block p-3 rounded-2xl hover:bg-pink-50 hover:text-pink-600 transition-colors">Bách khoa tra cứu 📖</a>
+        <a href="#native-chat" class="block p-3 rounded-2xl hover:bg-pink-50 hover:text-pink-600 transition-colors flex items-center justify-between">
+          <span>Đàm thoại thực chiến</span>
+          <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-pink-100 text-pink-700">Mới 💬</span>
+        </a>
+        <a href="#writing-studio" class="block p-3 rounded-2xl hover:bg-pink-50 hover:text-pink-600 transition-colors flex items-center justify-between">
+          <span>Phòng luyện viết AI</span>
+          <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-purple-100 text-purple-700">Mới ✍️</span>
+        </a>
+        <a href="#catalog-lessons-section" class="block p-3 rounded-2xl hover:bg-pink-50 hover:text-pink-600 transition-colors">15 Bài học theo cấp</a>
+        <a href="#flashcards" class="block p-3 rounded-2xl hover:bg-pink-50 hover:text-pink-600 transition-colors">Kho Flashcard 3D</a>
+        <a href="#progress" class="block p-3 rounded-2xl hover:bg-pink-50 hover:text-pink-600 transition-colors">Góc sổ tay của nàng</a>
+      </nav>
+    </div>
+
+    <div class="pt-6 border-t border-gray-100 space-y-3">
+      <button class="btn-toggle-pinyin w-full py-2.5 rounded-2xl border border-pink-200 text-xs font-bold text-pink-600 flex items-center justify-center gap-2">
+        <span class="font-chinese">拼</span>
+        <span>Bật/Tắt Pinyin</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MOBILE BOTTOM NAVIGATION BAR
+       ========================================================================= -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-[#F7EBF0] px-3 py-2 flex items-center justify-around shadow-lg">
+    
+    <a href="#hero" class="bottom-nav-btn active flex flex-col items-center gap-1 text-[10px] font-bold text-gray-500">
+      <div class="nav-icon-wrapper p-1 rounded-xl transition-all">
+        <i data-lucide="home" class="w-4 h-4"></i>
+      </div>
+      <span>Trang chủ</span>
+    </a>
+
+    <a href="#dictionary" class="bottom-nav-btn flex flex-col items-center gap-1 text-[10px] font-bold text-gray-500">
+      <div class="nav-icon-wrapper p-1 rounded-xl transition-all">
+        <i data-lucide="book-open" class="w-4 h-4"></i>
+      </div>
+      <span>Từ điển</span>
+    </a>
+
+    <a href="#catalog-lessons-section" class="bottom-nav-btn flex flex-col items-center gap-1 text-[10px] font-bold text-gray-500">
+      <div class="nav-icon-wrapper p-1 rounded-xl transition-all">
+        <i data-lucide="layers" class="w-4 h-4"></i>
+      </div>
+      <span>Bài học</span>
+    </a>
+
+    <a href="#discovery-section" class="bottom-nav-btn flex flex-col items-center gap-1 text-[10px] font-bold text-gray-500">
+      <div class="nav-icon-wrapper p-1 rounded-xl transition-all">
+        <i data-lucide="sparkles" class="w-4 h-4"></i>
+      </div>
+      <span>Khám phá</span>
+    </a>
+
+    <a href="#progress" class="bottom-nav-btn flex flex-col items-center gap-1 text-[10px] font-bold text-gray-500">
+      <div class="nav-icon-wrapper p-1 rounded-xl transition-all">
+        <i data-lucide="heart" class="w-4 h-4"></i>
+      </div>
+      <span>Sổ tay</span>
+    </a>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- =========================================================================
+       MODAL CÀI ĐẶT TRÍ TUỆ NHÂN TẠO AI SONG HÀNH (GEMINI + OPENAI FAILOVER)
+       ========================================================================= -->
+  <div id="chat-ai-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 mochi-modal-backdrop hidden">
+    <div class="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl p-6 sm:p-7 border border-pink-100 animate-gentle-pulse-once space-y-5">
+      
+      <div class="flex items-center justify-between border-b border-pink-100 pb-3">
+        <div class="flex items-center gap-2">
+          <span class="text-2xl">✨</span>
+          <div>
+            <h3 class="font-bold text-gray-800 text-lg font-heading">Cài Đặt Hệ Thống AI Song Hành</h3>
+            <p class="text-[11px] text-gray-400">Động cơ kép: Google Gemini & OpenAI GPT-4o Dự phòng</p>
+          </div>
+        </div>
+        <button id="btn-close-ai-modal" class="p-1.5 rounded-full hover:bg-gray-100 text-gray-400 hover:text-gray-600">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="text-xs text-gray-600 leading-relaxed space-y-2">
+        <div class="p-3.5 rounded-2xl bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 text-purple-900 text-xs space-y-1.5">
+          <div class="font-bold flex items-center gap-1.5 text-purple-950">
+            <span>🛡️ Kiến trúc Dự phòng Thông minh 3 Lớp (Failover Protection):</span>
+          </div>
+          <p class="text-[11px] leading-relaxed text-purple-800">
+            Hệ thống ưu tiên sử dụng <strong>Google Gemini</strong>. Nếu Gemini chạm hạn mức tạm thời hoặc lỗi kết nối, hệ thống sẽ <strong>tự động chuyển tiếp sang OpenAI GPT-4o</strong> phục vụ tức thì. Nếu cả 2 đều ngoại tuyến, hệ thống sẽ tự về <strong>Động cơ Cảm xúc & Từ điển Nội bộ</strong>, đảm bảo không bao giờ bị gián đoạn!
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-3.5 max-h-[50vh] overflow-y-auto pr-1">
+        <!-- Động cơ chính: Google Gemini -->
+        <div class="p-3.5 rounded-2xl bg-pink-50/60 border border-pink-200 space-y-2">
+          <div class="flex items-center justify-between">
+            <label class="text-xs font-bold text-gray-800 flex items-center gap-1.5">
+              <span>🔵 1. Google Gemini API (Động cơ chính)</span>
+            </label>
+            <a href="https://aistudio.google.com/app/apikey" target="_blank" class="text-[10px] underline font-bold text-pink-600 hover:text-pink-700">Lấy key miễn phí</a>
+          </div>
+          <input type="password" id="input-gemini-api-key" class="w-full px-3.5 py-2 rounded-xl border border-gray-200 text-xs font-mono focus:outline-none focus:border-pink-400 bg-white" placeholder="AIzaSy... (Khóa Gemini)" />
+          <select id="select-gemini-model" class="w-full px-3 py-1.5 rounded-xl border border-gray-200 text-xs font-bold text-gray-700 focus:outline-none focus:border-pink-400 bg-white">
+            <option value="gemini-2.5-flash">Gemini 2.0 / 2.5 Flash (Thế hệ mới nhất 🚀)</option>
+            <option value="gemini-1.5-flash">Gemini 1.5 Flash (Siêu nhanh, phản xạ tức thì ~0.5s ⚡)</option>
+            <option value="gemini-1.5-pro">Gemini 1.5 Pro (Trí tuệ cao cấp, văn phong tinh tế 👑)</option>
+          </select>
+        </div>
+
+        <!-- Động cơ dự phòng: OpenAI -->
+        <div class="p-3.5 rounded-2xl bg-emerald-50/60 border border-emerald-200 space-y-2">
+          <div class="flex items-center justify-between">
+            <label class="text-xs font-bold text-gray-800 flex items-center gap-1.5">
+              <span>🟢 2. OpenAI API (Động cơ dự phòng khi Gemini quá tải)</span>
+            </label>
+            <span class="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">Dự phòng tự động</span>
+          </div>
+          <input type="password" id="input-openai-api-key" class="w-full px-3.5 py-2 rounded-xl border border-gray-200 text-xs font-mono focus:outline-none focus:border-emerald-400 bg-white" placeholder="sk-proj-... (Khóa OpenAI)" />
+          <select id="select-openai-model" class="w-full px-3 py-1.5 rounded-xl border border-gray-200 text-xs font-bold text-gray-700 focus:outline-none focus:border-emerald-400 bg-white">
+            <option value="gpt-4o-mini">GPT-4o Mini (Phản xạ siêu tốc, thông minh & tiết kiệm ⚡ - Khuyên dùng)</option>
+            <option value="gpt-4o">GPT-4o (Mô hình đỉnh cao, tư duy sắc sảo 🧠)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between pt-2 border-t border-gray-100">
+        <button id="btn-clear-ai-key" class="px-4 py-2 rounded-full hover:bg-gray-100 text-gray-500 text-xs font-bold transition-colors">
+          Xóa khóa & Về Offline
+        </button>
+        <button id="btn-save-ai-key" class="px-5 py-2.5 bg-gradient-to-r from-[#F59BB0] to-[#A98CF0] hover:opacity-90 text-white text-xs font-bold rounded-full shadow-sm transition-transform active:scale-95">
+          Lưu & Kích hoạt Hệ thống 🌸
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
