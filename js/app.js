@@ -3564,6 +3564,42 @@ function initNativeChat() {
 
     const p = personas[currentChatPersonaId];
 
+    // TIER 0: CALL VERCEL SERVERLESS AI (Secure server-side API keys)
+    try {
+      const srvRes = await fetch('/api/ai', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'chat', text: cleanText, persona: p })
+      });
+      if (srvRes.ok) {
+        const srvData = await srvRes.json();
+        if (srvData && srvData.success && srvData.data) {
+          const aiResponse = srvData.data;
+          const ind = document.getElementById("chat-typing-indicator");
+          if (ind) ind.remove();
+
+          history.push({
+            sender: "native",
+            hanzi: aiResponse.hanzi,
+            pinyin: aiResponse.pinyin,
+            vi: aiResponse.vi,
+            time: timeStr
+          });
+
+          renderChatMessages();
+          if (aiResponse.nextReplies && aiResponse.nextReplies.length > 0) {
+            renderQuickReplies(aiResponse.nextReplies);
+          }
+          playDingSound(true);
+          speakChinese(aiResponse.hanzi);
+          showMochiToast(`Đã đối đáp cùng ${srvData.engine || "AI trực tuyến"} 🌸`);
+          return;
+        }
+      }
+    } catch (e) {
+      // Smoothly fall back to client tiers
+    }
+
     // TIER 1: CALL REAL GEMINI AI API IF CONFIGURED
     if (geminiApiKey && isAiModeActive) {
       try {
@@ -4068,6 +4104,25 @@ function initWritingStudio() {
     const modelName = localStorage.getItem("mochi_gemini_model") || "gemini-1.5-flash";
     const openAiApiKey = localStorage.getItem("mochi_openai_api_key");
     const openAiModel = localStorage.getItem("mochi_openai_model") || "gpt-4o-mini";
+
+    // TIER 0: VERCEL SERVERLESS AI (Secure server-side API keys)
+    try {
+      const srvRes = await fetch('/api/ai', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'grade', text: text, promptData: p })
+      });
+      if (srvRes.ok) {
+        const srvData = await srvRes.json();
+        if (srvData && srvData.success && srvData.data) {
+          renderAiEvaluation(srvData.data, p, text, srvData.engine || "Trí Tuệ Nhân Tạo AI");
+          showMochiToast(`Đã hoàn tất thẩm định bài viết bằng ${srvData.engine || "AI"}! ✨`);
+          return;
+        }
+      }
+    } catch (e) {
+      // Fall back to client tiers
+    }
 
     if (apiKey || openAiApiKey) {
       evaluationContainer.innerHTML = `
