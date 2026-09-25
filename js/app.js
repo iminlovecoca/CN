@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initNativeChat();
   initWritingStudio();
   initTranslatorStudio();
+  initVocabTypingStudio();
   initFloatingQuickNav();
 });
 
@@ -820,6 +821,36 @@ async function ensureDictionaryWord(query) {
     w.meaning.toLowerCase() === lower
   );
   if (found) return found;
+
+  // Fast lookup in 6,200 HSK Vocabulary Bank (0ms instant response)
+  if (typeof window !== 'undefined' && window.MOCHI_VOCAB_BANK && Array.isArray(window.MOCHI_VOCAB_BANK)) {
+    const vocabMatch = window.MOCHI_VOCAB_BANK.find(w => 
+      w.hanzi.toLowerCase() === lower || 
+      (w.pinyin && w.pinyin.toLowerCase() === lower) ||
+      (w.meaning && w.meaning.toLowerCase().includes(lower))
+    );
+    if (vocabMatch) {
+      const newWord = {
+        id: "dict-vocab-" + encodeURIComponent(vocabMatch.hanzi),
+        hanzi: vocabMatch.hanzi,
+        pinyin: vocabMatch.pinyin || "pīn yīn",
+        hanviet: vocabMatch.hanviet || computeDynamicHanViet(vocabMatch.hanzi),
+        wordType: "Từ vựng chuẩn " + vocabMatch.hsk,
+        hsk: vocabMatch.hsk,
+        meaning: vocabMatch.meaning,
+        strokes: Math.min(32, Math.max(4, vocabMatch.hanzi.length * 6)),
+        radical: vocabMatch.hanzi.charAt(0),
+        example: vocabMatch.example || `这是一个关于“${vocabMatch.hanzi}”的句子。`,
+        exampleVi: vocabMatch.exampleVi || `Đây là một câu ví dụ về từ “${vocabMatch.hanzi}”.`,
+        collocations: [`常用${vocabMatch.hanzi}`, `学习${vocabMatch.hanzi}`],
+        tip: `Từ vựng chuẩn cấp độ ${vocabMatch.hsk} (Âm Hán Việt: ${vocabMatch.hanviet || ''}). Bạn có thể luyện viết nét chữ hoặc luyện gõ tại Studio Luyện Gõ Từ Vựng nhé!`,
+        searchTag: lower,
+        isDynamic: true
+      };
+      MOCHI_DATA.dictionaryBank.unshift(newWord);
+      return newWord;
+    }
+  }
 
   const isChinese = /[\u4e00-\u9fa5]+/.test(cleanQ);
   try {
@@ -5377,4 +5408,704 @@ function initVideoTranslator() {
   }
 
   renderSubtitles();
+}
+
+
+/* ==========================================================================
+   26. Studio Kiểm Tra & Luyện Gõ Từ Vựng - Check Pass / Fail (HSK 1 - 6)
+   ========================================================================== */
+function initVocabTypingStudio() {
+  const tableBody = document.getElementById("typing-table-body");
+  const cardsGrid = document.getElementById("typing-cards-grid");
+  const tableWrapper = document.getElementById("typing-table-wrapper");
+  const emptyState = document.getElementById("typing-empty-state");
+  const statTotal = document.getElementById("typing-stat-total");
+  const statPassed = document.getElementById("typing-stat-passed");
+  const statFailed = document.getElementById("typing-stat-failed");
+  const statAccuracy = document.getElementById("typing-stat-accuracy");
+  const statProgressBar = document.getElementById("typing-stat-progress-bar");
+  const statLevelLabel = document.getElementById("typing-stat-level-label");
+  const countBadge = document.getElementById("typing-visible-count-badge");
+  const searchInput = document.getElementById("typing-search-input");
+  const statusFilterSelect = document.getElementById("typing-status-filter");
+  const pageSizeSelect = document.getElementById("typing-page-size");
+  const levelTabsContainer = document.getElementById("typing-level-tabs");
+  const paginationControls = document.getElementById("typing-pagination-controls");
+  const paginationInfo = document.getElementById("typing-pagination-info");
+  const btnToggleExam = document.getElementById("btn-toggle-exam-mode");
+  const examModeLabel = document.getElementById("exam-mode-label");
+  const btnResetProgress = document.getElementById("btn-reset-typing-progress");
+  const btnViewTable = document.getElementById("btn-typing-view-table");
+  const btnViewCards = document.getElementById("btn-typing-view-cards");
+
+  if (!tableBody && !cardsGrid) return;
+
+  const STORAGE_KEY = "mochi_typing_studio_progress_v2";
+
+  function getProgressMap() {
+    try {
+      return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+    } catch (e) {
+      return {};
+    }
+  }
+
+  function saveProgressMap(map) {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(map));
+    } catch (e) {
+      console.warn("Storage warning:", e);
+    }
+  }
+
+  // Active state - Default to HSK 4 (1.200 words) as requested by user
+  let currentLevel = "HSK 4";
+  let currentStatus = "all";
+  let searchQuery = "";
+  let pageSize = 25;
+  let currentPage = 1;
+  let isExamMode = false;
+  let viewMode = "table";
+
+  // Data bank accessor
+  function getAllVocab() {
+    if (window.MOCHI_VOCAB_BANK && Array.isArray(window.MOCHI_VOCAB_BANK) && window.MOCHI_VOCAB_BANK.length > 0) {
+      return window.MOCHI_VOCAB_BANK;
+    }
+    if (window.MOCHI_DATA && window.MOCHI_DATA.typingVocabBank && Array.isArray(window.MOCHI_DATA.typingVocabBank)) {
+      return window.MOCHI_DATA.typingVocabBank;
+    }
+    return [];
+  }
+
+  // Clean / normalize pinyin for lenient comparison
+  function stripPinyinToneMarks(str) {
+    if (!str) return "";
+    return str
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[1-5]/g, "")
+      .toLowerCase()
+      .replace(/\s+/g, "")
+      .replace(/['’]/g, "");
+  }
+
+  // Evaluation: check if user input matches target Hanzi or Pinyin
+  function evaluateTyping(inputVal, word) {
+    if (!inputVal) return "pending";
+    const cleanInput = inputVal.trim();
+    if (!cleanInput) return "pending";
+
+    // 1. Direct Hanzi match
+    if (cleanInput === word.hanzi.trim()) return "passed";
+
+    // 2. Direct Pinyin match (exact with tones)
+    const targetPy = (word.pinyin || "").trim().toLowerCase();
+    if (cleanInput.toLowerCase() === targetPy) return "passed";
+    if (cleanInput.toLowerCase().replace(/\s+/g, "") === targetPy.replace(/\s+/g, "")) return "passed";
+
+    // 3. Lenient tone-free Pinyin match (allows learners without Chinese IME to practice!)
+    const inputToneFree = stripPinyinToneMarks(cleanInput);
+    const targetToneFree = stripPinyinToneMarks(word.pinyin);
+    if (inputToneFree && targetToneFree && inputToneFree === targetToneFree) {
+      return "passed";
+    }
+
+    return "failed";
+  }
+
+  // Filter words
+  function getFilteredWords() {
+    const all = getAllVocab();
+    const progress = getProgressMap();
+
+    return all.filter(word => {
+      // Level filter
+      if (currentLevel !== "all" && word.hsk !== currentLevel) {
+        return false;
+      }
+
+      // Status filter
+      if (currentStatus !== "all") {
+        const itemProg = progress[word.id];
+        const status = itemProg ? itemProg.status : "pending";
+        if (currentStatus !== status) return false;
+      }
+
+      // Search filter
+      if (searchQuery) {
+        const q = searchQuery.toLowerCase().trim();
+        const hanziMatch = word.hanzi.toLowerCase().includes(q);
+        const pinyinMatch = (word.pinyin || "").toLowerCase().includes(q);
+        const pinyinTonesMatch = stripPinyinToneMarks(word.pinyin).includes(stripPinyinToneMarks(q));
+        const meaningMatch = (word.meaning || "").toLowerCase().includes(q);
+        const hanvietMatch = (word.hanviet || "").toLowerCase().includes(q);
+        if (!hanziMatch && !pinyinMatch && !pinyinTonesMatch && !meaningMatch && !hanvietMatch) {
+          return false;
+        }
+      }
+
+      return true;
+    });
+  }
+
+  // Highlight keyword in example sentence
+  function formatHighlightedExample(sentence, keyword, passed) {
+    if (!sentence) return "";
+    if (isExamMode && !passed) {
+      // In Exam mode, mask the keyword until the user solves it!
+      const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      return sentence.replace(new RegExp(escaped, "g"), 
+        '<span class="bg-gray-200 text-gray-400 px-2 py-0.5 rounded font-mono font-bold select-none">[ ? ? ? ]</span>'
+      );
+    }
+    const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    return sentence.replace(new RegExp(escaped, "g"), 
+      `<span class="text-rose-600 font-bold bg-rose-50 px-1.5 py-0.5 rounded border border-rose-200/80 shadow-2xs">${keyword}</span>`
+    );
+  }
+
+  // Update HUD statistics
+  function updateStats() {
+    const all = getAllVocab();
+    const progress = getProgressMap();
+
+    const activeList = currentLevel === "all" ? all : all.filter(w => w.hsk === currentLevel);
+    const totalCount = activeList.length;
+
+    let passedCount = 0;
+    let failedCount = 0;
+
+    activeList.forEach(w => {
+      const p = progress[w.id];
+      if (p && p.status === "passed") passedCount++;
+      else if (p && p.status === "failed") failedCount++;
+    });
+
+    const attempted = passedCount + failedCount;
+    const accuracy = attempted > 0 ? Math.round((passedCount / attempted) * 100) : 0;
+    const progressPercent = totalCount > 0 ? Math.round((passedCount / totalCount) * 100) : 0;
+
+    if (statTotal) statTotal.textContent = totalCount.toLocaleString("vi-VN");
+    if (statPassed) statPassed.textContent = passedCount.toLocaleString("vi-VN");
+    if (statFailed) statFailed.textContent = failedCount.toLocaleString("vi-VN");
+    if (statAccuracy) statAccuracy.textContent = `${accuracy}%`;
+    if (statProgressBar) statProgressBar.style.width = `${progressPercent}%`;
+
+    if (statLevelLabel) {
+      if (currentLevel === "all") statLevelLabel.textContent = "Toàn bộ 6 cấp độ HSK";
+      else if (currentLevel === "HSK 4") statLevelLabel.textContent = "HSK 4 Chuẩn (1.200 từ) ★";
+      else statLevelLabel.textContent = `${currentLevel} (1.000 từ)`;
+    }
+  }
+
+  // Render view
+  function renderTypingStudio() {
+    const filtered = getFilteredWords();
+    const progress = getProgressMap();
+    const totalItems = filtered.length;
+
+    if (countBadge) {
+      countBadge.textContent = `${totalItems.toLocaleString("vi-VN")} từ vựng`;
+    }
+
+    if (totalItems === 0) {
+      if (tableWrapper) tableWrapper.classList.add("hidden");
+      if (cardsGrid) cardsGrid.classList.add("hidden");
+      if (emptyState) emptyState.classList.remove("hidden");
+      if (paginationControls) paginationControls.innerHTML = "";
+      if (paginationInfo) paginationInfo.textContent = "Không có từ vựng nào khớp bộ lọc";
+      return;
+    }
+
+    if (emptyState) emptyState.classList.add("hidden");
+
+    // Pagination calculations
+    const limit = pageSize === "all" ? totalItems : parseInt(pageSize, 10);
+    const totalPages = Math.ceil(totalItems / limit) || 1;
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
+
+    const startIdx = (currentPage - 1) * limit;
+    const endIdx = Math.min(startIdx + limit, totalItems);
+    const pageItems = filtered.slice(startIdx, endIdx);
+
+    if (paginationInfo) {
+      paginationInfo.textContent = `Đang hiển thị ${startIdx + 1} - ${endIdx} trên tổng số ${totalItems.toLocaleString("vi-VN")} từ`;
+    }
+
+    renderPaginationControls(totalPages);
+
+    if (viewMode === "table") {
+      if (tableWrapper) tableWrapper.classList.remove("hidden");
+      if (cardsGrid) cardsGrid.classList.add("hidden");
+      renderTableRows(pageItems, startIdx, progress);
+    } else {
+      if (tableWrapper) tableWrapper.classList.add("hidden");
+      if (cardsGrid) cardsGrid.classList.remove("hidden");
+      renderCardItems(pageItems, startIdx, progress);
+    }
+
+    updateStats();
+    if (window.lucide) window.lucide.createIcons();
+  }
+
+  // Render table rows
+  function renderTableRows(items, startIdx, progress) {
+    if (!tableBody) return;
+    tableBody.innerHTML = "";
+
+    const rowsHtml = items.map((word, index) => {
+      const globalIndex = startIdx + index + 1;
+      const prog = progress[word.id] || { input: "", status: "pending" };
+      const status = prog.status || "pending";
+      const userVal = prog.input || "";
+
+      let checkBadgeHtml = "";
+      let inputBorderClass = "border-gray-200 bg-white text-gray-800 focus:border-pink-400 focus:ring-pink-200";
+
+      if (status === "passed") {
+        checkBadgeHtml = `<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-black bg-emerald-100 text-emerald-800 border border-emerald-300 shadow-2xs"><i data-lucide="check" class="w-3.5 h-3.5"></i> PASS ✓</span>`;
+        inputBorderClass = "border-emerald-400 bg-emerald-50/70 text-emerald-900 font-bold focus:ring-emerald-200";
+      } else if (status === "failed") {
+        checkBadgeHtml = `<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-black bg-rose-100 text-rose-800 border border-rose-300 shadow-2xs"><i data-lucide="x" class="w-3.5 h-3.5"></i> FAILED ✗</span>`;
+        inputBorderClass = "border-rose-400 bg-rose-50/60 text-rose-900 font-semibold focus:ring-rose-200";
+      } else {
+        checkBadgeHtml = `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-gray-100 text-gray-500 border border-gray-200">Chờ gõ ⏳</span>`;
+      }
+
+      const highlightedEx = formatHighlightedExample(word.example, word.hanzi, status === "passed");
+
+      return `
+        <tr class="hover:bg-pink-50/30 transition-colors" data-id="${word.id}">
+          <td class="py-3 px-3 text-center text-xs text-gray-400 font-mono border-r border-gray-100 select-none">${globalIndex}</td>
+          <td class="py-2.5 px-3 border-r border-gray-100">
+            <div class="relative">
+              <input type="text" 
+                     data-vocab-id="${word.id}" 
+                     value="${escapeHtml(userVal)}" 
+                     placeholder="Gõ chữ Hán..." 
+                     autocomplete="off" 
+                     autocapitalize="off" 
+                     spellcheck="false" 
+                     class="typing-input w-full px-3 py-1.5 rounded-xl border text-sm font-chinese tracking-wide transition-all focus:outline-none focus:ring-2 ${inputBorderClass}" />
+            </div>
+          </td>
+          <td class="py-3 px-4 text-xs font-semibold text-gray-700 border-r border-gray-100 leading-snug">
+            <div>${escapeHtml(word.meaning)}</div>
+            <div class="text-[11px] text-gray-400 font-normal mt-0.5">
+              Âm HV: <span class="text-pink-600 font-bold">${escapeHtml(word.hanviet || "")}</span>
+              ${word.pinyin ? `<span class="ml-2 font-mono text-gray-500 font-medium">(${escapeHtml(word.pinyin)})</span>` : ""}
+            </div>
+          </td>
+          <td class="py-3 px-3 text-center border-r border-gray-100" id="check-cell-${word.id}">
+            ${checkBadgeHtml}
+          </td>
+          <td class="py-3 px-4 text-xs font-chinese text-gray-800 border-r border-gray-100 leading-relaxed font-medium">
+            ${highlightedEx}
+          </td>
+          <td class="py-3 px-4 text-xs font-mono text-gray-500 border-r border-gray-100 leading-relaxed">
+            ${escapeHtml(word.examplePinyin || "")}
+          </td>
+          <td class="py-3 px-4 text-xs text-gray-600 border-r border-gray-100 leading-relaxed">
+            ${escapeHtml(word.exampleVi || "")}
+          </td>
+          <td class="py-3 px-2 text-center">
+            <div class="flex items-center justify-center gap-1">
+              <button class="btn-play-vocab-audio p-1.5 rounded-lg hover:bg-pink-100 text-pink-600 transition-colors" data-hanzi="${escapeHtml(word.hanzi)}" data-example="${escapeHtml(word.example || '')}" title="Phát âm từ vựng & câu ví dụ">
+                <i data-lucide="volume-2" class="w-4 h-4"></i>
+              </button>
+              <button class="btn-show-vocab-hint p-1.5 rounded-lg hover:bg-amber-100 text-amber-600 transition-colors" data-id="${word.id}" data-answer="${escapeHtml(word.hanzi)} (${escapeHtml(word.pinyin)})" title="Xem gợi ý đáp án">
+                <i data-lucide="lightbulb" class="w-4 h-4"></i>
+              </button>
+              <button class="btn-practice-write-char p-1.5 rounded-lg hover:bg-purple-100 text-purple-600 transition-colors" data-char="${escapeHtml(word.hanzi[0] || word.hanzi)}" title="Tập viết nét chữ">
+                <i data-lucide="feather" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </td>
+        </tr>
+      `;
+    }).join("");
+
+    tableBody.innerHTML = rowsHtml;
+    attachInputListeners();
+  }
+
+  // Render card items (alternative card mode)
+  function renderCardItems(items, startIdx, progress) {
+    if (!cardsGrid) return;
+    cardsGrid.innerHTML = "";
+
+    const cardsHtml = items.map((word, index) => {
+      const globalIndex = startIdx + index + 1;
+      const prog = progress[word.id] || { input: "", status: "pending" };
+      const status = prog.status || "pending";
+      const userVal = prog.input || "";
+
+      let checkBadgeHtml = "";
+      let borderClass = "border-gray-200 bg-white";
+
+      if (status === "passed") {
+        checkBadgeHtml = `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-black bg-emerald-100 text-emerald-800 border border-emerald-300">PASS ✓</span>`;
+        borderClass = "border-emerald-300 bg-emerald-50/20";
+      } else if (status === "failed") {
+        checkBadgeHtml = `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-black bg-rose-100 text-rose-800 border border-rose-300">FAILED ✗</span>`;
+        borderClass = "border-rose-300 bg-rose-50/20";
+      } else {
+        checkBadgeHtml = `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-gray-100 text-gray-500">Chờ gõ ⏳</span>`;
+      }
+
+      return `
+        <div class="p-4 sm:p-5 rounded-3xl border ${borderClass} shadow-sm space-y-3.5 transition-all hover:shadow-md" data-id="${word.id}">
+          <div class="flex items-center justify-between">
+            <span class="text-[11px] font-mono font-bold text-gray-400">#${globalIndex} • ${word.hsk}</span>
+            <div id="check-cell-${word.id}">
+              ${checkBadgeHtml}
+            </div>
+          </div>
+
+          <div class="space-y-1">
+            <div class="text-xs font-bold text-gray-800 leading-snug">${escapeHtml(word.meaning)}</div>
+            <div class="text-[11px] text-gray-400">
+              Hán Việt: <span class="text-pink-600 font-bold">${escapeHtml(word.hanviet || "")}</span>
+              ${word.pinyin ? `<span class="ml-1.5 font-mono text-gray-500">(${escapeHtml(word.pinyin)})</span>` : ""}
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-1">Gõ chữ Hán vào đây:</label>
+            <input type="text" 
+                   data-vocab-id="${word.id}" 
+                   value="${escapeHtml(userVal)}" 
+                   placeholder="Chữ Hán hoặc Pinyin..." 
+                   autocomplete="off" 
+                   class="typing-input w-full px-3.5 py-2 rounded-2xl border border-gray-200 text-base font-chinese focus:outline-none focus:ring-2 focus:ring-pink-300 bg-white" />
+          </div>
+
+          <div class="p-3 rounded-2xl bg-gray-50/80 border border-gray-100 space-y-1 text-xs">
+            <div class="font-chinese text-gray-800">${formatHighlightedExample(word.example, word.hanzi, status === "passed")}</div>
+            <div class="font-mono text-[11px] text-gray-400">${escapeHtml(word.examplePinyin || "")}</div>
+            <div class="text-gray-600 text-[11px]">${escapeHtml(word.exampleVi || "")}</div>
+          </div>
+
+          <div class="flex items-center justify-between pt-1">
+            <button class="btn-play-vocab-audio px-3 py-1.5 rounded-full bg-pink-50 hover:bg-pink-100 text-pink-700 text-xs font-bold flex items-center gap-1.5 transition-colors" data-hanzi="${escapeHtml(word.hanzi)}" data-example="${escapeHtml(word.example || '')}">
+              <i data-lucide="volume-2" class="w-3.5 h-3.5"></i>
+              <span>Nghe đọc</span>
+            </button>
+            <div class="flex items-center gap-1.5">
+              <button class="btn-show-vocab-hint p-1.5 rounded-full hover:bg-amber-100 text-amber-600 transition-colors" data-id="${word.id}" data-answer="${escapeHtml(word.hanzi)} (${escapeHtml(word.pinyin)})" title="Xem gợi ý">
+                <i data-lucide="lightbulb" class="w-4 h-4"></i>
+              </button>
+              <button class="btn-practice-write-char p-1.5 rounded-full hover:bg-purple-100 text-purple-600 transition-colors" data-char="${escapeHtml(word.hanzi[0] || word.hanzi)}" title="Tập viết nét">
+                <i data-lucide="feather" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join("");
+
+    cardsGrid.innerHTML = cardsHtml;
+    attachInputListeners();
+  }
+
+  // Attach event listeners to input elements
+  function attachInputListeners() {
+    const inputs = document.querySelectorAll(".typing-input");
+    const all = getAllVocab();
+    const wordMap = {};
+    all.forEach(w => { wordMap[w.id] = w; });
+
+    inputs.forEach((input, idx) => {
+      input.addEventListener("input", (e) => {
+        const wordId = input.getAttribute("data-vocab-id");
+        const word = wordMap[wordId];
+        if (!word) return;
+
+        const val = input.value;
+        const status = evaluateTyping(val, word);
+
+        // Update progress in storage
+        const progress = getProgressMap();
+        progress[wordId] = {
+          input: val,
+          status: status,
+          updatedAt: Date.now()
+        };
+        saveProgressMap(progress);
+
+        // Update check cell in DOM
+        const checkCell = document.getElementById(`check-cell-${wordId}`);
+        if (checkCell) {
+          if (status === "passed") {
+            checkCell.innerHTML = `<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-black bg-emerald-100 text-emerald-800 border border-emerald-300 shadow-2xs animate-bounce-short"><i data-lucide="check" class="w-3.5 h-3.5"></i> PASS ✓</span>`;
+            input.className = "typing-input w-full px-3 py-1.5 rounded-xl border text-sm font-chinese tracking-wide transition-all focus:outline-none focus:ring-2 border-emerald-400 bg-emerald-50/70 text-emerald-900 font-bold focus:ring-emerald-200";
+            if (window.playRewardChime) window.playRewardChime();
+          } else if (status === "failed") {
+            checkCell.innerHTML = `<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-black bg-rose-100 text-rose-800 border border-rose-300 shadow-2xs"><i data-lucide="x" class="w-3.5 h-3.5"></i> FAILED ✗</span>`;
+            input.className = "typing-input w-full px-3 py-1.5 rounded-xl border text-sm font-chinese tracking-wide transition-all focus:outline-none focus:ring-2 border-rose-400 bg-rose-50/60 text-rose-900 font-semibold focus:ring-rose-200";
+          } else {
+            checkCell.innerHTML = `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-gray-100 text-gray-500 border border-gray-200">Chờ gõ ⏳</span>`;
+            input.className = "typing-input w-full px-3 py-1.5 rounded-xl border text-sm font-chinese tracking-wide transition-all focus:outline-none focus:ring-2 border-gray-200 bg-white text-gray-800 focus:border-pink-400 focus:ring-pink-200";
+          }
+          if (window.lucide) window.lucide.createIcons();
+        }
+
+        // Live stats update
+        updateStats();
+      });
+
+      // Quick arrow-key & Enter navigation between rows
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === "ArrowDown") {
+          e.preventDefault();
+          if (idx + 1 < inputs.length) inputs[idx + 1].focus();
+        } else if (e.key === "ArrowUp") {
+          e.preventDefault();
+          if (idx - 1 >= 0) inputs[idx - 1].focus();
+        }
+      });
+    });
+
+    // Audio pronunciation listener
+    document.querySelectorAll(".btn-play-vocab-audio").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const hanzi = btn.getAttribute("data-hanzi");
+        const example = btn.getAttribute("data-example");
+        if (window.speakChineseText) {
+          window.speakChineseText(hanzi);
+          if (example) {
+            setTimeout(() => {
+              window.speakChineseText(example);
+            }, 1200);
+          }
+        }
+      });
+    });
+
+    // Hint button listener
+    document.querySelectorAll(".btn-show-vocab-hint").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const answer = btn.getAttribute("data-answer");
+        showMochiToast(`Đáp án gợi ý: ${answer} 💡`, "info");
+      });
+    });
+
+    // Practice write button listener
+    document.querySelectorAll(".btn-practice-write-char").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const char = btn.getAttribute("data-char");
+        if (char && window.setWritingCharacter) {
+          window.setWritingCharacter(char);
+          const writingSection = document.getElementById("writing-studio");
+          if (writingSection) {
+            writingSection.scrollIntoView({ behavior: "smooth" });
+            showMochiToast(`Đã chuyển chữ '${char}' sang Phòng Luyện Viết ✍️`);
+          }
+        }
+      });
+    });
+  }
+
+  // Render pagination buttons
+  function renderPaginationControls(totalPages) {
+    if (!paginationControls) return;
+    paginationControls.innerHTML = "";
+    if (totalPages <= 1) return;
+
+    // Prev Button
+    const prevBtn = document.createElement("button");
+    prevBtn.className = `px-3 py-1.5 rounded-xl border text-xs font-bold transition-all flex items-center gap-1 ${
+      currentPage === 1 ? "opacity-40 cursor-not-allowed bg-gray-50 border-gray-200 text-gray-400" : "bg-white hover:bg-pink-50 border-gray-200 text-gray-700"
+    }`;
+    prevBtn.innerHTML = `<i data-lucide="chevron-left" class="w-3.5 h-3.5"></i> Trước`;
+    prevBtn.disabled = currentPage === 1;
+    prevBtn.addEventListener("click", () => {
+      if (currentPage > 1) {
+        currentPage--;
+        renderTypingStudio();
+        scrollStudioIntoView();
+      }
+    });
+    paginationControls.appendChild(prevBtn);
+
+    // Page numbers generator (with ellipsis)
+    const maxButtons = 5;
+    let startPage = Math.max(1, currentPage - 2);
+    let endPage = Math.min(totalPages, startPage + maxButtons - 1);
+    if (endPage - startPage < maxButtons - 1) {
+      startPage = Math.max(1, endPage - maxButtons + 1);
+    }
+
+    if (startPage > 1) {
+      appendPageBtn(1);
+      if (startPage > 2) appendEllipsis();
+    }
+
+    for (let p = startPage; p <= endPage; p++) {
+      appendPageBtn(p);
+    }
+
+    if (endPage < totalPages) {
+      if (endPage < totalPages - 1) appendEllipsis();
+      appendPageBtn(totalPages);
+    }
+
+    // Next Button
+    const nextBtn = document.createElement("button");
+    nextBtn.className = `px-3 py-1.5 rounded-xl border text-xs font-bold transition-all flex items-center gap-1 ${
+      currentPage === totalPages ? "opacity-40 cursor-not-allowed bg-gray-50 border-gray-200 text-gray-400" : "bg-white hover:bg-pink-50 border-gray-200 text-gray-700"
+    }`;
+    nextBtn.innerHTML = `Sau <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>`;
+    nextBtn.disabled = currentPage === totalPages;
+    nextBtn.addEventListener("click", () => {
+      if (currentPage < totalPages) {
+        currentPage++;
+        renderTypingStudio();
+        scrollStudioIntoView();
+      }
+    });
+    paginationControls.appendChild(nextBtn);
+
+    function appendPageBtn(p) {
+      const btn = document.createElement("button");
+      btn.className = `w-8 h-8 rounded-xl text-xs font-bold transition-all flex items-center justify-center ${
+        p === currentPage ? "bg-gradient-to-r from-[#F59BB0] to-[#A98CF0] text-white shadow-xs" : "bg-white hover:bg-pink-50 border border-gray-200 text-gray-700"
+      }`;
+      btn.textContent = p;
+      btn.addEventListener("click", () => {
+        currentPage = p;
+        renderTypingStudio();
+        scrollStudioIntoView();
+      });
+      paginationControls.appendChild(btn);
+    }
+
+    function appendEllipsis() {
+      const span = document.createElement("span");
+      span.className = "px-1 text-gray-400 font-bold text-xs";
+      span.textContent = "...";
+      paginationControls.appendChild(span);
+    }
+  }
+
+  function scrollStudioIntoView() {
+    const el = document.getElementById("vocab-typing-studio");
+    if (el) {
+      const offsetTop = el.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top: offsetTop, behavior: "smooth" });
+    }
+  }
+
+  function escapeHtml(str) {
+    if (!str) return "";
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  // Event Listeners setup: Level tabs
+  if (levelTabsContainer) {
+    levelTabsContainer.querySelectorAll(".typing-level-tab").forEach(tab => {
+      tab.addEventListener("click", () => {
+        levelTabsContainer.querySelectorAll(".typing-level-tab").forEach(t => {
+          t.className = "typing-level-tab px-3.5 py-1.5 rounded-full text-xs font-bold transition-all bg-gray-100 text-gray-600 hover:bg-pink-100 hover:text-pink-700";
+        });
+        tab.className = "typing-level-tab px-3.5 py-1.5 rounded-full text-xs font-bold transition-all bg-pink-500 text-white shadow-xs";
+        currentLevel = tab.getAttribute("data-level");
+        currentPage = 1;
+        renderTypingStudio();
+      });
+    });
+  }
+
+  // Status Filter Select
+  if (statusFilterSelect) {
+    statusFilterSelect.addEventListener("change", (e) => {
+      currentStatus = e.target.value;
+      currentPage = 1;
+      renderTypingStudio();
+    });
+  }
+
+  // Page Size Select
+  if (pageSizeSelect) {
+    pageSizeSelect.addEventListener("change", (e) => {
+      pageSize = e.target.value;
+      currentPage = 1;
+      renderTypingStudio();
+    });
+  }
+
+  // Search input debounced
+  if (searchInput) {
+    let debounceTimer;
+    searchInput.addEventListener("input", (e) => {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => {
+        searchQuery = e.target.value;
+        currentPage = 1;
+        renderTypingStudio();
+      }, 250);
+    });
+  }
+
+  // Exam mode toggle
+  if (btnToggleExam) {
+    btnToggleExam.addEventListener("click", () => {
+      isExamMode = !isExamMode;
+      if (isExamMode) {
+        btnToggleExam.className = "px-3 py-1.5 rounded-full text-xs font-bold border border-rose-300 bg-rose-50 text-rose-700 hover:bg-rose-100 transition-colors flex items-center gap-1.5";
+        if (examModeLabel) examModeLabel.textContent = "Chế độ: Thi thử (Ẩn câu)";
+        showMochiToast("Đã bật Chế độ Thi thử! Câu ví dụ sẽ được ẩn cho đến khi bạn gõ đúng 🎯", "info");
+      } else {
+        btnToggleExam.className = "px-3 py-1.5 rounded-full text-xs font-bold border border-purple-200 bg-purple-50 text-purple-700 hover:bg-purple-100 transition-colors flex items-center gap-1.5";
+        if (examModeLabel) examModeLabel.textContent = "Chế độ: Học tập";
+        showMochiToast("Đã chuyển về Chế độ Học tập 🌸");
+      }
+      renderTypingStudio();
+    });
+  }
+
+  // Reset progress for active level
+  if (btnResetProgress) {
+    btnResetProgress.addEventListener("click", () => {
+      const confirmReset = window.confirm(`Bạn có chắc muốn làm lại toàn bộ từ vựng ở cấp độ ${currentLevel === 'all' ? 'Tất cả' : currentLevel} không?`);
+      if (confirmReset) {
+        const progress = getProgressMap();
+        const all = getAllVocab();
+        const wordsToReset = currentLevel === "all" ? all : all.filter(w => w.hsk === currentLevel);
+        wordsToReset.forEach(w => {
+          delete progress[w.id];
+        });
+        saveProgressMap(progress);
+        renderTypingStudio();
+        showMochiToast(`Đã làm mới tiến độ bài luyện gõ ${currentLevel}!`);
+      }
+    });
+  }
+
+  // View switchers (table vs card mode)
+  if (btnViewTable && btnViewCards) {
+    btnViewTable.addEventListener("click", () => {
+      viewMode = "table";
+      btnViewTable.className = "px-2.5 py-1 rounded-lg text-xs font-bold bg-white text-gray-800 shadow-2xs flex items-center gap-1";
+      btnViewCards.className = "px-2.5 py-1 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-800 flex items-center gap-1";
+      renderTypingStudio();
+    });
+
+    btnViewCards.addEventListener("click", () => {
+      viewMode = "cards";
+      btnViewCards.className = "px-2.5 py-1 rounded-lg text-xs font-bold bg-white text-gray-800 shadow-2xs flex items-center gap-1";
+      btnViewTable.className = "px-2.5 py-1 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-800 flex items-center gap-1";
+      renderTypingStudio();
+    });
+  }
+
+  // Initial render
+  renderTypingStudio();
 }

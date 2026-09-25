@@ -100,6 +100,10 @@
           <span>Flashcard</span>
           <span class="text-xs">🎴</span>
         </a>
+        <a href="#vocab-typing-studio" class="header-nav-link whitespace-nowrap px-3 py-1.5 rounded-full hover:bg-emerald-50 hover:text-emerald-700 transition-colors flex items-center gap-1 font-bold">
+          <span>Luyện gõ từ</span>
+          <span class="text-xs">⌨️</span>
+        </a>
         <a href="#progress" class="header-nav-link whitespace-nowrap px-3 py-1.5 rounded-full hover:bg-pink-50 hover:text-pink-600 transition-colors flex items-center gap-1">
           <span>Sổ tay</span>
           <span class="text-xs">🌸</span>
@@ -180,6 +184,11 @@
     <a href="#flashcards" class="quick-nav-dot group relative w-8 h-8 rounded-2xl flex items-center justify-center text-gray-500 hover:text-purple-600 hover:bg-purple-50 transition-all" data-target="flashcards">
       <i data-lucide="layers" class="w-4 h-4"></i>
       <span class="quick-nav-tooltip pointer-events-none absolute left-full ml-3 px-2.5 py-1 rounded-xl bg-gray-800 text-white text-[11px] font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md z-50">Kho Flashcard 3D 🎴</span>
+    </a>
+
+    <a href="#vocab-typing-studio" class="quick-nav-dot group relative w-8 h-8 rounded-2xl flex items-center justify-center text-gray-500 hover:text-emerald-600 hover:bg-emerald-50 transition-all" data-target="vocab-typing-studio">
+      <i data-lucide="keyboard" class="w-4 h-4"></i>
+      <span class="quick-nav-tooltip pointer-events-none absolute left-full ml-3 px-2.5 py-1 rounded-xl bg-gray-800 text-white text-[11px] font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md z-50">Luyện gõ từ vựng ⌨️</span>
     </a>
 
     <a href="#roadmap" class="quick-nav-dot group relative w-8 h-8 rounded-2xl flex items-center justify-center text-gray-500 hover:text-pink-600 hover:bg-pink-50 transition-all" data-target="roadmap">
@@ -986,6 +995,227 @@
   </section>
 
   <!-- =========================================================================
+       BẢNG KIỂM TRA & LUYỆN GÕ TỪ VỰNG - CHECK PASS / FAIL (VOCABULARY TYPING STUDIO)
+       ========================================================================= -->
+  <section id="vocab-typing-studio" class="py-14 sm:py-20 bg-gradient-to-b from-[#FFFDFE] via-white to-[#FAF6F9] border-y border-[#F7EBF0]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="badge-pill bg-emerald-100 text-emerald-800 border border-emerald-200 mb-2.5">
+          <i data-lucide="keyboard" class="w-3.5 h-3.5 inline mr-1"></i> Studio Luyện Gõ & Phản Xạ Từ Vựng
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-gray-800 font-heading mb-3">
+          Bảng Kiểm Tra Gõ Từ Vựng — Check Pass / Fail
+        </h2>
+        <p class="text-xs sm:text-sm text-gray-500 leading-relaxed">
+          Nhìn nghĩa tiếng Việt ở cột <b>Giải thích</b> ➔ gõ chữ Hán hoặc Pinyin vào cột <b>Từ mới</b>. Hệ thống tự động chấm <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-700 border border-emerald-300">PASS ✓</span> hoặc <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-rose-100 text-rose-700 border border-rose-300">FAILED ✗</span> tức thì theo thời gian thực!
+        </p>
+      </div>
+
+      <!-- HUD Stats & Control Panel -->
+      <div class="bg-white/90 backdrop-blur-md rounded-3xl p-5 sm:p-6 border border-pink-200 shadow-xl shadow-pink-100/40 mb-8 space-y-5">
+        
+        <!-- Top Stats Row -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
+          <div class="p-3.5 sm:p-4 rounded-2xl bg-gradient-to-br from-pink-50/80 to-white border border-pink-100 text-center">
+            <span class="text-[11px] font-bold text-gray-400 uppercase tracking-wider block mb-0.5">Tổng số từ</span>
+            <span id="typing-stat-total" class="text-xl sm:text-2xl font-black text-gray-800 font-heading">1.200</span>
+            <span id="typing-stat-level-label" class="text-[10px] text-pink-500 font-semibold block mt-0.5">HSK 4 Chuẩn ★</span>
+          </div>
+
+          <div class="p-3.5 sm:p-4 rounded-2xl bg-gradient-to-br from-emerald-50/80 to-white border border-emerald-100 text-center">
+            <span class="text-[11px] font-bold text-emerald-600 uppercase tracking-wider block mb-0.5">Đã đạt (PASS)</span>
+            <span id="typing-stat-passed" class="text-xl sm:text-2xl font-black text-emerald-700 font-heading">0</span>
+            <span class="text-[10px] text-emerald-500 font-semibold block mt-0.5">Chính xác ✓</span>
+          </div>
+
+          <div class="p-3.5 sm:p-4 rounded-2xl bg-gradient-to-br from-rose-50/80 to-white border border-rose-100 text-center">
+            <span class="text-[11px] font-bold text-rose-500 uppercase tracking-wider block mb-0.5">Chưa đạt (FAILED)</span>
+            <span id="typing-stat-failed" class="text-xl sm:text-2xl font-black text-rose-700 font-heading">0</span>
+            <span class="text-[10px] text-rose-400 font-semibold block mt-0.5">Cần luyện lại ✗</span>
+          </div>
+
+          <div class="p-3.5 sm:p-4 rounded-2xl bg-gradient-to-br from-purple-50/80 to-white border border-purple-100 text-center">
+            <span class="text-[11px] font-bold text-purple-600 uppercase tracking-wider block mb-0.5">Tỷ lệ chính xác</span>
+            <span id="typing-stat-accuracy" class="text-xl sm:text-2xl font-black text-purple-700 font-heading">0%</span>
+            <div class="w-full bg-purple-100 rounded-full h-1.5 mt-1.5 overflow-hidden">
+              <div id="typing-stat-progress-bar" class="bg-gradient-to-r from-[#F59BB0] to-[#A98CF0] h-full rounded-full transition-all duration-500" style="width: 0%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Tabs & Mode Toggles -->
+        <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 pt-3 border-t border-pink-100/70">
+          
+          <!-- HSK Level Selector Tabs -->
+          <div id="typing-level-tabs" class="flex flex-wrap items-center gap-1.5 sm:gap-2">
+            <button class="typing-level-tab px-3.5 py-1.5 rounded-full text-xs font-bold transition-all bg-pink-500 text-white shadow-xs" data-level="HSK 4">
+              🌟 HSK 4 (1.200 từ)
+            </button>
+            <button class="typing-level-tab px-3 py-1.5 rounded-full text-xs font-bold transition-all bg-gray-100 text-gray-600 hover:bg-pink-100 hover:text-pink-700" data-level="HSK 1">
+              HSK 1 (1.000 từ)
+            </button>
+            <button class="typing-level-tab px-3 py-1.5 rounded-full text-xs font-bold transition-all bg-gray-100 text-gray-600 hover:bg-pink-100 hover:text-pink-700" data-level="HSK 2">
+              HSK 2 (1.000 từ)
+            </button>
+            <button class="typing-level-tab px-3 py-1.5 rounded-full text-xs font-bold transition-all bg-gray-100 text-gray-600 hover:bg-pink-100 hover:text-pink-700" data-level="HSK 3">
+              HSK 3 (1.000 từ)
+            </button>
+            <button class="typing-level-tab px-3 py-1.5 rounded-full text-xs font-bold transition-all bg-gray-100 text-gray-600 hover:bg-pink-100 hover:text-pink-700" data-level="HSK 5">
+              HSK 5 (1.000 từ)
+            </button>
+            <button class="typing-level-tab px-3 py-1.5 rounded-full text-xs font-bold transition-all bg-gray-100 text-gray-600 hover:bg-pink-100 hover:text-pink-700" data-level="HSK 6">
+              HSK 6 (1.000 từ)
+            </button>
+            <button class="typing-level-tab px-3 py-1.5 rounded-full text-xs font-bold transition-all bg-gray-100 text-gray-600 hover:bg-pink-100 hover:text-pink-700" data-level="all">
+              Tất cả (6.200 từ)
+            </button>
+          </div>
+
+          <!-- Utility Switches (Status Filter, Exam Mode, Reset) -->
+          <div class="flex flex-wrap items-center gap-2">
+            <!-- Filter Status -->
+            <select id="typing-status-filter" class="px-3 py-1.5 rounded-full text-xs font-bold border border-gray-200 bg-white text-gray-700 focus:outline-none focus:border-pink-400">
+              <option value="all">🔍 Tất cả trạng thái</option>
+              <option value="failed">❌ Chỉ xem từ FAILED</option>
+              <option value="passed">✅ Chỉ xem từ PASS</option>
+              <option value="pending">⏳ Chỉ xem từ chưa làm</option>
+            </select>
+
+            <!-- Exam Mode Toggle -->
+            <button id="btn-toggle-exam-mode" class="px-3 py-1.5 rounded-full text-xs font-bold border border-purple-200 bg-purple-50 text-purple-700 hover:bg-purple-100 transition-colors flex items-center gap-1.5" title="Bật/Tắt chế độ thi thử (Ẩn câu ví dụ cho đến khi gõ đúng)">
+              <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+              <span id="exam-mode-label">Chế độ: Học tập</span>
+            </button>
+
+            <!-- Reset Button -->
+            <button id="btn-reset-typing-progress" class="px-3 py-1.5 rounded-full text-xs font-bold border border-gray-200 text-gray-500 hover:text-rose-600 hover:bg-rose-50 hover:border-rose-200 transition-colors flex items-center gap-1" title="Làm lại cấp độ này">
+              <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
+              <span>Làm lại</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Search Bar & View Mode Options -->
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-2">
+          <div class="relative w-full sm:max-w-md">
+            <i data-lucide="search" class="w-4 h-4 text-gray-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+            <input id="typing-search-input" type="text" placeholder="Tìm nghĩa tiếng Việt, chữ Hán hoặc Pinyin..." class="w-full pl-10 pr-4 py-2 rounded-2xl bg-gray-50 border border-gray-200 text-xs font-medium text-gray-700 placeholder:text-gray-400 focus:outline-none focus:bg-white focus:border-pink-400 transition-all" />
+          </div>
+
+          <div class="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end">
+            <!-- Page Size -->
+            <div class="flex items-center gap-1.5 text-xs text-gray-500">
+              <span>Hiển thị:</span>
+              <select id="typing-page-size" class="px-2 py-1 rounded-xl border border-gray-200 text-xs font-bold bg-white text-gray-700 focus:outline-none">
+                <option value="25">25 dòng/trang</option>
+                <option value="50">50 dòng/trang</option>
+                <option value="100">100 dòng/trang</option>
+                <option value="all">Tất cả</option>
+              </select>
+            </div>
+
+            <!-- View Switcher (Table vs Cards) -->
+            <div class="flex items-center bg-gray-100 p-0.5 rounded-xl border border-gray-200">
+              <button id="btn-typing-view-table" class="px-2.5 py-1 rounded-lg text-xs font-bold bg-white text-gray-800 shadow-2xs flex items-center gap-1">
+                <i data-lucide="table" class="w-3.5 h-3.5"></i>
+                <span class="hidden md:inline">Bảng tính</span>
+              </button>
+              <button id="btn-typing-view-cards" class="px-2.5 py-1 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-800 flex items-center gap-1">
+                <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i>
+                <span class="hidden md:inline">Thẻ học</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Main Table Container (Styled like the reference Excel spreadsheet) -->
+      <div id="typing-table-wrapper" class="bg-white rounded-3xl border border-[#0284C7]/20 shadow-xl overflow-hidden transition-all">
+        
+        <!-- Spreadsheet Banner Note matching the reference image -->
+        <div class="bg-gradient-to-r from-[#0284C7] via-[#0EA5E9] to-[#38BDF8] px-4 py-2.5 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs font-bold shadow-xs">
+          <div class="flex items-center gap-2">
+            <span class="bg-white/20 px-2 py-0.5 rounded-full text-[11px]">💡 Thử thách</span>
+            <span>Gõ chữ Hán vào ô <b>Từ mới</b> (chấp nhận cả Chữ Hán và Pinyin). Ô Check tự động điền PASS hoặc FAILED!</span>
+          </div>
+          <span id="typing-visible-count-badge" class="bg-white text-[#0284C7] px-2.5 py-0.5 rounded-full text-[11px] font-black self-start sm:self-auto">
+            1.200 từ vựng
+          </span>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse min-w-[980px]">
+            <thead>
+              <tr class="bg-[#0284C7] text-white text-xs font-extrabold tracking-wide uppercase">
+                <th class="py-3 px-3 w-14 text-center border-r border-sky-600/50">STT</th>
+                <th class="py-3 px-4 w-44 border-r border-sky-600/50">
+                  <div class="flex items-center gap-1">
+                    <span>Từ mới</span>
+                    <span class="text-[10px] font-normal opacity-80">(Chữ Hán)</span>
+                  </div>
+                </th>
+                <th class="py-3 px-4 w-52 border-r border-sky-600/50">
+                  <div class="flex items-center gap-1">
+                    <span>Giải thích</span>
+                    <span class="text-[10px] font-normal opacity-80">(Tiếng Việt)</span>
+                  </div>
+                </th>
+                <th class="py-3 px-3 w-28 text-center border-r border-sky-600/50 bg-[#F59E0B] text-white">
+                  Check
+                </th>
+                <th class="py-3 px-4 min-w-[240px] border-r border-sky-600/50">
+                  Ví dụ (chữ Hán)
+                </th>
+                <th class="py-3 px-4 min-w-[200px] border-r border-sky-600/50">
+                  Phiên âm
+                </th>
+                <th class="py-3 px-4 min-w-[220px] border-r border-sky-600/50">
+                  Dịch câu ví dụ
+                </th>
+                <th class="py-3 px-3 w-28 text-center">
+                  Thao tác
+                </th>
+              </tr>
+            </thead>
+            <tbody id="typing-table-body" class="divide-y divide-gray-100 text-xs sm:text-sm font-medium">
+              <!-- Dynamically populated rows -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Empty / No results fallback -->
+        <div id="typing-empty-state" class="hidden p-12 text-center space-y-3">
+          <div class="w-16 h-16 mx-auto rounded-full bg-pink-50 flex items-center justify-center text-2xl">
+            🔍
+          </div>
+          <h4 class="text-base font-bold text-gray-700">Không tìm thấy từ vựng phù hợp</h4>
+          <p class="text-xs text-gray-400">Hãy thử đổi từ khóa tìm kiếm hoặc chọn cấp độ HSK khác.</p>
+        </div>
+
+        <!-- Table Footer Pagination -->
+        <div class="p-4 bg-gray-50/80 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div id="typing-pagination-info" class="text-xs text-gray-500 font-medium">
+            Đang hiển thị 1-25 trên tổng số 1.200 từ
+          </div>
+          <div id="typing-pagination-controls" class="flex items-center gap-1.5 flex-wrap justify-center">
+            <!-- Pagination buttons -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Alternative Card View Container (for mobile or card study mode) -->
+      <div id="typing-cards-grid" class="hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Dynamically populated cards -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
        SECTION: LỘ TRÌNH 5 CẤP ĐỘ TỔNG QUAN
        ========================================================================= -->
   <section id="roadmap" class="py-14 sm:py-20 bg-[#FFFDFE]">
@@ -1313,6 +1543,10 @@
         </a>
         <a href="#catalog-lessons-section" class="block p-3 rounded-2xl hover:bg-pink-50 hover:text-pink-600 transition-colors">15 Bài học theo cấp</a>
         <a href="#flashcards" class="block p-3 rounded-2xl hover:bg-pink-50 hover:text-pink-600 transition-colors">Kho Flashcard 3D</a>
+        <a href="#vocab-typing-studio" class="block p-3 rounded-2xl hover:bg-emerald-50 hover:text-emerald-700 transition-colors flex items-center justify-between">
+          <span>Luyện gõ từ (Pass/Fail)</span>
+          <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800">1.200 từ ⌨️</span>
+        </a>
         <a href="#progress" class="block p-3 rounded-2xl hover:bg-pink-50 hover:text-pink-600 transition-colors">Góc sổ tay của nàng</a>
       </nav>
     </div>
@@ -1369,6 +1603,7 @@
 
   <!-- Scripts -->
   <script src="js/data.js"></script>
+  <script src="js/vocab-data.js"></script>
   <script src="js/app.js"></script>
 
   <!-- =========================================================================
