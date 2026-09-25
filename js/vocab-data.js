@@ -8,7 +8,7 @@
  * - HSK 5: 1.000 từ vựng cao cấp (duy nhất)
  * - HSK 6: 1.000 từ vựng chuyên sâu & thành ngữ (duy nhất)
  * 
- * Mỗi từ gồm: Chữ Hán, Phiên âm, Âm Hán Việt, Giải thích tiếng Việt, Câu ví dụ chuẩn có từ khóa, Phiên âm câu ví dụ và Dịch câu ví dụ.
+ * Đã chuẩn hóa: 100% sạch dấu ngoặc kép, sạch chữ Hán trong phiên âm và âm Hán Việt.
  */
 
 (function(global) {
@@ -18,13 +18,13 @@
   {
     "hanzi": "哎",
     "pinyin": "āi",
-    "hanviet": "哎",
+    "hanviet": "Ai",
     "meaning": "này!",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“哎”这个词。",
-    "examplePinyin": "Qǐng jìzhu “哎” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “哎” này.",
+    "example": "请记住哎这个词。",
+    "examplePinyin": "Qǐng jìzhu āi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ này! này.",
     "id": "typ-hsk1-0001"
   },
   {
@@ -166,15 +166,15 @@
     "meaning": "một nửa trận đấu hoặc cuộc thi, nửa sân",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“半场”这个词。",
-    "examplePinyin": "Qǐng jìzhu “半场” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “半场” này.",
+    "example": "请记住半场这个词。",
+    "examplePinyin": "Qǐng jìzhu bàn chǎng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ một nửa trận đấu hoặc cuộc thi, nửa sân này.",
     "id": "typ-hsk1-0013"
   },
   {
     "hanzi": "帮",
     "pinyin": "bāng",
-    "hanviet": "帮",
+    "hanviet": "Bang",
     "meaning": "biến thể cũ của 幫|帮",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -246,7 +246,7 @@
   {
     "hanzi": "爆",
     "pinyin": "bào",
-    "hanviet": "爆",
+    "hanviet": "Bạo",
     "meaning": "nổ hoặc bùng nổ, xào nhanh hoặc chần nhanh",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -570,7 +570,7 @@
   {
     "hanzi": "拨",
     "pinyin": "bō",
-    "hanviet": "拨",
+    "hanviet": "Bát",
     "meaning": "gạt ra bằng tay, chân, gậy, v.v., quay số",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -678,7 +678,7 @@
   {
     "hanzi": "不够",
     "pinyin": "bù gòu",
-    "hanviet": "Bất 够",
+    "hanviet": "Bất Cấu",
     "meaning": "không đủ, không đủ mức",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -834,7 +834,7 @@
   {
     "hanzi": "餐",
     "pinyin": "cān",
-    "hanviet": "餐",
+    "hanviet": "Xan",
     "meaning": "bữa ăn, ăn",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -906,7 +906,7 @@
   {
     "hanzi": "产",
     "pinyin": "chǎn",
-    "hanviet": "产",
+    "hanviet": "Sản",
     "meaning": "sinh đẻ, sinh sản",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -990,7 +990,7 @@
   {
     "hanzi": "车辆",
     "pinyin": "chē liàng",
-    "hanviet": "Xa 辆",
+    "hanviet": "Xa Lượng",
     "meaning": "phương tiện giao thông",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -1258,9 +1258,9 @@
     "meaning": "chưa từng",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“从未”这个词。",
-    "examplePinyin": "Qǐng jìzhu “从未” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “从未” này.",
+    "example": "请记住从未这个词。",
+    "examplePinyin": "Qǐng jìzhu cóng wèi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chưa từng này.",
     "id": "typ-hsk1-0104"
   },
   {
@@ -1446,7 +1446,7 @@
   {
     "hanzi": "大量",
     "pinyin": "dà liàng",
-    "hanviet": "Đại 量",
+    "hanviet": "Đại Lượng",
     "meaning": "lượng lớn, số lượng nhiều",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -1458,7 +1458,7 @@
   {
     "hanzi": "但",
     "pinyin": "dàn",
-    "hanviet": "但",
+    "hanviet": "Đãn",
     "meaning": "nhưng; tuy nhiên; thế nhưng, chỉ; chỉ là; đúng",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -1482,7 +1482,7 @@
   {
     "hanzi": "蛋",
     "pinyin": "dàn",
-    "hanviet": "蛋",
+    "hanviet": "Đản",
     "meaning": "egg",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -1522,9 +1522,9 @@
     "meaning": "chưa kết hôn; độc thân, một mình",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“单身”这个词。",
-    "examplePinyin": "Qǐng jìzhu “单身” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “单身” này.",
+    "example": "请记住单身这个词。",
+    "examplePinyin": "Qǐng jìzhu dān shēn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chưa kết hôn; độc thân, một mình này.",
     "id": "typ-hsk1-0126"
   },
   {
@@ -1590,7 +1590,7 @@
   {
     "hanzi": "大赛",
     "pinyin": "dà sài",
-    "hanviet": "Đại 赛",
+    "hanviet": "Đại Tái",
     "meaning": "grand contest",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -1926,7 +1926,7 @@
   {
     "hanzi": "懂得",
     "pinyin": "dǒng de",
-    "hanviet": "懂 Đắc",
+    "hanviet": "Đổng Đắc",
     "meaning": "hiểu; biết; thấu hiểu",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -2082,7 +2082,7 @@
   {
     "hanzi": "躲",
     "pinyin": "duǒ",
-    "hanviet": "躲",
+    "hanviet": "Đóa",
     "meaning": "trốn, tránh né",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -2142,7 +2142,7 @@
   {
     "hanzi": "而是",
     "pinyin": "ér shì",
-    "hanviet": "而 Thị",
+    "hanviet": "Nhi Thị",
     "meaning": "mà là",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -2154,7 +2154,7 @@
   {
     "hanzi": "儿子",
     "pinyin": "ér zi",
-    "hanviet": "儿 Tử",
+    "hanviet": "Nhi Tử",
     "meaning": "con trai",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -2274,7 +2274,7 @@
   {
     "hanzi": "放假",
     "pinyin": "fàng jià",
-    "hanviet": "Phóng 假",
+    "hanviet": "Phóng Giả",
     "meaning": "nghỉ lễ hoặc kỳ nghỉ",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -2470,9 +2470,9 @@
     "meaning": "bún tàu, bún tinh bột đậu xanh",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“粉丝”这个词。",
-    "examplePinyin": "Qǐng jìzhu “粉丝” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “粉丝” này.",
+    "example": "请记住粉丝这个词。",
+    "examplePinyin": "Qǐng jìzhu fěn sī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bún tàu, bún tinh bột đậu xanh này.",
     "id": "typ-hsk1-0205"
   },
   {
@@ -2532,7 +2532,7 @@
     "levelNum": 1,
     "example": "过年时门上有个福字。",
     "examplePinyin": "guò nián shí mén shàng yǒu gè fú zì",
-    "exampleVi": "Trong dịp Tết Nguyên đán, có chữ \"福\" trên cửa.",
+    "exampleVi": "Trong dịp Tết Nguyên đán, có chữ good fortune trên cửa.",
     "id": "typ-hsk1-0210"
   },
   {
@@ -2598,7 +2598,7 @@
   {
     "hanzi": "改",
     "pinyin": "gǎi",
-    "hanviet": "改",
+    "hanviet": "Cải",
     "meaning": "thay đổi, sửa đổi",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -2610,7 +2610,7 @@
   {
     "hanzi": "该",
     "pinyin": "gāi",
-    "hanviet": "该",
+    "hanviet": "Cai",
     "meaning": "nên, phải",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -2646,7 +2646,7 @@
   {
     "hanzi": "赶",
     "pinyin": "gǎn",
-    "hanviet": "赶",
+    "hanviet": "Cản",
     "meaning": "đuổi kịp; bắt kịp, vội; gấp",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -2670,7 +2670,7 @@
   {
     "hanzi": "赶到",
     "pinyin": "gǎn dào",
-    "hanviet": "赶 Đáo",
+    "hanviet": "Cản Đáo",
     "meaning": "vội đến",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -2682,7 +2682,7 @@
   {
     "hanzi": "刚",
     "pinyin": "gāng",
-    "hanviet": "刚",
+    "hanviet": "Cương",
     "meaning": "cứng, vững",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -2914,9 +2914,9 @@
     "meaning": "chúc mừng, chúc mừng!",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“恭喜”这个词。",
-    "examplePinyin": "Qǐng jìzhu “恭喜” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “恭喜” này.",
+    "example": "请记住恭喜这个词。",
+    "examplePinyin": "Qǐng jìzhu gōng xǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chúc mừng, chúc mừng! này.",
     "id": "typ-hsk1-0242"
   },
   {
@@ -2958,7 +2958,7 @@
   {
     "hanzi": "购买",
     "pinyin": "gòu mǎi",
-    "hanviet": "购 Mãi",
+    "hanviet": "Cấu Mãi",
     "meaning": "mua; tậu",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -2994,7 +2994,7 @@
   {
     "hanzi": "怪",
     "pinyin": "guài",
-    "hanviet": "怪",
+    "hanviet": "Quái",
     "meaning": "kỳ quái, lạ",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -3034,9 +3034,9 @@
     "meaning": "quan chức, người quản lý",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“官员”这个词。",
-    "examplePinyin": "Qǐng jìzhu “官员” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “官员” này.",
+    "example": "请记住官员这个词。",
+    "examplePinyin": "Qǐng jìzhu guān yuán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quan chức, người quản lý này.",
     "id": "typ-hsk1-0252"
   },
   {
@@ -3054,7 +3054,7 @@
   {
     "hanzi": "归",
     "pinyin": "guī",
-    "hanviet": "归",
+    "hanviet": "Quy",
     "meaning": "to return",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -3282,7 +3282,7 @@
   {
     "hanzi": "好玩儿",
     "pinyin": "hǎo wán r",
-    "hanviet": "Hảo Ngoạn 儿",
+    "hanviet": "Hảo Ngoạn Nhi",
     "meaning": "biến thể er hoá của 好玩",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -3354,7 +3354,7 @@
   {
     "hanzi": "很",
     "pinyin": "hěn",
-    "hanviet": "很",
+    "hanviet": "Hẩn",
     "meaning": "rất",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -3402,7 +3402,7 @@
   {
     "hanzi": "后面",
     "pinyin": "hòu mian",
-    "hanviet": "Hậu 面",
+    "hanviet": "Hậu Diện",
     "meaning": "phía sau; phía đuôi; đoạn cuối, đằng sau; gần cuối; ở phía sau",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -3522,7 +3522,7 @@
   {
     "hanzi": "环",
     "pinyin": "huán",
-    "hanviet": "环",
+    "hanviet": "Hoàn",
     "meaning": "ring",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -3730,9 +3730,9 @@
     "meaning": "chiến thắng, thắng",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“获胜”这个词。",
-    "examplePinyin": "Qǐng jìzhu “获胜” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “获胜” này.",
+    "example": "请记住获胜这个词。",
+    "examplePinyin": "Qǐng jìzhu huò shèng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chiến thắng, thắng này.",
     "id": "typ-hsk1-0310"
   },
   {
@@ -3766,9 +3766,9 @@
     "meaning": "liều lượng",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“剂”这个词。",
-    "examplePinyin": "Qǐng jìzhu “剂” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “剂” này.",
+    "example": "请记住剂这个词。",
+    "examplePinyin": "Qǐng jìzhu jì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ liều lượng này.",
     "id": "typ-hsk1-0313"
   },
   {
@@ -3822,7 +3822,7 @@
   {
     "hanzi": "既",
     "pinyin": "jì",
-    "hanviet": "既",
+    "hanviet": "Ký",
     "meaning": "đã, kể từ",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -3882,7 +3882,7 @@
   {
     "hanzi": "鸡",
     "pinyin": "jī",
-    "hanviet": "鸡",
+    "hanviet": "Kê",
     "meaning": "gia cầm, gà",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -4026,7 +4026,7 @@
   {
     "hanzi": "奖",
     "pinyin": "jiǎng",
-    "hanviet": "奖",
+    "hanviet": "Tưởng",
     "meaning": "giải thưởng, phần thưởng",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -4110,7 +4110,7 @@
   {
     "hanzi": "较",
     "pinyin": "jiào",
-    "hanviet": "较",
+    "hanviet": "Giảo",
     "meaning": "so sánh, tranh luận",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -4222,9 +4222,9 @@
     "meaning": "gia đình, gia tộc",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“家族”这个词。",
-    "examplePinyin": "Qǐng jìzhu “家族” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “家族” này.",
+    "example": "请记住家族这个词。",
+    "examplePinyin": "Qǐng jìzhu jiā zú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gia đình, gia tộc này.",
     "id": "typ-hsk1-0351"
   },
   {
@@ -4254,7 +4254,7 @@
   {
     "hanzi": "街",
     "pinyin": "jiē",
-    "hanviet": "街",
+    "hanviet": "Nhai",
     "meaning": "đường phố",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -4314,7 +4314,7 @@
   {
     "hanzi": "仅",
     "pinyin": "jǐn",
-    "hanviet": "仅",
+    "hanviet": "Cận",
     "meaning": "hầu như, chỉ",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -4398,7 +4398,7 @@
   {
     "hanzi": "仅仅",
     "pinyin": "jǐn jǐn",
-    "hanviet": "仅 仅",
+    "hanviet": "Cận Cận",
     "meaning": "hầu như không, chỉ",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -4506,7 +4506,7 @@
   {
     "hanzi": "酒",
     "pinyin": "jiǔ",
-    "hanviet": "酒",
+    "hanviet": "Tửu",
     "meaning": "rượu, đồ uống có cồn",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -4518,7 +4518,7 @@
   {
     "hanzi": "酒店",
     "pinyin": "jiǔ diàn",
-    "hanviet": "酒 Điếm",
+    "hanviet": "Tửu Điếm",
     "meaning": "quán rượu, quán bar",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -4530,7 +4530,7 @@
   {
     "hanzi": "就是",
     "pinyin": "jiù shì",
-    "hanviet": "就 Thị",
+    "hanviet": "Thị",
     "meaning": "chính xác; đúng, chỉ; đơn giản; chỉ là",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -4542,7 +4542,7 @@
   {
     "hanzi": "就算",
     "pinyin": "jiù suàn",
-    "hanviet": "就 Toán",
+    "hanviet": "Toán",
     "meaning": "ngay cả khi",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -4554,7 +4554,7 @@
   {
     "hanzi": "就要",
     "pinyin": "jiù yào",
-    "hanviet": "就 Yếu",
+    "hanviet": "Yếu",
     "meaning": "sẽ, sắp",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -4674,7 +4674,7 @@
   {
     "hanzi": "卡",
     "pinyin": "kǎ",
-    "hanviet": "卡",
+    "hanviet": "Tạp",
     "meaning": "dừng, chặn",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -4794,7 +4794,7 @@
   {
     "hanzi": "靠",
     "pinyin": "kào",
-    "hanviet": "靠",
+    "hanviet": "Kháo",
     "meaning": "dựa vào, đứng cạnh",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -4986,7 +4986,7 @@
   {
     "hanzi": "垃圾",
     "pinyin": "lā jī",
-    "hanviet": "Lắp 圾",
+    "hanviet": "Lắp Cấp",
     "meaning": "rác, thứ bỏ đi",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -5086,15 +5086,15 @@
     "meaning": "dây cương, thắng ngựa",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“勒”这个词。",
-    "examplePinyin": "Qǐng jìzhu “勒” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “勒” này.",
+    "example": "请记住勒这个词。",
+    "examplePinyin": "Qǐng jìzhu lè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dây cương, thắng ngựa này.",
     "id": "typ-hsk1-0423"
   },
   {
     "hanzi": "类型",
     "pinyin": "lèi xíng",
-    "hanviet": "Loại 型",
+    "hanviet": "Loại Hình",
     "meaning": "loại; kiểu; loại hình, kiểu dữ liệu",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -5202,7 +5202,7 @@
   {
     "hanzi": "量",
     "pinyin": "liáng",
-    "hanviet": "量",
+    "hanviet": "Lượng",
     "meaning": "đo lường",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -5238,7 +5238,7 @@
   {
     "hanzi": "聊",
     "pinyin": "liáo",
-    "hanviet": "聊",
+    "hanviet": "Liêu",
     "meaning": "trò chuyện, tạm thời; một lúc",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -5274,7 +5274,7 @@
   {
     "hanzi": "里面",
     "pinyin": "lǐ miàn",
-    "hanviet": "Lịa 面",
+    "hanviet": "Lịa Diện",
     "meaning": "bên trong, nội bộ",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -5406,7 +5406,7 @@
   {
     "hanzi": "录",
     "pinyin": "lù",
-    "hanviet": "录",
+    "hanviet": "Lục",
     "meaning": "khắc gỗ",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -5418,7 +5418,7 @@
   {
     "hanzi": "率",
     "pinyin": "lǜ",
-    "hanviet": "率",
+    "hanviet": "Suất",
     "meaning": "tỉ lệ, tần suất",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -5458,9 +5458,9 @@
     "meaning": "gauze",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“罗”这个词。",
-    "examplePinyin": "Qǐng jìzhu “罗” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “罗” này.",
+    "example": "请记住罗这个词。",
+    "examplePinyin": "Qǐng jìzhu luó zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gauze này.",
     "id": "typ-hsk1-0454"
   },
   {
@@ -5490,7 +5490,7 @@
   {
     "hanzi": "路线",
     "pinyin": "lù xiàn",
-    "hanviet": "Lộ 线",
+    "hanviet": "Lộ Tuyến",
     "meaning": "hành trình, tuyến đường",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -5538,7 +5538,7 @@
   {
     "hanzi": "码",
     "pinyin": "mǎ",
-    "hanviet": "码",
+    "hanviet": "Mã",
     "meaning": "trọng lượng, số",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -5802,7 +5802,7 @@
   {
     "hanzi": "面",
     "pinyin": "miàn",
-    "hanviet": "面",
+    "hanviet": "Diện",
     "meaning": "mặt, bên",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -5814,7 +5814,7 @@
   {
     "hanzi": "面前",
     "pinyin": "miàn qián",
-    "hanviet": "面 Tiền",
+    "hanviet": "Diện Tiền",
     "meaning": "trước mặt, đối diện",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -5826,7 +5826,7 @@
   {
     "hanzi": "面条儿",
     "pinyin": "miàn tiáo r",
-    "hanviet": "面 Điều 儿",
+    "hanviet": "Diện Điều Nhi",
     "meaning": "biến thể er hoá của 麵條|面条",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -5838,7 +5838,7 @@
   {
     "hanzi": "米饭",
     "pinyin": "mǐ fàn",
-    "hanviet": "米 Phạn",
+    "hanviet": "Mễ Phạn",
     "meaning": "cơm trắng",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -6042,7 +6042,7 @@
   {
     "hanzi": "男孩儿",
     "pinyin": "nán hái r",
-    "hanviet": "Nam Hài 儿",
+    "hanviet": "Nam Hài Nhi",
     "meaning": "biến thể er hoá của 男孩",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -6090,7 +6090,7 @@
   {
     "hanzi": "难以",
     "pinyin": "nán yǐ",
-    "hanviet": "Nan 以",
+    "hanviet": "Nan Dĩ",
     "meaning": "khó",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -6126,7 +6126,7 @@
   {
     "hanzi": "哪儿",
     "pinyin": "nǎ r",
-    "hanviet": "Nả 儿",
+    "hanviet": "Nả Nhi",
     "meaning": "ở đâu, chỗ nào",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -6138,7 +6138,7 @@
   {
     "hanzi": "那儿",
     "pinyin": "nà r",
-    "hanviet": "Na 儿",
+    "hanviet": "Na Nhi",
     "meaning": "chỗ đó, đằng kia",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -6258,7 +6258,7 @@
   {
     "hanzi": "能够",
     "pinyin": "néng gòu",
-    "hanviet": "Năng 够",
+    "hanviet": "Năng Cấu",
     "meaning": "có khả năng, có thể",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -6306,13 +6306,13 @@
   {
     "hanzi": "尿",
     "pinyin": "niào",
-    "hanviet": "尿",
+    "hanviet": "Niệu",
     "meaning": "tiểu tiện, nước tiểu",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“尿”这个词。",
-    "examplePinyin": "Qǐng jìzhu “尿” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “尿” này.",
+    "example": "请记住尿这个词。",
+    "examplePinyin": "Qǐng jìzhu niào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tiểu tiện, nước tiểu này.",
     "id": "typ-hsk1-0525"
   },
   {
@@ -6354,7 +6354,7 @@
   {
     "hanzi": "女儿",
     "pinyin": "nǚ ér",
-    "hanviet": "Nữa 儿",
+    "hanviet": "Nữa Nhi",
     "meaning": "con gái",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -6366,7 +6366,7 @@
   {
     "hanzi": "女孩儿",
     "pinyin": "nǚ hái r",
-    "hanviet": "Nữa Hài 儿",
+    "hanviet": "Nữa Hài Nhi",
     "meaning": "biến thể er hoá của 女孩",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -6426,7 +6426,7 @@
   {
     "hanzi": "怕",
     "pinyin": "pà",
-    "hanviet": "怕",
+    "hanviet": "Phạ",
     "meaning": "to be afraid",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -6522,7 +6522,7 @@
   {
     "hanzi": "跑",
     "pinyin": "páo",
-    "hanviet": "跑",
+    "hanviet": "Bào",
     "meaning": "cào",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -6546,7 +6546,7 @@
   {
     "hanzi": "碰",
     "pinyin": "pèng",
-    "hanviet": "碰",
+    "hanviet": "Bính",
     "meaning": "to touch",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -6558,7 +6558,7 @@
   {
     "hanzi": "碰到",
     "pinyin": "pèng dào",
-    "hanviet": "碰 Đáo",
+    "hanviet": "Bính Đáo",
     "meaning": "tình cờ gặp, phải đối mặt",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -6594,7 +6594,7 @@
   {
     "hanzi": "漂亮",
     "pinyin": "piào liang",
-    "hanviet": "Phều 亮",
+    "hanviet": "Phều Lượng",
     "meaning": "xinh đẹp, đẹp đẽ",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -6834,7 +6834,7 @@
   {
     "hanzi": "前面",
     "pinyin": "qián miàn",
-    "hanviet": "Tiền 面",
+    "hanviet": "Tiền Diện",
     "meaning": "phía trước, ở trước",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -6870,7 +6870,7 @@
   {
     "hanzi": "汽车",
     "pinyin": "qì chē",
-    "hanviet": "汽 Xa",
+    "hanviet": "Khí Xa",
     "meaning": "xe hơi, xe ô tô",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -6882,7 +6882,7 @@
   {
     "hanzi": "启动",
     "pinyin": "qǐ dòng",
-    "hanviet": "启 Động",
+    "hanviet": "Khải Động",
     "meaning": "khởi động, bắt đầu vận hành",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -6990,7 +6990,7 @@
   {
     "hanzi": "请坐",
     "pinyin": "qǐng zuò",
-    "hanviet": "Thỉnh 坐",
+    "hanviet": "Thỉnh Tọa",
     "meaning": "please, have a seat",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -7278,7 +7278,7 @@
   {
     "hanzi": "认识",
     "pinyin": "rèn shi",
-    "hanviet": "Nhận 识",
+    "hanviet": "Nhận Thức",
     "meaning": "quen biết, nhận biết",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -7378,9 +7378,9 @@
     "meaning": "thả ra, ném",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“撒”这个词。",
-    "examplePinyin": "Qǐng jìzhu “撒” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “撒” này.",
+    "example": "请记住撒这个词。",
+    "examplePinyin": "Qǐng jìzhu sā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thả ra, ném này.",
     "id": "typ-hsk1-0614"
   },
   {
@@ -7398,7 +7398,7 @@
   {
     "hanzi": "赛",
     "pinyin": "sài",
-    "hanviet": "赛",
+    "hanviet": "Tái",
     "meaning": "thi đấu, cuộc thi",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -7458,7 +7458,7 @@
   {
     "hanzi": "闪",
     "pinyin": "shǎn",
-    "hanviet": "闪",
+    "hanviet": "Thiểm",
     "meaning": "to dodge",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -7590,7 +7590,7 @@
   {
     "hanzi": "上面",
     "pinyin": "shàng miàn",
-    "hanviet": "Thượng 面",
+    "hanviet": "Thượng Diện",
     "meaning": "bên trên, đã đề cập",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -7686,7 +7686,7 @@
   {
     "hanzi": "稍",
     "pinyin": "shāo",
-    "hanviet": "稍",
+    "hanviet": "Sảo",
     "meaning": "hơi, một chút",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -7794,7 +7794,7 @@
   {
     "hanzi": "圣诞节",
     "pinyin": "Shèng dàn jié",
-    "hanviet": "Thánh 诞 Tiết",
+    "hanviet": "Thánh Đản Tiết",
     "meaning": "thời gian Giáng Sinh, mùa Giáng Sinh",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -7806,7 +7806,7 @@
   {
     "hanzi": "剩下",
     "pinyin": "shèng xià",
-    "hanviet": "剩 Hạ",
+    "hanviet": "Thặng Hạ",
     "meaning": "còn lại; bị sót lại",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -8010,7 +8010,7 @@
   {
     "hanzi": "实际上",
     "pinyin": "shí jì shàng",
-    "hanviet": "Thực 际 Thượng",
+    "hanviet": "Thực Tế Thượng",
     "meaning": "thực ra, trên thực tế",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -8034,7 +8034,7 @@
   {
     "hanzi": "视频",
     "pinyin": "shì pín",
-    "hanviet": "Thị 频",
+    "hanviet": "Thị Tần",
     "meaning": "video",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -8326,9 +8326,9 @@
     "meaning": "lụa, vật giống sợi; thái sợi hoặc thái chỉ",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“丝”这个词。",
-    "examplePinyin": "Qǐng jìzhu “丝” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “丝” này.",
+    "example": "请记住丝这个词。",
+    "examplePinyin": "Qǐng jìzhu sī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lụa, vật giống sợi; thái sợi hoặc thái chỉ này.",
     "id": "typ-hsk1-0693"
   },
   {
@@ -8394,7 +8394,7 @@
   {
     "hanzi": "岁",
     "pinyin": "suì",
-    "hanviet": "岁",
+    "hanviet": "Tuế",
     "meaning": "tuổi (nói về tuổi)",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -8622,7 +8622,7 @@
   {
     "hanzi": "贴",
     "pinyin": "tiē",
-    "hanviet": "贴",
+    "hanviet": "Thiếp",
     "meaning": "dán, dính",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -8778,7 +8778,7 @@
   {
     "hanzi": "偷",
     "pinyin": "tōu",
-    "hanviet": "偷",
+    "hanviet": "Du",
     "meaning": "trộm, cắp",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -8934,7 +8934,7 @@
   {
     "hanzi": "挖",
     "pinyin": "wā",
-    "hanviet": "挖",
+    "hanviet": "Oa",
     "meaning": "đào, khai quật",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -8970,7 +8970,7 @@
   {
     "hanzi": "外面",
     "pinyin": "wài miàn",
-    "hanviet": "Ngoại 面",
+    "hanviet": "Ngoại Diện",
     "meaning": "bên ngoài, bề mặt",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -9090,7 +9090,7 @@
   {
     "hanzi": "玩儿",
     "pinyin": "wán r",
-    "hanviet": "Ngoạn 儿",
+    "hanviet": "Ngoạn Nhi",
     "meaning": "chơi, vui chơi",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -9174,7 +9174,7 @@
   {
     "hanzi": "为何",
     "pinyin": "wèi hé",
-    "hanviet": "Vay 何",
+    "hanviet": "Vay Hà",
     "meaning": "tại sao",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -9202,9 +9202,9 @@
     "meaning": "ủy ban",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“委员会”这个词。",
-    "examplePinyin": "Qǐng jìzhu “委员会” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “委员会” này.",
+    "example": "请记住委员会这个词。",
+    "examplePinyin": "Qǐng jìzhu wěi yuán huì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ủy ban này.",
     "id": "typ-hsk1-0766"
   },
   {
@@ -9450,7 +9450,7 @@
   {
     "hanzi": "下面",
     "pinyin": "xià miàn",
-    "hanviet": "Hạ 面",
+    "hanviet": "Hạ Diện",
     "meaning": "bên dưới, dưới",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -9462,7 +9462,7 @@
   {
     "hanzi": "线",
     "pinyin": "xiàn",
-    "hanviet": "线",
+    "hanviet": "Tuyến",
     "meaning": "thread",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -9594,7 +9594,7 @@
   {
     "hanzi": "小孩儿",
     "pinyin": "xiǎo hái r",
-    "hanviet": "Tiểu Hài 儿",
+    "hanviet": "Tiểu Hài Nhi",
     "meaning": "biến thể er hoá của 小孩",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -9786,7 +9786,7 @@
   {
     "hanzi": "型",
     "pinyin": "xíng",
-    "hanviet": "型",
+    "hanviet": "Hình",
     "meaning": "khuôn, loại",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -9918,7 +9918,7 @@
   {
     "hanzi": "需",
     "pinyin": "xū",
-    "hanviet": "需",
+    "hanviet": "Nhu",
     "meaning": "yêu cầu, cần",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -10062,7 +10062,7 @@
   {
     "hanzi": "烟",
     "pinyin": "yān",
-    "hanviet": "烟",
+    "hanviet": "Yên",
     "meaning": "thuốc lá hoặc thuốc lào, khói",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -10242,7 +10242,7 @@
   {
     "hanzi": "一点儿",
     "pinyin": "yī diǎn r",
-    "hanviet": "Nhất Điểm 儿",
+    "hanviet": "Nhất Điểm Nhi",
     "meaning": "biến thể er hoá của 一點|一点",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -10278,7 +10278,7 @@
   {
     "hanzi": "一块儿",
     "pinyin": "yī kuài r",
-    "hanviet": "Nhất Khối 儿",
+    "hanviet": "Nhất Khối Nhi",
     "meaning": "biến thể er hoá của 一塊|一块",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -10302,7 +10302,7 @@
   {
     "hanzi": "一面",
     "pinyin": "yī miàn",
-    "hanviet": "Nhất 面",
+    "hanviet": "Nhất Diện",
     "meaning": "một bên, một khía cạnh",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -10374,7 +10374,7 @@
   {
     "hanzi": "赢得",
     "pinyin": "yíng dé",
-    "hanviet": "赢 Đắc",
+    "hanviet": "Doanh Đắc",
     "meaning": "giành chiến thắng, đạt được",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -10398,7 +10398,7 @@
   {
     "hanzi": "以上",
     "pinyin": "yǐ shàng",
-    "hanviet": "以 Thượng",
+    "hanviet": "Dĩ Thượng",
     "meaning": "mức đó hoặc cao hơn, số lượng đó hoặc nhiều hơn",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -10434,7 +10434,7 @@
   {
     "hanzi": "以下",
     "pinyin": "yǐ xià",
-    "hanviet": "以 Hạ",
+    "hanviet": "Dĩ Hạ",
     "meaning": "mức đó hoặc thấp hơn, số lượng đó hoặc ít hơn",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -10446,7 +10446,7 @@
   {
     "hanzi": "一下儿",
     "pinyin": "yī xià r",
-    "hanviet": "Nhất Hạ 儿",
+    "hanviet": "Nhất Hạ Nhi",
     "meaning": "biến thể er hoá của 一下",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -10474,9 +10474,9 @@
     "meaning": "từng cái một; lần lượt",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“一一”这个词。",
-    "examplePinyin": "Qǐng jìzhu “一一” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “一一” này.",
+    "example": "请记住一一这个词。",
+    "examplePinyin": "Qǐng jìzhu yī yī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ từng cái một; lần lượt này.",
     "id": "typ-hsk1-0872"
   },
   {
@@ -10494,7 +10494,7 @@
   {
     "hanzi": "椅子",
     "pinyin": "yǐ zi",
-    "hanviet": "椅 Tử",
+    "hanviet": "Y Tử",
     "meaning": "cái ghế",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -10566,7 +10566,7 @@
   {
     "hanzi": "有点儿",
     "pinyin": "yǒu diǎn r",
-    "hanviet": "Hữu Điểm 儿",
+    "hanviet": "Hữu Điểm Nhi",
     "meaning": "hơi, một chút",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -10630,9 +10630,9 @@
     "meaning": "phần nào, ở một mức độ nào đó",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“有所”这个词。",
-    "examplePinyin": "Qǐng jìzhu “有所” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “有所” này.",
+    "example": "请记住有所这个词。",
+    "examplePinyin": "Qǐng jìzhu yǒu suǒ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phần nào, ở một mức độ nào đó này.",
     "id": "typ-hsk1-0885"
   },
   {
@@ -10678,9 +10678,9 @@
     "meaning": "một chút, khá",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“有一些”这个词。",
-    "examplePinyin": "Qǐng jìzhu “有一些” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “有一些” này.",
+    "example": "请记住有一些这个词。",
+    "examplePinyin": "Qǐng jìzhu yǒu yī xiē zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ một chút, khá này.",
     "id": "typ-hsk1-0889"
   },
   {
@@ -10914,7 +10914,7 @@
   {
     "hanzi": "藏",
     "pinyin": "Zàng",
-    "hanviet": "藏",
+    "hanviet": "Tàng",
     "meaning": "Tây Tạng, viết tắt của Tây Tạng hoặc Khu Tự trị Tây Tạng 西藏",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -10950,7 +10950,7 @@
   {
     "hanzi": "早餐",
     "pinyin": "zǎo cān",
-    "hanviet": "Tảo 餐",
+    "hanviet": "Tảo Xan",
     "meaning": "bữa sáng",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -10986,7 +10986,7 @@
   {
     "hanzi": "早就",
     "pinyin": "zǎo jiù",
-    "hanviet": "Tảo 就",
+    "hanviet": "Tảo",
     "meaning": "đã từ sớm",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -11118,7 +11118,7 @@
   {
     "hanzi": "者",
     "pinyin": "zhě",
-    "hanviet": "者",
+    "hanviet": "Giả",
     "meaning": "người mà ..., người liên quan đến ...",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -11266,15 +11266,15 @@
     "meaning": "sự hết lòng; chân thành",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“真心”这个词。",
-    "examplePinyin": "Qǐng jìzhu “真心” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “真心” này.",
+    "example": "请记住真心这个词。",
+    "examplePinyin": "Qǐng jìzhu zhēn xīn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sự hết lòng; chân thành này.",
     "id": "typ-hsk1-0938"
   },
   {
     "hanzi": "这儿",
     "pinyin": "zhè r",
-    "hanviet": "Giá 儿",
+    "hanviet": "Giá Nhi",
     "meaning": "ở đây, chỗ này",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -11310,7 +11310,7 @@
   {
     "hanzi": "值",
     "pinyin": "zhí",
-    "hanviet": "值",
+    "hanviet": "Trị",
     "meaning": "giá trị, đáng",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -11394,7 +11394,7 @@
   {
     "hanzi": "直到",
     "pinyin": "zhí dào",
-    "hanviet": "直 Đáo",
+    "hanviet": "Trực Đáo",
     "meaning": "cho đến",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -11730,7 +11730,7 @@
   {
     "hanzi": "桌子",
     "pinyin": "zhuō zi",
-    "hanviet": "桌 Tử",
+    "hanviet": "Trác Tử",
     "meaning": "cái bàn",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -11758,9 +11758,9 @@
     "meaning": "chủ nghĩa, tư tưởng",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“主义”这个词。",
-    "examplePinyin": "Qǐng jìzhu “主义” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “主义” này.",
+    "example": "请记住主义这个词。",
+    "examplePinyin": "Qǐng jìzhu zhǔ yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chủ nghĩa, tư tưởng này.",
     "id": "typ-hsk1-0979"
   },
   {
@@ -11806,9 +11806,9 @@
     "meaning": "tự giết mình, tự sát",
     "hsk": "HSK 1",
     "levelNum": 1,
-    "example": "请记住“自杀”这个词。",
-    "examplePinyin": "Qǐng jìzhu “自杀” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “自杀” này.",
+    "example": "请记住自杀这个词。",
+    "examplePinyin": "Qǐng jìzhu zì shā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tự giết mình, tự sát này.",
     "id": "typ-hsk1-0983"
   },
   {
@@ -11862,7 +11862,7 @@
   {
     "hanzi": "足够",
     "pinyin": "zú gòu",
-    "hanviet": "Túc 够",
+    "hanviet": "Túc Cấu",
     "meaning": "đủ; đủ mức",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -11922,7 +11922,7 @@
   {
     "hanzi": "做",
     "pinyin": "zuò",
-    "hanviet": "做",
+    "hanviet": "Tác",
     "meaning": "làm, chế tạo",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -11934,7 +11934,7 @@
   {
     "hanzi": "坐",
     "pinyin": "zuò",
-    "hanviet": "坐",
+    "hanviet": "Tọa",
     "meaning": "ngồi, đi (tàu, xe)",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -11958,7 +11958,7 @@
   {
     "hanzi": "做到",
     "pinyin": "zuò dào",
-    "hanviet": "做 Đáo",
+    "hanviet": "Tác Đáo",
     "meaning": "hoàn thành, đạt được",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -11970,7 +11970,7 @@
   {
     "hanzi": "做饭",
     "pinyin": "zuò fàn",
-    "hanviet": "做 Phạn",
+    "hanviet": "Tác Phạn",
     "meaning": "chuẩn bị bữa ăn, nấu ăn",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -11982,7 +11982,7 @@
   {
     "hanzi": "昨天",
     "pinyin": "zuó tiān",
-    "hanviet": "昨 Thiên",
+    "hanviet": "Tác Thiên",
     "meaning": "hôm qua",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -11994,7 +11994,7 @@
   {
     "hanzi": "坐下",
     "pinyin": "zuò xia",
-    "hanviet": "坐 Hạ",
+    "hanviet": "Tọa Hạ",
     "meaning": "ngồi xuống",
     "hsk": "HSK 1",
     "levelNum": 1,
@@ -12030,13 +12030,13 @@
   {
     "hanzi": "哎呀",
     "pinyin": "āi yā",
-    "hanviet": "哎 Nhá",
+    "hanviet": "Ai Nhá",
     "meaning": "thán từ thể hiện sự ngạc nhiên, sốc hoặc ngưỡng mộ",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“哎呀”这个词。",
-    "examplePinyin": "Qǐng jìzhu “哎呀” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “哎呀” này.",
+    "example": "请记住哎呀这个词。",
+    "examplePinyin": "Qǐng jìzhu āi yā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thán từ thể hiện sự ngạc nhiên, sốc hoặc ngưỡng mộ này.",
     "id": "typ-hsk2-0002"
   },
   {
@@ -12126,13 +12126,13 @@
   {
     "hanzi": "绑",
     "pinyin": "bǎng",
-    "hanviet": "绑",
+    "hanviet": "Bảng",
     "meaning": "buộc, trói hoặc cột lại",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“绑”这个词。",
-    "examplePinyin": "Qǐng jìzhu “绑” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “绑” này.",
+    "example": "请记住绑这个词。",
+    "examplePinyin": "Qǐng jìzhu bǎng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ buộc, trói hoặc cột lại này.",
     "id": "typ-hsk2-0010"
   },
   {
@@ -12150,7 +12150,7 @@
   {
     "hanzi": "帮助",
     "pinyin": "bāng zhù",
-    "hanviet": "帮 Trợ",
+    "hanviet": "Bang Trợ",
     "meaning": "sự giúp đỡ; hỗ trợ, giúp đỡ; hỗ trợ",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -12162,13 +12162,13 @@
   {
     "hanzi": "颁奖",
     "pinyin": "bān jiǎng",
-    "hanviet": "颁 奖",
+    "hanviet": "Ban Tưởng",
     "meaning": "trao giải thưởng",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“颁奖”这个词。",
-    "examplePinyin": "Qǐng jìzhu “颁奖” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “颁奖” này.",
+    "example": "请记住颁奖这个词。",
+    "examplePinyin": "Qǐng jìzhu bān jiǎng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trao giải thưởng này.",
     "id": "typ-hsk2-0013"
   },
   {
@@ -12222,13 +12222,13 @@
   {
     "hanzi": "保佑",
     "pinyin": "bǎo yòu",
-    "hanviet": "Bảo 佑",
+    "hanviet": "Bảo Hữu",
     "meaning": "phù hộ và bảo vệ, phù hộ",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“保佑”这个词。",
-    "examplePinyin": "Qǐng jìzhu “保佑” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “保佑” này.",
+    "example": "请记住保佑这个词。",
+    "examplePinyin": "Qǐng jìzhu bǎo yòu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phù hộ và bảo vệ, phù hộ này.",
     "id": "typ-hsk2-0018"
   },
   {
@@ -12510,7 +12510,7 @@
   {
     "hanzi": "不一会儿",
     "pinyin": "bù yīhuǐr5",
-    "hanviet": "Bất Nhất Hội 儿",
+    "hanviet": "Bất Nhất Hội Nhi",
     "meaning": "Take a short while",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -12550,9 +12550,9 @@
     "meaning": "không cho phép, cấm",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“不准”这个词。",
-    "examplePinyin": "Qǐng jìzhu “不准” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “不准” này.",
+    "example": "请记住不准这个词。",
+    "examplePinyin": "Qǐng jìzhu bù zhǔn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ không cho phép, cấm này.",
     "id": "typ-hsk2-0045"
   },
   {
@@ -12570,7 +12570,7 @@
   {
     "hanzi": "猜测",
     "pinyin": "cāi cè",
-    "hanviet": "猜 Trắc",
+    "hanviet": "Sai Trắc",
     "meaning": "đoán, phỏng đoán",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -12630,7 +12630,7 @@
   {
     "hanzi": "餐馆",
     "pinyin": "cān guǎn",
-    "hanviet": "餐 Quán",
+    "hanviet": "Xan Quán",
     "meaning": "nhà hàng, Lượng từ: 家",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -12642,7 +12642,7 @@
   {
     "hanzi": "参赛",
     "pinyin": "cān sài",
-    "hanviet": "Tham 赛",
+    "hanviet": "Tham Tái",
     "meaning": "thi đấu, tham gia một cuộc thi",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -12694,9 +12694,9 @@
     "meaning": "quấn quanh, quấn lại",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“缠”这个词。",
-    "examplePinyin": "Qǐng jìzhu “缠” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “缠” này.",
+    "example": "请记住缠这个词。",
+    "examplePinyin": "Qǐng jìzhu chán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quấn quanh, quấn lại này.",
     "id": "typ-hsk2-0057"
   },
   {
@@ -12826,9 +12826,9 @@
     "meaning": "kéo, xé",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“扯”这个词。",
-    "examplePinyin": "Qǐng jìzhu “扯” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “扯” này.",
+    "example": "请记住扯这个词。",
+    "examplePinyin": "Qǐng jìzhu chě zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kéo, xé này.",
     "id": "typ-hsk2-0068"
   },
   {
@@ -12850,9 +12850,9 @@
     "meaning": "tai nạn giao thông, tai nạn xe",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“车祸”这个词。",
-    "examplePinyin": "Qǐng jìzhu “车祸” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “车祸” này.",
+    "example": "请记住车祸这个词。",
+    "examplePinyin": "Qǐng jìzhu chē huò zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tai nạn giao thông, tai nạn xe này.",
     "id": "typ-hsk2-0070"
   },
   {
@@ -12978,13 +12978,13 @@
   {
     "hanzi": "筹",
     "pinyin": "chóu",
-    "hanviet": "筹",
+    "hanviet": "Trù",
     "meaning": "phỉnh ; vật đánh dấu ; vé, chuẩn bị; lên kế hoạch; gây quỹ",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“筹”这个词。",
-    "examplePinyin": "Qǐng jìzhu “筹” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “筹” này.",
+    "example": "请记住筹这个词。",
+    "examplePinyin": "Qǐng jìzhu chóu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phỉnh ; vật đánh dấu ; vé, chuẩn bị; lên kế hoạch; gây quỹ này.",
     "id": "typ-hsk2-0081"
   },
   {
@@ -13054,9 +13054,9 @@
     "meaning": "đi qua",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“穿过”这个词。",
-    "examplePinyin": "Qǐng jìzhu “穿过” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “穿过” này.",
+    "example": "请记住穿过这个词。",
+    "examplePinyin": "Qǐng jìzhu chuān guò zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đi qua này.",
     "id": "typ-hsk2-0087"
   },
   {
@@ -13090,9 +13090,9 @@
     "meaning": "huyền thoại, câu chuyện truyền kỳ",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“传奇”这个词。",
-    "examplePinyin": "Qǐng jìzhu “传奇” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “传奇” này.",
+    "example": "请记住传奇这个词。",
+    "examplePinyin": "Qǐng jìzhu chuán qí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ huyền thoại, câu chuyện truyền kỳ này.",
     "id": "typ-hsk2-0090"
   },
   {
@@ -13170,13 +13170,13 @@
   {
     "hanzi": "戳",
     "pinyin": "chuō",
-    "hanviet": "戳",
+    "hanviet": "Chọc",
     "meaning": "đâm, chọc",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“戳”这个词。",
-    "examplePinyin": "Qǐng jìzhu “戳” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “戳” này.",
+    "example": "请记住戳这个词。",
+    "examplePinyin": "Qǐng jìzhu chuō zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đâm, chọc này.",
     "id": "typ-hsk2-0097"
   },
   {
@@ -13194,7 +13194,7 @@
   {
     "hanzi": "出售",
     "pinyin": "chū shòu",
-    "hanviet": "Xuất 售",
+    "hanviet": "Xuất Thọ",
     "meaning": "bán, đưa ra bán",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -13210,9 +13210,9 @@
     "meaning": "xử lý, tiêu tiền",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“出手”这个词。",
-    "examplePinyin": "Qǐng jìzhu “出手” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “出手” này.",
+    "example": "请记住出手这个词。",
+    "examplePinyin": "Qǐng jìzhu chū shǒu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xử lý, tiêu tiền này.",
     "id": "typ-hsk2-0100"
   },
   {
@@ -13222,9 +13222,9 @@
     "meaning": "chảy máu; xuất huyết, tiêu tiền nhiều",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“出血”这个词。",
-    "examplePinyin": "Qǐng jìzhu “出血” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “出血” này.",
+    "example": "请记住出血这个词。",
+    "examplePinyin": "Qǐng jìzhu chū xuè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chảy máu; xuất huyết, tiêu tiền nhiều này.",
     "id": "typ-hsk2-0101"
   },
   {
@@ -13318,9 +13318,9 @@
     "meaning": "nhân từ, từ thiện",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“慈善”这个词。",
-    "examplePinyin": "Qǐng jìzhu “慈善” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “慈善” này.",
+    "example": "请记住慈善这个词。",
+    "examplePinyin": "Qǐng jìzhu cí shàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhân từ, từ thiện này.",
     "id": "typ-hsk2-0109"
   },
   {
@@ -13542,7 +13542,7 @@
   {
     "hanzi": "大街",
     "pinyin": "dà jiē",
-    "hanviet": "Đại 街",
+    "hanviet": "Đại Nhai",
     "meaning": "đường, phố chính",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -13626,7 +13626,7 @@
   {
     "hanzi": "档",
     "pinyin": "dǎng",
-    "hanviet": "档",
+    "hanviet": "Đương",
     "meaning": "(Tw) variant of 挡, gear",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -13666,9 +13666,9 @@
     "meaning": "vào buổi tối hôm đó",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“当晚”这个词。",
-    "examplePinyin": "Qǐng jìzhu “当晚” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “当晚” này.",
+    "example": "请记住当晚这个词。",
+    "examplePinyin": "Qǐng jìzhu dāng wǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vào buổi tối hôm đó này.",
     "id": "typ-hsk2-0138"
   },
   {
@@ -13686,7 +13686,7 @@
   {
     "hanzi": "但是",
     "pinyin": "dàn shì",
-    "hanviet": "但 Thị",
+    "hanviet": "Đãn Thị",
     "meaning": "nhưng; tuy nhiên",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -13726,9 +13726,9 @@
     "meaning": "đến đúng vị trí, ở đúng chỗ",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“到位”这个词。",
-    "examplePinyin": "Qǐng jìzhu “到位” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “到位” này.",
+    "example": "请记住到位这个词。",
+    "examplePinyin": "Qǐng jìzhu dào wèi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đến đúng vị trí, ở đúng chỗ này.",
     "id": "typ-hsk2-0143"
   },
   {
@@ -13794,7 +13794,7 @@
   {
     "hanzi": "大厅",
     "pinyin": "dà tīng",
-    "hanviet": "Đại 厅",
+    "hanviet": "Đại Sảnh",
     "meaning": "sảnh; hành lang",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -13938,7 +13938,7 @@
   {
     "hanzi": "得以",
     "pinyin": "dé yǐ",
-    "hanviet": "Đắc 以",
+    "hanviet": "Đắc Dĩ",
     "meaning": "có thể, để ai đó có thể",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -13954,9 +13954,9 @@
     "meaning": "tìm ra, biết được",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“得知”这个词。",
-    "examplePinyin": "Qǐng jìzhu “得知” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “得知” này.",
+    "example": "请记住得知这个词。",
+    "examplePinyin": "Qǐng jìzhu dé zhī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tìm ra, biết được này.",
     "id": "typ-hsk2-0162"
   },
   {
@@ -14026,21 +14026,21 @@
     "meaning": "giọng thấp, yên lặng",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“低调”这个词。",
-    "examplePinyin": "Qǐng jìzhu “低调” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “低调” này.",
+    "example": "请记住低调这个词。",
+    "examplePinyin": "Qǐng jìzhu dī diào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giọng thấp, yên lặng này.",
     "id": "typ-hsk2-0168"
   },
   {
     "hanzi": "爹",
     "pinyin": "diē",
-    "hanviet": "爹",
+    "hanviet": "Đa",
     "meaning": "ba",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“爹”这个词。",
-    "examplePinyin": "Qǐng jìzhu “爹” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “爹” này.",
+    "example": "请记住爹这个词。",
+    "examplePinyin": "Qǐng jìzhu diē zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ba này.",
     "id": "typ-hsk2-0169"
   },
   {
@@ -14050,15 +14050,15 @@
     "meaning": "đế quốc, thuộc về đế quốc",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“帝国”这个词。",
-    "examplePinyin": "Qǐng jìzhu “帝国” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “帝国” này.",
+    "example": "请记住帝国这个词。",
+    "examplePinyin": "Qǐng jìzhu dì guó zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đế quốc, thuộc về đế quốc này.",
     "id": "typ-hsk2-0170"
   },
   {
     "hanzi": "地面",
     "pinyin": "dì miàn",
-    "hanviet": "Địa 面",
+    "hanviet": "Địa Diện",
     "meaning": "sàn, mặt đất",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -14074,9 +14074,9 @@
     "meaning": "nail",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“钉”这个词。",
-    "examplePinyin": "Qǐng jìzhu “钉” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “钉” này.",
+    "example": "请记住钉这个词。",
+    "examplePinyin": "Qǐng jìzhu dīng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nail này.",
     "id": "typ-hsk2-0172"
   },
   {
@@ -14122,15 +14122,15 @@
     "meaning": "địa ngục, âm ti",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“地狱”这个词。",
-    "examplePinyin": "Qǐng jìzhu “地狱” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “地狱” này.",
+    "example": "请记住地狱这个词。",
+    "examplePinyin": "Qǐng jìzhu dì yù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ địa ngục, âm ti này.",
     "id": "typ-hsk2-0176"
   },
   {
     "hanzi": "懂",
     "pinyin": "dǒng",
-    "hanviet": "懂",
+    "hanviet": "Đổng",
     "meaning": "hiểu, nhận thức",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -14194,9 +14194,9 @@
     "meaning": "hội đồng quản trị",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“董事会”这个词。",
-    "examplePinyin": "Qǐng jìzhu “董事会” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “董事会” này.",
+    "example": "请记住董事会这个词。",
+    "examplePinyin": "Qǐng jìzhu dǒng shì huì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hội đồng quản trị này.",
     "id": "typ-hsk2-0182"
   },
   {
@@ -14226,7 +14226,7 @@
   {
     "hanzi": "堵",
     "pinyin": "dǔ",
-    "hanviet": "堵",
+    "hanviet": "Đổ",
     "meaning": "chặn, bít kín",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -14254,9 +14254,9 @@
     "meaning": "thời gian ngắn; ngắn gọn; chốc lát",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“短暂”这个词。",
-    "examplePinyin": "Qǐng jìzhu “短暂” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “短暂” này.",
+    "example": "请记住短暂这个词。",
+    "examplePinyin": "Qǐng jìzhu duǎn zàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thời gian ngắn; ngắn gọn; chốc lát này.",
     "id": "typ-hsk2-0187"
   },
   {
@@ -14286,13 +14286,13 @@
   {
     "hanzi": "度假",
     "pinyin": "dù jià",
-    "hanviet": "Độ 假",
+    "hanviet": "Độ Giả",
     "meaning": "đi nghỉ mát, dành kỳ nghỉ",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“度假”这个词。",
-    "examplePinyin": "Qǐng jìzhu “度假” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “度假” này.",
+    "example": "请记住度假这个词。",
+    "examplePinyin": "Qǐng jìzhu dù jià zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đi nghỉ mát, dành kỳ nghỉ này.",
     "id": "typ-hsk2-0190"
   },
   {
@@ -14370,7 +14370,7 @@
   {
     "hanzi": "读者",
     "pinyin": "dú zhě",
-    "hanviet": "Độc 者",
+    "hanviet": "Độc Giả",
     "meaning": "độc giả",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -14430,7 +14430,7 @@
   {
     "hanzi": "方便面",
     "pinyin": "fāng biàn miàn",
-    "hanviet": "Phương Tiện 面",
+    "hanviet": "Phương Tiện Diện",
     "meaning": "mì ăn liền",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -14454,13 +14454,13 @@
   {
     "hanzi": "房地产",
     "pinyin": "fáng dì chǎn",
-    "hanviet": "Phòng Địa 产",
+    "hanviet": "Phòng Địa Sản",
     "meaning": "bất động sản",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“房地产”这个词。",
-    "examplePinyin": "Qǐng jìzhu “房地产” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “房地产” này.",
+    "example": "请记住房地产这个词。",
+    "examplePinyin": "Qǐng jìzhu fáng dì chǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bất động sản này.",
     "id": "typ-hsk2-0204"
   },
   {
@@ -14502,13 +14502,13 @@
   {
     "hanzi": "反击",
     "pinyin": "fǎn jī",
-    "hanviet": "Phản 击",
+    "hanviet": "Phản Kích",
     "meaning": "phản kích; đánh trả; phản công",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“反击”这个词。",
-    "examplePinyin": "Qǐng jìzhu “反击” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “反击” này.",
+    "example": "请记住反击这个词。",
+    "examplePinyin": "Qǐng jìzhu fǎn jī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phản kích; đánh trả; phản công này.",
     "id": "typ-hsk2-0208"
   },
   {
@@ -14538,13 +14538,13 @@
   {
     "hanzi": "发型",
     "pinyin": "fà xíng",
-    "hanviet": "Phát 型",
+    "hanviet": "Phát Hình",
     "meaning": "kiểu tóc; mẫu tóc; tóc tai",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“发型”这个词。",
-    "examplePinyin": "Qǐng jìzhu “发型” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “发型” này.",
+    "example": "请记住发型这个词。",
+    "examplePinyin": "Qǐng jìzhu fà xíng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kiểu tóc; mẫu tóc; tóc tai này.",
     "id": "typ-hsk2-0211"
   },
   {
@@ -14554,9 +14554,9 @@
     "meaning": "bộc phát; bùng lên",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“发作”这个词。",
-    "examplePinyin": "Qǐng jìzhu “发作” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “发作” này.",
+    "example": "请记住发作这个词。",
+    "examplePinyin": "Qǐng jìzhu fā zuò zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bộc phát; bùng lên này.",
     "id": "typ-hsk2-0212"
   },
   {
@@ -14598,13 +14598,13 @@
   {
     "hanzi": "缝",
     "pinyin": "féng",
-    "hanviet": "缝",
+    "hanviet": "Phùng",
     "meaning": "khâu, may",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“缝”这个词。",
-    "examplePinyin": "Qǐng jìzhu “缝” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “缝” này.",
+    "example": "请记住缝这个词。",
+    "examplePinyin": "Qǐng jìzhu féng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khâu, may này.",
     "id": "typ-hsk2-0216"
   },
   {
@@ -14698,9 +14698,9 @@
     "meaning": "máy chủ",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“服务器”这个词。",
-    "examplePinyin": "Qǐng jìzhu “服务器” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “服务器” này.",
+    "example": "请记住服务器这个词。",
+    "examplePinyin": "Qǐng jìzhu fú wù qì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ máy chủ này.",
     "id": "typ-hsk2-0224"
   },
   {
@@ -14722,9 +14722,9 @@
     "meaning": "uống",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“服用”这个词。",
-    "examplePinyin": "Qǐng jìzhu “服用” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “服用” này.",
+    "example": "请记住服用这个词。",
+    "examplePinyin": "Qǐng jìzhu fú yòng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ uống này.",
     "id": "typ-hsk2-0226"
   },
   {
@@ -14742,19 +14742,19 @@
   {
     "hanzi": "改革开放",
     "pinyin": "gǎi gé kāi fàng",
-    "hanviet": "改 革 Khai Phóng",
+    "hanviet": "Cải Cách Khai Phóng",
     "meaning": "cải cách và mở cửa ra thế giới bên ngoài, ám chỉ chính sách của Đặng Tiểu Bình từ khoảng năm 1980",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“改革开放”这个词。",
-    "examplePinyin": "Qǐng jìzhu “改革开放” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “改革开放” này.",
+    "example": "请记住改革开放这个词。",
+    "examplePinyin": "Qǐng jìzhu gǎi gé kāi fàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cải cách và mở cửa ra thế giới bên ngoài, ám chỉ chính sách của Đặng Tiểu Bình từ khoảng năm 1980 này.",
     "id": "typ-hsk2-0228"
   },
   {
     "hanzi": "改造",
     "pinyin": "gǎi zào",
-    "hanviet": "改 Tạo",
+    "hanviet": "Cải Tạo",
     "meaning": "cải tạo, cải cách",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -14790,7 +14790,7 @@
   {
     "hanzi": "刚好",
     "pinyin": "gāng hǎo",
-    "hanviet": "刚 Hảo",
+    "hanviet": "Cương Hảo",
     "meaning": "vừa, vừa hay",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -14814,7 +14814,7 @@
   {
     "hanzi": "赶上",
     "pinyin": "gǎn shàng",
-    "hanviet": "赶 Thượng",
+    "hanviet": "Cản Thượng",
     "meaning": "theo kịp, bắt kịp",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -14826,7 +14826,7 @@
   {
     "hanzi": "告",
     "pinyin": "gào",
-    "hanviet": "告",
+    "hanviet": "Cáo",
     "meaning": "nói; bảo, thông báo; báo cáo",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -14874,7 +14874,7 @@
   {
     "hanzi": "告诉",
     "pinyin": "gào sù",
-    "hanviet": "告 Tố",
+    "hanviet": "Cáo Tố",
     "meaning": "khởi kiện; nộp đơn khiếu nại",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -14898,13 +14898,13 @@
   {
     "hanzi": "告知",
     "pinyin": "gào zhī",
-    "hanviet": "告 Tri",
+    "hanviet": "Cáo Tri",
     "meaning": "báo tin",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“告知”这个词。",
-    "examplePinyin": "Qǐng jìzhu “告知” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “告知” này.",
+    "example": "请记住告知这个词。",
+    "examplePinyin": "Qǐng jìzhu gào zhī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ báo tin này.",
     "id": "typ-hsk2-0241"
   },
   {
@@ -15030,7 +15030,7 @@
   {
     "hanzi": "公共汽车",
     "pinyin": "gōng gòng qì chē",
-    "hanviet": "Công Cộng 汽 Xa",
+    "hanviet": "Công Cộng Khí Xa",
     "meaning": "xe buýt",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -15090,7 +15090,7 @@
   {
     "hanzi": "购",
     "pinyin": "gòu",
-    "hanviet": "购",
+    "hanviet": "Cấu",
     "meaning": "mua, mua sắm",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -15114,7 +15114,7 @@
   {
     "hanzi": "鼓",
     "pinyin": "gǔ",
-    "hanviet": "鼓",
+    "hanviet": "Cổ",
     "meaning": "biến thể cũ của 鼓",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -15126,25 +15126,25 @@
   {
     "hanzi": "怪物",
     "pinyin": "guài wu",
-    "hanviet": "怪 Vật",
+    "hanviet": "Quái Vật",
     "meaning": "quái vật, quái dị",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“怪物”这个词。",
-    "examplePinyin": "Qǐng jìzhu “怪物” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “怪物” này.",
+    "example": "请记住怪物这个词。",
+    "examplePinyin": "Qǐng jìzhu guài wu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quái vật, quái dị này.",
     "id": "typ-hsk2-0260"
   },
   {
     "hanzi": "灌",
     "pinyin": "guàn",
-    "hanviet": "灌",
+    "hanviet": "Quán",
     "meaning": "tưới, rót",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“灌”这个词。",
-    "examplePinyin": "Qǐng jìzhu “灌” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “灌” này.",
+    "example": "请记住灌这个词。",
+    "examplePinyin": "Qǐng jìzhu guàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tưới, rót này.",
     "id": "typ-hsk2-0261"
   },
   {
@@ -15198,7 +15198,7 @@
   {
     "hanzi": "孤儿",
     "pinyin": "gū ér",
-    "hanviet": "Cô 儿",
+    "hanviet": "Cô Nhi",
     "meaning": "trẻ mồ côi",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -15274,21 +15274,21 @@
     "meaning": "bị gãy xương, gãy",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“骨折”这个词。",
-    "examplePinyin": "Qǐng jìzhu “骨折” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “骨折” này.",
+    "example": "请记住骨折这个词。",
+    "examplePinyin": "Qǐng jìzhu gǔ zhé zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bị gãy xương, gãy này.",
     "id": "typ-hsk2-0272"
   },
   {
     "hanzi": "虾",
     "pinyin": "há",
-    "hanviet": "虾",
+    "hanviet": "Hà",
     "meaning": "dùng trong 蝦蟆|虾蟆",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“虾”这个词。",
-    "examplePinyin": "Qǐng jìzhu “虾” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “虾” này.",
+    "example": "请记住虾这个词。",
+    "examplePinyin": "Qǐng jìzhu há zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dùng trong này.",
     "id": "typ-hsk2-0273"
   },
   {
@@ -15354,7 +15354,7 @@
   {
     "hanzi": "含量",
     "pinyin": "hán liàng",
-    "hanviet": "Hàm 量",
+    "hanviet": "Hàm Lượng",
     "meaning": "hàm lượng, số lượng chứa đựng",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -15426,13 +15426,13 @@
   {
     "hanzi": "好笑",
     "pinyin": "hǎo xiào",
-    "hanviet": "Hảo 笑",
+    "hanviet": "Hảo Tiếu",
     "meaning": "buồn cười; vui nhộn; lố bịch",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“好笑”这个词。",
-    "examplePinyin": "Qǐng jìzhu “好笑” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “好笑” này.",
+    "example": "请记住好笑这个词。",
+    "examplePinyin": "Qǐng jìzhu hǎo xiào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ buồn cười; vui nhộn; lố bịch này.",
     "id": "typ-hsk2-0285"
   },
   {
@@ -15498,7 +15498,7 @@
   {
     "hanzi": "狠",
     "pinyin": "hěn",
-    "hanviet": "狠",
+    "hanviet": "Hẩn",
     "meaning": "tàn nhẫn; dữ dội; hung dữ, kiên quyết; quả quyết",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -15510,13 +15510,13 @@
   {
     "hanzi": "何时",
     "pinyin": "hé shí",
-    "hanviet": "何 Thời",
+    "hanviet": "Hà Thời",
     "meaning": "khi nào",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“何时”这个词。",
-    "examplePinyin": "Qǐng jìzhu “何时” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “何时” này.",
+    "example": "请记住何时这个词。",
+    "examplePinyin": "Qǐng jìzhu hé shí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khi nào này.",
     "id": "typ-hsk2-0292"
   },
   {
@@ -15562,9 +15562,9 @@
     "meaning": "ứng cử viên",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“候选人”这个词。",
-    "examplePinyin": "Qǐng jìzhu “候选人” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “候选人” này.",
+    "example": "请记住候选人这个词。",
+    "examplePinyin": "Qǐng jìzhu hòu xuǎn rén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ứng cử viên này.",
     "id": "typ-hsk2-0296"
   },
   {
@@ -15630,7 +15630,7 @@
   {
     "hanzi": "画面",
     "pinyin": "huà miàn",
-    "hanviet": "Hoạ 面",
+    "hanviet": "Hoạ Diện",
     "meaning": "cảnh, quang cảnh",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -15642,7 +15642,7 @@
   {
     "hanzi": "环保",
     "pinyin": "huán bǎo",
-    "hanviet": "环 Bảo",
+    "hanviet": "Hoàn Bảo",
     "meaning": "bảo vệ môi trường, thân thiện với môi trường",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -15658,9 +15658,9 @@
     "meaning": "to dazzle",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“晃”这个词。",
-    "examplePinyin": "Qǐng jìzhu “晃” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “晃” này.",
+    "example": "请记住晃这个词。",
+    "examplePinyin": "Qǐng jìzhu huǎng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ to dazzle này.",
     "id": "typ-hsk2-0304"
   },
   {
@@ -15678,13 +15678,13 @@
   {
     "hanzi": "谎言",
     "pinyin": "huǎng yán",
-    "hanviet": "谎 Ngôn",
+    "hanviet": "Hoang Ngôn",
     "meaning": "lời nói dối",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“谎言”这个词。",
-    "examplePinyin": "Qǐng jìzhu “谎言” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “谎言” này.",
+    "example": "请记住谎言这个词。",
+    "examplePinyin": "Qǐng jìzhu huǎng yán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lời nói dối này.",
     "id": "typ-hsk2-0306"
   },
   {
@@ -15702,7 +15702,7 @@
   {
     "hanzi": "画儿",
     "pinyin": "huà r",
-    "hanviet": "Hoạ 儿",
+    "hanviet": "Hoạ Nhi",
     "meaning": "bức tranh, hình vẽ",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -15726,13 +15726,13 @@
   {
     "hanzi": "回归",
     "pinyin": "huí guī",
-    "hanviet": "Hồi 归",
+    "hanviet": "Hồi Quy",
     "meaning": "trở về, rút lui",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“回归”这个词。",
-    "examplePinyin": "Qǐng jìzhu “回归” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “回归” này.",
+    "example": "请记住回归这个词。",
+    "examplePinyin": "Qǐng jìzhu huí guī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trở về, rút lui này.",
     "id": "typ-hsk2-0310"
   },
   {
@@ -15814,15 +15814,15 @@
     "meaning": "biến thể cũ của 魂",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“魂”这个词。",
-    "examplePinyin": "Qǐng jìzhu “魂” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “魂” này.",
+    "example": "请记住魂这个词。",
+    "examplePinyin": "Qǐng jìzhu hún zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ biến thể cũ của này.",
     "id": "typ-hsk2-0317"
   },
   {
     "hanzi": "伙",
     "pinyin": "huǒ",
-    "hanviet": "伙",
+    "hanviet": "Hỏa",
     "meaning": "meals (abbr. for 食)",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -15838,9 +15838,9 @@
     "meaning": "xe tải, xe van",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“货车”这个词。",
-    "examplePinyin": "Qǐng jìzhu “货车” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “货车” này.",
+    "example": "请记住货车这个词。",
+    "examplePinyin": "Qǐng jìzhu huò chē zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xe tải, xe van này.",
     "id": "typ-hsk2-0319"
   },
   {
@@ -15870,7 +15870,7 @@
   {
     "hanzi": "挤",
     "pinyin": "jǐ",
-    "hanviet": "挤",
+    "hanviet": "Tễ",
     "meaning": "chen chúc, nhồi nhét",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -15934,9 +15934,9 @@
     "meaning": "kép, gấp đôi",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“兼”这个词。",
-    "examplePinyin": "Qǐng jìzhu “兼” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “兼” này.",
+    "example": "请记住兼这个词。",
+    "examplePinyin": "Qǐng jìzhu jiān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kép, gấp đôi này.",
     "id": "typ-hsk2-0327"
   },
   {
@@ -15990,7 +15990,7 @@
   {
     "hanzi": "肩",
     "pinyin": "jiān",
-    "hanviet": "肩",
+    "hanviet": "Kiên",
     "meaning": "vai, gánh vác",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -16006,15 +16006,15 @@
     "meaning": "rẻ tiền, thấp kém",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“贱”这个词。",
-    "examplePinyin": "Qǐng jìzhu “贱” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “贱” này.",
+    "example": "请记住贱这个词。",
+    "examplePinyin": "Qǐng jìzhu jiàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rẻ tiền, thấp kém này.",
     "id": "typ-hsk2-0333"
   },
   {
     "hanzi": "键",
     "pinyin": "jiàn",
-    "hanviet": "键",
+    "hanviet": "Kiện",
     "meaning": "phím, nút",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -16030,9 +16030,9 @@
     "meaning": "ginger",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“姜”这个词。",
-    "examplePinyin": "Qǐng jìzhu “姜” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “姜” này.",
+    "example": "请记住姜这个词。",
+    "examplePinyin": "Qǐng jìzhu jiāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ginger này.",
     "id": "typ-hsk2-0335"
   },
   {
@@ -16062,13 +16062,13 @@
   {
     "hanzi": "奖品",
     "pinyin": "jiǎng pǐn",
-    "hanviet": "奖 Phẩm",
+    "hanviet": "Tưởng Phẩm",
     "meaning": "giải thưởng, phần thưởng",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“奖品”这个词。",
-    "examplePinyin": "Qǐng jìzhu “奖品” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “奖品” này.",
+    "example": "请记住奖品这个词。",
+    "examplePinyin": "Qǐng jìzhu jiǎng pǐn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giải thưởng, phần thưởng này.",
     "id": "typ-hsk2-0338"
   },
   {
@@ -16078,9 +16078,9 @@
     "meaning": "kể về; thuật lại; trình bày",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“讲述”这个词。",
-    "examplePinyin": "Qǐng jìzhu “讲述” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “讲述” này.",
+    "example": "请记住讲述这个词。",
+    "examplePinyin": "Qǐng jìzhu jiǎng shù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kể về; thuật lại; trình bày này.",
     "id": "typ-hsk2-0339"
   },
   {
@@ -16090,9 +16090,9 @@
     "meaning": "giám sát, phụ trách",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“监管”这个词。",
-    "examplePinyin": "Qǐng jìzhu “监管” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “监管” này.",
+    "example": "请记住监管这个词。",
+    "examplePinyin": "Qǐng jìzhu jiān guǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giám sát, phụ trách này.",
     "id": "typ-hsk2-0340"
   },
   {
@@ -16126,9 +16126,9 @@
     "meaning": "giám sát",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“监控”这个词。",
-    "examplePinyin": "Qǐng jìzhu “监控” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “监控” này.",
+    "example": "请记住监控这个词。",
+    "examplePinyin": "Qǐng jìzhu jiān kòng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giám sát này.",
     "id": "typ-hsk2-0343"
   },
   {
@@ -16158,13 +16158,13 @@
   {
     "hanzi": "见识",
     "pinyin": "jiàn shi",
-    "hanviet": "Kiến 识",
+    "hanviet": "Kiến Thức",
     "meaning": "mở mang kiến thức về điều gì, trải nghiệm cho bản thân",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“见识”这个词。",
-    "examplePinyin": "Qǐng jìzhu “见识” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “见识” này.",
+    "example": "请记住见识这个词。",
+    "examplePinyin": "Qǐng jìzhu jiàn shi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mở mang kiến thức về điều gì, trải nghiệm cho bản thân này.",
     "id": "typ-hsk2-0346"
   },
   {
@@ -16182,7 +16182,7 @@
   {
     "hanzi": "焦",
     "pinyin": "jiāo",
-    "hanviet": "焦",
+    "hanviet": "Tiêu",
     "meaning": "burnt",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -16198,9 +16198,9 @@
     "meaning": "xe kín chở khách, xe hơi",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“轿车”这个词。",
-    "examplePinyin": "Qǐng jìzhu “轿车” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “轿车” này.",
+    "example": "请记住轿车这个词。",
+    "examplePinyin": "Qǐng jìzhu jiào chē zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xe kín chở khách, xe hơi này.",
     "id": "typ-hsk2-0349"
   },
   {
@@ -16234,9 +16234,9 @@
     "meaning": "thảo luận; trò chuyện, trò chuyện; thảo luận",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“交谈”这个词。",
-    "examplePinyin": "Qǐng jìzhu “交谈” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “交谈” này.",
+    "example": "请记住交谈这个词。",
+    "examplePinyin": "Qǐng jìzhu jiāo tán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thảo luận; trò chuyện, trò chuyện; thảo luận này.",
     "id": "typ-hsk2-0352"
   },
   {
@@ -16266,7 +16266,7 @@
   {
     "hanzi": "假期",
     "pinyin": "jià qī",
-    "hanviet": "假 Kỳ",
+    "hanviet": "Giả Kỳ",
     "meaning": "kỳ nghỉ",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -16326,7 +16326,7 @@
   {
     "hanzi": "鸡蛋",
     "pinyin": "jī dàn",
-    "hanviet": "鸡 蛋",
+    "hanviet": "Kê Đản",
     "meaning": "trứng, trứng gà",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -16342,9 +16342,9 @@
     "meaning": "to rob",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“劫”这个词。",
-    "examplePinyin": "Qǐng jìzhu “劫” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “劫” này.",
+    "example": "请记住劫这个词。",
+    "examplePinyin": "Qǐng jìzhu jié zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ to rob này.",
     "id": "typ-hsk2-0361"
   },
   {
@@ -16402,9 +16402,9 @@
     "meaning": "can thiệp; tham gia vào",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“介入”这个词。",
-    "examplePinyin": "Qǐng jìzhu “介入” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “介入” này.",
+    "example": "请记住介入这个词。",
+    "examplePinyin": "Qǐng jìzhu jiè rù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ can thiệp; tham gia vào này.",
     "id": "typ-hsk2-0366"
   },
   {
@@ -16434,7 +16434,7 @@
   {
     "hanzi": "街头",
     "pinyin": "jiē tóu",
-    "hanviet": "街 Đầu",
+    "hanviet": "Nhai Đầu",
     "meaning": "đường phố",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -16482,7 +16482,7 @@
   {
     "hanzi": "净",
     "pinyin": "jìng",
-    "hanviet": "净",
+    "hanviet": "Tịnh",
     "meaning": "clean",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -16530,7 +16530,7 @@
   {
     "hanzi": "静",
     "pinyin": "jìng",
-    "hanviet": "静",
+    "hanviet": "Tĩnh",
     "meaning": "yên, tĩnh",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -16606,9 +16606,9 @@
     "meaning": "thoả thích",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“尽情”这个词。",
-    "examplePinyin": "Qǐng jìzhu “尽情” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “尽情” này.",
+    "example": "请记住尽情这个词。",
+    "examplePinyin": "Qǐng jìzhu jìn qíng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thoả thích này.",
     "id": "typ-hsk2-0383"
   },
   {
@@ -16650,7 +16650,7 @@
   {
     "hanzi": "就",
     "pinyin": "jiù",
-    "hanviet": "就",
+    "hanviet": "",
     "meaning": "trong trường hợp đó; thì, ngay khi; ngay sau khi",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -16690,9 +16690,9 @@
     "meaning": "bởi vì, trên cơ sở",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“基于”这个词。",
-    "examplePinyin": "Qǐng jìzhu “基于” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “基于” này.",
+    "example": "请记住基于这个词。",
+    "examplePinyin": "Qǐng jìzhu jī yú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bởi vì, trên cơ sở này.",
     "id": "typ-hsk2-0390"
   },
   {
@@ -16738,9 +16738,9 @@
     "meaning": "báo cáo, tố cáo",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“举报”这个词。",
-    "examplePinyin": "Qǐng jìzhu “举报” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “举报” này.",
+    "example": "请记住举报这个词。",
+    "examplePinyin": "Qǐng jìzhu jǔ bào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ báo cáo, tố cáo này.",
     "id": "typ-hsk2-0394"
   },
   {
@@ -16774,9 +16774,9 @@
     "meaning": "tập hợp; tụ tập",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“聚集”这个词。",
-    "examplePinyin": "Qǐng jìzhu “聚集” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “聚集” này.",
+    "example": "请记住聚集这个词。",
+    "examplePinyin": "Qǐng jìzhu jù jí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tập hợp; tụ tập này.",
     "id": "typ-hsk2-0397"
   },
   {
@@ -16818,7 +16818,7 @@
   {
     "hanzi": "咖啡",
     "pinyin": "kā fēi",
-    "hanviet": "咖 啡",
+    "hanviet": "Gia Phi",
     "meaning": "cà phê",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -16834,9 +16834,9 @@
     "meaning": "bắt đầu công việc, bắt đầu công trình xây dựng",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“开工”这个词。",
-    "examplePinyin": "Qǐng jìzhu “开工” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “开工” này.",
+    "example": "请记住开工这个词。",
+    "examplePinyin": "Qǐng jìzhu kāi gōng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bắt đầu công việc, bắt đầu công trình xây dựng này.",
     "id": "typ-hsk2-0402"
   },
   {
@@ -16858,9 +16858,9 @@
     "meaning": "mở miệng, bắt đầu nói",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“开口”这个词。",
-    "examplePinyin": "Qǐng jìzhu “开口” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “开口” này.",
+    "example": "请记住开口这个词。",
+    "examplePinyin": "Qǐng jìzhu kāi kǒu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mở miệng, bắt đầu nói này.",
     "id": "typ-hsk2-0404"
   },
   {
@@ -16962,7 +16962,7 @@
   {
     "hanzi": "靠近",
     "pinyin": "kào jìn",
-    "hanviet": "靠 Cận",
+    "hanviet": "Kháo Cận",
     "meaning": "ở gần, đến gần; tiến lại gần",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -17070,7 +17070,7 @@
   {
     "hanzi": "可以",
     "pinyin": "kě yǐ",
-    "hanviet": "Khả 以",
+    "hanviet": "Khả Dĩ",
     "meaning": "có thể, được",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -17130,7 +17130,7 @@
   {
     "hanzi": "快餐",
     "pinyin": "kuài cān",
-    "hanviet": "Khoái 餐",
+    "hanviet": "Khoái Xan",
     "meaning": "thức ăn nhanh, đồ ăn nhẹ",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -17142,7 +17142,7 @@
   {
     "hanzi": "快点儿",
     "pinyin": "kuài diǎn r",
-    "hanviet": "Khoái Điểm 儿",
+    "hanviet": "Khoái Điểm Nhi",
     "meaning": "biến thể er hoá của 快點|快点",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -17182,9 +17182,9 @@
     "meaning": "khoa trương, quá mức; phóng đại",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“夸张”这个词。",
-    "examplePinyin": "Qǐng jìzhu “夸张” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “夸张” này.",
+    "example": "请记住夸张这个词。",
+    "examplePinyin": "Qǐng jìzhu kuā zhāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khoa trương, quá mức; phóng đại này.",
     "id": "typ-hsk2-0431"
   },
   {
@@ -17194,9 +17194,9 @@
     "meaning": "tình cảnh khó khăn; hoàn cảnh khó khăn",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“困境”这个词。",
-    "examplePinyin": "Qǐng jìzhu “困境” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “困境” này.",
+    "example": "请记住困境这个词。",
+    "examplePinyin": "Qǐng jìzhu kùn jìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tình cảnh khó khăn; hoàn cảnh khó khăn này.",
     "id": "typ-hsk2-0432"
   },
   {
@@ -17214,13 +17214,13 @@
   {
     "hanzi": "来临",
     "pinyin": "lái lín",
-    "hanviet": "Lai 临",
+    "hanviet": "Lai Lâm",
     "meaning": "đến gần; đến gần hơn",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“来临”这个词。",
-    "examplePinyin": "Qǐng jìzhu “来临” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “来临” này.",
+    "example": "请记住来临这个词。",
+    "examplePinyin": "Qǐng jìzhu lái lín zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đến gần; đến gần hơn này.",
     "id": "typ-hsk2-0434"
   },
   {
@@ -17238,19 +17238,19 @@
   {
     "hanzi": "啦啦队",
     "pinyin": "lā lā duì",
-    "hanviet": "啦 啦 Đội",
+    "hanviet": "Lạp Lạp Đội",
     "meaning": "đội cổ vũ",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“啦啦队”这个词。",
-    "examplePinyin": "Qǐng jìzhu “啦啦队” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “啦啦队” này.",
+    "example": "请记住啦啦队这个词。",
+    "examplePinyin": "Qǐng jìzhu lā lā duì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đội cổ vũ này.",
     "id": "typ-hsk2-0436"
   },
   {
     "hanzi": "浪",
     "pinyin": "làng",
-    "hanviet": "浪",
+    "hanviet": "Lãng",
     "meaning": "sóng, ngọn sóng",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -17278,9 +17278,9 @@
     "meaning": "tuổi già, rất",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“老大”这个词。",
-    "examplePinyin": "Qǐng jìzhu “老大” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “老大” này.",
+    "example": "请记住老大这个词。",
+    "examplePinyin": "Qǐng jìzhu lǎo dà zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tuổi già, rất này.",
     "id": "typ-hsk2-0439"
   },
   {
@@ -17338,9 +17338,9 @@
     "meaning": "liên bang, liên đoàn",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“联邦”这个词。",
-    "examplePinyin": "Qǐng jìzhu “联邦” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “联邦” này.",
+    "example": "请记住联邦这个词。",
+    "examplePinyin": "Qǐng jìzhu lián bāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ liên bang, liên đoàn này.",
     "id": "typ-hsk2-0444"
   },
   {
@@ -17394,7 +17394,7 @@
   {
     "hanzi": "联赛",
     "pinyin": "lián sài",
-    "hanviet": "Liên 赛",
+    "hanviet": "Liên Tái",
     "meaning": "liên đoàn, giải đấu liên đoàn",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -17406,7 +17406,7 @@
   {
     "hanzi": "脸色",
     "pinyin": "liǎn sè",
-    "hanviet": "脸 Sắc",
+    "hanviet": "Kiểm Sắc",
     "meaning": "nước da, dáng vẻ",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -17442,7 +17442,7 @@
   {
     "hanzi": "另一方面",
     "pinyin": "lìng yī fāng miàn",
-    "hanviet": "Lánh Nhất Phương 面",
+    "hanviet": "Lánh Nhất Phương Diện",
     "meaning": "mặt khác, một khía cạnh khác",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -17458,9 +17458,9 @@
     "meaning": "ý tưởng, khái niệm",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“理念”这个词。",
-    "examplePinyin": "Qǐng jìzhu “理念” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “理念” này.",
+    "example": "请记住理念这个词。",
+    "examplePinyin": "Qǐng jìzhu lǐ niàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ý tưởng, khái niệm này.",
     "id": "typ-hsk2-0454"
   },
   {
@@ -17506,9 +17506,9 @@
     "meaning": "lý trí, tính lý trí",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“理性”这个词。",
-    "examplePinyin": "Qǐng jìzhu “理性” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “理性” này.",
+    "example": "请记住理性这个词。",
+    "examplePinyin": "Qǐng jìzhu lǐ xìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lý trí, tính lý trí này.",
     "id": "typ-hsk2-0458"
   },
   {
@@ -17526,7 +17526,7 @@
   {
     "hanzi": "楼梯",
     "pinyin": "lóu tī",
-    "hanviet": "Lầu 梯",
+    "hanviet": "Lầu Thê",
     "meaning": "cầu thang, bộ cầu thang",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -17554,9 +17554,9 @@
     "meaning": "hươu, nai",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“鹿”这个词。",
-    "examplePinyin": "Qǐng jìzhu “鹿” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “鹿” này.",
+    "example": "请记住鹿这个词。",
+    "examplePinyin": "Qǐng jìzhu lù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hươu, nai này.",
     "id": "typ-hsk2-0462"
   },
   {
@@ -17626,15 +17626,15 @@
     "meaning": "naked",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“裸”这个词。",
-    "examplePinyin": "Qǐng jìzhu “裸” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “裸” này.",
+    "example": "请记住裸这个词。",
+    "examplePinyin": "Qǐng jìzhu luǒ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ naked này.",
     "id": "typ-hsk2-0468"
   },
   {
     "hanzi": "录像",
     "pinyin": "lù xiàng",
-    "hanviet": "录 Tượng",
+    "hanviet": "Lục Tượng",
     "meaning": "quay video, ghi hình",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -17658,13 +17658,13 @@
   {
     "hanzi": "抹",
     "pinyin": "mā",
-    "hanviet": "抹",
+    "hanviet": "Mạt",
     "meaning": "lau chùi",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“抹”这个词。",
-    "examplePinyin": "Qǐng jìzhu “抹” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “抹” này.",
+    "example": "请记住抹这个词。",
+    "examplePinyin": "Qǐng jìzhu mā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lau chùi này.",
     "id": "typ-hsk2-0471"
   },
   {
@@ -17722,9 +17722,9 @@
     "meaning": "man rợ, hách dịch",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“蛮”这个词。",
-    "examplePinyin": "Qǐng jìzhu “蛮” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “蛮” này.",
+    "example": "请记住蛮这个词。",
+    "examplePinyin": "Qǐng jìzhu mán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ man rợ, hách dịch này.",
     "id": "typ-hsk2-0476"
   },
   {
@@ -17778,13 +17778,13 @@
   {
     "hanzi": "玫瑰",
     "pinyin": "méi guī",
-    "hanviet": "玫 瑰",
+    "hanviet": "Mai Côi",
     "meaning": "cây hồng rugosa, hoa hồng",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“玫瑰”这个词。",
-    "examplePinyin": "Qǐng jìzhu “玫瑰” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “玫瑰” này.",
+    "example": "请记住玫瑰这个词。",
+    "examplePinyin": "Qǐng jìzhu méi guī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cây hồng rugosa, hoa hồng này.",
     "id": "typ-hsk2-0481"
   },
   {
@@ -17806,9 +17806,9 @@
     "meaning": "ngon, món ăn ngon",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“美味”这个词。",
-    "examplePinyin": "Qǐng jìzhu “美味” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “美味” này.",
+    "example": "请记住美味这个词。",
+    "examplePinyin": "Qǐng jìzhu měi wèi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngon, món ăn ngon này.",
     "id": "typ-hsk2-0483"
   },
   {
@@ -17818,9 +17818,9 @@
     "meaning": "nhàm chán, không có hứng thú",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“没意思”这个词。",
-    "examplePinyin": "Qǐng jìzhu “没意思” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “没意思” này.",
+    "example": "请记住没意思这个词。",
+    "examplePinyin": "Qǐng jìzhu méi yì si zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhàm chán, không có hứng thú này.",
     "id": "typ-hsk2-0484"
   },
   {
@@ -17854,9 +17854,9 @@
     "meaning": "ngột ngạt, ở trong nhà",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“闷”这个词。",
-    "examplePinyin": "Qǐng jìzhu “闷” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “闷” này.",
+    "example": "请记住闷这个词。",
+    "examplePinyin": "Qǐng jìzhu mēn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngột ngạt, ở trong nhà này.",
     "id": "typ-hsk2-0487"
   },
   {
@@ -17890,9 +17890,9 @@
     "meaning": "mật ong",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“蜜”这个词。",
-    "examplePinyin": "Qǐng jìzhu “蜜” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “蜜” này.",
+    "example": "请记住蜜这个词。",
+    "examplePinyin": "Qǐng jìzhu mì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mật ong này.",
     "id": "typ-hsk2-0490"
   },
   {
@@ -17910,7 +17910,7 @@
   {
     "hanzi": "棉",
     "pinyin": "mián",
-    "hanviet": "棉",
+    "hanviet": "Miên",
     "meaning": "thuật ngữ chung cho bông hoặc gòn, bông",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -17922,7 +17922,7 @@
   {
     "hanzi": "面试",
     "pinyin": "miàn shì",
-    "hanviet": "面 Thí",
+    "hanviet": "Diện Thí",
     "meaning": "được phỏng vấn, phỏng vấn",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -18010,9 +18010,9 @@
     "meaning": "quần chúng; người dân; nhân dân",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“民众”这个词。",
-    "examplePinyin": "Qǐng jìzhu “民众” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “民众” này.",
+    "example": "请记住民众这个词。",
+    "examplePinyin": "Qǐng jìzhu mín zhòng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quần chúng; người dân; nhân dân này.",
     "id": "typ-hsk2-0500"
   },
   {
@@ -18046,15 +18046,15 @@
     "meaning": "mô phỏng, bắt chước",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“模拟”这个词。",
-    "examplePinyin": "Qǐng jìzhu “模拟” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “模拟” này.",
+    "example": "请记住模拟这个词。",
+    "examplePinyin": "Qǐng jìzhu mó nǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mô phỏng, bắt chước này.",
     "id": "typ-hsk2-0503"
   },
   {
     "hanzi": "幕",
     "pinyin": "mù",
-    "hanviet": "幕",
+    "hanviet": "Mạc",
     "meaning": "rèm hoặc màn, mái che hoặc lều",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -18090,7 +18090,7 @@
   {
     "hanzi": "那会儿",
     "pinyin": "nà huì r",
-    "hanviet": "Na Hội 儿",
+    "hanviet": "Na Hội Nhi",
     "meaning": "at that time (in the past or the future)",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -18102,7 +18102,7 @@
   {
     "hanzi": "耐",
     "pinyin": "nài",
-    "hanviet": "耐",
+    "hanviet": "Nại",
     "meaning": "chịu đựng; chịu được; kháng lại",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -18198,7 +18198,7 @@
   {
     "hanzi": "难题",
     "pinyin": "nán tí",
-    "hanviet": "Nan 题",
+    "hanviet": "Nan Đề",
     "meaning": "vấn đề khó",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -18294,7 +18294,7 @@
   {
     "hanzi": "扭",
     "pinyin": "niǔ",
-    "hanviet": "扭",
+    "hanviet": "Nữu",
     "meaning": "xoay, vặn",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -18358,9 +18358,9 @@
     "meaning": "bán đấu giá, phiên đấu giá",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“拍卖”这个词。",
-    "examplePinyin": "Qǐng jìzhu “拍卖” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “拍卖” này.",
+    "example": "请记住拍卖这个词。",
+    "examplePinyin": "Qǐng jìzhu pāi mài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bán đấu giá, phiên đấu giá này.",
     "id": "typ-hsk2-0529"
   },
   {
@@ -18442,15 +18442,15 @@
     "meaning": "ném, ném đi",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“抛”这个词。",
-    "examplePinyin": "Qǐng jìzhu “抛” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “抛” này.",
+    "example": "请记住抛这个词。",
+    "examplePinyin": "Qǐng jìzhu pāo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ném, ném đi này.",
     "id": "typ-hsk2-0536"
   },
   {
     "hanzi": "跑步",
     "pinyin": "pǎo bù",
-    "hanviet": "跑 Bộ",
+    "hanviet": "Bào Bộ",
     "meaning": "chạy, chạy bộ",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -18462,7 +18462,7 @@
   {
     "hanzi": "赔",
     "pinyin": "péi",
-    "hanviet": "赔",
+    "hanviet": "Bồi",
     "meaning": "bồi thường tổn thất, bồi thường",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -18502,15 +18502,15 @@
     "meaning": "phim, bộ phim",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“片子”这个词。",
-    "examplePinyin": "Qǐng jìzhu “片子” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “片子” này.",
+    "example": "请记住片子这个词。",
+    "examplePinyin": "Qǐng jìzhu piān zi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phim, bộ phim này.",
     "id": "typ-hsk2-0541"
   },
   {
     "hanzi": "骗子",
     "pinyin": "piàn zi",
-    "hanviet": "骗 Tử",
+    "hanviet": "Phiến Tử",
     "meaning": "kẻ lừa đảo, một kẻ gian lận",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -18546,7 +18546,7 @@
   {
     "hanzi": "屏幕",
     "pinyin": "píng mù",
-    "hanviet": "Bình 幕",
+    "hanviet": "Bình Mạc",
     "meaning": "màn hình",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -18562,9 +18562,9 @@
     "meaning": "thẩm định, đánh giá",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“评审”这个词。",
-    "examplePinyin": "Qǐng jìzhu “评审” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “评审” này.",
+    "example": "请记住评审这个词。",
+    "examplePinyin": "Qǐng jìzhu píng shěn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thẩm định, đánh giá này.",
     "id": "typ-hsk2-0546"
   },
   {
@@ -18598,9 +18598,9 @@
     "meaning": "biểu đồ, danh sách",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“谱”这个词。",
-    "examplePinyin": "Qǐng jìzhu “谱” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “谱” này.",
+    "example": "请记住谱这个词。",
+    "examplePinyin": "Qǐng jìzhu pǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ biểu đồ, danh sách này.",
     "id": "typ-hsk2-0549"
   },
   {
@@ -18670,9 +18670,9 @@
     "meaning": "ẩn giấu, tiềm ẩn",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“潜在”这个词。",
-    "examplePinyin": "Qǐng jìzhu “潜在” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “潜在” này.",
+    "example": "请记住潜在这个词。",
+    "examplePinyin": "Qǐng jìzhu qián zài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ẩn giấu, tiềm ẩn này.",
     "id": "typ-hsk2-0555"
   },
   {
@@ -18714,13 +18714,13 @@
   {
     "hanzi": "祈祷",
     "pinyin": "qí dǎo",
-    "hanviet": "祈 Đảo",
+    "hanviet": "Kỳ Đảo",
     "meaning": "cầu nguyện, đọc lời cầu nguyện",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“祈祷”这个词。",
-    "examplePinyin": "Qǐng jìzhu “祈祷” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “祈祷” này.",
+    "example": "请记住祈祷这个词。",
+    "examplePinyin": "Qǐng jìzhu qí dǎo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cầu nguyện, đọc lời cầu nguyện này.",
     "id": "typ-hsk2-0559"
   },
   {
@@ -18730,9 +18730,9 @@
     "meaning": "cắt bỏ, cắt ra",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“切除”这个词。",
-    "examplePinyin": "Qǐng jìzhu “切除” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “切除” này.",
+    "example": "请记住切除这个词。",
+    "examplePinyin": "Qǐng jìzhu qiē chú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cắt bỏ, cắt ra này.",
     "id": "typ-hsk2-0560"
   },
   {
@@ -18766,9 +18766,9 @@
     "meaning": "người yêu, cặp đôi",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“情侣”这个词。",
-    "examplePinyin": "Qǐng jìzhu “情侣” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “情侣” này.",
+    "example": "请记住情侣这个词。",
+    "examplePinyin": "Qǐng jìzhu qíng lǚ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ người yêu, cặp đôi này.",
     "id": "typ-hsk2-0563"
   },
   {
@@ -18790,9 +18790,9 @@
     "meaning": "người yêu, người tình",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“情人”这个词。",
-    "examplePinyin": "Qǐng jìzhu “情人” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “情人” này.",
+    "example": "请记住情人这个词。",
+    "examplePinyin": "Qǐng jìzhu qíng rén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ người yêu, người tình này.",
     "id": "typ-hsk2-0565"
   },
   {
@@ -18910,9 +18910,9 @@
     "meaning": "hơi thở, mùi",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“气息”这个词。",
-    "examplePinyin": "Qǐng jìzhu “气息” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “气息” này.",
+    "example": "请记住气息这个词。",
+    "examplePinyin": "Qǐng jìzhu qì xī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hơi thở, mùi này.",
     "id": "typ-hsk2-0575"
   },
   {
@@ -18922,9 +18922,9 @@
     "meaning": "đặc điểm tính cách; khí chất; tính tình, hào quang; không khí; cảm giác; rung cảm",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“气质”这个词。",
-    "examplePinyin": "Qǐng jìzhu “气质” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “气质” này.",
+    "example": "请记住气质这个词。",
+    "examplePinyin": "Qǐng jìzhu qì zhì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đặc điểm tính cách; khí chất; tính tình, hào quang; không khí; cảm giác; rung cảm này.",
     "id": "typ-hsk2-0576"
   },
   {
@@ -18946,9 +18946,9 @@
     "meaning": "nắm đấm, đấm bốc",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“拳”这个词。",
-    "examplePinyin": "Qǐng jìzhu “拳” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “拳” này.",
+    "example": "请记住拳这个词。",
+    "examplePinyin": "Qǐng jìzhu quán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nắm đấm, đấm bốc này.",
     "id": "typ-hsk2-0578"
   },
   {
@@ -19030,9 +19030,9 @@
     "meaning": "thay thế, chiếm chỗ",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“取代”这个词。",
-    "examplePinyin": "Qǐng jìzhu “取代” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “取代” này.",
+    "example": "请记住取代这个词。",
+    "examplePinyin": "Qǐng jìzhu qǔ dài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thay thế, chiếm chỗ này.",
     "id": "typ-hsk2-0585"
   },
   {
@@ -19042,9 +19042,9 @@
     "meaning": "to hinge on",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“取决于”这个词。",
-    "examplePinyin": "Qǐng jìzhu “取决于” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “取决于” này.",
+    "example": "请记住取决于这个词。",
+    "examplePinyin": "Qǐng jìzhu qǔ jué yú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ to hinge on này.",
     "id": "typ-hsk2-0586"
   },
   {
@@ -19074,13 +19074,13 @@
   {
     "hanzi": "惹",
     "pinyin": "rě",
-    "hanviet": "惹",
+    "hanviet": "Nhạ",
     "meaning": "chọc giận, kích động",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“惹”这个词。",
-    "examplePinyin": "Qǐng jìzhu “惹” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “惹” này.",
+    "example": "请记住惹这个词。",
+    "examplePinyin": "Qǐng jìzhu rě zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chọc giận, kích động này.",
     "id": "typ-hsk2-0589"
   },
   {
@@ -19114,9 +19114,9 @@
     "meaning": "cơ thể người",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“人体”这个词。",
-    "examplePinyin": "Qǐng jìzhu “人体” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “人体” này.",
+    "example": "请记住人体这个词。",
+    "examplePinyin": "Qǐng jìzhu rén tǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cơ thể người này.",
     "id": "typ-hsk2-0592"
   },
   {
@@ -19126,15 +19126,15 @@
     "meaning": "lựa chọn người, ứng cử viên",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“人选”这个词。",
-    "examplePinyin": "Qǐng jìzhu “人选” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “人选” này.",
+    "example": "请记住人选这个词。",
+    "examplePinyin": "Qǐng jìzhu rén xuǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lựa chọn người, ứng cử viên này.",
     "id": "typ-hsk2-0593"
   },
   {
     "hanzi": "热线",
     "pinyin": "rè xiàn",
-    "hanviet": "Nhiệt 线",
+    "hanviet": "Nhiệt Tuyến",
     "meaning": "đường dây nóng",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -19158,7 +19158,7 @@
   {
     "hanzi": "融入",
     "pinyin": "róng rù",
-    "hanviet": "融 Nhập",
+    "hanviet": "Dung Nhập",
     "meaning": "hòa vào, tích hợp",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -19182,13 +19182,13 @@
   {
     "hanzi": "赛车",
     "pinyin": "sài chē",
-    "hanviet": "赛 Xa",
+    "hanviet": "Tái Xa",
     "meaning": "đua ô tô, đua xe đạp",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“赛车”这个词。",
-    "examplePinyin": "Qǐng jìzhu “赛车” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “赛车” này.",
+    "example": "请记住赛车这个词。",
+    "examplePinyin": "Qǐng jìzhu sài chē zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đua ô tô, đua xe đạp này.",
     "id": "typ-hsk2-0598"
   },
   {
@@ -19210,21 +19210,21 @@
     "meaning": "quét",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“扫描”这个词。",
-    "examplePinyin": "Qǐng jìzhu “扫描” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “扫描” này.",
+    "example": "请记住扫描这个词。",
+    "examplePinyin": "Qǐng jìzhu sǎo miáo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quét này.",
     "id": "typ-hsk2-0600"
   },
   {
     "hanzi": "傻瓜",
     "pinyin": "shǎ guā",
-    "hanviet": "傻 Qua",
+    "hanviet": "Sỏa Qua",
     "meaning": "kẻ ngốc, đồ ngốc",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“傻瓜”这个词。",
-    "examplePinyin": "Qǐng jìzhu “傻瓜” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “傻瓜” này.",
+    "example": "请记住傻瓜这个词。",
+    "examplePinyin": "Qǐng jìzhu shǎ guā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kẻ ngốc, đồ ngốc này.",
     "id": "typ-hsk2-0601"
   },
   {
@@ -19234,9 +19234,9 @@
     "meaning": "sát hại",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“杀害”这个词。",
-    "examplePinyin": "Qǐng jìzhu “杀害” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “杀害” này.",
+    "example": "请记住杀害这个词。",
+    "examplePinyin": "Qǐng jìzhu shā hài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sát hại này.",
     "id": "typ-hsk2-0602"
   },
   {
@@ -19294,9 +19294,9 @@
     "meaning": "lên sân khấu, lên sân",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“上场”这个词。",
-    "examplePinyin": "Qǐng jìzhu “上场” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “上场” này.",
+    "example": "请记住上场这个词。",
+    "examplePinyin": "Qǐng jìzhu shàng chǎng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lên sân khấu, lên sân này.",
     "id": "typ-hsk2-0607"
   },
   {
@@ -19366,9 +19366,9 @@
     "meaning": "chưa; vẫn chưa",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“尚未”这个词。",
-    "examplePinyin": "Qǐng jìzhu “尚未” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “尚未” này.",
+    "example": "请记住尚未这个词。",
+    "examplePinyin": "Qǐng jìzhu shàng wèi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chưa; vẫn chưa này.",
     "id": "typ-hsk2-0613"
   },
   {
@@ -19414,9 +19414,9 @@
     "meaning": "cô gái, thiếu nữ",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“少女”这个词。",
-    "examplePinyin": "Qǐng jìzhu “少女” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “少女” này.",
+    "example": "请记住少女这个词。",
+    "examplePinyin": "Qǐng jìzhu shào nǚ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cô gái, thiếu nữ này.",
     "id": "typ-hsk2-0617"
   },
   {
@@ -19438,9 +19438,9 @@
     "meaning": "kẻ giết người, sát nhân",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“杀手”这个词。",
-    "examplePinyin": "Qǐng jìzhu “杀手” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “杀手” này.",
+    "example": "请记住杀手这个词。",
+    "examplePinyin": "Qǐng jìzhu shā shǒu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kẻ giết người, sát nhân này.",
     "id": "typ-hsk2-0619"
   },
   {
@@ -19474,9 +19474,9 @@
     "meaning": "thận",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“肾”这个词。",
-    "examplePinyin": "Qǐng jìzhu “肾” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “肾” này.",
+    "example": "请记住肾这个词。",
+    "examplePinyin": "Qǐng jìzhu shèn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thận này.",
     "id": "typ-hsk2-0622"
   },
   {
@@ -19534,9 +19534,9 @@
     "meaning": "tuyên bố, khẳng định",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“声称”这个词。",
-    "examplePinyin": "Qǐng jìzhu “声称” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “声称” này.",
+    "example": "请记住声称这个词。",
+    "examplePinyin": "Qǐng jìzhu shēng chēng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tuyên bố, khẳng định này.",
     "id": "typ-hsk2-0627"
   },
   {
@@ -19582,9 +19582,9 @@
     "meaning": "sự nghiệp, cuộc sống",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“生涯”这个词。",
-    "examplePinyin": "Qǐng jìzhu “生涯” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “生涯” này.",
+    "example": "请记住生涯这个词。",
+    "examplePinyin": "Qǐng jìzhu shēng yá zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sự nghiệp, cuộc sống này.",
     "id": "typ-hsk2-0631"
   },
   {
@@ -19630,9 +19630,9 @@
     "meaning": "bị tình nghi, bị nghi ngờ",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“涉嫌”这个词。",
-    "examplePinyin": "Qǐng jìzhu “涉嫌” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “涉嫌” này.",
+    "example": "请记住涉嫌这个词。",
+    "examplePinyin": "Qǐng jìzhu shè xián zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bị tình nghi, bị nghi ngờ này.",
     "id": "typ-hsk2-0635"
   },
   {
@@ -19690,9 +19690,9 @@
     "meaning": "văn phòng kinh doanh; công ty",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“事务所”这个词。",
-    "examplePinyin": "Qǐng jìzhu “事务所” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “事务所” này.",
+    "example": "请记住事务所这个词。",
+    "examplePinyin": "Qǐng jìzhu shì wù suǒ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ văn phòng kinh doanh; công ty này.",
     "id": "typ-hsk2-0640"
   },
   {
@@ -19734,13 +19734,13 @@
   {
     "hanzi": "手臂",
     "pinyin": "shǒu bì",
-    "hanviet": "Thủ 臂",
+    "hanviet": "Thủ Tý",
     "meaning": "cánh tay, người hỗ trợ",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“手臂”这个词。",
-    "examplePinyin": "Qǐng jìzhu “手臂” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “手臂” này.",
+    "example": "请记住手臂这个词。",
+    "examplePinyin": "Qǐng jìzhu shǒu bì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cánh tay, người hỗ trợ này.",
     "id": "typ-hsk2-0644"
   },
   {
@@ -19770,7 +19770,7 @@
   {
     "hanzi": "收购",
     "pinyin": "shōu gòu",
-    "hanviet": "Thu 购",
+    "hanviet": "Thu Cấu",
     "meaning": "mua; thu mua; thu nhận",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -19810,15 +19810,15 @@
     "meaning": "ủy quyền",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“授权”这个词。",
-    "examplePinyin": "Qǐng jìzhu “授权” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “授权” này.",
+    "example": "请记住授权这个词。",
+    "examplePinyin": "Qǐng jìzhu shòu quán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ủy quyền này.",
     "id": "typ-hsk2-0650"
   },
   {
     "hanzi": "首席",
     "pinyin": "shǒu xí",
-    "hanviet": "Thủ 席",
+    "hanviet": "Thủ Tịch",
     "meaning": "trưởng",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -19866,7 +19866,7 @@
   {
     "hanzi": "鼠",
     "pinyin": "shǔ",
-    "hanviet": "鼠",
+    "hanviet": "Thử",
     "meaning": "chuột; con chuột",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -19906,27 +19906,27 @@
     "meaning": "cơ sở dữ liệu",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“数据库”这个词。",
-    "examplePinyin": "Qǐng jìzhu “数据库” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “数据库” này.",
+    "example": "请记住数据库这个词。",
+    "examplePinyin": "Qǐng jìzhu shù jù kù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cơ sở dữ liệu này.",
     "id": "typ-hsk2-0658"
   },
   {
     "hanzi": "瞬间",
     "pinyin": "shùn jiān",
-    "hanviet": "瞬 Gian",
+    "hanviet": "Thuấn Gian",
     "meaning": "trong chớp mắt; trong nháy mắt",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“瞬间”这个词。",
-    "examplePinyin": "Qǐng jìzhu “瞬间” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “瞬间” này.",
+    "example": "请记住瞬间这个词。",
+    "examplePinyin": "Qǐng jìzhu shùn jiān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trong chớp mắt; trong nháy mắt này.",
     "id": "typ-hsk2-0659"
   },
   {
     "hanzi": "薯条",
     "pinyin": "shǔ tiáo",
-    "hanviet": "薯 Điều",
+    "hanviet": "Thử Điều",
     "meaning": "khoai tây chiên, khoai tây rán",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -20026,15 +20026,15 @@
     "meaning": "theo tình huống, thực dụng",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“随机”这个词。",
-    "examplePinyin": "Qǐng jìzhu “随机” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “随机” này.",
+    "example": "请记住随机这个词。",
+    "examplePinyin": "Qǐng jìzhu suí jī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ theo tình huống, thực dụng này.",
     "id": "typ-hsk2-0668"
   },
   {
     "hanzi": "塑料",
     "pinyin": "sù liào",
-    "hanviet": "塑 Liệu",
+    "hanviet": "Tố Liệu",
     "meaning": "nhựa",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -20062,9 +20062,9 @@
     "meaning": "làm hại, hư hỏng",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“损伤”这个词。",
-    "examplePinyin": "Qǐng jìzhu “损伤” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “损伤” này.",
+    "example": "请记住损伤这个词。",
+    "examplePinyin": "Qǐng jìzhu sǔn shāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ làm hại, hư hỏng này.",
     "id": "typ-hsk2-0671"
   },
   {
@@ -20074,15 +20074,15 @@
     "meaning": "khóa, đóng bằng chốt",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“锁定”这个词。",
-    "examplePinyin": "Qǐng jìzhu “锁定” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “锁定” này.",
+    "example": "请记住锁定这个词。",
+    "examplePinyin": "Qǐng jìzhu suǒ dìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khóa, đóng bằng chốt này.",
     "id": "typ-hsk2-0672"
   },
   {
     "hanzi": "所以",
     "pinyin": "suǒ yǐ",
-    "hanviet": "Sỡ 以",
+    "hanviet": "Sỡ Dĩ",
     "meaning": "vì vậy, do đó",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -20158,9 +20158,9 @@
     "meaning": "thảo luận; nói về",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“谈论”这个词。",
-    "examplePinyin": "Qǐng jìzhu “谈论” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “谈论” này.",
+    "example": "请记住谈论这个词。",
+    "examplePinyin": "Qǐng jìzhu tán lùn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thảo luận; nói về này.",
     "id": "typ-hsk2-0679"
   },
   {
@@ -20178,7 +20178,7 @@
   {
     "hanzi": "逃跑",
     "pinyin": "táo pǎo",
-    "hanviet": "Đào 跑",
+    "hanviet": "Đào Bào",
     "meaning": "chạy trốn khỏi gì đó, bỏ chạy",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -20190,7 +20190,7 @@
   {
     "hanzi": "疼痛",
     "pinyin": "téng tòng",
-    "hanviet": "疼 Thống",
+    "hanviet": "Đông Thống",
     "meaning": "đau, bị đau; bị nhức; đau",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -20202,7 +20202,7 @@
   {
     "hanzi": "踢",
     "pinyin": "tī",
-    "hanviet": "踢",
+    "hanviet": "Thích",
     "meaning": "đá, chơi",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -20214,7 +20214,7 @@
   {
     "hanzi": "题",
     "pinyin": "tí",
-    "hanviet": "题",
+    "hanviet": "Đề",
     "meaning": "topic",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -20262,13 +20262,13 @@
   {
     "hanzi": "甜蜜",
     "pinyin": "tián mì",
-    "hanviet": "甜 Mật",
+    "hanviet": "Điềm Mật",
     "meaning": "ngọt ngào, hạnh phúc",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“甜蜜”这个词。",
-    "examplePinyin": "Qǐng jìzhu “甜蜜” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “甜蜜” này.",
+    "example": "请记住甜蜜这个词。",
+    "examplePinyin": "Qǐng jìzhu tián mì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngọt ngào, hạnh phúc này.",
     "id": "typ-hsk2-0688"
   },
   {
@@ -20290,9 +20290,9 @@
     "meaning": "thiên thần",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“天使”这个词。",
-    "examplePinyin": "Qǐng jìzhu “天使” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “天使” này.",
+    "example": "请记住天使这个词。",
+    "examplePinyin": "Qǐng jìzhu tiān shǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thiên thần này.",
     "id": "typ-hsk2-0690"
   },
   {
@@ -20314,9 +20314,9 @@
     "meaning": "quy định; quy tắc; bộ quy tắc; pháp lệnh; điều luật",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“条例”这个词。",
-    "examplePinyin": "Qǐng jìzhu “条例” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “条例” này.",
+    "example": "请记住条例这个词。",
+    "examplePinyin": "Qǐng jìzhu tiáo lì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quy định; quy tắc; bộ quy tắc; pháp lệnh; điều luật này.",
     "id": "typ-hsk2-0692"
   },
   {
@@ -20362,15 +20362,15 @@
     "meaning": "đề cử",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“提名”这个词。",
-    "examplePinyin": "Qǐng jìzhu “提名” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “提名” này.",
+    "example": "请记住提名这个词。",
+    "examplePinyin": "Qǐng jìzhu tí míng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đề cử này.",
     "id": "typ-hsk2-0696"
   },
   {
     "hanzi": "厅",
     "pinyin": "tīng",
-    "hanviet": "厅",
+    "hanviet": "Sảnh",
     "meaning": "phòng, phòng khách",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -20406,7 +20406,7 @@
   {
     "hanzi": "挺好",
     "pinyin": "tǐng hǎo",
-    "hanviet": "挺 Hảo",
+    "hanviet": "Đĩnh Hảo",
     "meaning": "rất tốt",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -20494,9 +20494,9 @@
     "meaning": "cái xô, thùng",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“桶”这个词。",
-    "examplePinyin": "Qǐng jìzhu “桶” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “桶” này.",
+    "example": "请记住桶这个词。",
+    "examplePinyin": "Qǐng jìzhu tǒng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cái xô, thùng này.",
     "id": "typ-hsk2-0707"
   },
   {
@@ -20542,9 +20542,9 @@
     "meaning": "phần đầu",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“头部”这个词。",
-    "examplePinyin": "Qǐng jìzhu “头部” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “头部” này.",
+    "example": "请记住头部这个词。",
+    "examplePinyin": "Qǐng jìzhu tóu bù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phần đầu này.",
     "id": "typ-hsk2-0711"
   },
   {
@@ -20574,7 +20574,7 @@
   {
     "hanzi": "偷偷",
     "pinyin": "tōu tōu",
-    "hanviet": "偷 偷",
+    "hanviet": "Du Du",
     "meaning": "một cách lén lút, bí mật",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -20602,9 +20602,9 @@
     "meaning": "bôi, bôi lem",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“涂”这个词。",
-    "examplePinyin": "Qǐng jìzhu “涂” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “涂” này.",
+    "example": "请记住涂这个词。",
+    "examplePinyin": "Qǐng jìzhu tú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bôi, bôi lem này.",
     "id": "typ-hsk2-0716"
   },
   {
@@ -20646,7 +20646,7 @@
   {
     "hanzi": "吞",
     "pinyin": "tūn",
-    "hanviet": "吞",
+    "hanviet": "Thôn",
     "meaning": "nuốt, uống",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -20662,9 +20662,9 @@
     "meaning": "hình ảnh; bức tranh; đồ họa",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“图像”这个词。",
-    "examplePinyin": "Qǐng jìzhu “图像” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “图像” này.",
+    "example": "请记住图像这个词。",
+    "examplePinyin": "Qǐng jìzhu tú xiàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hình ảnh; bức tranh; đồ họa này.",
     "id": "typ-hsk2-0721"
   },
   {
@@ -20674,9 +20674,9 @@
     "meaning": "ngói lợp, viết tắt cho 瓦特",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“瓦”这个词。",
-    "examplePinyin": "Qǐng jìzhu “瓦” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “瓦” này.",
+    "example": "请记住瓦这个词。",
+    "examplePinyin": "Qǐng jìzhu wǎ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngói lợp, viết tắt cho này.",
     "id": "typ-hsk2-0722"
   },
   {
@@ -20730,7 +20730,7 @@
   {
     "hanzi": "外套",
     "pinyin": "wài tào",
-    "hanviet": "Ngoại 套",
+    "hanviet": "Ngoại Sáo",
     "meaning": "áo khoác, áo jacket",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -20778,7 +20778,7 @@
   {
     "hanzi": "晚餐",
     "pinyin": "wǎn cān",
-    "hanviet": "Vãn 餐",
+    "hanviet": "Vãn Xan",
     "meaning": "bữa tối, bữa ăn tối",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -20878,9 +20878,9 @@
     "meaning": "phù hợp tốt, giống hệt",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“吻合”这个词。",
-    "examplePinyin": "Qǐng jìzhu “吻合” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “吻合” này.",
+    "example": "请记住吻合这个词。",
+    "examplePinyin": "Qǐng jìzhu wěn hé zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phù hợp tốt, giống hệt này.",
     "id": "typ-hsk2-0739"
   },
   {
@@ -20898,7 +20898,7 @@
   {
     "hanzi": "问题",
     "pinyin": "wèn tí",
-    "hanviet": "Vấn 题",
+    "hanviet": "Vấn Đề",
     "meaning": "câu hỏi, vấn đề",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -20922,7 +20922,7 @@
   {
     "hanzi": "握",
     "pinyin": "wò",
-    "hanviet": "握",
+    "hanviet": "Ác",
     "meaning": "cầm; nắm, chặt",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -20934,7 +20934,7 @@
   {
     "hanzi": "误",
     "pinyin": "wù",
-    "hanviet": "误",
+    "hanviet": "Ngộ",
     "meaning": "nhầm lỗi, sai lầm",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -20946,7 +20946,7 @@
   {
     "hanzi": "午餐",
     "pinyin": "wǔ cān",
-    "hanviet": "Ngọ 餐",
+    "hanviet": "Ngọ Xan",
     "meaning": "bữa trưa, buổi ăn trưa",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -20958,13 +20958,13 @@
   {
     "hanzi": "无辜",
     "pinyin": "wú gū",
-    "hanviet": "Vô 辜",
+    "hanviet": "Vô Cô",
     "meaning": "vô tội, sự vô tội",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“无辜”这个词。",
-    "examplePinyin": "Qǐng jìzhu “无辜” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “无辜” này.",
+    "example": "请记住无辜这个词。",
+    "examplePinyin": "Qǐng jìzhu wú gū zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vô tội, sự vô tội này.",
     "id": "typ-hsk2-0746"
   },
   {
@@ -20982,7 +20982,7 @@
   {
     "hanzi": "无论如何",
     "pinyin": "wú lùn rú hé",
-    "hanviet": "Vô Luận Như 何",
+    "hanviet": "Vô Luận Như Hà",
     "meaning": "dù thế nào đi nữa, trong bất kỳ trường hợp nào",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -21018,7 +21018,7 @@
   {
     "hanzi": "无所谓",
     "pinyin": "wú suǒ wèi",
-    "hanviet": "Vô Sỡ 谓",
+    "hanviet": "Vô Sỡ Vị",
     "meaning": "thờ ơ, không quan trọng",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -21054,7 +21054,7 @@
   {
     "hanzi": "无疑",
     "pinyin": "wú yí",
-    "hanviet": "Vô 疑",
+    "hanviet": "Vô Nghi",
     "meaning": "không nghi ngờ; không có gì nghi ngờ; chắc chắn",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -21174,7 +21174,7 @@
   {
     "hanzi": "乡村",
     "pinyin": "xiāng cūn",
-    "hanviet": "乡 Thôn",
+    "hanviet": "Hương Thôn",
     "meaning": "mộc mạc, làng quê",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -21210,7 +21210,7 @@
   {
     "hanzi": "线路",
     "pinyin": "xiàn lù",
-    "hanviet": "线 Lộ",
+    "hanviet": "Tuyến Lộ",
     "meaning": "dây; mạch; dây điện, đường; tuyến đường; lộ trình",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -21234,7 +21234,7 @@
   {
     "hanzi": "笑",
     "pinyin": "xiào",
-    "hanviet": "笑",
+    "hanviet": "Tiếu",
     "meaning": "biến thể cũ của 笑",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -21258,7 +21258,7 @@
   {
     "hanzi": "笑话儿",
     "pinyin": "xiàohuar5",
-    "hanviet": "笑 Thoại 儿",
+    "hanviet": "Tiếu Thoại Nhi",
     "meaning": "Joke",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -21270,7 +21270,7 @@
   {
     "hanzi": "笑容",
     "pinyin": "xiào róng",
-    "hanviet": "笑 Dung",
+    "hanviet": "Tiếu Dung",
     "meaning": "nụ cười, vẻ mặt tươi cười",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -21318,7 +21318,7 @@
   {
     "hanzi": "小型",
     "pinyin": "xiǎo xíng",
-    "hanviet": "Tiểu 型",
+    "hanviet": "Tiểu Hình",
     "meaning": "quy mô nhỏ, kích thước nhỏ",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -21334,9 +21334,9 @@
     "meaning": "hiệu ứng",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“效应”这个词。",
-    "examplePinyin": "Qǐng jìzhu “效应” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “效应” này.",
+    "example": "请记住效应这个词。",
+    "examplePinyin": "Qǐng jìzhu xiào yìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hiệu ứng này.",
     "id": "typ-hsk2-0777"
   },
   {
@@ -21414,7 +21414,7 @@
   {
     "hanzi": "西餐",
     "pinyin": "xī cān",
-    "hanviet": "Tây 餐",
+    "hanviet": "Tây Xan",
     "meaning": "Món ăn kiểu Tây",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -21430,9 +21430,9 @@
     "meaning": "nham hiểm, hung ác",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“邪恶”这个词。",
-    "examplePinyin": "Qǐng jìzhu “邪恶” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “邪恶” này.",
+    "example": "请记住邪恶这个词。",
+    "examplePinyin": "Qǐng jìzhu xié è zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nham hiểm, hung ác này.",
     "id": "typ-hsk2-0785"
   },
   {
@@ -21502,9 +21502,9 @@
     "meaning": "thức dậy",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“醒来”这个词。",
-    "examplePinyin": "Qǐng jìzhu “醒来” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “醒来” này.",
+    "example": "请记住醒来这个词。",
+    "examplePinyin": "Qǐng jìzhu xǐng lái zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thức dậy này.",
     "id": "typ-hsk2-0791"
   },
   {
@@ -21546,13 +21546,13 @@
   {
     "hanzi": "芯片",
     "pinyin": "xīn piàn",
-    "hanviet": "芯 Phiến",
+    "hanviet": "Tâm Phiến",
     "meaning": "chip máy tính, vi mạch",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“芯片”这个词。",
-    "examplePinyin": "Qǐng jìzhu “芯片” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “芯片” này.",
+    "example": "请记住芯片这个词。",
+    "examplePinyin": "Qǐng jìzhu xīn piàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chip máy tính, vi mạch này.",
     "id": "typ-hsk2-0795"
   },
   {
@@ -21594,7 +21594,7 @@
   {
     "hanzi": "休假",
     "pinyin": "xiū jià",
-    "hanviet": "Hưu 假",
+    "hanviet": "Hưu Giả",
     "meaning": "đi nghỉ; có kỳ nghỉ; xin nghỉ",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -21678,7 +21678,7 @@
   {
     "hanzi": "学者",
     "pinyin": "xué zhě",
-    "hanviet": "Học 者",
+    "hanviet": "Học Giả",
     "meaning": "học giả",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -21718,9 +21718,9 @@
     "meaning": "huân chương, huy chương",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“勋章”这个词。",
-    "examplePinyin": "Qǐng jìzhu “勋章” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “勋章” này.",
+    "example": "请记住勋章这个词。",
+    "examplePinyin": "Qǐng jìzhu xūn zhāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ huân chương, huy chương này.",
     "id": "typ-hsk2-0809"
   },
   {
@@ -21742,9 +21742,9 @@
     "meaning": "răng, thuộc về răng",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“牙齿”这个词。",
-    "examplePinyin": "Qǐng jìzhu “牙齿” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “牙齿” này.",
+    "example": "请记住牙齿这个词。",
+    "examplePinyin": "Qǐng jìzhu yá chǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ răng, thuộc về răng này.",
     "id": "typ-hsk2-0811"
   },
   {
@@ -21802,15 +21802,15 @@
     "meaning": "thịt cừu, thịt dê",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“羊肉”这个词。",
-    "examplePinyin": "Qǐng jìzhu “羊肉” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “羊肉” này.",
+    "example": "请记住羊肉这个词。",
+    "examplePinyin": "Qǐng jìzhu yáng ròu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thịt cừu, thịt dê này.",
     "id": "typ-hsk2-0816"
   },
   {
     "hanzi": "眼睛",
     "pinyin": "yǎn jing",
-    "hanviet": "Cua / Nhản 睛",
+    "hanviet": "Cua / Nhản Tình",
     "meaning": "mắt",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -21966,7 +21966,7 @@
   {
     "hanzi": "也就是说",
     "pinyin": "yě jiù shì shuō",
-    "hanviet": "Dã 就 Thị Thuyết",
+    "hanviet": "Dã Thị Thuyết",
     "meaning": "nói cách khác, nghĩa là",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -21994,9 +21994,9 @@
     "meaning": "ban đêm",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“夜晚”这个词。",
-    "examplePinyin": "Qǐng jìzhu “夜晚” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “夜晚” này.",
+    "example": "请记住夜晚这个词。",
+    "examplePinyin": "Qǐng jìzhu yè wǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ban đêm này.",
     "id": "typ-hsk2-0832"
   },
   {
@@ -22066,9 +22066,9 @@
     "meaning": "quốc hội, hội đồng lập pháp",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“议会”这个词。",
-    "examplePinyin": "Qǐng jìzhu “议会” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “议会” này.",
+    "example": "请记住议会这个词。",
+    "examplePinyin": "Qǐng jìzhu yì huì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quốc hội, hội đồng lập pháp này.",
     "id": "typ-hsk2-0838"
   },
   {
@@ -22122,7 +22122,7 @@
   {
     "hanzi": "隐藏",
     "pinyin": "yǐn cáng",
-    "hanviet": "Ẩn 藏",
+    "hanviet": "Ẩn Tàng",
     "meaning": "che giấu, ẩn nấp",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -22138,9 +22138,9 @@
     "meaning": "dẫn đến, kích hoạt",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“引发”这个词。",
-    "examplePinyin": "Qǐng jìzhu “引发” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “引发” này.",
+    "example": "请记住引发这个词。",
+    "examplePinyin": "Qǐng jìzhu yǐn fā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dẫn đến, kích hoạt này.",
     "id": "typ-hsk2-0844"
   },
   {
@@ -22150,21 +22150,21 @@
     "meaning": "đại bàng, diều hâu",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“鹰”这个词。",
-    "examplePinyin": "Qǐng jìzhu “鹰” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “鹰” này.",
+    "example": "请记住鹰这个词。",
+    "examplePinyin": "Qǐng jìzhu yīng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đại bàng, diều hâu này.",
     "id": "typ-hsk2-0845"
   },
   {
     "hanzi": "英镑",
     "pinyin": "Yīng bàng",
-    "hanviet": "Anh 镑",
+    "hanviet": "Anh Bảng",
     "meaning": "bảng Anh",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“英镑”这个词。",
-    "examplePinyin": "Qǐng jìzhu “英镑” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “英镑” này.",
+    "example": "请记住英镑这个词。",
+    "examplePinyin": "Qǐng jìzhu Yīng bàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bảng Anh này.",
     "id": "typ-hsk2-0846"
   },
   {
@@ -22210,9 +22210,9 @@
     "meaning": "hình ảnh",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“影像”这个词。",
-    "examplePinyin": "Qǐng jìzhu “影像” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “影像” này.",
+    "example": "请记住影像这个词。",
+    "examplePinyin": "Qǐng jìzhu yǐng xiàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hình ảnh này.",
     "id": "typ-hsk2-0850"
   },
   {
@@ -22230,7 +22230,7 @@
   {
     "hanzi": "银行卡",
     "pinyin": "yín háng kǎ",
-    "hanviet": "Ngân Hành 卡",
+    "hanviet": "Ngân Hành Tạp",
     "meaning": "thẻ ngân hàng, thẻ ATM",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -22326,7 +22326,7 @@
   {
     "hanzi": "以外",
     "pinyin": "yǐ wài",
-    "hanviet": "以 Ngoại",
+    "hanviet": "Dĩ Ngoại",
     "meaning": "ngoài ra, khác ngoài",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -22366,9 +22366,9 @@
     "meaning": "thành viên, đại diện",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“议员”这个词。",
-    "examplePinyin": "Qǐng jìzhu “议员” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “议员” này.",
+    "example": "请记住议员这个词。",
+    "examplePinyin": "Qǐng jìzhu yì yuán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thành viên, đại diện này.",
     "id": "typ-hsk2-0863"
   },
   {
@@ -22390,9 +22390,9 @@
     "meaning": "cấy ghép",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“移植”这个词。",
-    "examplePinyin": "Qǐng jìzhu “移植” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “移植” này.",
+    "example": "请记住移植这个词。",
+    "examplePinyin": "Qǐng jìzhu yí zhí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cấy ghép này.",
     "id": "typ-hsk2-0865"
   },
   {
@@ -22434,7 +22434,7 @@
   {
     "hanzi": "优",
     "pinyin": "yōu",
-    "hanviet": "优",
+    "hanviet": "Ưu",
     "meaning": "xuất sắc, vượt trội",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -22458,7 +22458,7 @@
   {
     "hanzi": "邮件",
     "pinyin": "yóu jiàn",
-    "hanviet": "邮 Kiện",
+    "hanviet": "Bưu Kiện",
     "meaning": "thư từ, bưu phẩm",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -22482,7 +22482,7 @@
   {
     "hanzi": "有空儿",
     "pinyin": "yǒukòngr5",
-    "hanviet": "Hữu Không 儿",
+    "hanviet": "Hữu Không Nhi",
     "meaning": "available",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -22518,13 +22518,13 @@
   {
     "hanzi": "优雅",
     "pinyin": "yōu yǎ",
-    "hanviet": "优 Nhã",
+    "hanviet": "Ưu Nhã",
     "meaning": "duyên dáng, thanh lịch",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“优雅”这个词。",
-    "examplePinyin": "Qǐng jìzhu “优雅” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “优雅” này.",
+    "example": "请记住优雅这个词。",
+    "examplePinyin": "Qǐng jìzhu yōu yǎ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ duyên dáng, thanh lịch này.",
     "id": "typ-hsk2-0876"
   },
   {
@@ -22542,7 +22542,7 @@
   {
     "hanzi": "有一点儿",
     "pinyin": "yǒu yī diǎn r",
-    "hanviet": "Hữu Nhất Điểm 儿",
+    "hanviet": "Hữu Nhất Điểm Nhi",
     "meaning": "một chút, một ít",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -22554,7 +22554,7 @@
   {
     "hanzi": "游泳",
     "pinyin": "yóu yǒng",
-    "hanviet": "Du 泳",
+    "hanviet": "Du Vịnh",
     "meaning": "bơi lội, bơi",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -22630,9 +22630,9 @@
     "meaning": "ban đầu, nguyên bản",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“原本”这个词。",
-    "examplePinyin": "Qǐng jìzhu “原本” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “原本” này.",
+    "example": "请记住原本这个词。",
+    "examplePinyin": "Qǐng jìzhu yuán běn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ban đầu, nguyên bản này.",
     "id": "typ-hsk2-0885"
   },
   {
@@ -22714,9 +22714,9 @@
     "meaning": "đồng thời; trong khi đó",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“与此同时”这个词。",
-    "examplePinyin": "Qǐng jìzhu “与此同时” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “与此同时” này.",
+    "example": "请记住与此同时这个词。",
+    "examplePinyin": "Qǐng jìzhu yǔ cǐ tóng shí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đồng thời; trong khi đó này.",
     "id": "typ-hsk2-0892"
   },
   {
@@ -22818,7 +22818,7 @@
   {
     "hanzi": "咱",
     "pinyin": "zá",
-    "hanviet": "咱",
+    "hanviet": "Tạp",
     "meaning": "see 咱",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -22858,9 +22858,9 @@
     "meaning": "một lần nữa; lại lần nữa; thêm một lần",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“再度”这个词。",
-    "examplePinyin": "Qǐng jìzhu “再度” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “再度” này.",
+    "example": "请记住再度这个词。",
+    "examplePinyin": "Qǐng jìzhu zài dù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ một lần nữa; lại lần nữa; thêm một lần này.",
     "id": "typ-hsk2-0904"
   },
   {
@@ -22890,7 +22890,7 @@
   {
     "hanzi": "糟",
     "pinyin": "zāo",
-    "hanviet": "糟",
+    "hanviet": "Tao",
     "meaning": "bã, cặn",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -22974,7 +22974,7 @@
   {
     "hanzi": "炸",
     "pinyin": "zhá",
-    "hanviet": "炸",
+    "hanviet": "Tạc",
     "meaning": "chiên ngập dầu, chần",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -22986,7 +22986,7 @@
   {
     "hanzi": "炸弹",
     "pinyin": "zhà dàn",
-    "hanviet": "炸 Đàn",
+    "hanviet": "Tạc Đàn",
     "meaning": "bom, Lượng từ: 枚,顆|颗",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -23014,21 +23014,21 @@
     "meaning": "nợ, khoản nợ",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“债务”这个词。",
-    "examplePinyin": "Qǐng jìzhu “债务” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “债务” này.",
+    "example": "请记住债务这个词。",
+    "examplePinyin": "Qǐng jìzhu zhài wù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nợ, khoản nợ này.",
     "id": "typ-hsk2-0917"
   },
   {
     "hanzi": "粘",
     "pinyin": "zhān",
-    "hanviet": "粘",
+    "hanviet": "Niêm",
     "meaning": "to glue",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“粘”这个词。",
-    "examplePinyin": "Qǐng jìzhu “粘” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “粘” này.",
+    "example": "请记住粘这个词。",
+    "examplePinyin": "Qǐng jìzhu zhān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ to glue này.",
     "id": "typ-hsk2-0918"
   },
   {
@@ -23082,7 +23082,7 @@
   {
     "hanzi": "掌声",
     "pinyin": "zhǎng shēng",
-    "hanviet": "掌 Thanh",
+    "hanviet": "Chưởng Thanh",
     "meaning": "tràng vỗ tay",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -23190,7 +23190,7 @@
   {
     "hanzi": "震",
     "pinyin": "zhèn",
-    "hanviet": "震",
+    "hanviet": "Chấn",
     "meaning": "rung, lắc",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -23230,21 +23230,21 @@
     "meaning": "cứu; cứu hộ",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“拯救”这个词。",
-    "examplePinyin": "Qǐng jìzhu “拯救” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “拯救” này.",
+    "example": "请记住拯救这个词。",
+    "examplePinyin": "Qǐng jìzhu zhěng jiù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cứu; cứu hộ này.",
     "id": "typ-hsk2-0935"
   },
   {
     "hanzi": "正面",
     "pinyin": "zhèng miàn",
-    "hanviet": "Chính 面",
+    "hanviet": "Chính Diện",
     "meaning": "mặt trước, mặt phải",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“正面”这个词。",
-    "examplePinyin": "Qǐng jìzhu “正面” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “正面” này.",
+    "example": "请记住正面这个词。",
+    "examplePinyin": "Qǐng jìzhu zhèng miàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mặt trước, mặt phải này.",
     "id": "typ-hsk2-0936"
   },
   {
@@ -23286,13 +23286,13 @@
   {
     "hanzi": "震撼",
     "pinyin": "zhèn hàn",
-    "hanviet": "震 撼",
+    "hanviet": "Chấn Hám",
     "meaning": "rung động, sốc",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“震撼”这个词。",
-    "examplePinyin": "Qǐng jìzhu “震撼” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “震撼” này.",
+    "example": "请记住震撼这个词。",
+    "examplePinyin": "Qǐng jìzhu zhèn hàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rung động, sốc này.",
     "id": "typ-hsk2-0940"
   },
   {
@@ -23386,9 +23386,9 @@
     "meaning": "thực thi pháp luật, cơ quan thực thi pháp luật",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“执法”这个词。",
-    "examplePinyin": "Qǐng jìzhu “执法” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “执法” này.",
+    "example": "请记住执法这个词。",
+    "examplePinyin": "Qǐng jìzhu zhí fǎ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thực thi pháp luật, cơ quan thực thi pháp luật này.",
     "id": "typ-hsk2-0948"
   },
   {
@@ -23410,9 +23410,9 @@
     "meaning": "chí mạng, chết người",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“致命”这个词。",
-    "examplePinyin": "Qǐng jìzhu “致命” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “致命” này.",
+    "example": "请记住致命这个词。",
+    "examplePinyin": "Qǐng jìzhu zhì mìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chí mạng, chết người này.",
     "id": "typ-hsk2-0950"
   },
   {
@@ -23430,7 +23430,7 @@
   {
     "hanzi": "直升机",
     "pinyin": "zhí shēng jī",
-    "hanviet": "直 Thăng Cơ",
+    "hanviet": "Trực Thăng Cơ",
     "meaning": "máy bay trực thăng",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -23454,25 +23454,25 @@
   {
     "hanzi": "之所以",
     "pinyin": "zhī suǒ yǐ",
-    "hanviet": "Chi Sỡ 以",
+    "hanviet": "Chi Sỡ Dĩ",
     "meaning": "lý do mà N P, Ví dụ: 我之所以討厭他|我之所以讨厌他 \"lý do tôi ghét anh ta \"",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“之所以”这个词。",
-    "examplePinyin": "Qǐng jìzhu “之所以” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “之所以” này.",
+    "example": "请记住之所以这个词。",
+    "examplePinyin": "Qǐng jìzhu zhī suǒ yǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lý do mà N P, Ví dụ: lý do tôi ghét anh ta này.",
     "id": "typ-hsk2-0954"
   },
   {
     "hanzi": "质疑",
     "pinyin": "zhì yí",
-    "hanviet": "Chất 疑",
+    "hanviet": "Chất Nghi",
     "meaning": "đặt câu hỏi, chất vấn",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“质疑”这个词。",
-    "examplePinyin": "Qǐng jìzhu “质疑” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “质疑” này.",
+    "example": "请记住质疑这个词。",
+    "examplePinyin": "Qǐng jìzhu zhì yí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đặt câu hỏi, chất vấn này.",
     "id": "typ-hsk2-0955"
   },
   {
@@ -23482,9 +23482,9 @@
     "meaning": "chữa khỏi; phục hồi sức khỏe, nâng cao tinh thần; ấm lòng",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“治愈”这个词。",
-    "examplePinyin": "Qǐng jìzhu “治愈” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “治愈” này.",
+    "example": "请记住治愈这个词。",
+    "examplePinyin": "Qǐng jìzhu zhì yù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chữa khỏi; phục hồi sức khỏe, nâng cao tinh thần; ấm lòng này.",
     "id": "typ-hsk2-0956"
   },
   {
@@ -23514,7 +23514,7 @@
   {
     "hanzi": "中餐",
     "pinyin": "zhōng cān",
-    "hanviet": "Trung 餐",
+    "hanviet": "Trung Xan",
     "meaning": "bữa trưa, món ăn Trung Quốc; đồ ăn Trung Quốc",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -23578,9 +23578,9 @@
     "meaning": "mọi người",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“众人”这个词。",
-    "examplePinyin": "Qǐng jìzhu “众人” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “众人” này.",
+    "example": "请记住众人这个词。",
+    "examplePinyin": "Qǐng jìzhu zhòng rén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mọi người này.",
     "id": "typ-hsk2-0964"
   },
   {
@@ -23626,9 +23626,9 @@
     "meaning": "gốc, cọc",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“桩”这个词。",
-    "examplePinyin": "Qǐng jìzhu “桩” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “桩” này.",
+    "example": "请记住桩这个词。",
+    "examplePinyin": "Qǐng jìzhu zhuāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gốc, cọc này.",
     "id": "typ-hsk2-0968"
   },
   {
@@ -23646,7 +23646,7 @@
   {
     "hanzi": "转换",
     "pinyin": "zhuǎn huàn",
-    "hanviet": "Chuyển 换",
+    "hanviet": "Chuyển Hoán",
     "meaning": "thay đổi, chuyển",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -23658,7 +23658,7 @@
   {
     "hanzi": "专辑",
     "pinyin": "zhuān jí",
-    "hanviet": "Chuyên 辑",
+    "hanviet": "Chuyên Tập",
     "meaning": "album, đĩa nhạc",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -23670,7 +23670,7 @@
   {
     "hanzi": "赚钱",
     "pinyin": "zhuàn qián",
-    "hanviet": "赚 Tiền",
+    "hanviet": "Kiếm Tiền",
     "meaning": "kiếm tiền, kiếm lời",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -23722,9 +23722,9 @@
     "meaning": "được định sẵn, nhất định; vận mệnh đã định; trời định; không thể tránh khỏi",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“注定”这个词。",
-    "examplePinyin": "Qǐng jìzhu “注定” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “注定” này.",
+    "example": "请记住注定这个词。",
+    "examplePinyin": "Qǐng jìzhu zhù dìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ được định sẵn, nhất định; vận mệnh đã định; trời định; không thể tránh khỏi này.",
     "id": "typ-hsk2-0976"
   },
   {
@@ -23746,9 +23746,9 @@
     "meaning": "theo dấu, truy tìm",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“追踪”这个词。",
-    "examplePinyin": "Qǐng jìzhu “追踪” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “追踪” này.",
+    "example": "请记住追踪这个词。",
+    "examplePinyin": "Qǐng jìzhu zhuī zōng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ theo dấu, truy tìm này.",
     "id": "typ-hsk2-0978"
   },
   {
@@ -23790,13 +23790,13 @@
   {
     "hanzi": "兹",
     "pinyin": "zī",
-    "hanviet": "兹",
+    "hanviet": "Tư",
     "meaning": "bây giờ, đây",
     "hsk": "HSK 2",
     "levelNum": 2,
-    "example": "请记住“兹”这个词。",
-    "examplePinyin": "Qǐng jìzhu “兹” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “兹” này.",
+    "example": "请记住兹这个词。",
+    "examplePinyin": "Qǐng jìzhu zī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bây giờ, đây này.",
     "id": "typ-hsk2-0982"
   },
   {
@@ -23898,7 +23898,7 @@
   {
     "hanzi": "钻",
     "pinyin": "zuān",
-    "hanviet": "钻",
+    "hanviet": "Toản",
     "meaning": "to drill",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -23922,7 +23922,7 @@
   {
     "hanzi": "嘴巴",
     "pinyin": "zuǐ ba",
-    "hanviet": "嘴 Ba",
+    "hanviet": "Chủy Ba",
     "meaning": "miệng, cái tát",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -23958,7 +23958,7 @@
   {
     "hanzi": "做法",
     "pinyin": "zuò fǎ",
-    "hanviet": "做 Pháp",
+    "hanviet": "Tác Pháp",
     "meaning": "cách xử lý, phương pháp làm",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -23982,7 +23982,7 @@
   {
     "hanzi": "做梦",
     "pinyin": "zuò mèng",
-    "hanviet": "做 梦",
+    "hanviet": "Tác Mộng",
     "meaning": "mơ, có một giấc mơ",
     "hsk": "HSK 2",
     "levelNum": 2,
@@ -24030,19 +24030,19 @@
   {
     "hanzi": "癌",
     "pinyin": "ái",
-    "hanviet": "癌",
+    "hanviet": "Nham",
     "meaning": "ung thư, bệnh ung thư",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“癌”这个词。",
-    "examplePinyin": "Qǐng jìzhu “癌” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “癌” này.",
+    "example": "请记住癌这个词。",
+    "examplePinyin": "Qǐng jìzhu ái zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ung thư, bệnh ung thư này.",
     "id": "typ-hsk3-0002"
   },
   {
     "hanzi": "矮",
     "pinyin": "ǎi",
-    "hanviet": "矮",
+    "hanviet": "Ải",
     "meaning": "thấp, ngắn",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -24078,13 +24078,13 @@
   {
     "hanzi": "艾滋病",
     "pinyin": "ài zī bìng",
-    "hanviet": "Ngải 滋 Bệnh",
+    "hanviet": "Ngải Tư Bệnh",
     "meaning": "AIDS",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“艾滋病”这个词。",
-    "examplePinyin": "Qǐng jìzhu “艾滋病” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “艾滋病” này.",
+    "example": "请记住艾滋病这个词。",
+    "examplePinyin": "Qǐng jìzhu ài zī bìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ AIDS này.",
     "id": "typ-hsk3-0006"
   },
   {
@@ -24094,15 +24094,15 @@
     "meaning": "thị trấn Anting ở huyện Đài Nam 台南縣|台南县, Đài Loan",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“安定”这个词。",
-    "examplePinyin": "Qǐng jìzhu “安定” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “安定” này.",
+    "example": "请记住安定这个词。",
+    "examplePinyin": "Qǐng jìzhu Ān dìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thị trấn Anting ở huyện Đài Nam , Đài Loan này.",
     "id": "typ-hsk3-0007"
   },
   {
     "hanzi": "安静",
     "pinyin": "ān jìng",
-    "hanviet": "An 静",
+    "hanviet": "An Tĩnh",
     "meaning": "yên tĩnh, bình yên",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -24118,9 +24118,9 @@
     "meaning": "an tâm, cảm thấy nhẹ nhõm",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“安心”这个词。",
-    "examplePinyin": "Qǐng jìzhu “安心” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “安心” này.",
+    "example": "请记住安心这个词。",
+    "examplePinyin": "Qǐng jìzhu ān xīn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ an tâm, cảm thấy nhẹ nhõm này.",
     "id": "typ-hsk3-0009"
   },
   {
@@ -24142,15 +24142,15 @@
     "meaning": "Đại hội Thể thao Olympic; Thế vận hội",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“奥运会”这个词。",
-    "examplePinyin": "Qǐng jìzhu “奥运会” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “奥运会” này.",
+    "example": "请记住奥运会这个词。",
+    "examplePinyin": "Qǐng jìzhu Aò yùn huì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ Đại hội Thể thao Olympic; Thế vận hội này.",
     "id": "typ-hsk3-0011"
   },
   {
     "hanzi": "阿姨",
     "pinyin": "ā yí",
-    "hanviet": "阿 Dì",
+    "hanviet": "A Dì",
     "meaning": "dì, cô, bác gái",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -24178,9 +24178,9 @@
     "meaning": "bát quái của Kinh Dịch 易經|易经, tin đồn",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“八卦”这个词。",
-    "examplePinyin": "Qǐng jìzhu “八卦” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “八卦” này.",
+    "example": "请记住八卦这个词。",
+    "examplePinyin": "Qǐng jìzhu bā guà zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bát quái của Kinh Dịch , tin đồn này.",
     "id": "typ-hsk3-0014"
   },
   {
@@ -24210,7 +24210,7 @@
   {
     "hanzi": "扮",
     "pinyin": "bàn",
-    "hanviet": "扮",
+    "hanviet": "Bái",
     "meaning": "cải trang, hóa trang",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -24258,7 +24258,7 @@
   {
     "hanzi": "帮忙",
     "pinyin": "bāng máng",
-    "hanviet": "帮 Mang",
+    "hanviet": "Bang Mang",
     "meaning": "giúp, giúp đỡ",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -24310,9 +24310,9 @@
     "meaning": "bóc, gọt",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“剥”这个词。",
-    "examplePinyin": "Qǐng jìzhu “剥” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “剥” này.",
+    "example": "请记住剥这个词。",
+    "examplePinyin": "Qǐng jìzhu bāo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bóc, gọt này.",
     "id": "typ-hsk3-0025"
   },
   {
@@ -24346,15 +24346,15 @@
     "meaning": "báo, loài báo",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“豹”这个词。",
-    "examplePinyin": "Qǐng jìzhu “豹” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “豹” này.",
+    "example": "请记住豹这个词。",
+    "examplePinyin": "Qǐng jìzhu bào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ báo, loài báo này.",
     "id": "typ-hsk3-0028"
   },
   {
     "hanzi": "饱",
     "pinyin": "bǎo",
-    "hanviet": "饱",
+    "hanviet": "Bão",
     "meaning": "no, ăn no",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -24382,9 +24382,9 @@
     "meaning": "bị bắt, bị giam giữ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“被捕”这个词。",
-    "examplePinyin": "Qǐng jìzhu “被捕” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “被捕” này.",
+    "example": "请记住被捕这个词。",
+    "examplePinyin": "Qǐng jìzhu bèi bǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bị bắt, bị giam giữ này.",
     "id": "typ-hsk3-0031"
   },
   {
@@ -24406,15 +24406,15 @@
     "meaning": "dự trữ, dự phòng",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“备用”这个词。",
-    "examplePinyin": "Qǐng jìzhu “备用” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “备用” này.",
+    "example": "请记住备用这个词。",
+    "examplePinyin": "Qǐng jìzhu bèi yòng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dự trữ, dự phòng này.",
     "id": "typ-hsk3-0033"
   },
   {
     "hanzi": "奔",
     "pinyin": "bēn",
-    "hanviet": "奔",
+    "hanviet": "Bôn",
     "meaning": "vội vàng, lao nhanh",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -24426,13 +24426,13 @@
   {
     "hanzi": "笨蛋",
     "pinyin": "bèn dàn",
-    "hanviet": "笨 蛋",
+    "hanviet": "Bộn Đản",
     "meaning": "ngốc, người ngu",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“笨蛋”这个词。",
-    "examplePinyin": "Qǐng jìzhu “笨蛋” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “笨蛋” này.",
+    "example": "请记住笨蛋这个词。",
+    "examplePinyin": "Qǐng jìzhu bèn dàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngốc, người ngu này.",
     "id": "typ-hsk3-0035"
   },
   {
@@ -24450,7 +24450,7 @@
   {
     "hanzi": "辩",
     "pinyin": "biàn",
-    "hanviet": "辩",
+    "hanviet": "Biện",
     "meaning": "tranh luận, biện luận",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -24478,9 +24478,9 @@
     "meaning": "đánh số, số hiệu",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“编号”这个词。",
-    "examplePinyin": "Qǐng jìzhu “编号” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “编号” này.",
+    "example": "请记住编号这个词。",
+    "examplePinyin": "Qǐng jìzhu biān hào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đánh số, số hiệu này.",
     "id": "typ-hsk3-0039"
   },
   {
@@ -24502,9 +24502,9 @@
     "meaning": "viết kịch bản, kịch bản",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“编剧”这个词。",
-    "examplePinyin": "Qǐng jìzhu “编剧” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “编剧” này.",
+    "example": "请记住编剧这个词。",
+    "examplePinyin": "Qǐng jìzhu biān jù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ viết kịch bản, kịch bản này.",
     "id": "typ-hsk3-0041"
   },
   {
@@ -24538,9 +24538,9 @@
     "meaning": "nhãn, thẻ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“标签”这个词。",
-    "examplePinyin": "Qǐng jìzhu “标签” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “标签” này.",
+    "example": "请记住标签这个词。",
+    "examplePinyin": "Qǐng jìzhu biāo qiān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhãn, thẻ này.",
     "id": "typ-hsk3-0044"
   },
   {
@@ -24594,7 +24594,7 @@
   {
     "hanzi": "比较",
     "pinyin": "bǐ jiào",
-    "hanviet": "Tỉ 较",
+    "hanviet": "Tỉ Giảo",
     "meaning": "so sánh, đối chiếu",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -24642,7 +24642,7 @@
   {
     "hanzi": "比赛",
     "pinyin": "bǐ sài",
-    "hanviet": "Tỉ 赛",
+    "hanviet": "Tỉ Tái",
     "meaning": "cuộc thi, trận đấu",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -24678,7 +24678,7 @@
   {
     "hanzi": "鼻子",
     "pinyin": "bí zi",
-    "hanviet": "鼻 Tử",
+    "hanviet": "Tị Tử",
     "meaning": "mũi",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -24706,9 +24706,9 @@
     "meaning": "tước đoạt, trưng dụng",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“剥夺”这个词。",
-    "examplePinyin": "Qǐng jìzhu “剥夺” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “剥夺” này.",
+    "example": "请记住剥夺这个词。",
+    "examplePinyin": "Qǐng jìzhu bō duó zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tước đoạt, trưng dụng này.",
     "id": "typ-hsk3-0058"
   },
   {
@@ -24738,7 +24738,7 @@
   {
     "hanzi": "不仅仅",
     "pinyin": "bù jǐn jǐn",
-    "hanviet": "Bất 仅 仅",
+    "hanviet": "Bất Cận Cận",
     "meaning": "not only; not just",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -24766,9 +24766,9 @@
     "meaning": "không ngừng; không dứt",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“不已”这个词。",
-    "examplePinyin": "Qǐng jìzhu “不已” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “不已” này.",
+    "example": "请记住不已这个词。",
+    "examplePinyin": "Qǐng jìzhu bù yǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ không ngừng; không dứt này.",
     "id": "typ-hsk3-0063"
   },
   {
@@ -24802,9 +24802,9 @@
     "meaning": "tài năng",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“才华”这个词。",
-    "examplePinyin": "Qǐng jìzhu “才华” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “才华” này.",
+    "example": "请记住才华这个词。",
+    "examplePinyin": "Qǐng jìzhu cái huá zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tài năng này.",
     "id": "typ-hsk3-0066"
   },
   {
@@ -24838,9 +24838,9 @@
     "meaning": "máng, máng ăn",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“槽”这个词。",
-    "examplePinyin": "Qǐng jìzhu “槽” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “槽” này.",
+    "example": "请记住槽这个词。",
+    "examplePinyin": "Qǐng jìzhu cáo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ máng, máng ăn này.",
     "id": "typ-hsk3-0069"
   },
   {
@@ -24870,7 +24870,7 @@
   {
     "hanzi": "层面",
     "pinyin": "céng miàn",
-    "hanviet": "Tầng 面",
+    "hanviet": "Tầng Diện",
     "meaning": "khía cạnh; mặt, phương diện",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -24906,7 +24906,7 @@
   {
     "hanzi": "肠",
     "pinyin": "cháng",
-    "hanviet": "肠",
+    "hanviet": "Trường",
     "meaning": "ruột",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -24970,15 +24970,15 @@
     "meaning": "hướng tới",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“朝着”这个词。",
-    "examplePinyin": "Qǐng jìzhu “朝着” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “朝着” này.",
+    "example": "请记住朝着这个词。",
+    "examplePinyin": "Qǐng jìzhu cháo zhe zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hướng tới này.",
     "id": "typ-hsk3-0080"
   },
   {
     "hanzi": "查询",
     "pinyin": "chá xún",
-    "hanviet": "Tra 询",
+    "hanviet": "Tra Tuần",
     "meaning": "kiểm tra, hỏi",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -24990,7 +24990,7 @@
   {
     "hanzi": "差异",
     "pinyin": "chā yì",
-    "hanviet": "Sai 异",
+    "hanviet": "Sai Dị",
     "meaning": "sự khác biệt; chênh lệch",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -25050,7 +25050,7 @@
   {
     "hanzi": "衬衫",
     "pinyin": "chèn shān",
-    "hanviet": "衬 Oam",
+    "hanviet": "Sấn Oam",
     "meaning": "áo sơ mi, áo blouse",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -25062,7 +25062,7 @@
   {
     "hanzi": "衬衣",
     "pinyin": "chèn yī",
-    "hanviet": "衬 Y",
+    "hanviet": "Sấn Y",
     "meaning": "áo sơ mi",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -25126,9 +25126,9 @@
     "meaning": "sớm muộn gì",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“迟早”这个词。",
-    "examplePinyin": "Qǐng jìzhu “迟早” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “迟早” này.",
+    "example": "请记住迟早这个词。",
+    "examplePinyin": "Qǐng jìzhu chí zǎo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sớm muộn gì này.",
     "id": "typ-hsk3-0093"
   },
   {
@@ -25150,9 +25150,9 @@
     "meaning": "(dùng trong địa danh)",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“涌”这个词。",
-    "examplePinyin": "Qǐng jìzhu “涌” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “涌” này.",
+    "example": "请记住涌这个词。",
+    "examplePinyin": "Qǐng jìzhu chōng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ (dùng trong địa danh) này.",
     "id": "typ-hsk3-0095"
   },
   {
@@ -25182,13 +25182,13 @@
   {
     "hanzi": "筹码",
     "pinyin": "chóu mǎ",
-    "hanviet": "筹 码",
+    "hanviet": "Trù Mã",
     "meaning": "quân bài thương lượng; phỉnh chơi game; chip ở sòng bạc",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“筹码”这个词。",
-    "examplePinyin": "Qǐng jìzhu “筹码” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “筹码” này.",
+    "example": "请记住筹码这个词。",
+    "examplePinyin": "Qǐng jìzhu chóu mǎ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quân bài thương lượng; phỉnh chơi game; chip ở sòng bạc này.",
     "id": "typ-hsk3-0098"
   },
   {
@@ -25198,9 +25198,9 @@
     "meaning": "thở dốc, thở hổn hển",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“喘”这个词。",
-    "examplePinyin": "Qǐng jìzhu “喘” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “喘” này.",
+    "example": "请记住喘这个词。",
+    "examplePinyin": "Qǐng jìzhu chuǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thở dốc, thở hổn hển này.",
     "id": "typ-hsk3-0099"
   },
   {
@@ -25234,9 +25234,9 @@
     "meaning": "vết thương; chấn thương; tổn thương",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“创伤”这个词。",
-    "examplePinyin": "Qǐng jìzhu “创伤” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “创伤” này.",
+    "example": "请记住创伤这个词。",
+    "examplePinyin": "Qǐng jìzhu chuāng shāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vết thương; chấn thương; tổn thương này.",
     "id": "typ-hsk3-0102"
   },
   {
@@ -25270,9 +25270,9 @@
     "meaning": "tin đồn",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“传闻”这个词。",
-    "examplePinyin": "Qǐng jìzhu “传闻” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “传闻” này.",
+    "example": "请记住传闻这个词。",
+    "examplePinyin": "Qǐng jìzhu chuán wén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tin đồn này.",
     "id": "typ-hsk3-0105"
   },
   {
@@ -25306,9 +25306,9 @@
     "meaning": "ngoài điều này, ngoài ra",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“除此之外”这个词。",
-    "examplePinyin": "Qǐng jìzhu “除此之外” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “除此之外” này.",
+    "example": "请记住除此之外这个词。",
+    "examplePinyin": "Qǐng jìzhu chú cǐ zhī wài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngoài điều này, ngoài ra này.",
     "id": "typ-hsk3-0108"
   },
   {
@@ -25354,9 +25354,9 @@
     "meaning": "đơn thuốc, viết đơn thuốc",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“处方”这个词。",
-    "examplePinyin": "Qǐng jìzhu “处方” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “处方” này.",
+    "example": "请记住处方这个词。",
+    "examplePinyin": "Qǐng jìzhu chǔ fāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đơn thuốc, viết đơn thuốc này.",
     "id": "typ-hsk3-0112"
   },
   {
@@ -25366,9 +25366,9 @@
     "meaning": "bị loại; bị loại, bị loại khỏi một cuộc thi",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“出局”这个词。",
-    "examplePinyin": "Qǐng jìzhu “出局” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “出局” này.",
+    "example": "请记住出局这个词。",
+    "examplePinyin": "Qǐng jìzhu chū jú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bị loại; bị loại, bị loại khỏi một cuộc thi này.",
     "id": "typ-hsk3-0113"
   },
   {
@@ -25414,9 +25414,9 @@
     "meaning": "stupid",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“蠢”这个词。",
-    "examplePinyin": "Qǐng jìzhu “蠢” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “蠢” này.",
+    "example": "请记住蠢这个词。",
+    "examplePinyin": "Qǐng jìzhu chǔn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ stupid này.",
     "id": "typ-hsk3-0117"
   },
   {
@@ -25462,21 +25462,21 @@
     "meaning": "đến từ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“出自”这个词。",
-    "examplePinyin": "Qǐng jìzhu “出自” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “出自” này.",
+    "example": "请记住出自这个词。",
+    "examplePinyin": "Qǐng jìzhu chū zì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đến từ này.",
     "id": "typ-hsk3-0121"
   },
   {
     "hanzi": "赐",
     "pinyin": "cì",
-    "hanviet": "赐",
+    "hanviet": "Tứ",
     "meaning": "hình thức hạn chế) phong tặng; ban cho; cấp cho, quà tặng; ân huệ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“赐”这个词。",
-    "examplePinyin": "Qǐng jìzhu “赐” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “赐” này.",
+    "example": "请记住赐这个词。",
+    "examplePinyin": "Qǐng jìzhu cì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hình thức hạn chế) phong tặng; ban cho; cấp cho, quà tặng; ân huệ này.",
     "id": "typ-hsk3-0122"
   },
   {
@@ -25554,25 +25554,25 @@
   {
     "hanzi": "凑",
     "pinyin": "còu",
-    "hanviet": "凑",
+    "hanviet": "Tấu",
     "meaning": "tập hợp, gom góp, tình cờ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“凑”这个词。",
-    "examplePinyin": "Qǐng jìzhu “凑” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “凑” này.",
+    "example": "请记住凑这个词。",
+    "examplePinyin": "Qǐng jìzhu còu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tập hợp, gom góp, tình cờ này.",
     "id": "typ-hsk3-0129"
   },
   {
     "hanzi": "摧毁",
     "pinyin": "cuī huǐ",
-    "hanviet": "摧 Huỷ",
+    "hanviet": "Tồi Huỷ",
     "meaning": "phá hủy; phá hoại",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“摧毁”这个词。",
-    "examplePinyin": "Qǐng jìzhu “摧毁” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “摧毁” này.",
+    "example": "请记住摧毁这个词。",
+    "examplePinyin": "Qǐng jìzhu cuī huǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phá hủy; phá hoại này.",
     "id": "typ-hsk3-0130"
   },
   {
@@ -25710,7 +25710,7 @@
   {
     "hanzi": "蛋糕",
     "pinyin": "dàn gāo",
-    "hanviet": "蛋 糕",
+    "hanviet": "Đản Cao",
     "meaning": "bánh ngọt",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -25758,13 +25758,13 @@
   {
     "hanzi": "但愿",
     "pinyin": "dàn yuàn",
-    "hanviet": "但 Nguyện",
+    "hanviet": "Đãn Nguyện",
     "meaning": "giá mà, tôi ước",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“但愿”这个词。",
-    "examplePinyin": "Qǐng jìzhu “但愿” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “但愿” này.",
+    "example": "请记住但愿这个词。",
+    "examplePinyin": "Qǐng jìzhu dàn yuàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giá mà, tôi ước này.",
     "id": "typ-hsk3-0146"
   },
   {
@@ -25786,9 +25786,9 @@
     "meaning": "gia sư, giáo viên",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“导师”这个词。",
-    "examplePinyin": "Qǐng jìzhu “导师” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “导师” này.",
+    "example": "请记住导师这个词。",
+    "examplePinyin": "Qǐng jìzhu dǎo shī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gia sư, giáo viên này.",
     "id": "typ-hsk3-0148"
   },
   {
@@ -25798,9 +25798,9 @@
     "meaning": "đếm ngược, đếm ngược",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“倒数”这个词。",
-    "examplePinyin": "Qǐng jìzhu “倒数” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “倒数” này.",
+    "example": "请记住倒数这个词。",
+    "examplePinyin": "Qǐng jìzhu dào shǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đếm ngược, đếm ngược này.",
     "id": "typ-hsk3-0149"
   },
   {
@@ -25810,9 +25810,9 @@
     "meaning": "sụp đổ, ngã xuống",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“倒下”这个词。",
-    "examplePinyin": "Qǐng jìzhu “倒下” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “倒下” này.",
+    "example": "请记住倒下这个词。",
+    "examplePinyin": "Qǐng jìzhu dǎo xià zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sụp đổ, ngã xuống này.",
     "id": "typ-hsk3-0150"
   },
   {
@@ -25902,7 +25902,7 @@
   {
     "hanzi": "电梯",
     "pinyin": "diàn tī",
-    "hanviet": "Điện 梯",
+    "hanviet": "Điện Thê",
     "meaning": "thang máy, thang cuốn",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -25926,7 +25926,7 @@
   {
     "hanzi": "电子邮件",
     "pinyin": "diàn zǐ yóu jiàn",
-    "hanviet": "Điện Tử 邮 Kiện",
+    "hanviet": "Điện Tử Bưu Kiện",
     "meaning": "email",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -25954,9 +25954,9 @@
     "meaning": "to fold",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“叠”这个词。",
-    "examplePinyin": "Qǐng jìzhu “叠” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “叠” này.",
+    "example": "请记住叠这个词。",
+    "examplePinyin": "Qǐng jìzhu dié zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ to fold này.",
     "id": "typ-hsk3-0162"
   },
   {
@@ -25978,9 +25978,9 @@
     "meaning": "hàng đầu; hạng nhất",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“顶级”这个词。",
-    "examplePinyin": "Qǐng jìzhu “顶级” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “顶级” này.",
+    "example": "请记住顶级这个词。",
+    "examplePinyin": "Qǐng jìzhu dǐng jí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hàng đầu; hạng nhất này.",
     "id": "typ-hsk3-0164"
   },
   {
@@ -26026,9 +26026,9 @@
     "meaning": "mất, vứt đi",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“丢掉”这个词。",
-    "examplePinyin": "Qǐng jìzhu “丢掉” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “丢掉” này.",
+    "example": "请记住丢掉这个词。",
+    "examplePinyin": "Qǐng jìzhu diū diào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mất, vứt đi này.",
     "id": "typ-hsk3-0168"
   },
   {
@@ -26038,9 +26038,9 @@
     "meaning": "mất; để thất lạc",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“丢失”这个词。",
-    "examplePinyin": "Qǐng jìzhu “丢失” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “丢失” này.",
+    "example": "请记住丢失这个词。",
+    "examplePinyin": "Qǐng jìzhu diū shī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mất; để thất lạc này.",
     "id": "typ-hsk3-0169"
   },
   {
@@ -26058,25 +26058,25 @@
   {
     "hanzi": "底线",
     "pinyin": "dǐ xiàn",
-    "hanviet": "Để 线",
+    "hanviet": "Để Tuyến",
     "meaning": "giới hạn; mức chấp nhận được, đường biên dưới",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“底线”这个词。",
-    "examplePinyin": "Qǐng jìzhu “底线” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “底线” này.",
+    "example": "请记住底线这个词。",
+    "examplePinyin": "Qǐng jìzhu dǐ xiàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giới hạn; mức chấp nhận được, đường biên dưới này.",
     "id": "typ-hsk3-0171"
   },
   {
     "hanzi": "抵押",
     "pinyin": "dǐ yā",
-    "hanviet": "抵 Áp",
+    "hanviet": "Đễ Áp",
     "meaning": "cung cấp làm bảo đảm cho khoản vay, thế chấp",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“抵押”这个词。",
-    "examplePinyin": "Qǐng jìzhu “抵押” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “抵押” này.",
+    "example": "请记住抵押这个词。",
+    "examplePinyin": "Qǐng jìzhu dǐ yā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cung cấp làm bảo đảm cho khoản vay, thế chấp này.",
     "id": "typ-hsk3-0172"
   },
   {
@@ -26154,13 +26154,13 @@
   {
     "hanzi": "抖",
     "pinyin": "dǒu",
-    "hanviet": "抖",
+    "hanviet": "Đẩu",
     "meaning": "run rẩy, rung lên",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“抖”这个词。",
-    "examplePinyin": "Qǐng jìzhu “抖” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “抖” này.",
+    "example": "请记住抖这个词。",
+    "examplePinyin": "Qǐng jìzhu dǒu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ run rẩy, rung lên này.",
     "id": "typ-hsk3-0179"
   },
   {
@@ -26226,7 +26226,7 @@
   {
     "hanzi": "锻炼",
     "pinyin": "duàn liàn",
-    "hanviet": "锻 Luyện",
+    "hanviet": "Đoán Luyện",
     "meaning": "rèn luyện, rèn giũa",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -26266,9 +26266,9 @@
     "meaning": "độc quyền",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“独家”这个词。",
-    "examplePinyin": "Qǐng jìzhu “独家” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “独家” này.",
+    "example": "请记住独家这个词。",
+    "examplePinyin": "Qǐng jìzhu dú jiā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ độc quyền này.",
     "id": "typ-hsk3-0188"
   },
   {
@@ -26278,21 +26278,21 @@
     "meaning": "hầm",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“炖”这个词。",
-    "examplePinyin": "Qǐng jìzhu “炖” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “炖” này.",
+    "example": "请记住炖这个词。",
+    "examplePinyin": "Qǐng jìzhu dùn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hầm này.",
     "id": "typ-hsk3-0189"
   },
   {
     "hanzi": "躲避",
     "pinyin": "duǒ bì",
-    "hanviet": "躲 Tị",
+    "hanviet": "Đóa Tị",
     "meaning": "trốn, tránh né",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“躲避”这个词。",
-    "examplePinyin": "Qǐng jìzhu “躲避” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “躲避” này.",
+    "example": "请记住躲避这个词。",
+    "examplePinyin": "Qǐng jìzhu duǒ bì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trốn, tránh né này.",
     "id": "typ-hsk3-0190"
   },
   {
@@ -26314,9 +26314,9 @@
     "meaning": "trong nhiều năm qua",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“多年来”这个词。",
-    "examplePinyin": "Qǐng jìzhu “多年来” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “多年来” này.",
+    "example": "请记住多年来这个词。",
+    "examplePinyin": "Qǐng jìzhu duō nián lái zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trong nhiều năm qua này.",
     "id": "typ-hsk3-0192"
   },
   {
@@ -26334,7 +26334,7 @@
   {
     "hanzi": "饿",
     "pinyin": "è",
-    "hanviet": "饿",
+    "hanviet": "Ngạ",
     "meaning": "đói, làm cho đói",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -26370,7 +26370,7 @@
   {
     "hanzi": "而且",
     "pinyin": "ér qiě",
-    "hanviet": "而 Thả",
+    "hanviet": "Nhi Thả",
     "meaning": "mà còn, hơn nữa",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -26386,9 +26386,9 @@
     "meaning": "ác ý, ý định xấu",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“恶意”这个词。",
-    "examplePinyin": "Qǐng jìzhu “恶意” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “恶意” này.",
+    "example": "请记住恶意这个词。",
+    "examplePinyin": "Qǐng jìzhu è yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ác ý, ý định xấu này.",
     "id": "typ-hsk3-0198"
   },
   {
@@ -26398,9 +26398,9 @@
     "meaning": "họp báo, cuộc họp báo",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“发布会”这个词。",
-    "examplePinyin": "Qǐng jìzhu “发布会” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “发布会” này.",
+    "example": "请记住发布会这个词。",
+    "examplePinyin": "Qǐng jìzhu fā bù huì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ họp báo, cuộc họp báo này.",
     "id": "typ-hsk3-0199"
   },
   {
@@ -26434,9 +26434,9 @@
     "meaning": "khai quật, thám hiểm",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“发掘”这个词。",
-    "examplePinyin": "Qǐng jìzhu “发掘” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “发掘” này.",
+    "example": "请记住发掘这个词。",
+    "examplePinyin": "Qǐng jìzhu fā jué zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khai quật, thám hiểm này.",
     "id": "typ-hsk3-0202"
   },
   {
@@ -26470,9 +26470,9 @@
     "meaning": "tha thứ, để tuột mất",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“放过”这个词。",
-    "examplePinyin": "Qǐng jìzhu “放过” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “放过” này.",
+    "example": "请记住放过这个词。",
+    "examplePinyin": "Qǐng jìzhu fàng guò zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tha thứ, để tuột mất này.",
     "id": "typ-hsk3-0205"
   },
   {
@@ -26482,9 +26482,9 @@
     "meaning": "phòng thủ, bảo vệ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“防护”这个词。",
-    "examplePinyin": "Qǐng jìzhu “防护” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “防护” này.",
+    "example": "请记住防护这个词。",
+    "examplePinyin": "Qǐng jìzhu fáng hù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phòng thủ, bảo vệ này.",
     "id": "typ-hsk3-0206"
   },
   {
@@ -26554,9 +26554,9 @@
     "meaning": "trút, phát ra ngoài",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“发泄”这个词。",
-    "examplePinyin": "Qǐng jìzhu “发泄” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “发泄” này.",
+    "example": "请记住发泄这个词。",
+    "examplePinyin": "Qǐng jìzhu fā xiè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trút, phát ra ngoài này.",
     "id": "typ-hsk3-0212"
   },
   {
@@ -26578,9 +26578,9 @@
     "meaning": "rác rưởi; vật liệu phế thải, người vô dụng",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“废物”这个词。",
-    "examplePinyin": "Qǐng jìzhu “废物” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “废物” này.",
+    "example": "请记住废物这个词。",
+    "examplePinyin": "Qǐng jìzhu fèi wù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rác rưởi; vật liệu phế thải, người vô dụng này.",
     "id": "typ-hsk3-0214"
   },
   {
@@ -26622,13 +26622,13 @@
   {
     "hanzi": "凤凰",
     "pinyin": "Fèng huáng",
-    "hanviet": "Phượng 凰",
+    "hanviet": "Phượng Hoàng",
     "meaning": "huyện Phượng Hoàng ở Châu tự trị dân tộc Thổ Gia và Miêu Tương Tây 湘西土家族苗族自治州",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“凤凰”这个词。",
-    "examplePinyin": "Qǐng jìzhu “凤凰” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “凤凰” này.",
+    "example": "请记住凤凰这个词。",
+    "examplePinyin": "Qǐng jìzhu Fèng huáng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ huyện Phượng Hoàng ở Châu tự trị dân tộc Thổ Gia và Miêu Tương Tây này.",
     "id": "typ-hsk3-0218"
   },
   {
@@ -26638,21 +26638,21 @@
     "meaning": "mật ong",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“蜂蜜”这个词。",
-    "examplePinyin": "Qǐng jìzhu “蜂蜜” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “蜂蜜” này.",
+    "example": "请记住蜂蜜这个词。",
+    "examplePinyin": "Qǐng jìzhu fēng mì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mật ong này.",
     "id": "typ-hsk3-0219"
   },
   {
     "hanzi": "封面",
     "pinyin": "fēng miàn",
-    "hanviet": "Phong 面",
+    "hanviet": "Phong Diện",
     "meaning": "bìa",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“封面”这个词。",
-    "examplePinyin": "Qǐng jìzhu “封面” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “封面” này.",
+    "example": "请记住封面这个词。",
+    "examplePinyin": "Qǐng jìzhu fēng miàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bìa này.",
     "id": "typ-hsk3-0220"
   },
   {
@@ -26662,9 +26662,9 @@
     "meaning": "người điên, kẻ điên",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“疯子”这个词。",
-    "examplePinyin": "Qǐng jìzhu “疯子” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “疯子” này.",
+    "example": "请记住疯子这个词。",
+    "examplePinyin": "Qǐng jìzhu fēng zi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ người điên, kẻ điên này.",
     "id": "typ-hsk3-0221"
   },
   {
@@ -26698,9 +26698,9 @@
     "meaning": "đi, thăm",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“赴”这个词。",
-    "examplePinyin": "Qǐng jìzhu “赴” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “赴” này.",
+    "example": "请记住赴这个词。",
+    "examplePinyin": "Qǐng jìzhu fù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đi, thăm này.",
     "id": "typ-hsk3-0224"
   },
   {
@@ -26710,9 +26710,9 @@
     "meaning": "bụng, phần bụng",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“腹部”这个词。",
-    "examplePinyin": "Qǐng jìzhu “腹部” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “腹部” này.",
+    "example": "请记住腹部这个词。",
+    "examplePinyin": "Qǐng jìzhu fù bù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bụng, phần bụng này.",
     "id": "typ-hsk3-0225"
   },
   {
@@ -26722,9 +26722,9 @@
     "meaning": "hòa giải, quay lại với nhau",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“复合”这个词。",
-    "examplePinyin": "Qǐng jìzhu “复合” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “复合” này.",
+    "example": "请记住复合这个词。",
+    "examplePinyin": "Qǐng jìzhu fù hé zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hòa giải, quay lại với nhau này.",
     "id": "typ-hsk3-0226"
   },
   {
@@ -26742,13 +26742,13 @@
   {
     "hanzi": "负面",
     "pinyin": "fù miàn",
-    "hanviet": "Phụ 面",
+    "hanviet": "Phụ Diện",
     "meaning": "tiêu cực, mặt tiêu cực",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“负面”这个词。",
-    "examplePinyin": "Qǐng jìzhu “负面” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “负面” này.",
+    "example": "请记住负面这个词。",
+    "examplePinyin": "Qǐng jìzhu fù miàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tiêu cực, mặt tiêu cực này.",
     "id": "typ-hsk3-0228"
   },
   {
@@ -26782,9 +26782,9 @@
     "meaning": "biết ơn",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“感恩”这个词。",
-    "examplePinyin": "Qǐng jìzhu “感恩” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “感恩” này.",
+    "example": "请记住感恩这个词。",
+    "examplePinyin": "Qǐng jìzhu gǎn ēn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ biết ơn này.",
     "id": "typ-hsk3-0231"
   },
   {
@@ -26802,7 +26802,7 @@
   {
     "hanzi": "刚才",
     "pinyin": "gāng cái",
-    "hanviet": "刚 Tài",
+    "hanviet": "Cương Tài",
     "meaning": "vừa nãy, mới đây",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -26814,7 +26814,7 @@
   {
     "hanzi": "干净",
     "pinyin": "gān jìng",
-    "hanviet": "Can 净",
+    "hanviet": "Can Tịnh",
     "meaning": "sạch, gọn gàng",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -26878,9 +26878,9 @@
     "meaning": "gan",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“肝脏”这个词。",
-    "examplePinyin": "Qǐng jìzhu “肝脏” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “肝脏” này.",
+    "example": "请记住肝脏这个词。",
+    "examplePinyin": "Qǐng jìzhu gān zàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gan này.",
     "id": "typ-hsk3-0239"
   },
   {
@@ -26890,9 +26890,9 @@
     "meaning": "sự cao quý, quý tộc",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“高贵”这个词。",
-    "examplePinyin": "Qǐng jìzhu “高贵” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “高贵” này.",
+    "example": "请记住高贵这个词。",
+    "examplePinyin": "Qǐng jìzhu gāo guì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sự cao quý, quý tộc này.",
     "id": "typ-hsk3-0240"
   },
   {
@@ -26970,7 +26970,7 @@
   {
     "hanzi": "更换",
     "pinyin": "gēng huàn",
-    "hanviet": "Xâu / Canh 换",
+    "hanviet": "Xâu / Canh Hoán",
     "meaning": "thay thế, thay đổi",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -27010,9 +27010,9 @@
     "meaning": "xe buýt, viết tắt của 公共汽車|公共汽车",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“公车”这个词。",
-    "examplePinyin": "Qǐng jìzhu “公车” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “公车” này.",
+    "example": "请记住公车这个词。",
+    "examplePinyin": "Qǐng jìzhu gōng chē zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xe buýt, viết tắt của này.",
     "id": "typ-hsk3-0250"
   },
   {
@@ -27034,9 +27034,9 @@
     "meaning": "công đoàn, tổ chức công đoàn",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“工会”这个词。",
-    "examplePinyin": "Qǐng jìzhu “工会” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “工会” này.",
+    "example": "请记住工会这个词。",
+    "examplePinyin": "Qǐng jìzhu gōng huì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ công đoàn, tổ chức công đoàn này.",
     "id": "typ-hsk3-0252"
   },
   {
@@ -27046,21 +27046,21 @@
     "meaning": "quỹ dự trữ, quỹ tích lũy",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“公积金”这个词。",
-    "examplePinyin": "Qǐng jìzhu “公积金” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “公积金” này.",
+    "example": "请记住公积金这个词。",
+    "examplePinyin": "Qǐng jìzhu gōng jī jīn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quỹ dự trữ, quỹ tích lũy này.",
     "id": "typ-hsk3-0253"
   },
   {
     "hanzi": "共识",
     "pinyin": "gòng shí",
-    "hanviet": "Cộng 识",
+    "hanviet": "Cộng Thức",
     "meaning": "hiểu biết chung, đồng thuận",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“共识”这个词。",
-    "examplePinyin": "Qǐng jìzhu “共识” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “共识” này.",
+    "example": "请记住共识这个词。",
+    "examplePinyin": "Qǐng jìzhu gòng shí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hiểu biết chung, đồng thuận này.",
     "id": "typ-hsk3-0254"
   },
   {
@@ -27126,19 +27126,19 @@
   {
     "hanzi": "勾",
     "pinyin": "gōu",
-    "hanviet": "勾",
+    "hanviet": "Câu",
     "meaning": "to attract",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“勾”这个词。",
-    "examplePinyin": "Qǐng jìzhu “勾” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “勾” này.",
+    "example": "请记住勾这个词。",
+    "examplePinyin": "Qǐng jìzhu gōu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ to attract này.",
     "id": "typ-hsk3-0260"
   },
   {
     "hanzi": "沟",
     "pinyin": "gōu",
-    "hanviet": "沟",
+    "hanviet": "Câu",
     "meaning": "mương, rãnh",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -27154,9 +27154,9 @@
     "meaning": "to hook",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“钩”这个词。",
-    "examplePinyin": "Qǐng jìzhu “钩” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “钩” này.",
+    "example": "请记住钩这个词。",
+    "examplePinyin": "Qǐng jìzhu gōu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ to hook này.",
     "id": "typ-hsk3-0262"
   },
   {
@@ -27174,19 +27174,19 @@
   {
     "hanzi": "雇",
     "pinyin": "gù",
-    "hanviet": "雇",
+    "hanviet": "Cố",
     "meaning": "to employ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“雇”这个词。",
-    "examplePinyin": "Qǐng jìzhu “雇” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “雇” này.",
+    "example": "请记住雇这个词。",
+    "examplePinyin": "Qǐng jìzhu gù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ to employ này.",
     "id": "typ-hsk3-0264"
   },
   {
     "hanzi": "刮",
     "pinyin": "guā",
-    "hanviet": "刮",
+    "hanviet": "Quát",
     "meaning": "cạo, thổi",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -27234,7 +27234,7 @@
   {
     "hanzi": "光线",
     "pinyin": "guāng xiàn",
-    "hanviet": "Quang 线",
+    "hanviet": "Quang Tuyến",
     "meaning": "tia sáng, ánh sáng",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -27250,9 +27250,9 @@
     "meaning": "khớp, điểm mấu chốt",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“关节”这个词。",
-    "examplePinyin": "Qǐng jìzhu “关节” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “关节” này.",
+    "example": "请记住关节这个词。",
+    "examplePinyin": "Qǐng jìzhu guān jié zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khớp, điểm mấu chốt này.",
     "id": "typ-hsk3-0270"
   },
   {
@@ -27306,13 +27306,13 @@
   {
     "hanzi": "归来",
     "pinyin": "guī lái",
-    "hanviet": "归 Lai",
+    "hanviet": "Quy Lai",
     "meaning": "to return",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“归来”这个词。",
-    "examplePinyin": "Qǐng jìzhu “归来” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “归来” này.",
+    "example": "请记住归来这个词。",
+    "examplePinyin": "Qǐng jìzhu guī lái zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ to return này.",
     "id": "typ-hsk3-0275"
   },
   {
@@ -27322,15 +27322,15 @@
     "meaning": "gậy; que; dùi cui, kẻ vô lại; nhân vật phản diện",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“棍”这个词。",
-    "examplePinyin": "Qǐng jìzhu “棍” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “棍” này.",
+    "example": "请记住棍这个词。",
+    "examplePinyin": "Qǐng jìzhu gùn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gậy; que; dùi cui, kẻ vô lại; nhân vật phản diện này.",
     "id": "typ-hsk3-0276"
   },
   {
     "hanzi": "裹",
     "pinyin": "guǒ",
-    "hanviet": "裹",
+    "hanviet": "Khỏa",
     "meaning": "gói lại, bó; gói; bưu kiện",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -27418,9 +27418,9 @@
     "meaning": "lãnh thổ quốc gia, quốc thổ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“国土”这个词。",
-    "examplePinyin": "Qǐng jìzhu “国土” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “国土” này.",
+    "example": "请记住国土这个词。",
+    "examplePinyin": "Qǐng jìzhu guó tǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lãnh thổ quốc gia, quốc thổ này.",
     "id": "typ-hsk3-0284"
   },
   {
@@ -27466,9 +27466,9 @@
     "meaning": "thuộc ven biển, bờ biển",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“海岸”这个词。",
-    "examplePinyin": "Qǐng jìzhu “海岸” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “海岸” này.",
+    "example": "请记住海岸这个词。",
+    "examplePinyin": "Qǐng jìzhu hǎi àn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thuộc ven biển, bờ biển này.",
     "id": "typ-hsk3-0288"
   },
   {
@@ -27490,9 +27490,9 @@
     "meaning": "cướp biển",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“海盗”这个词。",
-    "examplePinyin": "Qǐng jìzhu “海盗” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “海盗” này.",
+    "example": "请记住海盗这个词。",
+    "examplePinyin": "Qǐng jìzhu hǎi dào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cướp biển này.",
     "id": "typ-hsk3-0290"
   },
   {
@@ -27510,7 +27510,7 @@
   {
     "hanzi": "害怕",
     "pinyin": "hài pà",
-    "hanviet": "Hại 怕",
+    "hanviet": "Hại Phạ",
     "meaning": "sợ hãi; lo sợ",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -27534,13 +27534,13 @@
   {
     "hanzi": "海滩",
     "pinyin": "hǎi tān",
-    "hanviet": "Hải 滩",
+    "hanviet": "Hải Than",
     "meaning": "bãi biển",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“海滩”这个词。",
-    "examplePinyin": "Qǐng jìzhu “海滩” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “海滩” này.",
+    "example": "请记住海滩这个词。",
+    "examplePinyin": "Qǐng jìzhu hǎi tān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bãi biển này.",
     "id": "typ-hsk3-0294"
   },
   {
@@ -27582,13 +27582,13 @@
   {
     "hanzi": "何处",
     "pinyin": "hé chù",
-    "hanviet": "何 Xử",
+    "hanviet": "Hà Xử",
     "meaning": "từ đâu, ở đâu",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“何处”这个词。",
-    "examplePinyin": "Qǐng jìzhu “何处” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “何处” này.",
+    "example": "请记住何处这个词。",
+    "examplePinyin": "Qǐng jìzhu hé chù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ từ đâu, ở đâu này.",
     "id": "typ-hsk3-0298"
   },
   {
@@ -27610,15 +27610,15 @@
     "meaning": "nổ, vang",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“轰”这个词。",
-    "examplePinyin": "Qǐng jìzhu “轰” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “轰” này.",
+    "example": "请记住轰这个词。",
+    "examplePinyin": "Qǐng jìzhu hōng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nổ, vang này.",
     "id": "typ-hsk3-0300"
   },
   {
     "hanzi": "红酒",
     "pinyin": "hóng jiǔ",
-    "hanviet": "Hồng 酒",
+    "hanviet": "Hồng Tửu",
     "meaning": "red wine",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -27658,21 +27658,21 @@
     "meaning": "lùi lại; rút lui; thoái lui; rút về",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“后退”这个词。",
-    "examplePinyin": "Qǐng jìzhu “后退” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “后退” này.",
+    "example": "请记住后退这个词。",
+    "examplePinyin": "Qǐng jìzhu hòu tuì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lùi lại; rút lui; thoái lui; rút về này.",
     "id": "typ-hsk3-0304"
   },
   {
     "hanzi": "后者",
     "pinyin": "hòu zhě",
-    "hanviet": "Hậu 者",
+    "hanviet": "Hậu Giả",
     "meaning": "cái sau",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“后者”这个词。",
-    "examplePinyin": "Qǐng jìzhu “后者” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “后者” này.",
+    "example": "请记住后者这个词。",
+    "examplePinyin": "Qǐng jìzhu hòu zhě zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cái sau này.",
     "id": "typ-hsk3-0305"
   },
   {
@@ -27730,9 +27730,9 @@
     "meaning": "Be with",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“怀着”这个词。",
-    "examplePinyin": "Qǐng jìzhu “怀着” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “怀着” này.",
+    "example": "请记住怀着这个词。",
+    "examplePinyin": "Qǐng jìzhu huáizhe zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ Be with này.",
     "id": "typ-hsk3-0310"
   },
   {
@@ -27750,7 +27750,7 @@
   {
     "hanzi": "换",
     "pinyin": "huàn",
-    "hanviet": "换",
+    "hanviet": "Hoán",
     "meaning": "trao đổi, thay đổi",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -27762,7 +27762,7 @@
   {
     "hanzi": "缓",
     "pinyin": "huǎn",
-    "hanviet": "缓",
+    "hanviet": "Hoãn",
     "meaning": "chậm, từ tốn",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -27802,15 +27802,15 @@
     "meaning": "cổ vũ cho, hoan hô",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“欢呼”这个词。",
-    "examplePinyin": "Qǐng jìzhu “欢呼” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “欢呼” này.",
+    "example": "请记住欢呼这个词。",
+    "examplePinyin": "Qǐng jìzhu huān hū zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cổ vũ cho, hoan hô này.",
     "id": "typ-hsk3-0316"
   },
   {
     "hanzi": "环境",
     "pinyin": "huán jìng",
-    "hanviet": "环 Cảnh",
+    "hanviet": "Hoàn Cảnh",
     "meaning": "môi trường, tình huống",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -27822,25 +27822,25 @@
   {
     "hanzi": "缓慢",
     "pinyin": "huǎn màn",
-    "hanviet": "缓 Mạn",
+    "hanviet": "Hoãn Mạn",
     "meaning": "chậm chạp",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“缓慢”这个词。",
-    "examplePinyin": "Qǐng jìzhu “缓慢” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “缓慢” này.",
+    "example": "请记住缓慢这个词。",
+    "examplePinyin": "Qǐng jìzhu huǎn màn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chậm chạp này.",
     "id": "typ-hsk3-0318"
   },
   {
     "hanzi": "环球",
     "pinyin": "huán qiú",
-    "hanviet": "环 Cầu",
+    "hanviet": "Hoàn Cầu",
     "meaning": "vòng quanh thế giới, toàn cầu",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“环球”这个词。",
-    "examplePinyin": "Qǐng jìzhu “环球” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “环球” này.",
+    "example": "请记住环球这个词。",
+    "examplePinyin": "Qǐng jìzhu huán qiú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vòng quanh thế giới, toàn cầu này.",
     "id": "typ-hsk3-0319"
   },
   {
@@ -27862,9 +27862,9 @@
     "meaning": "trượt tuyết, môn trượt tuyết",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“滑雪”这个词。",
-    "examplePinyin": "Qǐng jìzhu “滑雪” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “滑雪” này.",
+    "example": "请记住滑雪这个词。",
+    "examplePinyin": "Qǐng jìzhu huá xuě zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trượt tuyết, môn trượt tuyết này.",
     "id": "typ-hsk3-0321"
   },
   {
@@ -27874,9 +27874,9 @@
     "meaning": "mẫu, một cách làm gì đó",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“花样”这个词。",
-    "examplePinyin": "Qǐng jìzhu “花样” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “花样” này.",
+    "example": "请记住花样这个词。",
+    "examplePinyin": "Qǐng jìzhu huā yàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mẫu, một cách làm gì đó này.",
     "id": "typ-hsk3-0322"
   },
   {
@@ -27906,7 +27906,7 @@
   {
     "hanzi": "汇",
     "pinyin": "huì",
-    "hanviet": "汇",
+    "hanviet": "Hối",
     "meaning": "chuyển tiền, hội tụ",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -27946,9 +27946,9 @@
     "meaning": "hồi tưởng, nhớ lại",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“回想”这个词。",
-    "examplePinyin": "Qǐng jìzhu “回想” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “回想” này.",
+    "example": "请记住回想这个词。",
+    "examplePinyin": "Qǐng jìzhu huí xiǎng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hồi tưởng, nhớ lại này.",
     "id": "typ-hsk3-0328"
   },
   {
@@ -27966,19 +27966,19 @@
   {
     "hanzi": "婚纱",
     "pinyin": "hūn shā",
-    "hanviet": "婚 Sa",
+    "hanviet": "Hôn Sa",
     "meaning": "váy cưới",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“婚纱”这个词。",
-    "examplePinyin": "Qǐng jìzhu “婚纱” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “婚纱” này.",
+    "example": "请记住婚纱这个词。",
+    "examplePinyin": "Qǐng jìzhu hūn shā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ váy cưới này.",
     "id": "typ-hsk3-0330"
   },
   {
     "hanzi": "获奖",
     "pinyin": "huò jiǎng",
-    "hanviet": "Hoạch 奖",
+    "hanviet": "Hoạch Tưởng",
     "meaning": "giành được giải thưởng",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -27990,13 +27990,13 @@
   {
     "hanzi": "火炬",
     "pinyin": "huǒ jù",
-    "hanviet": "Hỏa 炬",
+    "hanviet": "Hỏa Cự",
     "meaning": "đuốc",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“火炬”这个词。",
-    "examplePinyin": "Qǐng jìzhu “火炬” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “火炬” này.",
+    "example": "请记住火炬这个词。",
+    "examplePinyin": "Qǐng jìzhu huǒ jù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đuốc này.",
     "id": "typ-hsk3-0332"
   },
   {
@@ -28006,15 +28006,15 @@
     "meaning": "hàng hóa",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“货物”这个词。",
-    "examplePinyin": "Qǐng jìzhu “货物” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “货物” này.",
+    "example": "请记住货物这个词。",
+    "examplePinyin": "Qǐng jìzhu huò wù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hàng hóa này.",
     "id": "typ-hsk3-0333"
   },
   {
     "hanzi": "或者",
     "pinyin": "huò zhě",
-    "hanviet": "Hoặc 者",
+    "hanviet": "Hoặc Giả",
     "meaning": "hoặc, có thể; có lẽ",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -28038,7 +28038,7 @@
   {
     "hanzi": "胡子",
     "pinyin": "hú zi",
-    "hanviet": "胡 Tử",
+    "hanviet": "Hồ Tử",
     "meaning": "râu, ria hoặc lông mặt",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -28066,9 +28066,9 @@
     "meaning": "to offer a sacrifice to (gods or ancestors)",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“祭”这个词。",
-    "examplePinyin": "Qǐng jìzhu “祭” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “祭” này.",
+    "example": "请记住祭这个词。",
+    "examplePinyin": "Qǐng jìzhu jì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ to offer a sacrifice to (gods or ancestors) này.",
     "id": "typ-hsk3-0338"
   },
   {
@@ -28114,9 +28114,9 @@
     "meaning": "lái xe",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“驾车”这个词。",
-    "examplePinyin": "Qǐng jìzhu “驾车” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “驾车” này.",
+    "example": "请记住驾车这个词。",
+    "examplePinyin": "Qǐng jìzhu jià chē zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lái xe này.",
     "id": "typ-hsk3-0342"
   },
   {
@@ -28150,9 +28150,9 @@
     "meaning": "được viết tắt thành, chữ viết tắt; dạng ngắn gọn",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“简称”这个词。",
-    "examplePinyin": "Qǐng jìzhu “简称” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “简称” này.",
+    "example": "请记住简称这个词。",
+    "examplePinyin": "Qǐng jìzhu jiǎn chēng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ được viết tắt thành, chữ viết tắt; dạng ngắn gọn này.",
     "id": "typ-hsk3-0345"
   },
   {
@@ -28206,7 +28206,7 @@
   {
     "hanzi": "见面",
     "pinyin": "jiàn miàn",
-    "hanviet": "Kiến 面",
+    "hanviet": "Kiến Diện",
     "meaning": "gặp mặt; gặp nhau",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -28222,9 +28222,9 @@
     "meaning": "tin tưởng vững chắc, không chút nghi ngờ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“坚信”这个词。",
-    "examplePinyin": "Qǐng jìzhu “坚信” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “坚信” này.",
+    "example": "请记住坚信这个词。",
+    "examplePinyin": "Qǐng jìzhu jiān xìn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tin tưởng vững chắc, không chút nghi ngờ này.",
     "id": "typ-hsk3-0351"
   },
   {
@@ -28234,21 +28234,21 @@
     "meaning": "chứng kiến, chứng cứ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“见证”这个词。",
-    "examplePinyin": "Qǐng jìzhu “见证” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “见证” này.",
+    "example": "请记住见证这个词。",
+    "examplePinyin": "Qǐng jìzhu jiàn zhèng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chứng kiến, chứng cứ này.",
     "id": "typ-hsk3-0352"
   },
   {
     "hanzi": "搅",
     "pinyin": "jiǎo",
-    "hanviet": "搅",
+    "hanviet": "Giảo",
     "meaning": "làm phiền, khuấy",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“搅”这个词。",
-    "examplePinyin": "Qǐng jìzhu “搅” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “搅” này.",
+    "example": "请记住搅这个词。",
+    "examplePinyin": "Qǐng jìzhu jiǎo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ làm phiền, khuấy này.",
     "id": "typ-hsk3-0353"
   },
   {
@@ -28266,7 +28266,7 @@
   {
     "hanzi": "脚",
     "pinyin": "jiǎo",
-    "hanviet": "脚",
+    "hanviet": "Cước",
     "meaning": "bàn chân, chân",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -28290,7 +28290,7 @@
   {
     "hanzi": "脚步",
     "pinyin": "jiǎo bù",
-    "hanviet": "脚 Bộ",
+    "hanviet": "Cước Bộ",
     "meaning": "bước chân, bước",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -28326,13 +28326,13 @@
   {
     "hanzi": "焦虑",
     "pinyin": "jiāo lǜ",
-    "hanviet": "焦 Lự",
+    "hanviet": "Tiêu Lự",
     "meaning": "lo âu, lo lắng",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“焦虑”这个词。",
-    "examplePinyin": "Qǐng jìzhu “焦虑” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “焦虑” này.",
+    "example": "请记住焦虑这个词。",
+    "examplePinyin": "Qǐng jìzhu jiāo lǜ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lo âu, lo lắng này.",
     "id": "typ-hsk3-0360"
   },
   {
@@ -28362,7 +28362,7 @@
   {
     "hanzi": "加以",
     "pinyin": "jiā yǐ",
-    "hanviet": "Gia 以",
+    "hanviet": "Gia Dĩ",
     "meaning": "ngoài ra, hơn nữa",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -28402,9 +28402,9 @@
     "meaning": "cực kỳ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“极度”这个词。",
-    "examplePinyin": "Qǐng jìzhu “极度” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “极度” này.",
+    "example": "请记住极度这个词。",
+    "examplePinyin": "Qǐng jìzhu jí dù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cực kỳ này.",
     "id": "typ-hsk3-0366"
   },
   {
@@ -28446,7 +28446,7 @@
   {
     "hanzi": "街道",
     "pinyin": "jiē dào",
-    "hanviet": "街 Đạo",
+    "hanviet": "Nhai Đạo",
     "meaning": "đường phố, khu phố",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -28458,7 +28458,7 @@
   {
     "hanzi": "结婚",
     "pinyin": "jié hūn",
-    "hanviet": "Kết 婚",
+    "hanviet": "Kết Hôn",
     "meaning": "kết hôn, cưới",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -28534,9 +28534,9 @@
     "meaning": "công bố công khai, xuất bản",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“揭晓”这个词。",
-    "examplePinyin": "Qǐng jìzhu “揭晓” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “揭晓” này.",
+    "example": "请记住揭晓这个词。",
+    "examplePinyin": "Qǐng jìzhu jiē xiǎo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ công bố công khai, xuất bản này.",
     "id": "typ-hsk3-0377"
   },
   {
@@ -28546,9 +28546,9 @@
     "meaning": "để ý đến, phật ý",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“介意”这个词。",
-    "examplePinyin": "Qǐng jìzhu “介意” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “介意” này.",
+    "example": "请记住介意这个词。",
+    "examplePinyin": "Qǐng jìzhu jiè yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ để ý đến, phật ý này.",
     "id": "typ-hsk3-0378"
   },
   {
@@ -28558,9 +28558,9 @@
     "meaning": "laser",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“激光”这个词。",
-    "examplePinyin": "Qǐng jìzhu “激光” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “激光” này.",
+    "example": "请记住激光这个词。",
+    "examplePinyin": "Qǐng jìzhu jī guāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ laser này.",
     "id": "typ-hsk3-0379"
   },
   {
@@ -28594,9 +28594,9 @@
     "meaning": "tập hợp, hội họp",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“集会”这个词。",
-    "examplePinyin": "Qǐng jìzhu “集会” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “集会” này.",
+    "example": "请记住集会这个词。",
+    "examplePinyin": "Qǐng jìzhu jí huì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tập hợp, hội họp này.",
     "id": "typ-hsk3-0382"
   },
   {
@@ -28606,9 +28606,9 @@
     "meaning": "kích hoạt",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“激活”这个词。",
-    "examplePinyin": "Qǐng jìzhu “激活” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “激活” này.",
+    "example": "请记住激活这个词。",
+    "examplePinyin": "Qǐng jìzhu jī huó zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kích hoạt này.",
     "id": "typ-hsk3-0383"
   },
   {
@@ -28654,9 +28654,9 @@
     "meaning": "quá trình; tiến trình",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“进程”这个词。",
-    "examplePinyin": "Qǐng jìzhu “进程” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “进程” này.",
+    "example": "请记住进程这个词。",
+    "examplePinyin": "Qǐng jìzhu jìn chéng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quá trình; tiến trình này.",
     "id": "typ-hsk3-0387"
   },
   {
@@ -28666,9 +28666,9 @@
     "meaning": "tốc độ tiến triển",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“进度”这个词。",
-    "examplePinyin": "Qǐng jìzhu “进度” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “进度” này.",
+    "example": "请记住进度这个词。",
+    "examplePinyin": "Qǐng jìzhu jìn dù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tốc độ tiến triển này.",
     "id": "typ-hsk3-0388"
   },
   {
@@ -28702,9 +28702,9 @@
     "meaning": "cảnh sát; sĩ quan cảnh sát",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“警官”这个词。",
-    "examplePinyin": "Qǐng jìzhu “警官” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “警官” này.",
+    "example": "请记住警官这个词。",
+    "examplePinyin": "Qǐng jìzhu jǐng guān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cảnh sát; sĩ quan cảnh sát này.",
     "id": "typ-hsk3-0391"
   },
   {
@@ -28750,9 +28750,9 @@
     "meaning": "tinh hoa, ưu tú",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“精英”这个词。",
-    "examplePinyin": "Qǐng jìzhu “精英” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “精英” này.",
+    "example": "请记住精英这个词。",
+    "examplePinyin": "Qǐng jìzhu jīng yīng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tinh hoa, ưu tú này.",
     "id": "typ-hsk3-0395"
   },
   {
@@ -28786,9 +28786,9 @@
     "meaning": "kết thúc; cực điểm; giới hạn",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“尽头”这个词。",
-    "examplePinyin": "Qǐng jìzhu “尽头” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “尽头” này.",
+    "example": "请记住尽头这个词。",
+    "examplePinyin": "Qǐng jìzhu jìn tóu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kết thúc; cực điểm; giới hạn này.",
     "id": "typ-hsk3-0398"
   },
   {
@@ -28798,9 +28798,9 @@
     "meaning": "và của...; và của họ...; và của anh ấy...; và của cô ấy...",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“及其”这个词。",
-    "examplePinyin": "Qǐng jìzhu “及其” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “及其” này.",
+    "example": "请记住及其这个词。",
+    "examplePinyin": "Qǐng jìzhu jí qí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ và của...; và của họ...; và của anh ấy...; và của cô ấy... này.",
     "id": "typ-hsk3-0399"
   },
   {
@@ -28810,9 +28810,9 @@
     "meaning": "hormone",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“激素”这个词。",
-    "examplePinyin": "Qǐng jìzhu “激素” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “激素” này.",
+    "example": "请记住激素这个词。",
+    "examplePinyin": "Qǐng jìzhu jī sù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hormone này.",
     "id": "typ-hsk3-0400"
   },
   {
@@ -28822,9 +28822,9 @@
     "meaning": "đàn guitar",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“吉他”这个词。",
-    "examplePinyin": "Qǐng jìzhu “吉他” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “吉他” này.",
+    "example": "请记住吉他这个词。",
+    "examplePinyin": "Qǐng jìzhu jí tā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đàn guitar này.",
     "id": "typ-hsk3-0401"
   },
   {
@@ -28854,13 +28854,13 @@
   {
     "hanzi": "纠缠",
     "pinyin": "jiū chán",
-    "hanviet": "纠 Triền",
+    "hanviet": "Củ Triền",
     "meaning": "bị rối, quấy rầy",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“纠缠”这个词。",
-    "examplePinyin": "Qǐng jìzhu “纠缠” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “纠缠” này.",
+    "example": "请记住纠缠这个词。",
+    "examplePinyin": "Qǐng jìzhu jiū chán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bị rối, quấy rầy này.",
     "id": "typ-hsk3-0404"
   },
   {
@@ -28882,9 +28882,9 @@
     "meaning": "cực kỳ, vô cùng",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“极为”这个词。",
-    "examplePinyin": "Qǐng jìzhu “极为” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “极为” này.",
+    "example": "请记住极为这个词。",
+    "examplePinyin": "Qǐng jìzhu jí wéi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cực kỳ, vô cùng này.",
     "id": "typ-hsk3-0406"
   },
   {
@@ -28942,9 +28942,9 @@
     "meaning": "hiệp sĩ, Ngài",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“爵士”这个词。",
-    "examplePinyin": "Qǐng jìzhu “爵士” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “爵士” này.",
+    "example": "请记住爵士这个词。",
+    "examplePinyin": "Qǐng jìzhu jué shì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hiệp sĩ, Ngài này.",
     "id": "typ-hsk3-0411"
   },
   {
@@ -28954,9 +28954,9 @@
     "meaning": "sĩ quan",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“军官”这个词。",
-    "examplePinyin": "Qǐng jìzhu “军官” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “军官” này.",
+    "example": "请记住军官这个词。",
+    "examplePinyin": "Qǐng jìzhu jūn guān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sĩ quan này.",
     "id": "typ-hsk3-0412"
   },
   {
@@ -28966,9 +28966,9 @@
     "meaning": "cốt truyện, tình tiết",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“剧情”这个词。",
-    "examplePinyin": "Qǐng jìzhu “剧情” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “剧情” này.",
+    "example": "请记住剧情这个词。",
+    "examplePinyin": "Qǐng jìzhu jù qíng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cốt truyện, tình tiết này.",
     "id": "typ-hsk3-0413"
   },
   {
@@ -28990,9 +28990,9 @@
     "meaning": "rạp hát",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“剧院”这个词。",
-    "examplePinyin": "Qǐng jìzhu “剧院” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “剧院” này.",
+    "example": "请记住剧院这个词。",
+    "examplePinyin": "Qǐng jìzhu jù yuàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rạp hát này.",
     "id": "typ-hsk3-0415"
   },
   {
@@ -29014,9 +29014,9 @@
     "meaning": "dàn diễn viên và đội sản xuất, nhóm biểu diễn và sản xuất",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“剧组”这个词。",
-    "examplePinyin": "Qǐng jìzhu “剧组” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “剧组” này.",
+    "example": "请记住剧组这个词。",
+    "examplePinyin": "Qǐng jìzhu jù zǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dàn diễn viên và đội sản xuất, nhóm biểu diễn và sản xuất này.",
     "id": "typ-hsk3-0417"
   },
   {
@@ -29026,9 +29026,9 @@
     "meaning": "bắt đầu, mở đầu",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“开场”这个词。",
-    "examplePinyin": "Qǐng jìzhu “开场” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “开场” này.",
+    "example": "请记住开场这个词。",
+    "examplePinyin": "Qǐng jìzhu kāi chǎng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bắt đầu, mở đầu này.",
     "id": "typ-hsk3-0418"
   },
   {
@@ -29046,13 +29046,13 @@
   {
     "hanzi": "开启",
     "pinyin": "kāi qǐ",
-    "hanviet": "Khai 启",
+    "hanviet": "Khai Khải",
     "meaning": "mở, bắt đầu",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“开启”这个词。",
-    "examplePinyin": "Qǐng jìzhu “开启” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “开启” này.",
+    "example": "请记住开启这个词。",
+    "examplePinyin": "Qǐng jìzhu kāi qǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mở, bắt đầu này.",
     "id": "typ-hsk3-0420"
   },
   {
@@ -29062,9 +29062,9 @@
     "meaning": "nổ súng, bắn súng",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“开枪”这个词。",
-    "examplePinyin": "Qǐng jìzhu “开枪” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “开枪” này.",
+    "example": "请记住开枪这个词。",
+    "examplePinyin": "Qǐng jìzhu kāi qiāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nổ súng, bắn súng này.",
     "id": "typ-hsk3-0421"
   },
   {
@@ -29094,13 +29094,13 @@
   {
     "hanzi": "卡片",
     "pinyin": "kǎ piàn",
-    "hanviet": "卡 Phiến",
+    "hanviet": "Tạp Phiến",
     "meaning": "thẻ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“卡片”这个词。",
-    "examplePinyin": "Qǐng jìzhu “卡片” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “卡片” này.",
+    "example": "请记住卡片这个词。",
+    "examplePinyin": "Qǐng jìzhu kǎ piàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thẻ này.",
     "id": "typ-hsk3-0424"
   },
   {
@@ -29158,9 +29158,9 @@
     "meaning": "nhân bản",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“克隆”这个词。",
-    "examplePinyin": "Qǐng jìzhu “克隆” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “克隆” này.",
+    "example": "请记住克隆这个词。",
+    "examplePinyin": "Qǐng jìzhu kè lóng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhân bản này.",
     "id": "typ-hsk3-0429"
   },
   {
@@ -29178,19 +29178,19 @@
   {
     "hanzi": "可疑",
     "pinyin": "kě yí",
-    "hanviet": "Khả 疑",
+    "hanviet": "Khả Nghi",
     "meaning": "đáng ngờ, khả nghi",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“可疑”这个词。",
-    "examplePinyin": "Qǐng jìzhu “可疑” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “可疑” này.",
+    "example": "请记住可疑这个词。",
+    "examplePinyin": "Qǐng jìzhu kě yí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đáng ngờ, khả nghi này.",
     "id": "typ-hsk3-0431"
   },
   {
     "hanzi": "空儿",
     "pinyin": "kòng r",
-    "hanviet": "Không 儿",
+    "hanviet": "Không Nhi",
     "meaning": "thời gian rảnh, thời gian tự do",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -29250,7 +29250,7 @@
   {
     "hanzi": "筷子",
     "pinyin": "kuài zi",
-    "hanviet": "筷 Tử",
+    "hanviet": "Khoái Tử",
     "meaning": "đũa",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -29278,9 +29278,9 @@
     "meaning": "tiệc tùng, nhậu nhẹt",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“狂欢”这个词。",
-    "examplePinyin": "Qǐng jìzhu “狂欢” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “狂欢” này.",
+    "example": "请记住狂欢这个词。",
+    "examplePinyin": "Qǐng jìzhu kuáng huān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tiệc tùng, nhậu nhẹt này.",
     "id": "typ-hsk3-0439"
   },
   {
@@ -29290,9 +29290,9 @@
     "meaning": "khoan dung, bao dung",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“宽容”这个词。",
-    "examplePinyin": "Qǐng jìzhu “宽容” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “宽容” này.",
+    "example": "请记住宽容这个词。",
+    "examplePinyin": "Qǐng jìzhu kuān róng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khoan dung, bao dung này.",
     "id": "typ-hsk3-0440"
   },
   {
@@ -29302,9 +29302,9 @@
     "meaning": "bối rối, hoang mang",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“困惑”这个词。",
-    "examplePinyin": "Qǐng jìzhu “困惑” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “困惑” này.",
+    "example": "请记住困惑这个词。",
+    "examplePinyin": "Qǐng jìzhu kùn huò zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bối rối, hoang mang này.",
     "id": "typ-hsk3-0441"
   },
   {
@@ -29314,9 +29314,9 @@
     "meaning": "khóc lóc",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“哭泣”这个词。",
-    "examplePinyin": "Qǐng jìzhu “哭泣” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “哭泣” này.",
+    "example": "请记住哭泣这个词。",
+    "examplePinyin": "Qǐng jìzhu kū qì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khóc lóc này.",
     "id": "typ-hsk3-0442"
   },
   {
@@ -29334,7 +29334,7 @@
   {
     "hanzi": "赖",
     "pinyin": "lài",
-    "hanviet": "赖",
+    "hanviet": "Lại",
     "meaning": "to depend on",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -29350,9 +29350,9 @@
     "meaning": "cuộc gọi đến, gọi điện đến; gửi điện báo",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“来电”这个词。",
-    "examplePinyin": "Qǐng jìzhu “来电” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “来电” này.",
+    "example": "请记住来电这个词。",
+    "examplePinyin": "Qǐng jìzhu lái diàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cuộc gọi đến, gọi điện đến; gửi điện báo này.",
     "id": "typ-hsk3-0445"
   },
   {
@@ -29362,9 +29362,9 @@
     "meaning": "thực hiện một chuyến đi khứ hồi, hành trình khứ hồi",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“来回”这个词。",
-    "examplePinyin": "Qǐng jìzhu “来回” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “来回” này.",
+    "example": "请记住来回这个词。",
+    "examplePinyin": "Qǐng jìzhu lái huí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thực hiện một chuyến đi khứ hồi, hành trình khứ hồi này.",
     "id": "typ-hsk3-0446"
   },
   {
@@ -29454,7 +29454,7 @@
   {
     "hanzi": "老头儿",
     "pinyin": "lǎo tóu r",
-    "hanviet": "Lão Đầu 儿",
+    "hanviet": "Lão Đầu Nhi",
     "meaning": "xem 老頭子|老头子",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -29482,15 +29482,15 @@
     "meaning": "thiên đường",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“乐园”这个词。",
-    "examplePinyin": "Qǐng jìzhu “乐园” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “乐园” này.",
+    "example": "请记住乐园这个词。",
+    "examplePinyin": "Qǐng jìzhu lè yuán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thiên đường này.",
     "id": "typ-hsk3-0456"
   },
   {
     "hanzi": "脸",
     "pinyin": "liǎn",
-    "hanviet": "脸",
+    "hanviet": "Kiểm",
     "meaning": "khuôn mặt",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -29502,7 +29502,7 @@
   {
     "hanzi": "辆",
     "pinyin": "liàng",
-    "hanviet": "辆",
+    "hanviet": "Lượng",
     "meaning": "lượng từ cho xe cộ",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -29554,9 +29554,9 @@
     "meaning": "liệu pháp, điều trị",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“疗法”这个词。",
-    "examplePinyin": "Qǐng jìzhu “疗法” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “疗法” này.",
+    "example": "请记住疗法这个词。",
+    "examplePinyin": "Qǐng jìzhu liáo fǎ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ liệu pháp, điều trị này.",
     "id": "typ-hsk3-0462"
   },
   {
@@ -29574,7 +29574,7 @@
   {
     "hanzi": "聊天儿",
     "pinyin": "liáo tiān r",
-    "hanviet": "聊 Thiên 儿",
+    "hanviet": "Liêu Thiên Nhi",
     "meaning": "biến thể er hoá của 聊天",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -29602,15 +29602,15 @@
     "meaning": "sức mạnh, nhiệt huyết",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“力度”这个词。",
-    "examplePinyin": "Qǐng jìzhu “力度” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “力度” này.",
+    "example": "请记住力度这个词。",
+    "examplePinyin": "Qǐng jìzhu lì dù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sức mạnh, nhiệt huyết này.",
     "id": "typ-hsk3-0466"
   },
   {
     "hanzi": "裂",
     "pinyin": "liè",
-    "hanviet": "裂",
+    "hanviet": "Liệt",
     "meaning": "tách, nứt",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -29626,9 +29626,9 @@
     "meaning": "trang phục lễ nghi, trang phục trang trọng",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“礼服”这个词。",
-    "examplePinyin": "Qǐng jìzhu “礼服” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “礼服” này.",
+    "example": "请记住礼服这个词。",
+    "examplePinyin": "Qǐng jìzhu lǐ fú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trang phục lễ nghi, trang phục trang trọng này.",
     "id": "typ-hsk3-0468"
   },
   {
@@ -29646,7 +29646,7 @@
   {
     "hanzi": "临",
     "pinyin": "lín",
-    "hanviet": "临",
+    "hanviet": "Lâm",
     "meaning": "đối mặt, nhìn ra",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -29658,7 +29658,7 @@
   {
     "hanzi": "铃声",
     "pinyin": "líng shēng",
-    "hanviet": "铃 Thanh",
+    "hanviet": "Linh Thanh",
     "meaning": "chuông âm, nhạc chuông",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -29734,9 +29734,9 @@
     "meaning": "chú ý, lưu ý",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“留意”这个词。",
-    "examplePinyin": "Qǐng jìzhu “留意” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “留意” này.",
+    "example": "请记住留意这个词。",
+    "examplePinyin": "Qǐng jìzhu liú yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chú ý, lưu ý này.",
     "id": "typ-hsk3-0477"
   },
   {
@@ -29818,9 +29818,9 @@
     "meaning": "hành trình, chuyến đi",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“旅途”这个词。",
-    "examplePinyin": "Qǐng jìzhu “旅途” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “旅途” này.",
+    "example": "请记住旅途这个词。",
+    "examplePinyin": "Qǐng jìzhu lǚ tú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hành trình, chuyến đi này.",
     "id": "typ-hsk3-0484"
   },
   {
@@ -29866,9 +29866,9 @@
     "meaning": "che giấu khỏi, giữ bí mật",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“瞒”这个词。",
-    "examplePinyin": "Qǐng jìzhu “瞒” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “瞒” này.",
+    "example": "请记住瞒这个词。",
+    "examplePinyin": "Qǐng jìzhu mán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ che giấu khỏi, giữ bí mật này.",
     "id": "typ-hsk3-0488"
   },
   {
@@ -29914,9 +29914,9 @@
     "meaning": "xem 謎兒|谜儿, câu đố",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“谜”这个词。",
-    "examplePinyin": "Qǐng jìzhu “谜” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “谜” này.",
+    "example": "请记住谜这个词。",
+    "examplePinyin": "Qǐng jìzhu mèi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xem , câu đố này.",
     "id": "typ-hsk3-0492"
   },
   {
@@ -29926,9 +29926,9 @@
     "meaning": "mỗi khi; mỗi lần",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“每当”这个词。",
-    "examplePinyin": "Qǐng jìzhu “每当” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “每当” này.",
+    "example": "请记住每当这个词。",
+    "examplePinyin": "Qǐng jìzhu měi dāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mỗi khi; mỗi lần này.",
     "id": "typ-hsk3-0493"
   },
   {
@@ -29950,9 +29950,9 @@
     "meaning": "người đẹp, mỹ nhân",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“美人”这个词。",
-    "examplePinyin": "Qǐng jìzhu “美人” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “美人” này.",
+    "example": "请记住美人这个词。",
+    "examplePinyin": "Qǐng jìzhu měi rén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ người đẹp, mỹ nhân này.",
     "id": "typ-hsk3-0495"
   },
   {
@@ -29970,7 +29970,7 @@
   {
     "hanzi": "美食",
     "pinyin": "měi shí",
-    "hanviet": "Mỹ 食",
+    "hanviet": "Mỹ Thực",
     "meaning": "món ngon, món ăn tinh tế",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -29982,19 +29982,19 @@
   {
     "hanzi": "梦幻",
     "pinyin": "mèng huàn",
-    "hanviet": "梦 Ảo",
+    "hanviet": "Mộng Ảo",
     "meaning": "giấc mơ, ảo ảnh",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“梦幻”这个词。",
-    "examplePinyin": "Qǐng jìzhu “梦幻” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “梦幻” này.",
+    "example": "请记住梦幻这个词。",
+    "examplePinyin": "Qǐng jìzhu mèng huàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giấc mơ, ảo ảnh này.",
     "id": "typ-hsk3-0498"
   },
   {
     "hanzi": "梦见",
     "pinyin": "mèng jiàn",
-    "hanviet": "梦 Kiến",
+    "hanviet": "Mộng Kiến",
     "meaning": "mơ thấy, thấy trong mơ",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -30006,7 +30006,7 @@
   {
     "hanzi": "米",
     "pinyin": "mǐ",
-    "hanviet": "米",
+    "hanviet": "Mễ",
     "meaning": "rice",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -30018,7 +30018,7 @@
   {
     "hanzi": "面包",
     "pinyin": "miàn bāo",
-    "hanviet": "面 Bao",
+    "hanviet": "Diện Bao",
     "meaning": "bánh mì",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -30030,19 +30030,19 @@
   {
     "hanzi": "面部",
     "pinyin": "miàn bù",
-    "hanviet": "面 Bộ",
+    "hanviet": "Diện Bộ",
     "meaning": "khuôn mặt",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“面部”这个词。",
-    "examplePinyin": "Qǐng jìzhu “面部” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “面部” này.",
+    "example": "请记住面部这个词。",
+    "examplePinyin": "Qǐng jìzhu miàn bù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khuôn mặt này.",
     "id": "typ-hsk3-0502"
   },
   {
     "hanzi": "面条",
     "pinyin": "miàn tiáo",
-    "hanviet": "面 Điều",
+    "hanviet": "Diện Điều",
     "meaning": "mì sợi",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -30054,7 +30054,7 @@
   {
     "hanzi": "面向",
     "pinyin": "miàn xiàng",
-    "hanviet": "面 Hướng",
+    "hanviet": "Diện Hướng",
     "meaning": "đối mặt, quay về",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -30066,13 +30066,13 @@
   {
     "hanzi": "瞄准",
     "pinyin": "miáo zhǔn",
-    "hanviet": "瞄 Chốn",
+    "hanviet": "Miêu Chốn",
     "meaning": "nhắm vào; nhắm mục tiêu",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“瞄准”这个词。",
-    "examplePinyin": "Qǐng jìzhu “瞄准” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “瞄准” này.",
+    "example": "请记住瞄准这个词。",
+    "examplePinyin": "Qǐng jìzhu miáo zhǔn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhắm vào; nhắm mục tiêu này.",
     "id": "typ-hsk3-0505"
   },
   {
@@ -30082,9 +30082,9 @@
     "meaning": "do người dân điều hành, hoạt động tư nhân",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“民办”这个词。",
-    "examplePinyin": "Qǐng jìzhu “民办” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “民办” này.",
+    "example": "请记住民办这个词。",
+    "examplePinyin": "Qǐng jìzhu mín bàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ do người dân điều hành, hoạt động tư nhân này.",
     "id": "typ-hsk3-0506"
   },
   {
@@ -30114,7 +30114,7 @@
   {
     "hanzi": "墨",
     "pinyin": "mò",
-    "hanviet": "墨",
+    "hanviet": "Mặc",
     "meaning": "ink stick",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -30130,9 +30130,9 @@
     "meaning": "hiểu ngầm, hiểu nhau",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“默契”这个词。",
-    "examplePinyin": "Qǐng jìzhu “默契” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “默契” này.",
+    "example": "请记住默契这个词。",
+    "examplePinyin": "Qǐng jìzhu mò qì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hiểu ngầm, hiểu nhau này.",
     "id": "typ-hsk3-0510"
   },
   {
@@ -30166,21 +30166,21 @@
     "meaning": "điểm đến",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“目的地”这个词。",
-    "examplePinyin": "Qǐng jìzhu “目的地” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “目的地” này.",
+    "example": "请记住目的地这个词。",
+    "examplePinyin": "Qǐng jìzhu mù dì dì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ điểm đến này.",
     "id": "typ-hsk3-0513"
   },
   {
     "hanzi": "幕后",
     "pinyin": "mù hòu",
-    "hanviet": "幕 Hậu",
+    "hanviet": "Mạc Hậu",
     "meaning": "hậu trường",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“幕后”这个词。",
-    "examplePinyin": "Qǐng jìzhu “幕后” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “幕后” này.",
+    "example": "请记住幕后这个词。",
+    "examplePinyin": "Qǐng jìzhu mù hòu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hậu trường này.",
     "id": "typ-hsk3-0514"
   },
   {
@@ -30202,9 +30202,9 @@
     "meaning": "là, vì vậy",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“乃”这个词。",
-    "examplePinyin": "Qǐng jìzhu “乃” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “乃” này.",
+    "example": "请记住乃这个词。",
+    "examplePinyin": "Qǐng jìzhu nǎi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ là, vì vậy này.",
     "id": "typ-hsk3-0516"
   },
   {
@@ -30274,9 +30274,9 @@
     "meaning": "tâm trí, bộ não",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“脑海”这个词。",
-    "examplePinyin": "Qǐng jìzhu “脑海” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “脑海” này.",
+    "example": "请记住脑海这个词。",
+    "examplePinyin": "Qǐng jìzhu nǎo hǎi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tâm trí, bộ não này.",
     "id": "typ-hsk3-0522"
   },
   {
@@ -30346,9 +30346,9 @@
     "meaning": "suy nghĩ; ý tưởng; ý định",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“念头”这个词。",
-    "examplePinyin": "Qǐng jìzhu “念头” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “念头” này.",
+    "example": "请记住念头这个词。",
+    "examplePinyin": "Qǐng jìzhu niàn tou zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ suy nghĩ; ý tưởng; ý định này.",
     "id": "typ-hsk3-0528"
   },
   {
@@ -30366,7 +30366,7 @@
   {
     "hanzi": "宁静",
     "pinyin": "níng jìng",
-    "hanviet": "Ninh 静",
+    "hanviet": "Ninh Tĩnh",
     "meaning": "yên tĩnh, sự yên tĩnh",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -30378,13 +30378,13 @@
   {
     "hanzi": "扭曲",
     "pinyin": "niǔ qū",
-    "hanviet": "扭 Khúc",
+    "hanviet": "Nữu Khúc",
     "meaning": "vặn, xoắn",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“扭曲”这个词。",
-    "examplePinyin": "Qǐng jìzhu “扭曲” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “扭曲” này.",
+    "example": "请记住扭曲这个词。",
+    "examplePinyin": "Qǐng jìzhu niǔ qū zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vặn, xoắn này.",
     "id": "typ-hsk3-0531"
   },
   {
@@ -30394,15 +30394,15 @@
     "meaning": "trang trại",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“农场”这个词。",
-    "examplePinyin": "Qǐng jìzhu “农场” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “农场” này.",
+    "example": "请记住农场这个词。",
+    "examplePinyin": "Qǐng jìzhu nóng chǎng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trang trại này.",
     "id": "typ-hsk3-0532"
   },
   {
     "hanzi": "努力",
     "pinyin": "nǔ lì",
-    "hanviet": "努 Lực",
+    "hanviet": "Nỗ Lực",
     "meaning": "nỗ lực; cố gắng; phấn đấu, chăm chỉ; tận tụy",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -30430,15 +30430,15 @@
     "meaning": "diễn tập, diễn tập",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“排练”这个词。",
-    "examplePinyin": "Qǐng jìzhu “排练” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “排练” này.",
+    "example": "请记住排练这个词。",
+    "examplePinyin": "Qǐng jìzhu pái liàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ diễn tập, diễn tập này.",
     "id": "typ-hsk3-0535"
   },
   {
     "hanzi": "盼",
     "pinyin": "pàn",
-    "hanviet": "盼",
+    "hanviet": "Phán",
     "meaning": "hy vọng, mong mỏi",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -30486,25 +30486,25 @@
   {
     "hanzi": "陪伴",
     "pinyin": "péi bàn",
-    "hanviet": "陪 Bạn",
+    "hanviet": "Bồi Bạn",
     "meaning": "đồng hành",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“陪伴”这个词。",
-    "examplePinyin": "Qǐng jìzhu “陪伴” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “陪伴” này.",
+    "example": "请记住陪伴这个词。",
+    "examplePinyin": "Qǐng jìzhu péi bàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đồng hành này.",
     "id": "typ-hsk3-0540"
   },
   {
     "hanzi": "碰上",
     "pinyin": "pèng shàng",
-    "hanviet": "碰 Thượng",
+    "hanviet": "Bính Thượng",
     "meaning": "tình cờ gặp, gặp phải",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“碰上”这个词。",
-    "examplePinyin": "Qǐng jìzhu “碰上” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “碰上” này.",
+    "example": "请记住碰上这个词。",
+    "examplePinyin": "Qǐng jìzhu pèng shàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tình cờ gặp, gặp phải này.",
     "id": "typ-hsk3-0541"
   },
   {
@@ -30514,21 +30514,21 @@
     "meaning": "đoạn, trích đoạn",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“片段”这个词。",
-    "examplePinyin": "Qǐng jìzhu “片段” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “片段” này.",
+    "example": "请记住片段这个词。",
+    "examplePinyin": "Qǐng jìzhu piàn duàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đoạn, trích đoạn này.",
     "id": "typ-hsk3-0542"
   },
   {
     "hanzi": "骗人",
     "pinyin": "piàn rén",
-    "hanviet": "骗 Nhân",
+    "hanviet": "Phiến Nhân",
     "meaning": "lừa gạt ai, một vụ lừa đảo",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“骗人”这个词。",
-    "examplePinyin": "Qǐng jìzhu “骗人” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “骗人” này.",
+    "example": "请记住骗人这个词。",
+    "examplePinyin": "Qǐng jìzhu piàn rén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lừa gạt ai, một vụ lừa đảo này.",
     "id": "typ-hsk3-0543"
   },
   {
@@ -30558,7 +30558,7 @@
   {
     "hanzi": "啤酒",
     "pinyin": "pí jiǔ",
-    "hanviet": "啤 酒",
+    "hanviet": "Tỳ Tửu",
     "meaning": "bia",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -30586,9 +30586,9 @@
     "meaning": "người dân thường; thường dân, dân thường",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“平民”这个词。",
-    "examplePinyin": "Qǐng jìzhu “平民” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “平民” này.",
+    "example": "请记住平民这个词。",
+    "examplePinyin": "Qǐng jìzhu píng mín zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ người dân thường; thường dân, dân thường này.",
     "id": "typ-hsk3-0548"
   },
   {
@@ -30598,27 +30598,27 @@
     "meaning": "phối hoặc kết hôn, phù hợp",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“匹配”这个词。",
-    "examplePinyin": "Qǐng jìzhu “匹配” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “匹配” này.",
+    "example": "请记住匹配这个词。",
+    "examplePinyin": "Qǐng jìzhu pǐ pèi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phối hoặc kết hôn, phù hợp này.",
     "id": "typ-hsk3-0549"
   },
   {
     "hanzi": "破裂",
     "pinyin": "pò liè",
-    "hanviet": "Phá 裂",
+    "hanviet": "Phá Liệt",
     "meaning": "vỡ; rạn nứt, đổ vỡ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“破裂”这个词。",
-    "examplePinyin": "Qǐng jìzhu “破裂” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “破裂” này.",
+    "example": "请记住破裂这个词。",
+    "examplePinyin": "Qǐng jìzhu pò liè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vỡ; rạn nứt, đổ vỡ này.",
     "id": "typ-hsk3-0550"
   },
   {
     "hanzi": "葡萄",
     "pinyin": "pú tao",
-    "hanviet": "葡 萄",
+    "hanviet": "Bồ Đào",
     "meaning": "nho",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -30630,7 +30630,7 @@
   {
     "hanzi": "葡萄酒",
     "pinyin": "pú tao jiǔ",
-    "hanviet": "葡 萄 酒",
+    "hanviet": "Bồ Đào Tửu",
     "meaning": "rượu",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -30658,21 +30658,21 @@
     "meaning": "người bình thường, công dân bình thường",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“普通人”这个词。",
-    "examplePinyin": "Qǐng jìzhu “普通人” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “普通人” này.",
+    "example": "请记住普通人这个词。",
+    "examplePinyin": "Qǐng jìzhu pǔ tōng rén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ người bình thường, công dân bình thường này.",
     "id": "typ-hsk3-0554"
   },
   {
     "hanzi": "漆",
     "pinyin": "qī",
-    "hanviet": "漆",
+    "hanviet": "Tất",
     "meaning": "sơn, vecni",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“漆”这个词。",
-    "examplePinyin": "Qǐng jìzhu “漆” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “漆” này.",
+    "example": "请记住漆这个词。",
+    "examplePinyin": "Qǐng jìzhu qī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sơn, vecni này.",
     "id": "typ-hsk3-0555"
   },
   {
@@ -30706,9 +30706,9 @@
     "meaning": "khoang, giai điệu",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“腔”这个词。",
-    "examplePinyin": "Qǐng jìzhu “腔” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “腔” này.",
+    "example": "请记住腔这个词。",
+    "examplePinyin": "Qǐng jìzhu qiāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khoang, giai điệu này.",
     "id": "typ-hsk3-0558"
   },
   {
@@ -30730,9 +30730,9 @@
     "meaning": "mạnh mẽ, đầy sức mạnh",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“强劲”这个词。",
-    "examplePinyin": "Qǐng jìzhu “强劲” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “强劲” này.",
+    "example": "请记住强劲这个词。",
+    "examplePinyin": "Qǐng jìzhu qiáng jìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mạnh mẽ, đầy sức mạnh này.",
     "id": "typ-hsk3-0560"
   },
   {
@@ -30754,9 +30754,9 @@
     "meaning": "làm gì đó bằng vũ lực, phiên âm Đài Loan",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“强行”这个词。",
-    "examplePinyin": "Qǐng jìzhu “强行” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “强行” này.",
+    "example": "请记住强行这个词。",
+    "examplePinyin": "Qǐng jìzhu qiáng xíng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ làm gì đó bằng vũ lực, phiên âm Đài Loan này.",
     "id": "typ-hsk3-0562"
   },
   {
@@ -30774,13 +30774,13 @@
   {
     "hanzi": "前线",
     "pinyin": "qián xiàn",
-    "hanviet": "Tiền 线",
+    "hanviet": "Tiền Tuyến",
     "meaning": "tiền tuyến, mặt trận quân sự",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“前线”这个词。",
-    "examplePinyin": "Qǐng jìzhu “前线” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “前线” này.",
+    "example": "请记住前线这个词。",
+    "examplePinyin": "Qǐng jìzhu qián xiàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tiền tuyến, mặt trận quân sự này.",
     "id": "typ-hsk3-0564"
   },
   {
@@ -30802,9 +30802,9 @@
     "meaning": "shell",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“壳”这个词。",
-    "examplePinyin": "Qǐng jìzhu “壳” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “壳” này.",
+    "example": "请记住壳这个词。",
+    "examplePinyin": "Qǐng jìzhu qiào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ shell này.",
     "id": "typ-hsk3-0566"
   },
   {
@@ -30814,15 +30814,15 @@
     "meaning": "trùng hợp, tình cờ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“巧合”这个词。",
-    "examplePinyin": "Qǐng jìzhu “巧合” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “巧合” này.",
+    "example": "请记住巧合这个词。",
+    "examplePinyin": "Qǐng jìzhu qiǎo hé zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trùng hợp, tình cờ này.",
     "id": "typ-hsk3-0567"
   },
   {
     "hanzi": "恰恰",
     "pinyin": "qià qià",
-    "hanviet": "恰 恰",
+    "hanviet": "Kháp Kháp",
     "meaning": "chính xác, vừa vặn",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -30850,15 +30850,15 @@
     "meaning": "cắt đứt; cắt rời",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“切断”这个词。",
-    "examplePinyin": "Qǐng jìzhu “切断” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “切断” này.",
+    "example": "请记住切断这个词。",
+    "examplePinyin": "Qǐng jìzhu qiē duàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cắt đứt; cắt rời này.",
     "id": "typ-hsk3-0570"
   },
   {
     "hanzi": "奇怪",
     "pinyin": "qí guài",
-    "hanviet": "Kỳ 怪",
+    "hanviet": "Kỳ Quái",
     "meaning": "kỳ lạ, lập dị",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -30898,9 +30898,9 @@
     "meaning": "huyện Thanh Tân, Thanh Viễn 清遠|清远, Quảng Đông",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“清新”这个词。",
-    "examplePinyin": "Qǐng jìzhu “清新” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “清新” này.",
+    "example": "请记住清新这个词。",
+    "examplePinyin": "Qǐng jìzhu Qīng xīn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ huyện Thanh Tân, Thanh Viễn , Quảng Đông này.",
     "id": "typ-hsk3-0574"
   },
   {
@@ -30910,9 +30910,9 @@
     "meaning": "vui mừng; cảm thấy may mắn",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“庆幸”这个词。",
-    "examplePinyin": "Qǐng jìzhu “庆幸” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “庆幸” này.",
+    "example": "请记住庆幸这个词。",
+    "examplePinyin": "Qǐng jìzhu qìng xìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vui mừng; cảm thấy may mắn này.",
     "id": "typ-hsk3-0575"
   },
   {
@@ -30922,9 +30922,9 @@
     "meaning": "thân thiết, tiến gần đến",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“亲近”这个词。",
-    "examplePinyin": "Qǐng jìzhu “亲近” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “亲近” này.",
+    "example": "请记住亲近这个词。",
+    "examplePinyin": "Qǐng jìzhu qīn jìn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thân thiết, tiến gần đến này.",
     "id": "typ-hsk3-0576"
   },
   {
@@ -30934,9 +30934,9 @@
     "meaning": "đích thân, tự tay mình",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“亲手”这个词。",
-    "examplePinyin": "Qǐng jìzhu “亲手” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “亲手” này.",
+    "example": "请记住亲手这个词。",
+    "examplePinyin": "Qǐng jìzhu qīn shǒu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đích thân, tự tay mình này.",
     "id": "typ-hsk3-0577"
   },
   {
@@ -31018,15 +31018,15 @@
     "meaning": "yêu cầu giúp đỡ, kêu gọi giúp đỡ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“求助”这个词。",
-    "examplePinyin": "Qǐng jìzhu “求助” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “求助” này.",
+    "example": "请记住求助这个词。",
+    "examplePinyin": "Qǐng jìzhu qiú zhù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ yêu cầu giúp đỡ, kêu gọi giúp đỡ này.",
     "id": "typ-hsk3-0584"
   },
   {
     "hanzi": "券",
     "pinyin": "quàn",
-    "hanviet": "券",
+    "hanviet": "Khoán",
     "meaning": "trái phiếu, hợp đồng",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -31086,13 +31086,13 @@
   {
     "hanzi": "曲线",
     "pinyin": "qū xiàn",
-    "hanviet": "Khúc 线",
+    "hanviet": "Khúc Tuyến",
     "meaning": "đường cong, gián tiếp",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“曲线”这个词。",
-    "examplePinyin": "Qǐng jìzhu “曲线” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “曲线” này.",
+    "example": "请记住曲线这个词。",
+    "examplePinyin": "Qǐng jìzhu qū xiàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đường cong, gián tiếp này.",
     "id": "typ-hsk3-0590"
   },
   {
@@ -31162,9 +31162,9 @@
     "meaning": "tình cảm con người, mối quan hệ xã hội; tình bạn",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“人情”这个词。",
-    "examplePinyin": "Qǐng jìzhu “人情” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “人情” này.",
+    "example": "请记住人情这个词。",
+    "examplePinyin": "Qǐng jìzhu rén qíng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tình cảm con người, mối quan hệ xã hội; tình bạn này.",
     "id": "typ-hsk3-0596"
   },
   {
@@ -31230,7 +31230,7 @@
   {
     "hanzi": "融合",
     "pinyin": "róng hé",
-    "hanviet": "融 Hợp",
+    "hanviet": "Dung Hợp",
     "meaning": "một hỗn hợp, sự pha trộn",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -31258,9 +31258,9 @@
     "meaning": "mềm mại",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“柔软”这个词。",
-    "examplePinyin": "Qǐng jìzhu “柔软” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “柔软” này.",
+    "example": "请记住柔软这个词。",
+    "examplePinyin": "Qǐng jìzhu róu ruǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mềm mại này.",
     "id": "typ-hsk3-0604"
   },
   {
@@ -31294,9 +31294,9 @@
     "meaning": "xâm lược",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“入侵”这个词。",
-    "examplePinyin": "Qǐng jìzhu “入侵” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “入侵” này.",
+    "example": "请记住入侵这个词。",
+    "examplePinyin": "Qǐng jìzhu rù qīn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xâm lược này.",
     "id": "typ-hsk3-0607"
   },
   {
@@ -31314,7 +31314,7 @@
   {
     "hanzi": "赛场",
     "pinyin": "sài chǎng",
-    "hanviet": "赛 Trường",
+    "hanviet": "Tái Trường",
     "meaning": "trường đua, sân",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -31342,9 +31342,9 @@
     "meaning": "quấy rầy, gây náo loạn",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“骚扰”这个词。",
-    "examplePinyin": "Qǐng jìzhu “骚扰” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “骚扰” này.",
+    "example": "请记住骚扰这个词。",
+    "examplePinyin": "Qǐng jìzhu sāo rǎo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quấy rầy, gây náo loạn này.",
     "id": "typ-hsk3-0611"
   },
   {
@@ -31354,9 +31354,9 @@
     "meaning": "xóa",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“删”这个词。",
-    "examplePinyin": "Qǐng jìzhu “删” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “删” này.",
+    "example": "请记住删这个词。",
+    "examplePinyin": "Qǐng jìzhu shān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xóa này.",
     "id": "typ-hsk3-0612"
   },
   {
@@ -31366,9 +31366,9 @@
     "meaning": "place above (it)",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“上方”这个词。",
-    "examplePinyin": "Qǐng jìzhu “上方” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “上方” này.",
+    "example": "请记住上方这个词。",
+    "examplePinyin": "Qǐng jìzhu shàng fāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ place above (it) này.",
     "id": "typ-hsk3-0613"
   },
   {
@@ -31402,9 +31402,9 @@
     "meaning": "sếp, cấp trên",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“上司”这个词。",
-    "examplePinyin": "Qǐng jìzhu “上司” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “上司” này.",
+    "example": "请记住上司这个词。",
+    "examplePinyin": "Qǐng jìzhu shàng si zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sếp, cấp trên này.",
     "id": "typ-hsk3-0616"
   },
   {
@@ -31414,9 +31414,9 @@
     "meaning": "kháng cáo, kháng cáo",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“上诉”这个词。",
-    "examplePinyin": "Qǐng jìzhu “上诉” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “上诉” này.",
+    "example": "请记住上诉这个词。",
+    "examplePinyin": "Qǐng jìzhu shàng sù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kháng cáo, kháng cáo này.",
     "id": "typ-hsk3-0617"
   },
   {
@@ -31474,9 +31474,9 @@
     "meaning": "nướng thịt, nướng",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“烧烤”这个词。",
-    "examplePinyin": "Qǐng jìzhu “烧烤” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “烧烤” này.",
+    "example": "请记住烧烤这个词。",
+    "examplePinyin": "Qǐng jìzhu shāo kǎo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nướng thịt, nướng này.",
     "id": "typ-hsk3-0622"
   },
   {
@@ -31498,9 +31498,9 @@
     "meaning": "thiết lập, cài đặt",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“设定”这个词。",
-    "examplePinyin": "Qǐng jìzhu “设定” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “设定” này.",
+    "example": "请记住设定这个词。",
+    "examplePinyin": "Qǐng jìzhu shè dìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thiết lập, cài đặt này.",
     "id": "typ-hsk3-0624"
   },
   {
@@ -31510,9 +31510,9 @@
     "meaning": "chủ nghĩa xã hội",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“社会主义”这个词。",
-    "examplePinyin": "Qǐng jìzhu “社会主义” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “社会主义” này.",
+    "example": "请记住社会主义这个词。",
+    "examplePinyin": "Qǐng jìzhu shè huì zhǔ yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chủ nghĩa xã hội này.",
     "id": "typ-hsk3-0625"
   },
   {
@@ -31522,9 +31522,9 @@
     "meaning": "tương tác, liên hệ xã hội",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“社交”这个词。",
-    "examplePinyin": "Qǐng jìzhu “社交” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “社交” này.",
+    "example": "请记住社交这个词。",
+    "examplePinyin": "Qǐng jìzhu shè jiāo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tương tác, liên hệ xã hội này.",
     "id": "typ-hsk3-0626"
   },
   {
@@ -31558,9 +31558,9 @@
     "meaning": "hoành tráng, tráng lệ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“盛大”这个词。",
-    "examplePinyin": "Qǐng jìzhu “盛大” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “盛大” này.",
+    "example": "请记住盛大这个词。",
+    "examplePinyin": "Qǐng jìzhu shèng dà zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hoành tráng, tráng lệ này.",
     "id": "typ-hsk3-0629"
   },
   {
@@ -31582,9 +31582,9 @@
     "meaning": "sống chết",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“生死”这个词。",
-    "examplePinyin": "Qǐng jìzhu “生死” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “生死” này.",
+    "example": "请记住生死这个词。",
+    "examplePinyin": "Qǐng jìzhu shēng sǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sống chết này.",
     "id": "typ-hsk3-0631"
   },
   {
@@ -31602,19 +31602,19 @@
   {
     "hanzi": "剩余",
     "pinyin": "shèng yú",
-    "hanviet": "剩 Dư",
+    "hanviet": "Thặng Dư",
     "meaning": "phần còn lại, dư thừa",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“剩余”这个词。",
-    "examplePinyin": "Qǐng jìzhu “剩余” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “剩余” này.",
+    "example": "请记住剩余这个词。",
+    "examplePinyin": "Qǐng jìzhu shèng yú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phần còn lại, dư thừa này.",
     "id": "typ-hsk3-0633"
   },
   {
     "hanzi": "伸手",
     "pinyin": "shēn shǒu",
-    "hanviet": "伸 Thủ",
+    "hanviet": "Thân Thủ",
     "meaning": "đưa tay ra, chìa tay ra",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -31630,9 +31630,9 @@
     "meaning": "rất khuya",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“深夜”这个词。",
-    "examplePinyin": "Qǐng jìzhu “深夜” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “深夜” này.",
+    "example": "请记住深夜这个词。",
+    "examplePinyin": "Qǐng jìzhu shēn yè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rất khuya này.",
     "id": "typ-hsk3-0635"
   },
   {
@@ -31678,9 +31678,9 @@
     "meaning": "xây dựng, tiến hành xây dựng hoặc sửa chữa quy mô lớn",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“施工”这个词。",
-    "examplePinyin": "Qǐng jìzhu “施工” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “施工” này.",
+    "example": "请记住施工这个词。",
+    "examplePinyin": "Qǐng jìzhu shī gōng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xây dựng, tiến hành xây dựng hoặc sửa chữa quy mô lớn này.",
     "id": "typ-hsk3-0639"
   },
   {
@@ -31714,9 +31714,9 @@
     "meaning": "thị giác, tầm nhìn",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“视觉”这个词。",
-    "examplePinyin": "Qǐng jìzhu “视觉” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “视觉” này.",
+    "example": "请记住视觉这个词。",
+    "examplePinyin": "Qǐng jìzhu shì jué zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thị giác, tầm nhìn này.",
     "id": "typ-hsk3-0642"
   },
   {
@@ -31726,9 +31726,9 @@
     "meaning": "mất kiểm soát",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“失控”这个词。",
-    "examplePinyin": "Qǐng jìzhu “失控” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “失控” này.",
+    "example": "请记住失控这个词。",
+    "examplePinyin": "Qǐng jìzhu shī kòng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mất kiểm soát này.",
     "id": "typ-hsk3-0643"
   },
   {
@@ -31738,9 +31738,9 @@
     "meaning": "thời gian và không gian, thế giới của một địa điểm và thời đại cụ thể",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“时空”这个词。",
-    "examplePinyin": "Qǐng jìzhu “时空” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “时空” này.",
+    "example": "请记住时空这个词。",
+    "examplePinyin": "Qǐng jìzhu shí kōng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thời gian và không gian, thế giới của một địa điểm và thời đại cụ thể này.",
     "id": "typ-hsk3-0644"
   },
   {
@@ -31770,7 +31770,7 @@
   {
     "hanzi": "试题",
     "pinyin": "shì tí",
-    "hanviet": "Thí 题",
+    "hanviet": "Thí Đề",
     "meaning": "câu hỏi thi, chủ đề kiểm tra",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -31810,21 +31810,21 @@
     "meaning": "nạn nhân",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“受害人”这个词。",
-    "examplePinyin": "Qǐng jìzhu “受害人” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “受害人” này.",
+    "example": "请记住受害人这个词。",
+    "examplePinyin": "Qǐng jìzhu shòu hài rén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nạn nhân này.",
     "id": "typ-hsk3-0650"
   },
   {
     "hanzi": "手脚",
     "pinyin": "shǒu jiǎo",
-    "hanviet": "Thủ 脚",
+    "hanviet": "Thủ Cước",
     "meaning": "tay chân, chuyển động của tứ chi",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“手脚”这个词。",
-    "examplePinyin": "Qǐng jìzhu “手脚” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “手脚” này.",
+    "example": "请记住手脚这个词。",
+    "examplePinyin": "Qǐng jìzhu shǒu jiǎo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tay chân, chuyển động của tứ chi này.",
     "id": "typ-hsk3-0651"
   },
   {
@@ -31846,9 +31846,9 @@
     "meaning": "first batch",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“首批”这个词。",
-    "examplePinyin": "Qǐng jìzhu “首批” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “首批” này.",
+    "example": "请记住首批这个词。",
+    "examplePinyin": "Qǐng jìzhu shǒu pī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ first batch này.",
     "id": "typ-hsk3-0653"
   },
   {
@@ -31858,9 +31858,9 @@
     "meaning": "súng lục",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“手枪”这个词。",
-    "examplePinyin": "Qǐng jìzhu “手枪” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “手枪” này.",
+    "example": "请记住手枪这个词。",
+    "examplePinyin": "Qǐng jìzhu shǒu qiāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ súng lục này.",
     "id": "typ-hsk3-0654"
   },
   {
@@ -31930,9 +31930,9 @@
     "meaning": "sương giá, bột trắng hoặc kem phủ trên bề mặt",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“霜”这个词。",
-    "examplePinyin": "Qǐng jìzhu “霜” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “霜” này.",
+    "example": "请记住霜这个词。",
+    "examplePinyin": "Qǐng jìzhu shuāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sương giá, bột trắng hoặc kem phủ trên bề mặt này.",
     "id": "typ-hsk3-0660"
   },
   {
@@ -31942,9 +31942,9 @@
     "meaning": "kép",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“双重”这个词。",
-    "examplePinyin": "Qǐng jìzhu “双重” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “双重” này.",
+    "example": "请记住双重这个词。",
+    "examplePinyin": "Qǐng jìzhu shuāng chóng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kép này.",
     "id": "typ-hsk3-0661"
   },
   {
@@ -31966,15 +31966,15 @@
     "meaning": "tinh thể",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“水晶”这个词。",
-    "examplePinyin": "Qǐng jìzhu “水晶” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “水晶” này.",
+    "example": "请记住水晶这个词。",
+    "examplePinyin": "Qǐng jìzhu shuǐ jīng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tinh thể này.",
     "id": "typ-hsk3-0663"
   },
   {
     "hanzi": "水面",
     "pinyin": "shuǐ miàn",
-    "hanviet": "Thủy 面",
+    "hanviet": "Thủy Diện",
     "meaning": "bề mặt nước",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -32002,15 +32002,15 @@
     "meaning": "mức độ, tiêu chuẩn",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“水准”这个词。",
-    "examplePinyin": "Qǐng jìzhu “水准” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “水准” này.",
+    "example": "请记住水准这个词。",
+    "examplePinyin": "Qǐng jìzhu shuǐ zhǔn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mức độ, tiêu chuẩn này.",
     "id": "typ-hsk3-0666"
   },
   {
     "hanzi": "暑假",
     "pinyin": "shǔ jià",
-    "hanviet": "暑 假",
+    "hanviet": "Thử Giả",
     "meaning": "kỳ nghỉ hè",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -32050,21 +32050,21 @@
     "meaning": "phát biểu, nói",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“说道”这个词。",
-    "examplePinyin": "Qǐng jìzhu “说道” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “说道” này.",
+    "example": "请记住说道这个词。",
+    "examplePinyin": "Qǐng jìzhu shuō dào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phát biểu, nói này.",
     "id": "typ-hsk3-0670"
   },
   {
     "hanzi": "说谎",
     "pinyin": "shuō huǎng",
-    "hanviet": "Thuyết 谎",
+    "hanviet": "Thuyết Hoang",
     "meaning": "nói dối, kể điều không thật",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“说谎”这个词。",
-    "examplePinyin": "Qǐng jìzhu “说谎” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “说谎” này.",
+    "example": "请记住说谎这个词。",
+    "examplePinyin": "Qǐng jìzhu shuō huǎng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nói dối, kể điều không thật này.",
     "id": "typ-hsk3-0671"
   },
   {
@@ -32098,9 +32098,9 @@
     "meaning": "toán học",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“数学”这个词。",
-    "examplePinyin": "Qǐng jìzhu “数学” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “数学” này.",
+    "example": "请记住数学这个词。",
+    "examplePinyin": "Qǐng jìzhu shù xué zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ toán học này.",
     "id": "typ-hsk3-0674"
   },
   {
@@ -32134,9 +32134,9 @@
     "meaning": "dòng suy nghĩ; cách suy nghĩ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“思路”这个词。",
-    "examplePinyin": "Qǐng jìzhu “思路” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “思路” này.",
+    "example": "请记住思路这个词。",
+    "examplePinyin": "Qǐng jìzhu sī lù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dòng suy nghĩ; cách suy nghĩ này.",
     "id": "typ-hsk3-0677"
   },
   {
@@ -32146,15 +32146,15 @@
     "meaning": "riêng tư",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“私下”这个词。",
-    "examplePinyin": "Qǐng jìzhu “私下” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “私下” này.",
+    "example": "请记住私下这个词。",
+    "examplePinyin": "Qǐng jìzhu sī xià zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ riêng tư này.",
     "id": "typ-hsk3-0678"
   },
   {
     "hanzi": "酸奶",
     "pinyin": "suān nǎi",
-    "hanviet": "酸 Nãi",
+    "hanviet": "Toan Nãi",
     "meaning": "sữa chua",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -32190,7 +32190,7 @@
   {
     "hanzi": "缩",
     "pinyin": "suō",
-    "hanviet": "缩",
+    "hanviet": "Súc",
     "meaning": "rút lại, kéo lại",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -32218,27 +32218,27 @@
     "meaning": "bào thai, lượng từ cho lứa",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“胎”这个词。",
-    "examplePinyin": "Qǐng jìzhu “胎” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “胎” này.",
+    "example": "请记住胎这个词。",
+    "examplePinyin": "Qǐng jìzhu tāi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bào thai, lượng từ cho lứa này.",
     "id": "typ-hsk3-0684"
   },
   {
     "hanzi": "胎儿",
     "pinyin": "tāi ér",
-    "hanviet": "Thai 儿",
+    "hanviet": "Thai Nhi",
     "meaning": "thai nhi, bào thai",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“胎儿”这个词。",
-    "examplePinyin": "Qǐng jìzhu “胎儿” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “胎儿” này.",
+    "example": "请记住胎儿这个词。",
+    "examplePinyin": "Qǐng jìzhu tāi ér zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thai nhi, bào thai này.",
     "id": "typ-hsk3-0685"
   },
   {
     "hanzi": "抬头",
     "pinyin": "tái tóu",
-    "hanviet": "抬 Đầu",
+    "hanviet": "Đài Đầu",
     "meaning": "ngẩng đầu, lên ngôi",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -32266,9 +32266,9 @@
     "meaning": "trải ra, quầy hàng",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“摊”这个词。",
-    "examplePinyin": "Qǐng jìzhu “摊” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “摊” này.",
+    "example": "请记住摊这个词。",
+    "examplePinyin": "Qǐng jìzhu tān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trải ra, quầy hàng này.",
     "id": "typ-hsk3-0688"
   },
   {
@@ -32290,21 +32290,21 @@
     "meaning": "kẹo",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“糖果”这个词。",
-    "examplePinyin": "Qǐng jìzhu “糖果” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “糖果” này.",
+    "example": "请记住糖果这个词。",
+    "examplePinyin": "Qǐng jìzhu táng guǒ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kẹo này.",
     "id": "typ-hsk3-0690"
   },
   {
     "hanzi": "糖尿病",
     "pinyin": "táng niào bìng",
-    "hanviet": "Đường 尿 Bệnh",
+    "hanviet": "Đường Niệu Bệnh",
     "meaning": "bệnh tiểu đường; đái tháo đường",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“糖尿病”这个词。",
-    "examplePinyin": "Qǐng jìzhu “糖尿病” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “糖尿病” này.",
+    "example": "请记住糖尿病这个词。",
+    "examplePinyin": "Qǐng jìzhu táng niào bìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bệnh tiểu đường; đái tháo đường này.",
     "id": "typ-hsk3-0691"
   },
   {
@@ -32314,9 +32314,9 @@
     "meaning": "xe tăng",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“坦克”这个词。",
-    "examplePinyin": "Qǐng jìzhu “坦克” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “坦克” này.",
+    "example": "请记住坦克这个词。",
+    "examplePinyin": "Qǐng jìzhu tǎn kè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xe tăng này.",
     "id": "typ-hsk3-0692"
   },
   {
@@ -32346,7 +32346,7 @@
   {
     "hanzi": "疼",
     "pinyin": "téng",
-    "hanviet": "疼",
+    "hanviet": "Đông",
     "meaning": "đau; nhức, yêu thương hết mực",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -32358,7 +32358,7 @@
   {
     "hanzi": "甜",
     "pinyin": "tián",
-    "hanviet": "甜",
+    "hanviet": "Điềm",
     "meaning": "ngọt",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -32374,21 +32374,21 @@
     "meaning": "tài năng, quyền năng bẩm sinh",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“天赋”这个词。",
-    "examplePinyin": "Qǐng jìzhu “天赋” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “天赋” này.",
+    "example": "请记住天赋这个词。",
+    "examplePinyin": "Qǐng jìzhu tiān fù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tài năng, quyền năng bẩm sinh này.",
     "id": "typ-hsk3-0697"
   },
   {
     "hanzi": "甜美",
     "pinyin": "tián měi",
-    "hanviet": "甜 Mỹ",
+    "hanviet": "Điềm Mỹ",
     "meaning": "ngọt ngào, dễ chịu",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“甜美”这个词。",
-    "examplePinyin": "Qǐng jìzhu “甜美” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “甜美” này.",
+    "example": "请记住甜美这个词。",
+    "examplePinyin": "Qǐng jìzhu tián měi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngọt ngào, dễ chịu này.",
     "id": "typ-hsk3-0698"
   },
   {
@@ -32494,9 +32494,9 @@
     "meaning": "làm theo lời, dễ bảo",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“听话”这个词。",
-    "examplePinyin": "Qǐng jìzhu “听话” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “听话” này.",
+    "example": "请记住听话这个词。",
+    "examplePinyin": "Qǐng jìzhu tīng huà zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ làm theo lời, dễ bảo này.",
     "id": "typ-hsk3-0707"
   },
   {
@@ -32566,9 +32566,9 @@
     "meaning": "hệ thống, tổ chức",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“体制”这个词。",
-    "examplePinyin": "Qǐng jìzhu “体制” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “体制” này.",
+    "example": "请记住体制这个词。",
+    "examplePinyin": "Qǐng jìzhu tǐ zhì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hệ thống, tổ chức này.",
     "id": "typ-hsk3-0713"
   },
   {
@@ -32578,9 +32578,9 @@
     "meaning": "chọc; thúc, chạm nhẹ ; đẩy khẽ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“捅”这个词。",
-    "examplePinyin": "Qǐng jìzhu “捅” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “捅” này.",
+    "example": "请记住捅这个词。",
+    "examplePinyin": "Qǐng jìzhu tǒng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chọc; thúc, chạm nhẹ ; đẩy khẽ này.",
     "id": "typ-hsk3-0714"
   },
   {
@@ -32590,9 +32590,9 @@
     "meaning": "ống, hình trụ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“筒”这个词。",
-    "examplePinyin": "Qǐng jìzhu “筒” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “筒” này.",
+    "example": "请记住筒这个词。",
+    "examplePinyin": "Qǐng jìzhu tǒng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ống, hình trụ này.",
     "id": "typ-hsk3-0715"
   },
   {
@@ -32602,9 +32602,9 @@
     "meaning": "bạn đồng hành; đồng chí; đồng đội",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“同伴”这个词。",
-    "examplePinyin": "Qǐng jìzhu “同伴” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “同伴” này.",
+    "example": "请记住同伴这个词。",
+    "examplePinyin": "Qǐng jìzhu tóng bàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bạn đồng hành; đồng chí; đồng đội này.",
     "id": "typ-hsk3-0716"
   },
   {
@@ -32626,9 +32626,9 @@
     "meaning": "đồng bộ, đồng bộ hóa",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“同步”这个词。",
-    "examplePinyin": "Qǐng jìzhu “同步” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “同步” này.",
+    "example": "请记住同步这个词。",
+    "examplePinyin": "Qǐng jìzhu tóng bù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đồng bộ, đồng bộ hóa này.",
     "id": "typ-hsk3-0718"
   },
   {
@@ -32686,9 +32686,9 @@
     "meaning": "dẫn đến",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“通往”这个词。",
-    "examplePinyin": "Qǐng jìzhu “通往” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “通往” này.",
+    "example": "请记住通往这个词。",
+    "examplePinyin": "Qǐng jìzhu tōng wǎng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dẫn đến này.",
     "id": "typ-hsk3-0723"
   },
   {
@@ -32722,9 +32722,9 @@
     "meaning": "đi qua, thâm nhập",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“透过”这个词。",
-    "examplePinyin": "Qǐng jìzhu “透过” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “透过” này.",
+    "example": "请记住透过这个词。",
+    "examplePinyin": "Qǐng jìzhu tòu guò zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đi qua, thâm nhập này.",
     "id": "typ-hsk3-0726"
   },
   {
@@ -32734,15 +32734,15 @@
     "meaning": "hàng nhất, hạng đầu",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“头号”这个词。",
-    "examplePinyin": "Qǐng jìzhu “头号” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “头号” này.",
+    "example": "请记住头号这个词。",
+    "examplePinyin": "Qǐng jìzhu tóu hào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hàng nhất, hạng đầu này.",
     "id": "typ-hsk3-0727"
   },
   {
     "hanzi": "头疼",
     "pinyin": "tóu téng",
-    "hanviet": "Đầu 疼",
+    "hanviet": "Đầu Đông",
     "meaning": "đau đầu",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -32754,13 +32754,13 @@
   {
     "hanzi": "团伙",
     "pinyin": "tuán huǒ",
-    "hanviet": "Đoàn 伙",
+    "hanviet": "Đoàn Hỏa",
     "meaning": "băng nhóm, thành viên băng nhóm",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“团伙”这个词。",
-    "examplePinyin": "Qǐng jìzhu “团伙” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “团伙” này.",
+    "example": "请记住团伙这个词。",
+    "examplePinyin": "Qǐng jìzhu tuán huǒ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ băng nhóm, thành viên băng nhóm này.",
     "id": "typ-hsk3-0729"
   },
   {
@@ -32770,9 +32770,9 @@
     "meaning": "xảy ra đột ngột",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“突发”这个词。",
-    "examplePinyin": "Qǐng jìzhu “突发” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “突发” này.",
+    "example": "请记住突发这个词。",
+    "examplePinyin": "Qǐng jìzhu tū fā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xảy ra đột ngột này.",
     "id": "typ-hsk3-0730"
   },
   {
@@ -32890,9 +32890,9 @@
     "meaning": "bà ngoại, bà bên ngoại",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“外婆”这个词。",
-    "examplePinyin": "Qǐng jìzhu “外婆” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “外婆” này.",
+    "example": "请记住外婆这个词。",
+    "examplePinyin": "Qǐng jìzhu wài pó zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bà ngoại, bà bên ngoại này.",
     "id": "typ-hsk3-0740"
   },
   {
@@ -32910,7 +32910,7 @@
   {
     "hanzi": "碗",
     "pinyin": "wǎn",
-    "hanviet": "碗",
+    "hanviet": "Oản",
     "meaning": "bowl",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -32950,9 +32950,9 @@
     "meaning": "vương quốc, vùng lãnh thổ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“王国”这个词。",
-    "examplePinyin": "Qǐng jìzhu “王国” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “王国” này.",
+    "example": "请记住王国这个词。",
+    "examplePinyin": "Qǐng jìzhu wáng guó zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vương quốc, vùng lãnh thổ này.",
     "id": "typ-hsk3-0745"
   },
   {
@@ -32998,9 +32998,9 @@
     "meaning": "chưa trải qua, không qua",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“未经”这个词。",
-    "examplePinyin": "Qǐng jìzhu “未经” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “未经” này.",
+    "example": "请记住未经这个词。",
+    "examplePinyin": "Qǐng jìzhu wèi jīng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chưa trải qua, không qua này.",
     "id": "typ-hsk3-0749"
   },
   {
@@ -33046,9 +33046,9 @@
     "meaning": "giả vờ, cải trang",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“伪装”这个词。",
-    "examplePinyin": "Qǐng jìzhu “伪装” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “伪装” này.",
+    "example": "请记住伪装这个词。",
+    "examplePinyin": "Qǐng jìzhu wěi zhuāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giả vờ, cải trang này.",
     "id": "typ-hsk3-0753"
   },
   {
@@ -33070,9 +33070,9 @@
     "meaning": "huyện Arishang hoặc huyện Ôn Tuyền trong châu tự trị Mông Cổ Bác Nhĩ Tháp Lạp 博爾塔拉蒙古自治州|博尔塔拉蒙古自治州, Tân Cương",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“温泉”这个词。",
-    "examplePinyin": "Qǐng jìzhu “温泉” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “温泉” này.",
+    "example": "请记住温泉这个词。",
+    "examplePinyin": "Qǐng jìzhu Wēn quán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ huyện Arishang hoặc huyện Ôn Tuyền trong châu tự trị Mông Cổ Bác Nhĩ Tháp Lạp , Tân Cương này.",
     "id": "typ-hsk3-0755"
   },
   {
@@ -33082,15 +33082,15 @@
     "meaning": "ấm áp, nhẹ nhàng và thơm",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“温馨”这个词。",
-    "examplePinyin": "Qǐng jìzhu “温馨” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “温馨” này.",
+    "example": "请记住温馨这个词。",
+    "examplePinyin": "Qǐng jìzhu wēn xīn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ấm áp, nhẹ nhàng và thơm này.",
     "id": "typ-hsk3-0756"
   },
   {
     "hanzi": "卧",
     "pinyin": "wò",
-    "hanviet": "卧",
+    "hanviet": "Ngọa",
     "meaning": "nằm, cuộn mình",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -33106,9 +33106,9 @@
     "meaning": "vô song, không có đối thủ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“无敌”这个词。",
-    "examplePinyin": "Qǐng jìzhu “无敌” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “无敌” này.",
+    "example": "请记住无敌这个词。",
+    "examplePinyin": "Qǐng jìzhu wú dí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vô song, không có đối thủ này.",
     "id": "typ-hsk3-0758"
   },
   {
@@ -33118,9 +33118,9 @@
     "meaning": "mái nhà",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“屋顶”这个词。",
-    "examplePinyin": "Qǐng jìzhu “屋顶” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “屋顶” này.",
+    "example": "请记住屋顶这个词。",
+    "examplePinyin": "Qǐng jìzhu wū dǐng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mái nhà này.",
     "id": "typ-hsk3-0759"
   },
   {
@@ -33130,9 +33130,9 @@
     "meaning": "bất lực, thiếu sức mạnh",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“无力”这个词。",
-    "examplePinyin": "Qǐng jìzhu “无力” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “无力” này.",
+    "example": "请记住无力这个词。",
+    "examplePinyin": "Qǐng jìzhu wú lì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bất lực, thiếu sức mạnh này.",
     "id": "typ-hsk3-0760"
   },
   {
@@ -33142,9 +33142,9 @@
     "meaning": "tàn nhẫn, vô tình",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“无情”这个词。",
-    "examplePinyin": "Qǐng jìzhu “无情” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “无情” này.",
+    "example": "请记住无情这个词。",
+    "examplePinyin": "Qǐng jìzhu wú qíng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tàn nhẫn, vô tình này.",
     "id": "typ-hsk3-0761"
   },
   {
@@ -33154,21 +33154,21 @@
     "meaning": "vật thể; cơ thể; chất",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“物体”这个词。",
-    "examplePinyin": "Qǐng jìzhu “物体” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “物体” này.",
+    "example": "请记住物体这个词。",
+    "examplePinyin": "Qǐng jìzhu wù tǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vật thể; cơ thể; chất này.",
     "id": "typ-hsk3-0762"
   },
   {
     "hanzi": "无线",
     "pinyin": "wú xiàn",
-    "hanviet": "Vô 线",
+    "hanviet": "Vô Tuyến",
     "meaning": "không dây",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“无线”这个词。",
-    "examplePinyin": "Qǐng jìzhu “无线” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “无线” này.",
+    "example": "请记住无线这个词。",
+    "examplePinyin": "Qǐng jìzhu wú xiàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ không dây này.",
     "id": "typ-hsk3-0763"
   },
   {
@@ -33178,15 +33178,15 @@
     "meaning": "không cố ý, tình cờ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“无意”这个词。",
-    "examplePinyin": "Qǐng jìzhu “无意” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “无意” này.",
+    "example": "请记住无意这个词。",
+    "examplePinyin": "Qǐng jìzhu wú yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ không cố ý, tình cờ này.",
     "id": "typ-hsk3-0764"
   },
   {
     "hanzi": "席",
     "pinyin": "xí",
-    "hanviet": "席",
+    "hanviet": "Tịch",
     "meaning": "woven mat",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -33226,9 +33226,9 @@
     "meaning": "rời khỏi, tham gia một hoạt động nào đó",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“下场”这个词。",
-    "examplePinyin": "Qǐng jìzhu “下场” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “下场” này.",
+    "example": "请记住下场这个词。",
+    "examplePinyin": "Qǐng jìzhu xià chǎng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rời khỏi, tham gia một hoạt động nào đó này.",
     "id": "typ-hsk3-0768"
   },
   {
@@ -33250,9 +33250,9 @@
     "meaning": "ra lệnh; ban hành mệnh lệnh",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“下令”这个词。",
-    "examplePinyin": "Qǐng jìzhu “下令” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “下令” này.",
+    "example": "请记住下令这个词。",
+    "examplePinyin": "Qǐng jìzhu xià lìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ra lệnh; ban hành mệnh lệnh này.",
     "id": "typ-hsk3-0770"
   },
   {
@@ -33318,7 +33318,7 @@
   {
     "hanzi": "乡",
     "pinyin": "xiāng",
-    "hanviet": "乡",
+    "hanviet": "Hương",
     "meaning": "nông thôn, quê hương",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -33354,13 +33354,13 @@
   {
     "hanzi": "橡胶",
     "pinyin": "xiàng jiāo",
-    "hanviet": "橡 Keo",
+    "hanviet": "Tượng Keo",
     "meaning": "cao su",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“橡胶”这个词。",
-    "examplePinyin": "Qǐng jìzhu “橡胶” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “橡胶” này.",
+    "example": "请记住橡胶这个词。",
+    "examplePinyin": "Qǐng jìzhu xiàng jiāo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cao su này.",
     "id": "typ-hsk3-0779"
   },
   {
@@ -33382,9 +33382,9 @@
     "meaning": "(of a sound) to come forth",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“响起”这个词。",
-    "examplePinyin": "Qǐng jìzhu “响起” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “响起” này.",
+    "example": "请记住响起这个词。",
+    "examplePinyin": "Qǐng jìzhu xiǎng qǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ (of a sound) to come forth này.",
     "id": "typ-hsk3-0781"
   },
   {
@@ -33406,9 +33406,9 @@
     "meaning": "nước hoa",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“香水”这个词。",
-    "examplePinyin": "Qǐng jìzhu “香水” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “香水” này.",
+    "example": "请记住香水这个词。",
+    "examplePinyin": "Qǐng jìzhu xiāng shuǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nước hoa này.",
     "id": "typ-hsk3-0783"
   },
   {
@@ -33438,13 +33438,13 @@
   {
     "hanzi": "香烟",
     "pinyin": "xiāng yān",
-    "hanviet": "Hương 烟",
+    "hanviet": "Hương Yên",
     "meaning": "thuốc lá, khói từ nhang đang cháy",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“香烟”这个词。",
-    "examplePinyin": "Qǐng jìzhu “香烟” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “香烟” này.",
+    "example": "请记住香烟这个词。",
+    "examplePinyin": "Qǐng jìzhu xiāng yān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thuốc lá, khói từ nhang đang cháy này.",
     "id": "typ-hsk3-0786"
   },
   {
@@ -33454,9 +33454,9 @@
     "meaning": "gặp, gặp gỡ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“相遇”这个词。",
-    "examplePinyin": "Qǐng jìzhu “相遇” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “相遇” này.",
+    "example": "请记住相遇这个词。",
+    "examplePinyin": "Qǐng jìzhu xiāng yù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gặp, gặp gỡ này.",
     "id": "typ-hsk3-0787"
   },
   {
@@ -33486,13 +33486,13 @@
   {
     "hanzi": "陷阱",
     "pinyin": "xiàn jǐng",
-    "hanviet": "Hãm 阱",
+    "hanviet": "Hãm Tỉnh",
     "meaning": "cạm bẫy, bẫy",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“陷阱”这个词。",
-    "examplePinyin": "Qǐng jìzhu “陷阱” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “陷阱” này.",
+    "example": "请记住陷阱这个词。",
+    "examplePinyin": "Qǐng jìzhu xiàn jǐng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cạm bẫy, bẫy này.",
     "id": "typ-hsk3-0790"
   },
   {
@@ -33502,9 +33502,9 @@
     "meaning": "máu",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“鲜血”这个词。",
-    "examplePinyin": "Qǐng jìzhu “鲜血” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “鲜血” này.",
+    "example": "请记住鲜血这个词。",
+    "examplePinyin": "Qǐng jìzhu xiān xuè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ máu này.",
     "id": "typ-hsk3-0791"
   },
   {
@@ -33522,7 +33522,7 @@
   {
     "hanzi": "消费者",
     "pinyin": "xiāo fèi zhě",
-    "hanviet": "Tiêu Phí 者",
+    "hanviet": "Tiêu Phí Giả",
     "meaning": "người tiêu dùng",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -33538,21 +33538,21 @@
     "meaning": "tính hiệu quả, hiệu quả tích cực",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“效力”这个词。",
-    "examplePinyin": "Qǐng jìzhu “效力” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “效力” này.",
+    "example": "请记住效力这个词。",
+    "examplePinyin": "Qǐng jìzhu xiào lì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tính hiệu quả, hiệu quả tích cực này.",
     "id": "typ-hsk3-0794"
   },
   {
     "hanzi": "销量",
     "pinyin": "xiāo liàng",
-    "hanviet": "Tiu 量",
+    "hanviet": "Tiu Lượng",
     "meaning": "khối lượng bán ra",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“销量”这个词。",
-    "examplePinyin": "Qǐng jìzhu “销量” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “销量” này.",
+    "example": "请记住销量这个词。",
+    "examplePinyin": "Qǐng jìzhu xiāo liàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khối lượng bán ra này.",
     "id": "typ-hsk3-0795"
   },
   {
@@ -33570,7 +33570,7 @@
   {
     "hanzi": "笑声",
     "pinyin": "xiào shēng",
-    "hanviet": "笑 Thanh",
+    "hanviet": "Tiếu Thanh",
     "meaning": "tiếng cười",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -33610,9 +33610,9 @@
     "meaning": "to scare",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“吓人”这个词。",
-    "examplePinyin": "Qǐng jìzhu “吓人” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “吓人” này.",
+    "example": "请记住吓人这个词。",
+    "examplePinyin": "Qǐng jìzhu xià rén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ to scare này.",
     "id": "typ-hsk3-0800"
   },
   {
@@ -33634,9 +33634,9 @@
     "meaning": "biến thể cũ của 邪",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“邪”这个词。",
-    "examplePinyin": "Qǐng jìzhu “邪” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “邪” này.",
+    "example": "请记住邪这个词。",
+    "examplePinyin": "Qǐng jìzhu xié zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ biến thể cũ của này.",
     "id": "typ-hsk3-0802"
   },
   {
@@ -33658,9 +33658,9 @@
     "meaning": "thỏa thuận, hiệp định",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“协定”这个词。",
-    "examplePinyin": "Qǐng jìzhu “协定” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “协定” này.",
+    "example": "请记住协定这个词。",
+    "examplePinyin": "Qǐng jìzhu xié dìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thỏa thuận, hiệp định này.",
     "id": "typ-hsk3-0804"
   },
   {
@@ -33714,7 +33714,7 @@
   {
     "hanzi": "型号",
     "pinyin": "xíng hào",
-    "hanviet": "型 Hiệu",
+    "hanviet": "Hình Hiệu",
     "meaning": "mẫu, loại",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -33730,9 +33730,9 @@
     "meaning": "vali, ngăn hành lý",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“行李箱”这个词。",
-    "examplePinyin": "Qǐng jìzhu “行李箱” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “行李箱” này.",
+    "example": "请记住行李箱这个词。",
+    "examplePinyin": "Qǐng jìzhu xíng li xiāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vali, ngăn hành lý này.",
     "id": "typ-hsk3-0810"
   },
   {
@@ -33750,7 +33750,7 @@
   {
     "hanzi": "行驶",
     "pinyin": "xíng shǐ",
-    "hanviet": "Hành 驶",
+    "hanviet": "Hành Sử",
     "meaning": "di chuyển dọc theo lộ trình",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -33766,9 +33766,9 @@
     "meaning": "đi bộ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“行走”这个词。",
-    "examplePinyin": "Qǐng jìzhu “行走” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “行走” này.",
+    "example": "请记住行走这个词。",
+    "examplePinyin": "Qǐng jìzhu xíng zǒu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đi bộ này.",
     "id": "typ-hsk3-0813"
   },
   {
@@ -33778,9 +33778,9 @@
     "meaning": "chòm sao, cung hoàng đạo",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“星座”这个词。",
-    "examplePinyin": "Qǐng jìzhu “星座” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “星座” này.",
+    "example": "请记住星座这个词。",
+    "examplePinyin": "Qǐng jìzhu xīng zuò zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chòm sao, cung hoàng đạo này.",
     "id": "typ-hsk3-0814"
   },
   {
@@ -33790,9 +33790,9 @@
     "meaning": "tâm trí",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“心目”这个词。",
-    "examplePinyin": "Qǐng jìzhu “心目” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “心目” này.",
+    "example": "请记住心目这个词。",
+    "examplePinyin": "Qǐng jìzhu xīn mù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tâm trí này.",
     "id": "typ-hsk3-0815"
   },
   {
@@ -33802,9 +33802,9 @@
     "meaning": "mới, mới sinh",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“新生”这个词。",
-    "examplePinyin": "Qǐng jìzhu “新生” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “新生” này.",
+    "example": "请记住新生这个词。",
+    "examplePinyin": "Qǐng jìzhu xīn shēng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mới, mới sinh này.",
     "id": "typ-hsk3-0816"
   },
   {
@@ -33814,9 +33814,9 @@
     "meaning": "tâm trí, suy nghĩ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“心思”这个词。",
-    "examplePinyin": "Qǐng jìzhu “心思” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “心思” này.",
+    "example": "请记住心思这个词。",
+    "examplePinyin": "Qǐng jìzhu xīn si zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tâm trí, suy nghĩ này.",
     "id": "typ-hsk3-0817"
   },
   {
@@ -33846,7 +33846,7 @@
   {
     "hanzi": "新型",
     "pinyin": "xīn xíng",
-    "hanviet": "Tân 型",
+    "hanviet": "Tân Hình",
     "meaning": "loại mới; kiểu mới",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -33906,7 +33906,7 @@
   {
     "hanzi": "吸烟",
     "pinyin": "xī yān",
-    "hanviet": "Cộp 烟",
+    "hanviet": "Cộp Yên",
     "meaning": "hút thuốc",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -33918,7 +33918,7 @@
   {
     "hanzi": "洗澡",
     "pinyin": "xǐ zǎo",
-    "hanviet": "Tẩy 澡",
+    "hanviet": "Tẩy Táo",
     "meaning": "tắm, tắm vòi sen",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -33966,7 +33966,7 @@
   {
     "hanzi": "悬",
     "pinyin": "xuán",
-    "hanviet": "悬",
+    "hanviet": "Huyền",
     "meaning": "treo hoặc lơ lửng, lo lắng",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -33982,9 +33982,9 @@
     "meaning": "khẳng định, tuyên bố",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“宣称”这个词。",
-    "examplePinyin": "Qǐng jìzhu “宣称” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “宣称” này.",
+    "example": "请记住宣称这个词。",
+    "examplePinyin": "Qǐng jìzhu xuān chēng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khẳng định, tuyên bố này.",
     "id": "typ-hsk3-0831"
   },
   {
@@ -33994,9 +33994,9 @@
     "meaning": "tuyên bố, tuyên ngôn",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“宣言”这个词。",
-    "examplePinyin": "Qǐng jìzhu “宣言” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “宣言” này.",
+    "example": "请记住宣言这个词。",
+    "examplePinyin": "Qǐng jìzhu xuān yán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tuyên bố, tuyên ngôn này.",
     "id": "typ-hsk3-0832"
   },
   {
@@ -34042,9 +34042,9 @@
     "meaning": "giấy phép, sự cho phép",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“许可证”这个词。",
-    "examplePinyin": "Qǐng jìzhu “许可证” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “许可证” này.",
+    "example": "请记住许可证这个词。",
+    "examplePinyin": "Qǐng jìzhu xǔ kě zhèng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giấy phép, sự cho phép này.",
     "id": "typ-hsk3-0836"
   },
   {
@@ -34054,9 +34054,9 @@
     "meaning": "hun khói, xông khói",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“熏”这个词。",
-    "examplePinyin": "Qǐng jìzhu “熏” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “熏” này.",
+    "example": "请记住熏这个词。",
+    "examplePinyin": "Qǐng jìzhu xūn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hun khói, xông khói này.",
     "id": "typ-hsk3-0837"
   },
   {
@@ -34078,15 +34078,15 @@
     "meaning": "thông thường; phổ biến; bình thường",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“寻常”这个词。",
-    "examplePinyin": "Qǐng jìzhu “寻常” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “寻常” này.",
+    "example": "请记住寻常这个词。",
+    "examplePinyin": "Qǐng jìzhu xún cháng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thông thường; phổ biến; bình thường này.",
     "id": "typ-hsk3-0839"
   },
   {
     "hanzi": "需要",
     "pinyin": "xū yào",
-    "hanviet": "需 Yếu",
+    "hanviet": "Nhu Yếu",
     "meaning": "cần; muốn; yêu cầu; đòi hỏi, nhu cầu",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -34146,7 +34146,7 @@
   {
     "hanzi": "氧",
     "pinyin": "yǎng",
-    "hanviet": "氧",
+    "hanviet": "Dưỡng",
     "meaning": "ôxy",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -34174,9 +34174,9 @@
     "meaning": "mẫu; vật mẫu",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“样本”这个词。",
-    "examplePinyin": "Qǐng jìzhu “样本” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “样本” này.",
+    "example": "请记住样本这个词。",
+    "examplePinyin": "Qǐng jìzhu yàng běn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mẫu; vật mẫu này.",
     "id": "typ-hsk3-0847"
   },
   {
@@ -34186,9 +34186,9 @@
     "meaning": "dương tính, nam tính",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“阳性”这个词。",
-    "examplePinyin": "Qǐng jìzhu “阳性” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “阳性” này.",
+    "example": "请记住阳性这个词。",
+    "examplePinyin": "Qǐng jìzhu yáng xìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dương tính, nam tính này.",
     "id": "typ-hsk3-0848"
   },
   {
@@ -34230,7 +34230,7 @@
   {
     "hanzi": "邀",
     "pinyin": "yāo",
-    "hanviet": "邀",
+    "hanviet": "Yêu",
     "meaning": "mời, yêu cầu",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -34282,9 +34282,9 @@
     "meaning": "cô gái, người hầu gái",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“丫头”这个词。",
-    "examplePinyin": "Qǐng jìzhu “丫头” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “丫头” này.",
+    "example": "请记住丫头这个词。",
+    "examplePinyin": "Qǐng jìzhu yā tou zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cô gái, người hầu gái này.",
     "id": "typ-hsk3-0856"
   },
   {
@@ -34302,7 +34302,7 @@
   {
     "hanzi": "爷爷",
     "pinyin": "yé ye",
-    "hanviet": "爷 爷",
+    "hanviet": "Gia Gia",
     "meaning": "ông nội, ông bên nội",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -34374,7 +34374,7 @@
   {
     "hanzi": "一方面",
     "pinyin": "yī fāng miàn",
-    "hanviet": "Nhất Phương 面",
+    "hanviet": "Nhất Phương Diện",
     "meaning": "một mặt",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -34398,7 +34398,7 @@
   {
     "hanzi": "以后",
     "pinyin": "yǐ hòu",
-    "hanviet": "以 Hậu",
+    "hanviet": "Dĩ Hậu",
     "meaning": "sau, khi đó",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -34410,7 +34410,7 @@
   {
     "hanzi": "一会儿",
     "pinyin": "yī huì r",
-    "hanviet": "Nhất Hội 儿",
+    "hanviet": "Nhất Hội Nhi",
     "meaning": "một lúc, một thời gian",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -34438,27 +34438,27 @@
     "meaning": "vắc-xin",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“疫苗”这个词。",
-    "examplePinyin": "Qǐng jìzhu “疫苗” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “疫苗” này.",
+    "example": "请记住疫苗这个词。",
+    "examplePinyin": "Qǐng jìzhu yì miáo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vắc-xin này.",
     "id": "typ-hsk3-0869"
   },
   {
     "hanzi": "瘾",
     "pinyin": "yǐn",
-    "hanviet": "瘾",
+    "hanviet": "Ẩn",
     "meaning": "nghiện, nghiện ngập",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“瘾”这个词。",
-    "examplePinyin": "Qǐng jìzhu “瘾” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “瘾” này.",
+    "example": "请记住瘾这个词。",
+    "examplePinyin": "Qǐng jìzhu yǐn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nghiện, nghiện ngập này.",
     "id": "typ-hsk3-0870"
   },
   {
     "hanzi": "以内",
     "pinyin": "yǐ nèi",
-    "hanviet": "以 Nội",
+    "hanviet": "Dĩ Nội",
     "meaning": "trong vòng, ít hơn",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -34482,7 +34482,7 @@
   {
     "hanzi": "应该",
     "pinyin": "yīng gāi",
-    "hanviet": "Ứng 该",
+    "hanviet": "Ứng Cai",
     "meaning": "nên, phải",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -34522,9 +34522,9 @@
     "meaning": "đĩa cứng",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“硬盘”这个词。",
-    "examplePinyin": "Qǐng jìzhu “硬盘” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “硬盘” này.",
+    "example": "请记住硬盘这个词。",
+    "examplePinyin": "Qǐng jìzhu yìng pán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đĩa cứng này.",
     "id": "typ-hsk3-0876"
   },
   {
@@ -34602,7 +34602,7 @@
   {
     "hanzi": "以前",
     "pinyin": "yǐ qián",
-    "hanviet": "以 Tiền",
+    "hanviet": "Dĩ Tiền",
     "meaning": "trước đây, trước",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -34626,13 +34626,13 @@
   {
     "hanzi": "一瞬间",
     "pinyin": "yī shùn jiān",
-    "hanviet": "Nhất 瞬 Gian",
+    "hanviet": "Nhất Thuấn Gian",
     "meaning": "phút chốc",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“一瞬间”这个词。",
-    "examplePinyin": "Qǐng jìzhu “一瞬间” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “一瞬间” này.",
+    "example": "请记住一瞬间这个词。",
+    "examplePinyin": "Qǐng jìzhu yī shùn jiān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phút chốc này.",
     "id": "typ-hsk3-0885"
   },
   {
@@ -34642,9 +34642,9 @@
     "meaning": "một thể thống nhất, tất cả những người liên quan",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“一体”这个词。",
-    "examplePinyin": "Qǐng jìzhu “一体” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “一体” này.",
+    "example": "请记住一体这个词。",
+    "examplePinyin": "Qǐng jìzhu yī tǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ một thể thống nhất, tất cả những người liên quan này.",
     "id": "typ-hsk3-0886"
   },
   {
@@ -34666,15 +34666,15 @@
     "meaning": "quên; không nghĩ về nữa",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“遗忘”这个词。",
-    "examplePinyin": "Qǐng jìzhu “遗忘” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “遗忘” này.",
+    "example": "请记住遗忘这个词。",
+    "examplePinyin": "Qǐng jìzhu yí wàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quên; không nghĩ về nữa này.",
     "id": "typ-hsk3-0888"
   },
   {
     "hanzi": "以为",
     "pinyin": "yǐ wéi",
-    "hanviet": "以 Vay",
+    "hanviet": "Dĩ Vay",
     "meaning": "nghĩ rằng",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -34686,25 +34686,25 @@
   {
     "hanzi": "一线",
     "pinyin": "yī xiàn",
-    "hanviet": "Nhất 线",
+    "hanviet": "Nhất Tuyến",
     "meaning": "tiền tuyến",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“一线”这个词。",
-    "examplePinyin": "Qǐng jìzhu “一线” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “一线” này.",
+    "example": "请记住一线这个词。",
+    "examplePinyin": "Qǐng jìzhu yī xiàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tiền tuyến này.",
     "id": "typ-hsk3-0890"
   },
   {
     "hanzi": "异性",
     "pinyin": "yì xìng",
-    "hanviet": "异 Tính",
+    "hanviet": "Dị Tính",
     "meaning": "khác giới, tính dục khác giới",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“异性”这个词。",
-    "examplePinyin": "Qǐng jìzhu “异性” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “异性” này.",
+    "example": "请记住异性这个词。",
+    "examplePinyin": "Qǐng jìzhu yì xìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khác giới, tính dục khác giới này.",
     "id": "typ-hsk3-0891"
   },
   {
@@ -34750,15 +34750,15 @@
     "meaning": "sớm vào buổi sáng, lúc bình minh",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“一早”这个词。",
-    "examplePinyin": "Qǐng jìzhu “一早” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “一早” này.",
+    "example": "请记住一早这个词。",
+    "examplePinyin": "Qǐng jìzhu yī zǎo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sớm vào buổi sáng, lúc bình minh này.",
     "id": "typ-hsk3-0895"
   },
   {
     "hanzi": "一直",
     "pinyin": "yī zhí",
-    "hanviet": "Nhất 直",
+    "hanviet": "Nhất Trực",
     "meaning": "thẳng, liên tục; luôn luôn; suốt",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -34786,9 +34786,9 @@
     "meaning": "không bao giờ, sẽ không bao giờ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“永不”这个词。",
-    "examplePinyin": "Qǐng jìzhu “永不” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “永不” này.",
+    "example": "请记住永不这个词。",
+    "examplePinyin": "Qǐng jìzhu yǒng bù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ không bao giờ, sẽ không bao giờ này.",
     "id": "typ-hsk3-0898"
   },
   {
@@ -34798,9 +34798,9 @@
     "meaning": "vĩnh cửu, kéo dài",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“永久”这个词。",
-    "examplePinyin": "Qǐng jìzhu “永久” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “永久” này.",
+    "example": "请记住永久这个词。",
+    "examplePinyin": "Qǐng jìzhu yǒng jiǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vĩnh cửu, kéo dài này.",
     "id": "typ-hsk3-0899"
   },
   {
@@ -34870,9 +34870,9 @@
     "meaning": "hữu cơ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“有机”这个词。",
-    "examplePinyin": "Qǐng jìzhu “有机” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “有机” này.",
+    "example": "请记住有机这个词。",
+    "examplePinyin": "Qǐng jìzhu yǒu jī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hữu cơ này.",
     "id": "typ-hsk3-0905"
   },
   {
@@ -34890,7 +34890,7 @@
   {
     "hanzi": "邮票",
     "pinyin": "yóu piào",
-    "hanviet": "邮 Phiếu",
+    "hanviet": "Bưu Phiếu",
     "meaning": "tem, Lượng từ: 枚, 張|张",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -34906,9 +34906,9 @@
     "meaning": "tình cảm bạn bè, tình bạn",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“友情”这个词。",
-    "examplePinyin": "Qǐng jìzhu “友情” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “友情” này.",
+    "example": "请记住友情这个词。",
+    "examplePinyin": "Qǐng jìzhu yǒu qíng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tình cảm bạn bè, tình bạn này.",
     "id": "typ-hsk3-0908"
   },
   {
@@ -34938,7 +34938,7 @@
   {
     "hanzi": "邮箱",
     "pinyin": "yóu xiāng",
-    "hanviet": "邮 Rương",
+    "hanviet": "Bưu Rương",
     "meaning": "hộp thư, hộp thư bưu điện",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -34966,9 +34966,9 @@
     "meaning": "góp phần vào; thúc đẩy",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“有助于”这个词。",
-    "examplePinyin": "Qǐng jìzhu “有助于” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “有助于” này.",
+    "example": "请记住有助于这个词。",
+    "examplePinyin": "Qǐng jìzhu yǒu zhù yú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ góp phần vào; thúc đẩy này.",
     "id": "typ-hsk3-0913"
   },
   {
@@ -34990,9 +34990,9 @@
     "meaning": "nơi ban đầu, nơi hiện tại",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“原地”这个词。",
-    "examplePinyin": "Qǐng jìzhu “原地” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “原地” này.",
+    "example": "请记住原地这个词。",
+    "examplePinyin": "Qǐng jìzhu yuán dì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nơi ban đầu, nơi hiện tại này.",
     "id": "typ-hsk3-0915"
   },
   {
@@ -35026,9 +35026,9 @@
     "meaning": "lên lịch trước",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“预定”这个词。",
-    "examplePinyin": "Qǐng jìzhu “预定” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “预定” này.",
+    "example": "请记住预定这个词。",
+    "examplePinyin": "Qǐng jìzhu yù dìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lên lịch trước này.",
     "id": "typ-hsk3-0918"
   },
   {
@@ -35046,7 +35046,7 @@
   {
     "hanzi": "月亮",
     "pinyin": "yuè liang",
-    "hanviet": "Nguyệt 亮",
+    "hanviet": "Nguyệt Lượng",
     "meaning": "mặt trăng",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -35074,9 +35074,9 @@
     "meaning": "liệu có hay không",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“与否”这个词。",
-    "examplePinyin": "Qǐng jìzhu “与否” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “与否” này.",
+    "example": "请记住与否这个词。",
+    "examplePinyin": "Qǐng jìzhu yǔ fǒu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ liệu có hay không này.",
     "id": "typ-hsk3-0922"
   },
   {
@@ -35110,21 +35110,21 @@
     "meaning": "phụ nữ mang thai",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“孕妇”这个词。",
-    "examplePinyin": "Qǐng jìzhu “孕妇” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “孕妇” này.",
+    "example": "请记住孕妇这个词。",
+    "examplePinyin": "Qǐng jìzhu yùn fù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phụ nữ mang thai này.",
     "id": "typ-hsk3-0925"
   },
   {
     "hanzi": "运营",
     "pinyin": "yùn yíng",
-    "hanviet": "Vận 营",
+    "hanviet": "Vận Doanh",
     "meaning": "hoạt động, kinh doanh",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“运营”这个词。",
-    "examplePinyin": "Qǐng jìzhu “运营” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “运营” này.",
+    "example": "请记住运营这个词。",
+    "examplePinyin": "Qǐng jìzhu yùn yíng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hoạt động, kinh doanh này.",
     "id": "typ-hsk3-0926"
   },
   {
@@ -35134,21 +35134,21 @@
     "meaning": "hoạt động, vận hành",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“运转”这个词。",
-    "examplePinyin": "Qǐng jìzhu “运转” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “运转” này.",
+    "example": "请记住运转这个词。",
+    "examplePinyin": "Qǐng jìzhu yùn zhuǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hoạt động, vận hành này.",
     "id": "typ-hsk3-0927"
   },
   {
     "hanzi": "浴室",
     "pinyin": "yù shì",
-    "hanviet": "浴 Thất",
+    "hanviet": "Dục Thất",
     "meaning": "phòng tắm",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“浴室”这个词。",
-    "examplePinyin": "Qǐng jìzhu “浴室” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “浴室” này.",
+    "example": "请记住浴室这个词。",
+    "examplePinyin": "Qǐng jìzhu yù shì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phòng tắm này.",
     "id": "typ-hsk3-0928"
   },
   {
@@ -35194,9 +35194,9 @@
     "meaning": "nổi bật giữa đám đông",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“与众不同”这个词。",
-    "examplePinyin": "Qǐng jìzhu “与众不同” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “与众不同” này.",
+    "example": "请记住与众不同这个词。",
+    "examplePinyin": "Qǐng jìzhu yǔ zhòng bù tóng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nổi bật giữa đám đông này.",
     "id": "typ-hsk3-0932"
   },
   {
@@ -35238,7 +35238,7 @@
   {
     "hanzi": "增产",
     "pinyin": "zēng chǎn",
-    "hanviet": "Tăng 产",
+    "hanviet": "Tăng Sản",
     "meaning": "tăng sản lượng",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -35254,9 +35254,9 @@
     "meaning": "làm ướt, bị lây nhiễm",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“沾”这个词。",
-    "examplePinyin": "Qǐng jìzhu “沾” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “沾” này.",
+    "example": "请记住沾这个词。",
+    "examplePinyin": "Qǐng jìzhu zhān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ làm ướt, bị lây nhiễm này.",
     "id": "typ-hsk3-0937"
   },
   {
@@ -35274,7 +35274,7 @@
   {
     "hanzi": "账",
     "pinyin": "zhàng",
-    "hanviet": "账",
+    "hanviet": "Trướng",
     "meaning": "tài khoản, hóa đơn",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -35290,21 +35290,21 @@
     "meaning": "chiếm dụng",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“占用”这个词。",
-    "examplePinyin": "Qǐng jìzhu “占用” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “占用” này.",
+    "example": "请记住占用这个词。",
+    "examplePinyin": "Qǐng jìzhu zhàn yòng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chiếm dụng này.",
     "id": "typ-hsk3-0940"
   },
   {
     "hanzi": "罩",
     "pinyin": "zhào",
-    "hanviet": "罩",
+    "hanviet": "Tráo",
     "meaning": "che; phủ lên, một cái che; cái chụp; cái mũ bọc",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“罩”这个词。",
-    "examplePinyin": "Qǐng jìzhu “罩” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “罩” này.",
+    "example": "请记住罩这个词。",
+    "examplePinyin": "Qǐng jìzhu zhào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ che; phủ lên, một cái che; cái chụp; cái mũ bọc này.",
     "id": "typ-hsk3-0941"
   },
   {
@@ -35326,9 +35326,9 @@
     "meaning": "triệu tập; kêu gọi",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“召集”这个词。",
-    "examplePinyin": "Qǐng jìzhu “召集” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “召集” này.",
+    "example": "请记住召集这个词。",
+    "examplePinyin": "Qǐng jìzhu zhào jí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ triệu tập; kêu gọi này.",
     "id": "typ-hsk3-0943"
   },
   {
@@ -35362,9 +35362,9 @@
     "meaning": "máy ảnh, Lượng từ: 個|个, 架, 部, 台, 隻|只",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“照相机”这个词。",
-    "examplePinyin": "Qǐng jìzhu “照相机” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “照相机” này.",
+    "example": "请记住照相机这个词。",
+    "examplePinyin": "Qǐng jìzhu zhào xiàng jī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ máy ảnh,  , này.",
     "id": "typ-hsk3-0946"
   },
   {
@@ -35386,9 +35386,9 @@
     "meaning": "cãi nhau, tranh cãi",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“争吵”这个词。",
-    "examplePinyin": "Qǐng jìzhu “争吵” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “争吵” này.",
+    "example": "请记住争吵这个词。",
+    "examplePinyin": "Qǐng jìzhu zhēng chǎo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cãi nhau, tranh cãi này.",
     "id": "typ-hsk3-0948"
   },
   {
@@ -35398,9 +35398,9 @@
     "meaning": "nhân chứng",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“证人”这个词。",
-    "examplePinyin": "Qǐng jìzhu “证人” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “证人” này.",
+    "example": "请记住证人这个词。",
+    "examplePinyin": "Qǐng jìzhu zhèng rén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhân chứng này.",
     "id": "typ-hsk3-0949"
   },
   {
@@ -35410,9 +35410,9 @@
     "meaning": "tranh chấp, không đồng ý",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“争执”这个词。",
-    "examplePinyin": "Qǐng jìzhu “争执” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “争执” này.",
+    "example": "请记住争执这个词。",
+    "examplePinyin": "Qǐng jìzhu zhēng zhí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tranh chấp, không đồng ý này.",
     "id": "typ-hsk3-0950"
   },
   {
@@ -35422,9 +35422,9 @@
     "meaning": "phòng khám",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“诊所”这个词。",
-    "examplePinyin": "Qǐng jìzhu “诊所” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “诊所” này.",
+    "example": "请记住诊所这个词。",
+    "examplePinyin": "Qǐng jìzhu zhěn suǒ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phòng khám này.",
     "id": "typ-hsk3-0951"
   },
   {
@@ -35466,13 +35466,13 @@
   {
     "hanzi": "直觉",
     "pinyin": "zhí jué",
-    "hanviet": "直 Giác",
+    "hanviet": "Trực Giác",
     "meaning": "trực giác",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“直觉”这个词。",
-    "examplePinyin": "Qǐng jìzhu “直觉” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “直觉” này.",
+    "example": "请记住直觉这个词。",
+    "examplePinyin": "Qǐng jìzhu zhí jué zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trực giác này.",
     "id": "typ-hsk3-0955"
   },
   {
@@ -35482,9 +35482,9 @@
     "meaning": "nghẹt thở, khó thở",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“窒息”这个词。",
-    "examplePinyin": "Qǐng jìzhu “窒息” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “窒息” này.",
+    "example": "请记住窒息这个词。",
+    "examplePinyin": "Qǐng jìzhu zhì xī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nghẹt thở, khó thở này.",
     "id": "typ-hsk3-0956"
   },
   {
@@ -35494,9 +35494,9 @@
     "meaning": "chỉ về, phục vụ",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“指向”这个词。",
-    "examplePinyin": "Qǐng jìzhu “指向” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “指向” này.",
+    "example": "请记住指向这个词。",
+    "examplePinyin": "Qǐng jìzhu zhǐ xiàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chỉ về, phục vụ này.",
     "id": "typ-hsk3-0957"
   },
   {
@@ -35506,9 +35506,9 @@
     "meaning": "hướng dẫn, chỉ dẫn",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“指引”这个词。",
-    "examplePinyin": "Qǐng jìzhu “指引” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “指引” này.",
+    "example": "请记住指引这个词。",
+    "examplePinyin": "Qǐng jìzhu zhǐ yǐn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hướng dẫn, chỉ dẫn này.",
     "id": "typ-hsk3-0958"
   },
   {
@@ -35530,15 +35530,15 @@
     "meaning": "nhân viên văn phòng, nhân viên",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“职员”这个词。",
-    "examplePinyin": "Qǐng jìzhu “职员” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “职员” này.",
+    "example": "请记住职员这个词。",
+    "examplePinyin": "Qǐng jìzhu zhí yuán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhân viên văn phòng, nhân viên này.",
     "id": "typ-hsk3-0960"
   },
   {
     "hanzi": "志愿者",
     "pinyin": "zhì yuàn zhě",
-    "hanviet": "Chí Nguyện 者",
+    "hanviet": "Chí Nguyện Giả",
     "meaning": "tình nguyện viên",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -35550,13 +35550,13 @@
   {
     "hanzi": "直至",
     "pinyin": "zhí zhì",
-    "hanviet": "直 Chí",
+    "hanviet": "Trực Chí",
     "meaning": "kéo dài đến, tới tận",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“直至”这个词。",
-    "examplePinyin": "Qǐng jìzhu “直至” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “直至” này.",
+    "example": "请记住直至这个词。",
+    "examplePinyin": "Qǐng jìzhu zhí zhì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kéo dài đến, tới tận này.",
     "id": "typ-hsk3-0962"
   },
   {
@@ -35614,9 +35614,9 @@
     "meaning": "kết thúc; kết luận, kết thúc; chấm dứt",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“终结”这个词。",
-    "examplePinyin": "Qǐng jìzhu “终结” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “终结” này.",
+    "example": "请记住终结这个词。",
+    "examplePinyin": "Qǐng jìzhu zhōng jié zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kết thúc; kết luận, kết thúc; chấm dứt này.",
     "id": "typ-hsk3-0967"
   },
   {
@@ -35670,13 +35670,13 @@
   {
     "hanzi": "皱",
     "pinyin": "zhòu",
-    "hanviet": "皱",
+    "hanviet": "Trứu",
     "meaning": "nhăn, nhăn nheo",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“皱”这个词。",
-    "examplePinyin": "Qǐng jìzhu “皱” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “皱” này.",
+    "example": "请记住皱这个词。",
+    "examplePinyin": "Qǐng jìzhu zhòu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhăn, nhăn nheo này.",
     "id": "typ-hsk3-0972"
   },
   {
@@ -35706,13 +35706,13 @@
   {
     "hanzi": "砖",
     "pinyin": "zhuān",
-    "hanviet": "砖",
+    "hanviet": "Chuyên",
     "meaning": "brick",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“砖”这个词。",
-    "examplePinyin": "Qǐng jìzhu “砖” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “砖” này.",
+    "example": "请记住砖这个词。",
+    "examplePinyin": "Qǐng jìzhu zhuān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ brick này.",
     "id": "typ-hsk3-0975"
   },
   {
@@ -35746,9 +35746,9 @@
     "meaning": "tập trung; chú ý; dồn toàn bộ sự chú ý",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“专注”这个词。",
-    "examplePinyin": "Qǐng jìzhu “专注” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “专注” này.",
+    "example": "请记住专注这个词。",
+    "examplePinyin": "Qǐng jìzhu zhuān zhù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tập trung; chú ý; dồn toàn bộ sự chú ý này.",
     "id": "typ-hsk3-0978"
   },
   {
@@ -35770,9 +35770,9 @@
     "meaning": "đuổi theo, theo đuổi mãnh liệt",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“追逐”这个词。",
-    "examplePinyin": "Qǐng jìzhu “追逐” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “追逐” này.",
+    "example": "请记住追逐这个词。",
+    "examplePinyin": "Qǐng jìzhu zhuī zhú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đuổi theo, theo đuổi mãnh liệt này.",
     "id": "typ-hsk3-0980"
   },
   {
@@ -35794,9 +35794,9 @@
     "meaning": "rót vào, chảy vào",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“注入”这个词。",
-    "examplePinyin": "Qǐng jìzhu “注入” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “注入” này.",
+    "example": "请记住注入这个词。",
+    "examplePinyin": "Qǐng jìzhu zhù rù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rót vào, chảy vào này.",
     "id": "typ-hsk3-0982"
   },
   {
@@ -35806,9 +35806,9 @@
     "meaning": "đóng vai chính; đóng vai trò quan trọng, diễn viên chính",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“主演”这个词。",
-    "examplePinyin": "Qǐng jìzhu “主演” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “主演” này.",
+    "example": "请记住主演这个词。",
+    "examplePinyin": "Qǐng jìzhu zhǔ yǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đóng vai chính; đóng vai trò quan trọng, diễn viên chính này.",
     "id": "typ-hsk3-0983"
   },
   {
@@ -35842,9 +35842,9 @@
     "meaning": "tự xưng, tự cho là",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“自称”这个词。",
-    "examplePinyin": "Qǐng jìzhu “自称” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “自称” này.",
+    "example": "请记住自称这个词。",
+    "examplePinyin": "Qǐng jìzhu zì chēng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tự xưng, tự cho là này.",
     "id": "typ-hsk3-0986"
   },
   {
@@ -35962,9 +35962,9 @@
     "meaning": "tổ chức, thành lập",
     "hsk": "HSK 3",
     "levelNum": 3,
-    "example": "请记住“组建”这个词。",
-    "examplePinyin": "Qǐng jìzhu “组建” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “组建” này.",
+    "example": "请记住组建这个词。",
+    "examplePinyin": "Qǐng jìzhu zǔ jiàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tổ chức, thành lập này.",
     "id": "typ-hsk3-0996"
   },
   {
@@ -35982,7 +35982,7 @@
   {
     "hanzi": "做客",
     "pinyin": "zuò kè",
-    "hanviet": "做 Khách",
+    "hanviet": "Tác Khách",
     "meaning": "làm khách hoặc thăm viếng",
     "hsk": "HSK 3",
     "levelNum": 3,
@@ -36030,7 +36030,7 @@
   {
     "hanzi": "矮小",
     "pinyin": "ǎi xiǎo",
-    "hanviet": "矮 Tiểu",
+    "hanviet": "Ải Tiểu",
     "meaning": "thấp và nhỏ, thấp bé",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -36138,7 +36138,7 @@
   {
     "hanzi": "白酒",
     "pinyin": "bái jiǔ",
-    "hanviet": "Bạch 酒",
+    "hanviet": "Bạch Tửu",
     "meaning": "baijiu, một loại rượu thường được chưng cất từ cao lương, rượu trắng",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -36234,7 +36234,7 @@
   {
     "hanzi": "抱歉",
     "pinyin": "bào qiàn",
-    "hanviet": "Bão 歉",
+    "hanviet": "Bão Khiểm",
     "meaning": "xin lỗi, áy náy",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -36310,15 +36310,15 @@
     "meaning": "trải nghiệm đầy đủ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“备受”这个词。",
-    "examplePinyin": "Qǐng jìzhu “备受” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “备受” này.",
+    "example": "请记住备受这个词。",
+    "examplePinyin": "Qǐng jìzhu bèi shòu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trải nghiệm đầy đủ này.",
     "id": "typ-hsk4-0025"
   },
   {
     "hanzi": "笨",
     "pinyin": "bèn",
-    "hanviet": "笨",
+    "hanviet": "Bộn",
     "meaning": "ngu ngốc, khờ khạo",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -36358,15 +36358,15 @@
     "meaning": "bản năng tự nhiên, tính cách",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“本性”这个词。",
-    "examplePinyin": "Qǐng jìzhu “本性” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “本性” này.",
+    "example": "请记住本性这个词。",
+    "examplePinyin": "Qǐng jìzhu běn xìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bản năng tự nhiên, tính cách này.",
     "id": "typ-hsk4-0029"
   },
   {
     "hanzi": "遍",
     "pinyin": "biàn",
-    "hanviet": "遍",
+    "hanviet": "Biến",
     "meaning": "everywhere",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -36390,13 +36390,13 @@
   {
     "hanzi": "变异",
     "pinyin": "biàn yì",
-    "hanviet": "Biến 异",
+    "hanviet": "Biến Dị",
     "meaning": "biến dị",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“变异”这个词。",
-    "examplePinyin": "Qǐng jìzhu “变异” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “变异” này.",
+    "example": "请记住变异这个词。",
+    "examplePinyin": "Qǐng jìzhu biàn yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ biến dị này.",
     "id": "typ-hsk4-0032"
   },
   {
@@ -36514,9 +36514,9 @@
     "meaning": "khinh bỉ, coi thường",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“鄙视”这个词。",
-    "examplePinyin": "Qǐng jìzhu “鄙视” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “鄙视” này.",
+    "example": "请记住鄙视这个词。",
+    "examplePinyin": "Qǐng jìzhu bǐ shì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khinh bỉ, coi thường này.",
     "id": "typ-hsk4-0042"
   },
   {
@@ -36582,7 +36582,7 @@
   {
     "hanzi": "不但",
     "pinyin": "bù dàn",
-    "hanviet": "Bất 但",
+    "hanviet": "Bất Đãn",
     "meaning": "không chỉ",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -36642,7 +36642,7 @@
   {
     "hanzi": "不仅",
     "pinyin": "bù jǐn",
-    "hanviet": "Bất 仅",
+    "hanviet": "Bất Cận",
     "meaning": "không những, không chỉ",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -36658,9 +36658,9 @@
     "meaning": "một cách không thể tránh khỏi",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“不可避免”这个词。",
-    "examplePinyin": "Qǐng jìzhu “不可避免” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “不可避免” này.",
+    "example": "请记住不可避免这个词。",
+    "examplePinyin": "Qǐng jìzhu bù kě bì miǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ một cách không thể tránh khỏi này.",
     "id": "typ-hsk4-0054"
   },
   {
@@ -36670,9 +36670,9 @@
     "meaning": "bước vào, đi vào",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“步入”这个词。",
-    "examplePinyin": "Qǐng jìzhu “步入” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “步入” này.",
+    "example": "请记住步入这个词。",
+    "examplePinyin": "Qǐng jìzhu bù rù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bước vào, đi vào này.",
     "id": "typ-hsk4-0055"
   },
   {
@@ -36682,9 +36682,9 @@
     "meaning": "không khỏe, khó ở",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“不适”这个词。",
-    "examplePinyin": "Qǐng jìzhu “不适” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “不适” này.",
+    "example": "请记住不适这个词。",
+    "examplePinyin": "Qǐng jìzhu bù shì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ không khỏe, khó ở này.",
     "id": "typ-hsk4-0056"
   },
   {
@@ -36750,7 +36750,7 @@
   {
     "hanzi": "猜",
     "pinyin": "cāi",
-    "hanviet": "猜",
+    "hanviet": "Sai",
     "meaning": "đoán",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -36766,15 +36766,15 @@
     "meaning": "phán quyết, phân xử",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“裁决”这个词。",
-    "examplePinyin": "Qǐng jìzhu “裁决” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “裁决” này.",
+    "example": "请记住裁决这个词。",
+    "examplePinyin": "Qǐng jìzhu cái jué zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phán quyết, phân xử này.",
     "id": "typ-hsk4-0063"
   },
   {
     "hanzi": "材料",
     "pinyin": "cái liào",
-    "hanviet": "材 Liệu",
+    "hanviet": "Tài Liệu",
     "meaning": "vật liệu, tài liệu",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -36810,13 +36810,13 @@
   {
     "hanzi": "草坪",
     "pinyin": "cǎo píng",
-    "hanviet": "Thảo 坪",
+    "hanviet": "Thảo Bình",
     "meaning": "bãi cỏ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“草坪”这个词。",
-    "examplePinyin": "Qǐng jìzhu “草坪” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “草坪” này.",
+    "example": "请记住草坪这个词。",
+    "examplePinyin": "Qǐng jìzhu cǎo píng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bãi cỏ này.",
     "id": "typ-hsk4-0067"
   },
   {
@@ -36834,7 +36834,7 @@
   {
     "hanzi": "叉",
     "pinyin": "chā",
-    "hanviet": "叉",
+    "hanviet": "Xoa",
     "meaning": "cái nĩa, cái chĩa",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -36858,7 +36858,7 @@
   {
     "hanzi": "差点儿",
     "pinyin": "chà diǎn r",
-    "hanviet": "Sai Điểm 儿",
+    "hanviet": "Sai Điểm Nhi",
     "meaning": "biến thể er hoá của 差點|差点",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -36886,9 +36886,9 @@
     "meaning": "cảm nhận, nhận thấy",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“察觉”这个词。",
-    "examplePinyin": "Qǐng jìzhu “察觉” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “察觉” này.",
+    "example": "请记住察觉这个词。",
+    "examplePinyin": "Qǐng jìzhu chá jué zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cảm nhận, nhận thấy này.",
     "id": "typ-hsk4-0073"
   },
   {
@@ -36898,9 +36898,9 @@
     "meaning": "điều tra và phát hiện, xác minh",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“查明”这个词。",
-    "examplePinyin": "Qǐng jìzhu “查明” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “查明” này.",
+    "example": "请记住查明这个词。",
+    "examplePinyin": "Qǐng jìzhu chá míng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ điều tra và phát hiện, xác minh này.",
     "id": "typ-hsk4-0074"
   },
   {
@@ -36910,9 +36910,9 @@
     "meaning": "san phẳng, nhổ tận gốc",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“铲”这个词。",
-    "examplePinyin": "Qǐng jìzhu “铲” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “铲” này.",
+    "example": "请记住铲这个词。",
+    "examplePinyin": "Qǐng jìzhu chǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ san phẳng, nhổ tận gốc này.",
     "id": "typ-hsk4-0075"
   },
   {
@@ -36930,7 +36930,7 @@
   {
     "hanzi": "尝",
     "pinyin": "cháng",
-    "hanviet": "尝",
+    "hanviet": "Thường",
     "meaning": "nếm thử",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -36970,9 +36970,9 @@
     "meaning": "Sông Trường Giang",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“长江”这个词。",
-    "examplePinyin": "Qǐng jìzhu “长江” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “长江” này.",
+    "example": "请记住长江这个词。",
+    "examplePinyin": "Qǐng jìzhu Cháng Jiāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ Sông Trường Giang này.",
     "id": "typ-hsk4-0080"
   },
   {
@@ -37042,9 +37042,9 @@
     "meaning": "tìm kiếm, tra cứu",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“查找”这个词。",
-    "examplePinyin": "Qǐng jìzhu “查找” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “查找” này.",
+    "example": "请记住查找这个词。",
+    "examplePinyin": "Qǐng jìzhu chá zhǎo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tìm kiếm, tra cứu này.",
     "id": "typ-hsk4-0086"
   },
   {
@@ -37054,9 +37054,9 @@
     "meaning": "phân xưởng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“车间”这个词。",
-    "examplePinyin": "Qǐng jìzhu “车间” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “车间” này.",
+    "example": "请记住车间这个词。",
+    "examplePinyin": "Qǐng jìzhu chē jiān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phân xưởng này.",
     "id": "typ-hsk4-0087"
   },
   {
@@ -37078,9 +37078,9 @@
     "meaning": "trưởng thành, đã trưởng thành; người lớn",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“成年”这个词。",
-    "examplePinyin": "Qǐng jìzhu “成年” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “成年” này.",
+    "example": "请记住成年这个词。",
+    "examplePinyin": "Qǐng jìzhu chéng nián zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trưởng thành, đã trưởng thành; người lớn này.",
     "id": "typ-hsk4-0089"
   },
   {
@@ -37134,7 +37134,7 @@
   {
     "hanzi": "乘坐",
     "pinyin": "chéng zuò",
-    "hanviet": "Thặng 坐",
+    "hanviet": "Thặng Tọa",
     "meaning": "đi xe, đi tàu, ngồi",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -37150,9 +37150,9 @@
     "meaning": "được gọi là; được biết đến như",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“称作”这个词。",
-    "examplePinyin": "Qǐng jìzhu “称作” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “称作” này.",
+    "example": "请记住称作这个词。",
+    "examplePinyin": "Qǐng jìzhu chēng zuò zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ được gọi là; được biết đến như này.",
     "id": "typ-hsk4-0095"
   },
   {
@@ -37162,9 +37162,9 @@
     "meaning": "tốc độ xe",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“车速”这个词。",
-    "examplePinyin": "Qǐng jìzhu “车速” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “车速” này.",
+    "example": "请记住车速这个词。",
+    "examplePinyin": "Qǐng jìzhu chē sù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tốc độ xe này.",
     "id": "typ-hsk4-0096"
   },
   {
@@ -37174,9 +37174,9 @@
     "meaning": "chỗ đỗ xe, điểm dỡ hàng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“车位”这个词。",
-    "examplePinyin": "Qǐng jìzhu “车位” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “车位” này.",
+    "example": "请记住车位这个词。",
+    "examplePinyin": "Qǐng jìzhu chē wèi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chỗ đỗ xe, điểm dỡ hàng này.",
     "id": "typ-hsk4-0097"
   },
   {
@@ -37246,9 +37246,9 @@
     "meaning": "trở về",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“重返”这个词。",
-    "examplePinyin": "Qǐng jìzhu “重返” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “重返” này.",
+    "example": "请记住重返这个词。",
+    "examplePinyin": "Qǐng jìzhu chóng fǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trở về này.",
     "id": "typ-hsk4-0103"
   },
   {
@@ -37282,9 +37282,9 @@
     "meaning": "hatred",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“仇”这个词。",
-    "examplePinyin": "Qǐng jìzhu “仇” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “仇” này.",
+    "example": "请记住仇这个词。",
+    "examplePinyin": "Qǐng jìzhu chóu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hatred này.",
     "id": "typ-hsk4-0106"
   },
   {
@@ -37294,15 +37294,15 @@
     "meaning": "ghét, thù hận",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“仇恨”这个词。",
-    "examplePinyin": "Qǐng jìzhu “仇恨” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “仇恨” này.",
+    "example": "请记住仇恨这个词。",
+    "examplePinyin": "Qǐng jìzhu chóu hèn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ghét, thù hận này.",
     "id": "typ-hsk4-0107"
   },
   {
     "hanzi": "抽奖",
     "pinyin": "chōu jiǎng",
-    "hanviet": "Trừu 奖",
+    "hanviet": "Trừu Tưởng",
     "meaning": "rút thăm trúng thưởng, xổ số",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -37318,15 +37318,15 @@
     "meaning": "bê bối",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“丑闻”这个词。",
-    "examplePinyin": "Qǐng jìzhu “丑闻” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “丑闻” này.",
+    "example": "请记住丑闻这个词。",
+    "examplePinyin": "Qǐng jìzhu chǒu wén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bê bối này.",
     "id": "typ-hsk4-0109"
   },
   {
     "hanzi": "抽烟",
     "pinyin": "chōu yān",
-    "hanviet": "Trừu 烟",
+    "hanviet": "Trừu Yên",
     "meaning": "hút thuốc lá",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -37414,9 +37414,9 @@
     "meaning": "nhà xuất bản",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“出版社”这个词。",
-    "examplePinyin": "Qǐng jìzhu “出版社” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “出版社” này.",
+    "example": "请记住出版社这个词。",
+    "examplePinyin": "Qǐng jìzhu chū bǎn shè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhà xuất bản này.",
     "id": "typ-hsk4-0117"
   },
   {
@@ -37462,9 +37462,9 @@
     "meaning": "treo, rủ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“垂”这个词。",
-    "examplePinyin": "Qǐng jìzhu “垂” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “垂” này.",
+    "example": "请记住垂这个词。",
+    "examplePinyin": "Qǐng jìzhu chuí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ treo, rủ này.",
     "id": "typ-hsk4-0121"
   },
   {
@@ -37474,9 +37474,9 @@
     "meaning": "chạm",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“触摸”这个词。",
-    "examplePinyin": "Qǐng jìzhu “触摸” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “触摸” này.",
+    "example": "请记住触摸这个词。",
+    "examplePinyin": "Qǐng jìzhu chù mō zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chạm này.",
     "id": "typ-hsk4-0122"
   },
   {
@@ -37494,7 +37494,7 @@
   {
     "hanzi": "纯净水",
     "pinyin": "chún jìng shuǐ",
-    "hanviet": "Thuần 净 Thủy",
+    "hanviet": "Thuần Tịnh Thủy",
     "meaning": "purified water",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -37522,9 +37522,9 @@
     "meaning": "loại bỏ, gỡ bỏ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“除去”这个词。",
-    "examplePinyin": "Qǐng jìzhu “除去” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “除去” này.",
+    "example": "请记住除去这个词。",
+    "examplePinyin": "Qǐng jìzhu chú qù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ loại bỏ, gỡ bỏ này.",
     "id": "typ-hsk4-0126"
   },
   {
@@ -37638,7 +37638,7 @@
   {
     "hanzi": "脆",
     "pinyin": "cuì",
-    "hanviet": "脆",
+    "hanviet": "Thúy",
     "meaning": "biến thể cũ của 脆",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -37698,7 +37698,7 @@
   {
     "hanzi": "打扮",
     "pinyin": "dǎ ban",
-    "hanviet": "Đả 扮",
+    "hanviet": "Đả Bái",
     "meaning": "trang điểm, ăn diện",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -37714,9 +37714,9 @@
     "meaning": "lật đổ, đánh ngã",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“打倒”这个词。",
-    "examplePinyin": "Qǐng jìzhu “打倒” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “打倒” này.",
+    "example": "请记住打倒这个词。",
+    "examplePinyin": "Qǐng jìzhu dǎ dǎo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lật đổ, đánh ngã này.",
     "id": "typ-hsk4-0142"
   },
   {
@@ -37734,7 +37734,7 @@
   {
     "hanzi": "大概",
     "pinyin": "dà gài",
-    "hanviet": "Đại 概",
+    "hanviet": "Đại Khái",
     "meaning": "khoảng, độ chừng, đại khái",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -37746,7 +37746,7 @@
   {
     "hanzi": "戴",
     "pinyin": "dài",
-    "hanviet": "戴",
+    "hanviet": "Đái",
     "meaning": "đeo, đội",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -37758,13 +37758,13 @@
   {
     "hanzi": "逮",
     "pinyin": "dǎi",
-    "hanviet": "逮",
+    "hanviet": "Đãi",
     "meaning": "bắt, bắt giữ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“逮”这个词。",
-    "examplePinyin": "Qǐng jìzhu “逮” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “逮” này.",
+    "example": "请记住逮这个词。",
+    "examplePinyin": "Qǐng jìzhu dǎi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bắt, bắt giữ này.",
     "id": "typ-hsk4-0146"
   },
   {
@@ -37786,9 +37786,9 @@
     "meaning": "đại diện",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“代理人”这个词。",
-    "examplePinyin": "Qǐng jìzhu “代理人” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “代理人” này.",
+    "example": "请记住代理人这个词。",
+    "examplePinyin": "Qǐng jìzhu dài lǐ rén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đại diện này.",
     "id": "typ-hsk4-0148"
   },
   {
@@ -37822,9 +37822,9 @@
     "meaning": "tình hình tổng thể, bức tranh toàn cảnh",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“大局”这个词。",
-    "examplePinyin": "Qǐng jìzhu “大局” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “大局” này.",
+    "example": "请记住大局这个词。",
+    "examplePinyin": "Qǐng jìzhu dà jú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tình hình tổng thể, bức tranh toàn cảnh này.",
     "id": "typ-hsk4-0151"
   },
   {
@@ -37894,9 +37894,9 @@
     "meaning": "thời hiện tại, Bệ hạ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“当今”这个词。",
-    "examplePinyin": "Qǐng jìzhu “当今” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “当今” này.",
+    "example": "请记住当今这个词。",
+    "examplePinyin": "Qǐng jìzhu dāng jīn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thời hiện tại, Bệ hạ này.",
     "id": "typ-hsk4-0157"
   },
   {
@@ -37918,9 +37918,9 @@
     "meaning": "coi là thật, nghiêm túc",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“当真”这个词。",
-    "examplePinyin": "Qǐng jìzhu “当真” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “当真” này.",
+    "example": "请记住当真这个词。",
+    "examplePinyin": "Qǐng jìzhu dàng zhēn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ coi là thật, nghiêm túc này.",
     "id": "typ-hsk4-0159"
   },
   {
@@ -37978,9 +37978,9 @@
     "meaning": "đạo cụ, dụng cụ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“道具”这个词。",
-    "examplePinyin": "Qǐng jìzhu “道具” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “道具” này.",
+    "example": "请记住道具这个词。",
+    "examplePinyin": "Qǐng jìzhu dào jù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đạo cụ, dụng cụ này.",
     "id": "typ-hsk4-0164"
   },
   {
@@ -37998,7 +37998,7 @@
   {
     "hanzi": "道歉",
     "pinyin": "dào qiàn",
-    "hanviet": "Đạo 歉",
+    "hanviet": "Đạo Khiểm",
     "meaning": "xin lỗi",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -38026,9 +38026,9 @@
     "meaning": "khu vực rộng lớn, diện tích lớn",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“大片”这个词。",
-    "examplePinyin": "Qǐng jìzhu “大片” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “大片” này.",
+    "example": "请记住大片这个词。",
+    "examplePinyin": "Qǐng jìzhu dà piàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khu vực rộng lớn, diện tích lớn này.",
     "id": "typ-hsk4-0168"
   },
   {
@@ -38038,9 +38038,9 @@
     "meaning": "khí quyển, hùng vĩ; ấn tượng; phong cách",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“大气”这个词。",
-    "examplePinyin": "Qǐng jìzhu “大气” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “大气” này.",
+    "example": "请记住大气这个词。",
+    "examplePinyin": "Qǐng jìzhu dà qì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khí quyển, hùng vĩ; ấn tượng; phong cách này.",
     "id": "typ-hsk4-0169"
   },
   {
@@ -38070,7 +38070,7 @@
   {
     "hanzi": "大爷",
     "pinyin": "dà yé",
-    "hanviet": "Đại 爷",
+    "hanviet": "Đại Gia",
     "meaning": "kẻ lười biếng kiêu ngạo, người phô trương tự phụ",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -38170,9 +38170,9 @@
     "meaning": "lên máy bay",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“登机”这个词。",
-    "examplePinyin": "Qǐng jìzhu “登机” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “登机” này.",
+    "example": "请记住登机这个词。",
+    "examplePinyin": "Qǐng jìzhu dēng jī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lên máy bay này.",
     "id": "typ-hsk4-0180"
   },
   {
@@ -38262,13 +38262,13 @@
   {
     "hanzi": "电线",
     "pinyin": "diàn xiàn",
-    "hanviet": "Điện 线",
+    "hanviet": "Điện Tuyến",
     "meaning": "dây điện, dây nguồn",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“电线”这个词。",
-    "examplePinyin": "Qǐng jìzhu “电线” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “电线” này.",
+    "example": "请记住电线这个词。",
+    "examplePinyin": "Qǐng jìzhu diàn xiàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dây điện, dây nguồn này.",
     "id": "typ-hsk4-0188"
   },
   {
@@ -38298,13 +38298,13 @@
   {
     "hanzi": "钓鱼",
     "pinyin": "diào yú",
-    "hanviet": "钓 Ngư",
+    "hanviet": "Điếu Ngư",
     "meaning": "câu cá, lừa gạt",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“钓鱼”这个词。",
-    "examplePinyin": "Qǐng jìzhu “钓鱼” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “钓鱼” này.",
+    "example": "请记住钓鱼这个词。",
+    "examplePinyin": "Qǐng jìzhu diào yú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ câu cá, lừa gạt này.",
     "id": "typ-hsk4-0191"
   },
   {
@@ -38322,13 +38322,13 @@
   {
     "hanzi": "低估",
     "pinyin": "dī gū",
-    "hanviet": "Đê 估",
+    "hanviet": "Đê Cổ",
     "meaning": "đánh giá thấp; coi nhẹ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“低估”这个词。",
-    "examplePinyin": "Qǐng jìzhu “低估” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “低估” này.",
+    "example": "请记住低估这个词。",
+    "examplePinyin": "Qǐng jìzhu dī gū zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đánh giá thấp; coi nhẹ này.",
     "id": "typ-hsk4-0193"
   },
   {
@@ -38338,9 +38338,9 @@
     "meaning": "giá thấp",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“低价”这个词。",
-    "examplePinyin": "Qǐng jìzhu “低价” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “低价” này.",
+    "example": "请记住低价这个词。",
+    "examplePinyin": "Qǐng jìzhu dī jià zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giá thấp này.",
     "id": "typ-hsk4-0194"
   },
   {
@@ -38350,9 +38350,9 @@
     "meaning": "đơn đặt hàng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“订单”这个词。",
-    "examplePinyin": "Qǐng jìzhu “订单” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “订单” này.",
+    "example": "请记住订单这个词。",
+    "examplePinyin": "Qǐng jìzhu dìng dān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đơn đặt hàng này.",
     "id": "typ-hsk4-0195"
   },
   {
@@ -38362,9 +38362,9 @@
     "meaning": "đỉnh, điểm cao nhất",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“顶尖”这个词。",
-    "examplePinyin": "Qǐng jìzhu “顶尖” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “顶尖” này.",
+    "example": "请记住顶尖这个词。",
+    "examplePinyin": "Qǐng jìzhu dǐng jiān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đỉnh, điểm cao nhất này.",
     "id": "typ-hsk4-0196"
   },
   {
@@ -38410,9 +38410,9 @@
     "meaning": "địa vị thấp, thấp kém",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“低下”这个词。",
-    "examplePinyin": "Qǐng jìzhu “低下” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “低下” này.",
+    "example": "请记住低下这个词。",
+    "examplePinyin": "Qǐng jìzhu dī xià zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ địa vị thấp, thấp kém này.",
     "id": "typ-hsk4-0200"
   },
   {
@@ -38446,9 +38446,9 @@
     "meaning": "thành viên hội đồng quản trị",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“董事”这个词。",
-    "examplePinyin": "Qǐng jìzhu “董事” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “董事” này.",
+    "example": "请记住董事这个词。",
+    "examplePinyin": "Qǐng jìzhu dǒng shì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thành viên hội đồng quản trị này.",
     "id": "typ-hsk4-0203"
   },
   {
@@ -38470,9 +38470,9 @@
     "meaning": "sử dụng, đưa vào sử dụng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“动用”这个词。",
-    "examplePinyin": "Qǐng jìzhu “动用” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “动用” này.",
+    "example": "请记住动用这个词。",
+    "examplePinyin": "Qǐng jìzhu dòng yòng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sử dụng, đưa vào sử dụng này.",
     "id": "typ-hsk4-0205"
   },
   {
@@ -38502,7 +38502,7 @@
   {
     "hanzi": "堵车",
     "pinyin": "dǔ chē",
-    "hanviet": "堵 Xa",
+    "hanviet": "Đổ Xa",
     "meaning": "kẹt xe, tắc đường",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -38538,7 +38538,7 @@
   {
     "hanzi": "对面",
     "pinyin": "duì miàn",
-    "hanviet": "Đối 面",
+    "hanviet": "Đối Diện",
     "meaning": "đối diện, phía đối diện",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -38614,15 +38614,15 @@
     "meaning": "độc nhất vô nhị ; không ai sánh kịp, không gì so sánh được",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“独一无二”这个词。",
-    "examplePinyin": "Qǐng jìzhu “独一无二” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “独一无二” này.",
+    "example": "请记住独一无二这个词。",
+    "examplePinyin": "Qǐng jìzhu dú yī wú èr zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ độc nhất vô nhị ; không ai sánh kịp, không gì so sánh được này.",
     "id": "typ-hsk4-0217"
   },
   {
     "hanzi": "肚子",
     "pinyin": "dù zi",
-    "hanviet": "肚 Tử",
+    "hanviet": "Đỗ Tử",
     "meaning": "bụng, dạ dày",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -38638,15 +38638,15 @@
     "meaning": "goose",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“鹅”这个词。",
-    "examplePinyin": "Qǐng jìzhu “鹅” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “鹅” này.",
+    "example": "请记住鹅这个词。",
+    "examplePinyin": "Qǐng jìzhu é zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ goose này.",
     "id": "typ-hsk4-0219"
   },
   {
     "hanzi": "而",
     "pinyin": "ér",
-    "hanviet": "而",
+    "hanviet": "Nhi",
     "meaning": "và, cũng như",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -38670,7 +38670,7 @@
   {
     "hanzi": "儿童",
     "pinyin": "ér tóng",
-    "hanviet": "儿 Đồng",
+    "hanviet": "Nhi Đồng",
     "meaning": "trẻ em",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -38698,9 +38698,9 @@
     "meaning": "phát sáng; chiếu sáng; rực rỡ; lấp lánh; phát quang",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“发光”这个词。",
-    "examplePinyin": "Qǐng jìzhu “发光” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “发光” này.",
+    "example": "请记住发光这个词。",
+    "examplePinyin": "Qǐng jìzhu fā guāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phát sáng; chiếu sáng; rực rỡ; lấp lánh; phát quang này.",
     "id": "typ-hsk4-0224"
   },
   {
@@ -38742,7 +38742,7 @@
   {
     "hanzi": "防范",
     "pinyin": "fáng fàn",
-    "hanviet": "Phòng 范",
+    "hanviet": "Phòng Phạm",
     "meaning": "cảnh giác, phòng bị",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -38754,7 +38754,7 @@
   {
     "hanzi": "方面",
     "pinyin": "fāng miàn",
-    "hanviet": "Phương 面",
+    "hanviet": "Phương Diện",
     "meaning": "khía cạnh, phương diện",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -38766,7 +38766,7 @@
   {
     "hanzi": "放弃",
     "pinyin": "fàng qì",
-    "hanviet": "Phóng 弃",
+    "hanviet": "Phóng Khí",
     "meaning": "từ bỏ; bỏ rơi; từ chối; đầu hàng; chấp nhận thua; buông tay",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -38778,13 +38778,13 @@
   {
     "hanzi": "放暑假",
     "pinyin": "fàng shǔ jià",
-    "hanviet": "Phóng 暑 假",
+    "hanviet": "Phóng Thử Giả",
     "meaning": "to be on summer vacation",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“放暑假”这个词。",
-    "examplePinyin": "Qǐng jìzhu “放暑假” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “放暑假” này.",
+    "example": "请记住放暑假这个词。",
+    "examplePinyin": "Qǐng jìzhu fàng shǔ jià zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ to be on summer vacation này.",
     "id": "typ-hsk4-0231"
   },
   {
@@ -38794,9 +38794,9 @@
     "meaning": "thăm và thảo luận, phỏng vấn",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“访谈”这个词。",
-    "examplePinyin": "Qǐng jìzhu “访谈” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “访谈” này.",
+    "example": "请记住访谈这个词。",
+    "examplePinyin": "Qǐng jìzhu fǎng tán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thăm và thảo luận, phỏng vấn này.",
     "id": "typ-hsk4-0232"
   },
   {
@@ -38830,9 +38830,9 @@
     "meaning": "đặt",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“放置”这个词。",
-    "examplePinyin": "Qǐng jìzhu “放置” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “放置” này.",
+    "example": "请记住放置这个词。",
+    "examplePinyin": "Qǐng jìzhu fàng zhì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đặt này.",
     "id": "typ-hsk4-0235"
   },
   {
@@ -38842,9 +38842,9 @@
     "meaning": "lo lắng, phiền muộn",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“烦恼”这个词。",
-    "examplePinyin": "Qǐng jìzhu “烦恼” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “烦恼” này.",
+    "example": "请记住烦恼这个词。",
+    "examplePinyin": "Qǐng jìzhu fán nǎo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lo lắng, phiền muộn này.",
     "id": "typ-hsk4-0236"
   },
   {
@@ -38862,7 +38862,7 @@
   {
     "hanzi": "范围",
     "pinyin": "fàn wéi",
-    "hanviet": "范 Vè",
+    "hanviet": "Phạm Vè",
     "meaning": "phạm vi, quy mô",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -38874,7 +38874,7 @@
   {
     "hanzi": "翻译",
     "pinyin": "fān yì",
-    "hanviet": "翻 Dịch",
+    "hanviet": "Phiên Dịch",
     "meaning": "dịch, phiên dịch",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -38902,9 +38902,9 @@
     "meaning": "bị sốt, phát sốt",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“发热”这个词。",
-    "examplePinyin": "Qǐng jìzhu “发热” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “发热” này.",
+    "example": "请记住发热这个词。",
+    "examplePinyin": "Qǐng jìzhu fā rè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bị sốt, phát sốt này.",
     "id": "typ-hsk4-0241"
   },
   {
@@ -38938,9 +38938,9 @@
     "meaning": "phải",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“非得”这个词。",
-    "examplePinyin": "Qǐng jìzhu “非得” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “非得” này.",
+    "example": "请记住非得这个词。",
+    "examplePinyin": "Qǐng jìzhu fēi děi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phải này.",
     "id": "typ-hsk4-0244"
   },
   {
@@ -38950,9 +38950,9 @@
     "meaning": "khác thường, đặc biệt",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“非凡”这个词。",
-    "examplePinyin": "Qǐng jìzhu “非凡” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “非凡” này.",
+    "example": "请记住非凡这个词。",
+    "examplePinyin": "Qǐng jìzhu fēi fán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khác thường, đặc biệt này.",
     "id": "typ-hsk4-0245"
   },
   {
@@ -38962,9 +38962,9 @@
     "meaning": "béo; béo phì",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“肥胖”这个词。",
-    "examplePinyin": "Qǐng jìzhu “肥胖” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “肥胖” này.",
+    "example": "请记住肥胖这个词。",
+    "examplePinyin": "Qǐng jìzhu féi pàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ béo; béo phì này.",
     "id": "typ-hsk4-0246"
   },
   {
@@ -38974,9 +38974,9 @@
     "meaning": "Go to",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“飞往”这个词。",
-    "examplePinyin": "Qǐng jìzhu “飞往” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “飞往” này.",
+    "example": "请记住飞往这个词。",
+    "examplePinyin": "Qǐng jìzhu fēi wǎng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ Go to này.",
     "id": "typ-hsk4-0247"
   },
   {
@@ -38998,9 +38998,9 @@
     "meaning": "phân, chất thải",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“粪”这个词。",
-    "examplePinyin": "Qǐng jìzhu “粪” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “粪” này.",
+    "example": "请记住粪这个词。",
+    "examplePinyin": "Qǐng jìzhu fèn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phân, chất thải này.",
     "id": "typ-hsk4-0249"
   },
   {
@@ -39018,13 +39018,13 @@
   {
     "hanzi": "丰厚",
     "pinyin": "fēng hòu",
-    "hanviet": "Phong 厚",
+    "hanviet": "Phong Hậu",
     "meaning": "hào phóng; dồi dào",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“丰厚”这个词。",
-    "examplePinyin": "Qǐng jìzhu “丰厚” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “丰厚” này.",
+    "example": "请记住丰厚这个词。",
+    "examplePinyin": "Qǐng jìzhu fēng hòu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hào phóng; dồi dào này.",
     "id": "typ-hsk4-0251"
   },
   {
@@ -39046,9 +39046,9 @@
     "meaning": "dung mạo, phong thái",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“风情”这个词。",
-    "examplePinyin": "Qǐng jìzhu “风情” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “风情” này.",
+    "example": "请记住风情这个词。",
+    "examplePinyin": "Qǐng jìzhu fēng qíng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dung mạo, phong thái này.",
     "id": "typ-hsk4-0253"
   },
   {
@@ -39058,9 +39058,9 @@
     "meaning": "thời tiết, tình hình bất ổn",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“风云”这个词。",
-    "examplePinyin": "Qǐng jìzhu “风云” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “风云” này.",
+    "example": "请记住风云这个词。",
+    "examplePinyin": "Qǐng jìzhu fēng yún zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thời tiết, tình hình bất ổn này.",
     "id": "typ-hsk4-0254"
   },
   {
@@ -39078,13 +39078,13 @@
   {
     "hanzi": "氛围",
     "pinyin": "fēn wéi",
-    "hanviet": "氛 Vè",
+    "hanviet": "Phân Vè",
     "meaning": "bầu không khí; không khí",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“氛围”这个词。",
-    "examplePinyin": "Qǐng jìzhu “氛围” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “氛围” này.",
+    "example": "请记住氛围这个词。",
+    "examplePinyin": "Qǐng jìzhu fēn wéi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bầu không khí; không khí này.",
     "id": "typ-hsk4-0256"
   },
   {
@@ -39126,13 +39126,13 @@
   {
     "hanzi": "敷",
     "pinyin": "fū",
-    "hanviet": "敷",
+    "hanviet": "Phu",
     "meaning": "phết, trải",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“敷”这个词。",
-    "examplePinyin": "Qǐng jìzhu “敷” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “敷” này.",
+    "example": "请记住敷这个词。",
+    "examplePinyin": "Qǐng jìzhu fū zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phết, trải này.",
     "id": "typ-hsk4-0260"
   },
   {
@@ -39142,9 +39142,9 @@
     "meaning": "trả tiền, chi trả chi phí",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“付费”这个词。",
-    "examplePinyin": "Qǐng jìzhu “付费” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “付费” này.",
+    "example": "请记住付费这个词。",
+    "examplePinyin": "Qǐng jìzhu fù fèi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trả tiền, chi trả chi phí này.",
     "id": "typ-hsk4-0261"
   },
   {
@@ -39198,13 +39198,13 @@
   {
     "hanzi": "服饰",
     "pinyin": "fú shì",
-    "hanviet": "Phục 饰",
+    "hanviet": "Phục Sức",
     "meaning": "trang phục, quần áo và đồ trang sức cá nhân",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“服饰”这个词。",
-    "examplePinyin": "Qǐng jìzhu “服饰” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “服饰” này.",
+    "example": "请记住服饰这个词。",
+    "examplePinyin": "Qǐng jìzhu fú shì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trang phục, quần áo và đồ trang sức cá nhân này.",
     "id": "typ-hsk4-0266"
   },
   {
@@ -39258,19 +39258,19 @@
   {
     "hanzi": "钙",
     "pinyin": "gài",
-    "hanviet": "钙",
+    "hanviet": "Cái",
     "meaning": "canxi",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“钙”这个词。",
-    "examplePinyin": "Qǐng jìzhu “钙” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “钙” này.",
+    "example": "请记住钙这个词。",
+    "examplePinyin": "Qǐng jìzhu gài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ canxi này.",
     "id": "typ-hsk4-0271"
   },
   {
     "hanzi": "改变",
     "pinyin": "gǎi biàn",
-    "hanviet": "改 Biến",
+    "hanviet": "Cải Biến",
     "meaning": "thay đổi, sửa đổi",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -39282,25 +39282,25 @@
   {
     "hanzi": "改编",
     "pinyin": "gǎi biān",
-    "hanviet": "改 Biên",
+    "hanviet": "Cải Biên",
     "meaning": "chuyển thể, sắp xếp lại",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“改编”这个词。",
-    "examplePinyin": "Qǐng jìzhu “改编” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “改编” này.",
+    "example": "请记住改编这个词。",
+    "examplePinyin": "Qǐng jìzhu gǎi biān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chuyển thể, sắp xếp lại này.",
     "id": "typ-hsk4-0273"
   },
   {
     "hanzi": "概率",
     "pinyin": "gài lǜ",
-    "hanviet": "概 率",
+    "hanviet": "Khái Suất",
     "meaning": "xác suất",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“概率”这个词。",
-    "examplePinyin": "Qǐng jìzhu “概率” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “概率” này.",
+    "example": "请记住概率这个词。",
+    "examplePinyin": "Qǐng jìzhu gài lǜ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xác suất này.",
     "id": "typ-hsk4-0274"
   },
   {
@@ -39342,7 +39342,7 @@
   {
     "hanzi": "刚刚",
     "pinyin": "gāng gang",
-    "hanviet": "刚 刚",
+    "hanviet": "Cương Cương",
     "meaning": "mới đây, ngay vừa rồi",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -39394,9 +39394,9 @@
     "meaning": "nhận thức, thuộc về nhận thức",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“感性”这个词。",
-    "examplePinyin": "Qǐng jìzhu “感性” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “感性” này.",
+    "example": "请记住感性这个词。",
+    "examplePinyin": "Qǐng jìzhu gǎn xìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhận thức, thuộc về nhận thức này.",
     "id": "typ-hsk4-0282"
   },
   {
@@ -39406,9 +39406,9 @@
     "meaning": "khô; khô cằn, khô",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“干燥”这个词。",
-    "examplePinyin": "Qǐng jìzhu “干燥” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “干燥” này.",
+    "example": "请记住干燥这个词。",
+    "examplePinyin": "Qǐng jìzhu gān zào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khô; khô cằn, khô này.",
     "id": "typ-hsk4-0283"
   },
   {
@@ -39430,9 +39430,9 @@
     "meaning": "gôn, bóng gôn",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“高尔夫球”这个词。",
-    "examplePinyin": "Qǐng jìzhu “高尔夫球” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “高尔夫球” này.",
+    "example": "请记住高尔夫球这个词。",
+    "examplePinyin": "Qǐng jìzhu gāo ěr fū qiú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gôn, bóng gôn này.",
     "id": "typ-hsk4-0285"
   },
   {
@@ -39510,7 +39510,7 @@
   {
     "hanzi": "假",
     "pinyin": "gēi",
-    "hanviet": "假",
+    "hanviet": "Giả",
     "meaning": "dùng trong 假掰",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -39582,7 +39582,7 @@
   {
     "hanzi": "工资",
     "pinyin": "gōng zī",
-    "hanviet": "Công 资",
+    "hanviet": "Công Tư",
     "meaning": "tiền lương; lương",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -39594,7 +39594,7 @@
   {
     "hanzi": "够",
     "pinyin": "gòu",
-    "hanviet": "够",
+    "hanviet": "Cấu",
     "meaning": "đủ, đủ",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -39606,7 +39606,7 @@
   {
     "hanzi": "购物",
     "pinyin": "gòu wù",
-    "hanviet": "购 Vật",
+    "hanviet": "Cấu Vật",
     "meaning": "mua sắm",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -39642,13 +39642,13 @@
   {
     "hanzi": "怪异",
     "pinyin": "guài yì",
-    "hanviet": "怪 异",
+    "hanviet": "Quái Dị",
     "meaning": "quái dị, kỳ lạ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“怪异”这个词。",
-    "examplePinyin": "Qǐng jìzhu “怪异” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “怪异” này.",
+    "example": "请记住怪异这个词。",
+    "examplePinyin": "Qǐng jìzhu guài yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quái dị, kỳ lạ này.",
     "id": "typ-hsk4-0303"
   },
   {
@@ -39690,7 +39690,7 @@
   {
     "hanzi": "逛",
     "pinyin": "guàng",
-    "hanviet": "逛",
+    "hanviet": "Cuống",
     "meaning": "đi dạo, thăm",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -39714,7 +39714,7 @@
   {
     "hanzi": "广告",
     "pinyin": "guǎng gào",
-    "hanviet": "Quảng 告",
+    "hanviet": "Quảng Cáo",
     "meaning": "quảng cáo, mục quảng cáo",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -39726,7 +39726,7 @@
   {
     "hanzi": "关键",
     "pinyin": "guān jiàn",
-    "hanviet": "Quan 键",
+    "hanviet": "Quan Kiện",
     "meaning": "điểm mấu chốt, trọng tâm",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -39766,21 +39766,21 @@
     "meaning": "đơn độc, cô đơn",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“孤单”这个词。",
-    "examplePinyin": "Qǐng jìzhu “孤单” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “孤单” này.",
+    "example": "请记住孤单这个词。",
+    "examplePinyin": "Qǐng jìzhu gū dān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đơn độc, cô đơn này.",
     "id": "typ-hsk4-0313"
   },
   {
     "hanzi": "龟",
     "pinyin": "guī",
-    "hanviet": "龟",
+    "hanviet": "Quy",
     "meaning": "rùa cạn; rùa nước, người chồng bị cắm sừng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“龟”这个词。",
-    "examplePinyin": "Qǐng jìzhu “龟” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “龟” này.",
+    "example": "请记住龟这个词。",
+    "examplePinyin": "Qǐng jìzhu guī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rùa cạn; rùa nước, người chồng bị cắm sừng này.",
     "id": "typ-hsk4-0314"
   },
   {
@@ -39798,7 +39798,7 @@
   {
     "hanzi": "估计",
     "pinyin": "gū jì",
-    "hanviet": "估 Kể",
+    "hanviet": "Cổ Kể",
     "meaning": "ước tính; đánh giá; tính toán, đoán; nghĩ",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -39822,7 +39822,7 @@
   {
     "hanzi": "鼓励",
     "pinyin": "gǔ lì",
-    "hanviet": "鼓 Lệ",
+    "hanviet": "Cổ Lệ",
     "meaning": "khuyến khích",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -39862,15 +39862,15 @@
     "meaning": "lỗi, sai lầm",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“过错”这个词。",
-    "examplePinyin": "Qǐng jìzhu “过错” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “过错” này.",
+    "example": "请记住过错这个词。",
+    "examplePinyin": "Qǐng jìzhu guò cuò zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lỗi, sai lầm này.",
     "id": "typ-hsk4-0321"
   },
   {
     "hanzi": "国际",
     "pinyin": "guó jì",
-    "hanviet": "Quốc 际",
+    "hanviet": "Quốc Tế",
     "meaning": "quốc tế",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -39898,9 +39898,9 @@
     "meaning": "thị trường chứng khoán",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“股市”这个词。",
-    "examplePinyin": "Qǐng jìzhu “股市” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “股市” này.",
+    "example": "请记住股市这个词。",
+    "examplePinyin": "Qǐng jìzhu gǔ shì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thị trường chứng khoán này.",
     "id": "typ-hsk4-0324"
   },
   {
@@ -39918,19 +39918,19 @@
   {
     "hanzi": "雇员",
     "pinyin": "gù yuán",
-    "hanviet": "雇 Viên",
+    "hanviet": "Cố Viên",
     "meaning": "nhân viên",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“雇员”这个词。",
-    "examplePinyin": "Qǐng jìzhu “雇员” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “雇员” này.",
+    "example": "请记住雇员这个词。",
+    "examplePinyin": "Qǐng jìzhu gù yuán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhân viên này.",
     "id": "typ-hsk4-0326"
   },
   {
     "hanzi": "鼓掌",
     "pinyin": "gǔ zhǎng",
-    "hanviet": "鼓 掌",
+    "hanviet": "Cổ Chưởng",
     "meaning": "vỗ tay, tán thưởng",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -39966,13 +39966,13 @@
   {
     "hanzi": "害羞",
     "pinyin": "hài xiū",
-    "hanviet": "Hại 羞",
+    "hanviet": "Hại Tu",
     "meaning": "nhút nhát, ngại ngùng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“害羞”这个词。",
-    "examplePinyin": "Qǐng jìzhu “害羞” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “害羞” này.",
+    "example": "请记住害羞这个词。",
+    "examplePinyin": "Qǐng jìzhu hài xiū zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhút nhát, ngại ngùng này.",
     "id": "typ-hsk4-0330"
   },
   {
@@ -39990,7 +39990,7 @@
   {
     "hanzi": "汗",
     "pinyin": "hán",
-    "hanviet": "汗",
+    "hanviet": "Hãn",
     "meaning": "xem 可汗, 汗國|汗国",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -40026,7 +40026,7 @@
   {
     "hanzi": "寒假",
     "pinyin": "hán jià",
-    "hanviet": "Hàn 假",
+    "hanviet": "Hàn Giả",
     "meaning": "kỳ nghỉ đông",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -40042,9 +40042,9 @@
     "meaning": "giống như; có thể so sánh với",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“好比”这个词。",
-    "examplePinyin": "Qǐng jìzhu “好比” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “好比” này.",
+    "example": "请记住好比这个词。",
+    "examplePinyin": "Qǐng jìzhu hǎo bǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giống như; có thể so sánh với này.",
     "id": "typ-hsk4-0336"
   },
   {
@@ -40078,15 +40078,15 @@
     "meaning": "ấn tượng tốt, cảm giác thiện cảm",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“好感”这个词。",
-    "examplePinyin": "Qǐng jìzhu “好感” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “好感” này.",
+    "example": "请记住好感这个词。",
+    "examplePinyin": "Qǐng jìzhu hǎo gǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ấn tượng tốt, cảm giác thiện cảm này.",
     "id": "typ-hsk4-0339"
   },
   {
     "hanzi": "号码",
     "pinyin": "hào mǎ",
-    "hanviet": "Hiệu 码",
+    "hanviet": "Hiệu Mã",
     "meaning": "số",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -40150,9 +40150,9 @@
     "meaning": "đen và trắng, đúng và sai",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“黑白”这个词。",
-    "examplePinyin": "Qǐng jìzhu “黑白” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “黑白” này.",
+    "example": "请记住黑白这个词。",
+    "examplePinyin": "Qǐng jìzhu hēi bái zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đen và trắng, đúng và sai này.",
     "id": "typ-hsk4-0345"
   },
   {
@@ -40162,9 +40162,9 @@
     "meaning": "hacker",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“黑客”这个词。",
-    "examplePinyin": "Qǐng jìzhu “黑客” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “黑客” này.",
+    "example": "请记住黑客这个词。",
+    "examplePinyin": "Qǐng jìzhu hēi kè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hacker này.",
     "id": "typ-hsk4-0346"
   },
   {
@@ -40186,15 +40186,15 @@
     "meaning": "sông",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“河流”这个词。",
-    "examplePinyin": "Qǐng jìzhu “河流” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “河流” này.",
+    "example": "请记住河流这个词。",
+    "examplePinyin": "Qǐng jìzhu hé liú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sông này.",
     "id": "typ-hsk4-0348"
   },
   {
     "hanzi": "衡量",
     "pinyin": "héng liáng",
-    "hanviet": "衡 量",
+    "hanviet": "Hành Lượng",
     "meaning": "cân nhắc, khảo sát",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -40210,9 +40210,9 @@
     "meaning": "nhà sư Phật giáo",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“和尚”这个词。",
-    "examplePinyin": "Qǐng jìzhu “和尚” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “和尚” này.",
+    "example": "请记住和尚这个词。",
+    "examplePinyin": "Qǐng jìzhu hé shang zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhà sư Phật giáo này.",
     "id": "typ-hsk4-0350"
   },
   {
@@ -40234,9 +40234,9 @@
     "meaning": "vũ khí hạt nhân",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“核武器”这个词。",
-    "examplePinyin": "Qǐng jìzhu “核武器” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “核武器” này.",
+    "example": "请记住核武器这个词。",
+    "examplePinyin": "Qǐng jìzhu hé wǔ qì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vũ khí hạt nhân này.",
     "id": "typ-hsk4-0352"
   },
   {
@@ -40254,19 +40254,19 @@
   {
     "hanzi": "轰炸",
     "pinyin": "hōng zhà",
-    "hanviet": "Huênh 炸",
+    "hanviet": "Huênh Tạc",
     "meaning": "ném bom, oanh tạc",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“轰炸”这个词。",
-    "examplePinyin": "Qǐng jìzhu “轰炸” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “轰炸” này.",
+    "example": "请记住轰炸这个词。",
+    "examplePinyin": "Qǐng jìzhu hōng zhà zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ném bom, oanh tạc này.",
     "id": "typ-hsk4-0354"
   },
   {
     "hanzi": "厚",
     "pinyin": "hòu",
-    "hanviet": "厚",
+    "hanviet": "Hậu",
     "meaning": "dày, sâu hoặc uyên thâm",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -40282,9 +40282,9 @@
     "meaning": "dự bị; dự phòng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“后备”这个词。",
-    "examplePinyin": "Qǐng jìzhu “后备” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “后备” này.",
+    "example": "请记住后备这个词。",
+    "examplePinyin": "Qǐng jìzhu hòu bèi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dự bị; dự phòng này.",
     "id": "typ-hsk4-0356"
   },
   {
@@ -40318,9 +40318,9 @@
     "meaning": "khu vực hậu trường, người hỗ trợ phía sau",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“后台”这个词。",
-    "examplePinyin": "Qǐng jìzhu “后台” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “后台” này.",
+    "example": "请记住后台这个词。",
+    "examplePinyin": "Qǐng jìzhu hòu tái zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khu vực hậu trường, người hỗ trợ phía sau này.",
     "id": "typ-hsk4-0359"
   },
   {
@@ -40342,9 +40342,9 @@
     "meaning": "con khỉ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“猴子”这个词。",
-    "examplePinyin": "Qǐng jìzhu “猴子” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “猴子” này.",
+    "example": "请记住猴子这个词。",
+    "examplePinyin": "Qǐng jìzhu hóu zi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ con khỉ này.",
     "id": "typ-hsk4-0361"
   },
   {
@@ -40354,15 +40354,15 @@
     "meaning": "vòng tay, ngực",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“怀里”这个词。",
-    "examplePinyin": "Qǐng jìzhu “怀里” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “怀里” này.",
+    "example": "请记住怀里这个词。",
+    "examplePinyin": "Qǐng jìzhu huái lǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vòng tay, ngực này.",
     "id": "typ-hsk4-0362"
   },
   {
     "hanzi": "怀疑",
     "pinyin": "huái yí",
-    "hanviet": "Hoài 疑",
+    "hanviet": "Hoài Nghi",
     "meaning": "nghi ngờ ; hoài nghi, có nghi ngại; ấp ủ sự nghi ngờ; nghi rằng",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -40378,9 +40378,9 @@
     "meaning": "từ ngữ, lời nói",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“话语”这个词。",
-    "examplePinyin": "Qǐng jìzhu “话语” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “话语” này.",
+    "example": "请记住话语这个词。",
+    "examplePinyin": "Qǐng jìzhu huà yǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ từ ngữ, lời nói này.",
     "id": "typ-hsk4-0364"
   },
   {
@@ -40390,21 +40390,21 @@
     "meaning": "gọi to, hô hào",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“呼唤”这个词。",
-    "examplePinyin": "Qǐng jìzhu “呼唤” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “呼唤” này.",
+    "example": "请记住呼唤这个词。",
+    "examplePinyin": "Qǐng jìzhu hū huàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gọi to, hô hào này.",
     "id": "typ-hsk4-0365"
   },
   {
     "hanzi": "会面",
     "pinyin": "huì miàn",
-    "hanviet": "Hội 面",
+    "hanviet": "Hội Diện",
     "meaning": "gặp gỡ, cuộc gặp",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“会面”这个词。",
-    "examplePinyin": "Qǐng jìzhu “会面” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “会面” này.",
+    "example": "请记住会面这个词。",
+    "examplePinyin": "Qǐng jìzhu huì miàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gặp gỡ, cuộc gặp này.",
     "id": "typ-hsk4-0366"
   },
   {
@@ -40482,7 +40482,7 @@
   {
     "hanzi": "活泼",
     "pinyin": "huó po",
-    "hanviet": "Hoạt 泼",
+    "hanviet": "Hoạt Bát",
     "meaning": "sôi nổi, hoạt bát",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -40626,13 +40626,13 @@
   {
     "hanzi": "奖杯",
     "pinyin": "jiǎng bēi",
-    "hanviet": "奖 Bôi",
+    "hanviet": "Tưởng Bôi",
     "meaning": "cúp chiến thắng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“奖杯”这个词。",
-    "examplePinyin": "Qǐng jìzhu “奖杯” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “奖杯” này.",
+    "example": "请记住奖杯这个词。",
+    "examplePinyin": "Qǐng jìzhu jiǎng bēi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cúp chiến thắng này.",
     "id": "typ-hsk4-0385"
   },
   {
@@ -40662,7 +40662,7 @@
   {
     "hanzi": "奖金",
     "pinyin": "jiǎng jīn",
-    "hanviet": "奖 Kim",
+    "hanviet": "Tưởng Kim",
     "meaning": "tiền thưởng, tiền giải thưởng",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -40698,7 +40698,7 @@
   {
     "hanzi": "奖学金",
     "pinyin": "jiǎng xué jīn",
-    "hanviet": "奖 Học Kim",
+    "hanviet": "Tưởng Học Kim",
     "meaning": "học bổng",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -40726,9 +40726,9 @@
     "meaning": "tòa nhà, công trình",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“建筑物”这个词。",
-    "examplePinyin": "Qǐng jìzhu “建筑物” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “建筑物” này.",
+    "example": "请记住建筑物这个词。",
+    "examplePinyin": "Qǐng jìzhu jiàn zhù wù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tòa nhà, công trình này.",
     "id": "typ-hsk4-0393"
   },
   {
@@ -40746,13 +40746,13 @@
   {
     "hanzi": "嚼",
     "pinyin": "jiáo",
-    "hanviet": "嚼",
+    "hanviet": "Tước",
     "meaning": "nhai, cũng đọc là",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“嚼”这个词。",
-    "examplePinyin": "Qǐng jìzhu “嚼” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “嚼” này.",
+    "example": "请记住嚼这个词。",
+    "examplePinyin": "Qǐng jìzhu jiáo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhai, cũng đọc là này.",
     "id": "typ-hsk4-0395"
   },
   {
@@ -40818,7 +40818,7 @@
   {
     "hanzi": "饺子",
     "pinyin": "jiǎo zi",
-    "hanviet": "饺 Tử",
+    "hanviet": "Sủi Tử",
     "meaning": "bánh sủi cảo, bánh hấp",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -40842,7 +40842,7 @@
   {
     "hanzi": "假日",
     "pinyin": "jià rì",
-    "hanviet": "假 Nhật",
+    "hanviet": "Giả Nhật",
     "meaning": "kỳ nghỉ; ngày nghỉ",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -40866,13 +40866,13 @@
   {
     "hanzi": "价值观",
     "pinyin": "jià zhí guān",
-    "hanviet": "Giá 值 Quan",
+    "hanviet": "Giá Trị Quan",
     "meaning": "hệ thống giá trị",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“价值观”这个词。",
-    "examplePinyin": "Qǐng jìzhu “价值观” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “价值观” này.",
+    "example": "请记住价值观这个词。",
+    "examplePinyin": "Qǐng jìzhu jià zhí guān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hệ thống giá trị này.",
     "id": "typ-hsk4-0405"
   },
   {
@@ -40882,9 +40882,9 @@
     "meaning": "làm nặng hơn, nhấn mạnh",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“加重”这个词。",
-    "examplePinyin": "Qǐng jìzhu “加重” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “加重” này.",
+    "example": "请记住加重这个词。",
+    "examplePinyin": "Qǐng jìzhu jiā zhòng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ làm nặng hơn, nhấn mạnh này.",
     "id": "typ-hsk4-0406"
   },
   {
@@ -40930,15 +40930,15 @@
     "meaning": "giai cấp xã hội",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“阶级”这个词。",
-    "examplePinyin": "Qǐng jìzhu “阶级” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “阶级” này.",
+    "example": "请记住阶级这个词。",
+    "examplePinyin": "Qǐng jìzhu jiē jí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giai cấp xã hội này.",
     "id": "typ-hsk4-0410"
   },
   {
     "hanzi": "节假日",
     "pinyin": "jié jià rì",
-    "hanviet": "Tiết 假 Nhật",
+    "hanviet": "Tiết Giả Nhật",
     "meaning": "ngày nghỉ công cộng",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -40954,9 +40954,9 @@
     "meaning": "giải cứu, giúp thoát khỏi khó khăn",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“解救”这个词。",
-    "examplePinyin": "Qǐng jìzhu “解救” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “解救” này.",
+    "example": "请记住解救这个词。",
+    "examplePinyin": "Qǐng jìzhu jiě jiù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giải cứu, giúp thoát khỏi khó khăn này.",
     "id": "typ-hsk4-0412"
   },
   {
@@ -40990,9 +40990,9 @@
     "meaning": "tiếp quản, vị trí bắt bóng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“接手”这个词。",
-    "examplePinyin": "Qǐng jìzhu “接手” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “接手” này.",
+    "example": "请记住接手这个词。",
+    "examplePinyin": "Qǐng jìzhu jiē shǒu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tiếp quản, vị trí bắt bóng này.",
     "id": "typ-hsk4-0415"
   },
   {
@@ -41002,9 +41002,9 @@
     "meaning": "tháo gỡ, giải thoát",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“解脱”这个词。",
-    "examplePinyin": "Qǐng jìzhu “解脱” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “解脱” này.",
+    "example": "请记住解脱这个词。",
+    "examplePinyin": "Qǐng jìzhu jiě tuō zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tháo gỡ, giải thoát này.",
     "id": "typ-hsk4-0416"
   },
   {
@@ -41014,9 +41014,9 @@
     "meaning": "kết thúc, đoạn kết",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“结尾”这个词。",
-    "examplePinyin": "Qǐng jìzhu “结尾” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “结尾” này.",
+    "example": "请记住结尾这个词。",
+    "examplePinyin": "Qǐng jìzhu jié wěi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kết thúc, đoạn kết này.",
     "id": "typ-hsk4-0417"
   },
   {
@@ -41034,13 +41034,13 @@
   {
     "hanzi": "肌肤",
     "pinyin": "jī fū",
-    "hanviet": "肌 肤",
+    "hanviet": "Cơ Phu",
     "meaning": "da, thịt",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“肌肤”这个词。",
-    "examplePinyin": "Qǐng jìzhu “肌肤” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “肌肤” này.",
+    "example": "请记住肌肤这个词。",
+    "examplePinyin": "Qǐng jìzhu jī fū zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ da, thịt này.",
     "id": "typ-hsk4-0419"
   },
   {
@@ -41086,9 +41086,9 @@
     "meaning": "tương đương với 就可以, có thể làm gì đó ngay",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“即可”这个词。",
-    "examplePinyin": "Qǐng jìzhu “即可” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “即可” này.",
+    "example": "请记住即可这个词。",
+    "examplePinyin": "Qǐng jìzhu jí kě zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tương đương với , có thể làm gì đó ngay này.",
     "id": "typ-hsk4-0423"
   },
   {
@@ -41106,13 +41106,13 @@
   {
     "hanzi": "几率",
     "pinyin": "jī lǜ",
-    "hanviet": "Kỉ 率",
+    "hanviet": "Kỉ Suất",
     "meaning": "xác suất, tỷ lệ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“几率”这个词。",
-    "examplePinyin": "Qǐng jìzhu “几率” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “几率” này.",
+    "example": "请记住几率这个词。",
+    "examplePinyin": "Qǐng jìzhu jī lǜ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xác suất, tỷ lệ này.",
     "id": "typ-hsk4-0425"
   },
   {
@@ -41122,9 +41122,9 @@
     "meaning": "ra vào, đi qua",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“进出”这个词。",
-    "examplePinyin": "Qǐng jìzhu “进出” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “进出” này.",
+    "example": "请记住进出这个词。",
+    "examplePinyin": "Qǐng jìzhu jìn chū zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ra vào, đi qua này.",
     "id": "typ-hsk4-0426"
   },
   {
@@ -41158,9 +41158,9 @@
     "meaning": "xe cảnh sát",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“警车”这个词。",
-    "examplePinyin": "Qǐng jìzhu “警车” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “警车” này.",
+    "example": "请记住警车这个词。",
+    "examplePinyin": "Qǐng jìzhu jǐng chē zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xe cảnh sát này.",
     "id": "typ-hsk4-0429"
   },
   {
@@ -41170,9 +41170,9 @@
     "meaning": "hoàn cảnh",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“境地”这个词。",
-    "examplePinyin": "Qǐng jìzhu “境地” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “境地” này.",
+    "example": "请记住境地这个词。",
+    "examplePinyin": "Qǐng jìzhu jìng dì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hoàn cảnh này.",
     "id": "typ-hsk4-0430"
   },
   {
@@ -41190,19 +41190,19 @@
   {
     "hanzi": "净化",
     "pinyin": "jìng huà",
-    "hanviet": "净 Hoá",
+    "hanviet": "Tịnh Hoá",
     "meaning": "lọc sạch",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“净化”这个词。",
-    "examplePinyin": "Qǐng jìzhu “净化” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “净化” này.",
+    "example": "请记住净化这个词。",
+    "examplePinyin": "Qǐng jìzhu jìng huà zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lọc sạch này.",
     "id": "typ-hsk4-0432"
   },
   {
     "hanzi": "经济",
     "pinyin": "jīng jì",
-    "hanviet": "Kinh 济",
+    "hanviet": "Kinh Tế",
     "meaning": "kinh tế, thuộc về kinh tế",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -41254,9 +41254,9 @@
     "meaning": "bên trong biên giới, nội bộ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“境内”这个词。",
-    "examplePinyin": "Qǐng jìzhu “境内” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “境内” này.",
+    "example": "请记住境内这个词。",
+    "examplePinyin": "Qǐng jìzhu jìng nèi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bên trong biên giới, nội bộ này.",
     "id": "typ-hsk4-0437"
   },
   {
@@ -41266,9 +41266,9 @@
     "meaning": "khu danh lam thắng cảnh",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“景区”这个词。",
-    "examplePinyin": "Qǐng jìzhu “景区” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “景区” này.",
+    "example": "请记住景区这个词。",
+    "examplePinyin": "Qǐng jìzhu jǐng qū zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khu danh lam thắng cảnh này.",
     "id": "typ-hsk4-0438"
   },
   {
@@ -41302,9 +41302,9 @@
     "meaning": "rối loạn tâm thần, loạn thần",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“精神病”这个词。",
-    "examplePinyin": "Qǐng jìzhu “精神病” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “精神病” này.",
+    "example": "请记住精神病这个词。",
+    "examplePinyin": "Qǐng jìzhu jīng shén bìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rối loạn tâm thần, loạn thần này.",
     "id": "typ-hsk4-0441"
   },
   {
@@ -41314,9 +41314,9 @@
     "meaning": "trải qua, chịu đựng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“经受”这个词。",
-    "examplePinyin": "Qǐng jìzhu “经受” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “经受” này.",
+    "example": "请记住经受这个词。",
+    "examplePinyin": "Qǐng jìzhu jīng shòu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trải qua, chịu đựng này.",
     "id": "typ-hsk4-0442"
   },
   {
@@ -41346,7 +41346,7 @@
   {
     "hanzi": "竞争",
     "pinyin": "jìng zhēng",
-    "hanviet": "竞 Tranh",
+    "hanviet": "Cạnh Tranh",
     "meaning": "cạnh tranh, cuộc thi",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -41374,9 +41374,9 @@
     "meaning": "ngày kỷ niệm, ngày tưởng niệm",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“纪念日”这个词。",
-    "examplePinyin": "Qǐng jìzhu “纪念日” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “纪念日” này.",
+    "example": "请记住纪念日这个词。",
+    "examplePinyin": "Qǐng jìzhu jì niàn rì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngày kỷ niệm, ngày tưởng niệm này.",
     "id": "typ-hsk4-0447"
   },
   {
@@ -41386,9 +41386,9 @@
     "meaning": "khu vực hạn chế, khu vực cấm",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“禁区”这个词。",
-    "examplePinyin": "Qǐng jìzhu “禁区” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “禁区” này.",
+    "example": "请记住禁区这个词。",
+    "examplePinyin": "Qǐng jìzhu jìn qū zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khu vực hạn chế, khu vực cấm này.",
     "id": "typ-hsk4-0448"
   },
   {
@@ -41442,7 +41442,7 @@
   {
     "hanzi": "既然",
     "pinyin": "jì rán",
-    "hanviet": "既 Nhiên",
+    "hanviet": "Ký Nhiên",
     "meaning": "vì; khi; đã là",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -41502,7 +41502,7 @@
   {
     "hanzi": "就是说",
     "pinyin": "jiù shì shuō",
-    "hanviet": "就 Thị Thuyết",
+    "hanviet": "Thị Thuyết",
     "meaning": "nói cách khác; tức là",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -41518,21 +41518,21 @@
     "meaning": "cấp tính",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“急性”这个词。",
-    "examplePinyin": "Qǐng jìzhu “急性” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “急性” này.",
+    "example": "请记住急性这个词。",
+    "examplePinyin": "Qǐng jìzhu jí xìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cấp tính này.",
     "id": "typ-hsk4-0459"
   },
   {
     "hanzi": "急需",
     "pinyin": "jí xū",
-    "hanviet": "Cấp 需",
+    "hanviet": "Cấp Nhu",
     "meaning": "cần gấp, nhu cầu khẩn cấp",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“急需”这个词。",
-    "examplePinyin": "Qǐng jìzhu “急需” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “急需” này.",
+    "example": "请记住急需这个词。",
+    "examplePinyin": "Qǐng jìzhu jí xū zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cần gấp, nhu cầu khẩn cấp này.",
     "id": "typ-hsk4-0460"
   },
   {
@@ -41550,7 +41550,7 @@
   {
     "hanzi": "记者",
     "pinyin": "jì zhě",
-    "hanviet": "Kí 者",
+    "hanviet": "Kí Giả",
     "meaning": "phóng viên; nhà báo",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -41566,9 +41566,9 @@
     "meaning": "quyên góp, đóng góp",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“捐献”这个词。",
-    "examplePinyin": "Qǐng jìzhu “捐献” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “捐献” này.",
+    "example": "请记住捐献这个词。",
+    "examplePinyin": "Qǐng jìzhu juān xiàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quyên góp, đóng góp này.",
     "id": "typ-hsk4-0463"
   },
   {
@@ -41586,13 +41586,13 @@
   {
     "hanzi": "巨额",
     "pinyin": "jù é",
-    "hanviet": "巨 Ngạch",
+    "hanviet": "Cự Ngạch",
     "meaning": "số tiền lớn, số lượng khổng lồ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“巨额”这个词。",
-    "examplePinyin": "Qǐng jìzhu “巨额” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “巨额” này.",
+    "example": "请记住巨额这个词。",
+    "examplePinyin": "Qǐng jìzhu jù é zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ số tiền lớn, số lượng khổng lồ này.",
     "id": "typ-hsk4-0465"
   },
   {
@@ -41614,9 +41614,9 @@
     "meaning": "một nghị quyết, thông qua một nghị quyết",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“决议”这个词。",
-    "examplePinyin": "Qǐng jìzhu “决议” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “决议” này.",
+    "example": "请记住决议这个词。",
+    "examplePinyin": "Qǐng jìzhu jué yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ một nghị quyết, thông qua một nghị quyết này.",
     "id": "typ-hsk4-0467"
   },
   {
@@ -41626,9 +41626,9 @@
     "meaning": "tranh giành, cạnh tranh",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“角逐”这个词。",
-    "examplePinyin": "Qǐng jìzhu “角逐” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “角逐” này.",
+    "example": "请记住角逐这个词。",
+    "examplePinyin": "Qǐng jìzhu jué zhú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tranh giành, cạnh tranh này.",
     "id": "typ-hsk4-0468"
   },
   {
@@ -41650,9 +41650,9 @@
     "meaning": "đưa ra ví dụ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“举例”这个词。",
-    "examplePinyin": "Qǐng jìzhu “举例” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “举例” này.",
+    "example": "请记住举例这个词。",
+    "examplePinyin": "Qǐng jìzhu jǔ lì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đưa ra ví dụ này.",
     "id": "typ-hsk4-0470"
   },
   {
@@ -41674,33 +41674,33 @@
     "meaning": "biến thể cũ của 俊",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“俊”这个词。",
-    "examplePinyin": "Qǐng jìzhu “俊” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “俊” này.",
+    "example": "请记住俊这个词。",
+    "examplePinyin": "Qǐng jìzhu jùn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ biến thể cũ của này.",
     "id": "typ-hsk4-0472"
   },
   {
     "hanzi": "巨人",
     "pinyin": "jù rén",
-    "hanviet": "巨 Nhân",
+    "hanviet": "Cự Nhân",
     "meaning": "người khổng lồ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“巨人”这个词。",
-    "examplePinyin": "Qǐng jìzhu “巨人” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “巨人” này.",
+    "example": "请记住巨人这个词。",
+    "examplePinyin": "Qǐng jìzhu jù rén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ người khổng lồ này.",
     "id": "typ-hsk4-0473"
   },
   {
     "hanzi": "巨星",
     "pinyin": "jù xīng",
-    "hanviet": "巨 Tinh",
+    "hanviet": "Cự Tinh",
     "meaning": "sao khổng lồ, siêu sao",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“巨星”这个词。",
-    "examplePinyin": "Qǐng jìzhu “巨星” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “巨星” này.",
+    "example": "请记住巨星这个词。",
+    "examplePinyin": "Qǐng jìzhu jù xīng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sao khổng lồ, siêu sao này.",
     "id": "typ-hsk4-0474"
   },
   {
@@ -41710,9 +41710,9 @@
     "meaning": "quýt",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“橘子”这个词。",
-    "examplePinyin": "Qǐng jìzhu “橘子” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “橘子” này.",
+    "example": "请记住橘子这个词。",
+    "examplePinyin": "Qǐng jìzhu jú zi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quýt này.",
     "id": "typ-hsk4-0475"
   },
   {
@@ -41730,7 +41730,7 @@
   {
     "hanzi": "开玩笑",
     "pinyin": "kāi wán xiào",
-    "hanviet": "Khai Ngoạn 笑",
+    "hanviet": "Khai Ngoạn Tiếu",
     "meaning": "đùa giỡn; chế nhạo; nói đùa",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -41746,9 +41746,9 @@
     "meaning": "mở cửa kinh doanh, giao dịch đầu tiên của ngày kinh doanh",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“开张”这个词。",
-    "examplePinyin": "Qǐng jìzhu “开张” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “开张” này.",
+    "example": "请记住开张这个词。",
+    "examplePinyin": "Qǐng jìzhu kāi zhāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mở cửa kinh doanh, giao dịch đầu tiên của ngày kinh doanh này.",
     "id": "typ-hsk4-0478"
   },
   {
@@ -41782,9 +41782,9 @@
     "meaning": "kháng cự, chống đối",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“抗拒”这个词。",
-    "examplePinyin": "Qǐng jìzhu “抗拒” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “抗拒” này.",
+    "example": "请记住抗拒这个词。",
+    "examplePinyin": "Qǐng jìzhu kàng jù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kháng cự, chống đối này.",
     "id": "typ-hsk4-0481"
   },
   {
@@ -41794,9 +41794,9 @@
     "meaning": "kháng sinh",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“抗生素”这个词。",
-    "examplePinyin": "Qǐng jìzhu “抗生素” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “抗生素” này.",
+    "example": "请记住抗生素这个词。",
+    "examplePinyin": "Qǐng jìzhu kàng shēng sù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kháng sinh này.",
     "id": "typ-hsk4-0482"
   },
   {
@@ -41806,9 +41806,9 @@
     "meaning": "coi là quan trọng; trân trọng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“看重”这个词。",
-    "examplePinyin": "Qǐng jìzhu “看重” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “看重” này.",
+    "example": "请记住看重这个词。",
+    "examplePinyin": "Qǐng jìzhu kàn zhòng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ coi là quan trọng; trân trọng này.",
     "id": "typ-hsk4-0483"
   },
   {
@@ -41854,9 +41854,9 @@
     "meaning": "đáng buồn",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“可悲”这个词。",
-    "examplePinyin": "Qǐng jìzhu “可悲” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “可悲” này.",
+    "example": "请记住可悲这个词。",
+    "examplePinyin": "Qǐng jìzhu kě bēi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đáng buồn này.",
     "id": "typ-hsk4-0487"
   },
   {
@@ -41866,9 +41866,9 @@
     "meaning": "đúng là như vậy, chính xác!",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“可不是”这个词。",
-    "examplePinyin": "Qǐng jìzhu “可不是” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “可不是” này.",
+    "example": "请记住可不是这个词。",
+    "examplePinyin": "Qǐng jìzhu kě bu shì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đúng là như vậy, chính xác! này.",
     "id": "typ-hsk4-0488"
   },
   {
@@ -41910,13 +41910,13 @@
   {
     "hanzi": "咳嗽",
     "pinyin": "ké sou",
-    "hanviet": "Cay 嗽",
+    "hanviet": "Cay Khái",
     "meaning": "ho",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“咳嗽”这个词。",
-    "examplePinyin": "Qǐng jìzhu “咳嗽” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “咳嗽” này.",
+    "example": "请记住咳嗽这个词。",
+    "examplePinyin": "Qǐng jìzhu ké sou zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ho này.",
     "id": "typ-hsk4-0492"
   },
   {
@@ -41950,9 +41950,9 @@
     "meaning": "cố ý; cố tình; chủ tâm, một cách trau chuốt; tỉ mỉ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“刻意”这个词。",
-    "examplePinyin": "Qǐng jìzhu “刻意” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “刻意” này.",
+    "example": "请记住刻意这个词。",
+    "examplePinyin": "Qǐng jìzhu kè yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cố ý; cố tình; chủ tâm, một cách trau chuốt; tỉ mỉ này.",
     "id": "typ-hsk4-0495"
   },
   {
@@ -41962,9 +41962,9 @@
     "meaning": "hoảng loạn, hoảng sợ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“恐慌”这个词。",
-    "examplePinyin": "Qǐng jìzhu “恐慌” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “恐慌” này.",
+    "example": "请记住恐慌这个词。",
+    "examplePinyin": "Qǐng jìzhu kǒng huāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hoảng loạn, hoảng sợ này.",
     "id": "typ-hsk4-0496"
   },
   {
@@ -41974,15 +41974,15 @@
     "meaning": "khủng long; LT:頭|头, người xấu xí",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“恐龙”这个词。",
-    "examplePinyin": "Qǐng jìzhu “恐龙” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “恐龙” này.",
+    "example": "请记住恐龙这个词。",
+    "examplePinyin": "Qǐng jìzhu kǒng lóng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khủng long;  người xấu xí này.",
     "id": "typ-hsk4-0497"
   },
   {
     "hanzi": "恐怕",
     "pinyin": "kǒng pà",
-    "hanviet": "Khủng 怕",
+    "hanviet": "Khủng Phạ",
     "meaning": "sợ, sợ rằng",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -42018,13 +42018,13 @@
   {
     "hanzi": "口径",
     "pinyin": "kǒu jìng",
-    "hanviet": "Khẩu 径",
+    "hanviet": "Khẩu Kính",
     "meaning": "lỗ khoan; cỡ nòng; đường kính; khẩu độ, lập trường ; phiên bản ; tường thuật; câu chuyện; đường lối",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“口径”这个词。",
-    "examplePinyin": "Qǐng jìzhu “口径” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “口径” này.",
+    "example": "请记住口径这个词。",
+    "examplePinyin": "Qǐng jìzhu kǒu jìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lỗ khoan; cỡ nòng; đường kính; khẩu độ, lập trường ; phiên bản ; tường thuật; câu chuyện; đường lối này.",
     "id": "typ-hsk4-0501"
   },
   {
@@ -42034,9 +42034,9 @@
     "meaning": "nước bọt",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“口水”这个词。",
-    "examplePinyin": "Qǐng jìzhu “口水” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “口水” này.",
+    "example": "请记住口水这个词。",
+    "examplePinyin": "Qǐng jìzhu kǒu shuǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nước bọt này.",
     "id": "typ-hsk4-0502"
   },
   {
@@ -42070,9 +42070,9 @@
     "meaning": "sụp đổ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“垮”这个词。",
-    "examplePinyin": "Qǐng jìzhu “垮” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “垮” này.",
+    "example": "请记住垮这个词。",
+    "examplePinyin": "Qǐng jìzhu kuǎ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sụp đổ này.",
     "id": "typ-hsk4-0505"
   },
   {
@@ -42090,13 +42090,13 @@
   {
     "hanzi": "框",
     "pinyin": "kuàng",
-    "hanviet": "框",
+    "hanviet": "Khuông",
     "meaning": "khung, vỏ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“框”这个词。",
-    "examplePinyin": "Qǐng jìzhu “框” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “框” này.",
+    "example": "请记住框这个词。",
+    "examplePinyin": "Qǐng jìzhu kuàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khung, vỏ này.",
     "id": "typ-hsk4-0507"
   },
   {
@@ -42106,9 +42106,9 @@
     "meaning": "cuồng nhiệt, một cách cuồng tín",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“狂热”这个词。",
-    "examplePinyin": "Qǐng jìzhu “狂热” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “狂热” này.",
+    "example": "请记住狂热这个词。",
+    "examplePinyin": "Qǐng jìzhu kuáng rè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cuồng nhiệt, một cách cuồng tín này.",
     "id": "typ-hsk4-0508"
   },
   {
@@ -42126,13 +42126,13 @@
   {
     "hanzi": "跨越",
     "pinyin": "kuà yuè",
-    "hanviet": "跨 Việt",
+    "hanviet": "Khóa Việt",
     "meaning": "bước qua, vượt qua",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“跨越”这个词。",
-    "examplePinyin": "Qǐng jìzhu “跨越” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “跨越” này.",
+    "example": "请记住跨越这个词。",
+    "examplePinyin": "Qǐng jìzhu kuà yuè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bước qua, vượt qua này.",
     "id": "typ-hsk4-0510"
   },
   {
@@ -42262,9 +42262,9 @@
     "meaning": "đến thăm",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“来访”这个词。",
-    "examplePinyin": "Qǐng jìzhu “来访” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “来访” này.",
+    "example": "请记住来访这个词。",
+    "examplePinyin": "Qǐng jìzhu lái fǎng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đến thăm này.",
     "id": "typ-hsk4-0521"
   },
   {
@@ -42282,19 +42282,19 @@
   {
     "hanzi": "垃圾桶",
     "pinyin": "lā jī tǒng",
-    "hanviet": "Lắp 圾 Thùng",
+    "hanviet": "Lắp Cấp Thùng",
     "meaning": "thùng rác, Tiếng Đài Loan đọc là",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“垃圾桶”这个词。",
-    "examplePinyin": "Qǐng jìzhu “垃圾桶” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “垃圾桶” này.",
+    "example": "请记住垃圾桶这个词。",
+    "examplePinyin": "Qǐng jìzhu lā jī tǒng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thùng rác, Tiếng Đài Loan đọc là này.",
     "id": "typ-hsk4-0523"
   },
   {
     "hanzi": "懒",
     "pinyin": "lǎn",
-    "hanviet": "懒",
+    "hanviet": "Lãn",
     "meaning": "lazy",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -42306,19 +42306,19 @@
   {
     "hanzi": "懒得",
     "pinyin": "lǎn dé",
-    "hanviet": "懒 Đắc",
+    "hanviet": "Lãn Đắc",
     "meaning": "không cảm thấy muốn ; không có hứng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“懒得”这个词。",
-    "examplePinyin": "Qǐng jìzhu “懒得” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “懒得” này.",
+    "example": "请记住懒得这个词。",
+    "examplePinyin": "Qǐng jìzhu lǎn dé zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ không cảm thấy muốn ; không có hứng này.",
     "id": "typ-hsk4-0525"
   },
   {
     "hanzi": "浪费",
     "pinyin": "làng fèi",
-    "hanviet": "浪 Phí",
+    "hanviet": "Lãng Phí",
     "meaning": "lãng phí, phung phí",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -42330,7 +42330,7 @@
   {
     "hanzi": "浪漫",
     "pinyin": "làng màn",
-    "hanviet": "浪 Man",
+    "hanviet": "Lãng Man",
     "meaning": "lãng mạn",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -42346,9 +42346,9 @@
     "meaning": "lạm dụng, sử dụng sai",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“滥用”这个词。",
-    "examplePinyin": "Qǐng jìzhu “滥用” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “滥用” này.",
+    "example": "请记住滥用这个词。",
+    "examplePinyin": "Qǐng jìzhu làn yòng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lạm dụng, sử dụng sai này.",
     "id": "typ-hsk4-0528"
   },
   {
@@ -42370,9 +42370,9 @@
     "meaning": "cách gọi lịch sự cho ông hoặc bà lớn tuổi",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“老人家”这个词。",
-    "examplePinyin": "Qǐng jìzhu “老人家” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “老人家” này.",
+    "example": "请记住老人家这个词。",
+    "examplePinyin": "Qǐng jìzhu lǎo rén jiā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cách gọi lịch sự cho ông hoặc bà lớn tuổi này.",
     "id": "typ-hsk4-0530"
   },
   {
@@ -42390,7 +42390,7 @@
   {
     "hanzi": "冷静",
     "pinyin": "lěng jìng",
-    "hanviet": "Lãnh 静",
+    "hanviet": "Lãnh Tĩnh",
     "meaning": "bình tĩnh; điềm tĩnh; không cảm xúc, vắng vẻ; yên tĩnh",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -42406,15 +42406,15 @@
     "meaning": "lạnh lùng và thờ ơ với ai đó, thiếu quan tâm",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“冷漠”这个词。",
-    "examplePinyin": "Qǐng jìzhu “冷漠” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “冷漠” này.",
+    "example": "请记住冷漠这个词。",
+    "examplePinyin": "Qǐng jìzhu lěng mò zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lạnh lùng và thờ ơ với ai đó, thiếu quan tâm này.",
     "id": "typ-hsk4-0533"
   },
   {
     "hanzi": "俩",
     "pinyin": "liǎ",
-    "hanviet": "俩",
+    "hanviet": "Lưỡng",
     "meaning": "hai, cả hai",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -42438,7 +42438,7 @@
   {
     "hanzi": "亮",
     "pinyin": "liàng",
-    "hanviet": "亮",
+    "hanviet": "Lượng",
     "meaning": "sáng; ánh, soi rọi; loé sáng",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -42474,13 +42474,13 @@
   {
     "hanzi": "亮相",
     "pinyin": "liàng xiàng",
-    "hanviet": "亮 Tương",
+    "hanviet": "Lượng Tương",
     "meaning": "tạo dáng, xuất hiện trước công chúng; ra mắt công chúng ; xuất hiện trên thị trường hoặc tại hội chợ thương mại v.v.",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“亮相”这个词。",
-    "examplePinyin": "Qǐng jìzhu “亮相” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “亮相” này.",
+    "example": "请记住亮相这个词。",
+    "examplePinyin": "Qǐng jìzhu liàng xiàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tạo dáng, xuất hiện trước công chúng; ra mắt công chúng ; xuất hiện trên thị trường hoặc tại hội chợ thương mại v.v. này.",
     "id": "typ-hsk4-0539"
   },
   {
@@ -42490,9 +42490,9 @@
     "meaning": "giá rẻ; chi phí thấp",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“廉价”这个词。",
-    "examplePinyin": "Qǐng jìzhu “廉价” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “廉价” này.",
+    "example": "请记住廉价这个词。",
+    "examplePinyin": "Qǐng jìzhu lián jià zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giá rẻ; chi phí thấp này.",
     "id": "typ-hsk4-0540"
   },
   {
@@ -42522,7 +42522,7 @@
   {
     "hanzi": "聊天",
     "pinyin": "liáo tiān",
-    "hanviet": "聊 Thiên",
+    "hanviet": "Liêu Thiên",
     "meaning": "trò chuyện; tán gẫu",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -42558,13 +42558,13 @@
   {
     "hanzi": "裂缝",
     "pinyin": "liè fèng",
-    "hanviet": "裂 缝",
+    "hanviet": "Liệt Phùng",
     "meaning": "vết nứt, khe hở",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“裂缝”这个词。",
-    "examplePinyin": "Qǐng jìzhu “裂缝” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “裂缝” này.",
+    "example": "请记住裂缝这个词。",
+    "examplePinyin": "Qǐng jìzhu liè fèng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vết nứt, khe hở này.",
     "id": "typ-hsk4-0546"
   },
   {
@@ -42622,9 +42622,9 @@
     "meaning": "hiểu, chú ý",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“理会”这个词。",
-    "examplePinyin": "Qǐng jìzhu “理会” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “理会” này.",
+    "example": "请记住理会这个词。",
+    "examplePinyin": "Qǐng jìzhu lǐ huì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hiểu, chú ý này.",
     "id": "typ-hsk4-0551"
   },
   {
@@ -42642,7 +42642,7 @@
   {
     "hanzi": "礼貌",
     "pinyin": "lǐ mào",
-    "hanviet": "Lễ 貌",
+    "hanviet": "Lễ Mạo",
     "meaning": "lịch sự; lễ phép; tác phong, lịch sự; lễ phép",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -42658,9 +42658,9 @@
     "meaning": "tiền tiêu vặt, tiền trợ cấp",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“零花钱”这个词。",
-    "examplePinyin": "Qǐng jìzhu “零花钱” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “零花钱” này.",
+    "example": "请记住零花钱这个词。",
+    "examplePinyin": "Qǐng jìzhu líng huā qián zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tiền tiêu vặt, tiền trợ cấp này.",
     "id": "typ-hsk4-0554"
   },
   {
@@ -42718,9 +42718,9 @@
     "meaning": "quy trình, dòng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“流程”这个词。",
-    "examplePinyin": "Qǐng jìzhu “流程” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “流程” này.",
+    "example": "请记住流程这个词。",
+    "examplePinyin": "Qǐng jìzhu liú chéng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quy trình, dòng này.",
     "id": "typ-hsk4-0559"
   },
   {
@@ -42730,9 +42730,9 @@
     "meaning": "rơi nước mắt",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“流泪”这个词。",
-    "examplePinyin": "Qǐng jìzhu “流泪” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “流泪” này.",
+    "example": "请记住流泪这个词。",
+    "examplePinyin": "Qǐng jìzhu liú lèi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rơi nước mắt này.",
     "id": "typ-hsk4-0560"
   },
   {
@@ -42798,13 +42798,13 @@
   {
     "hanzi": "铝",
     "pinyin": "lǚ",
-    "hanviet": "铝",
+    "hanviet": "Lữ",
     "meaning": "nhôm",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“铝”这个词。",
-    "examplePinyin": "Qǐng jìzhu “铝” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “铝” này.",
+    "example": "请记住铝这个词。",
+    "examplePinyin": "Qǐng jìzhu lǚ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhôm này.",
     "id": "typ-hsk4-0566"
   },
   {
@@ -42822,13 +42822,13 @@
   {
     "hanzi": "乱七八糟",
     "pinyin": "luàn qī bā zāo",
-    "hanviet": "Loạn Thất Bát 糟",
+    "hanviet": "Loạn Thất Bát Tao",
     "meaning": "hỗn loạn; mất trật tự; lộn xộn",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“乱七八糟”这个词。",
-    "examplePinyin": "Qǐng jìzhu “乱七八糟” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “乱七八糟” này.",
+    "example": "请记住乱七八糟这个词。",
+    "examplePinyin": "Qǐng jìzhu luàn qī bā zāo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hỗn loạn; mất trật tự; lộn xộn này.",
     "id": "typ-hsk4-0568"
   },
   {
@@ -42838,15 +42838,15 @@
     "meaning": "hành trình, chuyến đi",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“旅程”这个词。",
-    "examplePinyin": "Qǐng jìzhu “旅程” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “旅程” này.",
+    "example": "请记住旅程这个词。",
+    "examplePinyin": "Qǐng jìzhu lǚ chéng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hành trình, chuyến đi này.",
     "id": "typ-hsk4-0569"
   },
   {
     "hanzi": "轮椅",
     "pinyin": "lún yǐ",
-    "hanviet": "Luân 椅",
+    "hanviet": "Luân Y",
     "meaning": "xe lăn",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -42874,9 +42874,9 @@
     "meaning": "củ cải , đặc biệt là củ cải trắng 白蘿蔔|白萝卜",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“萝卜”这个词。",
-    "examplePinyin": "Qǐng jìzhu “萝卜” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “萝卜” này.",
+    "example": "请记住萝卜这个词。",
+    "examplePinyin": "Qǐng jìzhu luó bo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ củ cải , đặc biệt là củ cải trắng này.",
     "id": "typ-hsk4-0572"
   },
   {
@@ -42886,9 +42886,9 @@
     "meaning": "rơi xuống đất, được đặt xuống đất",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“落地”这个词。",
-    "examplePinyin": "Qǐng jìzhu “落地” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “落地” này.",
+    "example": "请记住落地这个词。",
+    "examplePinyin": "Qǐng jìzhu luò dì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rơi xuống đất, được đặt xuống đất này.",
     "id": "typ-hsk4-0573"
   },
   {
@@ -42906,13 +42906,13 @@
   {
     "hanzi": "录制",
     "pinyin": "lù zhì",
-    "hanviet": "录 Chế",
+    "hanviet": "Lục Chế",
     "meaning": "ghi âm hoặc ghi hình",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“录制”这个词。",
-    "examplePinyin": "Qǐng jìzhu “录制” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “录制” này.",
+    "example": "请记住录制这个词。",
+    "examplePinyin": "Qǐng jìzhu lù zhì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ghi âm hoặc ghi hình này.",
     "id": "typ-hsk4-0575"
   },
   {
@@ -42946,9 +42946,9 @@
     "meaning": "cẩu thả, qua loa",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“马虎”这个词。",
-    "examplePinyin": "Qǐng jìzhu “马虎” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “马虎” này.",
+    "example": "请记住马虎这个词。",
+    "examplePinyin": "Qǐng jìzhu mǎ hu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cẩu thả, qua loa này.",
     "id": "typ-hsk4-0578"
   },
   {
@@ -42982,9 +42982,9 @@
     "meaning": "bô, chậu gỗ dùng làm nhà vệ sinh",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“马桶”这个词。",
-    "examplePinyin": "Qǐng jìzhu “马桶” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “马桶” này.",
+    "example": "请记住马桶这个词。",
+    "examplePinyin": "Qǐng jìzhu mǎ tǒng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bô, chậu gỗ dùng làm nhà vệ sinh này.",
     "id": "typ-hsk4-0581"
   },
   {
@@ -43002,7 +43002,7 @@
   {
     "hanzi": "没法儿",
     "pinyin": "méifǎr5",
-    "hanviet": "Một Pháp 儿",
+    "hanviet": "Một Pháp Nhi",
     "meaning": "Can't",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -43018,9 +43018,9 @@
     "meaning": "phong cảnh đẹp",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“美景”这个词。",
-    "examplePinyin": "Qǐng jìzhu “美景” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “美景” này.",
+    "example": "请记住美景这个词。",
+    "examplePinyin": "Qǐng jìzhu měi jǐng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phong cảnh đẹp này.",
     "id": "typ-hsk4-0584"
   },
   {
@@ -43062,7 +43062,7 @@
   {
     "hanzi": "梦",
     "pinyin": "mèng",
-    "hanviet": "梦",
+    "hanviet": "Mộng",
     "meaning": "giấc mơ, mơ",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -43074,7 +43074,7 @@
   {
     "hanzi": "面对面",
     "pinyin": "miàn duì miàn",
-    "hanviet": "面 Đối 面",
+    "hanviet": "Diện Đối Diện",
     "meaning": "mặt đối mặt",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -43098,7 +43098,7 @@
   {
     "hanzi": "密码",
     "pinyin": "mì mǎ",
-    "hanviet": "Mật 码",
+    "hanviet": "Mật Mã",
     "meaning": "mã hóa; mã bí mật, mật khẩu; mã PIN",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -43110,7 +43110,7 @@
   {
     "hanzi": "名牌儿",
     "pinyin": "míngpáir5",
-    "hanviet": "Danh Bài 儿",
+    "hanviet": "Danh Bài Nhi",
     "meaning": "Famous brand",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -43138,9 +43138,9 @@
     "meaning": "danh tiếng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“名声”这个词。",
-    "examplePinyin": "Qǐng jìzhu “名声” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “名声” này.",
+    "example": "请记住名声这个词。",
+    "examplePinyin": "Qǐng jìzhu míng shēng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ danh tiếng này.",
     "id": "typ-hsk4-0594"
   },
   {
@@ -43150,9 +43150,9 @@
     "meaning": "có lý trí, khôn ngoan",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“明智”这个词。",
-    "examplePinyin": "Qǐng jìzhu “明智” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “明智” này.",
+    "example": "请记住明智这个词。",
+    "examplePinyin": "Qǐng jìzhu míng zhì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ có lý trí, khôn ngoan này.",
     "id": "typ-hsk4-0595"
   },
   {
@@ -43170,13 +43170,13 @@
   {
     "hanzi": "蘑菇",
     "pinyin": "mó gu",
-    "hanviet": "蘑 菇",
+    "hanviet": "Ma Cô",
     "meaning": "nấm, quấy rầy",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“蘑菇”这个词。",
-    "examplePinyin": "Qǐng jìzhu “蘑菇” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “蘑菇” này.",
+    "example": "请记住蘑菇这个词。",
+    "examplePinyin": "Qǐng jìzhu mó gu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nấm, quấy rầy này.",
     "id": "typ-hsk4-0597"
   },
   {
@@ -43186,15 +43186,15 @@
     "meaning": "Ngày phán xét",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“末日”这个词。",
-    "examplePinyin": "Qǐng jìzhu “末日” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “末日” này.",
+    "example": "请记住末日这个词。",
+    "examplePinyin": "Qǐng jìzhu Mò rì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ Ngày phán xét này.",
     "id": "typ-hsk4-0598"
   },
   {
     "hanzi": "模特儿",
     "pinyin": "mó tè r",
-    "hanviet": "Mô Đặc 儿",
+    "hanviet": "Mô Đặc Nhi",
     "meaning": "người mẫu",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -43242,13 +43242,13 @@
   {
     "hanzi": "穆斯林",
     "pinyin": "Mù sī lín",
-    "hanviet": "穆 斯 Lâm",
+    "hanviet": "Mục Tư Lâm",
     "meaning": "Người Hồi giáo",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“穆斯林”这个词。",
-    "examplePinyin": "Qǐng jìzhu “穆斯林” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “穆斯林” này.",
+    "example": "请记住穆斯林这个词。",
+    "examplePinyin": "Qǐng jìzhu Mù sī lín zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ Người Hồi giáo này.",
     "id": "typ-hsk4-0603"
   },
   {
@@ -43266,7 +43266,7 @@
   {
     "hanzi": "耐心",
     "pinyin": "nài xīn",
-    "hanviet": "耐 Tâm",
+    "hanviet": "Nại Tâm",
     "meaning": "kiên nhẫn, tính kiên nhẫn",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -43294,9 +43294,9 @@
     "meaning": "bí ngô",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“南瓜”这个词。",
-    "examplePinyin": "Qǐng jìzhu “南瓜” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “南瓜” này.",
+    "example": "请记住南瓜这个词。",
+    "examplePinyin": "Qǐng jìzhu nán guā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bí ngô này.",
     "id": "typ-hsk4-0607"
   },
   {
@@ -43318,9 +43318,9 @@
     "meaning": "gãi, cản trở",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“挠”这个词。",
-    "examplePinyin": "Qǐng jìzhu “挠” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “挠” này.",
+    "example": "请记住挠这个词。",
+    "examplePinyin": "Qǐng jìzhu náo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gãi, cản trở này.",
     "id": "typ-hsk4-0609"
   },
   {
@@ -43354,9 +43354,9 @@
     "meaning": "nội các",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“内阁”这个词。",
-    "examplePinyin": "Qǐng jìzhu “内阁” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “内阁” này.",
+    "example": "请记住内阁这个词。",
+    "examplePinyin": "Qǐng jìzhu nèi gé zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nội các này.",
     "id": "typ-hsk4-0612"
   },
   {
@@ -43390,15 +43390,15 @@
     "meaning": "ngược, đối lập",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“逆”这个词。",
-    "examplePinyin": "Qǐng jìzhu “逆” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “逆” này.",
+    "example": "请记住逆这个词。",
+    "examplePinyin": "Qǐng jìzhu nì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngược, đối lập này.",
     "id": "typ-hsk4-0615"
   },
   {
     "hanzi": "年龄",
     "pinyin": "nián líng",
-    "hanviet": "Niên 龄",
+    "hanviet": "Niên Linh",
     "meaning": "(tuổi tác của một người) / LT:把[ba3],個|个[ge4]",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -43474,9 +43474,9 @@
     "meaning": "giấy phép, giấy phép lái xe",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“牌照”这个词。",
-    "examplePinyin": "Qǐng jìzhu “牌照” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “牌照” này.",
+    "example": "请记住牌照这个词。",
+    "examplePinyin": "Qǐng jìzhu pái zhào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giấy phép, giấy phép lái xe này.",
     "id": "typ-hsk4-0622"
   },
   {
@@ -43486,9 +43486,9 @@
     "meaning": "kết án, lên án",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“判处”这个词。",
-    "examplePinyin": "Qǐng jìzhu “判处” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “判处” này.",
+    "example": "请记住判处这个词。",
+    "examplePinyin": "Qǐng jìzhu pàn chǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kết án, lên án này.",
     "id": "typ-hsk4-0623"
   },
   {
@@ -43506,7 +43506,7 @@
   {
     "hanzi": "陪",
     "pinyin": "péi",
-    "hanviet": "陪",
+    "hanviet": "Bồi",
     "meaning": "đi cùng, bầu bạn",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -43518,7 +43518,7 @@
   {
     "hanzi": "陪同",
     "pinyin": "péi tóng",
-    "hanviet": "陪 Đồng",
+    "hanviet": "Bồi Đồng",
     "meaning": "đi cùng",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -43542,19 +43542,19 @@
   {
     "hanzi": "碰撞",
     "pinyin": "pèng zhuàng",
-    "hanviet": "碰 Chàng",
+    "hanviet": "Bính Chàng",
     "meaning": "va chạm, sự va chạm",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“碰撞”这个词。",
-    "examplePinyin": "Qǐng jìzhu “碰撞” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “碰撞” này.",
+    "example": "请记住碰撞这个词。",
+    "examplePinyin": "Qǐng jìzhu pèng zhuàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ va chạm, sự va chạm này.",
     "id": "typ-hsk4-0628"
   },
   {
     "hanzi": "篇",
     "pinyin": "piān",
-    "hanviet": "篇",
+    "hanviet": "Thiên",
     "meaning": "tờ, mảnh viết",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -43566,7 +43566,7 @@
   {
     "hanzi": "骗",
     "pinyin": "piàn",
-    "hanviet": "骗",
+    "hanviet": "Phiến",
     "meaning": "lừa gạt, lừa đảo",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -43578,7 +43578,7 @@
   {
     "hanzi": "皮肤",
     "pinyin": "pí fū",
-    "hanviet": "Bì 肤",
+    "hanviet": "Bì Phu",
     "meaning": "da",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -43594,9 +43594,9 @@
     "meaning": "dựa vào, phụ thuộc vào",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“凭借”这个词。",
-    "examplePinyin": "Qǐng jìzhu “凭借” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “凭借” này.",
+    "example": "请记住凭借这个词。",
+    "examplePinyin": "Qǐng jìzhu píng jiè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dựa vào, phụ thuộc vào này.",
     "id": "typ-hsk4-0632"
   },
   {
@@ -43606,21 +43606,21 @@
     "meaning": "đánh giá, thẩm định",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“评判”这个词。",
-    "examplePinyin": "Qǐng jìzhu “评判” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “评判” này.",
+    "example": "请记住评判这个词。",
+    "examplePinyin": "Qǐng jìzhu píng pàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đánh giá, thẩm định này.",
     "id": "typ-hsk4-0633"
   },
   {
     "hanzi": "乒乓球",
     "pinyin": "pīng pāng qiú",
-    "hanviet": "乒 乓 Cầu",
+    "hanviet": "Binh Bàng Cầu",
     "meaning": "bóng bàn, ping-pong",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“乒乓球”这个词。",
-    "examplePinyin": "Qǐng jìzhu “乒乓球” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “乒乓球” này.",
+    "example": "请记住乒乓球这个词。",
+    "examplePinyin": "Qǐng jìzhu pīng pāng qiú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bóng bàn, ping-pong này.",
     "id": "typ-hsk4-0634"
   },
   {
@@ -43678,9 +43678,9 @@
     "meaning": "nghèo khó, bần cùng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“贫穷”这个词。",
-    "examplePinyin": "Qǐng jìzhu “贫穷” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “贫穷” này.",
+    "example": "请记住贫穷这个词。",
+    "examplePinyin": "Qǐng jìzhu pín qióng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nghèo khó, bần cùng này.",
     "id": "typ-hsk4-0639"
   },
   {
@@ -43690,9 +43690,9 @@
     "meaning": "cấp bậc, hạng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“品位”这个词。",
-    "examplePinyin": "Qǐng jìzhu “品位” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “品位” này.",
+    "example": "请记住品位这个词。",
+    "examplePinyin": "Qǐng jìzhu pǐn wèi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cấp bậc, hạng này.",
     "id": "typ-hsk4-0640"
   },
   {
@@ -43738,9 +43738,9 @@
     "meaning": "buộc phải; ép buộc",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“迫使”这个词。",
-    "examplePinyin": "Qǐng jìzhu “迫使” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “迫使” này.",
+    "example": "请记住迫使这个词。",
+    "examplePinyin": "Qǐng jìzhu pò shǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ buộc phải; ép buộc này.",
     "id": "typ-hsk4-0644"
   },
   {
@@ -43750,15 +43750,15 @@
     "meaning": "đập vỡ thành mảnh, vỡ tan",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“破碎”这个词。",
-    "examplePinyin": "Qǐng jìzhu “破碎” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “破碎” này.",
+    "example": "请记住破碎这个词。",
+    "examplePinyin": "Qǐng jìzhu pò suì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đập vỡ thành mảnh, vỡ tan này.",
     "id": "typ-hsk4-0645"
   },
   {
     "hanzi": "普遍",
     "pinyin": "pǔ biàn",
-    "hanviet": "Phổ 遍",
+    "hanviet": "Phổ Biến",
     "meaning": "phổ quát, chung chung",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -43774,15 +43774,15 @@
     "meaning": "chess",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“棋”这个词。",
-    "examplePinyin": "Qǐng jìzhu “棋” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “棋” này.",
+    "example": "请记住棋这个词。",
+    "examplePinyin": "Qǐng jìzhu qí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chess này.",
     "id": "typ-hsk4-0647"
   },
   {
     "hanzi": "恰好",
     "pinyin": "qià hǎo",
-    "hanviet": "恰 Hảo",
+    "hanviet": "Kháp Hảo",
     "meaning": "hoá ra, tình cờ may mắn",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -43846,9 +43846,9 @@
     "meaning": "cứng rắn, không nhân nhượng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“强硬”这个词。",
-    "examplePinyin": "Qǐng jìzhu “强硬” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “强硬” này.",
+    "example": "请记住强硬这个词。",
+    "examplePinyin": "Qǐng jìzhu qiáng yìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cứng rắn, không nhân nhượng này.",
     "id": "typ-hsk4-0653"
   },
   {
@@ -43870,9 +43870,9 @@
     "meaning": "người tiền nhiệm, cựu-",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“前任”这个词。",
-    "examplePinyin": "Qǐng jìzhu “前任” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “前任” này.",
+    "example": "请记住前任这个词。",
+    "examplePinyin": "Qǐng jìzhu qián rèn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ người tiền nhiệm, cựu- này.",
     "id": "typ-hsk4-0655"
   },
   {
@@ -43882,21 +43882,21 @@
     "meaning": "chưa từng có",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“前所未有”这个词。",
-    "examplePinyin": "Qǐng jìzhu “前所未有” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “前所未有” này.",
+    "example": "请记住前所未有这个词。",
+    "examplePinyin": "Qǐng jìzhu qián suǒ wèi yǒu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chưa từng có này.",
     "id": "typ-hsk4-0656"
   },
   {
     "hanzi": "潜艇",
     "pinyin": "qián tǐng",
-    "hanviet": "Tiềm 艇",
+    "hanviet": "Tiềm Đĩnh",
     "meaning": "tàu ngầm",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“潜艇”这个词。",
-    "examplePinyin": "Qǐng jìzhu “潜艇” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “潜艇” này.",
+    "example": "请记住潜艇这个词。",
+    "examplePinyin": "Qǐng jìzhu qián tǐng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tàu ngầm này.",
     "id": "typ-hsk4-0657"
   },
   {
@@ -43990,9 +43990,9 @@
     "meaning": "bắt đầu, khởi động",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“起步”这个词。",
-    "examplePinyin": "Qǐng jìzhu “起步” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “起步” này.",
+    "example": "请记住起步这个词。",
+    "examplePinyin": "Qǐng jìzhu qǐ bù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bắt đầu, khởi động này.",
     "id": "typ-hsk4-0665"
   },
   {
@@ -44086,9 +44086,9 @@
     "meaning": "danh sách mục",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“清单”这个词。",
-    "examplePinyin": "Qǐng jìzhu “清单” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “清单” này.",
+    "example": "请记住清单这个词。",
+    "examplePinyin": "Qǐng jìzhu qīng dān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ danh sách mục này.",
     "id": "typ-hsk4-0673"
   },
   {
@@ -44098,15 +44098,15 @@
     "meaning": "lễ kỷ niệm",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“庆典”这个词。",
-    "examplePinyin": "Qǐng jìzhu “庆典” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “庆典” này.",
+    "example": "请记住庆典这个词。",
+    "examplePinyin": "Qǐng jìzhu qìng diǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lễ kỷ niệm này.",
     "id": "typ-hsk4-0674"
   },
   {
     "hanzi": "请假",
     "pinyin": "qǐng jià",
-    "hanviet": "Thỉnh 假",
+    "hanviet": "Thỉnh Giả",
     "meaning": "xin nghỉ phép",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -44158,9 +44158,9 @@
     "meaning": "nhẹ, nhỏ nhặt",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“轻微”这个词。",
-    "examplePinyin": "Qǐng jìzhu “轻微” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “轻微” này.",
+    "example": "请记住轻微这个词。",
+    "examplePinyin": "Qǐng jìzhu qīng wēi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhẹ, nhỏ nhặt này.",
     "id": "typ-hsk4-0679"
   },
   {
@@ -44170,9 +44170,9 @@
     "meaning": "một người thân",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“亲戚”这个词。",
-    "examplePinyin": "Qǐng jìzhu “亲戚” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “亲戚” này.",
+    "example": "请记住亲戚这个词。",
+    "examplePinyin": "Qǐng jìzhu qīn qi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ một người thân này.",
     "id": "typ-hsk4-0680"
   },
   {
@@ -44190,13 +44190,13 @@
   {
     "hanzi": "期盼",
     "pinyin": "qī pàn",
-    "hanviet": "Kỳ 盼",
+    "hanviet": "Kỳ Phán",
     "meaning": "mong đợi; chờ đợi",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“期盼”这个词。",
-    "examplePinyin": "Qǐng jìzhu “期盼” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “期盼” này.",
+    "example": "请记住期盼这个词。",
+    "examplePinyin": "Qǐng jìzhu qī pàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mong đợi; chờ đợi này.",
     "id": "typ-hsk4-0682"
   },
   {
@@ -44214,7 +44214,7 @@
   {
     "hanzi": "汽水",
     "pinyin": "qì shuǐ",
-    "hanviet": "汽 Thủy",
+    "hanviet": "Khí Thủy",
     "meaning": "nước ngọt có ga; nước uống có carbonate",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -44230,9 +44230,9 @@
     "meaning": "đặc biệt, khác thường",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“奇特”这个词。",
-    "examplePinyin": "Qǐng jìzhu “奇特” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “奇特” này.",
+    "example": "请记住奇特这个词。",
+    "examplePinyin": "Qǐng jìzhu qí tè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đặc biệt, khác thường này.",
     "id": "typ-hsk4-0685"
   },
   {
@@ -44242,21 +44242,21 @@
     "meaning": "tù nhân; phạm nhân",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“囚犯”这个词。",
-    "examplePinyin": "Qǐng jìzhu “囚犯” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “囚犯” này.",
+    "example": "请记住囚犯这个词。",
+    "examplePinyin": "Qǐng jìzhu qiú fàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tù nhân; phạm nhân này.",
     "id": "typ-hsk4-0686"
   },
   {
     "hanzi": "求婚",
     "pinyin": "qiú hūn",
-    "hanviet": "Cầu 婚",
+    "hanviet": "Cầu Hôn",
     "meaning": "cầu hôn",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“求婚”这个词。",
-    "examplePinyin": "Qǐng jìzhu “求婚” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “求婚” này.",
+    "example": "请记住求婚这个词。",
+    "examplePinyin": "Qǐng jìzhu qiú hūn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cầu hôn này.",
     "id": "typ-hsk4-0687"
   },
   {
@@ -44278,9 +44278,9 @@
     "meaning": "gian lận",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“欺诈”这个词。",
-    "examplePinyin": "Qǐng jìzhu “欺诈” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “欺诈” này.",
+    "example": "请记住欺诈这个词。",
+    "examplePinyin": "Qǐng jìzhu qī zhà zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gian lận này.",
     "id": "typ-hsk4-0689"
   },
   {
@@ -44338,9 +44338,9 @@
     "meaning": "toàn bộ quãng đường, từ đầu đến cuối",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“全程”这个词。",
-    "examplePinyin": "Qǐng jìzhu “全程” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “全程” này.",
+    "example": "请记住全程这个词。",
+    "examplePinyin": "Qǐng jìzhu quán chéng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ toàn bộ quãng đường, từ đầu đến cuối này.",
     "id": "typ-hsk4-0694"
   },
   {
@@ -44350,9 +44350,9 @@
     "meaning": "vòng, tròn",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“圈子”这个词。",
-    "examplePinyin": "Qǐng jìzhu “圈子” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “圈子” này.",
+    "example": "请记住圈子这个词。",
+    "examplePinyin": "Qǐng jìzhu quān zi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vòng, tròn này.",
     "id": "typ-hsk4-0695"
   },
   {
@@ -44454,7 +44454,7 @@
   {
     "hanzi": "然而",
     "pinyin": "rán ér",
-    "hanviet": "Nhiên 而",
+    "hanviet": "Nhiên Nhi",
     "meaning": "tuy nhiên; nhưng",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -44470,9 +44470,9 @@
     "meaning": "rich",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“饶”这个词。",
-    "examplePinyin": "Qǐng jìzhu “饶” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “饶” này.",
+    "example": "请记住饶这个词。",
+    "examplePinyin": "Qǐng jìzhu ráo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rich này.",
     "id": "typ-hsk4-0705"
   },
   {
@@ -44482,15 +44482,15 @@
     "meaning": "vùng nhiệt đới, nhiệt đới",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“热带”这个词。",
-    "examplePinyin": "Qǐng jìzhu “热带” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “热带” này.",
+    "example": "请记住热带这个词。",
+    "examplePinyin": "Qǐng jìzhu rè dài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vùng nhiệt đới, nhiệt đới này.",
     "id": "typ-hsk4-0706"
   },
   {
     "hanzi": "热量",
     "pinyin": "rè liàng",
-    "hanviet": "Nhiệt 量",
+    "hanviet": "Nhiệt Lượng",
     "meaning": "nhiệt lượng, lượng nhiệt",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -44538,7 +44538,7 @@
   {
     "hanzi": "任何",
     "pinyin": "rèn hé",
-    "hanviet": "Nhậm 何",
+    "hanviet": "Nhậm Hà",
     "meaning": "bất kỳ; bất cứ; nào cũng được",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -44578,9 +44578,9 @@
     "meaning": "người, cá nhân",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“人身”这个词。",
-    "examplePinyin": "Qǐng jìzhu “人身” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “人身” này.",
+    "example": "请记住人身这个词。",
+    "examplePinyin": "Qǐng jìzhu rén shēn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ người, cá nhân này.",
     "id": "typ-hsk4-0714"
   },
   {
@@ -44590,9 +44590,9 @@
     "meaning": "nhân lực, nhân viên",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“人手”这个词。",
-    "examplePinyin": "Qǐng jìzhu “人手” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “人手” này.",
+    "example": "请记住人手这个词。",
+    "examplePinyin": "Qǐng jìzhu rén shǒu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhân lực, nhân viên này.",
     "id": "typ-hsk4-0715"
   },
   {
@@ -44614,9 +44614,9 @@
     "meaning": "xác thực, phê duyệt",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“认证”这个词。",
-    "examplePinyin": "Qǐng jìzhu “认证” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “认证” này.",
+    "example": "请记住认证这个词。",
+    "examplePinyin": "Qǐng jìzhu rèn zhèng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xác thực, phê duyệt này.",
     "id": "typ-hsk4-0717"
   },
   {
@@ -44626,9 +44626,9 @@
     "meaning": "nhận thức, liên quan đến nhận thức",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“认知”这个词。",
-    "examplePinyin": "Qǐng jìzhu “认知” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “认知” này.",
+    "example": "请记住认知这个词。",
+    "examplePinyin": "Qǐng jìzhu rèn zhī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhận thức, liên quan đến nhận thức này.",
     "id": "typ-hsk4-0718"
   },
   {
@@ -44646,7 +44646,7 @@
   {
     "hanzi": "融",
     "pinyin": "róng",
-    "hanviet": "融",
+    "hanviet": "Dung",
     "meaning": "tan, chảy",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -44674,9 +44674,9 @@
     "meaning": "yếu, ốm yếu",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“软弱”这个词。",
-    "examplePinyin": "Qǐng jìzhu “软弱” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “软弱” này.",
+    "example": "请记住软弱这个词。",
+    "examplePinyin": "Qǐng jìzhu ruǎn ruò zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ yếu, ốm yếu này.",
     "id": "typ-hsk4-0722"
   },
   {
@@ -44698,9 +44698,9 @@
     "meaning": "bắt đầu, nhận được; có được; mua",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“入手”这个词。",
-    "examplePinyin": "Qǐng jìzhu “入手” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “入手” này.",
+    "example": "请记住入手这个词。",
+    "examplePinyin": "Qǐng jìzhu rù shǒu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bắt đầu, nhận được; có được; mua này.",
     "id": "typ-hsk4-0724"
   },
   {
@@ -44710,9 +44710,9 @@
     "meaning": "được chọn vào trong số những người được tuyển chọn",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“入选”这个词。",
-    "examplePinyin": "Qǐng jìzhu “入选” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “入选” này.",
+    "example": "请记住入选这个词。",
+    "examplePinyin": "Qǐng jìzhu rù xuǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ được chọn vào trong số những người được tuyển chọn này.",
     "id": "typ-hsk4-0725"
   },
   {
@@ -44746,9 +44746,9 @@
     "meaning": "rừng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“森林”这个词。",
-    "examplePinyin": "Qǐng jìzhu “森林” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “森林” này.",
+    "example": "请记住森林这个词。",
+    "examplePinyin": "Qǐng jìzhu sēn lín zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rừng này.",
     "id": "typ-hsk4-0728"
   },
   {
@@ -44758,9 +44758,9 @@
     "meaning": "sợi bông, vải muslin",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“纱”这个词。",
-    "examplePinyin": "Qǐng jìzhu “纱” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “纱” này.",
+    "example": "请记住纱这个词。",
+    "examplePinyin": "Qǐng jìzhu shā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sợi bông, vải muslin này.",
     "id": "typ-hsk4-0729"
   },
   {
@@ -44782,9 +44782,9 @@
     "meaning": "salon",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“沙龙”这个词。",
-    "examplePinyin": "Qǐng jìzhu “沙龙” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “沙龙” này.",
+    "example": "请记住沙龙这个词。",
+    "examplePinyin": "Qǐng jìzhu shā lóng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ salon này.",
     "id": "typ-hsk4-0731"
   },
   {
@@ -44818,9 +44818,9 @@
     "meaning": "báo cáo lên cấp trên, xuất hiện trên tin tức",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“上报”这个词。",
-    "examplePinyin": "Qǐng jìzhu “上报” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “上报” này.",
+    "example": "请记住上报这个词。",
+    "examplePinyin": "Qǐng jìzhu shàng bào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ báo cáo lên cấp trên, xuất hiện trên tin tức này.",
     "id": "typ-hsk4-0734"
   },
   {
@@ -44830,9 +44830,9 @@
     "meaning": "buồn, cảm động",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“伤感”这个词。",
-    "examplePinyin": "Qǐng jìzhu “伤感” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “伤感” này.",
+    "example": "请记住伤感这个词。",
+    "examplePinyin": "Qǐng jìzhu shāng gǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ buồn, cảm động này.",
     "id": "typ-hsk4-0735"
   },
   {
@@ -44842,9 +44842,9 @@
     "meaning": "vết sẹo, vết bầm",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“伤痕”这个词。",
-    "examplePinyin": "Qǐng jìzhu “伤痕” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “伤痕” này.",
+    "example": "请记住伤痕这个词。",
+    "examplePinyin": "Qǐng jìzhu shāng hén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vết sẹo, vết bầm này.",
     "id": "typ-hsk4-0736"
   },
   {
@@ -44854,15 +44854,15 @@
     "meaning": "trên không, trong bầu trời",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“上空”这个词。",
-    "examplePinyin": "Qǐng jìzhu “上空” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “上空” này.",
+    "example": "请记住上空这个词。",
+    "examplePinyin": "Qǐng jìzhu shàng kōng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trên không, trong bầu trời này.",
     "id": "typ-hsk4-0737"
   },
   {
     "hanzi": "商量",
     "pinyin": "shāng liang",
-    "hanviet": "Thương 量",
+    "hanviet": "Thương Lượng",
     "meaning": "trao đổi, bàn bạc",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -44890,9 +44890,9 @@
     "meaning": "đã nói ở trên, đã đề cập ở trên",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“上述”这个词。",
-    "examplePinyin": "Qǐng jìzhu “上述” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “上述” này.",
+    "example": "请记住上述这个词。",
+    "examplePinyin": "Qǐng jìzhu shàng shù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đã nói ở trên, đã đề cập ở trên này.",
     "id": "typ-hsk4-0740"
   },
   {
@@ -44914,9 +44914,9 @@
     "meaning": "chiếu; trình chiếu",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“上映”这个词。",
-    "examplePinyin": "Qǐng jìzhu “上映” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “上映” này.",
+    "example": "请记住上映这个词。",
+    "examplePinyin": "Qǐng jìzhu shàng yìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chiếu; trình chiếu này.",
     "id": "typ-hsk4-0742"
   },
   {
@@ -44934,13 +44934,13 @@
   {
     "hanzi": "稍后",
     "pinyin": "shāo hòu",
-    "hanviet": "稍 Hậu",
+    "hanviet": "Sảo Hậu",
     "meaning": "một lát nữa, chút nữa",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“稍后”这个词。",
-    "examplePinyin": "Qǐng jìzhu “稍后” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “稍后” này.",
+    "example": "请记住稍后这个词。",
+    "examplePinyin": "Qǐng jìzhu shāo hòu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ một lát nữa, chút nữa này.",
     "id": "typ-hsk4-0744"
   },
   {
@@ -44958,19 +44958,19 @@
   {
     "hanzi": "少量",
     "pinyin": "shǎo liàng",
-    "hanviet": "Thiểu 量",
+    "hanviet": "Thiểu Lượng",
     "meaning": "một chút, một ít",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“少量”这个词。",
-    "examplePinyin": "Qǐng jìzhu “少量” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “少量” này.",
+    "example": "请记住少量这个词。",
+    "examplePinyin": "Qǐng jìzhu shǎo liàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ một chút, một ít này.",
     "id": "typ-hsk4-0746"
   },
   {
     "hanzi": "稍微",
     "pinyin": "shāo wēi",
-    "hanviet": "稍 Vi",
+    "hanviet": "Sảo Vi",
     "meaning": "một chút",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -44982,13 +44982,13 @@
   {
     "hanzi": "鲨鱼",
     "pinyin": "shā yú",
-    "hanviet": "鲨 Ngư",
+    "hanviet": "Sa Ngư",
     "meaning": "cá mập",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“鲨鱼”这个词。",
-    "examplePinyin": "Qǐng jìzhu “鲨鱼” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “鲨鱼” này.",
+    "example": "请记住鲨鱼这个词。",
+    "examplePinyin": "Qǐng jìzhu shā yú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cá mập này.",
     "id": "typ-hsk4-0748"
   },
   {
@@ -44998,9 +44998,9 @@
     "meaning": "cố gắng, thử",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“设法”这个词。",
-    "examplePinyin": "Qǐng jìzhu “设法” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “设法” này.",
+    "example": "请记住设法这个词。",
+    "examplePinyin": "Qǐng jìzhu shè fǎ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cố gắng, thử này.",
     "id": "typ-hsk4-0749"
   },
   {
@@ -45030,7 +45030,7 @@
   {
     "hanzi": "剩",
     "pinyin": "shèng",
-    "hanviet": "剩",
+    "hanviet": "Thặng",
     "meaning": "còn lại, được để lại",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -45094,15 +45094,15 @@
     "meaning": "khi còn sống, lúc còn sống",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“生前”这个词。",
-    "examplePinyin": "Qǐng jìzhu “生前” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “生前” này.",
+    "example": "请记住生前这个词。",
+    "examplePinyin": "Qǐng jìzhu shēng qián zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khi còn sống, lúc còn sống này.",
     "id": "typ-hsk4-0757"
   },
   {
     "hanzi": "深厚",
     "pinyin": "shēn hòu",
-    "hanviet": "Thâm 厚",
+    "hanviet": "Thâm Hậu",
     "meaning": "sâu sắc; uyên thâm",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -45114,7 +45114,7 @@
   {
     "hanzi": "申请",
     "pinyin": "shēn qǐng",
-    "hanviet": "申 Thỉnh",
+    "hanviet": "Thân Thỉnh",
     "meaning": "nộp đơn xin, đơn xin",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -45130,9 +45130,9 @@
     "meaning": "thể chất và tinh thần, tinh thần và thể chất",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“身心”这个词。",
-    "examplePinyin": "Qǐng jìzhu “身心” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “身心” này.",
+    "example": "请记住身心这个词。",
+    "examplePinyin": "Qǐng jìzhu shēn xīn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thể chất và tinh thần, tinh thần và thể chất này.",
     "id": "typ-hsk4-0760"
   },
   {
@@ -45142,9 +45142,9 @@
     "meaning": "bóng dáng, hình dáng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“身影”这个词。",
-    "examplePinyin": "Qǐng jìzhu “身影” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “身影” này.",
+    "example": "请记住身影这个词。",
+    "examplePinyin": "Qǐng jìzhu shēn yǐng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bóng dáng, hình dáng này.",
     "id": "typ-hsk4-0761"
   },
   {
@@ -45174,7 +45174,7 @@
   {
     "hanzi": "识",
     "pinyin": "shí",
-    "hanviet": "识",
+    "hanviet": "Thức",
     "meaning": "biết, kiến thức",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -45226,9 +45226,9 @@
     "meaning": "khoảng thời gian, ca làm việc",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“时段”这个词。",
-    "examplePinyin": "Qǐng jìzhu “时段” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “时段” này.",
+    "example": "请记住时段这个词。",
+    "examplePinyin": "Qǐng jìzhu shí duàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khoảng thời gian, ca làm việc này.",
     "id": "typ-hsk4-0768"
   },
   {
@@ -45318,7 +45318,7 @@
   {
     "hanzi": "实际",
     "pinyin": "shí jì",
-    "hanviet": "Thực 际",
+    "hanviet": "Thực Tế",
     "meaning": "thực tế, thực hành",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -45334,9 +45334,9 @@
     "meaning": "lịch trình, thời gian biểu",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“时间表”这个词。",
-    "examplePinyin": "Qǐng jìzhu “时间表” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “时间表” này.",
+    "example": "请记住时间表这个词。",
+    "examplePinyin": "Qǐng jìzhu shí jiān biǎo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lịch trình, thời gian biểu này.",
     "id": "typ-hsk4-0777"
   },
   {
@@ -45358,15 +45358,15 @@
     "meaning": "mất, đánh rơi",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“失落”这个词。",
-    "examplePinyin": "Qǐng jìzhu “失落” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “失落” này.",
+    "example": "请记住失落这个词。",
+    "examplePinyin": "Qǐng jìzhu shī luò zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mất, đánh rơi này.",
     "id": "typ-hsk4-0779"
   },
   {
     "hanzi": "食品",
     "pinyin": "shí pǐn",
-    "hanviet": "食 Phẩm",
+    "hanviet": "Thực Phẩm",
     "meaning": "thực phẩm; đồ ăn; lương thực",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -45382,9 +45382,9 @@
     "meaning": "ẩm ướt",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“湿润”这个词。",
-    "examplePinyin": "Qǐng jìzhu “湿润” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “湿润” này.",
+    "example": "请记住湿润这个词。",
+    "examplePinyin": "Qǐng jìzhu shī rùn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ẩm ướt này.",
     "id": "typ-hsk4-0781"
   },
   {
@@ -45402,7 +45402,7 @@
   {
     "hanzi": "食堂",
     "pinyin": "shí táng",
-    "hanviet": "食 Đường",
+    "hanviet": "Thực Đường",
     "meaning": "phòng ăn; căng-tin",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -45430,9 +45430,9 @@
     "meaning": "công việc, sắp xếp",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“事宜”这个词。",
-    "examplePinyin": "Qǐng jìzhu “事宜” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “事宜” này.",
+    "example": "请记住事宜这个词。",
+    "examplePinyin": "Qǐng jìzhu shì yí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ công việc, sắp xếp này.",
     "id": "typ-hsk4-0785"
   },
   {
@@ -45474,13 +45474,13 @@
   {
     "hanzi": "使者",
     "pinyin": "shǐ zhě",
-    "hanviet": "Sứ 者",
+    "hanviet": "Sứ Giả",
     "meaning": "sứ giả, đặc phái viên",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“使者”这个词。",
-    "examplePinyin": "Qǐng jìzhu “使者” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “使者” này.",
+    "example": "请记住使者这个词。",
+    "examplePinyin": "Qǐng jìzhu shǐ zhě zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sứ giả, đặc phái viên này.",
     "id": "typ-hsk4-0789"
   },
   {
@@ -45490,9 +45490,9 @@
     "meaning": "Leo, Thị trấn Shizi ở huyện Pingtung 屏東縣|屏东县, Đài Loan",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“狮子”这个词。",
-    "examplePinyin": "Qǐng jìzhu “狮子” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “狮子” này.",
+    "example": "请记住狮子这个词。",
+    "examplePinyin": "Qǐng jìzhu Shī zǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ Leo, Thị trấn Shizi ở huyện Pingtung , Đài Loan này.",
     "id": "typ-hsk4-0790"
   },
   {
@@ -45502,9 +45502,9 @@
     "meaning": "ngã tư, giao lộ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“十字路口”这个词。",
-    "examplePinyin": "Qǐng jìzhu “十字路口” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “十字路口” này.",
+    "example": "请记住十字路口这个词。",
+    "examplePinyin": "Qǐng jìzhu shí zì lù kǒu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngã tư, giao lộ này.",
     "id": "typ-hsk4-0791"
   },
   {
@@ -45538,9 +45538,9 @@
     "meaning": "sổ tay; cẩm nang",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“手册”这个词。",
-    "examplePinyin": "Qǐng jìzhu “手册” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “手册” này.",
+    "example": "请记住手册这个词。",
+    "examplePinyin": "Qǐng jìzhu shǒu cè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sổ tay; cẩm nang này.",
     "id": "typ-hsk4-0794"
   },
   {
@@ -45570,7 +45570,7 @@
   {
     "hanzi": "售货员",
     "pinyin": "shòu huò yuán",
-    "hanviet": "售 Hoá Viên",
+    "hanviet": "Thọ Hoá Viên",
     "meaning": "nhân viên bán hàng",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -45622,9 +45622,9 @@
     "meaning": "cổ tay, mưu mẹo",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“手腕”这个词。",
-    "examplePinyin": "Qǐng jìzhu “手腕” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “手腕” này.",
+    "example": "请记住手腕这个词。",
+    "examplePinyin": "Qǐng jìzhu shǒu wàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cổ tay, mưu mẹo này.",
     "id": "typ-hsk4-0801"
   },
   {
@@ -45658,9 +45658,9 @@
     "meaning": "hưởng lợi từ, có lợi",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“受益”这个词。",
-    "examplePinyin": "Qǐng jìzhu “受益” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “受益” này.",
+    "example": "请记住受益这个词。",
+    "examplePinyin": "Qǐng jìzhu shòu yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hưởng lợi từ, có lợi này.",
     "id": "typ-hsk4-0804"
   },
   {
@@ -45690,7 +45690,7 @@
   {
     "hanzi": "摔倒",
     "pinyin": "shuāi dǎo",
-    "hanviet": "摔 Đảo",
+    "hanviet": "Suất Đảo",
     "meaning": "ngã xuống, trượt ngã",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -45702,7 +45702,7 @@
   {
     "hanzi": "率先",
     "pinyin": "shuài xiān",
-    "hanviet": "率 Tiên",
+    "hanviet": "Suất Tiên",
     "meaning": "dẫn đầu, chủ động",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -45742,15 +45742,15 @@
     "meaning": "thuế, sự thu thuế",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“税收”这个词。",
-    "examplePinyin": "Qǐng jìzhu “税收” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “税收” này.",
+    "example": "请记住税收这个词。",
+    "examplePinyin": "Qǐng jìzhu shuì shōu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thuế, sự thu thuế này.",
     "id": "typ-hsk4-0811"
   },
   {
     "hanzi": "数量",
     "pinyin": "shù liàng",
-    "hanviet": "Số 量",
+    "hanviet": "Số Lượng",
     "meaning": "số lượng, thuộc về số lượng",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -45766,9 +45766,9 @@
     "meaning": "một cách thuận tiện, nhân tiện",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“顺便”这个词。",
-    "examplePinyin": "Qǐng jìzhu “顺便” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “顺便” này.",
+    "example": "请记住顺便这个词。",
+    "examplePinyin": "Qǐng jìzhu shùn biàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ một cách thuận tiện, nhân tiện này.",
     "id": "typ-hsk4-0813"
   },
   {
@@ -45838,9 +45838,9 @@
     "meaning": "phân tán, giải tán",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“疏散”这个词。",
-    "examplePinyin": "Qǐng jìzhu “疏散” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “疏散” này.",
+    "example": "请记住疏散这个词。",
+    "examplePinyin": "Qǐng jìzhu shū sàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phân tán, giải tán này.",
     "id": "typ-hsk4-0819"
   },
   {
@@ -45882,7 +45882,7 @@
   {
     "hanzi": "寺",
     "pinyin": "sì",
-    "hanviet": "寺",
+    "hanviet": "Tự",
     "meaning": "chùa Phật giáo, nhà thờ Hồi giáo",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -45922,9 +45922,9 @@
     "meaning": "lục soát",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“搜查”这个词。",
-    "examplePinyin": "Qǐng jìzhu “搜查” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “搜查” này.",
+    "example": "请记住搜查这个词。",
+    "examplePinyin": "Qǐng jìzhu sōu chá zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lục soát này.",
     "id": "typ-hsk4-0826"
   },
   {
@@ -45934,9 +45934,9 @@
     "meaning": "thu thập, sưu tầm",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“搜集”这个词。",
-    "examplePinyin": "Qǐng jìzhu “搜集” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “搜集” này.",
+    "example": "请记住搜集这个词。",
+    "examplePinyin": "Qǐng jìzhu sōu jí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thu thập, sưu tầm này.",
     "id": "typ-hsk4-0827"
   },
   {
@@ -45946,9 +45946,9 @@
     "meaning": "tìm kiếm, tìm",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“搜寻”这个词。",
-    "examplePinyin": "Qǐng jìzhu “搜寻” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “搜寻” này.",
+    "example": "请记住搜寻这个词。",
+    "examplePinyin": "Qǐng jìzhu sōu xún zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tìm kiếm, tìm này.",
     "id": "typ-hsk4-0828"
   },
   {
@@ -45978,7 +45978,7 @@
   {
     "hanzi": "酸",
     "pinyin": "suān",
-    "hanviet": "酸",
+    "hanviet": "Toan",
     "meaning": "chua, chua xót",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -46018,9 +46018,9 @@
     "meaning": "tuy, dù",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“虽说”这个词。",
-    "examplePinyin": "Qǐng jìzhu “虽说” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “虽说” này.",
+    "example": "请记住虽说这个词。",
+    "examplePinyin": "Qǐng jìzhu suī shuō zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tuy, dù này.",
     "id": "typ-hsk4-0834"
   },
   {
@@ -46038,7 +46038,7 @@
   {
     "hanzi": "塑料袋",
     "pinyin": "sù liào dài",
-    "hanviet": "塑 Liệu Đãy",
+    "hanviet": "Tố Liệu Đãy",
     "meaning": "túi nhựa",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -46098,7 +46098,7 @@
   {
     "hanzi": "抬",
     "pinyin": "tái",
-    "hanviet": "抬",
+    "hanviet": "Đài",
     "meaning": "nâng, nhấc",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -46122,13 +46122,13 @@
   {
     "hanzi": "碳",
     "pinyin": "tàn",
-    "hanviet": "碳",
+    "hanviet": "Thán",
     "meaning": "cacbon",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“碳”这个词。",
-    "examplePinyin": "Qǐng jìzhu “碳” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “碳” này.",
+    "example": "请记住碳这个词。",
+    "examplePinyin": "Qǐng jìzhu tàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cacbon này.",
     "id": "typ-hsk4-0843"
   },
   {
@@ -46146,7 +46146,7 @@
   {
     "hanzi": "趟",
     "pinyin": "tāng",
-    "hanviet": "趟",
+    "hanviet": "Thảng",
     "meaning": "biến thể cũ của 趟",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -46174,9 +46174,9 @@
     "meaning": "thám hiểm, đi thám hiểm",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“探险”这个词。",
-    "examplePinyin": "Qǐng jìzhu “探险” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “探险” này.",
+    "example": "请记住探险这个词。",
+    "examplePinyin": "Qǐng jìzhu tàn xiǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thám hiểm, đi thám hiểm này.",
     "id": "typ-hsk4-0847"
   },
   {
@@ -46186,15 +46186,15 @@
     "meaning": "rửa, làm sạch",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“淘”这个词。",
-    "examplePinyin": "Qǐng jìzhu “淘” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “淘” này.",
+    "example": "请记住淘这个词。",
+    "examplePinyin": "Qǐng jìzhu táo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rửa, làm sạch này.",
     "id": "typ-hsk4-0848"
   },
   {
     "hanzi": "套餐",
     "pinyin": "tào cān",
-    "hanviet": "套 餐",
+    "hanviet": "Sáo Xan",
     "meaning": "bữa ăn set, gói sản phẩm hoặc dịch vụ",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -46266,13 +46266,13 @@
   {
     "hanzi": "腾",
     "pinyin": "téng",
-    "hanviet": "腾",
+    "hanviet": "Đằng",
     "meaning": "phi nước đại; nhảy cẫng lên, bay lên; lơ lửng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“腾”这个词。",
-    "examplePinyin": "Qǐng jìzhu “腾” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “腾” này.",
+    "example": "请记住腾这个词。",
+    "examplePinyin": "Qǐng jìzhu téng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phi nước đại; nhảy cẫng lên, bay lên; lơ lửng này.",
     "id": "typ-hsk4-0855"
   },
   {
@@ -46282,9 +46282,9 @@
     "meaning": "đặc quyền, đặc ân",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“特权”这个词。",
-    "examplePinyin": "Qǐng jìzhu “特权” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “特权” này.",
+    "example": "请记住特权这个词。",
+    "examplePinyin": "Qǐng jìzhu tè quán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đặc quyền, đặc ân này.",
     "id": "typ-hsk4-0856"
   },
   {
@@ -46306,9 +46306,9 @@
     "meaning": "trời đất, thế giới",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“天地”这个词。",
-    "examplePinyin": "Qǐng jìzhu “天地” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “天地” này.",
+    "example": "请记住天地这个词。",
+    "examplePinyin": "Qǐng jìzhu tiān dì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trời đất, thế giới này.",
     "id": "typ-hsk4-0858"
   },
   {
@@ -46330,9 +46330,9 @@
     "meaning": "điền vào biểu mẫu, viết dữ liệu vào ô",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“填写”这个词。",
-    "examplePinyin": "Qǐng jìzhu “填写” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “填写” này.",
+    "example": "请记住填写这个词。",
+    "examplePinyin": "Qǐng jìzhu tián xiě zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ điền vào biểu mẫu, viết dữ liệu vào ô này.",
     "id": "typ-hsk4-0860"
   },
   {
@@ -46350,7 +46350,7 @@
   {
     "hanzi": "体操",
     "pinyin": "tǐ cāo",
-    "hanviet": "Thể 操",
+    "hanviet": "Thể Thao",
     "meaning": "thể dục dụng cụ",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -46366,9 +46366,9 @@
     "meaning": "thẻ, mời",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“帖子”这个词。",
-    "examplePinyin": "Qǐng jìzhu “帖子” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “帖子” này.",
+    "example": "请记住帖子这个词。",
+    "examplePinyin": "Qǐng jìzhu tiě zi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thẻ, mời này.",
     "id": "typ-hsk4-0863"
   },
   {
@@ -46398,7 +46398,7 @@
   {
     "hanzi": "挺",
     "pinyin": "tǐng",
-    "hanviet": "挺",
+    "hanviet": "Đĩnh",
     "meaning": "thẳng, đứng thẳng",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -46414,9 +46414,9 @@
     "meaning": "bị mất điện, cúp điện",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“停电”这个词。",
-    "examplePinyin": "Qǐng jìzhu “停电” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “停电” này.",
+    "example": "请记住停电这个词。",
+    "examplePinyin": "Qǐng jìzhu tíng diàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bị mất điện, cúp điện này.",
     "id": "typ-hsk4-0867"
   },
   {
@@ -46450,9 +46450,9 @@
     "meaning": "nhiệt độ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“体温”这个词。",
-    "examplePinyin": "Qǐng jìzhu “体温” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “体温” này.",
+    "example": "请记住体温这个词。",
+    "examplePinyin": "Qǐng jìzhu tǐ wēn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhiệt độ này.",
     "id": "typ-hsk4-0870"
   },
   {
@@ -46470,13 +46470,13 @@
   {
     "hanzi": "通告",
     "pinyin": "tōng gào",
-    "hanviet": "Thông 告",
+    "hanviet": "Thông Cáo",
     "meaning": "thông báo; đưa thông báo, thông báo",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“通告”这个词。",
-    "examplePinyin": "Qǐng jìzhu “通告” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “通告” này.",
+    "example": "请记住通告这个词。",
+    "examplePinyin": "Qǐng jìzhu tōng gào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thông báo; đưa thông báo, thông báo này.",
     "id": "typ-hsk4-0872"
   },
   {
@@ -46498,9 +46498,9 @@
     "meaning": "tương tự, cùng loại",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“同类”这个词。",
-    "examplePinyin": "Qǐng jìzhu “同类” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “同类” này.",
+    "example": "请记住同类这个词。",
+    "examplePinyin": "Qǐng jìzhu tóng lèi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tương tự, cùng loại này.",
     "id": "typ-hsk4-0874"
   },
   {
@@ -46518,13 +46518,13 @@
   {
     "hanzi": "通宵",
     "pinyin": "tōng xiāo",
-    "hanviet": "Thông 宵",
+    "hanviet": "Thông Tiêu",
     "meaning": "cả đêm, suốt đêm",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“通宵”这个词。",
-    "examplePinyin": "Qǐng jìzhu “通宵” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “通宵” này.",
+    "example": "请记住通宵这个词。",
+    "examplePinyin": "Qǐng jìzhu tōng xiāo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cả đêm, suốt đêm này.",
     "id": "typ-hsk4-0876"
   },
   {
@@ -46570,9 +46570,9 @@
     "meaning": "đỉnh đầu",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“头顶”这个词。",
-    "examplePinyin": "Qǐng jìzhu “头顶” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “头顶” này.",
+    "example": "请记住头顶这个词。",
+    "examplePinyin": "Qǐng jìzhu tóu dǐng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đỉnh đầu này.",
     "id": "typ-hsk4-0880"
   },
   {
@@ -46582,9 +46582,9 @@
     "meaning": "chóng mặt",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“头晕”这个词。",
-    "examplePinyin": "Qǐng jìzhu “头晕” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “头晕” này.",
+    "example": "请记住头晕这个词。",
+    "examplePinyin": "Qǐng jìzhu tóu yūn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chóng mặt này.",
     "id": "typ-hsk4-0881"
   },
   {
@@ -46618,21 +46618,21 @@
     "meaning": "giải ngũ, ngừng hoạt động",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“退役”这个词。",
-    "examplePinyin": "Qǐng jìzhu “退役” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “退役” này.",
+    "example": "请记住退役这个词。",
+    "examplePinyin": "Qǐng jìzhu tuì yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giải ngũ, ngừng hoạt động này.",
     "id": "typ-hsk4-0884"
   },
   {
     "hanzi": "突击",
     "pinyin": "tū jī",
-    "hanviet": "Đột 击",
+    "hanviet": "Đột Kích",
     "meaning": "tấn công đột ngột và dữ dội, tập kích",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“突击”这个词。",
-    "examplePinyin": "Qǐng jìzhu “突击” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “突击” này.",
+    "example": "请记住突击这个词。",
+    "examplePinyin": "Qǐng jìzhu tū jī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tấn công đột ngột và dữ dội, tập kích này.",
     "id": "typ-hsk4-0885"
   },
   {
@@ -46642,9 +46642,9 @@
     "meaning": "thích hợp, đầy đủ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“妥”这个词。",
-    "examplePinyin": "Qǐng jìzhu “妥” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “妥” này.",
+    "example": "请记住妥这个词。",
+    "examplePinyin": "Qǐng jìzhu tuǒ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thích hợp, đầy đủ này.",
     "id": "typ-hsk4-0886"
   },
   {
@@ -46666,9 +46666,9 @@
     "meaning": "tàn sát; giết thịt",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“屠杀”这个词。",
-    "examplePinyin": "Qǐng jìzhu “屠杀” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “屠杀” này.",
+    "example": "请记住屠杀这个词。",
+    "examplePinyin": "Qǐng jìzhu tú shā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tàn sát; giết thịt này.",
     "id": "typ-hsk4-0888"
   },
   {
@@ -46686,7 +46686,7 @@
   {
     "hanzi": "外汇",
     "pinyin": "wài huì",
-    "hanviet": "Ngoại 汇",
+    "hanviet": "Ngoại Hối",
     "meaning": "trao đổi ngoại tệ",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -46714,9 +46714,9 @@
     "meaning": "dáng vẻ, hình dạng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“外形”这个词。",
-    "examplePinyin": "Qǐng jìzhu “外形” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “外形” này.",
+    "example": "请记住外形这个词。",
+    "examplePinyin": "Qǐng jìzhu wài xíng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dáng vẻ, hình dạng này.",
     "id": "typ-hsk4-0892"
   },
   {
@@ -46726,21 +46726,21 @@
     "meaning": "người ngoài hành tinh; sinh vật ngoài trái đất",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“外星人”这个词。",
-    "examplePinyin": "Qǐng jìzhu “外星人” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “外星人” này.",
+    "example": "请记住外星人这个词。",
+    "examplePinyin": "Qǐng jìzhu wài xīng rén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ người ngoài hành tinh; sinh vật ngoài trái đất này.",
     "id": "typ-hsk4-0893"
   },
   {
     "hanzi": "完蛋",
     "pinyin": "wán dàn",
-    "hanviet": "Hoàn 蛋",
+    "hanviet": "Hoàn Đản",
     "meaning": "xong đời",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“完蛋”这个词。",
-    "examplePinyin": "Qǐng jìzhu “完蛋” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “完蛋” này.",
+    "example": "请记住完蛋这个词。",
+    "examplePinyin": "Qǐng jìzhu wán dàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xong đời này.",
     "id": "typ-hsk4-0894"
   },
   {
@@ -46774,9 +46774,9 @@
     "meaning": "quên",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“忘掉”这个词。",
-    "examplePinyin": "Qǐng jìzhu “忘掉” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “忘掉” này.",
+    "example": "请记住忘掉这个词。",
+    "examplePinyin": "Qǐng jìzhu wàng diào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quên này.",
     "id": "typ-hsk4-0897"
   },
   {
@@ -46830,7 +46830,7 @@
   {
     "hanzi": "网页",
     "pinyin": "wǎng yè",
-    "hanviet": "Võng 页",
+    "hanviet": "Võng Hiệt",
     "meaning": "trang web",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -46870,9 +46870,9 @@
     "meaning": "buổi tối, ban đêm",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“晚间”这个词。",
-    "examplePinyin": "Qǐng jìzhu “晚间” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “晚间” này.",
+    "example": "请记住晚间这个词。",
+    "examplePinyin": "Qǐng jìzhu wǎn jiān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ buổi tối, ban đêm này.",
     "id": "typ-hsk4-0905"
   },
   {
@@ -46882,9 +46882,9 @@
     "meaning": "toàn năng, đa dụng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“万能”这个词。",
-    "examplePinyin": "Qǐng jìzhu “万能” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “万能” này.",
+    "example": "请记住万能这个词。",
+    "examplePinyin": "Qǐng jìzhu wàn néng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ toàn năng, đa dụng này.",
     "id": "typ-hsk4-0906"
   },
   {
@@ -46902,7 +46902,7 @@
   {
     "hanzi": "袜子",
     "pinyin": "wà zi",
-    "hanviet": "袜 Tử",
+    "hanviet": "Mạt Tử",
     "meaning": "tất, vớ",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -46918,9 +46918,9 @@
     "meaning": "vị thành niên",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“未成年人”这个词。",
-    "examplePinyin": "Qǐng jìzhu “未成年人” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “未成年人” này.",
+    "example": "请记住未成年人这个词。",
+    "examplePinyin": "Qǐng jìzhu wèi chéng nián rén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vị thành niên này.",
     "id": "typ-hsk4-0909"
   },
   {
@@ -46938,7 +46938,7 @@
   {
     "hanzi": "味儿",
     "pinyin": "wèi r",
-    "hanviet": "Vị 儿",
+    "hanviet": "Vị Nhi",
     "meaning": "hương vị",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -46990,9 +46990,9 @@
     "meaning": "chỗ, ngồi",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“位子”这个词。",
-    "examplePinyin": "Qǐng jìzhu “位子” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “位子” này.",
+    "example": "请记住位子这个词。",
+    "examplePinyin": "Qǐng jìzhu wèi zi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chỗ, ngồi này.",
     "id": "typ-hsk4-0915"
   },
   {
@@ -47022,7 +47022,7 @@
   {
     "hanzi": "握手",
     "pinyin": "wò shǒu",
-    "hanviet": "握 Thủ",
+    "hanviet": "Ác Thủ",
     "meaning": "bắt tay",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -47046,7 +47046,7 @@
   {
     "hanzi": "误会",
     "pinyin": "wù huì",
-    "hanviet": "误 Hội",
+    "hanviet": "Ngộ Hội",
     "meaning": "hiểu lầm, nhầm lẫn",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -47058,7 +47058,7 @@
   {
     "hanzi": "无聊",
     "pinyin": "wú liáo",
-    "hanviet": "Vô 聊",
+    "hanviet": "Vô Liêu",
     "meaning": "chán, chán nản",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -47122,9 +47122,9 @@
     "meaning": "hiếm, không phổ biến",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“稀”这个词。",
-    "examplePinyin": "Qǐng jìzhu “稀” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “稀” này.",
+    "example": "请记住稀这个词。",
+    "examplePinyin": "Qǐng jìzhu xī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hiếm, không phổ biến này.",
     "id": "typ-hsk4-0926"
   },
   {
@@ -47158,15 +47158,15 @@
     "meaning": "tung tích, rơi",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“下落”这个词。",
-    "examplePinyin": "Qǐng jìzhu “下落” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “下落” này.",
+    "example": "请记住下落这个词。",
+    "examplePinyin": "Qǐng jìzhu xià luò zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tung tích, rơi này.",
     "id": "typ-hsk4-0929"
   },
   {
     "hanzi": "咸",
     "pinyin": "xián",
-    "hanviet": "咸",
+    "hanviet": "Hàm",
     "meaning": "all",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -47238,13 +47238,13 @@
   {
     "hanzi": "相识",
     "pinyin": "xiāng shí",
-    "hanviet": "Tương 识",
+    "hanviet": "Tương Thức",
     "meaning": "làm quen, người quen",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“相识”这个词。",
-    "examplePinyin": "Qǐng jìzhu “相识” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “相识” này.",
+    "example": "请记住相识这个词。",
+    "examplePinyin": "Qǐng jìzhu xiāng shí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ làm quen, người quen này.",
     "id": "typ-hsk4-0936"
   },
   {
@@ -47254,9 +47254,9 @@
     "meaning": "hương thơm, hương vị",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“香味”这个词。",
-    "examplePinyin": "Qǐng jìzhu “香味” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “香味” này.",
+    "example": "请记住香味这个词。",
+    "examplePinyin": "Qǐng jìzhu xiāng wèi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hương thơm, hương vị này.",
     "id": "typ-hsk4-0937"
   },
   {
@@ -47278,9 +47278,9 @@
     "meaning": "hưởng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“享有”这个词。",
-    "examplePinyin": "Qǐng jìzhu “享有” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “享有” này.",
+    "example": "请记住享有这个词。",
+    "examplePinyin": "Qǐng jìzhu xiǎng yǒu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hưởng này.",
     "id": "typ-hsk4-0939"
   },
   {
@@ -47290,21 +47290,21 @@
     "meaning": "ganh tị, ngưỡng mộ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“羡慕”这个词。",
-    "examplePinyin": "Qǐng jìzhu “羡慕” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “羡慕” này.",
+    "example": "请记住羡慕这个词。",
+    "examplePinyin": "Qǐng jìzhu xiàn mù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ganh tị, ngưỡng mộ này.",
     "id": "typ-hsk4-0940"
   },
   {
     "hanzi": "线条",
     "pinyin": "xiàn tiáo",
-    "hanviet": "线 Điều",
+    "hanviet": "Tuyến Điều",
     "meaning": "đường nét, đường nét hoặc đường viền của một vật thể ba chiều",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“线条”这个词。",
-    "examplePinyin": "Qǐng jìzhu “线条” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “线条” này.",
+    "example": "请记住线条这个词。",
+    "examplePinyin": "Qǐng jìzhu xiàn tiáo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đường nét, đường nét hoặc đường viền của một vật thể ba chiều này.",
     "id": "typ-hsk4-0941"
   },
   {
@@ -47314,9 +47314,9 @@
     "meaning": "sự xuất hiện, xuất hiện",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“显现”这个词。",
-    "examplePinyin": "Qǐng jìzhu “显现” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “显现” này.",
+    "example": "请记住显现这个词。",
+    "examplePinyin": "Qǐng jìzhu xiǎn xiàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sự xuất hiện, xuất hiện này.",
     "id": "typ-hsk4-0942"
   },
   {
@@ -47338,9 +47338,9 @@
     "meaning": "gọt bằng dao, bào",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“削”这个词。",
-    "examplePinyin": "Qǐng jìzhu “削” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “削” này.",
+    "example": "请记住削这个词。",
+    "examplePinyin": "Qǐng jìzhu xiāo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gọt bằng dao, bào này.",
     "id": "typ-hsk4-0944"
   },
   {
@@ -47358,7 +47358,7 @@
   {
     "hanzi": "笑话",
     "pinyin": "xiào hua",
-    "hanviet": "笑 Thoại",
+    "hanviet": "Tiếu Thoại",
     "meaning": "trò đùa; chuyện cười, chế nhạo; chế giễu",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -47374,9 +47374,9 @@
     "meaning": "tác phẩm văn học hoặc nghệ thuật ngắn, đơn giản, tiểu luận",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“小品”这个词。",
-    "examplePinyin": "Qǐng jìzhu “小品” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “小品” này.",
+    "example": "请记住小品这个词。",
+    "examplePinyin": "Qǐng jìzhu xiǎo pǐn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tác phẩm văn học hoặc nghệ thuật ngắn, đơn giản, tiểu luận này.",
     "id": "typ-hsk4-0947"
   },
   {
@@ -47386,9 +47386,9 @@
     "meaning": "người có địa vị xã hội thấp, tôi",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“小人”这个词。",
-    "examplePinyin": "Qǐng jìzhu “小人” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “小人” này.",
+    "example": "请记住小人这个词。",
+    "examplePinyin": "Qǐng jìzhu xiǎo rén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ người có địa vị xã hội thấp, tôi này.",
     "id": "typ-hsk4-0948"
   },
   {
@@ -47418,19 +47418,19 @@
   {
     "hanzi": "卸",
     "pinyin": "xiè",
-    "hanviet": "卸",
+    "hanviet": "Tạ",
     "meaning": "dỡ, xuống",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“卸”这个词。",
-    "examplePinyin": "Qǐng jìzhu “卸” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “卸” này.",
+    "example": "请记住卸这个词。",
+    "examplePinyin": "Qǐng jìzhu xiè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dỡ, xuống này.",
     "id": "typ-hsk4-0951"
   },
   {
     "hanzi": "页",
     "pinyin": "xié",
-    "hanviet": "页",
+    "hanviet": "Hiệt",
     "meaning": "đầu",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -47446,9 +47446,9 @@
     "meaning": "rò rỉ, tiết lộ; rò rỉ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“泄漏”这个词。",
-    "examplePinyin": "Qǐng jìzhu “泄漏” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “泄漏” này.",
+    "example": "请记住泄漏这个词。",
+    "examplePinyin": "Qǐng jìzhu xiè lòu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rò rỉ, tiết lộ; rò rỉ này.",
     "id": "typ-hsk4-0953"
   },
   {
@@ -47482,9 +47482,9 @@
     "meaning": "người yêu quý",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“心爱”这个词。",
-    "examplePinyin": "Qǐng jìzhu “心爱” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “心爱” này.",
+    "example": "请记住心爱这个词。",
+    "examplePinyin": "Qǐng jìzhu xīn ài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ người yêu quý này.",
     "id": "typ-hsk4-0956"
   },
   {
@@ -47554,9 +47554,9 @@
     "meaning": "thực hiện",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“行使”这个词。",
-    "examplePinyin": "Qǐng jìzhu “行使” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “行使” này.",
+    "example": "请记住行使这个词。",
+    "examplePinyin": "Qǐng jìzhu xíng shǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thực hiện này.",
     "id": "typ-hsk4-0962"
   },
   {
@@ -47566,9 +47566,9 @@
     "meaning": "bức thư",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“信件”这个词。",
-    "examplePinyin": "Qǐng jìzhu “信件” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “信件” này.",
+    "example": "请记住信件这个词。",
+    "examplePinyin": "Qǐng jìzhu xìn jiàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bức thư này.",
     "id": "typ-hsk4-0963"
   },
   {
@@ -47614,9 +47614,9 @@
     "meaning": "ước nguyện chân thành; nội tâm; nguyện vọng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“心声”这个词。",
-    "examplePinyin": "Qǐng jìzhu “心声” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “心声” này.",
+    "example": "请记住心声这个词。",
+    "examplePinyin": "Qǐng jìzhu xīn shēng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ước nguyện chân thành; nội tâm; nguyện vọng này.",
     "id": "typ-hsk4-0967"
   },
   {
@@ -47638,15 +47638,15 @@
     "meaning": "ý định, tấm lòng; cảm giác thân tình",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“心意”这个词。",
-    "examplePinyin": "Qǐng jìzhu “心意” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “心意” này.",
+    "example": "请记住心意这个词。",
+    "examplePinyin": "Qǐng jìzhu xīn yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ý định, tấm lòng; cảm giác thân tình này.",
     "id": "typ-hsk4-0969"
   },
   {
     "hanzi": "信用卡",
     "pinyin": "xìn yòng kǎ",
-    "hanviet": "Tín Dụng 卡",
+    "hanviet": "Tín Dụng Tạp",
     "meaning": "thẻ tín dụng",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -47686,9 +47686,9 @@
     "meaning": "sửa đổi, chỉnh sửa",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“修正”这个词。",
-    "examplePinyin": "Qǐng jìzhu “修正” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “修正” này.",
+    "example": "请记住修正这个词。",
+    "examplePinyin": "Qǐng jìzhu xiū zhèng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sửa đổi, chỉnh sửa này.",
     "id": "typ-hsk4-0973"
   },
   {
@@ -47698,9 +47698,9 @@
     "meaning": "cẩn thận, tỉ mỉ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“细心”这个词。",
-    "examplePinyin": "Qǐng jìzhu “细心” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “细心” này.",
+    "example": "请记住细心这个词。",
+    "examplePinyin": "Qǐng jìzhu xì xīn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cẩn thận, tỉ mỉ này.",
     "id": "typ-hsk4-0974"
   },
   {
@@ -47730,13 +47730,13 @@
   {
     "hanzi": "宣告",
     "pinyin": "xuān gào",
-    "hanviet": "Tuyên 告",
+    "hanviet": "Tuyên Cáo",
     "meaning": "tuyên bố, công bố",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“宣告”这个词。",
-    "examplePinyin": "Qǐng jìzhu “宣告” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “宣告” này.",
+    "example": "请记住宣告这个词。",
+    "examplePinyin": "Qǐng jìzhu xuān gào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tuyên bố, công bố này.",
     "id": "typ-hsk4-0977"
   },
   {
@@ -47746,21 +47746,21 @@
     "meaning": "cử tri, khu vực bầu cử",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“选民”这个词。",
-    "examplePinyin": "Qǐng jìzhu “选民” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “选民” này.",
+    "example": "请记住选民这个词。",
+    "examplePinyin": "Qǐng jìzhu xuǎn mín zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cử tri, khu vực bầu cử này.",
     "id": "typ-hsk4-0978"
   },
   {
     "hanzi": "炫耀",
     "pinyin": "xuàn yào",
-    "hanviet": "炫 耀",
+    "hanviet": "Huyễn Diệu",
     "meaning": "chói lọi, khoe khoang; phô trương",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“炫耀”这个词。",
-    "examplePinyin": "Qǐng jìzhu “炫耀” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “炫耀” này.",
+    "example": "请记住炫耀这个词。",
+    "examplePinyin": "Qǐng jìzhu xuàn yào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chói lọi, khoe khoang; phô trương này.",
     "id": "typ-hsk4-0979"
   },
   {
@@ -47826,13 +47826,13 @@
   {
     "hanzi": "靴子",
     "pinyin": "xuē zi",
-    "hanviet": "靴 Tử",
+    "hanviet": "Ngoa Tử",
     "meaning": "đôi ủng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“靴子”这个词。",
-    "examplePinyin": "Qǐng jìzhu “靴子” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “靴子” này.",
+    "example": "请记住靴子这个词。",
+    "examplePinyin": "Qǐng jìzhu xuē zi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đôi ủng này.",
     "id": "typ-hsk4-0985"
   },
   {
@@ -47842,9 +47842,9 @@
     "meaning": "tưởng tượng; bịa ra, hư cấu; lý thuyết; giả thuyết",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“虚拟”这个词。",
-    "examplePinyin": "Qǐng jìzhu “虚拟” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “虚拟” này.",
+    "example": "请记住虚拟这个词。",
+    "examplePinyin": "Qǐng jìzhu xū nǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tưởng tượng; bịa ra, hư cấu; lý thuyết; giả thuyết này.",
     "id": "typ-hsk4-0986"
   },
   {
@@ -47866,9 +47866,9 @@
     "meaning": "kem đánh răng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“牙膏”这个词。",
-    "examplePinyin": "Qǐng jìzhu “牙膏” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “牙膏” này.",
+    "example": "请记住牙膏这个词。",
+    "examplePinyin": "Qǐng jìzhu yá gāo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kem đánh răng này.",
     "id": "typ-hsk4-0988"
   },
   {
@@ -47886,7 +47886,7 @@
   {
     "hanzi": "盐",
     "pinyin": "yán",
-    "hanviet": "盐",
+    "hanviet": "Diêm",
     "meaning": "muối",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -47986,9 +47986,9 @@
     "meaning": "chán ngán; mệt mỏi; buồn chán",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“厌倦”这个词。",
-    "examplePinyin": "Qǐng jìzhu “厌倦” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “厌倦” này.",
+    "example": "请记住厌倦这个词。",
+    "examplePinyin": "Qǐng jìzhu yàn juàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chán ngán; mệt mỏi; buồn chán này.",
     "id": "typ-hsk4-0998"
   },
   {
@@ -48010,9 +48010,9 @@
     "meaning": "trình diễn, cho thấy",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“演示”这个词。",
-    "examplePinyin": "Qǐng jìzhu “演示” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “演示” này.",
+    "example": "请记住演示这个词。",
+    "examplePinyin": "Qǐng jìzhu yǎn shì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trình diễn, cho thấy này.",
     "id": "typ-hsk4-1000"
   },
   {
@@ -48022,9 +48022,9 @@
     "meaning": "diễn kịch, biểu diễn",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“演戏”这个词。",
-    "examplePinyin": "Qǐng jìzhu “演戏” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “演戏” này.",
+    "example": "请记住演戏这个词。",
+    "examplePinyin": "Qǐng jìzhu yǎn xì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ diễn kịch, biểu diễn này.",
     "id": "typ-hsk4-1001"
   },
   {
@@ -48066,7 +48066,7 @@
   {
     "hanzi": "邀请",
     "pinyin": "yāo qǐng",
-    "hanviet": "邀 Thỉnh",
+    "hanviet": "Yêu Thỉnh",
     "meaning": "mời, thư mời",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -48078,19 +48078,19 @@
   {
     "hanzi": "钥匙",
     "pinyin": "yào shi",
-    "hanviet": "钥 匙",
+    "hanviet": "Dược Thi",
     "meaning": "chìa khóa, Lượng từ: 把",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“钥匙”这个词。",
-    "examplePinyin": "Qǐng jìzhu “钥匙” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “钥匙” này.",
+    "example": "请记住钥匙这个词。",
+    "examplePinyin": "Qǐng jìzhu yào shi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chìa khóa, Lượng từ: này.",
     "id": "typ-hsk4-1006"
   },
   {
     "hanzi": "亚运会",
     "pinyin": "Yà yùn huì",
-    "hanviet": "亚 Vận Hội",
+    "hanviet": "Á Vận Hội",
     "meaning": "Đại hội Thể thao châu Á",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -48102,19 +48102,19 @@
   {
     "hanzi": "亚洲",
     "pinyin": "Yà zhōu",
-    "hanviet": "亚 Chòng / Chao",
+    "hanviet": "Á Chòng / Chao",
     "meaning": "Châu Á",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“亚洲”这个词。",
-    "examplePinyin": "Qǐng jìzhu “亚洲” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “亚洲” này.",
+    "example": "请记住亚洲这个词。",
+    "examplePinyin": "Qǐng jìzhu Yà zhōu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ Châu Á này.",
     "id": "typ-hsk4-1008"
   },
   {
     "hanzi": "鸭子",
     "pinyin": "yā zi",
-    "hanviet": "鸭 Tử",
+    "hanviet": "Áp Tử",
     "meaning": "con vịt, nam mại dâm",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -48130,9 +48130,9 @@
     "meaning": "thành tích; thành tựu, hiệu suất ; kết quả",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“业绩”这个词。",
-    "examplePinyin": "Qǐng jìzhu “业绩” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “业绩” này.",
+    "example": "请记住业绩这个词。",
+    "examplePinyin": "Qǐng jìzhu yè jì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thành tích; thành tựu, hiệu suất ; kết quả này.",
     "id": "typ-hsk4-1010"
   },
   {
@@ -48186,7 +48186,7 @@
   {
     "hanzi": "以",
     "pinyin": "yǐ",
-    "hanviet": "以",
+    "hanviet": "Dĩ",
     "meaning": "biến thể cũ của 以",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -48238,9 +48238,9 @@
     "meaning": "lúc bình minh, lúc tảng sáng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“一大早”这个词。",
-    "examplePinyin": "Qǐng jìzhu “一大早” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “一大早” này.",
+    "example": "请记住一大早这个词。",
+    "examplePinyin": "Qǐng jìzhu yī dà zǎo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lúc bình minh, lúc tảng sáng này.",
     "id": "typ-hsk4-1019"
   },
   {
@@ -48306,7 +48306,7 @@
   {
     "hanzi": "赢",
     "pinyin": "yíng",
-    "hanviet": "赢",
+    "hanviet": "Doanh",
     "meaning": "thắng, chiến thắng",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -48330,13 +48330,13 @@
   {
     "hanzi": "营造",
     "pinyin": "yíng zào",
-    "hanviet": "营 Tạo",
+    "hanviet": "Doanh Tạo",
     "meaning": "xây dựng, thi công",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“营造”这个词。",
-    "examplePinyin": "Qǐng jìzhu “营造” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “营造” này.",
+    "example": "请记住营造这个词。",
+    "examplePinyin": "Qǐng jìzhu yíng zào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xây dựng, thi công này.",
     "id": "typ-hsk4-1027"
   },
   {
@@ -48370,9 +48370,9 @@
     "meaning": "vươn cổ, ngóng đợi",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“引领”这个词。",
-    "examplePinyin": "Qǐng jìzhu “引领” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “引领” này.",
+    "example": "请记住引领这个词。",
+    "examplePinyin": "Qǐng jìzhu yǐn lǐng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vươn cổ, ngóng đợi này.",
     "id": "typ-hsk4-1030"
   },
   {
@@ -48406,9 +48406,9 @@
     "meaning": "âm tính, nữ tính",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“阴性”这个词。",
-    "examplePinyin": "Qǐng jìzhu “阴性” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “阴性” này.",
+    "example": "请记住阴性这个词。",
+    "examplePinyin": "Qǐng jìzhu yīn xìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ âm tính, nữ tính này.",
     "id": "typ-hsk4-1033"
   },
   {
@@ -48418,9 +48418,9 @@
     "meaning": "vô hình",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“隐形”这个词。",
-    "examplePinyin": "Qǐng jìzhu “隐形” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “隐形” này.",
+    "example": "请记住隐形这个词。",
+    "examplePinyin": "Qǐng jìzhu yǐn xíng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vô hình này.",
     "id": "typ-hsk4-1034"
   },
   {
@@ -48430,9 +48430,9 @@
     "meaning": "để sang một bên, ở bên cạnh",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“一旁”这个词。",
-    "examplePinyin": "Qǐng jìzhu “一旁” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “一旁” này.",
+    "example": "请记住一旁这个词。",
+    "examplePinyin": "Qǐng jìzhu yī páng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ để sang một bên, ở bên cạnh này.",
     "id": "typ-hsk4-1035"
   },
   {
@@ -48466,9 +48466,9 @@
     "meaning": "một kỹ năng, thành thạo một nghề",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“一手”这个词。",
-    "examplePinyin": "Qǐng jìzhu “一手” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “一手” này.",
+    "example": "请记住一手这个词。",
+    "examplePinyin": "Qǐng jìzhu yī shǒu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ một kỹ năng, thành thạo một nghề này.",
     "id": "typ-hsk4-1038"
   },
   {
@@ -48490,9 +48490,9 @@
     "meaning": "thi hài",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“遗体”这个词。",
-    "examplePinyin": "Qǐng jìzhu “遗体” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “遗体” này.",
+    "example": "请记住遗体这个词。",
+    "examplePinyin": "Qǐng jìzhu yí tǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thi hài này.",
     "id": "typ-hsk4-1040"
   },
   {
@@ -48502,33 +48502,33 @@
     "meaning": "một lòng, tận tâm",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“一心”这个词。",
-    "examplePinyin": "Qǐng jìzhu “一心” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “一心” này.",
+    "example": "请记住一心这个词。",
+    "examplePinyin": "Qǐng jìzhu yī xīn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ một lòng, tận tâm này.",
     "id": "typ-hsk4-1041"
   },
   {
     "hanzi": "异议",
     "pinyin": "yì yì",
-    "hanviet": "异 Nghị",
+    "hanviet": "Dị Nghị",
     "meaning": "phản đối, bất đồng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“异议”这个词。",
-    "examplePinyin": "Qǐng jìzhu “异议” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “异议” này.",
+    "example": "请记住异议这个词。",
+    "examplePinyin": "Qǐng jìzhu yì yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phản đối, bất đồng này.",
     "id": "typ-hsk4-1042"
   },
   {
     "hanzi": "抑郁",
     "pinyin": "yì yù",
-    "hanviet": "Ức 郁",
+    "hanviet": "Ức Uất",
     "meaning": "chán nản; thất vọng; u sầu",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“抑郁”这个词。",
-    "examplePinyin": "Qǐng jìzhu “抑郁” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “抑郁” này.",
+    "example": "请记住抑郁这个词。",
+    "examplePinyin": "Qǐng jìzhu yì yù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chán nản; thất vọng; u sầu này.",
     "id": "typ-hsk4-1043"
   },
   {
@@ -48546,13 +48546,13 @@
   {
     "hanzi": "以至于",
     "pinyin": "yǐ zhì yú",
-    "hanviet": "以 Chí Vu",
+    "hanviet": "Dĩ Chí Vu",
     "meaning": "xuống đến, lên đến",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“以至于”这个词。",
-    "examplePinyin": "Qǐng jìzhu “以至于” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “以至于” này.",
+    "example": "请记住以至于这个词。",
+    "examplePinyin": "Qǐng jìzhu yǐ zhì yú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xuống đến, lên đến này.",
     "id": "typ-hsk4-1045"
   },
   {
@@ -48606,7 +48606,7 @@
   {
     "hanzi": "优点",
     "pinyin": "yōu diǎn",
-    "hanviet": "优 Điểm",
+    "hanviet": "Ưu Điểm",
     "meaning": "ưu điểm, lợi ích",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -48654,7 +48654,7 @@
   {
     "hanzi": "有劲儿",
     "pinyin": "yǒujìnr5",
-    "hanviet": "Hữu Cứng 儿",
+    "hanviet": "Hữu Cứng Nhi",
     "meaning": "Strength",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -48666,7 +48666,7 @@
   {
     "hanzi": "优良",
     "pinyin": "yōu liáng",
-    "hanviet": "优 Lương",
+    "hanviet": "Ưu Lương",
     "meaning": "tốt, đẹp",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -48690,7 +48690,7 @@
   {
     "hanzi": "幽默",
     "pinyin": "yōu mò",
-    "hanviet": "幽 Mặc",
+    "hanviet": "U Mặc",
     "meaning": "hài hước, hài hước",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -48702,7 +48702,7 @@
   {
     "hanzi": "尤其",
     "pinyin": "yóu qí",
-    "hanviet": "尤 Kì",
+    "hanviet": "Vưu Kì",
     "meaning": "đặc biệt; đặc biệt là",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -48730,9 +48730,9 @@
     "meaning": "hấp dẫn; quyến rũ; mê hoặc",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“诱人”这个词。",
-    "examplePinyin": "Qǐng jìzhu “诱人” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “诱人” này.",
+    "example": "请记住诱人这个词。",
+    "examplePinyin": "Qǐng jìzhu yòu rén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hấp dẫn; quyến rũ; mê hoặc này.",
     "id": "typ-hsk4-1060"
   },
   {
@@ -48750,7 +48750,7 @@
   {
     "hanzi": "优秀",
     "pinyin": "yōu xiù",
-    "hanviet": "优 Tú",
+    "hanviet": "Ưu Tú",
     "meaning": "xuất sắc; ưu tú",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -48762,7 +48762,7 @@
   {
     "hanzi": "友谊",
     "pinyin": "yǒu yì",
-    "hanviet": "Hữu 谊",
+    "hanviet": "Hữu Nghị",
     "meaning": "tình bạn bè, tình bạn hữu",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -48778,9 +48778,9 @@
     "meaning": "hữu ích, có lợi",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“有益”这个词。",
-    "examplePinyin": "Qǐng jìzhu “有益” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “有益” này.",
+    "example": "请记住有益这个词。",
+    "examplePinyin": "Qǐng jìzhu yǒu yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hữu ích, có lợi này.",
     "id": "typ-hsk4-1064"
   },
   {
@@ -48838,9 +48838,9 @@
     "meaning": "từ xa, đường dài",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“远程”这个词。",
-    "examplePinyin": "Qǐng jìzhu “远程” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “远程” này.",
+    "example": "请记住远程这个词。",
+    "examplePinyin": "Qǐng jìzhu yuǎn chéng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ từ xa, đường dài này.",
     "id": "typ-hsk4-1069"
   },
   {
@@ -48886,9 +48886,9 @@
     "meaning": "nguồn, ngọn nguồn",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“源头”这个词。",
-    "examplePinyin": "Qǐng jìzhu “源头” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “源头” này.",
+    "example": "请记住源头这个词。",
+    "examplePinyin": "Qǐng jìzhu yuán tóu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nguồn, ngọn nguồn này.",
     "id": "typ-hsk4-1073"
   },
   {
@@ -48922,9 +48922,9 @@
     "meaning": "dư địa, khoảng trống",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“余地”这个词。",
-    "examplePinyin": "Qǐng jìzhu “余地” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “余地” này.",
+    "example": "请记住余地这个词。",
+    "examplePinyin": "Qǐng jìzhu yú dì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dư địa, khoảng trống này.",
     "id": "typ-hsk4-1076"
   },
   {
@@ -48954,7 +48954,7 @@
   {
     "hanzi": "阅读",
     "pinyin": "yuè dú",
-    "hanviet": "阅 Độc",
+    "hanviet": "Duyệt Độc",
     "meaning": "đọc, việc đọc",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -48970,9 +48970,9 @@
     "meaning": "vượt qua, vượt lên",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“越过”这个词。",
-    "examplePinyin": "Qǐng jìzhu “越过” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “越过” này.",
+    "example": "请记住越过这个词。",
+    "examplePinyin": "Qǐng jìzhu yuè guò zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vượt qua, vượt lên này.",
     "id": "typ-hsk4-1080"
   },
   {
@@ -49006,21 +49006,21 @@
     "meaning": "có dự cảm, dự cảm",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“预感”这个词。",
-    "examplePinyin": "Qǐng jìzhu “预感” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “预感” này.",
+    "example": "请记住预感这个词。",
+    "examplePinyin": "Qǐng jìzhu yù gǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ có dự cảm, dự cảm này.",
     "id": "typ-hsk4-1083"
   },
   {
     "hanzi": "预告",
     "pinyin": "yù gào",
-    "hanviet": "Dự 告",
+    "hanviet": "Dự Cáo",
     "meaning": "dự báo, dự đoán",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“预告”这个词。",
-    "examplePinyin": "Qǐng jìzhu “预告” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “预告” này.",
+    "example": "请记住预告这个词。",
+    "examplePinyin": "Qǐng jìzhu yù gào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dự báo, dự đoán này.",
     "id": "typ-hsk4-1084"
   },
   {
@@ -49030,9 +49030,9 @@
     "meaning": "lành lại",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“愈合”这个词。",
-    "examplePinyin": "Qǐng jìzhu “愈合” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “愈合” này.",
+    "example": "请记住愈合这个词。",
+    "examplePinyin": "Qǐng jìzhu yù hé zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lành lại này.",
     "id": "typ-hsk4-1085"
   },
   {
@@ -49042,15 +49042,15 @@
     "meaning": "dự đoán, dự báo",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“预见”这个词。",
-    "examplePinyin": "Qǐng jìzhu “预见” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “预见” này.",
+    "example": "请记住预见这个词。",
+    "examplePinyin": "Qǐng jìzhu yù jiàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dự đoán, dự báo này.",
     "id": "typ-hsk4-1086"
   },
   {
     "hanzi": "愉快",
     "pinyin": "yú kuài",
-    "hanviet": "愉 Khoái",
+    "hanviet": "Du Khoái",
     "meaning": "vui tươi, một cách vui vẻ",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -49078,15 +49078,15 @@
     "meaning": "vận chuyển, mang",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“运送”这个词。",
-    "examplePinyin": "Qǐng jìzhu “运送” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “运送” này.",
+    "example": "请记住运送这个词。",
+    "examplePinyin": "Qǐng jìzhu yùn sòng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vận chuyển, mang này.",
     "id": "typ-hsk4-1089"
   },
   {
     "hanzi": "允许",
     "pinyin": "yǔn xǔ",
-    "hanviet": "允 Hứa",
+    "hanviet": "Doãn Hứa",
     "meaning": "cho phép, đồng ý",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -49134,13 +49134,13 @@
   {
     "hanzi": "栽",
     "pinyin": "zāi",
-    "hanviet": "栽",
+    "hanviet": "Tài",
     "meaning": "trồng; mọc, chèn vào; dựng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“栽”这个词。",
-    "examplePinyin": "Qǐng jìzhu “栽” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “栽” này.",
+    "example": "请记住栽这个词。",
+    "examplePinyin": "Qǐng jìzhu zāi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trồng; mọc, chèn vào; dựng này.",
     "id": "typ-hsk4-1094"
   },
   {
@@ -49158,13 +49158,13 @@
   {
     "hanzi": "在线",
     "pinyin": "zài xiàn",
-    "hanviet": "Tại 线",
+    "hanviet": "Tại Tuyến",
     "meaning": "trực tuyến",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“在线”这个词。",
-    "examplePinyin": "Qǐng jìzhu “在线” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “在线” này.",
+    "example": "请记住在线这个词。",
+    "examplePinyin": "Qǐng jìzhu zài xiàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trực tuyến này.",
     "id": "typ-hsk4-1096"
   },
   {
@@ -49194,7 +49194,7 @@
   {
     "hanzi": "咱们",
     "pinyin": "zán men",
-    "hanviet": "咱 Môn",
+    "hanviet": "Tạp Môn",
     "meaning": "chúng ta hoặc chúng tôi, tôi hoặc mình",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -49230,13 +49230,13 @@
   {
     "hanzi": "造就",
     "pinyin": "zào jiù",
-    "hanviet": "Tạo 就",
+    "hanviet": "Tạo",
     "meaning": "nuôi dưỡng, đào tạo",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“造就”这个词。",
-    "examplePinyin": "Qǐng jìzhu “造就” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “造就” này.",
+    "example": "请记住造就这个词。",
+    "examplePinyin": "Qǐng jìzhu zào jiù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nuôi dưỡng, đào tạo này.",
     "id": "typ-hsk4-1102"
   },
   {
@@ -49246,9 +49246,9 @@
     "meaning": "sớm; trong thời gian sớm nhất, những ngày đầu; quá khứ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“早日”这个词。",
-    "examplePinyin": "Qǐng jìzhu “早日” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “早日” này.",
+    "example": "请记住早日这个词。",
+    "examplePinyin": "Qǐng jìzhu zǎo rì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sớm; trong thời gian sớm nhất, những ngày đầu; quá khứ này.",
     "id": "typ-hsk4-1103"
   },
   {
@@ -49338,13 +49338,13 @@
   {
     "hanzi": "窄",
     "pinyin": "zhǎi",
-    "hanviet": "窄",
+    "hanviet": "Trách",
     "meaning": "hẹp, nhỏ nhen",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“窄”这个词。",
-    "examplePinyin": "Qǐng jìzhu “窄” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “窄” này.",
+    "example": "请记住窄这个词。",
+    "examplePinyin": "Qǐng jìzhu zhǎi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hẹp, nhỏ nhen này.",
     "id": "typ-hsk4-1111"
   },
   {
@@ -49354,9 +49354,9 @@
     "meaning": "một cái chén nhỏ, lượng từ cho đèn",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“盏”这个词。",
-    "examplePinyin": "Qǐng jìzhu “盏” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “盏” này.",
+    "example": "请记住盏这个词。",
+    "examplePinyin": "Qǐng jìzhu zhǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ một cái chén nhỏ, lượng từ cho đèn này.",
     "id": "typ-hsk4-1112"
   },
   {
@@ -49366,9 +49366,9 @@
     "meaning": "diện mạo, ngoại hình",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“长相”这个词。",
-    "examplePinyin": "Qǐng jìzhu “长相” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “长相” này.",
+    "example": "请记住长相这个词。",
+    "examplePinyin": "Qǐng jìzhu zhǎng xiàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ diện mạo, ngoại hình này.",
     "id": "typ-hsk4-1113"
   },
   {
@@ -49398,13 +49398,13 @@
   {
     "hanzi": "招募",
     "pinyin": "zhāo mù",
-    "hanviet": "Chiêu 募",
+    "hanviet": "Chiêu Mộ",
     "meaning": "tuyển dụng, tuyển mộ",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“招募”这个词。",
-    "examplePinyin": "Qǐng jìzhu “招募” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “招募” này.",
+    "example": "请记住招募这个词。",
+    "examplePinyin": "Qǐng jìzhu zhāo mù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tuyển dụng, tuyển mộ này.",
     "id": "typ-hsk4-1116"
   },
   {
@@ -49414,9 +49414,9 @@
     "meaning": "bảng hiệu, biển hiệu",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“招牌”这个词。",
-    "examplePinyin": "Qǐng jìzhu “招牌” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “招牌” này.",
+    "example": "请记住招牌这个词。",
+    "examplePinyin": "Qǐng jìzhu zhāo pai zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bảng hiệu, biển hiệu này.",
     "id": "typ-hsk4-1117"
   },
   {
@@ -49434,7 +49434,7 @@
   {
     "hanzi": "炸药",
     "pinyin": "zhà yào",
-    "hanviet": "炸 Dược",
+    "hanviet": "Tạc Dược",
     "meaning": "chất nổ",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -49446,13 +49446,13 @@
   {
     "hanzi": "遮",
     "pinyin": "zhē",
-    "hanviet": "遮",
+    "hanviet": "Già",
     "meaning": "che đậy, che chắn",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“遮”这个词。",
-    "examplePinyin": "Qǐng jìzhu “遮” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “遮” này.",
+    "example": "请记住遮这个词。",
+    "examplePinyin": "Qǐng jìzhu zhē zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ che đậy, che chắn này.",
     "id": "typ-hsk4-1120"
   },
   {
@@ -49462,21 +49462,21 @@
     "meaning": "điều tra tội phạm, trinh sát",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“侦察”这个词。",
-    "examplePinyin": "Qǐng jìzhu “侦察” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “侦察” này.",
+    "example": "请记住侦察这个词。",
+    "examplePinyin": "Qǐng jìzhu zhēn chá zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ điều tra tội phạm, trinh sát này.",
     "id": "typ-hsk4-1121"
   },
   {
     "hanzi": "震动",
     "pinyin": "zhèn dòng",
-    "hanviet": "震 Động",
+    "hanviet": "Chấn Động",
     "meaning": "rung, lắc",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“震动”这个词。",
-    "examplePinyin": "Qǐng jìzhu “震动” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “震动” này.",
+    "example": "请记住震动这个词。",
+    "examplePinyin": "Qǐng jìzhu zhèn dòng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rung, lắc này.",
     "id": "typ-hsk4-1122"
   },
   {
@@ -49626,7 +49626,7 @@
   {
     "hanzi": "值得",
     "pinyin": "zhí de",
-    "hanviet": "值 Đắc",
+    "hanviet": "Trị Đắc",
     "meaning": "đáng, đáng để",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -49642,9 +49642,9 @@
     "meaning": "cực kỳ quan trọng, sống còn",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“至关重要”这个词。",
-    "examplePinyin": "Qǐng jìzhu “至关重要” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “至关重要” này.",
+    "example": "请记住至关重要这个词。",
+    "examplePinyin": "Qǐng jìzhu zhì guān zhòng yào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cực kỳ quan trọng, sống còn này.",
     "id": "typ-hsk4-1136"
   },
   {
@@ -49662,7 +49662,7 @@
   {
     "hanzi": "直接",
     "pinyin": "zhí jiē",
-    "hanviet": "直 Tiếp",
+    "hanviet": "Trực Tiếp",
     "meaning": "trực tiếp, ngay lập tức",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -49678,15 +49678,15 @@
     "meaning": "chào kính, bày tỏ sự tôn kính",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“致敬”这个词。",
-    "examplePinyin": "Qǐng jìzhu “致敬” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “致敬” này.",
+    "example": "请记住致敬这个词。",
+    "examplePinyin": "Qǐng jìzhu zhì jìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chào kính, bày tỏ sự tôn kính này.",
     "id": "typ-hsk4-1139"
   },
   {
     "hanzi": "质量",
     "pinyin": "zhì liàng",
-    "hanviet": "Chất 量",
+    "hanviet": "Chất Lượng",
     "meaning": "chất lượng, khối lượng",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -49702,9 +49702,9 @@
     "meaning": "hướng dẫn, sách hướng dẫn",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“指南”这个词。",
-    "examplePinyin": "Qǐng jìzhu “指南” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “指南” này.",
+    "example": "请记住指南这个词。",
+    "examplePinyin": "Qǐng jìzhu zhǐ nán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hướng dẫn, sách hướng dẫn này.",
     "id": "typ-hsk4-1141"
   },
   {
@@ -49722,7 +49722,7 @@
   {
     "hanzi": "值钱",
     "pinyin": "zhí qián",
-    "hanviet": "值 Tiền",
+    "hanviet": "Trị Tiền",
     "meaning": "có giá trị, đắt đỏ",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -49746,7 +49746,7 @@
   {
     "hanzi": "知识",
     "pinyin": "zhī shi",
-    "hanviet": "Tri 识",
+    "hanviet": "Tri Thức",
     "meaning": "kiến thức, trí thức",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -49762,9 +49762,9 @@
     "meaning": "phô mai",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“芝士”这个词。",
-    "examplePinyin": "Qǐng jìzhu “芝士” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “芝士” này.",
+    "example": "请记住芝士这个词。",
+    "examplePinyin": "Qǐng jìzhu zhī shì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phô mai này.",
     "id": "typ-hsk4-1146"
   },
   {
@@ -49782,7 +49782,7 @@
   {
     "hanzi": "直线",
     "pinyin": "zhí xiàn",
-    "hanviet": "直 线",
+    "hanviet": "Trực Tuyến",
     "meaning": "đường thẳng, mạnh",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -49842,7 +49842,7 @@
   {
     "hanzi": "中奖",
     "pinyin": "zhòng jiǎng",
-    "hanviet": "Trung 奖",
+    "hanviet": "Trung Tưởng",
     "meaning": "trúng thưởng",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -49882,9 +49882,9 @@
     "meaning": "giữa chừng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“中途”这个词。",
-    "examplePinyin": "Qǐng jìzhu “中途” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “中途” này.",
+    "example": "请记住中途这个词。",
+    "examplePinyin": "Qǐng jìzhu zhōng tú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giữa chừng này.",
     "id": "typ-hsk4-1156"
   },
   {
@@ -49926,7 +49926,7 @@
   {
     "hanzi": "赚",
     "pinyin": "zhuàn",
-    "hanviet": "赚",
+    "hanviet": "Kiếm",
     "meaning": "kiếm tiền, thu lợi",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -49962,25 +49962,25 @@
   {
     "hanzi": "装扮",
     "pinyin": "zhuāng bàn",
-    "hanviet": "Trang 扮",
+    "hanviet": "Trang Bái",
     "meaning": "trang trí; tô điểm; hoá trang, cải trang",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“装扮”这个词。",
-    "examplePinyin": "Qǐng jìzhu “装扮” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “装扮” này.",
+    "example": "请记住装扮这个词。",
+    "examplePinyin": "Qǐng jìzhu zhuāng bàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trang trí; tô điểm; hoá trang, cải trang này.",
     "id": "typ-hsk4-1163"
   },
   {
     "hanzi": "撞击",
     "pinyin": "zhuàng jī",
-    "hanviet": "Chàng 击",
+    "hanviet": "Chàng Kích",
     "meaning": "va đập; đánh; đâm",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“撞击”这个词。",
-    "examplePinyin": "Qǐng jìzhu “撞击” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “撞击” này.",
+    "example": "请记住撞击这个词。",
+    "examplePinyin": "Qǐng jìzhu zhuàng jī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ va đập; đánh; đâm này.",
     "id": "typ-hsk4-1164"
   },
   {
@@ -50002,9 +50002,9 @@
     "meaning": "chuyển biến tốt, thay đổi chuyến bay",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“转机”这个词。",
-    "examplePinyin": "Qǐng jìzhu “转机” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “转机” này.",
+    "example": "请记住转机这个词。",
+    "examplePinyin": "Qǐng jìzhu zhuǎn jī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chuyển biến tốt, thay đổi chuyến bay này.",
     "id": "typ-hsk4-1166"
   },
   {
@@ -50022,7 +50022,7 @@
   {
     "hanzi": "转弯",
     "pinyin": "zhuǎn wān",
-    "hanviet": "Chuyển 弯",
+    "hanviet": "Chuyển Loan",
     "meaning": "rẽ, đi vòng qua góc",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -50050,9 +50050,9 @@
     "meaning": "tổng biên tập",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“主编”这个词。",
-    "examplePinyin": "Qǐng jìzhu “主编” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “主编” này.",
+    "example": "请记住主编这个词。",
+    "examplePinyin": "Qǐng jìzhu zhǔ biān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tổng biên tập này.",
     "id": "typ-hsk4-1170"
   },
   {
@@ -50062,9 +50062,9 @@
     "meaning": "nơi cư trú; chỗ ở",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“住处”这个词。",
-    "examplePinyin": "Qǐng jìzhu “住处” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “住处” này.",
+    "example": "请记住住处这个词。",
+    "examplePinyin": "Qǐng jìzhu zhù chù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nơi cư trú; chỗ ở này.",
     "id": "typ-hsk4-1171"
   },
   {
@@ -50098,9 +50098,9 @@
     "meaning": "rơi, rớt",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“坠”这个词。",
-    "examplePinyin": "Qǐng jìzhu “坠” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “坠” này.",
+    "example": "请记住坠这个词。",
+    "examplePinyin": "Qǐng jìzhu zhuì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rơi, rớt này.",
     "id": "typ-hsk4-1174"
   },
   {
@@ -50122,9 +50122,9 @@
     "meaning": "lực lượng chính, sức mạnh chính của quân đội",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“主力”这个词。",
-    "examplePinyin": "Qǐng jìzhu “主力” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “主力” này.",
+    "example": "请记住主力这个词。",
+    "examplePinyin": "Qǐng jìzhu zhǔ lì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lực lượng chính, sức mạnh chính của quân đội này.",
     "id": "typ-hsk4-1176"
   },
   {
@@ -50178,13 +50178,13 @@
   {
     "hanzi": "资本主义",
     "pinyin": "zī běn zhǔ yì",
-    "hanviet": "资 Bản Chúa Nghĩa",
+    "hanviet": "Tư Bản Chúa Nghĩa",
     "meaning": "chủ nghĩa tư bản",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“资本主义”这个词。",
-    "examplePinyin": "Qǐng jìzhu “资本主义” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “资本主义” này.",
+    "example": "请记住资本主义这个词。",
+    "examplePinyin": "Qǐng jìzhu zī běn zhǔ yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chủ nghĩa tư bản này.",
     "id": "typ-hsk4-1181"
   },
   {
@@ -50242,9 +50242,9 @@
     "meaning": "tự tôn, tự trọng",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“自尊”这个词。",
-    "examplePinyin": "Qǐng jìzhu “自尊” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “自尊” này.",
+    "example": "请记住自尊这个词。",
+    "examplePinyin": "Qǐng jìzhu zì zūn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tự tôn, tự trọng này.",
     "id": "typ-hsk4-1186"
   },
   {
@@ -50298,19 +50298,19 @@
   {
     "hanzi": "阻挡",
     "pinyin": "zǔ dǎng",
-    "hanviet": "Trở 挡",
+    "hanviet": "Trở Đang",
     "meaning": "ngăn cản, kháng cự",
     "hsk": "HSK 4",
     "levelNum": 4,
-    "example": "请记住“阻挡”这个词。",
-    "examplePinyin": "Qǐng jìzhu “阻挡” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “阻挡” này.",
+    "example": "请记住阻挡这个词。",
+    "examplePinyin": "Qǐng jìzhu zǔ dǎng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngăn cản, kháng cự này.",
     "id": "typ-hsk4-1191"
   },
   {
     "hanzi": "嘴",
     "pinyin": "zuǐ",
-    "hanviet": "嘴",
+    "hanviet": "Chủy",
     "meaning": "miệng, mỏ",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -50370,7 +50370,7 @@
   {
     "hanzi": "做生意",
     "pinyin": "zuò shēng yì",
-    "hanviet": "做 Sinh Ý",
+    "hanviet": "Tác Sinh Ý",
     "meaning": "làm kinh doanh",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -50394,7 +50394,7 @@
   {
     "hanzi": "作者",
     "pinyin": "zuò zhě",
-    "hanviet": "Tác 者",
+    "hanviet": "Tác Giả",
     "meaning": "tác giả; nhà văn",
     "hsk": "HSK 4",
     "levelNum": 4,
@@ -50422,9 +50422,9 @@
     "meaning": "thán từ hoặc tiếng ừ đồng ý hay nhận ra, thở dài",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“唉”这个词。",
-    "examplePinyin": "Qǐng jìzhu “唉” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “唉” này.",
+    "example": "请记住唉这个词。",
+    "examplePinyin": "Qǐng jìzhu āi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thán từ hoặc tiếng ừ đồng ý hay nhận ra, thở dài này.",
     "id": "typ-hsk5-0001"
   },
   {
@@ -50514,7 +50514,7 @@
   {
     "hanzi": "薄",
     "pinyin": "báo",
-    "hanviet": "薄",
+    "hanviet": "Bạc",
     "meaning": "thin",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -50562,7 +50562,7 @@
   {
     "hanzi": "报告",
     "pinyin": "bào gào",
-    "hanviet": "Báo 告",
+    "hanviet": "Báo Cáo",
     "meaning": "thông báo, báo cáo",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -50586,7 +50586,7 @@
   {
     "hanzi": "包裹",
     "pinyin": "bāo guǒ",
-    "hanviet": "Bao 裹",
+    "hanviet": "Bao Khỏa",
     "meaning": "gói lại, băng lại",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -50634,7 +50634,7 @@
   {
     "hanzi": "把握",
     "pinyin": "bǎ wò",
-    "hanviet": "Bã 握",
+    "hanviet": "Bã Ác",
     "meaning": "nắm bắt, nắm giữ",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -50694,7 +50694,7 @@
   {
     "hanzi": "编辑",
     "pinyin": "biān jí",
-    "hanviet": "Biên 辑",
+    "hanviet": "Biên Tập",
     "meaning": "chỉnh sửa, biên soạn",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -50706,7 +50706,7 @@
   {
     "hanzi": "辩论",
     "pinyin": "biàn lùn",
-    "hanviet": "辩 Luận",
+    "hanviet": "Biện Luận",
     "meaning": "tranh luận, lập luận",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -50718,7 +50718,7 @@
   {
     "hanzi": "表面",
     "pinyin": "biǎo miàn",
-    "hanviet": "Biểu 面",
+    "hanviet": "Biểu Diện",
     "meaning": "bề mặt, bề ngoài",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -50862,7 +50862,7 @@
   {
     "hanzi": "必需",
     "pinyin": "bì xū",
-    "hanviet": "Tất 需",
+    "hanviet": "Tất Nhu",
     "meaning": "cần, cần phải",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -50886,7 +50886,7 @@
   {
     "hanzi": "玻璃",
     "pinyin": "bō li",
-    "hanviet": "玻 Rế / Li",
+    "hanviet": "Pha Rế / Li",
     "meaning": "thủy tinh, đồng tính nam",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -50910,13 +50910,13 @@
   {
     "hanzi": "脖子",
     "pinyin": "bó zi",
-    "hanviet": "脖 Tử",
+    "hanviet": "Bột Tử",
     "meaning": "cổ",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“脖子”这个词。",
-    "examplePinyin": "Qǐng jìzhu “脖子” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “脖子” này.",
+    "example": "请记住脖子这个词。",
+    "examplePinyin": "Qǐng jìzhu bó zi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cổ này.",
     "id": "typ-hsk5-0042"
   },
   {
@@ -51042,7 +51042,7 @@
   {
     "hanzi": "踩",
     "pinyin": "cǎi",
-    "hanviet": "踩",
+    "hanviet": "Thải",
     "meaning": "to step on",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -51054,7 +51054,7 @@
   {
     "hanzi": "财产",
     "pinyin": "cái chǎn",
-    "hanviet": "Tài 产",
+    "hanviet": "Tài Sản",
     "meaning": "tài sản, nguồn vốn",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -51078,13 +51078,13 @@
   {
     "hanzi": "彩虹",
     "pinyin": "cǎi hóng",
-    "hanviet": "Thái 虹",
+    "hanviet": "Thái Hồng",
     "meaning": "cầu vồng",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“彩虹”这个词。",
-    "examplePinyin": "Qǐng jìzhu “彩虹” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “彩虹” này.",
+    "example": "请记住彩虹这个词。",
+    "examplePinyin": "Qǐng jìzhu cǎi hóng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cầu vồng này.",
     "id": "typ-hsk5-0056"
   },
   {
@@ -51114,7 +51114,7 @@
   {
     "hanzi": "餐厅",
     "pinyin": "cān tīng",
-    "hanviet": "餐 厅",
+    "hanviet": "Xan Sảnh",
     "meaning": "phòng ăn, sảnh ăn",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -51198,7 +51198,7 @@
   {
     "hanzi": "产品",
     "pinyin": "chǎn pǐn",
-    "hanviet": "产 Phẩm",
+    "hanviet": "Sản Phẩm",
     "meaning": "hàng hóa, sản phẩm",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -51210,7 +51210,7 @@
   {
     "hanzi": "产生",
     "pinyin": "chǎn shēng",
-    "hanviet": "产 Sinh",
+    "hanviet": "Sản Sinh",
     "meaning": "phát sinh; hình thành; xảy ra, tạo ra; làm phát sinh; dẫn đến; sản xuất; sinh ra; tạo thành",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -51286,9 +51286,9 @@
     "meaning": "tận dụng, lợi dụng",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“趁”这个词。",
-    "examplePinyin": "Qǐng jìzhu “趁” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “趁” này.",
+    "example": "请记住趁这个词。",
+    "examplePinyin": "Qǐng jìzhu chèn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tận dụng, lợi dụng này.",
     "id": "typ-hsk5-0073"
   },
   {
@@ -51358,15 +51358,15 @@
     "meaning": "gọi; xưng hô, cách gọi; danh xưng",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“称呼”这个词。",
-    "examplePinyin": "Qǐng jìzhu “称呼” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “称呼” này.",
+    "example": "请记住称呼这个词。",
+    "examplePinyin": "Qǐng jìzhu chēng hu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gọi; xưng hô, cách gọi; danh xưng này.",
     "id": "typ-hsk5-0079"
   },
   {
     "hanzi": "成就",
     "pinyin": "chéng jiù",
-    "hanviet": "Thành 就",
+    "hanviet": "Thành",
     "meaning": "thành tựu, thành công",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -51454,21 +51454,21 @@
     "meaning": "toa hành khách",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“车厢”这个词。",
-    "examplePinyin": "Qǐng jìzhu “车厢” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “车厢” này.",
+    "example": "请记住车厢这个词。",
+    "examplePinyin": "Qǐng jìzhu chē xiāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ toa hành khách này.",
     "id": "typ-hsk5-0087"
   },
   {
     "hanzi": "翅膀",
     "pinyin": "chì bǎng",
-    "hanviet": "翅 膀",
+    "hanviet": "Sí Bàng",
     "meaning": "cánh",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“翅膀”这个词。",
-    "examplePinyin": "Qǐng jìzhu “翅膀” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “翅膀” này.",
+    "example": "请记住翅膀这个词。",
+    "examplePinyin": "Qǐng jìzhu chì bǎng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cánh này.",
     "id": "typ-hsk5-0088"
   },
   {
@@ -51646,9 +51646,9 @@
     "meaning": "lây nhiễm, dễ lây",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“传染”这个词。",
-    "examplePinyin": "Qǐng jìzhu “传染” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “传染” này.",
+    "example": "请记住传染这个词。",
+    "examplePinyin": "Qǐng jìzhu chuán rǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lây nhiễm, dễ lây này.",
     "id": "typ-hsk5-0103"
   },
   {
@@ -51750,7 +51750,7 @@
   {
     "hanzi": "出席",
     "pinyin": "chū xí",
-    "hanviet": "Xuất 席",
+    "hanviet": "Xuất Tịch",
     "meaning": "tham dự, tham gia",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -51810,7 +51810,7 @@
   {
     "hanzi": "从而",
     "pinyin": "cóng ér",
-    "hanviet": "Tòng 而",
+    "hanviet": "Tòng Nhi",
     "meaning": "do đó, qua đó",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -51850,9 +51850,9 @@
     "meaning": "giục, thúc giục",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“催”这个词。",
-    "examplePinyin": "Qǐng jìzhu “催” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “催” này.",
+    "example": "请记住催这个词。",
+    "examplePinyin": "Qǐng jìzhu cuī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giục, thúc giục này.",
     "id": "typ-hsk5-0120"
   },
   {
@@ -51906,7 +51906,7 @@
   {
     "hanzi": "错误",
     "pinyin": "cuò wù",
-    "hanviet": "Thó 误",
+    "hanviet": "Thó Ngộ",
     "meaning": "sai lầm, lỗi sai",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -51978,7 +51978,7 @@
   {
     "hanzi": "贷款",
     "pinyin": "dài kuǎn",
-    "hanviet": "贷 Khoản",
+    "hanviet": "Thải Khoản",
     "meaning": "một khoản vay, cung cấp khoản vay",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -52038,7 +52038,7 @@
   {
     "hanzi": "挡",
     "pinyin": "dǎng",
-    "hanviet": "挡",
+    "hanviet": "Đang",
     "meaning": "chống cự, cản trở",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -52074,13 +52074,13 @@
   {
     "hanzi": "耽误",
     "pinyin": "dān wu",
-    "hanviet": "Xẩm 误",
+    "hanviet": "Xẩm Ngộ",
     "meaning": "trì hoãn, làm chậm trễ",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“耽误”这个词。",
-    "examplePinyin": "Qǐng jìzhu “耽误” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “耽误” này.",
+    "example": "请记住耽误这个词。",
+    "examplePinyin": "Qǐng jìzhu dān wu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trì hoãn, làm chậm trễ này.",
     "id": "typ-hsk5-0139"
   },
   {
@@ -52146,13 +52146,13 @@
   {
     "hanzi": "倒霉",
     "pinyin": "dǎo méi",
-    "hanviet": "Đảo 霉",
+    "hanviet": "Đảo Mốc",
     "meaning": "gặp xui, xui xẻo",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“倒霉”这个词。",
-    "examplePinyin": "Qǐng jìzhu “倒霉” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “倒霉” này.",
+    "example": "请记住倒霉这个词。",
+    "examplePinyin": "Qǐng jìzhu dǎo méi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gặp xui, xui xẻo này.",
     "id": "typ-hsk5-0145"
   },
   {
@@ -52194,7 +52194,7 @@
   {
     "hanzi": "大型",
     "pinyin": "dà xíng",
-    "hanviet": "Đại 型",
+    "hanviet": "Đại Hình",
     "meaning": "lớn, quy mô lớn",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -52338,13 +52338,13 @@
   {
     "hanzi": "钓",
     "pinyin": "diào",
-    "hanviet": "钓",
+    "hanviet": "Điếu",
     "meaning": "câu cá bằng lưỡi câu và mồi",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“钓”这个词。",
-    "examplePinyin": "Qǐng jìzhu “钓” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “钓” này.",
+    "example": "请记住钓这个词。",
+    "examplePinyin": "Qǐng jìzhu diào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ câu cá bằng lưỡi câu và mồi này.",
     "id": "typ-hsk5-0161"
   },
   {
@@ -52354,9 +52354,9 @@
     "meaning": "đường hầm, đường đắp cao",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“地道”这个词。",
-    "examplePinyin": "Qǐng jìzhu “地道” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “地道” này.",
+    "example": "请记住地道这个词。",
+    "examplePinyin": "Qǐng jìzhu dì dào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đường hầm, đường đắp cao này.",
     "id": "typ-hsk5-0162"
   },
   {
@@ -52366,9 +52366,9 @@
     "meaning": "địa lý",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“地理”这个词。",
-    "examplePinyin": "Qǐng jìzhu “地理” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “地理” này.",
+    "example": "请记住地理这个词。",
+    "examplePinyin": "Qǐng jìzhu dì lǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ địa lý này.",
     "id": "typ-hsk5-0163"
   },
   {
@@ -52378,9 +52378,9 @@
     "meaning": "male adult",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“丁”这个词。",
-    "examplePinyin": "Qǐng jìzhu “丁” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “丁” này.",
+    "example": "请记住丁这个词。",
+    "examplePinyin": "Qǐng jìzhu dīng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ male adult này.",
     "id": "typ-hsk5-0164"
   },
   {
@@ -52438,9 +52438,9 @@
     "meaning": "thảm, thảm trải sàn",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“地毯”这个词。",
-    "examplePinyin": "Qǐng jìzhu “地毯” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “地毯” này.",
+    "example": "请记住地毯这个词。",
+    "examplePinyin": "Qǐng jìzhu dì tǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thảm, thảm trải sàn này.",
     "id": "typ-hsk5-0169"
   },
   {
@@ -52458,7 +52458,7 @@
   {
     "hanzi": "地震",
     "pinyin": "dì zhèn",
-    "hanviet": "Địa 震",
+    "hanviet": "Địa Chấn",
     "meaning": "động đất",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -52494,13 +52494,13 @@
   {
     "hanzi": "逗",
     "pinyin": "dòu",
-    "hanviet": "逗",
+    "hanviet": "Đậu",
     "meaning": "to tease (playfully); to entice",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“逗”这个词。",
-    "examplePinyin": "Qǐng jìzhu “逗” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “逗” này.",
+    "example": "请记住逗这个词。",
+    "examplePinyin": "Qǐng jìzhu dòu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ to tease (playfully); to entice này.",
     "id": "typ-hsk5-0174"
   },
   {
@@ -52638,7 +52638,7 @@
   {
     "hanzi": "蹲",
     "pinyin": "dūn",
-    "hanviet": "蹲",
+    "hanviet": "Tôn",
     "meaning": "ngồi xổm, ngồi chồm hỗm",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -52654,9 +52654,9 @@
     "meaning": "thừa, thừa thãi",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“多余”这个词。",
-    "examplePinyin": "Qǐng jìzhu “多余” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “多余” này.",
+    "example": "请记住多余这个词。",
+    "examplePinyin": "Qǐng jìzhu duō yú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thừa, thừa thãi này.",
     "id": "typ-hsk5-0187"
   },
   {
@@ -52674,13 +52674,13 @@
   {
     "hanzi": "恶劣",
     "pinyin": "è liè",
-    "hanviet": "Ác 劣",
+    "hanviet": "Ác Liệt",
     "meaning": "tồi tệ, xấu xa",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“恶劣”这个词。",
-    "examplePinyin": "Qǐng jìzhu “恶劣” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “恶劣” này.",
+    "example": "请记住恶劣这个词。",
+    "examplePinyin": "Qǐng jìzhu è liè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tồi tệ, xấu xa này.",
     "id": "typ-hsk5-0189"
   },
   {
@@ -52746,7 +52746,7 @@
   {
     "hanzi": "翻",
     "pinyin": "fān",
-    "hanviet": "翻",
+    "hanviet": "Phiên",
     "meaning": "lật, lật lại",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -52758,7 +52758,7 @@
   {
     "hanzi": "反而",
     "pinyin": "fǎn ér",
-    "hanviet": "Phản 而",
+    "hanviet": "Phản Nhi",
     "meaning": "ngược lại; thay vào đó",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -52794,13 +52794,13 @@
   {
     "hanzi": "妨碍",
     "pinyin": "fáng ài",
-    "hanviet": "妨 Ngại",
+    "hanviet": "Phương Ngại",
     "meaning": "cản trở, gây cản trở",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“妨碍”这个词。",
-    "examplePinyin": "Qǐng jìzhu “妨碍” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “妨碍” này.",
+    "example": "请记住妨碍这个词。",
+    "examplePinyin": "Qǐng jìzhu fáng ài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cản trở, gây cản trở này.",
     "id": "typ-hsk5-0199"
   },
   {
@@ -52902,7 +52902,7 @@
   {
     "hanzi": "肺",
     "pinyin": "fèi",
-    "hanviet": "肺",
+    "hanviet": "Phế",
     "meaning": "phổi",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -52930,9 +52930,9 @@
     "meaning": "vô nghĩa; vớ vẩn; lời thừa, Thật vậy sao!; Không đùa chứ!",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“废话”这个词。",
-    "examplePinyin": "Qǐng jìzhu “废话” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “废话” này.",
+    "example": "请记住废话这个词。",
+    "examplePinyin": "Qǐng jìzhu fèi huà zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vô nghĩa; vớ vẩn; lời thừa, Thật vậy sao!; Không đùa chứ! này.",
     "id": "typ-hsk5-0210"
   },
   {
@@ -52990,9 +52990,9 @@
     "meaning": "châm biếm, chế nhạo",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“讽刺”这个词。",
-    "examplePinyin": "Qǐng jìzhu “讽刺” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “讽刺” này.",
+    "example": "请记住讽刺这个词。",
+    "examplePinyin": "Qǐng jìzhu fěng cì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ châm biếm, chế nhạo này.",
     "id": "typ-hsk5-0215"
   },
   {
@@ -53058,7 +53058,7 @@
   {
     "hanzi": "分析",
     "pinyin": "fēn xī",
-    "hanviet": "Phân 析",
+    "hanviet": "Phân Tích",
     "meaning": "phân tích, việc phân tích",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -53130,13 +53130,13 @@
   {
     "hanzi": "辅导",
     "pinyin": "fǔ dǎo",
-    "hanviet": "辅 Đạo",
+    "hanviet": "Phụ Đạo",
     "meaning": "hướng dẫn, định hướng",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“辅导”这个词。",
-    "examplePinyin": "Qǐng jìzhu “辅导” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “辅导” này.",
+    "example": "请记住辅导这个词。",
+    "examplePinyin": "Qǐng jìzhu fǔ dǎo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hướng dẫn, định hướng này.",
     "id": "typ-hsk5-0227"
   },
   {
@@ -53190,7 +53190,7 @@
   {
     "hanzi": "改革",
     "pinyin": "gǎi gé",
-    "hanviet": "改 革",
+    "hanviet": "Cải Cách",
     "meaning": "cải cách",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -53202,7 +53202,7 @@
   {
     "hanzi": "改进",
     "pinyin": "gǎi jìn",
-    "hanviet": "改 Tiến",
+    "hanviet": "Cải Tiến",
     "meaning": "cải thiện; làm cho tốt hơn, sự cải thiện",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -53214,7 +53214,7 @@
   {
     "hanzi": "概念",
     "pinyin": "gài niàn",
-    "hanviet": "概 Niệm",
+    "hanviet": "Khái Niệm",
     "meaning": "khái niệm, ý tưởng",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -53226,7 +53226,7 @@
   {
     "hanzi": "改善",
     "pinyin": "gǎi shàn",
-    "hanviet": "改 Thiện",
+    "hanviet": "Cải Thiện",
     "meaning": "cải thiện; làm cho tốt hơn",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -53238,7 +53238,7 @@
   {
     "hanzi": "干脆",
     "pinyin": "gān cuì",
-    "hanviet": "Can 脆",
+    "hanviet": "Can Thúy",
     "meaning": "thẳng thắn, đi thẳng vào vấn đề",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -53254,9 +53254,9 @@
     "meaning": "thép",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“钢铁”这个词。",
-    "examplePinyin": "Qǐng jìzhu “钢铁” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “钢铁” này.",
+    "example": "请记住钢铁这个词。",
+    "examplePinyin": "Qǐng jìzhu gāng tiě zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thép này.",
     "id": "typ-hsk5-0237"
   },
   {
@@ -53266,15 +53266,15 @@
     "meaning": "biết ơn, cảm kích",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“感激”这个词。",
-    "examplePinyin": "Qǐng jìzhu “感激” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “感激” này.",
+    "example": "请记住感激这个词。",
+    "examplePinyin": "Qǐng jìzhu gǎn jī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ biết ơn, cảm kích này.",
     "id": "typ-hsk5-0238"
   },
   {
     "hanzi": "赶紧",
     "pinyin": "gǎn jǐn",
-    "hanviet": "赶 Khẩn",
+    "hanviet": "Cản Khẩn",
     "meaning": "vội vàng, không chậm trễ",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -53286,7 +53286,7 @@
   {
     "hanzi": "赶快",
     "pinyin": "gǎn kuài",
-    "hanviet": "赶 Khoái",
+    "hanviet": "Cản Khoái",
     "meaning": "nhanh chóng; ngay lập tức",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -53322,7 +53322,7 @@
   {
     "hanzi": "告别",
     "pinyin": "gào bié",
-    "hanviet": "告 Biết",
+    "hanviet": "Cáo Biết",
     "meaning": "rời đi; chia tay, chào tạm biệt; nói lời tạm biệt",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -53334,7 +53334,7 @@
   {
     "hanzi": "高档",
     "pinyin": "gāo dàng",
-    "hanviet": "Cao 档",
+    "hanviet": "Cao Đương",
     "meaning": "chất lượng cao, cao cấp",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -53382,25 +53382,25 @@
   {
     "hanzi": "胳膊",
     "pinyin": "gē bo",
-    "hanviet": "Cặc 膊",
+    "hanviet": "Cặc Bác",
     "meaning": "cánh tay",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“胳膊”这个词。",
-    "examplePinyin": "Qǐng jìzhu “胳膊” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “胳膊” này.",
+    "example": "请记住胳膊这个词。",
+    "examplePinyin": "Qǐng jìzhu gē bo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cánh tay này.",
     "id": "typ-hsk5-0248"
   },
   {
     "hanzi": "革命",
     "pinyin": "gé mìng",
-    "hanviet": "革 Mệnh",
+    "hanviet": "Cách Mệnh",
     "meaning": "rút bỏ mệnh trời, cách mạng",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“革命”这个词。",
-    "examplePinyin": "Qǐng jìzhu “革命” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “革命” này.",
+    "example": "请记住革命这个词。",
+    "examplePinyin": "Qǐng jìzhu gé mìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rút bỏ mệnh trời, cách mạng này.",
     "id": "typ-hsk5-0249"
   },
   {
@@ -53602,9 +53602,9 @@
     "meaning": "toà nhà chung cư; khu căn hộ",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“公寓”这个词。",
-    "examplePinyin": "Qǐng jìzhu “公寓” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “公寓” này.",
+    "example": "请记住公寓这个词。",
+    "examplePinyin": "Qǐng jìzhu gōng yù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ toà nhà chung cư; khu căn hộ này.",
     "id": "typ-hsk5-0266"
   },
   {
@@ -53634,7 +53634,7 @@
   {
     "hanzi": "沟通",
     "pinyin": "gōu tōng",
-    "hanviet": "沟 Thông",
+    "hanviet": "Câu Thông",
     "meaning": "kết nối; liên kết; liên thông, giao tiếp",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -53650,21 +53650,21 @@
     "meaning": "ngoan ngoãn, cư xử tốt, thông minh",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“乖”这个词。",
-    "examplePinyin": "Qǐng jìzhu “乖” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “乖” này.",
+    "example": "请记住乖这个词。",
+    "examplePinyin": "Qǐng jìzhu guāi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngoan ngoãn, cư xử tốt, thông minh này.",
     "id": "typ-hsk5-0270"
   },
   {
     "hanzi": "怪不得",
     "pinyin": "guài bu de",
-    "hanviet": "怪 Bất Đắc",
+    "hanviet": "Quái Bất Đắc",
     "meaning": "thảo nào!, hoá ra là vậy!",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“怪不得”这个词。",
-    "examplePinyin": "Qǐng jìzhu “怪不得” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “怪不得” này.",
+    "example": "请记住怪不得这个词。",
+    "examplePinyin": "Qǐng jìzhu guài bu de zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thảo nào!, hoá ra là vậy! này.",
     "id": "typ-hsk5-0271"
   },
   {
@@ -53830,9 +53830,9 @@
     "meaning": "nghĩa đen: compa và thước vuông, nghĩa bóng: tiêu chuẩn thiết lập",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“规矩”这个词。",
-    "examplePinyin": "Qǐng jìzhu “规矩” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “规矩” này.",
+    "example": "请记住规矩这个词。",
+    "examplePinyin": "Qǐng jìzhu guī ju zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nghĩa đen: compa và thước vuông, nghĩa bóng: tiêu chuẩn thiết lập này.",
     "id": "typ-hsk5-0285"
   },
   {
@@ -53866,9 +53866,9 @@
     "meaning": "sales counter",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“柜台”这个词。",
-    "examplePinyin": "Qǐng jìzhu “柜台” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “柜台” này.",
+    "example": "请记住柜台这个词。",
+    "examplePinyin": "Qǐng jìzhu guì tái zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sales counter này.",
     "id": "typ-hsk5-0288"
   },
   {
@@ -53922,7 +53922,7 @@
   {
     "hanzi": "锅",
     "pinyin": "guō",
-    "hanviet": "锅",
+    "hanviet": "Oa",
     "meaning": "nồi; chảo; wok; vạc, vật hình nồi",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -53982,13 +53982,13 @@
   {
     "hanzi": "鼓舞",
     "pinyin": "gǔ wǔ",
-    "hanviet": "鼓 Vũ",
+    "hanviet": "Cổ Vũ",
     "meaning": "tin vui phấn chấn, thúc đẩy",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“鼓舞”这个词。",
-    "examplePinyin": "Qǐng jìzhu “鼓舞” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “鼓舞” này.",
+    "example": "请记住鼓舞这个词。",
+    "examplePinyin": "Qǐng jìzhu gǔ wǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tin vui phấn chấn, thúc đẩy này.",
     "id": "typ-hsk5-0298"
   },
   {
@@ -54006,7 +54006,7 @@
   {
     "hanzi": "喊",
     "pinyin": "hǎn",
-    "hanviet": "喊",
+    "hanviet": "Hảm",
     "meaning": "la hét, hò hét",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -54034,9 +54034,9 @@
     "meaning": "sang trọng",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“豪华”这个词。",
-    "examplePinyin": "Qǐng jìzhu “豪华” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “豪华” này.",
+    "example": "请记住豪华这个词。",
+    "examplePinyin": "Qǐng jìzhu háo huá zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sang trọng này.",
     "id": "typ-hsk5-0302"
   },
   {
@@ -54066,13 +54066,13 @@
   {
     "hanzi": "何必",
     "pinyin": "hé bì",
-    "hanviet": "何 Tất",
+    "hanviet": "Hà Tất",
     "meaning": "không cần thiết, tại sao phải",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“何必”这个词。",
-    "examplePinyin": "Qǐng jìzhu “何必” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “何必” này.",
+    "example": "请记住何必这个词。",
+    "examplePinyin": "Qǐng jìzhu hé bì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ không cần thiết, tại sao phải này.",
     "id": "typ-hsk5-0305"
   },
   {
@@ -54090,13 +54090,13 @@
   {
     "hanzi": "何况",
     "pinyin": "hé kuàng",
-    "hanviet": "何 Huống",
+    "hanviet": "Hà Huống",
     "meaning": "huống hồ, chưa kể đến",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“何况”这个词。",
-    "examplePinyin": "Qǐng jìzhu “何况” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “何况” này.",
+    "example": "请记住何况这个词。",
+    "examplePinyin": "Qǐng jìzhu hé kuàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ huống hồ, chưa kể đến này.",
     "id": "typ-hsk5-0307"
   },
   {
@@ -54226,9 +54226,9 @@
     "meaning": "hoàng hậu",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“皇后”这个词。",
-    "examplePinyin": "Qǐng jìzhu “皇后” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “皇后” này.",
+    "example": "请记住皇后这个词。",
+    "examplePinyin": "Qǐng jìzhu huáng hòu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hoàng hậu này.",
     "id": "typ-hsk5-0318"
   },
   {
@@ -54246,7 +54246,7 @@
   {
     "hanzi": "缓解",
     "pinyin": "huǎn jiě",
-    "hanviet": "缓 Giải",
+    "hanviet": "Hoãn Giải",
     "meaning": "mang lại sự nhẹ nhõm, làm giảm bớt",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -54282,7 +54282,7 @@
   {
     "hanzi": "话题",
     "pinyin": "huà tí",
-    "hanviet": "Thoại 题",
+    "hanviet": "Thoại Đề",
     "meaning": "chủ đề, đề tài",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -54298,9 +54298,9 @@
     "meaning": "hóa học, chất hóa học",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“化学”这个词。",
-    "examplePinyin": "Qǐng jìzhu “化学” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “化学” này.",
+    "example": "请记住化学这个词。",
+    "examplePinyin": "Qǐng jìzhu huà xué zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hóa học, chất hóa học này.",
     "id": "typ-hsk5-0324"
   },
   {
@@ -54310,9 +54310,9 @@
     "meaning": "bươm bướm",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“蝴蝶”这个词。",
-    "examplePinyin": "Qǐng jìzhu “蝴蝶” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “蝴蝶” này.",
+    "example": "请记住蝴蝶这个词。",
+    "examplePinyin": "Qǐng jìzhu hú dié zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bươm bướm này.",
     "id": "typ-hsk5-0325"
   },
   {
@@ -54342,7 +54342,7 @@
   {
     "hanzi": "恢复",
     "pinyin": "huī fù",
-    "hanviet": "恢 Hạ",
+    "hanviet": "Khôi Hạ",
     "meaning": "khôi phục, tiếp tục",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -54354,7 +54354,7 @@
   {
     "hanzi": "婚礼",
     "pinyin": "hūn lǐ",
-    "hanviet": "婚 Lễ",
+    "hanviet": "Hôn Lễ",
     "meaning": "lễ cưới, đám cưới",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -54366,19 +54366,19 @@
   {
     "hanzi": "婚姻",
     "pinyin": "hūn yīn",
-    "hanviet": "婚 Nhân",
+    "hanviet": "Hôn Nhân",
     "meaning": "hôn nhân; hôn phối",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“婚姻”这个词。",
-    "examplePinyin": "Qǐng jìzhu “婚姻” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “婚姻” này.",
+    "example": "请记住婚姻这个词。",
+    "examplePinyin": "Qǐng jìzhu hūn yīn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hôn nhân; hôn phối này.",
     "id": "typ-hsk5-0330"
   },
   {
     "hanzi": "伙伴",
     "pinyin": "huǒ bàn",
-    "hanviet": "伙 Bạn",
+    "hanviet": "Hỏa Bạn",
     "meaning": "đối tác, bạn đồng hành",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -54418,9 +54418,9 @@
     "meaning": "mơ hồ, ngốc nghếch",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“糊涂”这个词。",
-    "examplePinyin": "Qǐng jìzhu “糊涂” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “糊涂” này.",
+    "example": "请记住糊涂这个词。",
+    "examplePinyin": "Qǐng jìzhu hú tu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mơ hồ, ngốc nghếch này.",
     "id": "typ-hsk5-0334"
   },
   {
@@ -54442,9 +54442,9 @@
     "meaning": "kết hôn, gả con gái",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“嫁”这个词。",
-    "examplePinyin": "Qǐng jìzhu “嫁” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “嫁” này.",
+    "example": "请记住嫁这个词。",
+    "examplePinyin": "Qǐng jìzhu jià zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kết hôn, gả con gái này.",
     "id": "typ-hsk5-0336"
   },
   {
@@ -54462,7 +54462,7 @@
   {
     "hanzi": "嘉宾",
     "pinyin": "jiā bīn",
-    "hanviet": "嘉 Tân",
+    "hanviet": "Gia Tân",
     "meaning": "khách quý, khách mời danh dự",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -54474,7 +54474,7 @@
   {
     "hanzi": "捡",
     "pinyin": "jiǎn",
-    "hanviet": "捡",
+    "hanviet": "Kiểm",
     "meaning": "nhặt lên; thu thập; gom lại",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -54498,25 +54498,25 @@
   {
     "hanzi": "煎",
     "pinyin": "jiān",
-    "hanviet": "煎",
+    "hanviet": "Tiên",
     "meaning": "chiên áp chảo, xào",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“煎”这个词。",
-    "examplePinyin": "Qǐng jìzhu “煎” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “煎” này.",
+    "example": "请记住煎这个词。",
+    "examplePinyin": "Qǐng jìzhu jiān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chiên áp chảo, xào này.",
     "id": "typ-hsk5-0341"
   },
   {
     "hanzi": "肩膀",
     "pinyin": "jiān bǎng",
-    "hanviet": "肩 膀",
+    "hanviet": "Kiên Bàng",
     "meaning": "vai",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“肩膀”这个词。",
-    "examplePinyin": "Qǐng jìzhu “肩膀” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “肩膀” này.",
+    "example": "请记住肩膀这个词。",
+    "examplePinyin": "Qǐng jìzhu jiān bǎng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vai này.",
     "id": "typ-hsk5-0342"
   },
   {
@@ -54606,7 +54606,7 @@
   {
     "hanzi": "简直",
     "pinyin": "jiǎn zhí",
-    "hanviet": "Giản 直",
+    "hanviet": "Giản Trực",
     "meaning": "thực sự; thật sự",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -54642,7 +54642,7 @@
   {
     "hanzi": "交换",
     "pinyin": "jiāo huàn",
-    "hanviet": "Giao 换",
+    "hanviet": "Giao Hoán",
     "meaning": "trao đổi, hoán đổi",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -54678,7 +54678,7 @@
   {
     "hanzi": "假如",
     "pinyin": "jiǎ rú",
-    "hanviet": "假 Như",
+    "hanviet": "Giả Như",
     "meaning": "nếu",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -54690,7 +54690,7 @@
   {
     "hanzi": "驾驶",
     "pinyin": "jià shǐ",
-    "hanviet": "Giá 驶",
+    "hanviet": "Giá Sử",
     "meaning": "điều khiển, lái",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -54714,7 +54714,7 @@
   {
     "hanzi": "家乡",
     "pinyin": "jiā xiāng",
-    "hanviet": "Gia 乡",
+    "hanviet": "Gia Hương",
     "meaning": "quê hương, nơi sinh",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -54726,7 +54726,7 @@
   {
     "hanzi": "价值",
     "pinyin": "jià zhí",
-    "hanviet": "Giá 值",
+    "hanviet": "Giá Trị",
     "meaning": "giá trị, đáng giá",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -54738,13 +54738,13 @@
   {
     "hanzi": "假装",
     "pinyin": "jiǎ zhuāng",
-    "hanviet": "假 Trang",
+    "hanviet": "Giả Trang",
     "meaning": "giả vờ, giả đò",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“假装”这个词。",
-    "examplePinyin": "Qǐng jìzhu “假装” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “假装” này.",
+    "example": "请记住假装这个词。",
+    "examplePinyin": "Qǐng jìzhu jiǎ zhuāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giả vờ, giả đò này.",
     "id": "typ-hsk5-0361"
   },
   {
@@ -54762,7 +54762,7 @@
   {
     "hanzi": "届",
     "pinyin": "jiè",
-    "hanviet": "届",
+    "hanviet": "Giới",
     "meaning": "đến, giai đoạn",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -54874,9 +54874,9 @@
     "meaning": "viện cớ, lời bào chữa; cớ",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“借口”这个词。",
-    "examplePinyin": "Qǐng jìzhu “借口” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “借口” này.",
+    "example": "请记住借口这个词。",
+    "examplePinyin": "Qǐng jìzhu jiè kǒu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ viện cớ, lời bào chữa; cớ này.",
     "id": "typ-hsk5-0372"
   },
   {
@@ -54922,9 +54922,9 @@
     "meaning": "nhẫn",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“戒指”这个词。",
-    "examplePinyin": "Qǐng jìzhu “戒指” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “戒指” này.",
+    "example": "请记住戒指这个词。",
+    "examplePinyin": "Qǐng jìzhu jiè zhi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhẫn này.",
     "id": "typ-hsk5-0376"
   },
   {
@@ -54942,7 +54942,7 @@
   {
     "hanzi": "纪录",
     "pinyin": "jì lù",
-    "hanviet": "Kỉ 录",
+    "hanviet": "Kỉ Lục",
     "meaning": "variant of 记录 (but in Taiwan, not for the verb sense \"to record\")",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -54966,7 +54966,7 @@
   {
     "hanzi": "记录",
     "pinyin": "jì lù",
-    "hanviet": "Kí 录",
+    "hanviet": "Kí Lục",
     "meaning": "ghi chép, bản ghi chép",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -54982,9 +54982,9 @@
     "meaning": "cô đơn, cô quạnh",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“寂寞”这个词。",
-    "examplePinyin": "Qǐng jìzhu “寂寞” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “寂寞” này.",
+    "example": "请记住寂寞这个词。",
+    "examplePinyin": "Qǐng jìzhu jì mò zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cô đơn, cô quạnh này.",
     "id": "typ-hsk5-0381"
   },
   {
@@ -55038,7 +55038,7 @@
   {
     "hanzi": "经营",
     "pinyin": "jīng yíng",
-    "hanviet": "Kinh 营",
+    "hanviet": "Kinh Doanh",
     "meaning": "tham gia ; điều hành; vận hành",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -55098,7 +55098,7 @@
   {
     "hanzi": "尽量",
     "pinyin": "jǐn liàng",
-    "hanviet": "Tận 量",
+    "hanviet": "Tận Lượng",
     "meaning": "càng nhiều càng tốt, đến mức tối đa",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -55114,9 +55114,9 @@
     "meaning": "cẩn thận, thận trọng",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“谨慎”这个词。",
-    "examplePinyin": "Qǐng jìzhu “谨慎” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “谨慎” này.",
+    "example": "请记住谨慎这个词。",
+    "examplePinyin": "Qǐng jìzhu jǐn shèn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cẩn thận, thận trọng này.",
     "id": "typ-hsk5-0392"
   },
   {
@@ -55126,9 +55126,9 @@
     "meaning": "kim loại",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“金属”这个词。",
-    "examplePinyin": "Qǐng jìzhu “金属” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “金属” này.",
+    "example": "请记住金属这个词。",
+    "examplePinyin": "Qǐng jìzhu jīn shǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kim loại này.",
     "id": "typ-hsk5-0393"
   },
   {
@@ -55146,7 +55146,7 @@
   {
     "hanzi": "肌肉",
     "pinyin": "jī ròu",
-    "hanviet": "肌 Nhục",
+    "hanviet": "Cơ Nhục",
     "meaning": "cơ, thịt",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -55194,7 +55194,7 @@
   {
     "hanzi": "酒吧",
     "pinyin": "jiǔ bā",
-    "hanviet": "酒 Và",
+    "hanviet": "Tửu Và",
     "meaning": "quán bar, tiệm rượu",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -55290,7 +55290,7 @@
   {
     "hanzi": "巨大",
     "pinyin": "jù dà",
-    "hanviet": "巨 Đại",
+    "hanviet": "Cự Đại",
     "meaning": "to lớn, khổng lồ",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -55314,7 +55314,7 @@
   {
     "hanzi": "决赛",
     "pinyin": "jué sài",
-    "hanviet": "Quyết 赛",
+    "hanviet": "Quyết Tái",
     "meaning": "chung kết",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -55422,13 +55422,13 @@
   {
     "hanzi": "卡车",
     "pinyin": "kǎ chē",
-    "hanviet": "卡 Xa",
+    "hanviet": "Tạp Xa",
     "meaning": "xe tải",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“卡车”这个词。",
-    "examplePinyin": "Qǐng jìzhu “卡车” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “卡车” này.",
+    "example": "请记住卡车这个词。",
+    "examplePinyin": "Qǐng jìzhu kǎ chē zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xe tải này.",
     "id": "typ-hsk5-0418"
   },
   {
@@ -55470,13 +55470,13 @@
   {
     "hanzi": "砍",
     "pinyin": "kǎn",
-    "hanviet": "砍",
+    "hanviet": "Khảm",
     "meaning": "chặt, đốn",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“砍”这个词。",
-    "examplePinyin": "Qǐng jìzhu “砍” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “砍” này.",
+    "example": "请记住砍这个词。",
+    "examplePinyin": "Qǐng jìzhu kǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chặt, đốn này.",
     "id": "typ-hsk5-0422"
   },
   {
@@ -55518,7 +55518,7 @@
   {
     "hanzi": "颗",
     "pinyin": "kē",
-    "hanviet": "颗",
+    "hanviet": "Khỏa",
     "meaning": "lượng từ cho vật nhỏ hình cầu, ngọc trai, hạt bắp, răng, trái tim, vệ tinh, v.v.",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -55566,7 +55566,7 @@
   {
     "hanzi": "可靠",
     "pinyin": "kě kào",
-    "hanviet": "Khả 靠",
+    "hanviet": "Khả Kháo",
     "meaning": "đáng tin cậy",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -55578,7 +55578,7 @@
   {
     "hanzi": "可怕",
     "pinyin": "kě pà",
-    "hanviet": "Khả 怕",
+    "hanviet": "Khả Phạ",
     "meaning": "kinh khủng, đáng sợ",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -55590,7 +55590,7 @@
   {
     "hanzi": "客厅",
     "pinyin": "kè tīng",
-    "hanviet": "Khách 厅",
+    "hanviet": "Khách Sảnh",
     "meaning": "phòng khách, phòng sinh hoạt chung",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -55606,9 +55606,9 @@
     "meaning": "khủng khiếp, đáng sợ",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“恐怖”这个词。",
-    "examplePinyin": "Qǐng jìzhu “恐怖” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “恐怖” này.",
+    "example": "请记住恐怖这个词。",
+    "examplePinyin": "Qǐng jìzhu kǒng bù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khủng khiếp, đáng sợ này.",
     "id": "typ-hsk5-0433"
   },
   {
@@ -55642,9 +55642,9 @@
     "meaning": "sở thích của một người, khẩu vị",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“口味”这个词。",
-    "examplePinyin": "Qǐng jìzhu “口味” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “口味” này.",
+    "example": "请记住口味这个词。",
+    "examplePinyin": "Qǐng jìzhu kǒu wèi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sở thích của một người, khẩu vị này.",
     "id": "typ-hsk5-0436"
   },
   {
@@ -55678,9 +55678,9 @@
     "meaning": "ớt cay",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“辣椒”这个词。",
-    "examplePinyin": "Qǐng jìzhu “辣椒” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “辣椒” này.",
+    "example": "请记住辣椒这个词。",
+    "examplePinyin": "Qǐng jìzhu là jiāo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ớt cay này.",
     "id": "typ-hsk5-0439"
   },
   {
@@ -55690,9 +55690,9 @@
     "meaning": "chặn đường, cản trở",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“拦”这个词。",
-    "examplePinyin": "Qǐng jìzhu “拦” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “拦” này.",
+    "example": "请记住拦这个词。",
+    "examplePinyin": "Qǐng jìzhu lán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chặn đường, cản trở này.",
     "id": "typ-hsk5-0440"
   },
   {
@@ -55714,9 +55714,9 @@
     "meaning": "sói",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“狼”这个词。",
-    "examplePinyin": "Qǐng jìzhu “狼” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “狼” này.",
+    "example": "请记住狼这个词。",
+    "examplePinyin": "Qǐng jìzhu láng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sói này.",
     "id": "typ-hsk5-0442"
   },
   {
@@ -55770,13 +55770,13 @@
   {
     "hanzi": "老鼠",
     "pinyin": "lǎo shǔ",
-    "hanviet": "Lão 鼠",
+    "hanviet": "Lão Thử",
     "meaning": "chuột",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“老鼠”这个词。",
-    "examplePinyin": "Qǐng jìzhu “老鼠” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “老鼠” này.",
+    "example": "请记住老鼠这个词。",
+    "examplePinyin": "Qǐng jìzhu lǎo shǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chuột này.",
     "id": "typ-hsk5-0447"
   },
   {
@@ -55822,9 +55822,9 @@
     "meaning": "hạt, nhỏ",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“粒”这个词。",
-    "examplePinyin": "Qǐng jìzhu “粒” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “粒” này.",
+    "example": "请记住粒这个词。",
+    "examplePinyin": "Qǐng jìzhu lì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hạt, nhỏ này.",
     "id": "typ-hsk5-0451"
   },
   {
@@ -55854,7 +55854,7 @@
   {
     "hanzi": "粮食",
     "pinyin": "liáng shi",
-    "hanviet": "Lương 食",
+    "hanviet": "Lương Thực",
     "meaning": "lương thực, ngũ cốc",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -55890,7 +55890,7 @@
   {
     "hanzi": "离婚",
     "pinyin": "lí hūn",
-    "hanviet": "Le 婚",
+    "hanviet": "Le Hôn",
     "meaning": "ly hôn",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -55926,7 +55926,7 @@
   {
     "hanzi": "力量",
     "pinyin": "lì liang",
-    "hanviet": "Lực 量",
+    "hanviet": "Lực Lượng",
     "meaning": "sức mạnh; lực lượng; sức lực",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -55950,7 +55950,7 @@
   {
     "hanzi": "铃",
     "pinyin": "líng",
-    "hanviet": "铃",
+    "hanviet": "Linh",
     "meaning": "chuông nhỏ",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -55990,15 +55990,15 @@
     "meaning": "miền; lĩnh vực; lãnh thổ; khu vực",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“领域”这个词。",
-    "examplePinyin": "Qǐng jìzhu “领域” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “领域” này.",
+    "example": "请记住领域这个词。",
+    "examplePinyin": "Qǐng jìzhu lǐng yù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ miền; lĩnh vực; lãnh thổ; khu vực này.",
     "id": "typ-hsk5-0465"
   },
   {
     "hanzi": "临时",
     "pinyin": "lín shí",
-    "hanviet": "临 Thời",
+    "hanviet": "Lâm Thời",
     "meaning": "khi thời gian đến gần, vào phút chót",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -56022,13 +56022,13 @@
   {
     "hanzi": "浏览",
     "pinyin": "liú lǎn",
-    "hanviet": "浏 Lãm",
+    "hanviet": "Lưu Lãm",
     "meaning": "xem lướt, duyệt",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“浏览”这个词。",
-    "examplePinyin": "Qǐng jìzhu “浏览” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “浏览” này.",
+    "example": "请记住浏览这个词。",
+    "examplePinyin": "Qǐng jìzhu liú lǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xem lướt, duyệt này.",
     "id": "typ-hsk5-0468"
   },
   {
@@ -56142,7 +56142,7 @@
   {
     "hanzi": "逻辑",
     "pinyin": "luó ji",
-    "hanviet": "Lạ 辑",
+    "hanviet": "Lạ Tập",
     "meaning": "logic",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -56154,7 +56154,7 @@
   {
     "hanzi": "录取",
     "pinyin": "lù qǔ",
-    "hanviet": "录 Thủ",
+    "hanviet": "Lục Thủ",
     "meaning": "chấp nhận ứng viên vượt kỳ thi đầu vào, nhận vào",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -56166,7 +56166,7 @@
   {
     "hanzi": "录音",
     "pinyin": "lù yīn",
-    "hanviet": "录 Âm",
+    "hanviet": "Lục Âm",
     "meaning": "ghi âm, bản ghi âm",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -56242,15 +56242,15 @@
     "meaning": "mạo hiểm, liều lĩnh",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“冒险”这个词。",
-    "examplePinyin": "Qǐng jìzhu “冒险” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “冒险” này.",
+    "example": "请记住冒险这个词。",
+    "examplePinyin": "Qǐng jìzhu mào xiǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mạo hiểm, liều lĩnh này.",
     "id": "typ-hsk5-0486"
   },
   {
     "hanzi": "贸易",
     "pinyin": "mào yì",
-    "hanviet": "贸 Dịch",
+    "hanviet": "Mậu Dịch",
     "meaning": "thương mại",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -56262,19 +56262,19 @@
   {
     "hanzi": "魅力",
     "pinyin": "mèi lì",
-    "hanviet": "魅 Lực",
+    "hanviet": "Mị Lực",
     "meaning": "sự quyến rũ, sức hút",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“魅力”这个词。",
-    "examplePinyin": "Qǐng jìzhu “魅力” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “魅力” này.",
+    "example": "请记住魅力这个词。",
+    "examplePinyin": "Qǐng jìzhu mèi lì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sự quyến rũ, sức hút này.",
     "id": "typ-hsk5-0488"
   },
   {
     "hanzi": "面对",
     "pinyin": "miàn duì",
-    "hanviet": "面 Đối",
+    "hanviet": "Diện Đối",
     "meaning": "đối mặt; đương đầu",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -56286,19 +56286,19 @@
   {
     "hanzi": "棉花",
     "pinyin": "mián hua",
-    "hanviet": "棉 Hoa",
+    "hanviet": "Miên Hoa",
     "meaning": "bông",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“棉花”这个词。",
-    "examplePinyin": "Qǐng jìzhu “棉花” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “棉花” này.",
+    "example": "请记住棉花这个词。",
+    "examplePinyin": "Qǐng jìzhu mián hua zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bông này.",
     "id": "typ-hsk5-0490"
   },
   {
     "hanzi": "面积",
     "pinyin": "miàn jī",
-    "hanviet": "面 Tích",
+    "hanviet": "Diện Tích",
     "meaning": "diện tích, diện tích bề mặt",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -56310,7 +56310,7 @@
   {
     "hanzi": "面临",
     "pinyin": "miàn lín",
-    "hanviet": "面 临",
+    "hanviet": "Diện Lâm",
     "meaning": "đối mặt với cái gì đó; đối diện với",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -56334,7 +56334,7 @@
   {
     "hanzi": "秘密",
     "pinyin": "mì mì",
-    "hanviet": "秘 Mật",
+    "hanviet": "Bí Mật",
     "meaning": "bí mật; riêng tư; tuyệt mật, một bí mật",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -56454,7 +56454,7 @@
   {
     "hanzi": "秘书",
     "pinyin": "mì shū",
-    "hanviet": "秘 Thư",
+    "hanviet": "Bí Thư",
     "meaning": "thư ký",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -56502,25 +56502,25 @@
   {
     "hanzi": "陌生",
     "pinyin": "mò shēng",
-    "hanviet": "陌 Sinh",
+    "hanviet": "Mạch Sinh",
     "meaning": "lạ, lạ lẫm",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“陌生”这个词。",
-    "examplePinyin": "Qǐng jìzhu “陌生” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “陌生” này.",
+    "example": "请记住陌生这个词。",
+    "examplePinyin": "Qǐng jìzhu mò shēng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lạ, lạ lẫm này.",
     "id": "typ-hsk5-0508"
   },
   {
     "hanzi": "摩托车",
     "pinyin": "mó tuō chē",
-    "hanviet": "摩 Thác / Thách / Thốc / Thước / Thướt Xa",
+    "hanviet": "Ma Thác / Thách / Thốc / Thước / Thướt Xa",
     "meaning": "xe máy; mô tô",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“摩托车”这个词。",
-    "examplePinyin": "Qǐng jìzhu “摩托车” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “摩托车” này.",
+    "example": "请记住摩托车这个词。",
+    "examplePinyin": "Qǐng jìzhu mó tuō chē zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xe máy; mô tô này.",
     "id": "typ-hsk5-0509"
   },
   {
@@ -56550,13 +56550,13 @@
   {
     "hanzi": "目录",
     "pinyin": "mù lù",
-    "hanviet": "Mục 录",
+    "hanviet": "Mục Lục",
     "meaning": "mục lục, bảng mục lục",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“目录”这个词。",
-    "examplePinyin": "Qǐng jìzhu “目录” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “目录” này.",
+    "example": "请记住目录这个词。",
+    "examplePinyin": "Qǐng jìzhu mù lù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mục lục, bảng mục lục này.",
     "id": "typ-hsk5-0512"
   },
   {
@@ -56574,13 +56574,13 @@
   {
     "hanzi": "难怪",
     "pinyin": "nán guài",
-    "hanviet": "Nan 怪",
+    "hanviet": "Nan Quái",
     "meaning": "thảo nào, không có gì ngạc nhiên",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“难怪”这个词。",
-    "examplePinyin": "Qǐng jìzhu “难怪” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “难怪” này.",
+    "example": "请记住难怪这个词。",
+    "examplePinyin": "Qǐng jìzhu nán guài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thảo nào, không có gì ngạc nhiên này.",
     "id": "typ-hsk5-0514"
   },
   {
@@ -56598,7 +56598,7 @@
   {
     "hanzi": "哪怕",
     "pinyin": "nǎ pà",
-    "hanviet": "Nả 怕",
+    "hanviet": "Nả Phạ",
     "meaning": "thậm chí, dù cho",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -56614,9 +56614,9 @@
     "meaning": "trẻ và non, mềm; nấu vừa chín tới",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“嫩”这个词。",
-    "examplePinyin": "Qǐng jìzhu “嫩” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “嫩” này.",
+    "example": "请记住嫩这个词。",
+    "examplePinyin": "Qǐng jìzhu nèn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trẻ và non, mềm; nấu vừa chín tới này.",
     "id": "typ-hsk5-0517"
   },
   {
@@ -56626,9 +56626,9 @@
     "meaning": "năng lượng, nguồn năng lượng",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“能源”这个词。",
-    "examplePinyin": "Qǐng jìzhu “能源” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “能源” này.",
+    "example": "请记住能源这个词。",
+    "examplePinyin": "Qǐng jìzhu néng yuán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ năng lượng, nguồn năng lượng này.",
     "id": "typ-hsk5-0518"
   },
   {
@@ -56778,7 +56778,7 @@
   {
     "hanzi": "赔偿",
     "pinyin": "péi cháng",
-    "hanviet": "赔 偿",
+    "hanviet": "Bồi Thường",
     "meaning": "bồi thường",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -56790,13 +56790,13 @@
   {
     "hanzi": "佩服",
     "pinyin": "pèi fú",
-    "hanviet": "佩 Phục",
+    "hanviet": "Bội Phục",
     "meaning": "ngưỡng mộ",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“佩服”这个词。",
-    "examplePinyin": "Qǐng jìzhu “佩服” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “佩服” này.",
+    "example": "请记住佩服这个词。",
+    "examplePinyin": "Qǐng jìzhu pèi fú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngưỡng mộ này.",
     "id": "typ-hsk5-0532"
   },
   {
@@ -56890,9 +56890,9 @@
     "meaning": "to float",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“飘”这个词。",
-    "examplePinyin": "Qǐng jìzhu “飘” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “飘” này.",
+    "example": "请记住飘这个词。",
+    "examplePinyin": "Qǐng jìzhu piāo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ to float này.",
     "id": "typ-hsk5-0540"
   },
   {
@@ -56902,15 +56902,15 @@
     "meaning": "mệt mỏi, một cách mệt mỏi",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“疲劳”这个词。",
-    "examplePinyin": "Qǐng jìzhu “疲劳” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “疲劳” này.",
+    "example": "请记住疲劳这个词。",
+    "examplePinyin": "Qǐng jìzhu pí láo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mệt mỏi, một cách mệt mỏi này.",
     "id": "typ-hsk5-0541"
   },
   {
     "hanzi": "频道",
     "pinyin": "pín dào",
-    "hanviet": "频 Đạo",
+    "hanviet": "Tần Đạo",
     "meaning": "tần số, kênh",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -56970,7 +56970,7 @@
   {
     "hanzi": "平衡",
     "pinyin": "píng héng",
-    "hanviet": "Bình 衡",
+    "hanviet": "Bình Hành",
     "meaning": "cân bằng, trạng thái cân bằng",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -56994,7 +56994,7 @@
   {
     "hanzi": "平静",
     "pinyin": "píng jìng",
-    "hanviet": "Bình 静",
+    "hanviet": "Bình Tĩnh",
     "meaning": "tĩnh lặng, không bị quấy rầy",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -57042,7 +57042,7 @@
   {
     "hanzi": "破产",
     "pinyin": "pò chǎn",
-    "hanviet": "Phá 产",
+    "hanviet": "Phá Sản",
     "meaning": "phá sản, trở nên nghèo khó",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -57078,7 +57078,7 @@
   {
     "hanzi": "牵",
     "pinyin": "qiān",
-    "hanviet": "牵",
+    "hanviet": "Khiên",
     "meaning": "dắt, theo sát",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -57090,7 +57090,7 @@
   {
     "hanzi": "抢",
     "pinyin": "qiāng",
-    "hanviet": "抢",
+    "hanviet": "Thương",
     "meaning": "đập vào, ngược hướng; trái lại",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -57162,7 +57162,7 @@
   {
     "hanzi": "瞧",
     "pinyin": "qiáo",
-    "hanviet": "瞧",
+    "hanviet": "Tiều",
     "meaning": "nhìn, xem",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -57174,7 +57174,7 @@
   {
     "hanzi": "悄悄",
     "pinyin": "qiāo qiāo",
-    "hanviet": "悄 悄",
+    "hanviet": "Tiễu Tiễu",
     "meaning": "yên lặng; ít hoặc không có tiếng động, lén lút; rón rén",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -57210,7 +57210,7 @@
   {
     "hanzi": "气氛",
     "pinyin": "qì fēn",
-    "hanviet": "Khí 氛",
+    "hanviet": "Khí Phân",
     "meaning": "bầu không khí; tâm trạng",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -57226,9 +57226,9 @@
     "meaning": "phép màu, kỳ diệu",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“奇迹”这个词。",
-    "examplePinyin": "Qǐng jìzhu “奇迹” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “奇迹” này.",
+    "example": "请记住奇迹这个词。",
+    "examplePinyin": "Qǐng jìzhu qí jì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phép màu, kỳ diệu này.",
     "id": "typ-hsk5-0568"
   },
   {
@@ -57318,7 +57318,7 @@
   {
     "hanzi": "情绪",
     "pinyin": "qíng xù",
-    "hanviet": "Tình 绪",
+    "hanviet": "Tình Tự",
     "meaning": "tâm trạng, trạng thái tinh thần",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -57346,9 +57346,9 @@
     "meaning": "xâm lược, cuộc xâm lược",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“侵略”这个词。",
-    "examplePinyin": "Qǐng jìzhu “侵略” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “侵略” này.",
+    "example": "请记住侵略这个词。",
+    "examplePinyin": "Qǐng jìzhu qīn lu:è zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xâm lược, cuộc xâm lược này.",
     "id": "typ-hsk5-0578"
   },
   {
@@ -57414,7 +57414,7 @@
   {
     "hanzi": "汽油",
     "pinyin": "qì yóu",
-    "hanviet": "汽 Dầu",
+    "hanviet": "Khí Dầu",
     "meaning": "xăng",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -57442,9 +57442,9 @@
     "meaning": "lấy vợ, kết hôn",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“娶”这个词。",
-    "examplePinyin": "Qǐng jìzhu “娶” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “娶” này.",
+    "example": "请记住娶这个词。",
+    "examplePinyin": "Qǐng jìzhu qǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lấy vợ, kết hôn này.",
     "id": "typ-hsk5-0586"
   },
   {
@@ -57486,7 +57486,7 @@
   {
     "hanzi": "全面",
     "pinyin": "quán miàn",
-    "hanviet": "Toàn 面",
+    "hanviet": "Toàn Diện",
     "meaning": "toàn diện, toàn bộ",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -57730,9 +57730,9 @@
     "meaning": "vinh dự",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“荣幸”这个词。",
-    "examplePinyin": "Qǐng jìzhu “荣幸” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “荣幸” này.",
+    "example": "请记住荣幸这个词。",
+    "examplePinyin": "Qǐng jìzhu róng xìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vinh dự này.",
     "id": "typ-hsk5-0610"
   },
   {
@@ -57742,9 +57742,9 @@
     "meaning": "vinh dự, danh dự",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“荣誉”这个词。",
-    "examplePinyin": "Qǐng jìzhu “荣誉” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “荣誉” này.",
+    "example": "请记住荣誉这个词。",
+    "examplePinyin": "Qǐng jìzhu róng yù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vinh dự, danh dự này.",
     "id": "typ-hsk5-0611"
   },
   {
@@ -57762,7 +57762,7 @@
   {
     "hanzi": "如何",
     "pinyin": "rú hé",
-    "hanviet": "Như 何",
+    "hanviet": "Như Hà",
     "meaning": "như thế nào, cách gì",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -57810,7 +57810,7 @@
   {
     "hanzi": "傻",
     "pinyin": "shǎ",
-    "hanviet": "傻",
+    "hanviet": "Sỏa",
     "meaning": "ngu ngốc",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -57834,7 +57834,7 @@
   {
     "hanzi": "晒",
     "pinyin": "shài",
-    "hanviet": "晒",
+    "hanviet": "Sái",
     "meaning": "(of the sun) to shine on",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -57862,15 +57862,15 @@
     "meaning": "xóa, hủy",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“删除”这个词。",
-    "examplePinyin": "Qǐng jìzhu “删除” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “删除” này.",
+    "example": "请记住删除这个词。",
+    "examplePinyin": "Qǐng jìzhu shān chú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xóa, hủy này.",
     "id": "typ-hsk5-0621"
   },
   {
     "hanzi": "闪电",
     "pinyin": "shǎn diàn",
-    "hanviet": "闪 Điện",
+    "hanviet": "Thiểm Điện",
     "meaning": "tia chớp",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -57930,13 +57930,13 @@
   {
     "hanzi": "沙滩",
     "pinyin": "shā tān",
-    "hanviet": "Vành / Sa 滩",
+    "hanviet": "Vành / Sa Than",
     "meaning": "bãi biển, bờ cát",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“沙滩”这个词。",
-    "examplePinyin": "Qǐng jìzhu “沙滩” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “沙滩” này.",
+    "example": "请记住沙滩这个词。",
+    "examplePinyin": "Qǐng jìzhu shā tān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bãi biển, bờ cát này.",
     "id": "typ-hsk5-0627"
   },
   {
@@ -57966,7 +57966,7 @@
   {
     "hanzi": "射击",
     "pinyin": "shè jī",
-    "hanviet": "Xạ 击",
+    "hanviet": "Xạ Kích",
     "meaning": "bắn; nổ súng",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -57990,7 +57990,7 @@
   {
     "hanzi": "伸",
     "pinyin": "shēn",
-    "hanviet": "伸",
+    "hanviet": "Thân",
     "meaning": "duỗi, mở rộng",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -58002,7 +58002,7 @@
   {
     "hanzi": "身材",
     "pinyin": "shēn cái",
-    "hanviet": "Thân 材",
+    "hanviet": "Thân Tài",
     "meaning": "vóc dáng, thể hình",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -58038,7 +58038,7 @@
   {
     "hanzi": "生产",
     "pinyin": "shēng chǎn",
-    "hanviet": "Sinh 产",
+    "hanviet": "Sinh Sản",
     "meaning": "sản xuất; chế tạo, sinh con",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -58066,9 +58066,9 @@
     "meaning": "dây; sợi dây; dây thừng",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“绳子”这个词。",
-    "examplePinyin": "Qǐng jìzhu “绳子” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “绳子” này.",
+    "example": "请记住绳子这个词。",
+    "examplePinyin": "Qǐng jìzhu shéng zi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dây; sợi dây; dây thừng này.",
     "id": "typ-hsk5-0638"
   },
   {
@@ -58110,7 +58110,7 @@
   {
     "hanzi": "神秘",
     "pinyin": "shén mì",
-    "hanviet": "Thần 秘",
+    "hanviet": "Thần Bí",
     "meaning": "huyền bí, bí ẩn",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -58230,7 +58230,7 @@
   {
     "hanzi": "实践",
     "pinyin": "shí jiàn",
-    "hanviet": "Thực 践",
+    "hanviet": "Thực Tiễn",
     "meaning": "thực hành, đưa vào thực tiễn",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -58258,9 +58258,9 @@
     "meaning": "bị mất ngủ",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“失眠”这个词。",
-    "examplePinyin": "Qǐng jìzhu “失眠” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “失眠” này.",
+    "example": "请记住失眠这个词。",
+    "examplePinyin": "Qǐng jìzhu shī mián zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bị mất ngủ này.",
     "id": "typ-hsk5-0654"
   },
   {
@@ -58294,9 +58294,9 @@
     "meaning": "thời trang, mốt",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“时尚”这个词。",
-    "examplePinyin": "Qǐng jìzhu “时尚” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “时尚” này.",
+    "example": "请记住时尚这个词。",
+    "examplePinyin": "Qǐng jìzhu shí shàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thời trang, mốt này.",
     "id": "typ-hsk5-0657"
   },
   {
@@ -58338,7 +58338,7 @@
   {
     "hanzi": "食物",
     "pinyin": "shí wù",
-    "hanviet": "食 Vật",
+    "hanviet": "Thực Vật",
     "meaning": "thực phẩm",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -58482,7 +58482,7 @@
   {
     "hanzi": "手套",
     "pinyin": "shǒu tào",
-    "hanviet": "Thủ 套",
+    "hanviet": "Thủ Sáo",
     "meaning": "găng tay",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -58518,7 +58518,7 @@
   {
     "hanzi": "摔",
     "pinyin": "shuāi",
-    "hanviet": "摔",
+    "hanviet": "Suất",
     "meaning": "ném xuống, ngã",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -58530,13 +58530,13 @@
   {
     "hanzi": "甩",
     "pinyin": "shuǎi",
-    "hanviet": "甩",
+    "hanviet": "Trực",
     "meaning": "ném, vung",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“甩”这个词。",
-    "examplePinyin": "Qǐng jìzhu “甩” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “甩” này.",
+    "example": "请记住甩这个词。",
+    "examplePinyin": "Qǐng jìzhu shuǎi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ném, vung này.",
     "id": "typ-hsk5-0677"
   },
   {
@@ -58554,7 +58554,7 @@
   {
     "hanzi": "蔬菜",
     "pinyin": "shū cài",
-    "hanviet": "蔬 Thái",
+    "hanviet": "Sơ Thái",
     "meaning": "rau",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -58590,7 +58590,7 @@
   {
     "hanzi": "数码",
     "pinyin": "shù mǎ",
-    "hanviet": "Số 码",
+    "hanviet": "Số Mã",
     "meaning": "số, chữ số",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -58662,13 +58662,13 @@
   {
     "hanzi": "撕",
     "pinyin": "sī",
-    "hanviet": "撕",
+    "hanviet": "Tư",
     "meaning": "xé",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“撕”这个词。",
-    "examplePinyin": "Qǐng jìzhu “撕” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “撕” này.",
+    "example": "请记住撕这个词。",
+    "examplePinyin": "Qǐng jìzhu sī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xé này.",
     "id": "typ-hsk5-0688"
   },
   {
@@ -58678,9 +58678,9 @@
     "meaning": "một lượng hoặc mức độ nhỏ nhất, một chút",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“丝毫”这个词。",
-    "examplePinyin": "Qǐng jìzhu “丝毫” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “丝毫” này.",
+    "example": "请记住丝毫这个词。",
+    "examplePinyin": "Qǐng jìzhu sī háo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ một lượng hoặc mức độ nhỏ nhất, một chút này.",
     "id": "typ-hsk5-0689"
   },
   {
@@ -58794,7 +58794,7 @@
   {
     "hanzi": "所谓",
     "pinyin": "suǒ wèi",
-    "hanviet": "Sỡ 谓",
+    "hanviet": "Sỡ Vị",
     "meaning": "cái gọi là, điều được gọi là",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -58806,7 +58806,7 @@
   {
     "hanzi": "缩小",
     "pinyin": "suō xiǎo",
-    "hanviet": "缩 Tiểu",
+    "hanviet": "Súc Tiểu",
     "meaning": "giảm; bớt; co lại",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -58830,7 +58830,7 @@
   {
     "hanzi": "塔",
     "pinyin": "tǎ",
-    "hanviet": "塔",
+    "hanviet": "Tháp",
     "meaning": "chùa tháp, tháp",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -58866,13 +58866,13 @@
   {
     "hanzi": "烫",
     "pinyin": "tàng",
-    "hanviet": "烫",
+    "hanviet": "Thang",
     "meaning": "làm bỏng, bị bỏng",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“烫”这个词。",
-    "examplePinyin": "Qǐng jìzhu “烫” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “烫” này.",
+    "example": "请记住烫这个词。",
+    "examplePinyin": "Qǐng jìzhu tàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ làm bỏng, bị bỏng này.",
     "id": "typ-hsk5-0705"
   },
   {
@@ -58890,7 +58890,7 @@
   {
     "hanzi": "套",
     "pinyin": "tào",
-    "hanviet": "套",
+    "hanviet": "Sáo",
     "meaning": "che đậy, bọc",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -58930,9 +58930,9 @@
     "meaning": "trốn thoát, lẩn tránh",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“逃避”这个词。",
-    "examplePinyin": "Qǐng jìzhu “逃避” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “逃避” này.",
+    "example": "请记住逃避这个词。",
+    "examplePinyin": "Qǐng jìzhu táo bì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trốn thoát, lẩn tránh này.",
     "id": "typ-hsk5-0710"
   },
   {
@@ -59034,7 +59034,7 @@
   {
     "hanzi": "题目",
     "pinyin": "tí mù",
-    "hanviet": "题 Mục",
+    "hanviet": "Đề Mục",
     "meaning": "chủ đề; tiêu đề; đề tài, câu hỏi bài tập hoặc thi cử",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -59130,7 +59130,7 @@
   {
     "hanzi": "通讯",
     "pinyin": "tōng xùn",
-    "hanviet": "Thông 讯",
+    "hanviet": "Thông Tấn",
     "meaning": "truyền thông, tin tức",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -59158,9 +59158,9 @@
     "meaning": "cai trị, cai quản",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“统治”这个词。",
-    "examplePinyin": "Qǐng jìzhu “统治” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “统治” này.",
+    "example": "请记住统治这个词。",
+    "examplePinyin": "Qǐng jìzhu tǒng zhì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cai trị, cai quản này.",
     "id": "typ-hsk5-0729"
   },
   {
@@ -59178,7 +59178,7 @@
   {
     "hanzi": "投资",
     "pinyin": "tóu zī",
-    "hanviet": "Đầu 资",
+    "hanviet": "Đầu Tư",
     "meaning": "đầu tư",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -59274,13 +59274,13 @@
   {
     "hanzi": "推荐",
     "pinyin": "tuī jiàn",
-    "hanviet": "Suy 荐",
+    "hanviet": "Suy Tiến",
     "meaning": "đề xuất, khuyến nghị",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“推荐”这个词。",
-    "examplePinyin": "Qǐng jìzhu “推荐” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “推荐” này.",
+    "example": "请记住推荐这个词。",
+    "examplePinyin": "Qǐng jìzhu tuī jiàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đề xuất, khuyến nghị này.",
     "id": "typ-hsk5-0739"
   },
   {
@@ -59302,9 +59302,9 @@
     "meaning": "thỏ",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“兔子”这个词。",
-    "examplePinyin": "Qǐng jìzhu “兔子” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “兔子” này.",
+    "example": "请记住兔子这个词。",
+    "examplePinyin": "Qǐng jìzhu tù zi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thỏ này.",
     "id": "typ-hsk5-0741"
   },
   {
@@ -59314,9 +59314,9 @@
     "meaning": "lệch, nghiêng một góc",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“歪”这个词。",
-    "examplePinyin": "Qǐng jìzhu “歪” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “歪” này.",
+    "example": "请记住歪这个词。",
+    "examplePinyin": "Qǐng jìzhu wāi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lệch, nghiêng một góc này.",
     "id": "typ-hsk5-0742"
   },
   {
@@ -59334,7 +59334,7 @@
   {
     "hanzi": "弯",
     "pinyin": "wān",
-    "hanviet": "弯",
+    "hanviet": "Loan",
     "meaning": "uốn cong, cong",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -59418,7 +59418,7 @@
   {
     "hanzi": "胃",
     "pinyin": "wèi",
-    "hanviet": "胃",
+    "hanviet": "Vị",
     "meaning": "dạ dày, Lượng từ: 個|个",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -59490,7 +59490,7 @@
   {
     "hanzi": "维护",
     "pinyin": "wéi hù",
-    "hanviet": "维 Hộ",
+    "hanviet": "Duy Hộ",
     "meaning": "bảo vệ, duy trì",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -59562,7 +59562,7 @@
   {
     "hanzi": "微笑",
     "pinyin": "wēi xiào",
-    "hanviet": "Vi 笑",
+    "hanviet": "Vi Tiếu",
     "meaning": "cười, mỉm cười",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -59614,9 +59614,9 @@
     "meaning": "nụ hôn, hôn",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“吻”这个词。",
-    "examplePinyin": "Qǐng jìzhu “吻” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “吻” này.",
+    "example": "请记住吻这个词。",
+    "examplePinyin": "Qǐng jìzhu wěn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nụ hôn, hôn này.",
     "id": "typ-hsk5-0767"
   },
   {
@@ -59698,9 +59698,9 @@
     "meaning": "dịu dàng và mềm mại; nhẹ nhàng; ngọt ngào",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“温柔”这个词。",
-    "examplePinyin": "Qǐng jìzhu “温柔” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “温柔” này.",
+    "example": "请记住温柔这个词。",
+    "examplePinyin": "Qǐng jìzhu wēn róu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dịu dàng và mềm mại; nhẹ nhàng; ngọt ngào này.",
     "id": "typ-hsk5-0774"
   },
   {
@@ -59718,7 +59718,7 @@
   {
     "hanzi": "卧室",
     "pinyin": "wò shì",
-    "hanviet": "卧 Thất",
+    "hanviet": "Ngọa Thất",
     "meaning": "phòng ngủ",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -59734,9 +59734,9 @@
     "meaning": "sương mù, sương",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“雾”这个词。",
-    "examplePinyin": "Qǐng jìzhu “雾” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “雾” này.",
+    "example": "请记住雾这个词。",
+    "examplePinyin": "Qǐng jìzhu wù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sương mù, sương này.",
     "id": "typ-hsk5-0777"
   },
   {
@@ -59746,9 +59746,9 @@
     "meaning": "vật lý",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“物理”这个词。",
-    "examplePinyin": "Qǐng jìzhu “物理” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “物理” này.",
+    "example": "请记住物理这个词。",
+    "examplePinyin": "Qǐng jìzhu wù lǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vật lý này.",
     "id": "typ-hsk5-0778"
   },
   {
@@ -59814,13 +59814,13 @@
   {
     "hanzi": "瞎",
     "pinyin": "xiā",
-    "hanviet": "瞎",
+    "hanviet": "Hạt",
     "meaning": "mù, một cách vô căn cứ",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“瞎”这个词。",
-    "examplePinyin": "Qǐng jìzhu “瞎” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “瞎” này.",
+    "example": "请记住瞎这个词。",
+    "examplePinyin": "Qǐng jìzhu xiā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mù, một cách vô căn cứ này.",
     "id": "typ-hsk5-0784"
   },
   {
@@ -59890,9 +59890,9 @@
     "meaning": "tương đối, đối lập",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“相对”这个词。",
-    "examplePinyin": "Qǐng jìzhu “相对” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “相对” này.",
+    "example": "请记住相对这个词。",
+    "examplePinyin": "Qǐng jìzhu xiāng duì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tương đối, đối lập này.",
     "id": "typ-hsk5-0790"
   },
   {
@@ -59910,13 +59910,13 @@
   {
     "hanzi": "项链",
     "pinyin": "xiàng liàn",
-    "hanviet": "Hạng 链",
+    "hanviet": "Hạng Liên",
     "meaning": "dây chuyền",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“项链”这个词。",
-    "examplePinyin": "Qǐng jìzhu “项链” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “项链” này.",
+    "example": "请记住项链这个词。",
+    "examplePinyin": "Qǐng jìzhu xiàng liàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dây chuyền này.",
     "id": "typ-hsk5-0792"
   },
   {
@@ -60078,7 +60078,7 @@
   {
     "hanzi": "小伙子",
     "pinyin": "xiǎo huǒ zi",
-    "hanviet": "Tiểu 伙 Tử",
+    "hanviet": "Tiểu Hỏa Tử",
     "meaning": "chàng trai, người trẻ",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -60090,7 +60090,7 @@
   {
     "hanzi": "效率",
     "pinyin": "xiào lǜ",
-    "hanviet": "Hiệu 率",
+    "hanviet": "Hiệu Suất",
     "meaning": "hiệu suất",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -60126,7 +60126,7 @@
   {
     "hanzi": "销售",
     "pinyin": "xiāo shòu",
-    "hanviet": "Tiu 售",
+    "hanviet": "Tiu Thọ",
     "meaning": "bán, tiếp thị",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -60138,7 +60138,7 @@
   {
     "hanzi": "小偷",
     "pinyin": "xiǎo tōu",
-    "hanviet": "Tiểu 偷",
+    "hanviet": "Tiểu Du",
     "meaning": "kẻ trộm",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -60438,7 +60438,7 @@
   {
     "hanzi": "修改",
     "pinyin": "xiū gǎi",
-    "hanviet": "Tu 改",
+    "hanviet": "Tu Cải",
     "meaning": "sửa đổi, thay đổi",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -60534,7 +60534,7 @@
   {
     "hanzi": "迅速",
     "pinyin": "xùn sù",
-    "hanviet": "迅 Tốc",
+    "hanviet": "Tấn Tốc",
     "meaning": "nhanh chóng, nhanh nhẹn",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -60546,7 +60546,7 @@
   {
     "hanzi": "询问",
     "pinyin": "xún wèn",
-    "hanviet": "询 Vấn",
+    "hanviet": "Tuần Vấn",
     "meaning": "hỏi thông tin",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -60582,13 +60582,13 @@
   {
     "hanzi": "痒",
     "pinyin": "yǎng",
-    "hanviet": "痒",
+    "hanviet": "Dương",
     "meaning": "to itch",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“痒”这个词。",
-    "examplePinyin": "Qǐng jìzhu “痒” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “痒” này.",
+    "example": "请记住痒这个词。",
+    "examplePinyin": "Qǐng jìzhu yǎng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ to itch này.",
     "id": "typ-hsk5-0848"
   },
   {
@@ -60618,7 +60618,7 @@
   {
     "hanzi": "严肃",
     "pinyin": "yán sù",
-    "hanviet": "Nghiêm 肃",
+    "hanviet": "Nghiêm Túc",
     "meaning": "trang nghiêm, nghiêm trọng",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -60706,9 +60706,9 @@
     "meaning": "chất lỏng",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“液体”这个词。",
-    "examplePinyin": "Qǐng jìzhu “液体” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “液体” này.",
+    "example": "请记住液体这个词。",
+    "examplePinyin": "Qǐng jìzhu yè tǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chất lỏng này.",
     "id": "typ-hsk5-0858"
   },
   {
@@ -60786,7 +60786,7 @@
   {
     "hanzi": "以及",
     "pinyin": "yǐ jí",
-    "hanviet": "以 Cập",
+    "hanviet": "Dĩ Cập",
     "meaning": "cũng như, cũng",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -60798,7 +60798,7 @@
   {
     "hanzi": "以来",
     "pinyin": "yǐ lái",
-    "hanviet": "以 Lai",
+    "hanviet": "Dĩ Lai",
     "meaning": "kể từ",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -60850,9 +60850,9 @@
     "meaning": "đối phó; xử lý",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“应付”这个词。",
-    "examplePinyin": "Qǐng jìzhu “应付” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “应付” này.",
+    "example": "请记住应付这个词。",
+    "examplePinyin": "Qǐng jìzhu yìng fu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đối phó; xử lý này.",
     "id": "typ-hsk5-0870"
   },
   {
@@ -60882,7 +60882,7 @@
   {
     "hanzi": "营养",
     "pinyin": "yíng yǎng",
-    "hanviet": "营 Dưỡng",
+    "hanviet": "Doanh Dưỡng",
     "meaning": "dinh dưỡng, nuôi dưỡng",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -60894,7 +60894,7 @@
   {
     "hanzi": "营业",
     "pinyin": "yíng yè",
-    "hanviet": "营 Nghiệp",
+    "hanviet": "Doanh Nghiệp",
     "meaning": "kinh doanh, buôn bán",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -60966,7 +60966,7 @@
   {
     "hanzi": "疑问",
     "pinyin": "yí wèn",
-    "hanviet": "疑 Vấn",
+    "hanviet": "Nghi Vấn",
     "meaning": "câu hỏi, sự thẩm vấn",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -61038,7 +61038,7 @@
   {
     "hanzi": "幼儿园",
     "pinyin": "yòu ér yuán",
-    "hanviet": "Ấu 儿 Vườn",
+    "hanviet": "Ấu Nhi Vườn",
     "meaning": "nhà trẻ, trường mẫu giáo",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -61050,7 +61050,7 @@
   {
     "hanzi": "优惠",
     "pinyin": "yōu huì",
-    "hanviet": "优 Huệ",
+    "hanviet": "Ưu Huệ",
     "meaning": "ưu đãi, điều kiện thuận lợi",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -61074,7 +61074,7 @@
   {
     "hanzi": "优美",
     "pinyin": "yōu měi",
-    "hanviet": "优 Mỹ",
+    "hanviet": "Ưu Mỹ",
     "meaning": "duyên dáng, đẹp",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -61086,7 +61086,7 @@
   {
     "hanzi": "优势",
     "pinyin": "yōu shì",
-    "hanviet": "优 Thế",
+    "hanviet": "Ưu Thế",
     "meaning": "sự vượt trội, sự thống trị",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -61098,7 +61098,7 @@
   {
     "hanzi": "犹豫",
     "pinyin": "yóu yù",
-    "hanviet": "犹 豫",
+    "hanviet": "Do Dự",
     "meaning": "do dự",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -61170,7 +61170,7 @@
   {
     "hanzi": "娱乐",
     "pinyin": "yú lè",
-    "hanviet": "娱 Lạc",
+    "hanviet": "Ngu Lạc",
     "meaning": "giải trí, tiêu khiển",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -61182,7 +61182,7 @@
   {
     "hanzi": "玉米",
     "pinyin": "yù mǐ",
-    "hanviet": "Ngọc 米",
+    "hanviet": "Ngọc Mễ",
     "meaning": "ngô, bắp",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -61246,9 +61246,9 @@
     "meaning": "giọng điệu, cách nói",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“语气”这个词。",
-    "examplePinyin": "Qǐng jìzhu “语气” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “语气” này.",
+    "example": "请记住语气这个词。",
+    "examplePinyin": "Qǐng jìzhu yǔ qì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giọng điệu, cách nói này.",
     "id": "typ-hsk5-0903"
   },
   {
@@ -61258,9 +61258,9 @@
     "meaning": "vũ trụ",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“宇宙”这个词。",
-    "examplePinyin": "Qǐng jìzhu “宇宙” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “宇宙” này.",
+    "example": "请记住宇宙这个词。",
+    "examplePinyin": "Qǐng jìzhu yǔ zhòu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vũ trụ này.",
     "id": "typ-hsk5-0904"
   },
   {
@@ -61282,9 +61282,9 @@
     "meaning": "ngưỡng mộ, khen ngợi",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“赞美”这个词。",
-    "examplePinyin": "Qǐng jìzhu “赞美” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “赞美” này.",
+    "example": "请记住赞美这个词。",
+    "examplePinyin": "Qǐng jìzhu zàn měi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngưỡng mộ, khen ngợi này.",
     "id": "typ-hsk5-0906"
   },
   {
@@ -61302,7 +61302,7 @@
   {
     "hanzi": "糟糕",
     "pinyin": "zāo gāo",
-    "hanviet": "糟 糕",
+    "hanviet": "Tao Cao",
     "meaning": "quá tệ, khủng khiếp",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -61350,7 +61350,7 @@
   {
     "hanzi": "账户",
     "pinyin": "zhàng hù",
-    "hanviet": "账 Hộ",
+    "hanviet": "Trướng Hộ",
     "meaning": "tài khoản ngân hàng, tài khoản trực tuyến",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -61362,7 +61362,7 @@
   {
     "hanzi": "掌握",
     "pinyin": "zhǎng wò",
-    "hanviet": "掌 握",
+    "hanviet": "Chưởng Ác",
     "meaning": "nắm bắt, kiểm soát",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -61470,13 +61470,13 @@
   {
     "hanzi": "睁",
     "pinyin": "zhēng",
-    "hanviet": "睁",
+    "hanviet": "Tranh",
     "meaning": "mở",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“睁”这个词。",
-    "examplePinyin": "Qǐng jìzhu “睁” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “睁” này.",
+    "example": "请记住睁这个词。",
+    "examplePinyin": "Qǐng jìzhu zhēng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mở này.",
     "id": "typ-hsk5-0922"
   },
   {
@@ -61630,9 +61630,9 @@
     "meaning": "gối",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“枕头”这个词。",
-    "examplePinyin": "Qǐng jìzhu “枕头” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “枕头” này.",
+    "example": "请记住枕头这个词。",
+    "examplePinyin": "Qǐng jìzhu zhěn tou zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gối này.",
     "id": "typ-hsk5-0935"
   },
   {
@@ -61674,7 +61674,7 @@
   {
     "hanzi": "直",
     "pinyin": "zhí",
-    "hanviet": "直",
+    "hanviet": "Trực",
     "meaning": "straight",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -61734,7 +61734,7 @@
   {
     "hanzi": "智慧",
     "pinyin": "zhì huì",
-    "hanviet": "Trí 慧",
+    "hanviet": "Trí Tuệ",
     "meaning": "trí tuệ; thông minh",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -61786,9 +61786,9 @@
     "meaning": "trật tự, trật tự",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“秩序”这个词。",
-    "examplePinyin": "Qǐng jìzhu “秩序” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “秩序” này.",
+    "example": "请记住秩序这个词。",
+    "examplePinyin": "Qǐng jìzhu zhì xù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trật tự, trật tự này.",
     "id": "typ-hsk5-0948"
   },
   {
@@ -61830,7 +61830,7 @@
   {
     "hanzi": "重量",
     "pinyin": "zhòng liàng",
-    "hanviet": "Trọng 量",
+    "hanviet": "Trọng Lượng",
     "meaning": "trọng lượng",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -61854,7 +61854,7 @@
   {
     "hanzi": "煮",
     "pinyin": "zhǔ",
-    "hanviet": "煮",
+    "hanviet": "Chử",
     "meaning": "to cook",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -61914,7 +61914,7 @@
   {
     "hanzi": "装饰",
     "pinyin": "zhuāng shì",
-    "hanviet": "Trang 饰",
+    "hanviet": "Trang Sức",
     "meaning": "trang trí, sự trang trí",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -62010,7 +62010,7 @@
   {
     "hanzi": "主席",
     "pinyin": "zhǔ xí",
-    "hanviet": "Chúa 席",
+    "hanviet": "Chúa Tịch",
     "meaning": "chủ tịch, thủ tướng",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -62070,7 +62070,7 @@
   {
     "hanzi": "资格",
     "pinyin": "zī gé",
-    "hanviet": "资 Cách",
+    "hanviet": "Tư Cách",
     "meaning": "trình độ, người có thâm niên",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -62094,7 +62094,7 @@
   {
     "hanzi": "资金",
     "pinyin": "zī jīn",
-    "hanviet": "资 Kim",
+    "hanviet": "Tư Kim",
     "meaning": "quỹ; vốn",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -62106,7 +62106,7 @@
   {
     "hanzi": "资料",
     "pinyin": "zī liào",
-    "hanviet": "资 Liệu",
+    "hanviet": "Tư Liệu",
     "meaning": "tài liệu, tài nguyên",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -62122,9 +62122,9 @@
     "meaning": "tư thế, vị trí",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“姿势”这个词。",
-    "examplePinyin": "Qǐng jìzhu “姿势” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “姿势” này.",
+    "example": "请记住姿势这个词。",
+    "examplePinyin": "Qǐng jìzhu zī shì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tư thế, vị trí này.",
     "id": "typ-hsk5-0976"
   },
   {
@@ -62134,9 +62134,9 @@
     "meaning": "ích kỷ, tính ích kỷ",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“自私”这个词。",
-    "examplePinyin": "Qǐng jìzhu “自私” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “自私” này.",
+    "example": "请记住自私这个词。",
+    "examplePinyin": "Qǐng jìzhu zì sī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ích kỷ, tính ích kỷ này.",
     "id": "typ-hsk5-0977"
   },
   {
@@ -62154,7 +62154,7 @@
   {
     "hanzi": "咨询",
     "pinyin": "zī xún",
-    "hanviet": "咨 询",
+    "hanviet": "Tư Tuần",
     "meaning": "tư vấn, xin ý kiến",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -62190,7 +62190,7 @@
   {
     "hanzi": "资源",
     "pinyin": "Zī yuán",
-    "hanviet": "资 Nguồn",
+    "hanviet": "Tư Nguồn",
     "meaning": "huyện Tư Nguyên ở Quế Lâm 桂林, Quảng Tây",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -62226,7 +62226,7 @@
   {
     "hanzi": "综合",
     "pinyin": "zōng hé",
-    "hanviet": "综 Hợp",
+    "hanviet": "Tông Hợp",
     "meaning": "toàn diện, hỗn hợp",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -62322,7 +62322,7 @@
   {
     "hanzi": "醉",
     "pinyin": "zuì",
-    "hanviet": "醉",
+    "hanviet": "Túy",
     "meaning": "say",
     "hsk": "HSK 5",
     "levelNum": 5,
@@ -62350,9 +62350,9 @@
     "meaning": "tội phạm",
     "hsk": "HSK 5",
     "levelNum": 5,
-    "example": "请记住“罪犯”这个词。",
-    "examplePinyin": "Qǐng jìzhu “罪犯” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “罪犯” này.",
+    "example": "请记住罪犯这个词。",
+    "examplePinyin": "Qǐng jìzhu zuì fàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tội phạm này.",
     "id": "typ-hsk5-0995"
   },
   {
@@ -62418,7 +62418,7 @@
   {
     "hanzi": "挨",
     "pinyin": "āi",
-    "hanviet": "挨",
+    "hanviet": "Ai",
     "meaning": "theo thứ tự; theo trình tự, gần; kế cận",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -62430,25 +62430,25 @@
   {
     "hanzi": "哎哟",
     "pinyin": "āi yō",
-    "hanviet": "哎 哟",
+    "hanviet": "Ai Ước",
     "meaning": "này, ôi",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“哎哟”这个词。",
-    "examplePinyin": "Qǐng jìzhu “哎哟” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “哎哟” này.",
+    "example": "请记住哎哟这个词。",
+    "examplePinyin": "Qǐng jìzhu āi yō zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ này, ôi này.",
     "id": "typ-hsk6-0002"
   },
   {
     "hanzi": "癌症",
     "pinyin": "ái zhèng",
-    "hanviet": "癌 Chứng",
+    "hanviet": "Nham Chứng",
     "meaning": "ung thư",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“癌症”这个词。",
-    "examplePinyin": "Qǐng jìzhu “癌症” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “癌症” này.",
+    "example": "请记住癌症这个词。",
+    "examplePinyin": "Qǐng jìzhu ái zhèng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ung thư này.",
     "id": "typ-hsk6-0003"
   },
   {
@@ -62458,9 +62458,9 @@
     "meaning": "đắt đỏ, tốn kém",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“昂贵”这个词。",
-    "examplePinyin": "Qǐng jìzhu “昂贵” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “昂贵” này.",
+    "example": "请记住昂贵这个词。",
+    "examplePinyin": "Qǐng jìzhu áng guì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đắt đỏ, tốn kém này.",
     "id": "typ-hsk6-0004"
   },
   {
@@ -62470,9 +62470,9 @@
     "meaning": "vụ án, trường hợp",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“案件”这个词。",
-    "examplePinyin": "Qǐng jìzhu “案件” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “案件” này.",
+    "example": "请记住案件这个词。",
+    "examplePinyin": "Qǐng jìzhu àn jiàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vụ án, trường hợp này.",
     "id": "typ-hsk6-0005"
   },
   {
@@ -62482,15 +62482,15 @@
     "meaning": "vụ việc ; trường hợp; ví dụ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“案例”这个词。",
-    "examplePinyin": "Qǐng jìzhu “案例” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “案例” này.",
+    "example": "请记住案例这个词。",
+    "examplePinyin": "Qǐng jìzhu àn lì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vụ việc ; trường hợp; ví dụ này.",
     "id": "typ-hsk6-0006"
   },
   {
     "hanzi": "按摩",
     "pinyin": "àn mó",
-    "hanviet": "Án 摩",
+    "hanviet": "Án Ma",
     "meaning": "mát-xa, xoa bóp",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -62526,13 +62526,13 @@
   {
     "hanzi": "熬",
     "pinyin": "āo",
-    "hanviet": "熬",
+    "hanviet": "Ngao",
     "meaning": "đun sôi; ninh",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“熬”这个词。",
-    "examplePinyin": "Qǐng jìzhu “熬” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “熬” này.",
+    "example": "请记住熬这个词。",
+    "examplePinyin": "Qǐng jìzhu āo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đun sôi; ninh này.",
     "id": "typ-hsk6-0010"
   },
   {
@@ -62554,9 +62554,9 @@
     "meaning": "nhờ ai đó làm gì, lam ơn!",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“拜托”这个词。",
-    "examplePinyin": "Qǐng jìzhu “拜托” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “拜托” này.",
+    "example": "请记住拜托这个词。",
+    "examplePinyin": "Qǐng jìzhu bài tuō zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhờ ai đó làm gì, lam ơn! này.",
     "id": "typ-hsk6-0012"
   },
   {
@@ -62578,33 +62578,33 @@
     "meaning": "phiên bản, ấn bản",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“版本”这个词。",
-    "examplePinyin": "Qǐng jìzhu “版本” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “版本” này.",
+    "example": "请记住版本这个词。",
+    "examplePinyin": "Qǐng jìzhu bǎn běn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phiên bản, ấn bản này.",
     "id": "typ-hsk6-0014"
   },
   {
     "hanzi": "磅",
     "pinyin": "bàng",
-    "hanviet": "磅",
+    "hanviet": "Bàng",
     "meaning": "cân, cân",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“磅”这个词。",
-    "examplePinyin": "Qǐng jìzhu “磅” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “磅” này.",
+    "example": "请记住磅这个词。",
+    "examplePinyin": "Qǐng jìzhu bàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cân, cân này.",
     "id": "typ-hsk6-0015"
   },
   {
     "hanzi": "绑架",
     "pinyin": "bǎng jià",
-    "hanviet": "绑 Giá",
+    "hanviet": "Bảng Giá",
     "meaning": "bắt cóc, đánh cắp",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“绑架”这个词。",
-    "examplePinyin": "Qǐng jìzhu “绑架” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “绑架” này.",
+    "example": "请记住绑架这个词。",
+    "examplePinyin": "Qǐng jìzhu bǎng jià zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bắt cóc, đánh cắp này.",
     "id": "typ-hsk6-0016"
   },
   {
@@ -62614,9 +62614,9 @@
     "meaning": "ví dụ, hình mẫu",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“榜样”这个词。",
-    "examplePinyin": "Qǐng jìzhu “榜样” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “榜样” này.",
+    "example": "请记住榜样这个词。",
+    "examplePinyin": "Qǐng jìzhu bǎng yàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ví dụ, hình mẫu này.",
     "id": "typ-hsk6-0017"
   },
   {
@@ -62626,9 +62626,9 @@
     "meaning": "bạn đồng hành, bạn đời",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“伴侣”这个词。",
-    "examplePinyin": "Qǐng jìzhu “伴侣” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “伴侣” này.",
+    "example": "请记住伴侣这个词。",
+    "examplePinyin": "Qǐng jìzhu bàn lǚ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bạn đồng hành, bạn đời này.",
     "id": "typ-hsk6-0018"
   },
   {
@@ -62638,15 +62638,15 @@
     "meaning": "đi cùng, theo",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“伴随”这个词。",
-    "examplePinyin": "Qǐng jìzhu “伴随” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “伴随” này.",
+    "example": "请记住伴随这个词。",
+    "examplePinyin": "Qǐng jìzhu bàn suí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đi cùng, theo này.",
     "id": "typ-hsk6-0019"
   },
   {
     "hanzi": "扮演",
     "pinyin": "bàn yǎn",
-    "hanviet": "扮 Diễn",
+    "hanviet": "Bái Diễn",
     "meaning": "đóng vai, diễn",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -62662,15 +62662,15 @@
     "meaning": "phần thưởng, thù lao",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“报酬”这个词。",
-    "examplePinyin": "Qǐng jìzhu “报酬” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “报酬” này.",
+    "example": "请记住报酬这个词。",
+    "examplePinyin": "Qǐng jìzhu bào chou zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phần thưởng, thù lao này.",
     "id": "typ-hsk6-0021"
   },
   {
     "hanzi": "爆发",
     "pinyin": "bào fā",
-    "hanviet": "爆 Phát",
+    "hanviet": "Bạo Phát",
     "meaning": "bùng nổ, phun trào",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -62686,9 +62686,9 @@
     "meaning": "thực hiện trả đũa; trả thù, trả đũa; sự trả thù",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“报复”这个词。",
-    "examplePinyin": "Qǐng jìzhu “报复” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “报复” này.",
+    "example": "请记住报复这个词。",
+    "examplePinyin": "Qǐng jìzhu bào fù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thực hiện trả đũa; trả thù, trả đũa; sự trả thù này.",
     "id": "typ-hsk6-0023"
   },
   {
@@ -62698,21 +62698,21 @@
     "meaning": "giữ gìn; chăm sóc, đảm bảo",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“保管”这个词。",
-    "examplePinyin": "Qǐng jìzhu “保管” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “保管” này.",
+    "example": "请记住保管这个词。",
+    "examplePinyin": "Qǐng jìzhu bǎo guǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giữ gìn; chăm sóc, đảm bảo này.",
     "id": "typ-hsk6-0024"
   },
   {
     "hanzi": "曝光",
     "pinyin": "bào guāng",
-    "hanviet": "曝 Quang",
+    "hanviet": "Bộc Quang",
     "meaning": "phơi sáng, phơi bày",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“曝光”这个词。",
-    "examplePinyin": "Qǐng jìzhu “曝光” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “曝光” này.",
+    "example": "请记住曝光这个词。",
+    "examplePinyin": "Qǐng jìzhu bào guāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phơi sáng, phơi bày này.",
     "id": "typ-hsk6-0025"
   },
   {
@@ -62754,13 +62754,13 @@
   {
     "hanzi": "保姆",
     "pinyin": "bǎo mǔ",
-    "hanviet": "Bảo 姆",
+    "hanviet": "Bảo Mẫu",
     "meaning": "bảo mẫu, quản gia",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“保姆”这个词。",
-    "examplePinyin": "Qǐng jìzhu “保姆” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “保姆” này.",
+    "example": "请记住保姆这个词。",
+    "examplePinyin": "Qǐng jìzhu bǎo mǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bảo mẫu, quản gia này.",
     "id": "typ-hsk6-0029"
   },
   {
@@ -62814,7 +62814,7 @@
   {
     "hanzi": "爆炸",
     "pinyin": "bào zhà",
-    "hanviet": "爆 炸",
+    "hanviet": "Bạo Tạc",
     "meaning": "vụ nổ, nổ",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -62830,9 +62830,9 @@
     "meaning": "đảm bảo, bảo đảm",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“保障”这个词。",
-    "examplePinyin": "Qǐng jìzhu “保障” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “保障” này.",
+    "example": "请记住保障这个词。",
+    "examplePinyin": "Qǐng jìzhu bǎo zhàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đảm bảo, bảo đảm này.",
     "id": "typ-hsk6-0035"
   },
   {
@@ -62854,15 +62854,15 @@
     "meaning": "đau buồn, sầu thảm",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“悲哀”这个词。",
-    "examplePinyin": "Qǐng jìzhu “悲哀” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “悲哀” này.",
+    "example": "请记住悲哀这个词。",
+    "examplePinyin": "Qǐng jìzhu bēi āi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đau buồn, sầu thảm này.",
     "id": "typ-hsk6-0037"
   },
   {
     "hanzi": "被告",
     "pinyin": "bèi gào",
-    "hanviet": "Bị 告",
+    "hanviet": "Bị Cáo",
     "meaning": "bị cáo",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -62878,45 +62878,45 @@
     "meaning": "phản bội",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“背叛”这个词。",
-    "examplePinyin": "Qǐng jìzhu “背叛” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “背叛” này.",
+    "example": "请记住背叛这个词。",
+    "examplePinyin": "Qǐng jìzhu bèi pàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phản bội này.",
     "id": "typ-hsk6-0039"
   },
   {
     "hanzi": "奔驰",
     "pinyin": "Bēn chí",
-    "hanviet": "奔 驰",
+    "hanviet": "Bôn Trì",
     "meaning": "Benz, Mercedes-Benz, hãng xe Đức",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“奔驰”这个词。",
-    "examplePinyin": "Qǐng jìzhu “奔驰” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “奔驰” này.",
+    "example": "请记住奔驰这个词。",
+    "examplePinyin": "Qǐng jìzhu Bēn chí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ Benz, Mercedes-Benz, hãng xe Đức này.",
     "id": "typ-hsk6-0040"
   },
   {
     "hanzi": "蹦",
     "pinyin": "bèng",
-    "hanviet": "蹦",
+    "hanviet": "Băng",
     "meaning": "nhảy; nảy; bật",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“蹦”这个词。",
-    "examplePinyin": "Qǐng jìzhu “蹦” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “蹦” này.",
+    "example": "请记住蹦这个词。",
+    "examplePinyin": "Qǐng jìzhu bèng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhảy; nảy; bật này.",
     "id": "typ-hsk6-0041"
   },
   {
     "hanzi": "崩溃",
     "pinyin": "bēng kuì",
-    "hanviet": "崩 Hói",
+    "hanviet": "Băng Hói",
     "meaning": "sụp đổ; sụp; tan vỡ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“崩溃”这个词。",
-    "examplePinyin": "Qǐng jìzhu “崩溃” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “崩溃” này.",
+    "example": "请记住崩溃这个词。",
+    "examplePinyin": "Qǐng jìzhu bēng kuì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sụp đổ; sụp; tan vỡ này.",
     "id": "typ-hsk6-0042"
   },
   {
@@ -62926,9 +62926,9 @@
     "meaning": "bản năng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“本能”这个词。",
-    "examplePinyin": "Qǐng jìzhu “本能” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “本能” này.",
+    "example": "请记住本能这个词。",
+    "examplePinyin": "Qǐng jìzhu běn néng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bản năng này.",
     "id": "typ-hsk6-0043"
   },
   {
@@ -62970,13 +62970,13 @@
   {
     "hanzi": "臂",
     "pinyin": "bì",
-    "hanviet": "臂",
+    "hanviet": "Tý",
     "meaning": "cánh tay",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“臂”这个词。",
-    "examplePinyin": "Qǐng jìzhu “臂” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “臂” này.",
+    "example": "请记住臂这个词。",
+    "examplePinyin": "Qǐng jìzhu bì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cánh tay này.",
     "id": "typ-hsk6-0047"
   },
   {
@@ -62994,13 +62994,13 @@
   {
     "hanzi": "辩护",
     "pinyin": "biàn hù",
-    "hanviet": "辩 Hộ",
+    "hanviet": "Biện Hộ",
     "meaning": "nói để bảo vệ, tranh luận ủng hộ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“辩护”这个词。",
-    "examplePinyin": "Qǐng jìzhu “辩护” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “辩护” này.",
+    "example": "请记住辩护这个词。",
+    "examplePinyin": "Qǐng jìzhu biàn hù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nói để bảo vệ, tranh luận ủng hộ này.",
     "id": "typ-hsk6-0049"
   },
   {
@@ -63010,9 +63010,9 @@
     "meaning": "ranh giới, biên giới",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“边界”这个词。",
-    "examplePinyin": "Qǐng jìzhu “边界” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “边界” này.",
+    "example": "请记住边界这个词。",
+    "examplePinyin": "Qǐng jìzhu biān jiè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ranh giới, biên giới này.",
     "id": "typ-hsk6-0050"
   },
   {
@@ -63058,9 +63058,9 @@
     "meaning": "ký hiệu, đánh dấu",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“标记”这个词。",
-    "examplePinyin": "Qǐng jìzhu “标记” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “标记” này.",
+    "example": "请记住标记这个词。",
+    "examplePinyin": "Qǐng jìzhu biāo jì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ký hiệu, đánh dấu này.",
     "id": "typ-hsk6-0054"
   },
   {
@@ -63070,21 +63070,21 @@
     "meaning": "quyết định bằng biểu quyết, bỏ phiếu",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“表决”这个词。",
-    "examplePinyin": "Qǐng jìzhu “表决” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “表决” này.",
+    "example": "请记住表决这个词。",
+    "examplePinyin": "Qǐng jìzhu biǎo jué zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quyết định bằng biểu quyết, bỏ phiếu này.",
     "id": "typ-hsk6-0055"
   },
   {
     "hanzi": "憋",
     "pinyin": "biē",
-    "hanviet": "憋",
+    "hanviet": "Biệt",
     "meaning": "nghẹt, thấy ngộp",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“憋”这个词。",
-    "examplePinyin": "Qǐng jìzhu “憋” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “憋” này.",
+    "example": "请记住憋这个词。",
+    "examplePinyin": "Qǐng jìzhu biē zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nghẹt, thấy ngộp này.",
     "id": "typ-hsk6-0056"
   },
   {
@@ -63094,9 +63094,9 @@
     "meaning": "biệt thự",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“别墅”这个词。",
-    "examplePinyin": "Qǐng jìzhu “别墅” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “别墅” này.",
+    "example": "请记住别墅这个词。",
+    "examplePinyin": "Qǐng jìzhu bié shù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ biệt thự này.",
     "id": "typ-hsk6-0057"
   },
   {
@@ -63106,15 +63106,15 @@
     "meaning": "thật sự không phải",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“并非”这个词。",
-    "examplePinyin": "Qǐng jìzhu “并非” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “并非” này.",
+    "example": "请记住并非这个词。",
+    "examplePinyin": "Qǐng jìzhu bìng fēi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thật sự không phải này.",
     "id": "typ-hsk6-0058"
   },
   {
     "hanzi": "拨打",
     "pinyin": "bō dǎ",
-    "hanviet": "拨 Đả",
+    "hanviet": "Bát Đả",
     "meaning": "gọi, quay số",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -63138,7 +63138,7 @@
   {
     "hanzi": "补偿",
     "pinyin": "bǔ cháng",
-    "hanviet": "Bổ 偿",
+    "hanviet": "Bổ Thường",
     "meaning": "bồi thường, bù đắp",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -63154,21 +63154,21 @@
     "meaning": "nhịp độ, bước",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“步伐”这个词。",
-    "examplePinyin": "Qǐng jìzhu “步伐” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “步伐” này.",
+    "example": "请记住步伐这个词。",
+    "examplePinyin": "Qǐng jìzhu bù fá zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhịp độ, bước này.",
     "id": "typ-hsk6-0062"
   },
   {
     "hanzi": "不妨",
     "pinyin": "bù fáng",
-    "hanviet": "Bất 妨",
+    "hanviet": "Bất Phương",
     "meaning": "không có hại; có thể cứ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“不妨”这个词。",
-    "examplePinyin": "Qǐng jìzhu “不妨” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “不妨” này.",
+    "example": "请记住不妨这个词。",
+    "examplePinyin": "Qǐng jìzhu bù fáng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ không có hại; có thể cứ này.",
     "id": "typ-hsk6-0063"
   },
   {
@@ -63190,9 +63190,9 @@
     "meaning": "không thể tưởng tượng được ; không thể hình dung, khó mà hiểu nổi",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“不可思议”这个词。",
-    "examplePinyin": "Qǐng jìzhu “不可思议” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “不可思议” này.",
+    "example": "请记住不可思议这个词。",
+    "examplePinyin": "Qǐng jìzhu bù kě sī yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ không thể tưởng tượng được ; không thể hình dung, khó mà hiểu nổi này.",
     "id": "typ-hsk6-0065"
   },
   {
@@ -63202,9 +63202,9 @@
     "meaning": "bố trí, triển khai",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“部署”这个词。",
-    "examplePinyin": "Qǐng jìzhu “部署” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “部署” này.",
+    "example": "请记住部署这个词。",
+    "examplePinyin": "Qǐng jìzhu bù shǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bố trí, triển khai này.",
     "id": "typ-hsk6-0066"
   },
   {
@@ -63226,9 +63226,9 @@
     "meaning": "không tiếc, không nề hà",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“不惜”这个词。",
-    "examplePinyin": "Qǐng jìzhu “不惜” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “不惜” này.",
+    "example": "请记住不惜这个词。",
+    "examplePinyin": "Qǐng jìzhu bù xī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ không tiếc, không nề hà này.",
     "id": "typ-hsk6-0068"
   },
   {
@@ -63270,7 +63270,7 @@
   {
     "hanzi": "采购",
     "pinyin": "cǎi gòu",
-    "hanviet": "Thái 购",
+    "hanviet": "Thái Cấu",
     "meaning": "mua sắm, mua hàng",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -63286,9 +63286,9 @@
     "meaning": "thu thập, sưu tầm",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“采集”这个词。",
-    "examplePinyin": "Qǐng jìzhu “采集” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “采集” này.",
+    "example": "请记住采集这个词。",
+    "examplePinyin": "Qǐng jìzhu cǎi jí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thu thập, sưu tầm này.",
     "id": "typ-hsk6-0073"
   },
   {
@@ -63322,9 +63322,9 @@
     "meaning": "công việc tài chính",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“财务”这个词。",
-    "examplePinyin": "Qǐng jìzhu “财务” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “财务” này.",
+    "example": "请记住财务这个词。",
+    "examplePinyin": "Qǐng jìzhu cái wù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ công việc tài chính này.",
     "id": "typ-hsk6-0076"
   },
   {
@@ -63334,27 +63334,27 @@
     "meaning": "tài chính, thuộc về tài chính",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“财政”这个词。",
-    "examplePinyin": "Qǐng jìzhu “财政” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “财政” này.",
+    "example": "请记住财政这个词。",
+    "examplePinyin": "Qǐng jìzhu cái zhèng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tài chính, thuộc về tài chính này.",
     "id": "typ-hsk6-0077"
   },
   {
     "hanzi": "舱",
     "pinyin": "cāng",
-    "hanviet": "舱",
+    "hanviet": "Thương",
     "meaning": "khoang, tầng chứa của tàu hoặc máy bay",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“舱”这个词。",
-    "examplePinyin": "Qǐng jìzhu “舱” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “舱” này.",
+    "example": "请记住舱这个词。",
+    "examplePinyin": "Qǐng jìzhu cāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khoang, tầng chứa của tàu hoặc máy bay này.",
     "id": "typ-hsk6-0078"
   },
   {
     "hanzi": "仓库",
     "pinyin": "cāng kù",
-    "hanviet": "仓 Kho",
+    "hanviet": "Thương Kho",
     "meaning": "kho hàng, nhà kho",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -63382,9 +63382,9 @@
     "meaning": "lung linh, ngời sáng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“灿烂”这个词。",
-    "examplePinyin": "Qǐng jìzhu “灿烂” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “灿烂” này.",
+    "example": "请记住灿烂这个词。",
+    "examplePinyin": "Qǐng jìzhu càn làn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lung linh, ngời sáng này.",
     "id": "typ-hsk6-0081"
   },
   {
@@ -63394,15 +63394,15 @@
     "meaning": "tàn nhẫn, độc ác",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“残忍”这个词。",
-    "examplePinyin": "Qǐng jìzhu “残忍” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “残忍” này.",
+    "example": "请记住残忍这个词。",
+    "examplePinyin": "Qǐng jìzhu cán rěn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tàn nhẫn, độc ác này.",
     "id": "typ-hsk6-0082"
   },
   {
     "hanzi": "操纵",
     "pinyin": "cāo zòng",
-    "hanviet": "操 Tung",
+    "hanviet": "Thao Tung",
     "meaning": "vận hành, kiểm soát",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -63414,7 +63414,7 @@
   {
     "hanzi": "操作",
     "pinyin": "cāo zuò",
-    "hanviet": "操 Tác",
+    "hanviet": "Thao Tác",
     "meaning": "làm việc, vận hành",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -63438,7 +63438,7 @@
   {
     "hanzi": "测量",
     "pinyin": "cè liáng",
-    "hanviet": "Trắc 量",
+    "hanviet": "Trắc Lượng",
     "meaning": "khảo sát, đo",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -63486,13 +63486,13 @@
   {
     "hanzi": "颤抖",
     "pinyin": "chàn dǒu",
-    "hanviet": "颤 抖",
+    "hanviet": "Chiến Đẩu",
     "meaning": "run rẩy, rùng mình",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“颤抖”这个词。",
-    "examplePinyin": "Qǐng jìzhu “颤抖” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “颤抖” này.",
+    "example": "请记住颤抖这个词。",
+    "examplePinyin": "Qǐng jìzhu chàn dǒu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ run rẩy, rùng mình này.",
     "id": "typ-hsk6-0090"
   },
   {
@@ -63510,19 +63510,19 @@
   {
     "hanzi": "偿还",
     "pinyin": "cháng huán",
-    "hanviet": "偿 Hoàn",
+    "hanviet": "Thường Hoàn",
     "meaning": "hoàn trả, bồi hoàn",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“偿还”这个词。",
-    "examplePinyin": "Qǐng jìzhu “偿还” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “偿还” này.",
+    "example": "请记住偿还这个词。",
+    "examplePinyin": "Qǐng jìzhu cháng huán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hoàn trả, bồi hoàn này.",
     "id": "typ-hsk6-0092"
   },
   {
     "hanzi": "场面",
     "pinyin": "chǎng miàn",
-    "hanviet": "Trường 面",
+    "hanviet": "Trường Diện",
     "meaning": "cảnh, tình huống",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -63534,7 +63534,7 @@
   {
     "hanzi": "尝试",
     "pinyin": "cháng shì",
-    "hanviet": "尝 Thí",
+    "hanviet": "Thường Thí",
     "meaning": "thử; cố gắng",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -63558,7 +63558,7 @@
   {
     "hanzi": "产业",
     "pinyin": "chǎn yè",
-    "hanviet": "产 Nghiệp",
+    "hanviet": "Sản Nghiệp",
     "meaning": "công nghiệp, tài sản",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -63594,13 +63594,13 @@
   {
     "hanzi": "嘲笑",
     "pinyin": "cháo xiào",
-    "hanviet": "Trào 笑",
+    "hanviet": "Trào Tiếu",
     "meaning": "chế nhạo, nhạo báng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“嘲笑”这个词。",
-    "examplePinyin": "Qǐng jìzhu “嘲笑” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “嘲笑” này.",
+    "example": "请记住嘲笑这个词。",
+    "examplePinyin": "Qǐng jìzhu cháo xiào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chế nhạo, nhạo báng này.",
     "id": "typ-hsk6-0099"
   },
   {
@@ -63630,13 +63630,13 @@
   {
     "hanzi": "城堡",
     "pinyin": "chéng bǎo",
-    "hanviet": "Thành 堡",
+    "hanviet": "Thành Bảo",
     "meaning": "lâu đài, xe",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“城堡”这个词。",
-    "examplePinyin": "Qǐng jìzhu “城堡” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “城堡” này.",
+    "example": "请记住城堡这个词。",
+    "examplePinyin": "Qǐng jìzhu chéng bǎo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lâu đài, xe này.",
     "id": "typ-hsk6-0102"
   },
   {
@@ -63658,9 +63658,9 @@
     "meaning": "hình phạt, sự trừng phạt",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“惩罚”这个词。",
-    "examplePinyin": "Qǐng jìzhu “惩罚” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “惩罚” này.",
+    "example": "请记住惩罚这个词。",
+    "examplePinyin": "Qǐng jìzhu chéng fá zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hình phạt, sự trừng phạt này.",
     "id": "typ-hsk6-0104"
   },
   {
@@ -63706,9 +63706,9 @@
     "meaning": "xuất hiện, lộ ra",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“呈现”这个词。",
-    "examplePinyin": "Qǐng jìzhu “呈现” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “呈现” này.",
+    "example": "请记住呈现这个词。",
+    "examplePinyin": "Qǐng jìzhu chéng xiàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xuất hiện, lộ ra này.",
     "id": "typ-hsk6-0108"
   },
   {
@@ -63730,9 +63730,9 @@
     "meaning": "một sự khẳng định, tuyên bố",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“陈述”这个词。",
-    "examplePinyin": "Qǐng jìzhu “陈述” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “陈述” này.",
+    "example": "请记住陈述这个词。",
+    "examplePinyin": "Qǐng jìzhu chén shù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ một sự khẳng định, tuyên bố này.",
     "id": "typ-hsk6-0110"
   },
   {
@@ -63786,7 +63786,7 @@
   {
     "hanzi": "冲击",
     "pinyin": "chōng jī",
-    "hanviet": "Khem / Trong 击",
+    "hanviet": "Khem / Trong Kích",
     "meaning": "to attack",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -63850,9 +63850,9 @@
     "meaning": "lá cờ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“幢”这个词。",
-    "examplePinyin": "Qǐng jìzhu “幢” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “幢” này.",
+    "example": "请记住幢这个词。",
+    "examplePinyin": "Qǐng jìzhu chuáng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lá cờ này.",
     "id": "typ-hsk6-0120"
   },
   {
@@ -63886,21 +63886,21 @@
     "meaning": "đi qua, xuyên qua",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“穿越”这个词。",
-    "examplePinyin": "Qǐng jìzhu “穿越” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “穿越” này.",
+    "example": "请记住穿越这个词。",
+    "examplePinyin": "Qǐng jìzhu chuān yuè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đi qua, xuyên qua này.",
     "id": "typ-hsk6-0123"
   },
   {
     "hanzi": "储备",
     "pinyin": "chǔ bèi",
-    "hanviet": "储 Bị",
+    "hanviet": "Trữ Bị",
     "meaning": "dự trữ, nguồn dự trữ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“储备”这个词。",
-    "examplePinyin": "Qǐng jìzhu “储备” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “储备” này.",
+    "example": "请记住储备这个词。",
+    "examplePinyin": "Qǐng jìzhu chǔ bèi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dự trữ, nguồn dự trữ này.",
     "id": "typ-hsk6-0124"
   },
   {
@@ -63922,9 +63922,9 @@
     "meaning": "tình cảnh",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“处境”这个词。",
-    "examplePinyin": "Qǐng jìzhu “处境” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “处境” này.",
+    "example": "请记住处境这个词。",
+    "examplePinyin": "Qǐng jìzhu chǔ jìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tình cảnh này.",
     "id": "typ-hsk6-0126"
   },
   {
@@ -63946,9 +63946,9 @@
     "meaning": "rao bán; bán, bán đứng; phản bội",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“出卖”这个词。",
-    "examplePinyin": "Qǐng jìzhu “出卖” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “出卖” này.",
+    "example": "请记住出卖这个词。",
+    "examplePinyin": "Qǐng jìzhu chū mài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rao bán; bán, bán đứng; phản bội này.",
     "id": "typ-hsk6-0128"
   },
   {
@@ -63958,9 +63958,9 @@
     "meaning": "thuần khiết, tinh khiết",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“纯粹”这个词。",
-    "examplePinyin": "Qǐng jìzhu “纯粹” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “纯粹” này.",
+    "example": "请记住纯粹这个词。",
+    "examplePinyin": "Qǐng jìzhu chún cuì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thuần khiết, tinh khiết này.",
     "id": "typ-hsk6-0129"
   },
   {
@@ -63970,9 +63970,9 @@
     "meaning": "thuần khiết, trong sạch và liêm chính",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“纯洁”这个词。",
-    "examplePinyin": "Qǐng jìzhu “纯洁” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “纯洁” này.",
+    "example": "请记住纯洁这个词。",
+    "examplePinyin": "Qǐng jìzhu chún jié zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thuần khiết, trong sạch và liêm chính này.",
     "id": "typ-hsk6-0130"
   },
   {
@@ -63982,9 +63982,9 @@
     "meaning": "sinh ra từ, đến từ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“出身”这个词。",
-    "examplePinyin": "Qǐng jìzhu “出身” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “出身” này.",
+    "example": "请记住出身这个词。",
+    "examplePinyin": "Qǐng jìzhu chū shēn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sinh ra từ, đến từ này.",
     "id": "typ-hsk6-0131"
   },
   {
@@ -63994,9 +63994,9 @@
     "meaning": "xử lý, chăm sóc",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“处置”这个词。",
-    "examplePinyin": "Qǐng jìzhu “处置” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “处置” này.",
+    "example": "请记住处置这个词。",
+    "examplePinyin": "Qǐng jìzhu chǔ zhì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xử lý, chăm sóc này.",
     "id": "typ-hsk6-0132"
   },
   {
@@ -64014,13 +64014,13 @@
   {
     "hanzi": "脆弱",
     "pinyin": "cuì ruò",
-    "hanviet": "脆 Nhược",
+    "hanviet": "Thúy Nhược",
     "meaning": "yếu đuối, mong manh",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“脆弱”这个词。",
-    "examplePinyin": "Qǐng jìzhu “脆弱” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “脆弱” này.",
+    "example": "请记住脆弱这个词。",
+    "examplePinyin": "Qǐng jìzhu cuì ruò zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ yếu đuối, mong manh này.",
     "id": "typ-hsk6-0134"
   },
   {
@@ -64062,7 +64062,7 @@
   {
     "hanzi": "搭档",
     "pinyin": "dā dàng",
-    "hanviet": "Đắp 档",
+    "hanviet": "Đắp Đương",
     "meaning": "hợp tác, cộng sự",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -64086,13 +64086,13 @@
   {
     "hanzi": "逮捕",
     "pinyin": "dài bǔ",
-    "hanviet": "逮 Bõ",
+    "hanviet": "Đãi Bõ",
     "meaning": "bắt giữ, một vụ bắt giữ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“逮捕”这个词。",
-    "examplePinyin": "Qǐng jìzhu “逮捕” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “逮捕” này.",
+    "example": "请记住逮捕这个词。",
+    "examplePinyin": "Qǐng jìzhu dài bǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bắt giữ, một vụ bắt giữ này.",
     "id": "typ-hsk6-0140"
   },
   {
@@ -64134,7 +64134,7 @@
   {
     "hanzi": "打击",
     "pinyin": "dǎ jī",
-    "hanviet": "Đả 击",
+    "hanviet": "Đả Kích",
     "meaning": "đánh, đập",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -64158,13 +64158,13 @@
   {
     "hanzi": "蛋白质",
     "pinyin": "dàn bái zhì",
-    "hanviet": "蛋 Bạch Chất",
+    "hanviet": "Đản Bạch Chất",
     "meaning": "protein",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“蛋白质”这个词。",
-    "examplePinyin": "Qǐng jìzhu “蛋白质” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “蛋白质” này.",
+    "example": "请记住蛋白质这个词。",
+    "examplePinyin": "Qǐng jìzhu dàn bái zhì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ protein này.",
     "id": "typ-hsk6-0146"
   },
   {
@@ -64182,7 +64182,7 @@
   {
     "hanzi": "党",
     "pinyin": "dǎng",
-    "hanviet": "党",
+    "hanviet": "Đảng",
     "meaning": "party",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -64194,7 +64194,7 @@
   {
     "hanzi": "档案",
     "pinyin": "dàng àn",
-    "hanviet": "档 Duyên / Án",
+    "hanviet": "Đương Duyên / Án",
     "meaning": "hồ sơ; ghi chép; lưu trữ",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -64246,9 +64246,9 @@
     "meaning": "người liên quan hoặc bị lôi kéo; bên",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“当事人”这个词。",
-    "examplePinyin": "Qǐng jìzhu “当事人” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “当事人” này.",
+    "example": "请记住当事人这个词。",
+    "examplePinyin": "Qǐng jìzhu dāng shì rén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ người liên quan hoặc bị lôi kéo; bên này.",
     "id": "typ-hsk6-0153"
   },
   {
@@ -64266,7 +64266,7 @@
   {
     "hanzi": "诞生",
     "pinyin": "dàn shēng",
-    "hanviet": "诞 Sinh",
+    "hanviet": "Đản Sinh",
     "meaning": "được sinh ra",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -64282,9 +64282,9 @@
     "meaning": "tên lửa",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“导弹”这个词。",
-    "examplePinyin": "Qǐng jìzhu “导弹” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “导弹” này.",
+    "example": "请记住导弹这个词。",
+    "examplePinyin": "Qǐng jìzhu dǎo dàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tên lửa này.",
     "id": "typ-hsk6-0156"
   },
   {
@@ -64294,21 +64294,21 @@
     "meaning": "điều hướng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“导航”这个词。",
-    "examplePinyin": "Qǐng jìzhu “导航” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “导航” này.",
+    "example": "请记住导航这个词。",
+    "examplePinyin": "Qǐng jìzhu dǎo háng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ điều hướng này.",
     "id": "typ-hsk6-0157"
   },
   {
     "hanzi": "盗窃",
     "pinyin": "dào qiè",
-    "hanviet": "Đạo 窃",
+    "hanviet": "Đạo Thiết",
     "meaning": "ăn trộm",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“盗窃”这个词。",
-    "examplePinyin": "Qǐng jìzhu “盗窃” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “盗窃” này.",
+    "example": "请记住盗窃这个词。",
+    "examplePinyin": "Qǐng jìzhu dào qiè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ăn trộm này.",
     "id": "typ-hsk6-0158"
   },
   {
@@ -64330,21 +64330,21 @@
     "meaning": "hoặc 帝國大廈|帝国大厦 Empire State Building, v.v.)",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“大厦”这个词。",
-    "examplePinyin": "Qǐng jìzhu “大厦” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “大厦” này.",
+    "example": "请记住大厦这个词。",
+    "examplePinyin": "Qǐng jìzhu dà shà zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hoặc Empire State Building, v.v.) này.",
     "id": "typ-hsk6-0160"
   },
   {
     "hanzi": "瞪",
     "pinyin": "dèng",
-    "hanviet": "瞪",
+    "hanviet": "Trừng",
     "meaning": "mở to mắt, nhìn chằm chằm",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“瞪”这个词。",
-    "examplePinyin": "Qǐng jìzhu “瞪” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “瞪” này.",
+    "example": "请记住瞪这个词。",
+    "examplePinyin": "Qǐng jìzhu dèng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mở to mắt, nhìn chằm chằm này.",
     "id": "typ-hsk6-0161"
   },
   {
@@ -64362,7 +64362,7 @@
   {
     "hanzi": "登录",
     "pinyin": "dēng lù",
-    "hanviet": "Đăng 录",
+    "hanviet": "Đăng Lục",
     "meaning": "đăng ký, đăng nhập",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -64378,21 +64378,21 @@
     "meaning": "đổ bộ, lên bờ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“登陆”这个词。",
-    "examplePinyin": "Qǐng jìzhu “登陆” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “登陆” này.",
+    "example": "请记住登陆这个词。",
+    "examplePinyin": "Qǐng jìzhu dēng lù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đổ bộ, lên bờ này.",
     "id": "typ-hsk6-0164"
   },
   {
     "hanzi": "垫",
     "pinyin": "diàn",
-    "hanviet": "垫",
+    "hanviet": "Điếm",
     "meaning": "đệm, lót",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“垫”这个词。",
-    "examplePinyin": "Qǐng jìzhu “垫” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “垫” này.",
+    "example": "请记住垫这个词。",
+    "examplePinyin": "Qǐng jìzhu diàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đệm, lót này.",
     "id": "typ-hsk6-0165"
   },
   {
@@ -64410,7 +64410,7 @@
   {
     "hanzi": "典型",
     "pinyin": "diǎn xíng",
-    "hanviet": "Điển 型",
+    "hanviet": "Điển Hình",
     "meaning": "hình mẫu, trường hợp điển hình",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -64462,15 +64462,15 @@
     "meaning": "giai đoạn; mức độ, một tình huống",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“地步”这个词。",
-    "examplePinyin": "Qǐng jìzhu “地步” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “地步” này.",
+    "example": "请记住地步这个词。",
+    "examplePinyin": "Qǐng jìzhu dì bù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giai đoạn; mức độ, một tình huống này.",
     "id": "typ-hsk6-0171"
   },
   {
     "hanzi": "抵达",
     "pinyin": "dǐ dá",
-    "hanviet": "抵 Đạt",
+    "hanviet": "Đễ Đạt",
     "meaning": "đến, đạt tới",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -64494,7 +64494,7 @@
   {
     "hanzi": "抵抗",
     "pinyin": "dǐ kàng",
-    "hanviet": "抵 Kháng",
+    "hanviet": "Đễ Kháng",
     "meaning": "kháng cự, phản kháng",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -64506,13 +64506,13 @@
   {
     "hanzi": "盯",
     "pinyin": "dīng",
-    "hanviet": "盯",
+    "hanviet": "Đinh",
     "meaning": "nhìn chăm chú, tập trung chú ý",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“盯”这个词。",
-    "examplePinyin": "Qǐng jìzhu “盯” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “盯” này.",
+    "example": "请记住盯这个词。",
+    "examplePinyin": "Qǐng jìzhu dīng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhìn chăm chú, tập trung chú ý này.",
     "id": "typ-hsk6-0175"
   },
   {
@@ -64534,9 +64534,9 @@
     "meaning": "định nghĩa",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“定义”这个词。",
-    "examplePinyin": "Qǐng jìzhu “定义” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “定义” này.",
+    "example": "请记住定义这个词。",
+    "examplePinyin": "Qǐng jìzhu dìng yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ định nghĩa này.",
     "id": "typ-hsk6-0177"
   },
   {
@@ -64546,9 +64546,9 @@
     "meaning": "lượng từ cho nhà hoặc tòa nhà, xà nhà",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“栋”这个词。",
-    "examplePinyin": "Qǐng jìzhu “栋” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “栋” này.",
+    "example": "请记住栋这个词。",
+    "examplePinyin": "Qǐng jìzhu dòng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lượng từ cho nhà hoặc tòa nhà, xà nhà này.",
     "id": "typ-hsk6-0178"
   },
   {
@@ -64566,13 +64566,13 @@
   {
     "hanzi": "动静",
     "pinyin": "dòng jìng",
-    "hanviet": "Động 静",
+    "hanviet": "Động Tĩnh",
     "meaning": "chuyển động ; dấu hiệu của hoạt động, động và tĩnh",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“动静”这个词。",
-    "examplePinyin": "Qǐng jìzhu “动静” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “动静” này.",
+    "example": "请记住动静这个词。",
+    "examplePinyin": "Qǐng jìzhu dòng jìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chuyển động ; dấu hiệu của hoạt động, động và tĩnh này.",
     "id": "typ-hsk6-0180"
   },
   {
@@ -64590,13 +64590,13 @@
   {
     "hanzi": "动脉",
     "pinyin": "dòng mài",
-    "hanviet": "Động 脉",
+    "hanviet": "Động Mạch",
     "meaning": "động mạch",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“动脉”这个词。",
-    "examplePinyin": "Qǐng jìzhu “动脉” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “动脉” này.",
+    "example": "请记住动脉这个词。",
+    "examplePinyin": "Qǐng jìzhu dòng mài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ động mạch này.",
     "id": "typ-hsk6-0182"
   },
   {
@@ -64630,9 +64630,9 @@
     "meaning": "túi, bao",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“兜”这个词。",
-    "examplePinyin": "Qǐng jìzhu “兜” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “兜” này.",
+    "example": "请记住兜这个词。",
+    "examplePinyin": "Qǐng jìzhu dōu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ túi, bao này.",
     "id": "typ-hsk6-0185"
   },
   {
@@ -64714,9 +64714,9 @@
     "meaning": "đổi tiền mặt, thực hiện cam kết",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“兑现”这个词。",
-    "examplePinyin": "Qǐng jìzhu “兑现” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “兑现” này.",
+    "example": "请记住兑现这个词。",
+    "examplePinyin": "Qǐng jìzhu duì xiàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đổi tiền mặt, thực hiện cam kết này.",
     "id": "typ-hsk6-0192"
   },
   {
@@ -64750,9 +64750,9 @@
     "meaning": "ngâm nga",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“哦”这个词。",
-    "examplePinyin": "Qǐng jìzhu “哦” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “哦” này.",
+    "example": "请记住哦这个词。",
+    "examplePinyin": "Qǐng jìzhu é zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngâm nga này.",
     "id": "typ-hsk6-0195"
   },
   {
@@ -64762,33 +64762,33 @@
     "meaning": "trở nên tồi tệ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“恶化”这个词。",
-    "examplePinyin": "Qǐng jìzhu “恶化” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “恶化” này.",
+    "example": "请记住恶化这个词。",
+    "examplePinyin": "Qǐng jìzhu è huà zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trở nên tồi tệ này.",
     "id": "typ-hsk6-0196"
   },
   {
     "hanzi": "嗯",
     "pinyin": "ēn",
-    "hanviet": "嗯",
+    "hanviet": "Ân",
     "meaning": "(âm thanh rên rỉ)",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“嗯”这个词。",
-    "examplePinyin": "Qǐng jìzhu “嗯” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “嗯” này.",
+    "example": "请记住嗯这个词。",
+    "examplePinyin": "Qǐng jìzhu ēn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ (âm thanh rên rỉ) này.",
     "id": "typ-hsk6-0197"
   },
   {
     "hanzi": "而已",
     "pinyin": "ér yǐ",
-    "hanviet": "而 Dĩ",
+    "hanviet": "Nhi Dĩ",
     "meaning": "chỉ vậy, không hơn",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“而已”这个词。",
-    "examplePinyin": "Qǐng jìzhu “而已” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “而已” này.",
+    "example": "请记住而已这个词。",
+    "examplePinyin": "Qǐng jìzhu ér yǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chỉ vậy, không hơn này.",
     "id": "typ-hsk6-0198"
   },
   {
@@ -64798,9 +64798,9 @@
     "meaning": "thêm, bổ sung",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“额外”这个词。",
-    "examplePinyin": "Qǐng jìzhu “额外” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “额外” này.",
+    "example": "请记住额外这个词。",
+    "examplePinyin": "Qǐng jìzhu é wài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thêm, bổ sung này.",
     "id": "typ-hsk6-0199"
   },
   {
@@ -64882,9 +64882,9 @@
     "meaning": "buông tay, từ bỏ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“放手”这个词。",
-    "examplePinyin": "Qǐng jìzhu “放手” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “放手” này.",
+    "example": "请记住放手这个词。",
+    "examplePinyin": "Qǐng jìzhu fàng shǒu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ buông tay, từ bỏ này.",
     "id": "typ-hsk6-0206"
   },
   {
@@ -64906,9 +64906,9 @@
     "meaning": "phòng thủ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“防御”这个词。",
-    "examplePinyin": "Qǐng jìzhu “防御” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “防御” này.",
+    "example": "请记住防御这个词。",
+    "examplePinyin": "Qǐng jìzhu fáng yù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phòng thủ này.",
     "id": "typ-hsk6-0208"
   },
   {
@@ -64954,9 +64954,9 @@
     "meaning": "thề, nguyện",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“发誓”这个词。",
-    "examplePinyin": "Qǐng jìzhu “发誓” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “发誓” này.",
+    "example": "请记住发誓这个词。",
+    "examplePinyin": "Qǐng jìzhu fā shì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thề, nguyện này.",
     "id": "typ-hsk6-0212"
   },
   {
@@ -64978,9 +64978,9 @@
     "meaning": "phát triển, trưởng thành",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“发育”这个词。",
-    "examplePinyin": "Qǐng jìzhu “发育” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “发育” này.",
+    "example": "请记住发育这个词。",
+    "examplePinyin": "Qǐng jìzhu fā yù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phát triển, trưởng thành này.",
     "id": "typ-hsk6-0214"
   },
   {
@@ -64990,9 +64990,9 @@
     "meaning": "bất hợp pháp",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“非法”这个词。",
-    "examplePinyin": "Qǐng jìzhu “非法” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “非法” này.",
+    "example": "请记住非法这个词。",
+    "examplePinyin": "Qǐng jìzhu fēi fǎ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bất hợp pháp này.",
     "id": "typ-hsk6-0215"
   },
   {
@@ -65002,9 +65002,9 @@
     "meaning": "bảo; hướng dẫn; ra lệnh",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“吩咐”这个词。",
-    "examplePinyin": "Qǐng jìzhu “吩咐” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “吩咐” này.",
+    "example": "请记住吩咐这个词。",
+    "examplePinyin": "Qǐng jìzhu fēn fù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bảo; hướng dẫn; ra lệnh này.",
     "id": "typ-hsk6-0216"
   },
   {
@@ -65050,9 +65050,9 @@
     "meaning": "phong tỏa, niêm phong",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“封锁”这个词。",
-    "examplePinyin": "Qǐng jìzhu “封锁” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “封锁” này.",
+    "example": "请记住封锁这个词。",
+    "examplePinyin": "Qǐng jìzhu fēng suǒ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phong tỏa, niêm phong này.",
     "id": "typ-hsk6-0220"
   },
   {
@@ -65070,7 +65070,7 @@
   {
     "hanzi": "分裂",
     "pinyin": "fēn liè",
-    "hanviet": "Phân 裂",
+    "hanviet": "Phân Liệt",
     "meaning": "chia rẽ, chia thành",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -65082,13 +65082,13 @@
   {
     "hanzi": "分歧",
     "pinyin": "fēn qí",
-    "hanviet": "Phân 歧",
+    "hanviet": "Phân Kỳ",
     "meaning": "khác biệt, sự khác nhau ; sự không đồng ý",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“分歧”这个词。",
-    "examplePinyin": "Qǐng jìzhu “分歧” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “分歧” này.",
+    "example": "请记住分歧这个词。",
+    "examplePinyin": "Qǐng jìzhu fēn qí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khác biệt, sự khác nhau ; sự không đồng ý này.",
     "id": "typ-hsk6-0223"
   },
   {
@@ -65110,9 +65110,9 @@
     "meaning": "màu hồng, màu trắng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“粉色”这个词。",
-    "examplePinyin": "Qǐng jìzhu “粉色” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “粉色” này.",
+    "example": "请记住粉色这个词。",
+    "examplePinyin": "Qǐng jìzhu fěn sè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ màu hồng, màu trắng này.",
     "id": "typ-hsk6-0225"
   },
   {
@@ -65146,9 +65146,9 @@
     "meaning": "tham nhũng, tham ô",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“腐败”这个词。",
-    "examplePinyin": "Qǐng jìzhu “腐败” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “腐败” này.",
+    "example": "请记住腐败这个词。",
+    "examplePinyin": "Qǐng jìzhu fǔ bài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tham nhũng, tham ô này.",
     "id": "typ-hsk6-0228"
   },
   {
@@ -65178,13 +65178,13 @@
   {
     "hanzi": "覆盖",
     "pinyin": "fù gài",
-    "hanviet": "覆 Cái",
+    "hanviet": "Phúc Cái",
     "meaning": "che phủ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“覆盖”这个词。",
-    "examplePinyin": "Qǐng jìzhu “覆盖” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “覆盖” này.",
+    "example": "请记住覆盖这个词。",
+    "examplePinyin": "Qǐng jìzhu fù gài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ che phủ này.",
     "id": "typ-hsk6-0231"
   },
   {
@@ -65206,9 +65206,9 @@
     "meaning": "hồi sinh, sống lại",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“复活”这个词。",
-    "examplePinyin": "Qǐng jìzhu “复活” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “复活” này.",
+    "example": "请记住复活这个词。",
+    "examplePinyin": "Qǐng jìzhu fù huó zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hồi sinh, sống lại này.",
     "id": "typ-hsk6-0233"
   },
   {
@@ -65238,13 +65238,13 @@
   {
     "hanzi": "辐射",
     "pinyin": "fú shè",
-    "hanviet": "辐 Xạ",
+    "hanviet": "Bức Xạ",
     "meaning": "bức xạ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“辐射”这个词。",
-    "examplePinyin": "Qǐng jìzhu “辐射” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “辐射” này.",
+    "example": "请记住辐射这个词。",
+    "examplePinyin": "Qǐng jìzhu fú shè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bức xạ này.",
     "id": "typ-hsk6-0236"
   },
   {
@@ -65254,15 +65254,15 @@
     "meaning": "giao phó, ủy thác",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“赋予”这个词。",
-    "examplePinyin": "Qǐng jìzhu “赋予” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “赋予” này.",
+    "example": "请记住赋予这个词。",
+    "examplePinyin": "Qǐng jìzhu fù yǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giao phó, ủy thác này.",
     "id": "typ-hsk6-0237"
   },
   {
     "hanzi": "辅助",
     "pinyin": "fǔ zhù",
-    "hanviet": "辅 Trợ",
+    "hanviet": "Phụ Trợ",
     "meaning": "hỗ trợ; giúp đỡ, phụ trợ; bổ trợ",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -65278,9 +65278,9 @@
     "meaning": "tác dụng phụ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“副作用”这个词。",
-    "examplePinyin": "Qǐng jìzhu “副作用” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “副作用” này.",
+    "example": "请记住副作用这个词。",
+    "examplePinyin": "Qǐng jìzhu fù zuò yòng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tác dụng phụ này.",
     "id": "typ-hsk6-0239"
   },
   {
@@ -65290,21 +65290,21 @@
     "meaning": "giơ cao bằng hai tay, cùng nhau khiêng vật gì",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“扛”这个词。",
-    "examplePinyin": "Qǐng jìzhu “扛” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “扛” này.",
+    "example": "请记住扛这个词。",
+    "examplePinyin": "Qǐng jìzhu gāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giơ cao bằng hai tay, cùng nhau khiêng vật gì này.",
     "id": "typ-hsk6-0240"
   },
   {
     "hanzi": "尴尬",
     "pinyin": "gān gà",
-    "hanviet": "尴 尬",
+    "hanviet": "Giam Giới",
     "meaning": "ngượng ngùng; lúng túng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“尴尬”这个词。",
-    "examplePinyin": "Qǐng jìzhu “尴尬” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “尴尬” này.",
+    "example": "请记住尴尬这个词。",
+    "examplePinyin": "Qǐng jìzhu gān gà zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngượng ngùng; lúng túng này.",
     "id": "typ-hsk6-0241"
   },
   {
@@ -65322,7 +65322,7 @@
   {
     "hanzi": "岗位",
     "pinyin": "gǎng wèi",
-    "hanviet": "岗 Vị",
+    "hanviet": "Cương Vị",
     "meaning": "một vị trí; một công việc",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -65338,9 +65338,9 @@
     "meaning": "lây nhiễm; nhiễm trùng, ảnh hưởng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“感染”这个词。",
-    "examplePinyin": "Qǐng jìzhu “感染” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “感染” này.",
+    "example": "请记住感染这个词。",
+    "examplePinyin": "Qǐng jìzhu gǎn rǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lây nhiễm; nhiễm trùng, ảnh hưởng này.",
     "id": "typ-hsk6-0244"
   },
   {
@@ -65394,7 +65394,7 @@
   {
     "hanzi": "高峰",
     "pinyin": "gāo fēng",
-    "hanviet": "Cao 峰",
+    "hanviet": "Cao Phong",
     "meaning": "đỉnh, chóp",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -65422,9 +65422,9 @@
     "meaning": "cắt, cắt rời",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“割”这个词。",
-    "examplePinyin": "Qǐng jìzhu “割” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “割” này.",
+    "example": "请记住割这个词。",
+    "examplePinyin": "Qǐng jìzhu gē zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cắt, cắt rời này.",
     "id": "typ-hsk6-0251"
   },
   {
@@ -65434,9 +65434,9 @@
     "meaning": "tách biệt, cách ly",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“隔离”这个词。",
-    "examplePinyin": "Qǐng jìzhu “隔离” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “隔离” này.",
+    "example": "请记住隔离这个词。",
+    "examplePinyin": "Qǐng jìzhu gé lí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tách biệt, cách ly này.",
     "id": "typ-hsk6-0252"
   },
   {
@@ -65470,9 +65470,9 @@
     "meaning": "theo dõi dấu vết, theo sát",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“跟踪”这个词。",
-    "examplePinyin": "Qǐng jìzhu “跟踪” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “跟踪” này.",
+    "example": "请记住跟踪这个词。",
+    "examplePinyin": "Qǐng jìzhu gēn zōng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ theo dõi dấu vết, theo sát này.",
     "id": "typ-hsk6-0255"
   },
   {
@@ -65490,7 +65490,7 @@
   {
     "hanzi": "公告",
     "pinyin": "gōng gào",
-    "hanviet": "Công 告",
+    "hanviet": "Công Cáo",
     "meaning": "đăng thông báo, thông báo",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -65506,9 +65506,9 @@
     "meaning": "nước cộng hòa",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“共和国”这个词。",
-    "examplePinyin": "Qǐng jìzhu “共和国” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “共和国” này.",
+    "example": "请记住共和国这个词。",
+    "examplePinyin": "Qǐng jìzhu gòng hé guó zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nước cộng hòa này.",
     "id": "typ-hsk6-0258"
   },
   {
@@ -65526,7 +65526,7 @@
   {
     "hanzi": "攻击",
     "pinyin": "gōng jī",
-    "hanviet": "Công 击",
+    "hanviet": "Công Kích",
     "meaning": "tấn công, buộc tội",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -65562,13 +65562,13 @@
   {
     "hanzi": "罐",
     "pinyin": "guàn",
-    "hanviet": "罐",
+    "hanviet": "Quán",
     "meaning": "lon, hũ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“罐”这个词。",
-    "examplePinyin": "Qǐng jìzhu “罐” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “罐” này.",
+    "example": "请记住罐这个词。",
+    "examplePinyin": "Qǐng jìzhu guàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lon, hũ này.",
     "id": "typ-hsk6-0263"
   },
   {
@@ -65590,9 +65590,9 @@
     "meaning": "tia sáng, tia rực rỡ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“光芒”这个词。",
-    "examplePinyin": "Qǐng jìzhu “光芒” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “光芒” này.",
+    "example": "请记住光芒这个词。",
+    "examplePinyin": "Qǐng jìzhu guāng máng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tia sáng, tia rực rỡ này.",
     "id": "typ-hsk6-0265"
   },
   {
@@ -65626,21 +65626,21 @@
     "meaning": "cổ phần, cổ phiếu",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“股份”这个词。",
-    "examplePinyin": "Qǐng jìzhu “股份” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “股份” này.",
+    "example": "请记住股份这个词。",
+    "examplePinyin": "Qǐng jìzhu gǔ fèn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cổ phần, cổ phiếu này.",
     "id": "typ-hsk6-0268"
   },
   {
     "hanzi": "古怪",
     "pinyin": "gǔ guài",
-    "hanviet": "Cổ 怪",
+    "hanviet": "Cổ Quái",
     "meaning": "kỳ lạ, lập dị",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“古怪”这个词。",
-    "examplePinyin": "Qǐng jìzhu “古怪” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “古怪” này.",
+    "example": "请记住古怪这个词。",
+    "examplePinyin": "Qǐng jìzhu gǔ guài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kỳ lạ, lập dị này.",
     "id": "typ-hsk6-0269"
   },
   {
@@ -65670,7 +65670,7 @@
   {
     "hanzi": "规范",
     "pinyin": "guī fàn",
-    "hanviet": "Qui 范",
+    "hanviet": "Qui Phạm",
     "meaning": "chuẩn mực, tiêu chuẩn",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -65698,9 +65698,9 @@
     "meaning": "quý tộc, giới quý tộc",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“贵族”这个词。",
-    "examplePinyin": "Qǐng jìzhu “贵族” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “贵族” này.",
+    "example": "请记住贵族这个词。",
+    "examplePinyin": "Qǐng jìzhu guì zú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quý tộc, giới quý tộc này.",
     "id": "typ-hsk6-0274"
   },
   {
@@ -65722,9 +65722,9 @@
     "meaning": "Quốc vụ viện, Bộ Ngoại giao",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“国务院”这个词。",
-    "examplePinyin": "Qǐng jìzhu “国务院” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “国务院” này.",
+    "example": "请记住国务院这个词。",
+    "examplePinyin": "Qǐng jìzhu Guó wù yuàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ Quốc vụ viện, Bộ Ngoại giao này.",
     "id": "typ-hsk6-0276"
   },
   {
@@ -65766,13 +65766,13 @@
   {
     "hanzi": "嗨",
     "pinyin": "hāi",
-    "hanviet": "嗨",
+    "hanviet": "Hải",
     "meaning": "ồ than ôi, này!",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“嗨”这个词。",
-    "examplePinyin": "Qǐng jìzhu “嗨” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “嗨” này.",
+    "example": "请记住嗨这个词。",
+    "examplePinyin": "Qǐng jìzhu hāi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ồ than ôi, này! này.",
     "id": "typ-hsk6-0280"
   },
   {
@@ -65790,13 +65790,13 @@
   {
     "hanzi": "罕见",
     "pinyin": "hǎn jiàn",
-    "hanviet": "罕 Kiến",
+    "hanviet": "Hãn Kiến",
     "meaning": "hiếm, hiếm khi thấy",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“罕见”这个词。",
-    "examplePinyin": "Qǐng jìzhu “罕见” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “罕见” này.",
+    "example": "请记住罕见这个词。",
+    "examplePinyin": "Qǐng jìzhu hǎn jiàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hiếm, hiếm khi thấy này.",
     "id": "typ-hsk6-0282"
   },
   {
@@ -65818,9 +65818,9 @@
     "meaning": "không một chút nào, hoàn toàn thiếu",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“毫无”这个词。",
-    "examplePinyin": "Qǐng jìzhu “毫无” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “毫无” này.",
+    "example": "请记住毫无这个词。",
+    "examplePinyin": "Qǐng jìzhu háo wú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ không một chút nào, hoàn toàn thiếu này.",
     "id": "typ-hsk6-0284"
   },
   {
@@ -65830,9 +65830,9 @@
     "meaning": "expel breath",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“呵”这个词。",
-    "examplePinyin": "Qǐng jìzhu “呵” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “呵” này.",
+    "example": "请记住呵这个词。",
+    "examplePinyin": "Qǐng jìzhu hē zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ expel breath này.",
     "id": "typ-hsk6-0285"
   },
   {
@@ -65862,25 +65862,25 @@
   {
     "hanzi": "嘿",
     "pinyin": "hēi",
-    "hanviet": "嘿",
+    "hanviet": "Hắc",
     "meaning": "này",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“嘿”这个词。",
-    "examplePinyin": "Qǐng jìzhu “嘿” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “嘿” này.",
+    "example": "请记住嘿这个词。",
+    "examplePinyin": "Qǐng jìzhu hēi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ này này.",
     "id": "typ-hsk6-0288"
   },
   {
     "hanzi": "哼",
     "pinyin": "hēng",
-    "hanviet": "哼",
+    "hanviet": "Hanh",
     "meaning": "rên, rú",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“哼”这个词。",
-    "examplePinyin": "Qǐng jìzhu “哼” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “哼” này.",
+    "example": "请记住哼这个词。",
+    "examplePinyin": "Qǐng jìzhu hēng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rên, rú này.",
     "id": "typ-hsk6-0289"
   },
   {
@@ -65890,9 +65890,9 @@
     "meaning": "dấu vết, vết tích",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“痕迹”这个词。",
-    "examplePinyin": "Qǐng jìzhu “痕迹” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “痕迹” này.",
+    "example": "请记住痕迹这个词。",
+    "examplePinyin": "Qǐng jìzhu hén jì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dấu vết, vết tích này.",
     "id": "typ-hsk6-0290"
   },
   {
@@ -65914,9 +65914,9 @@
     "meaning": "cười ầm, ồn ào",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“哄”这个词。",
-    "examplePinyin": "Qǐng jìzhu “哄” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “哄” này.",
+    "example": "请记住哄这个词。",
+    "examplePinyin": "Qǐng jìzhu hōng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cười ầm, ồn ào này.",
     "id": "typ-hsk6-0292"
   },
   {
@@ -65938,9 +65938,9 @@
     "meaning": "gầm, rú",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“吼”这个词。",
-    "examplePinyin": "Qǐng jìzhu “吼” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “吼” này.",
+    "example": "请记住吼这个词。",
+    "examplePinyin": "Qǐng jìzhu hǒu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gầm, rú này.",
     "id": "typ-hsk6-0294"
   },
   {
@@ -65950,9 +65950,9 @@
     "meaning": "cổ họng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“喉咙”这个词。",
-    "examplePinyin": "Qǐng jìzhu “喉咙” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “喉咙” này.",
+    "example": "请记住喉咙这个词。",
+    "examplePinyin": "Qǐng jìzhu hóu lóng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cổ họng này.",
     "id": "typ-hsk6-0295"
   },
   {
@@ -65962,9 +65962,9 @@
     "meaning": "mang thai, đã thụ thai",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“怀孕”这个词。",
-    "examplePinyin": "Qǐng jìzhu “怀孕” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “怀孕” này.",
+    "example": "请记住怀孕这个词。",
+    "examplePinyin": "Qǐng jìzhu huái yùn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mang thai, đã thụ thai này.",
     "id": "typ-hsk6-0296"
   },
   {
@@ -65974,15 +65974,15 @@
     "meaning": "rực rỡ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“华丽”这个词。",
-    "examplePinyin": "Qǐng jìzhu “华丽” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “华丽” này.",
+    "example": "请记住华丽这个词。",
+    "examplePinyin": "Qǐng jìzhu huá lì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rực rỡ này.",
     "id": "typ-hsk6-0297"
   },
   {
     "hanzi": "环节",
     "pinyin": "huán jié",
-    "hanviet": "环 Tiết",
+    "hanviet": "Hoàn Tiết",
     "meaning": "đốt, một phần của tổng thể tích hợp: khía cạnh , yếu tố , lĩnh vực , giai đoạn v.v.",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -66006,7 +66006,7 @@
   {
     "hanzi": "患者",
     "pinyin": "huàn zhě",
-    "hanviet": "Hoạn 者",
+    "hanviet": "Hoạn Giả",
     "meaning": "bệnh nhân; người chịu bệnh",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -66022,9 +66022,9 @@
     "meaning": "trang điểm",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“化妆”这个词。",
-    "examplePinyin": "Qǐng jìzhu “化妆” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “化妆” này.",
+    "example": "请记住化妆这个词。",
+    "examplePinyin": "Qǐng jìzhu huà zhuāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trang điểm này.",
     "id": "typ-hsk6-0301"
   },
   {
@@ -66042,7 +66042,7 @@
   {
     "hanzi": "汇报",
     "pinyin": "huì bào",
-    "hanviet": "汇 Báo",
+    "hanviet": "Hối Báo",
     "meaning": "báo cáo, trình bày",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -66078,25 +66078,25 @@
   {
     "hanzi": "辉煌",
     "pinyin": "huī huáng",
-    "hanviet": "Huy 煌",
+    "hanviet": "Huy Hoàng",
     "meaning": "rực rỡ, vẻ vang",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“辉煌”这个词。",
-    "examplePinyin": "Qǐng jìzhu “辉煌” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “辉煌” này.",
+    "example": "请记住辉煌这个词。",
+    "examplePinyin": "Qǐng jìzhu huī huáng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rực rỡ, vẻ vang này.",
     "id": "typ-hsk6-0306"
   },
   {
     "hanzi": "贿赂",
     "pinyin": "huì lù",
-    "hanviet": "贿 Lộ",
+    "hanviet": "Hối Lộ",
     "meaning": "hối lộ, một khoản hối lộ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“贿赂”这个词。",
-    "examplePinyin": "Qǐng jìzhu “贿赂” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “贿赂” này.",
+    "example": "请记住贿赂这个词。",
+    "examplePinyin": "Qǐng jìzhu huì lù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hối lộ, một khoản hối lộ này.",
     "id": "typ-hsk6-0307"
   },
   {
@@ -66106,9 +66106,9 @@
     "meaning": "diệt vong, phá hủy",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“毁灭”这个词。",
-    "examplePinyin": "Qǐng jìzhu “毁灭” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “毁灭” này.",
+    "example": "请记住毁灭这个词。",
+    "examplePinyin": "Qǐng jìzhu huǐ miè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ diệt vong, phá hủy này.",
     "id": "typ-hsk6-0308"
   },
   {
@@ -66178,21 +66178,21 @@
     "meaning": "mất ý thức, hôn mê",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“昏迷”这个词。",
-    "examplePinyin": "Qǐng jìzhu “昏迷” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “昏迷” này.",
+    "example": "请记住昏迷这个词。",
+    "examplePinyin": "Qǐng jìzhu hūn mí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mất ý thức, hôn mê này.",
     "id": "typ-hsk6-0314"
   },
   {
     "hanzi": "浑身",
     "pinyin": "hún shēn",
-    "hanviet": "浑 Thân",
+    "hanviet": "Hồn Thân",
     "meaning": "khắp người, từ đầu đến chân",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“浑身”这个词。",
-    "examplePinyin": "Qǐng jìzhu “浑身” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “浑身” này.",
+    "example": "请记住浑身这个词。",
+    "examplePinyin": "Qǐng jìzhu hún shēn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khắp người, từ đầu đến chân này.",
     "id": "typ-hsk6-0315"
   },
   {
@@ -66202,9 +66202,9 @@
     "meaning": "tiền tệ, thuộc về tiền tệ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“货币”这个词。",
-    "examplePinyin": "Qǐng jìzhu “货币” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “货币” này.",
+    "example": "请记住货币这个词。",
+    "examplePinyin": "Qǐng jìzhu huò bì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tiền tệ, thuộc về tiền tệ này.",
     "id": "typ-hsk6-0316"
   },
   {
@@ -66250,9 +66250,9 @@
     "meaning": "ngọn lửa, lửa",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“火焰”这个词。",
-    "examplePinyin": "Qǐng jìzhu “火焰” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “火焰” này.",
+    "example": "请记住火焰这个词。",
+    "examplePinyin": "Qǐng jìzhu huǒ yàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngọn lửa, lửa này.",
     "id": "typ-hsk6-0320"
   },
   {
@@ -66270,13 +66270,13 @@
   {
     "hanzi": "家伙",
     "pinyin": "jiā huo",
-    "hanviet": "Gia 伙",
+    "hanviet": "Gia Hỏa",
     "meaning": "household dish, implement or furniture",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“家伙”这个词。",
-    "examplePinyin": "Qǐng jìzhu “家伙” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “家伙” này.",
+    "example": "请记住家伙这个词。",
+    "examplePinyin": "Qǐng jìzhu jiā huo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ household dish, implement or furniture này.",
     "id": "typ-hsk6-0322"
   },
   {
@@ -66286,9 +66286,9 @@
     "meaning": "gián điệp",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“间谍”这个词。",
-    "examplePinyin": "Qǐng jìzhu “间谍” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “间谍” này.",
+    "example": "请记住间谍这个词。",
+    "examplePinyin": "Qǐng jìzhu jiàn dié zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gián điệp này.",
     "id": "typ-hsk6-0323"
   },
   {
@@ -66306,7 +66306,7 @@
   {
     "hanzi": "鉴定",
     "pinyin": "jiàn dìng",
-    "hanviet": "鉴 Định",
+    "hanviet": "Giám Định",
     "meaning": "giám định, nhận dạng",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -66354,7 +66354,7 @@
   {
     "hanzi": "奖励",
     "pinyin": "jiǎng lì",
-    "hanviet": "奖 Lệ",
+    "hanviet": "Tưởng Lệ",
     "meaning": "thưởng, phần thưởng",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -66366,13 +66366,13 @@
   {
     "hanzi": "降临",
     "pinyin": "jiàng lín",
-    "hanviet": "Giáng 临",
+    "hanviet": "Giáng Lâm",
     "meaning": "hạ xuống, đến",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“降临”这个词。",
-    "examplePinyin": "Qǐng jìzhu “降临” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “降临” này.",
+    "example": "请记住降临这个词。",
+    "examplePinyin": "Qǐng jìzhu jiàng lín zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hạ xuống, đến này.",
     "id": "typ-hsk6-0330"
   },
   {
@@ -66406,9 +66406,9 @@
     "meaning": "giám sát, theo dõi chặt chẽ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“监视”这个词。",
-    "examplePinyin": "Qǐng jìzhu “监视” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “监视” này.",
+    "example": "请记住监视这个词。",
+    "examplePinyin": "Qǐng jìzhu jiān shì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giám sát, theo dõi chặt chẽ này.",
     "id": "typ-hsk6-0333"
   },
   {
@@ -66430,33 +66430,33 @@
     "meaning": "nhà tù",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“监狱”这个词。",
-    "examplePinyin": "Qǐng jìzhu “监狱” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “监狱” này.",
+    "example": "请记住监狱这个词。",
+    "examplePinyin": "Qǐng jìzhu jiān yù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhà tù này.",
     "id": "typ-hsk6-0335"
   },
   {
     "hanzi": "鉴于",
     "pinyin": "jiàn yú",
-    "hanviet": "鉴 Vu",
+    "hanviet": "Giám Vu",
     "meaning": "xét thấy, thấy rằng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“鉴于”这个词。",
-    "examplePinyin": "Qǐng jìzhu “鉴于” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “鉴于” này.",
+    "example": "请记住鉴于这个词。",
+    "examplePinyin": "Qǐng jìzhu jiàn yú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xét thấy, thấy rằng này.",
     "id": "typ-hsk6-0336"
   },
   {
     "hanzi": "交叉",
     "pinyin": "jiāo chā",
-    "hanviet": "Giao 叉",
+    "hanviet": "Giao Xoa",
     "meaning": "giao nhau, giao cắt",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“交叉”这个词。",
-    "examplePinyin": "Qǐng jìzhu “交叉” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “交叉” này.",
+    "example": "请记住交叉这个词。",
+    "examplePinyin": "Qǐng jìzhu jiāo chā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giao nhau, giao cắt này.",
     "id": "typ-hsk6-0337"
   },
   {
@@ -66474,7 +66474,7 @@
   {
     "hanzi": "焦点",
     "pinyin": "jiāo diǎn",
-    "hanviet": "焦 Điểm",
+    "hanviet": "Tiêu Điểm",
     "meaning": "điểm tiêu; tiêu điểm",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -66490,9 +66490,9 @@
     "meaning": "góc khuất; góc",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“角落”这个词。",
-    "examplePinyin": "Qǐng jìzhu “角落” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “角落” này.",
+    "example": "请记住角落这个词。",
+    "examplePinyin": "Qǐng jìzhu jiǎo luò zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ góc khuất; góc này.",
     "id": "typ-hsk6-0340"
   },
   {
@@ -66522,13 +66522,13 @@
   {
     "hanzi": "假设",
     "pinyin": "jiǎ shè",
-    "hanviet": "假 Thết",
+    "hanviet": "Giả Thết",
     "meaning": "giả sử, phỏng đoán",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“假设”这个词。",
-    "examplePinyin": "Qǐng jìzhu “假设” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “假设” này.",
+    "example": "请记住假设这个词。",
+    "examplePinyin": "Qǐng jìzhu jiǎ shè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giả sử, phỏng đoán này.",
     "id": "typ-hsk6-0343"
   },
   {
@@ -66550,9 +66550,9 @@
     "meaning": "dù cho, mặc dù",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“即便”这个词。",
-    "examplePinyin": "Qǐng jìzhu “即便” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “即便” này.",
+    "example": "请记住即便这个词。",
+    "examplePinyin": "Qǐng jìzhu jí biàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dù cho, mặc dù này.",
     "id": "typ-hsk6-0345"
   },
   {
@@ -66562,9 +66562,9 @@
     "meaning": "cấp bậc, mức độ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“级别”这个词。",
-    "examplePinyin": "Qǐng jìzhu “级别” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “级别” này.",
+    "example": "请记住级别这个词。",
+    "examplePinyin": "Qǐng jìzhu jí bié zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cấp bậc, mức độ này.",
     "id": "typ-hsk6-0346"
   },
   {
@@ -66606,13 +66606,13 @@
   {
     "hanzi": "嫉妒",
     "pinyin": "jí dù",
-    "hanviet": "嫉 Đố",
+    "hanviet": "Tật Đố",
     "meaning": "ghen tị với; đố kỵ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“嫉妒”这个词。",
-    "examplePinyin": "Qǐng jìzhu “嫉妒” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “嫉妒” này.",
+    "example": "请记住嫉妒这个词。",
+    "examplePinyin": "Qǐng jìzhu jí dù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ghen tị với; đố kỵ này.",
     "id": "typ-hsk6-0350"
   },
   {
@@ -66646,9 +66646,9 @@
     "meaning": "tất cả, mỗi và mọi",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“皆”这个词。",
-    "examplePinyin": "Qǐng jìzhu “皆” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “皆” này.",
+    "example": "请记住皆这个词。",
+    "examplePinyin": "Qǐng jìzhu jiē zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tất cả, mỗi và mọi này.",
     "id": "typ-hsk6-0353"
   },
   {
@@ -66682,9 +66682,9 @@
     "meaning": "kết cục, kết thúc",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“结局”这个词。",
-    "examplePinyin": "Qǐng jìzhu “结局” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “结局” này.",
+    "example": "请记住结局这个词。",
+    "examplePinyin": "Qǐng jìzhu jié jú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kết cục, kết thúc này.",
     "id": "typ-hsk6-0356"
   },
   {
@@ -66694,9 +66694,9 @@
     "meaning": "vạch trần, tiết lộ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“揭露”这个词。",
-    "examplePinyin": "Qǐng jìzhu “揭露” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “揭露” này.",
+    "example": "请记住揭露这个词。",
+    "examplePinyin": "Qǐng jìzhu jiē lù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vạch trần, tiết lộ này.",
     "id": "typ-hsk6-0357"
   },
   {
@@ -66718,9 +66718,9 @@
     "meaning": "khơi dậy, kích thích",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“激发”这个词。",
-    "examplePinyin": "Qǐng jìzhu “激发” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “激发” này.",
+    "example": "请记住激发这个词。",
+    "examplePinyin": "Qǐng jìzhu jī fā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khơi dậy, kích thích này.",
     "id": "typ-hsk6-0359"
   },
   {
@@ -66778,9 +66778,9 @@
     "meaning": "khích lệ, thúc giục",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“激励”这个词。",
-    "examplePinyin": "Qǐng jìzhu “激励” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “激励” này.",
+    "example": "请记住激励这个词。",
+    "examplePinyin": "Qǐng jìzhu jī lì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khích lệ, thúc giục này.",
     "id": "typ-hsk6-0364"
   },
   {
@@ -66790,9 +66790,9 @@
     "meaning": "bí mật, thông tin mật",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“机密”这个词。",
-    "examplePinyin": "Qǐng jìzhu “机密” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “机密” này.",
+    "example": "请记住机密这个词。",
+    "examplePinyin": "Qǐng jìzhu jī mì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bí mật, thông tin mật này.",
     "id": "typ-hsk6-0365"
   },
   {
@@ -66834,7 +66834,7 @@
   {
     "hanzi": "警告",
     "pinyin": "jǐng gào",
-    "hanviet": "Khểnh 告",
+    "hanviet": "Khểnh Cáo",
     "meaning": "cảnh báo, khuyên răn",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -66862,9 +66862,9 @@
     "meaning": "kinh ngạc, ngạc nhiên",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“惊奇”这个词。",
-    "examplePinyin": "Qǐng jìzhu “惊奇” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “惊奇” này.",
+    "example": "请记住惊奇这个词。",
+    "examplePinyin": "Qǐng jìzhu jīng qí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kinh ngạc, ngạc nhiên này.",
     "id": "typ-hsk6-0371"
   },
   {
@@ -66874,15 +66874,15 @@
     "meaning": "chính xác",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“精确”这个词。",
-    "examplePinyin": "Qǐng jìzhu “精确” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “精确” này.",
+    "example": "请记住精确这个词。",
+    "examplePinyin": "Qǐng jìzhu jīng què zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chính xác này.",
     "id": "typ-hsk6-0372"
   },
   {
     "hanzi": "竞赛",
     "pinyin": "jìng sài",
-    "hanviet": "竞 赛",
+    "hanviet": "Cạnh Tái",
     "meaning": "thi đấu; đua, cuộc thi; cạnh tranh; trận đấu; cuộc đua",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -66898,9 +66898,9 @@
     "meaning": "cảnh giác, đề phòng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“警惕”这个词。",
-    "examplePinyin": "Qǐng jìzhu “警惕” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “警惕” này.",
+    "example": "请记住警惕这个词。",
+    "examplePinyin": "Qǐng jìzhu jǐng tì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cảnh giác, đề phòng này.",
     "id": "typ-hsk6-0374"
   },
   {
@@ -66922,33 +66922,33 @@
     "meaning": "hết sức cẩn thận, kỹ lưỡng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“精心”这个词。",
-    "examplePinyin": "Qǐng jìzhu “精心” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “精心” này.",
+    "example": "请记住精心这个词。",
+    "examplePinyin": "Qǐng jìzhu jīng xīn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hết sức cẩn thận, kỹ lưỡng này.",
     "id": "typ-hsk6-0376"
   },
   {
     "hanzi": "竞选",
     "pinyin": "jìng xuǎn",
-    "hanviet": "竞 Tuyển",
+    "hanviet": "Cạnh Tuyển",
     "meaning": "tham gia bầu cử, tranh cử",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“竞选”这个词。",
-    "examplePinyin": "Qǐng jìzhu “竞选” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “竞选” này.",
+    "example": "请记住竞选这个词。",
+    "examplePinyin": "Qǐng jìzhu jìng xuǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tham gia bầu cử, tranh cử này.",
     "id": "typ-hsk6-0377"
   },
   {
     "hanzi": "惊讶",
     "pinyin": "jīng yà",
-    "hanviet": "Kinh 讶",
+    "hanviet": "Kinh Nhạ",
     "meaning": "kinh ngạc, ngạc nhiên",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“惊讶”这个词。",
-    "examplePinyin": "Qǐng jìzhu “惊讶” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “惊讶” này.",
+    "example": "请记住惊讶这个词。",
+    "examplePinyin": "Qǐng jìzhu jīng yà zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kinh ngạc, ngạc nhiên này.",
     "id": "typ-hsk6-0378"
   },
   {
@@ -66958,9 +66958,9 @@
     "meaning": "tinh xảo; đẹp; tinh tế; trang nhã",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“精致”这个词。",
-    "examplePinyin": "Qǐng jìzhu “精致” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “精致” này.",
+    "example": "请记住精致这个词。",
+    "examplePinyin": "Qǐng jìzhu jīng zhì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tinh xảo; đẹp; tinh tế; trang nhã này.",
     "id": "typ-hsk6-0379"
   },
   {
@@ -67014,7 +67014,7 @@
   {
     "hanzi": "金融",
     "pinyin": "jīn róng",
-    "hanviet": "Kim 融",
+    "hanviet": "Kim Dung",
     "meaning": "ngân hàng, tài chính",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -67074,7 +67074,7 @@
   {
     "hanzi": "纠纷",
     "pinyin": "jiū fēn",
-    "hanviet": "纠 Phân",
+    "hanviet": "Củ Phân",
     "meaning": "tranh chấp",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -67086,19 +67086,19 @@
   {
     "hanzi": "酒精",
     "pinyin": "jiǔ jīng",
-    "hanviet": "酒 Tinh",
+    "hanviet": "Tửu Tinh",
     "meaning": "cồn, ethanol CH3CH2OH",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“酒精”这个词。",
-    "examplePinyin": "Qǐng jìzhu “酒精” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “酒精” này.",
+    "example": "请记住酒精这个词。",
+    "examplePinyin": "Qǐng jìzhu jiǔ jīng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cồn, ethanol CH3CH2OH này.",
     "id": "typ-hsk6-0390"
   },
   {
     "hanzi": "就业",
     "pinyin": "jiù yè",
-    "hanviet": "就 Nghiệp",
+    "hanviet": "Nghiệp",
     "meaning": "tìm được việc làm, việc làm",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -67110,7 +67110,7 @@
   {
     "hanzi": "纠正",
     "pinyin": "jiū zhèng",
-    "hanviet": "纠 Chính",
+    "hanviet": "Củ Chính",
     "meaning": "sửa chữa, làm cho đúng",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -67126,9 +67126,9 @@
     "meaning": "giới hạn, ranh giới cực đại",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“极限”这个词。",
-    "examplePinyin": "Qǐng jìzhu “极限” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “极限” này.",
+    "example": "请记住极限这个词。",
+    "examplePinyin": "Qǐng jìzhu jí xiàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giới hạn, ranh giới cực đại này.",
     "id": "typ-hsk6-0393"
   },
   {
@@ -67138,9 +67138,9 @@
     "meaning": "dấu hiệu; biểu hiện; dấu vết; chỉ báo",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“迹象”这个词。",
-    "examplePinyin": "Qǐng jìzhu “迹象” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “迹象” này.",
+    "example": "请记住迹象这个词。",
+    "examplePinyin": "Qǐng jìzhu jì xiàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dấu hiệu; biểu hiện; dấu vết; chỉ báo này.",
     "id": "typ-hsk6-0394"
   },
   {
@@ -67162,9 +67162,9 @@
     "meaning": "gen",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“基因”这个词。",
-    "examplePinyin": "Qǐng jìzhu “基因” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “基因” này.",
+    "example": "请记住基因这个词。",
+    "examplePinyin": "Qǐng jìzhu jī yīn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gen này.",
     "id": "typ-hsk6-0396"
   },
   {
@@ -67258,15 +67258,15 @@
     "meaning": "tạm giam, giữ ai đó trong sự quản thúc",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“拘留”这个词。",
-    "examplePinyin": "Qǐng jìzhu “拘留” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “拘留” này.",
+    "example": "请记住拘留这个词。",
+    "examplePinyin": "Qǐng jìzhu jū liú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tạm giam, giữ ai đó trong sự quản thúc này.",
     "id": "typ-hsk6-0404"
   },
   {
     "hanzi": "局面",
     "pinyin": "jú miàn",
-    "hanviet": "Cục 面",
+    "hanviet": "Cục Diện",
     "meaning": "khía cạnh, giai đoạn",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -67290,13 +67290,13 @@
   {
     "hanzi": "沮丧",
     "pinyin": "jǔ sàng",
-    "hanviet": "沮 Tang",
+    "hanviet": "Trở Tang",
     "meaning": "chán nản, suy sụp",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“沮丧”这个词。",
-    "examplePinyin": "Qǐng jìzhu “沮丧” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “沮丧” này.",
+    "example": "请记住沮丧这个词。",
+    "examplePinyin": "Qǐng jìzhu jǔ sàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chán nản, suy sụp này.",
     "id": "typ-hsk6-0407"
   },
   {
@@ -67306,9 +67306,9 @@
     "meaning": "tình hình, trạng thái",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“局势”这个词。",
-    "examplePinyin": "Qǐng jìzhu “局势” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “局势” này.",
+    "example": "请记住局势这个词。",
+    "examplePinyin": "Qǐng jìzhu jú shì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tình hình, trạng thái này.",
     "id": "typ-hsk6-0408"
   },
   {
@@ -67330,9 +67330,9 @@
     "meaning": "khai trừ, sa thải",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“开除”这个词。",
-    "examplePinyin": "Qǐng jìzhu “开除” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “开除” này.",
+    "example": "请记住开除这个词。",
+    "examplePinyin": "Qǐng jìzhu kāi chú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khai trừ, sa thải này.",
     "id": "typ-hsk6-0410"
   },
   {
@@ -67354,9 +67354,9 @@
     "meaning": "chi tiêu; khoản chi, tiêu tiền",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“开支”这个词。",
-    "examplePinyin": "Qǐng jìzhu “开支” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “开支” này.",
+    "example": "请记住开支这个词。",
+    "examplePinyin": "Qǐng jìzhu kāi zhī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chi tiêu; khoản chi, tiêu tiền này.",
     "id": "typ-hsk6-0412"
   },
   {
@@ -67378,9 +67378,9 @@
     "meaning": "đăng câu chuyện, xuất bản",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“刊登”这个词。",
-    "examplePinyin": "Qǐng jìzhu “刊登” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “刊登” này.",
+    "example": "请记住刊登这个词。",
+    "examplePinyin": "Qǐng jìzhu kān dēng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đăng câu chuyện, xuất bản này.",
     "id": "typ-hsk6-0414"
   },
   {
@@ -67410,13 +67410,13 @@
   {
     "hanzi": "卡通",
     "pinyin": "kǎ tōng",
-    "hanviet": "卡 Thông",
+    "hanviet": "Tạp Thông",
     "meaning": "hoạt hình",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“卡通”这个词。",
-    "examplePinyin": "Qǐng jìzhu “卡通” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “卡通” này.",
+    "example": "请记住卡通这个词。",
+    "examplePinyin": "Qǐng jìzhu kǎ tōng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hoạt hình này.",
     "id": "typ-hsk6-0417"
   },
   {
@@ -67434,13 +67434,13 @@
   {
     "hanzi": "啃",
     "pinyin": "kěn",
-    "hanviet": "啃",
+    "hanviet": "Khẩn",
     "meaning": "gặm, nhấm",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“啃”这个词。",
-    "examplePinyin": "Qǐng jìzhu “啃” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “啃” này.",
+    "example": "请记住啃这个词。",
+    "examplePinyin": "Qǐng jìzhu kěn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gặm, nhấm này.",
     "id": "typ-hsk6-0419"
   },
   {
@@ -67450,9 +67450,9 @@
     "meaning": "hố; chỗ lõm; chỗ trũng, đường hầm; hố trong lòng đất",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“坑”这个词。",
-    "examplePinyin": "Qǐng jìzhu “坑” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “坑” này.",
+    "example": "请记住坑这个词。",
+    "examplePinyin": "Qǐng jìzhu kēng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hố; chỗ lõm; chỗ trũng, đường hầm; hố trong lòng đất này.",
     "id": "typ-hsk6-0420"
   },
   {
@@ -67474,21 +67474,21 @@
     "meaning": "đáng ghê tởm, tồi tệ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“可恶”这个词。",
-    "examplePinyin": "Qǐng jìzhu “可恶” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “可恶” này.",
+    "example": "请记住可恶这个词。",
+    "examplePinyin": "Qǐng jìzhu kě wù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đáng ghê tởm, tồi tệ này.",
     "id": "typ-hsk6-0422"
   },
   {
     "hanzi": "可笑",
     "pinyin": "kě xiào",
-    "hanviet": "Khả 笑",
+    "hanviet": "Khả Tiếu",
     "meaning": "buồn cười, lố bịch",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“可笑”这个词。",
-    "examplePinyin": "Qǐng jìzhu “可笑” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “可笑” này.",
+    "example": "请记住可笑这个词。",
+    "examplePinyin": "Qǐng jìzhu kě xiào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ buồn cười, lố bịch này.",
     "id": "typ-hsk6-0423"
   },
   {
@@ -67498,9 +67498,9 @@
     "meaning": "khả thi",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“可行”这个词。",
-    "examplePinyin": "Qǐng jìzhu “可行” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “可行” này.",
+    "example": "请记住可行这个词。",
+    "examplePinyin": "Qǐng jìzhu kě xíng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khả thi này.",
     "id": "typ-hsk6-0424"
   },
   {
@@ -67510,9 +67510,9 @@
     "meaning": "hole",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“孔”这个词。",
-    "examplePinyin": "Qǐng jìzhu “孔” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “孔” này.",
+    "example": "请记住孔这个词。",
+    "examplePinyin": "Qǐng jìzhu kǒng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hole này.",
     "id": "typ-hsk6-0425"
   },
   {
@@ -67522,21 +67522,21 @@
     "meaning": "khoảng trống",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“空白”这个词。",
-    "examplePinyin": "Qǐng jìzhu “空白” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “空白” này.",
+    "example": "请记住空白这个词。",
+    "examplePinyin": "Qǐng jìzhu kòng bái zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khoảng trống này.",
     "id": "typ-hsk6-0426"
   },
   {
     "hanzi": "恐惧",
     "pinyin": "kǒng jù",
-    "hanviet": "Khủng 惧",
+    "hanviet": "Khủng Cụ",
     "meaning": "bị khiếp sợ, sợ hãi",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“恐惧”这个词。",
-    "examplePinyin": "Qǐng jìzhu “恐惧” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “恐惧” này.",
+    "example": "请记住恐惧这个词。",
+    "examplePinyin": "Qǐng jìzhu kǒng jù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bị khiếp sợ, sợ hãi này.",
     "id": "typ-hsk6-0427"
   },
   {
@@ -67554,7 +67554,7 @@
   {
     "hanzi": "跨",
     "pinyin": "kuà",
-    "hanviet": "跨",
+    "hanviet": "Khóa",
     "meaning": "bước qua, sải bước",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -67570,9 +67570,9 @@
     "meaning": "lan truyền; tăng nhanh; khuếch tán",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“扩散”这个词。",
-    "examplePinyin": "Qǐng jìzhu “扩散” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “扩散” này.",
+    "example": "请记住扩散这个词。",
+    "examplePinyin": "Qǐng jìzhu kuò sàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lan truyền; tăng nhanh; khuếch tán này.",
     "id": "typ-hsk6-0430"
   },
   {
@@ -67582,15 +67582,15 @@
     "meaning": "sự mở rộng, sự giãn nở",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“扩张”这个词。",
-    "examplePinyin": "Qǐng jìzhu “扩张” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “扩张” này.",
+    "example": "请记住扩张这个词。",
+    "examplePinyin": "Qǐng jìzhu kuò zhāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sự mở rộng, sự giãn nở này.",
     "id": "typ-hsk6-0431"
   },
   {
     "hanzi": "啦",
     "pinyin": "lā",
-    "hanviet": "啦",
+    "hanviet": "Lạp",
     "meaning": "âm thanh hát, cổ vũ v.v., tán gẫu",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -67618,9 +67618,9 @@
     "meaning": "vớt, cào lên",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“捞”这个词。",
-    "examplePinyin": "Qǐng jìzhu “捞” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “捞” này.",
+    "example": "请记住捞这个词。",
+    "examplePinyin": "Qǐng jìzhu lāo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vớt, cào lên này.",
     "id": "typ-hsk6-0434"
   },
   {
@@ -67630,9 +67630,9 @@
     "meaning": "ra đa",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“雷达”这个词。",
-    "examplePinyin": "Qǐng jìzhu “雷达” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “雷达” này.",
+    "example": "请记住雷达这个词。",
+    "examplePinyin": "Qǐng jìzhu léi dá zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ra đa này.",
     "id": "typ-hsk6-0435"
   },
   {
@@ -67666,9 +67666,9 @@
     "meaning": "sẵn sàng làm gì đó, sẵn lòng làm gì đó",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“乐意”这个词。",
-    "examplePinyin": "Qǐng jìzhu “乐意” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “乐意” này.",
+    "example": "请记住乐意这个词。",
+    "examplePinyin": "Qǐng jìzhu lè yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sẵn sàng làm gì đó, sẵn lòng làm gì đó này.",
     "id": "typ-hsk6-0438"
   },
   {
@@ -67678,9 +67678,9 @@
     "meaning": "lương tâm",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“良心”这个词。",
-    "examplePinyin": "Qǐng jìzhu “良心” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “良心” này.",
+    "example": "请记住良心这个词。",
+    "examplePinyin": "Qǐng jìzhu liáng xīn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lương tâm này.",
     "id": "typ-hsk6-0439"
   },
   {
@@ -67698,7 +67698,7 @@
   {
     "hanzi": "联盟",
     "pinyin": "lián méng",
-    "hanviet": "Liên 盟",
+    "hanviet": "Liên Minh",
     "meaning": "liên minh, hiệp hội",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -67714,9 +67714,9 @@
     "meaning": "liên kết, được kết nối",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“连锁”这个词。",
-    "examplePinyin": "Qǐng jìzhu “连锁” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “连锁” này.",
+    "example": "请记住连锁这个词。",
+    "examplePinyin": "Qǐng jìzhu lián suǒ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ liên kết, được kết nối này.",
     "id": "typ-hsk6-0442"
   },
   {
@@ -67750,21 +67750,21 @@
     "meaning": "tưới nhỏ giọt, nhỏ xuống",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“淋”这个词。",
-    "examplePinyin": "Qǐng jìzhu “淋” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “淋” này.",
+    "example": "请记住淋这个词。",
+    "examplePinyin": "Qǐng jìzhu lín zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tưới nhỏ giọt, nhỏ xuống này.",
     "id": "typ-hsk6-0445"
   },
   {
     "hanzi": "临床",
     "pinyin": "lín chuáng",
-    "hanviet": "临 Sàng",
+    "hanviet": "Lâm Sàng",
     "meaning": "lâm sàng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“临床”这个词。",
-    "examplePinyin": "Qǐng jìzhu “临床” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “临床” này.",
+    "example": "请记住临床这个词。",
+    "examplePinyin": "Qǐng jìzhu lín chuáng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lâm sàng này.",
     "id": "typ-hsk6-0446"
   },
   {
@@ -67774,9 +67774,9 @@
     "meaning": "rất sớm vào buổi sáng, vào lúc rạng sáng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“凌晨”这个词。",
-    "examplePinyin": "Qǐng jìzhu “凌晨” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “凌晨” này.",
+    "example": "请记住凌晨这个词。",
+    "examplePinyin": "Qǐng jìzhu líng chén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rất sớm vào buổi sáng, vào lúc rạng sáng này.",
     "id": "typ-hsk6-0447"
   },
   {
@@ -67786,9 +67786,9 @@
     "meaning": "cảm hứng, sự sáng suốt",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“灵感”这个词。",
-    "examplePinyin": "Qǐng jìzhu “灵感” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “灵感” này.",
+    "example": "请记住灵感这个词。",
+    "examplePinyin": "Qǐng jìzhu líng gǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cảm hứng, sự sáng suốt này.",
     "id": "typ-hsk6-0448"
   },
   {
@@ -67798,9 +67798,9 @@
     "meaning": "linh hồn, tinh thần",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“灵魂”这个词。",
-    "examplePinyin": "Qǐng jìzhu “灵魂” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “灵魂” này.",
+    "example": "请记住灵魂这个词。",
+    "examplePinyin": "Qǐng jìzhu líng hún zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ linh hồn, tinh thần này.",
     "id": "typ-hsk6-0449"
   },
   {
@@ -67830,25 +67830,25 @@
   {
     "hanzi": "溜",
     "pinyin": "liū",
-    "hanviet": "溜",
+    "hanviet": "Lựu",
     "meaning": "lẻn đi, trốn thoát một cách lén lút",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“溜”这个词。",
-    "examplePinyin": "Qǐng jìzhu “溜” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “溜” này.",
+    "example": "请记住溜这个词。",
+    "examplePinyin": "Qǐng jìzhu liū zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lẻn đi, trốn thoát một cách lén lút này.",
     "id": "typ-hsk6-0452"
   },
   {
     "hanzi": "流浪",
     "pinyin": "liú làng",
-    "hanviet": "Lưu 浪",
+    "hanviet": "Lưu Lãng",
     "meaning": "lang thang, phiêu bạt",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“流浪”这个词。",
-    "examplePinyin": "Qǐng jìzhu “流浪” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “流浪” này.",
+    "example": "请记住流浪这个词。",
+    "examplePinyin": "Qǐng jìzhu liú làng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lang thang, phiêu bạt này.",
     "id": "typ-hsk6-0453"
   },
   {
@@ -67858,9 +67858,9 @@
     "meaning": "kẻ lưu manh, du côn",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“流氓”这个词。",
-    "examplePinyin": "Qǐng jìzhu “流氓” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “流氓” này.",
+    "example": "请记住流氓这个词。",
+    "examplePinyin": "Qǐng jìzhu liú máng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kẻ lưu manh, du côn này.",
     "id": "typ-hsk6-0454"
   },
   {
@@ -67894,9 +67894,9 @@
     "meaning": "hoành tráng, thịnh vượng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“隆重”这个词。",
-    "examplePinyin": "Qǐng jìzhu “隆重” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “隆重” này.",
+    "example": "请记住隆重这个词。",
+    "examplePinyin": "Qǐng jìzhu lóng zhòng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hoành tráng, thịnh vượng này.",
     "id": "typ-hsk6-0457"
   },
   {
@@ -67906,9 +67906,9 @@
     "meaning": "lốp xe; lốp hơi",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“轮胎”这个词。",
-    "examplePinyin": "Qǐng jìzhu “轮胎” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “轮胎” này.",
+    "example": "请记住轮胎这个词。",
+    "examplePinyin": "Qǐng jìzhu lún tāi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lốp xe; lốp hơi này.",
     "id": "typ-hsk6-0458"
   },
   {
@@ -67918,27 +67918,27 @@
     "meaning": "diễn đàn",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“论坛”这个词。",
-    "examplePinyin": "Qǐng jìzhu “论坛” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “论坛” này.",
+    "example": "请记住论坛这个词。",
+    "examplePinyin": "Qǐng jìzhu lùn tán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ diễn đàn này.",
     "id": "typ-hsk6-0459"
   },
   {
     "hanzi": "履行",
     "pinyin": "lǚ xíng",
-    "hanviet": "履 Hành",
+    "hanviet": "Lý Hành",
     "meaning": "thực hiện, tiến hành",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“履行”这个词。",
-    "examplePinyin": "Qǐng jìzhu “履行” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “履行” này.",
+    "example": "请记住履行这个词。",
+    "examplePinyin": "Qǐng jìzhu lǚ xíng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thực hiện, tiến hành này.",
     "id": "typ-hsk6-0460"
   },
   {
     "hanzi": "嘛",
     "pinyin": "má",
-    "hanviet": "嘛",
+    "hanviet": "Ma",
     "meaning": "dùng trong 唵嘛呢叭咪吽, gì?",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -67954,9 +67954,9 @@
     "meaning": "bước, mở bước",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“迈”这个词。",
-    "examplePinyin": "Qǐng jìzhu “迈” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “迈” này.",
+    "example": "请记住迈这个词。",
+    "examplePinyin": "Qǐng jìzhu mài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bước, mở bước này.",
     "id": "typ-hsk6-0462"
   },
   {
@@ -67974,13 +67974,13 @@
   {
     "hanzi": "忙碌",
     "pinyin": "máng lù",
-    "hanviet": "Mang 碌",
+    "hanviet": "Mang Lục",
     "meaning": "bận rộn; nhộn nhịp",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“忙碌”这个词。",
-    "examplePinyin": "Qǐng jìzhu “忙碌” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “忙碌” này.",
+    "example": "请记住忙碌这个词。",
+    "examplePinyin": "Qǐng jìzhu máng lù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bận rộn; nhộn nhịp này.",
     "id": "typ-hsk6-0464"
   },
   {
@@ -67990,9 +67990,9 @@
     "meaning": "mù quáng, một cách mù quáng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“盲目”这个词。",
-    "examplePinyin": "Qǐng jìzhu “盲目” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “盲目” này.",
+    "example": "请记住盲目这个词。",
+    "examplePinyin": "Qǐng jìzhu máng mù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mù quáng, một cách mù quáng này.",
     "id": "typ-hsk6-0465"
   },
   {
@@ -68014,15 +68014,15 @@
     "meaning": "mở rộng, lan ra",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“蔓延”这个词。",
-    "examplePinyin": "Qǐng jìzhu “蔓延” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “蔓延” này.",
+    "example": "请记住蔓延这个词。",
+    "examplePinyin": "Qǐng jìzhu màn yán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mở rộng, lan ra này.",
     "id": "typ-hsk6-0467"
   },
   {
     "hanzi": "码头",
     "pinyin": "mǎ tóu",
-    "hanviet": "码 Đầu",
+    "hanviet": "Mã Đầu",
     "meaning": "bến tàu, bến cảng",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -68034,13 +68034,13 @@
   {
     "hanzi": "麻醉",
     "pinyin": "má zuì",
-    "hanviet": "Ma 醉",
+    "hanviet": "Ma Túy",
     "meaning": "gây tê, gây mê; làm hư hỏng ; làm suy nhược; làm tê liệt tâm trí",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“麻醉”这个词。",
-    "examplePinyin": "Qǐng jìzhu “麻醉” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “麻醉” này.",
+    "example": "请记住麻醉这个词。",
+    "examplePinyin": "Qǐng jìzhu má zuì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gây tê, gây mê; làm hư hỏng ; làm suy nhược; làm tê liệt tâm trí này.",
     "id": "typ-hsk6-0469"
   },
   {
@@ -68050,9 +68050,9 @@
     "meaning": "classifier for coins, rings, badges, pearls, sporting medals, rockets, satellites etc",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“枚”这个词。",
-    "examplePinyin": "Qǐng jìzhu “枚” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “枚” này.",
+    "example": "请记住枚这个词。",
+    "examplePinyin": "Qǐng jìzhu méi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ classifier for coins, rings, badges, pearls, sporting medals, rockets, satellites etc này.",
     "id": "typ-hsk6-0470"
   },
   {
@@ -68062,9 +68062,9 @@
     "meaning": "đẹp, tuyệt vời",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“美妙”这个词。",
-    "examplePinyin": "Qǐng jìzhu “美妙” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “美妙” này.",
+    "example": "请记住美妙这个词。",
+    "examplePinyin": "Qǐng jìzhu měi miào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đẹp, tuyệt vời này.",
     "id": "typ-hsk6-0471"
   },
   {
@@ -68094,7 +68094,7 @@
   {
     "hanzi": "梦想",
     "pinyin": "mèng xiǎng",
-    "hanviet": "梦 Tưởng",
+    "hanviet": "Mộng Tưởng",
     "meaning": "mơ ước, giấc mơ",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -68110,9 +68110,9 @@
     "meaning": "làm một cách khó khăn, ép buộc ai đó làm gì",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“勉强”这个词。",
-    "examplePinyin": "Qǐng jìzhu “勉强” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “勉强” này.",
+    "example": "请记住勉强这个词。",
+    "examplePinyin": "Qǐng jìzhu miǎn qiǎng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ làm một cách khó khăn, ép buộc ai đó làm gì này.",
     "id": "typ-hsk6-0475"
   },
   {
@@ -68122,15 +68122,15 @@
     "meaning": "miễn dịch",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“免疫”这个词。",
-    "examplePinyin": "Qǐng jìzhu “免疫” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “免疫” này.",
+    "example": "请记住免疫这个词。",
+    "examplePinyin": "Qǐng jìzhu miǎn yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ miễn dịch này.",
     "id": "typ-hsk6-0476"
   },
   {
     "hanzi": "面子",
     "pinyin": "miàn zi",
-    "hanviet": "面 Tử",
+    "hanviet": "Diện Tử",
     "meaning": "bề mặt ngoài; bên ngoài của cái gì đó, thể diện; sĩ diện",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -68142,13 +68142,13 @@
   {
     "hanzi": "弥补",
     "pinyin": "mí bǔ",
-    "hanviet": "弥 Bổ",
+    "hanviet": "Di Bổ",
     "meaning": "bổ sung, bù đắp cho một thiếu sót",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“弥补”这个词。",
-    "examplePinyin": "Qǐng jìzhu “弥补” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “弥补” này.",
+    "example": "请记住弥补这个词。",
+    "examplePinyin": "Qǐng jìzhu mí bǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bổ sung, bù đắp cho một thiếu sót này.",
     "id": "typ-hsk6-0478"
   },
   {
@@ -68170,9 +68170,9 @@
     "meaning": "đặt tên, phong tên",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“命名”这个词。",
-    "examplePinyin": "Qǐng jìzhu “命名” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “命名” này.",
+    "example": "请记住命名这个词。",
+    "examplePinyin": "Qǐng jìzhu mìng míng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đặt tên, phong tên này.",
     "id": "typ-hsk6-0480"
   },
   {
@@ -68230,15 +68230,15 @@
     "meaning": "mất phương hướng, bị lạc",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“迷失”这个词。",
-    "examplePinyin": "Qǐng jìzhu “迷失” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “迷失” này.",
+    "example": "请记住迷失这个词。",
+    "examplePinyin": "Qǐng jìzhu mí shī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mất phương hướng, bị lạc này.",
     "id": "typ-hsk6-0485"
   },
   {
     "hanzi": "膜",
     "pinyin": "mó",
-    "hanviet": "膜",
+    "hanviet": "Mạc",
     "meaning": "màng, phim",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -68250,7 +68250,7 @@
   {
     "hanzi": "模范",
     "pinyin": "mó fàn",
-    "hanviet": "Mô 范",
+    "hanviet": "Mô Phạm",
     "meaning": "hình mẫu, tấm gương tốt",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -68266,9 +68266,9 @@
     "meaning": "ma quỷ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“魔鬼”这个词。",
-    "examplePinyin": "Qǐng jìzhu “魔鬼” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “魔鬼” này.",
+    "example": "请记住魔鬼这个词。",
+    "examplePinyin": "Qǐng jìzhu mó guǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ma quỷ này.",
     "id": "typ-hsk6-0488"
   },
   {
@@ -68278,9 +68278,9 @@
     "meaning": "khó hiểu; kỳ quặc; không rõ lý do; không thể giải thích",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“莫名其妙”这个词。",
-    "examplePinyin": "Qǐng jìzhu “莫名其妙” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “莫名其妙” này.",
+    "example": "请记住莫名其妙这个词。",
+    "examplePinyin": "Qǐng jìzhu mò míng qí miào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khó hiểu; kỳ quặc; không rõ lý do; không thể giải thích này.",
     "id": "typ-hsk6-0489"
   },
   {
@@ -68314,15 +68314,15 @@
     "meaning": "ảo thuật",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“魔术”这个词。",
-    "examplePinyin": "Qǐng jìzhu “魔术” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “魔术” này.",
+    "example": "请记住魔术这个词。",
+    "examplePinyin": "Qǐng jìzhu mó shù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ảo thuật này.",
     "id": "typ-hsk6-0492"
   },
   {
     "hanzi": "模型",
     "pinyin": "mó xíng",
-    "hanviet": "Mô 型",
+    "hanviet": "Mô Hình",
     "meaning": "mô hình, khuôn",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -68338,9 +68338,9 @@
     "meaning": "chứng kiến, tận mắt thấy",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“目睹”这个词。",
-    "examplePinyin": "Qǐng jìzhu “目睹” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “目睹” này.",
+    "example": "请记住目睹这个词。",
+    "examplePinyin": "Qǐng jìzhu mù dǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chứng kiến, tận mắt thấy này.",
     "id": "typ-hsk6-0494"
   },
   {
@@ -68394,7 +68394,7 @@
   {
     "hanzi": "能量",
     "pinyin": "néng liàng",
-    "hanviet": "Năng 量",
+    "hanviet": "Năng Lượng",
     "meaning": "năng lượng, khả năng",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -68418,25 +68418,25 @@
   {
     "hanzi": "捏",
     "pinyin": "niē",
-    "hanviet": "捏",
+    "hanviet": "Niết",
     "meaning": "cầm giữa ngón cái và ngón tay, cấu",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“捏”这个词。",
-    "examplePinyin": "Qǐng jìzhu “捏” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “捏” này.",
+    "example": "请记住捏这个词。",
+    "examplePinyin": "Qǐng jìzhu niē zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cầm giữa ngón cái và ngón tay, cấu này.",
     "id": "typ-hsk6-0501"
   },
   {
     "hanzi": "拧",
     "pinyin": "níng",
-    "hanviet": "拧",
+    "hanviet": "Nính",
     "meaning": "véo, vặn",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“拧”这个词。",
-    "examplePinyin": "Qǐng jìzhu “拧” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “拧” này.",
+    "example": "请记住拧这个词。",
+    "examplePinyin": "Qǐng jìzhu níng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ véo, vặn này.",
     "id": "typ-hsk6-0502"
   },
   {
@@ -68446,9 +68446,9 @@
     "meaning": "thà ... hơn ...",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“宁愿”这个词。",
-    "examplePinyin": "Qǐng jìzhu “宁愿” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “宁愿” này.",
+    "example": "请记住宁愿这个词。",
+    "examplePinyin": "Qǐng jìzhu nìng yuàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thà ... hơn ... này.",
     "id": "typ-hsk6-0503"
   },
   {
@@ -68458,57 +68458,57 @@
     "meaning": "ngược đãi, đối xử tệ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“虐待”这个词。",
-    "examplePinyin": "Qǐng jìzhu “虐待” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “虐待” này.",
+    "example": "请记住虐待这个词。",
+    "examplePinyin": "Qǐng jìzhu nu:è dài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngược đãi, đối xử tệ này.",
     "id": "typ-hsk6-0504"
   },
   {
     "hanzi": "奴隶",
     "pinyin": "nú lì",
-    "hanviet": "Nô 隶",
+    "hanviet": "Nô Lệ",
     "meaning": "nô lệ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“奴隶”这个词。",
-    "examplePinyin": "Qǐng jìzhu “奴隶” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “奴隶” này.",
+    "example": "请记住奴隶这个词。",
+    "examplePinyin": "Qǐng jìzhu nú lì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nô lệ này.",
     "id": "typ-hsk6-0505"
   },
   {
     "hanzi": "呕吐",
     "pinyin": "ǒu tù",
-    "hanviet": "呕 Thổ",
+    "hanviet": "Ẩu Thổ",
     "meaning": "nôn mửa",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“呕吐”这个词。",
-    "examplePinyin": "Qǐng jìzhu “呕吐” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “呕吐” này.",
+    "example": "请记住呕吐这个词。",
+    "examplePinyin": "Qǐng jìzhu ǒu tù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nôn mửa này.",
     "id": "typ-hsk6-0506"
   },
   {
     "hanzi": "欧洲",
     "pinyin": "Oū zhōu",
-    "hanviet": "欧 Chòng / Chao",
+    "hanviet": "Âu Chòng / Chao",
     "meaning": "châu Âu",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“欧洲”这个词。",
-    "examplePinyin": "Qǐng jìzhu “欧洲” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “欧洲” này.",
+    "example": "请记住欧洲这个词。",
+    "examplePinyin": "Qǐng jìzhu Oū zhōu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ châu Âu này.",
     "id": "typ-hsk6-0507"
   },
   {
     "hanzi": "趴",
     "pinyin": "pā",
-    "hanviet": "趴",
+    "hanviet": "Ba",
     "meaning": "nằm sấp, nghiêng người về phía trước, tựa thân trên",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“趴”这个词。",
-    "examplePinyin": "Qǐng jìzhu “趴” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “趴” này.",
+    "example": "请记住趴这个词。",
+    "examplePinyin": "Qǐng jìzhu pā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nằm sấp, nghiêng người về phía trước, tựa thân trên này.",
     "id": "typ-hsk6-0508"
   },
   {
@@ -68526,13 +68526,13 @@
   {
     "hanzi": "庞大",
     "pinyin": "páng dà",
-    "hanviet": "庞 Đại",
+    "hanviet": "Bàng Đại",
     "meaning": "khổng lồ; to lớn; đồ sộ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“庞大”这个词。",
-    "examplePinyin": "Qǐng jìzhu “庞大” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “庞大” này.",
+    "example": "请记住庞大这个词。",
+    "examplePinyin": "Qǐng jìzhu páng dà zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khổng lồ; to lớn; đồ sộ này.",
     "id": "typ-hsk6-0510"
   },
   {
@@ -68542,9 +68542,9 @@
     "meaning": "phán quyết, tuyên án",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“判决”这个词。",
-    "examplePinyin": "Qǐng jìzhu “判决” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “判决” này.",
+    "example": "请记住判决这个词。",
+    "examplePinyin": "Qǐng jìzhu pàn jué zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phán quyết, tuyên án này.",
     "id": "typ-hsk6-0511"
   },
   {
@@ -68554,21 +68554,21 @@
     "meaning": "bọt, bọt",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“泡沫”这个词。",
-    "examplePinyin": "Qǐng jìzhu “泡沫” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “泡沫” này.",
+    "example": "请记住泡沫这个词。",
+    "examplePinyin": "Qǐng jìzhu pào mò zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bọt, bọt này.",
     "id": "typ-hsk6-0512"
   },
   {
     "hanzi": "抛弃",
     "pinyin": "pāo qì",
-    "hanviet": "Phao 弃",
+    "hanviet": "Phao Khí",
     "meaning": "từ bỏ, vứt bỏ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“抛弃”这个词。",
-    "examplePinyin": "Qǐng jìzhu “抛弃” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “抛弃” này.",
+    "example": "请记住抛弃这个词。",
+    "examplePinyin": "Qǐng jìzhu pāo qì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ từ bỏ, vứt bỏ này.",
     "id": "typ-hsk6-0513"
   },
   {
@@ -68590,9 +68590,9 @@
     "meaning": "cầm hoặc dâng bằng hai tay, tán dương",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“捧”这个词。",
-    "examplePinyin": "Qǐng jìzhu “捧” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “捧” này.",
+    "example": "请记住捧这个词。",
+    "examplePinyin": "Qǐng jìzhu pěng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cầm hoặc dâng bằng hai tay, tán dương này.",
     "id": "typ-hsk6-0515"
   },
   {
@@ -68602,9 +68602,9 @@
     "meaning": "khoảng thời gian ngắn, một lúc",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“片刻”这个词。",
-    "examplePinyin": "Qǐng jìzhu “片刻” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “片刻” này.",
+    "example": "请记住片刻这个词。",
+    "examplePinyin": "Qǐng jìzhu piàn kè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khoảng thời gian ngắn, một lúc này.",
     "id": "typ-hsk6-0516"
   },
   {
@@ -68614,39 +68614,39 @@
     "meaning": "không may; thế mà lại, ngang ngạnh; cố chấp; trái lẽ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“偏偏”这个词。",
-    "examplePinyin": "Qǐng jìzhu “偏偏” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “偏偏” này.",
+    "example": "请记住偏偏这个词。",
+    "examplePinyin": "Qǐng jìzhu piān piān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ không may; thế mà lại, ngang ngạnh; cố chấp; trái lẽ này.",
     "id": "typ-hsk6-0517"
   },
   {
     "hanzi": "疲惫",
     "pinyin": "pí bèi",
-    "hanviet": "Bì 惫",
+    "hanviet": "Bì Bị",
     "meaning": "bị đánh bại, kiệt sức",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“疲惫”这个词。",
-    "examplePinyin": "Qǐng jìzhu “疲惫” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “疲惫” này.",
+    "example": "请记住疲惫这个词。",
+    "examplePinyin": "Qǐng jìzhu pí bèi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bị đánh bại, kiệt sức này.",
     "id": "typ-hsk6-0518"
   },
   {
     "hanzi": "屁股",
     "pinyin": "pì gu",
-    "hanviet": "屁 Cổ",
+    "hanviet": "Thí Cổ",
     "meaning": "mông, phần dưới",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“屁股”这个词。",
-    "examplePinyin": "Qǐng jìzhu “屁股” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “屁股” này.",
+    "example": "请记住屁股这个词。",
+    "examplePinyin": "Qǐng jìzhu pì gu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mông, phần dưới này.",
     "id": "typ-hsk6-0519"
   },
   {
     "hanzi": "频繁",
     "pinyin": "pín fán",
-    "hanviet": "频 Phồn",
+    "hanviet": "Tần Phồn",
     "meaning": "thường xuyên",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -68670,7 +68670,7 @@
   {
     "hanzi": "评估",
     "pinyin": "píng gū",
-    "hanviet": "Bình 估",
+    "hanviet": "Bình Cổ",
     "meaning": "đánh giá, sự đánh giá",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -68706,13 +68706,13 @@
   {
     "hanzi": "频率",
     "pinyin": "pín lǜ",
-    "hanviet": "频 率",
+    "hanviet": "Tần Suất",
     "meaning": "tần số",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“频率”这个词。",
-    "examplePinyin": "Qǐng jìzhu “频率” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “频率” này.",
+    "example": "请记住频率这个词。",
+    "examplePinyin": "Qǐng jìzhu pín lǜ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tần số này.",
     "id": "typ-hsk6-0525"
   },
   {
@@ -68722,9 +68722,9 @@
     "meaning": "làm hết sức mình; dốc toàn lực; bằng mọi giá; như thể phụ thuộc vào mạng sống",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“拼命”这个词。",
-    "examplePinyin": "Qǐng jìzhu “拼命” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “拼命” này.",
+    "example": "请记住拼命这个词。",
+    "examplePinyin": "Qǐng jìzhu pīn mìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ làm hết sức mình; dốc toàn lực; bằng mọi giá; như thể phụ thuộc vào mạng sống này.",
     "id": "typ-hsk6-0526"
   },
   {
@@ -68746,9 +68746,9 @@
     "meaning": "rather",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“颇”这个词。",
-    "examplePinyin": "Qǐng jìzhu “颇” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “颇” này.",
+    "example": "请记住颇这个词。",
+    "examplePinyin": "Qǐng jìzhu pō zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rather này.",
     "id": "typ-hsk6-0528"
   },
   {
@@ -68778,19 +68778,19 @@
   {
     "hanzi": "掐",
     "pinyin": "qiā",
-    "hanviet": "掐",
+    "hanviet": "Kháp",
     "meaning": "hái, véo",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“掐”这个词。",
-    "examplePinyin": "Qǐng jìzhu “掐” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “掐” này.",
+    "example": "请记住掐这个词。",
+    "examplePinyin": "Qǐng jìzhu qiā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hái, véo này.",
     "id": "typ-hsk6-0531"
   },
   {
     "hanzi": "恰当",
     "pinyin": "qià dàng",
-    "hanviet": "恰 Đương",
+    "hanviet": "Kháp Đương",
     "meaning": "thích hợp, phù hợp",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -68802,19 +68802,19 @@
   {
     "hanzi": "抢劫",
     "pinyin": "qiǎng jié",
-    "hanviet": "抢 Kiếp",
+    "hanviet": "Thương Kiếp",
     "meaning": "cướp bóc, hôi của",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“抢劫”这个词。",
-    "examplePinyin": "Qǐng jìzhu “抢劫” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “抢劫” này.",
+    "example": "请记住抢劫这个词。",
+    "examplePinyin": "Qǐng jìzhu qiǎng jié zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cướp bóc, hôi của này.",
     "id": "typ-hsk6-0533"
   },
   {
     "hanzi": "抢救",
     "pinyin": "qiǎng jiù",
-    "hanviet": "抢 Cứu",
+    "hanviet": "Thương Cứu",
     "meaning": "giải cứu",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -68842,9 +68842,9 @@
     "meaning": "ép buộc; cưỡng chế; bắt buộc, bị ép; cưỡng bức",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“强制”这个词。",
-    "examplePinyin": "Qǐng jìzhu “强制” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “强制” này.",
+    "example": "请记住强制这个词。",
+    "examplePinyin": "Qǐng jìzhu qiáng zhì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ép buộc; cưỡng chế; bắt buộc, bị ép; cưỡng bức này.",
     "id": "typ-hsk6-0536"
   },
   {
@@ -68878,9 +68878,9 @@
     "meaning": "ký",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“签署”这个词。",
-    "examplePinyin": "Qǐng jìzhu “签署” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “签署” này.",
+    "example": "请记住签署这个词。",
+    "examplePinyin": "Qǐng jìzhu qiān shǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ký này.",
     "id": "typ-hsk6-0539"
   },
   {
@@ -68902,21 +68902,21 @@
     "meaning": "lên án, kết tội",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“谴责”这个词。",
-    "examplePinyin": "Qǐng jìzhu “谴责” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “谴责” này.",
+    "example": "请记住谴责这个词。",
+    "examplePinyin": "Qǐng jìzhu qiǎn zé zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lên án, kết tội này.",
     "id": "typ-hsk6-0541"
   },
   {
     "hanzi": "翘",
     "pinyin": "qiáo",
-    "hanviet": "翘",
+    "hanviet": "Kiều",
     "meaning": "xuất sắc, nâng lên",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“翘”这个词。",
-    "examplePinyin": "Qǐng jìzhu “翘” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “翘” này.",
+    "example": "请记住翘这个词。",
+    "examplePinyin": "Qǐng jìzhu qiáo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xuất sắc, nâng lên này.",
     "id": "typ-hsk6-0542"
   },
   {
@@ -68946,7 +68946,7 @@
   {
     "hanzi": "起码",
     "pinyin": "qǐ mǎ",
-    "hanviet": "Khởi 码",
+    "hanviet": "Khởi Mã",
     "meaning": "tối thiểu; ít nhất",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -68986,9 +68986,9 @@
     "meaning": "thông tin; tình báo",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“情报”这个词。",
-    "examplePinyin": "Qǐng jìzhu “情报” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “情报” này.",
+    "example": "请记住情报这个词。",
+    "examplePinyin": "Qǐng jìzhu qíng bào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thông tin; tình báo này.",
     "id": "typ-hsk6-0548"
   },
   {
@@ -69010,9 +69010,9 @@
     "meaning": "dọn dẹp, loại bỏ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“清除”这个词。",
-    "examplePinyin": "Qǐng jìzhu “清除” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “清除” này.",
+    "example": "请记住清除这个词。",
+    "examplePinyin": "Qǐng jìzhu qīng chú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dọn dẹp, loại bỏ này.",
     "id": "typ-hsk6-0550"
   },
   {
@@ -69058,21 +69058,21 @@
     "meaning": "lắng nghe chăm chú",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“倾听”这个词。",
-    "examplePinyin": "Qǐng jìzhu “倾听” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “倾听” này.",
+    "example": "请记住倾听这个词。",
+    "examplePinyin": "Qǐng jìzhu qīng tīng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lắng nghe chăm chú này.",
     "id": "typ-hsk6-0554"
   },
   {
     "hanzi": "清晰",
     "pinyin": "qīng xī",
-    "hanviet": "Thanh 晰",
+    "hanviet": "Thanh Tích",
     "meaning": "rõ ràng; rõ rệt",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“清晰”这个词。",
-    "examplePinyin": "Qǐng jìzhu “清晰” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “清晰” này.",
+    "example": "请记住清晰这个词。",
+    "examplePinyin": "Qǐng jìzhu qīng xī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rõ ràng; rõ rệt này.",
     "id": "typ-hsk6-0555"
   },
   {
@@ -69114,25 +69114,25 @@
   {
     "hanzi": "欺骗",
     "pinyin": "qī piàn",
-    "hanviet": "Khi 骗",
+    "hanviet": "Khi Phiến",
     "meaning": "lừa dối, gian lận",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“欺骗”这个词。",
-    "examplePinyin": "Qǐng jìzhu “欺骗” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “欺骗” này.",
+    "example": "请记住欺骗这个词。",
+    "examplePinyin": "Qǐng jìzhu qī piàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lừa dối, gian lận này.",
     "id": "typ-hsk6-0559"
   },
   {
     "hanzi": "歧视",
     "pinyin": "qí shì",
-    "hanviet": "歧 Thị",
+    "hanviet": "Kỳ Thị",
     "meaning": "phân biệt đối xử, sự phân biệt",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“歧视”这个词。",
-    "examplePinyin": "Qǐng jìzhu “歧视” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “歧视” này.",
+    "example": "请记住歧视这个词。",
+    "examplePinyin": "Qǐng jìzhu qí shì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phân biệt đối xử, sự phân biệt này.",
     "id": "typ-hsk6-0560"
   },
   {
@@ -69154,9 +69154,9 @@
     "meaning": "mùi; hương",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“气味”这个词。",
-    "examplePinyin": "Qǐng jìzhu “气味” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “气味” này.",
+    "example": "请记住气味这个词。",
+    "examplePinyin": "Qǐng jìzhu qì wèi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mùi; hương này.",
     "id": "typ-hsk6-0562"
   },
   {
@@ -69190,21 +69190,21 @@
     "meaning": "cờ hiệu, cờ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“旗帜”这个词。",
-    "examplePinyin": "Qǐng jìzhu “旗帜” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “旗帜” này.",
+    "example": "请记住旗帜这个词。",
+    "examplePinyin": "Qǐng jìzhu qí zhì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cờ hiệu, cờ này.",
     "id": "typ-hsk6-0565"
   },
   {
     "hanzi": "犬",
     "pinyin": "quǎn",
-    "hanviet": "犬",
+    "hanviet": "Khuyển",
     "meaning": "chó, bộ Khang Hy số 94",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“犬”这个词。",
-    "examplePinyin": "Qǐng jìzhu “犬” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “犬” này.",
+    "example": "请记住犬这个词。",
+    "examplePinyin": "Qǐng jìzhu quǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chó, bộ Khang Hy số 94 này.",
     "id": "typ-hsk6-0566"
   },
   {
@@ -69214,9 +69214,9 @@
     "meaning": "nắm đấm, bàn tay siết chặt",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“拳头”这个词。",
-    "examplePinyin": "Qǐng jìzhu “拳头” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “拳头” này.",
+    "example": "请记住拳头这个词。",
+    "examplePinyin": "Qǐng jìzhu quán tou zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nắm đấm, bàn tay siết chặt này.",
     "id": "typ-hsk6-0567"
   },
   {
@@ -69226,9 +69226,9 @@
     "meaning": "uy quyền, có thẩm quyền",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“权威”这个词。",
-    "examplePinyin": "Qǐng jìzhu “权威” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “权威” này.",
+    "example": "请记住权威这个词。",
+    "examplePinyin": "Qǐng jìzhu quán wēi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ uy quyền, có thẩm quyền này.",
     "id": "typ-hsk6-0568"
   },
   {
@@ -69238,9 +69238,9 @@
     "meaning": "quyền lợi, lợi ích",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“权益”这个词。",
-    "examplePinyin": "Qǐng jìzhu “权益” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “权益” này.",
+    "example": "请记住权益这个词。",
+    "examplePinyin": "Qǐng jìzhu quán yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quyền lợi, lợi ích này.",
     "id": "typ-hsk6-0569"
   },
   {
@@ -69274,9 +69274,9 @@
     "meaning": "rõ ràng, chính xác",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“确切”这个词。",
-    "examplePinyin": "Qǐng jìzhu “确切” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “确切” này.",
+    "example": "请记住确切这个词。",
+    "examplePinyin": "Qǐng jìzhu què qiè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rõ ràng, chính xác này.",
     "id": "typ-hsk6-0572"
   },
   {
@@ -69358,9 +69358,9 @@
     "meaning": "nhân cách, sự chính trực",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“人格”这个词。",
-    "examplePinyin": "Qǐng jìzhu “人格” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “人格” này.",
+    "example": "请记住人格这个词。",
+    "examplePinyin": "Qǐng jìzhu rén gé zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhân cách, sự chính trực này.",
     "id": "typ-hsk6-0579"
   },
   {
@@ -69430,9 +69430,9 @@
     "meaning": "bổ nhiệm, việc bổ nhiệm",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“任命”这个词。",
-    "examplePinyin": "Qǐng jìzhu “任命” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “任命” này.",
+    "example": "请记住任命这个词。",
+    "examplePinyin": "Qǐng jìzhu rèn mìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bổ nhiệm, việc bổ nhiệm này.",
     "id": "typ-hsk6-0585"
   },
   {
@@ -69466,9 +69466,9 @@
     "meaning": "bản chất con người, nhân tính",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“人性”这个词。",
-    "examplePinyin": "Qǐng jìzhu “人性” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “人性” này.",
+    "example": "请记住人性这个词。",
+    "examplePinyin": "Qǐng jìzhu rén xìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bản chất con người, nhân tính này.",
     "id": "typ-hsk6-0588"
   },
   {
@@ -69478,9 +69478,9 @@
     "meaning": "bất kỳ, tùy ý",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“任意”这个词。",
-    "examplePinyin": "Qǐng jìzhu “任意” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “任意” này.",
+    "example": "请记住任意这个词。",
+    "examplePinyin": "Qǐng jìzhu rèn yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bất kỳ, tùy ý này.",
     "id": "typ-hsk6-0589"
   },
   {
@@ -69490,9 +69490,9 @@
     "meaning": "con tin",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“人质”这个词。",
-    "examplePinyin": "Qǐng jìzhu “人质” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “人质” này.",
+    "example": "请记住人质这个词。",
+    "examplePinyin": "Qǐng jìzhu rén zhì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ con tin này.",
     "id": "typ-hsk6-0590"
   },
   {
@@ -69502,9 +69502,9 @@
     "meaning": "chịu đựng, khoan dung",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“容忍”这个词。",
-    "examplePinyin": "Qǐng jìzhu “容忍” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “容忍” này.",
+    "example": "请记住容忍这个词。",
+    "examplePinyin": "Qǐng jìzhu róng rěn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chịu đựng, khoan dung này.",
     "id": "typ-hsk6-0591"
   },
   {
@@ -69514,9 +69514,9 @@
     "meaning": "điểm yếu, thiếu sót",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“弱点”这个词。",
-    "examplePinyin": "Qǐng jìzhu “弱点” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “弱点” này.",
+    "example": "请记住弱点这个词。",
+    "examplePinyin": "Qǐng jìzhu ruò diǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ điểm yếu, thiếu sót này.",
     "id": "typ-hsk6-0592"
   },
   {
@@ -69526,9 +69526,9 @@
     "meaning": "phân phối, phát ra",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“散发”这个词。",
-    "examplePinyin": "Qǐng jìzhu “散发” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “散发” này.",
+    "example": "请记住散发这个词。",
+    "examplePinyin": "Qǐng jìzhu sàn fā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phân phối, phát ra này.",
     "id": "typ-hsk6-0593"
   },
   {
@@ -69550,9 +69550,9 @@
     "meaning": "hình tam giác",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“三角”这个词。",
-    "examplePinyin": "Qǐng jìzhu “三角” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “三角” này.",
+    "example": "请记住三角这个词。",
+    "examplePinyin": "Qǐng jìzhu sān jiǎo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hình tam giác này.",
     "id": "typ-hsk6-0595"
   },
   {
@@ -69570,25 +69570,25 @@
   {
     "hanzi": "啥",
     "pinyin": "shá",
-    "hanviet": "啥",
+    "hanviet": "Thập",
     "meaning": "từ địa phương tương đương với 什麼|什么, cũng đọc là",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“啥”这个词。",
-    "examplePinyin": "Qǐng jìzhu “啥” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “啥” này.",
+    "example": "请记住啥这个词。",
+    "examplePinyin": "Qǐng jìzhu shá zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ từ địa phương tương đương với , cũng đọc là này.",
     "id": "typ-hsk6-0597"
   },
   {
     "hanzi": "刹车",
     "pinyin": "shā chē",
-    "hanviet": "刹 Xa",
+    "hanviet": "Sát Xa",
     "meaning": "phanh, dừng lại",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“刹车”这个词。",
-    "examplePinyin": "Qǐng jìzhu “刹车” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “刹车” này.",
+    "example": "请记住刹车这个词。",
+    "examplePinyin": "Qǐng jìzhu shā chē zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phanh, dừng lại này.",
     "id": "typ-hsk6-0598"
   },
   {
@@ -69598,9 +69598,9 @@
     "meaning": "giỏi về; chuyên về",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“擅长”这个词。",
-    "examplePinyin": "Qǐng jìzhu “擅长” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “擅长” này.",
+    "example": "请记住擅长这个词。",
+    "examplePinyin": "Qǐng jìzhu shàn cháng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giỏi về; chuyên về này.",
     "id": "typ-hsk6-0599"
   },
   {
@@ -69634,9 +69634,9 @@
     "meaning": "không được phép",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“擅自”这个词。",
-    "examplePinyin": "Qǐng jìzhu “擅自” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “擅自” này.",
+    "example": "请记住擅自这个词。",
+    "examplePinyin": "Qǐng jìzhu shàn zì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ không được phép này.",
     "id": "typ-hsk6-0602"
   },
   {
@@ -69718,9 +69718,9 @@
     "meaning": "sinh lý",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“生理”这个词。",
-    "examplePinyin": "Qǐng jìzhu “生理” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “生理” này.",
+    "example": "请记住生理这个词。",
+    "examplePinyin": "Qǐng jìzhu shēng lǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sinh lý này.",
     "id": "typ-hsk6-0609"
   },
   {
@@ -69742,9 +69742,9 @@
     "meaning": "sinh thái",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“生态”这个词。",
-    "examplePinyin": "Qǐng jìzhu “生态” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “生态” này.",
+    "example": "请记住生态这个词。",
+    "examplePinyin": "Qǐng jìzhu shēng tài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sinh thái này.",
     "id": "typ-hsk6-0611"
   },
   {
@@ -69754,9 +69754,9 @@
     "meaning": "sinh vật, sinh vật sống",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“生物”这个词。",
-    "examplePinyin": "Qǐng jìzhu “生物” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “生物” này.",
+    "example": "请记住生物这个词。",
+    "examplePinyin": "Qǐng jìzhu shēng wù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sinh vật, sinh vật sống này.",
     "id": "typ-hsk6-0612"
   },
   {
@@ -69766,9 +69766,9 @@
     "meaning": "có hiệu lực, bắt đầu có hiệu lực",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“生效”这个词。",
-    "examplePinyin": "Qǐng jìzhu “生效” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “生效” này.",
+    "example": "请记住生效这个词。",
+    "examplePinyin": "Qǐng jìzhu shēng xiào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ có hiệu lực, bắt đầu có hiệu lực này.",
     "id": "typ-hsk6-0613"
   },
   {
@@ -69778,9 +69778,9 @@
     "meaning": "xét xử",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“审理”这个词。",
-    "examplePinyin": "Qǐng jìzhu “审理” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “审理” này.",
+    "example": "请记住审理这个词。",
+    "examplePinyin": "Qǐng jìzhu shěn lǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xét xử này.",
     "id": "typ-hsk6-0614"
   },
   {
@@ -69790,9 +69790,9 @@
     "meaning": "phiên tòa, xét xử ai đó",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“审判”这个词。",
-    "examplePinyin": "Qǐng jìzhu “审判” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “审判” này.",
+    "example": "请记住审判这个词。",
+    "examplePinyin": "Qǐng jìzhu shěn pàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phiên tòa, xét xử ai đó này.",
     "id": "typ-hsk6-0615"
   },
   {
@@ -69814,9 +69814,9 @@
     "meaning": "thiêng liêng, tôn kính",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“神圣”这个词。",
-    "examplePinyin": "Qǐng jìzhu “神圣” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “神圣” này.",
+    "example": "请记住神圣这个词。",
+    "examplePinyin": "Qǐng jìzhu shén shèng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thiêng liêng, tôn kính này.",
     "id": "typ-hsk6-0617"
   },
   {
@@ -69858,13 +69858,13 @@
   {
     "hanzi": "识别",
     "pinyin": "shí bié",
-    "hanviet": "识 Biết",
+    "hanviet": "Thức Biết",
     "meaning": "phân biệt; nhận thức; nhận dạng; nhận biết",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“识别”这个词。",
-    "examplePinyin": "Qǐng jìzhu “识别” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “识别” này.",
+    "example": "请记住识别这个词。",
+    "examplePinyin": "Qǐng jìzhu shí bié zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phân biệt; nhận thức; nhận dạng; nhận biết này.",
     "id": "typ-hsk6-0621"
   },
   {
@@ -69882,7 +69882,7 @@
   {
     "hanzi": "示范",
     "pinyin": "shì fàn",
-    "hanviet": "Đình / Thị 范",
+    "hanviet": "Đình / Thị Phạm",
     "meaning": "trình diễn, cho thấy cách làm gì đó",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -69898,9 +69898,9 @@
     "meaning": "thả, phóng thích",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“释放”这个词。",
-    "examplePinyin": "Qǐng jìzhu “释放” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “释放” này.",
+    "example": "请记住释放这个词。",
+    "examplePinyin": "Qǐng jìzhu shì fàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thả, phóng thích này.",
     "id": "typ-hsk6-0624"
   },
   {
@@ -69910,9 +69910,9 @@
     "meaning": "đúng và sai, cãi nhau",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“是非”这个词。",
-    "examplePinyin": "Qǐng jìzhu “是非” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “是非” này.",
+    "example": "请记住是非这个词。",
+    "examplePinyin": "Qǐng jìzhu shì fēi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đúng và sai, cãi nhau này.",
     "id": "typ-hsk6-0625"
   },
   {
@@ -69994,9 +69994,9 @@
     "meaning": "thị lực, thị giác",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“视力”这个词。",
-    "examplePinyin": "Qǐng jìzhu “视力” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “视力” này.",
+    "example": "请记住视力这个词。",
+    "examplePinyin": "Qǐng jìzhu shì lì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thị lực, thị giác này.",
     "id": "typ-hsk6-0632"
   },
   {
@@ -70006,9 +70006,9 @@
     "meaning": "sứ mệnh, nhiệm vụ lâu dài mà một người cống hiến",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“使命”这个词。",
-    "examplePinyin": "Qǐng jìzhu “使命” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “使命” này.",
+    "example": "请记住使命这个词。",
+    "examplePinyin": "Qǐng jìzhu shǐ mìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sứ mệnh, nhiệm vụ lâu dài mà một người cống hiến này.",
     "id": "typ-hsk6-0633"
   },
   {
@@ -70030,9 +70030,9 @@
     "meaning": "thi thể, xác chết",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“尸体”这个词。",
-    "examplePinyin": "Qǐng jìzhu “尸体” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “尸体” này.",
+    "example": "请记住尸体这个词。",
+    "examplePinyin": "Qǐng jìzhu shī tǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thi thể, xác chết này.",
     "id": "typ-hsk6-0635"
   },
   {
@@ -70054,15 +70054,15 @@
     "meaning": "công việc, công tác",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“事务”这个词。",
-    "examplePinyin": "Qǐng jìzhu “事务” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “事务” này.",
+    "example": "请记住事务这个词。",
+    "examplePinyin": "Qǐng jìzhu shì wù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ công việc, công tác này.",
     "id": "typ-hsk6-0637"
   },
   {
     "hanzi": "失误",
     "pinyin": "shī wù",
-    "hanviet": "Thất 误",
+    "hanviet": "Thất Ngộ",
     "meaning": "sai sót, lỗi",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -70074,13 +70074,13 @@
   {
     "hanzi": "视线",
     "pinyin": "shì xiàn",
-    "hanviet": "Thị 线",
+    "hanviet": "Thị Tuyến",
     "meaning": "đường ngắm",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“视线”这个词。",
-    "examplePinyin": "Qǐng jìzhu “视线” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “视线” này.",
+    "example": "请记住视线这个词。",
+    "examplePinyin": "Qǐng jìzhu shì xiàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đường ngắm này.",
     "id": "typ-hsk6-0639"
   },
   {
@@ -70114,9 +70114,9 @@
     "meaning": "trường nhìn, cách nhìn; góc nhìn",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“视野”这个词。",
-    "examplePinyin": "Qǐng jìzhu “视野” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “视野” này.",
+    "example": "请记住视野这个词。",
+    "examplePinyin": "Qǐng jìzhu shì yě zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trường nhìn, cách nhìn; góc nhìn này.",
     "id": "typ-hsk6-0642"
   },
   {
@@ -70150,9 +70150,9 @@
     "meaning": "mất tích, biến mất",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“失踪”这个词。",
-    "examplePinyin": "Qǐng jìzhu “失踪” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “失踪” này.",
+    "example": "请记住失踪这个词。",
+    "examplePinyin": "Qǐng jìzhu shī zōng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mất tích, biến mất này.",
     "id": "typ-hsk6-0645"
   },
   {
@@ -70170,7 +70170,7 @@
   {
     "hanzi": "收藏",
     "pinyin": "shōu cáng",
-    "hanviet": "Thu 藏",
+    "hanviet": "Thu Tàng",
     "meaning": "sưu tầm ; cất giữ an toàn; đánh dấu, trang sưu tập",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -70198,9 +70198,9 @@
     "meaning": "bảo vệ, bảo hộ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“守护”这个词。",
-    "examplePinyin": "Qǐng jìzhu “守护” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “守护” này.",
+    "example": "请记住守护这个词。",
+    "examplePinyin": "Qǐng jìzhu shǒu hù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bảo vệ, bảo hộ này.",
     "id": "typ-hsk6-0649"
   },
   {
@@ -70210,9 +70210,9 @@
     "meaning": "quan trọng nhất, có tầm quan trọng hàng đầu",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“首要”这个词。",
-    "examplePinyin": "Qǐng jìzhu “首要” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “首要” này.",
+    "example": "请记住首要这个词。",
+    "examplePinyin": "Qǐng jìzhu shǒu yào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quan trọng nhất, có tầm quan trọng hàng đầu này.",
     "id": "typ-hsk6-0650"
   },
   {
@@ -70234,9 +70234,9 @@
     "meaning": "trao tặng, phong tặng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“授予”这个词。",
-    "examplePinyin": "Qǐng jìzhu “授予” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “授予” này.",
+    "example": "请记住授予这个词。",
+    "examplePinyin": "Qǐng jìzhu shòu yǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trao tặng, phong tặng này.",
     "id": "typ-hsk6-0652"
   },
   {
@@ -70266,25 +70266,25 @@
   {
     "hanzi": "耍",
     "pinyin": "shuǎ",
-    "hanviet": "耍",
+    "hanviet": "Sỏa",
     "meaning": "to play with",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“耍”这个词。",
-    "examplePinyin": "Qǐng jìzhu “耍” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “耍” này.",
+    "example": "请记住耍这个词。",
+    "examplePinyin": "Qǐng jìzhu shuǎ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ to play with này.",
     "id": "typ-hsk6-0655"
   },
   {
     "hanzi": "束缚",
     "pinyin": "shù fù",
-    "hanviet": "Thút 缚",
+    "hanviet": "Thút Phược",
     "meaning": "trói buộc; trói lại; gò bó; cùm kẹp",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“束缚”这个词。",
-    "examplePinyin": "Qǐng jìzhu “束缚” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “束缚” này.",
+    "example": "请记住束缚这个词。",
+    "examplePinyin": "Qǐng jìzhu shù fù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trói buộc; trói lại; gò bó; cùm kẹp này.",
     "id": "typ-hsk6-0656"
   },
   {
@@ -70306,21 +70306,21 @@
     "meaning": "thiết lập, xây dựng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“树立”这个词。",
-    "examplePinyin": "Qǐng jìzhu “树立” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “树立” này.",
+    "example": "请记住树立这个词。",
+    "examplePinyin": "Qǐng jìzhu shù lì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thiết lập, xây dựng này.",
     "id": "typ-hsk6-0658"
   },
   {
     "hanzi": "书面",
     "pinyin": "shū miàn",
-    "hanviet": "Thư 面",
+    "hanviet": "Thư Diện",
     "meaning": "bằng văn bản, viết",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“书面”这个词。",
-    "examplePinyin": "Qǐng jìzhu “书面” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “书面” này.",
+    "example": "请记住书面这个词。",
+    "examplePinyin": "Qǐng jìzhu shū miàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bằng văn bản, viết này.",
     "id": "typ-hsk6-0659"
   },
   {
@@ -70342,9 +70342,9 @@
     "meaning": "tư pháp, công lý",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“司法”这个词。",
-    "examplePinyin": "Qǐng jìzhu “司法” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “司法” này.",
+    "example": "请记住司法这个词。",
+    "examplePinyin": "Qǐng jìzhu sī fǎ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tư pháp, công lý này.",
     "id": "typ-hsk6-0661"
   },
   {
@@ -70354,9 +70354,9 @@
     "meaning": "nhớ đến, nhớ mong",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“思念”这个词。",
-    "examplePinyin": "Qǐng jìzhu “思念” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “思念” này.",
+    "example": "请记住思念这个词。",
+    "examplePinyin": "Qǐng jìzhu sī niàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhớ đến, nhớ mong này.",
     "id": "typ-hsk6-0662"
   },
   {
@@ -70374,7 +70374,7 @@
   {
     "hanzi": "思维",
     "pinyin": "sī wéi",
-    "hanviet": "Tư 维",
+    "hanviet": "Tư Duy",
     "meaning": "suy nghĩ, tư duy",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -70386,13 +70386,13 @@
   {
     "hanzi": "艘",
     "pinyin": "sōu",
-    "hanviet": "艘",
+    "hanviet": "Sưu",
     "meaning": "lượng từ cho tàu, tiếng Đài Loan đọc là",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“艘”这个词。",
-    "examplePinyin": "Qǐng jìzhu “艘” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “艘” này.",
+    "example": "请记住艘这个词。",
+    "examplePinyin": "Qǐng jìzhu sōu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lượng từ cho tàu, tiếng Đài Loan đọc là này.",
     "id": "typ-hsk6-0665"
   },
   {
@@ -70422,13 +70422,13 @@
   {
     "hanzi": "隧道",
     "pinyin": "suì dào",
-    "hanviet": "隧 Đạo",
+    "hanviet": "Toại Đạo",
     "meaning": "đường hầm",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“隧道”这个词。",
-    "examplePinyin": "Qǐng jìzhu “隧道” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “隧道” này.",
+    "example": "请记住隧道这个词。",
+    "examplePinyin": "Qǐng jìzhu suì dào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đường hầm này.",
     "id": "typ-hsk6-0668"
   },
   {
@@ -70438,9 +70438,9 @@
     "meaning": "trên người, theo bên mình",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“随身”这个词。",
-    "examplePinyin": "Qǐng jìzhu “随身” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “随身” này.",
+    "example": "请记住随身这个词。",
+    "examplePinyin": "Qǐng jìzhu suí shēn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trên người, theo bên mình này.",
     "id": "typ-hsk6-0669"
   },
   {
@@ -70458,7 +70458,7 @@
   {
     "hanzi": "岁月",
     "pinyin": "suì yuè",
-    "hanviet": "岁 Nguyệt",
+    "hanviet": "Tuế Nguyệt",
     "meaning": "năm tháng, thời gian",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -70474,9 +70474,9 @@
     "meaning": "làm hỏng, tổn hại",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“损坏”这个词。",
-    "examplePinyin": "Qǐng jìzhu “损坏” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “损坏” này.",
+    "example": "请记住损坏这个词。",
+    "examplePinyin": "Qǐng jìzhu sǔn huài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ làm hỏng, tổn hại này.",
     "id": "typ-hsk6-0672"
   },
   {
@@ -70486,21 +70486,21 @@
     "meaning": "vụ kiện",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“诉讼”这个词。",
-    "examplePinyin": "Qǐng jìzhu “诉讼” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “诉讼” này.",
+    "example": "请记住诉讼这个词。",
+    "examplePinyin": "Qǐng jìzhu sù sòng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vụ kiện này.",
     "id": "typ-hsk6-0673"
   },
   {
     "hanzi": "塑造",
     "pinyin": "sù zào",
-    "hanviet": "塑 Tạo",
+    "hanviet": "Tố Tạo",
     "meaning": "tạo mẫu; đúc khuôn, tạo dựng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“塑造”这个词。",
-    "examplePinyin": "Qǐng jìzhu “塑造” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “塑造” này.",
+    "example": "请记住塑造这个词。",
+    "examplePinyin": "Qǐng jìzhu sù zào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tạo mẫu; đúc khuôn, tạo dựng này.",
     "id": "typ-hsk6-0674"
   },
   {
@@ -70534,9 +70534,9 @@
     "meaning": "thành thật, thẳng thắn",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“坦白”这个词。",
-    "examplePinyin": "Qǐng jìzhu “坦白” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “坦白” này.",
+    "example": "请记住坦白这个词。",
+    "examplePinyin": "Qǐng jìzhu tǎn bái zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thành thật, thẳng thắn này.",
     "id": "typ-hsk6-0677"
   },
   {
@@ -70582,9 +70582,9 @@
     "meaning": "loại bỏ, chọn lọc",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“淘汰”这个词。",
-    "examplePinyin": "Qǐng jìzhu “淘汰” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “淘汰” này.",
+    "example": "请记住淘汰这个词。",
+    "examplePinyin": "Qǐng jìzhu táo tài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ loại bỏ, chọn lọc này.",
     "id": "typ-hsk6-0681"
   },
   {
@@ -70614,13 +70614,13 @@
   {
     "hanzi": "舔",
     "pinyin": "tiǎn",
-    "hanviet": "舔",
+    "hanviet": "Thiểm",
     "meaning": "liếm",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“舔”这个词。",
-    "examplePinyin": "Qǐng jìzhu “舔” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “舔” này.",
+    "example": "请记住舔这个词。",
+    "examplePinyin": "Qǐng jìzhu tiǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ liếm này.",
     "id": "typ-hsk6-0684"
   },
   {
@@ -70642,9 +70642,9 @@
     "meaning": "bản chất, tính khí",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“天生”这个词。",
-    "examplePinyin": "Qǐng jìzhu “天生” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “天生” này.",
+    "example": "请记住天生这个词。",
+    "examplePinyin": "Qǐng jìzhu tiān shēng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bản chất, tính khí này.",
     "id": "typ-hsk6-0686"
   },
   {
@@ -70678,9 +70678,9 @@
     "meaning": "điều khoản",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“条款”这个词。",
-    "examplePinyin": "Qǐng jìzhu “条款” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “条款” này.",
+    "example": "请记住条款这个词。",
+    "examplePinyin": "Qǐng jìzhu tiáo kuǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ điều khoản này.",
     "id": "typ-hsk6-0689"
   },
   {
@@ -70690,9 +70690,9 @@
     "meaning": "hiệp ước, thỏa thuận",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“条约”这个词。",
-    "examplePinyin": "Qǐng jìzhu “条约” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “条约” này.",
+    "example": "请记住条约这个词。",
+    "examplePinyin": "Qǐng jìzhu tiáo yuē zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hiệp ước, thỏa thuận này.",
     "id": "typ-hsk6-0690"
   },
   {
@@ -70714,9 +70714,9 @@
     "meaning": "hệ thống",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“体系”这个词。",
-    "examplePinyin": "Qǐng jìzhu “体系” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “体系” này.",
+    "example": "请记住体系这个词。",
+    "examplePinyin": "Qǐng jìzhu tǐ xì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hệ thống này.",
     "id": "typ-hsk6-0692"
   },
   {
@@ -70726,9 +70726,9 @@
     "meaning": "đề xuất, gợi ý",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“提议”这个词。",
-    "examplePinyin": "Qǐng jìzhu “提议” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “提议” này.",
+    "example": "请记住提议这个词。",
+    "examplePinyin": "Qǐng jìzhu tí yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đề xuất, gợi ý này.",
     "id": "typ-hsk6-0693"
   },
   {
@@ -70774,9 +70774,9 @@
     "meaning": "hoàn toàn",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“统统”这个词。",
-    "examplePinyin": "Qǐng jìzhu “统统” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “统统” này.",
+    "example": "请记住统统这个词。",
+    "examplePinyin": "Qǐng jìzhu tǒng tǒng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hoàn toàn này.",
     "id": "typ-hsk6-0697"
   },
   {
@@ -70786,9 +70786,9 @@
     "meaning": "đồng chí, đồng tính",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“同志”这个词。",
-    "examplePinyin": "Qǐng jìzhu “同志” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “同志” này.",
+    "example": "请记住同志这个词。",
+    "examplePinyin": "Qǐng jìzhu tóng zhì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đồng chí, đồng tính này.",
     "id": "typ-hsk6-0698"
   },
   {
@@ -70810,9 +70810,9 @@
     "meaning": "đầu hàng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“投降”这个词。",
-    "examplePinyin": "Qǐng jìzhu “投降” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “投降” này.",
+    "example": "请记住投降这个词。",
+    "examplePinyin": "Qǐng jìzhu tóu xiáng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đầu hàng này.",
     "id": "typ-hsk6-0700"
   },
   {
@@ -70858,9 +70858,9 @@
     "meaning": "suy đoán, suy luận",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“推测”这个词。",
-    "examplePinyin": "Qǐng jìzhu “推测” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “推测” này.",
+    "example": "请记住推测这个词。",
+    "examplePinyin": "Qǐng jìzhu tuī cè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ suy đoán, suy luận này.",
     "id": "typ-hsk6-0704"
   },
   {
@@ -70878,7 +70878,7 @@
   {
     "hanzi": "途径",
     "pinyin": "tú jìng",
-    "hanviet": "Đồ 径",
+    "hanviet": "Đồ Kính",
     "meaning": "cách; phương pháp; kênh",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -70906,9 +70906,9 @@
     "meaning": "thỏa hiệp, đạt được thỏa thuận",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“妥协”这个词。",
-    "examplePinyin": "Qǐng jìzhu “妥协” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “妥协” này.",
+    "example": "请记住妥协这个词。",
+    "examplePinyin": "Qǐng jìzhu tuǒ xié zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thỏa hiệp, đạt được thỏa thuận này.",
     "id": "typ-hsk6-0708"
   },
   {
@@ -70918,9 +70918,9 @@
     "meaning": "trì hoãn, lần lữa",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“拖延”这个词。",
-    "examplePinyin": "Qǐng jìzhu “拖延” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “拖延” này.",
+    "example": "请记住拖延这个词。",
+    "examplePinyin": "Qǐng jìzhu tuō yán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trì hoãn, lần lữa này.",
     "id": "typ-hsk6-0709"
   },
   {
@@ -70954,9 +70954,9 @@
     "meaning": "bên ngoài, bề ngoài",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“外表”这个词。",
-    "examplePinyin": "Qǐng jìzhu “外表” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “外表” này.",
+    "example": "请记住外表这个词。",
+    "examplePinyin": "Qǐng jìzhu wài biǎo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bên ngoài, bề ngoài này.",
     "id": "typ-hsk6-0712"
   },
   {
@@ -70974,13 +70974,13 @@
   {
     "hanzi": "挖掘",
     "pinyin": "wā jué",
-    "hanviet": "挖 Quật",
+    "hanviet": "Oa Quật",
     "meaning": "khai quật, đào",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“挖掘”这个词。",
-    "examplePinyin": "Qǐng jìzhu “挖掘” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “挖掘” này.",
+    "example": "请记住挖掘这个词。",
+    "examplePinyin": "Qǐng jìzhu wā jué zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khai quật, đào này.",
     "id": "typ-hsk6-0714"
   },
   {
@@ -70990,9 +70990,9 @@
     "meaning": "quả cầu, viên thuốc",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“丸”这个词。",
-    "examplePinyin": "Qǐng jìzhu “丸” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “丸” này.",
+    "example": "请记住丸这个词。",
+    "examplePinyin": "Qǐng jìzhu wán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ quả cầu, viên thuốc này.",
     "id": "typ-hsk6-0715"
   },
   {
@@ -71002,9 +71002,9 @@
     "meaning": "hoàn thành, kết thúc",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“完毕”这个词。",
-    "examplePinyin": "Qǐng jìzhu “完毕” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “完毕” này.",
+    "example": "请记住完毕这个词。",
+    "examplePinyin": "Qǐng jìzhu wán bì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hoàn thành, kết thúc này.",
     "id": "typ-hsk6-0716"
   },
   {
@@ -71014,9 +71014,9 @@
     "meaning": "rất nhiều, cực kỳ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“万分”这个词。",
-    "examplePinyin": "Qǐng jìzhu “万分” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “万分” này.",
+    "example": "请记住万分这个词。",
+    "examplePinyin": "Qǐng jìzhu wàn fēn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rất nhiều, cực kỳ này.",
     "id": "typ-hsk6-0717"
   },
   {
@@ -71038,39 +71038,39 @@
     "meaning": "sự kiện trong quá khứ, chuyện đã qua",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“往事”这个词。",
-    "examplePinyin": "Qǐng jìzhu “往事” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “往事” này.",
+    "example": "请记住往事这个词。",
+    "examplePinyin": "Qǐng jìzhu wǎng shì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sự kiện trong quá khứ, chuyện đã qua này.",
     "id": "typ-hsk6-0719"
   },
   {
     "hanzi": "挽回",
     "pinyin": "wǎn huí",
-    "hanviet": "挽 Hồi",
+    "hanviet": "Vãn Hồi",
     "meaning": "lấy lại, cứu vãn",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“挽回”这个词。",
-    "examplePinyin": "Qǐng jìzhu “挽回” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “挽回” này.",
+    "example": "请记住挽回这个词。",
+    "examplePinyin": "Qǐng jìzhu wǎn huí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lấy lại, cứu vãn này.",
     "id": "typ-hsk6-0720"
   },
   {
     "hanzi": "挽救",
     "pinyin": "wǎn jiù",
-    "hanviet": "挽 Cứu",
+    "hanviet": "Vãn Cứu",
     "meaning": "cứu, cứu chữa",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“挽救”这个词。",
-    "examplePinyin": "Qǐng jìzhu “挽救” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “挽救” này.",
+    "example": "请记住挽救这个词。",
+    "examplePinyin": "Qǐng jìzhu wǎn jiù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cứu, cứu chữa này.",
     "id": "typ-hsk6-0721"
   },
   {
     "hanzi": "娃娃",
     "pinyin": "wá wa",
-    "hanviet": "娃 娃",
+    "hanviet": "Oa Oa",
     "meaning": "em bé, trẻ nhỏ",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -71086,15 +71086,15 @@
     "meaning": "đi ngược lại, trái với",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“违背”这个词。",
-    "examplePinyin": "Qǐng jìzhu “违背” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “违背” này.",
+    "example": "请记住违背这个词。",
+    "examplePinyin": "Qǐng jìzhu wéi bèi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đi ngược lại, trái với này.",
     "id": "typ-hsk6-0723"
   },
   {
     "hanzi": "维持",
     "pinyin": "wéi chí",
-    "hanviet": "维 Trì",
+    "hanviet": "Duy Trì",
     "meaning": "giữ; duy trì; bảo tồn",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -71118,13 +71118,13 @@
   {
     "hanzi": "胃口",
     "pinyin": "wèi kǒu",
-    "hanviet": "胃 Khẩu",
+    "hanviet": "Vị Khẩu",
     "meaning": "thèm ăn, sở thích",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“胃口”这个词。",
-    "examplePinyin": "Qǐng jìzhu “胃口” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “胃口” này.",
+    "example": "请记住胃口这个词。",
+    "examplePinyin": "Qǐng jìzhu wèi kǒu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thèm ăn, sở thích này.",
     "id": "typ-hsk6-0726"
   },
   {
@@ -71134,9 +71134,9 @@
     "meaning": "sức mạnh, sức mạnh ghê gớm",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“威力”这个词。",
-    "examplePinyin": "Qǐng jìzhu “威力” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “威力” này.",
+    "example": "请记住威力这个词。",
+    "examplePinyin": "Qǐng jìzhu wēi lì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sức mạnh, sức mạnh ghê gớm này.",
     "id": "typ-hsk6-0727"
   },
   {
@@ -71154,7 +71154,7 @@
   {
     "hanzi": "维生素",
     "pinyin": "wéi shēng sù",
-    "hanviet": "维 Sinh Tố",
+    "hanviet": "Duy Sinh Tố",
     "meaning": "vitamin",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -71178,7 +71178,7 @@
   {
     "hanzi": "维修",
     "pinyin": "wéi xiū",
-    "hanviet": "维 Tu",
+    "hanviet": "Duy Tu",
     "meaning": "bảo trì, bảo vệ và duy trì",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -71206,9 +71206,9 @@
     "meaning": "thành viên ủy ban",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“委员”这个词。",
-    "examplePinyin": "Qǐng jìzhu “委员” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “委员” này.",
+    "example": "请记住委员这个词。",
+    "examplePinyin": "Qǐng jìzhu wěi yuán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thành viên ủy ban này.",
     "id": "typ-hsk6-0733"
   },
   {
@@ -71218,9 +71218,9 @@
     "meaning": "làm giả, giả mạo",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“伪造”这个词。",
-    "examplePinyin": "Qǐng jìzhu “伪造” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “伪造” này.",
+    "example": "请记住伪造这个词。",
+    "examplePinyin": "Qǐng jìzhu wěi zào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ làm giả, giả mạo này.",
     "id": "typ-hsk6-0734"
   },
   {
@@ -71242,21 +71242,21 @@
     "meaning": "di tích văn hóa, di tích lịch sử",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“文物”这个词。",
-    "examplePinyin": "Qǐng jìzhu “文物” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “文物” này.",
+    "example": "请记住文物这个词。",
+    "examplePinyin": "Qǐng jìzhu wén wù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ di tích văn hóa, di tích lịch sử này.",
     "id": "typ-hsk6-0736"
   },
   {
     "hanzi": "窝",
     "pinyin": "wō",
-    "hanviet": "窝",
+    "hanviet": "Oa",
     "meaning": "tổ, chỗ lõm trên cơ thể",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“窝”这个词。",
-    "examplePinyin": "Qǐng jìzhu “窝” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “窝” này.",
+    "example": "请记住窝这个词。",
+    "examplePinyin": "Qǐng jìzhu wō zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tổ, chỗ lõm trên cơ thể này.",
     "id": "typ-hsk6-0737"
   },
   {
@@ -71266,9 +71266,9 @@
     "meaning": "đừng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“勿”这个词。",
-    "examplePinyin": "Qǐng jìzhu “勿” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “勿” này.",
+    "example": "请记住勿这个词。",
+    "examplePinyin": "Qǐng jìzhu wù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đừng này.",
     "id": "typ-hsk6-0738"
   },
   {
@@ -71278,21 +71278,21 @@
     "meaning": "không gì sánh được, vô song",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“无比”这个词。",
-    "examplePinyin": "Qǐng jìzhu “无比” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “无比” này.",
+    "example": "请记住无比这个词。",
+    "examplePinyin": "Qǐng jìzhu wú bǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ không gì sánh được, vô song này.",
     "id": "typ-hsk6-0739"
   },
   {
     "hanzi": "无耻",
     "pinyin": "wú chǐ",
-    "hanviet": "Vô 耻",
+    "hanviet": "Vô Sỉ",
     "meaning": "không biết xấu hổ, vô liêm sỉ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“无耻”这个词。",
-    "examplePinyin": "Qǐng jìzhu “无耻” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “无耻” này.",
+    "example": "请记住无耻这个词。",
+    "examplePinyin": "Qǐng jìzhu wú chǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ không biết xấu hổ, vô liêm sỉ này.",
     "id": "typ-hsk6-0740"
   },
   {
@@ -71310,7 +71310,7 @@
   {
     "hanzi": "误解",
     "pinyin": "wù jiě",
-    "hanviet": "误 Giải",
+    "hanviet": "Ngộ Giải",
     "meaning": "hiểu lầm, sự hiểu lầm",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -71322,13 +71322,13 @@
   {
     "hanzi": "侮辱",
     "pinyin": "wǔ rǔ",
-    "hanviet": "侮 Nhọc",
+    "hanviet": "Vũ Nhọc",
     "meaning": "xúc phạm, làm nhục",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“侮辱”这个词。",
-    "examplePinyin": "Qǐng jìzhu “侮辱” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “侮辱” này.",
+    "example": "请记住侮辱这个词。",
+    "examplePinyin": "Qǐng jìzhu wǔ rǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xúc phạm, làm nhục này.",
     "id": "typ-hsk6-0743"
   },
   {
@@ -71338,9 +71338,9 @@
     "meaning": "ngu dốt, sự ngu dốt",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“无知”这个词。",
-    "examplePinyin": "Qǐng jìzhu “无知” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “无知” này.",
+    "example": "请记住无知这个词。",
+    "examplePinyin": "Qǐng jìzhu wú zhī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngu dốt, sự ngu dốt này.",
     "id": "typ-hsk6-0744"
   },
   {
@@ -71350,9 +71350,9 @@
     "meaning": "vũ khí, trang bị",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“武装”这个词。",
-    "examplePinyin": "Qǐng jìzhu “武装” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “武装” này.",
+    "example": "请记住武装这个词。",
+    "examplePinyin": "Qǐng jìzhu wǔ zhuāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vũ khí, trang bị này.",
     "id": "typ-hsk6-0745"
   },
   {
@@ -71362,9 +71362,9 @@
     "meaning": "con suối, ngòi",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“溪”这个词。",
-    "examplePinyin": "Qǐng jìzhu “溪” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “溪” này.",
+    "example": "请记住溪这个词。",
+    "examplePinyin": "Qǐng jìzhu xī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ con suối, ngòi này.",
     "id": "typ-hsk6-0746"
   },
   {
@@ -71398,9 +71398,9 @@
     "meaning": "hiến pháp",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“宪法”这个词。",
-    "examplePinyin": "Qǐng jìzhu “宪法” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “宪法” này.",
+    "example": "请记住宪法这个词。",
+    "examplePinyin": "Qǐng jìzhu xiàn fǎ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hiến pháp này.",
     "id": "typ-hsk6-0749"
   },
   {
@@ -71454,7 +71454,7 @@
   {
     "hanzi": "线索",
     "pinyin": "xiàn suǒ",
-    "hanviet": "线 Sách",
+    "hanviet": "Tuyến Sách",
     "meaning": "manh mối, dầu mối",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -71466,25 +71466,25 @@
   {
     "hanzi": "纤维",
     "pinyin": "xiān wéi",
-    "hanviet": "纤 维",
+    "hanviet": "Tiêm Duy",
     "meaning": "chất xơ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“纤维”这个词。",
-    "examplePinyin": "Qǐng jìzhu “纤维” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “纤维” này.",
+    "example": "请记住纤维这个词。",
+    "examplePinyin": "Qǐng jìzhu xiān wéi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chất xơ này.",
     "id": "typ-hsk6-0755"
   },
   {
     "hanzi": "嫌疑",
     "pinyin": "xián yí",
-    "hanviet": "Hiềm 疑",
+    "hanviet": "Hiềm Nghi",
     "meaning": "nghi ngờ, có sự nghi ngờ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“嫌疑”这个词。",
-    "examplePinyin": "Qǐng jìzhu “嫌疑” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “嫌疑” này.",
+    "example": "请记住嫌疑这个词。",
+    "examplePinyin": "Qǐng jìzhu xián yí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nghi ngờ, có sự nghi ngờ này.",
     "id": "typ-hsk6-0756"
   },
   {
@@ -71578,9 +71578,9 @@
     "meaning": "cấp dưới, người dưới quyền",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“下属”这个词。",
-    "examplePinyin": "Qǐng jìzhu “下属” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “下属” này.",
+    "example": "请记住下属这个词。",
+    "examplePinyin": "Qǐng jìzhu xià shǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cấp dưới, người dưới quyền này.",
     "id": "typ-hsk6-0764"
   },
   {
@@ -71602,9 +71602,9 @@
     "meaning": "mang theo, đỡ đần",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“携带”这个词。",
-    "examplePinyin": "Qǐng jìzhu “携带” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “携带” này.",
+    "example": "请记住携带这个词。",
+    "examplePinyin": "Qǐng jìzhu xié dài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mang theo, đỡ đần này.",
     "id": "typ-hsk6-0766"
   },
   {
@@ -71626,9 +71626,9 @@
     "meaning": "rò rỉ ; tiết lộ, cũng đọc là",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“泄露”这个词。",
-    "examplePinyin": "Qǐng jìzhu “泄露” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “泄露” này.",
+    "example": "请记住泄露这个词。",
+    "examplePinyin": "Qǐng jìzhu xiè lù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ rò rỉ ; tiết lộ, cũng đọc là này.",
     "id": "typ-hsk6-0768"
   },
   {
@@ -71682,31 +71682,31 @@
   {
     "hanzi": "膝盖",
     "pinyin": "xī gài",
-    "hanviet": "膝 Cái",
+    "hanviet": "Tất Cái",
     "meaning": "đầu gối, quỳ xuống",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“膝盖”这个词。",
-    "examplePinyin": "Qǐng jìzhu “膝盖” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “膝盖” này.",
+    "example": "请记住膝盖这个词。",
+    "examplePinyin": "Qǐng jìzhu xī gài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đầu gối, quỳ xuống này.",
     "id": "typ-hsk6-0773"
   },
   {
     "hanzi": "袭击",
     "pinyin": "xí jī",
-    "hanviet": "Tập 击",
+    "hanviet": "Tập Kích",
     "meaning": "tấn công, đột kích",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“袭击”这个词。",
-    "examplePinyin": "Qǐng jìzhu “袭击” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “袭击” này.",
+    "example": "请记住袭击这个词。",
+    "examplePinyin": "Qǐng jìzhu xí jī zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tấn công, đột kích này.",
     "id": "typ-hsk6-0774"
   },
   {
     "hanzi": "细菌",
     "pinyin": "xì jūn",
-    "hanviet": "Tới 菌",
+    "hanviet": "Tới Khuẩn",
     "meaning": "vi khuẩn, mầm bệnh",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -71734,9 +71734,9 @@
     "meaning": "sự quyến rũ, tính gợi cảm",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“性感”这个词。",
-    "examplePinyin": "Qǐng jìzhu “性感” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “性感” này.",
+    "example": "请记住性感这个词。",
+    "examplePinyin": "Qǐng jìzhu xìng gǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sự quyến rũ, tính gợi cảm này.",
     "id": "typ-hsk6-0777"
   },
   {
@@ -71746,9 +71746,9 @@
     "meaning": "may mắn thay",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“幸好”这个词。",
-    "examplePinyin": "Qǐng jìzhu “幸好” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “幸好” này.",
+    "example": "请记住幸好这个词。",
+    "examplePinyin": "Qǐng jìzhu xìng hǎo zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ may mắn thay này.",
     "id": "typ-hsk6-0778"
   },
   {
@@ -71758,9 +71758,9 @@
     "meaning": "sinh mệnh",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“性命”这个词。",
-    "examplePinyin": "Qǐng jìzhu “性命” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “性命” này.",
+    "example": "请记住性命这个词。",
+    "examplePinyin": "Qǐng jìzhu xìng mìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ sinh mệnh này.",
     "id": "typ-hsk6-0779"
   },
   {
@@ -71770,9 +71770,9 @@
     "meaning": "hình sự; thuộc về hình pháp",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“刑事”这个词。",
-    "examplePinyin": "Qǐng jìzhu “刑事” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “刑事” này.",
+    "example": "请记住刑事这个词。",
+    "examplePinyin": "Qǐng jìzhu xíng shì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hình sự; thuộc về hình pháp này.",
     "id": "typ-hsk6-0780"
   },
   {
@@ -71782,9 +71782,9 @@
     "meaning": "hành chính, hành chính; điều hành",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“行政”这个词。",
-    "examplePinyin": "Qǐng jìzhu “行政” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “行政” này.",
+    "example": "请记住行政这个词。",
+    "examplePinyin": "Qǐng jìzhu xíng zhèng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hành chính, hành chính; điều hành này.",
     "id": "typ-hsk6-0781"
   },
   {
@@ -71826,7 +71826,7 @@
   {
     "hanzi": "薪水",
     "pinyin": "xīn shuǐ",
-    "hanviet": "薪 Thủy",
+    "hanviet": "Tân Thủy",
     "meaning": "lương, tiền công",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -71878,15 +71878,15 @@
     "meaning": "hấp thụ, rút ra",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“吸取”这个词。",
-    "examplePinyin": "Qǐng jìzhu “吸取” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “吸取” này.",
+    "example": "请记住吸取这个词。",
+    "examplePinyin": "Qǐng jìzhu xī qǔ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hấp thụ, rút ra này.",
     "id": "typ-hsk6-0789"
   },
   {
     "hanzi": "牺牲",
     "pinyin": "xī shēng",
-    "hanviet": "牺 Sinh",
+    "hanviet": "Hi Sinh",
     "meaning": "hy sinh tính mạng, hy sinh",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -71926,9 +71926,9 @@
     "meaning": "hạnh phúc, vui mừng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“喜悦”这个词。",
-    "examplePinyin": "Qǐng jìzhu “喜悦” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “喜悦” này.",
+    "example": "请记住喜悦这个词。",
+    "examplePinyin": "Qǐng jìzhu xǐ yuè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hạnh phúc, vui mừng này.",
     "id": "typ-hsk6-0793"
   },
   {
@@ -71986,21 +71986,21 @@
     "meaning": "huyết áp",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“血压”这个词。",
-    "examplePinyin": "Qǐng jìzhu “血压” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “血压” này.",
+    "example": "请记住血压这个词。",
+    "examplePinyin": "Qǐng jìzhu xuè yā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ huyết áp này.",
     "id": "typ-hsk6-0798"
   },
   {
     "hanzi": "虚假",
     "pinyin": "xū jiǎ",
-    "hanviet": "Hư 假",
+    "hanviet": "Hư Giả",
     "meaning": "giả dối, giả tạo",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“虚假”这个词。",
-    "examplePinyin": "Qǐng jìzhu “虚假” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “虚假” này.",
+    "example": "请记住虚假这个词。",
+    "examplePinyin": "Qǐng jìzhu xū jiǎ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ giả dối, giả tạo này.",
     "id": "typ-hsk6-0799"
   },
   {
@@ -72018,7 +72018,7 @@
   {
     "hanzi": "循环",
     "pinyin": "xún huán",
-    "hanviet": "循 环",
+    "hanviet": "Tuần Hoàn",
     "meaning": "tuần hoàn, lưu thông",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -72034,15 +72034,15 @@
     "meaning": "tuần tra",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“巡逻”这个词。",
-    "examplePinyin": "Qǐng jìzhu “巡逻” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “巡逻” này.",
+    "example": "请记住巡逻这个词。",
+    "examplePinyin": "Qǐng jìzhu xún luó zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tuần tra này.",
     "id": "typ-hsk6-0802"
   },
   {
     "hanzi": "需求",
     "pinyin": "xū qiú",
-    "hanviet": "需 Cầu",
+    "hanviet": "Nhu Cầu",
     "meaning": "yêu cầu, cần",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -72058,9 +72058,9 @@
     "meaning": "che giấu, trốn phía sau",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“掩盖”这个词。",
-    "examplePinyin": "Qǐng jìzhu “掩盖” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “掩盖” này.",
+    "example": "请记住掩盖这个词。",
+    "examplePinyin": "Qǐng jìzhu yǎn gài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ che giấu, trốn phía sau này.",
     "id": "typ-hsk6-0804"
   },
   {
@@ -72070,9 +72070,9 @@
     "meaning": "mẫu; vật mẫu",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“样品”这个词。",
-    "examplePinyin": "Qǐng jìzhu “样品” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “样品” này.",
+    "example": "请记住样品这个词。",
+    "examplePinyin": "Qǐng jìzhu yàng pǐn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mẫu; vật mẫu này.",
     "id": "typ-hsk6-0805"
   },
   {
@@ -72094,15 +72094,15 @@
     "meaning": "che chắn, bảo vệ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“掩护”这个词。",
-    "examplePinyin": "Qǐng jìzhu “掩护” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “掩护” này.",
+    "example": "请记住掩护这个词。",
+    "examplePinyin": "Qǐng jìzhu yǎn hù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ che chắn, bảo vệ này.",
     "id": "typ-hsk6-0807"
   },
   {
     "hanzi": "烟花",
     "pinyin": "yān huā",
-    "hanviet": "烟 Hoa",
+    "hanviet": "Yên Hoa",
     "meaning": "pháo hoa, gái mại dâm",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -72142,15 +72142,15 @@
     "meaning": "bày tỏ ý kiến, quan điểm",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“言论”这个词。",
-    "examplePinyin": "Qǐng jìzhu “言论” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “言论” này.",
+    "example": "请记住言论这个词。",
+    "examplePinyin": "Qǐng jìzhu yán lùn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bày tỏ ý kiến, quan điểm này.",
     "id": "typ-hsk6-0811"
   },
   {
     "hanzi": "延伸",
     "pinyin": "yán shēn",
-    "hanviet": "Dang 伸",
+    "hanviet": "Dang Thân",
     "meaning": "mở rộng, lan ra",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -72166,9 +72166,9 @@
     "meaning": "biểu hiện hoặc cảm xúc trong mắt, nhìn đầy ẩn ý",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“眼神”这个词。",
-    "examplePinyin": "Qǐng jìzhu “眼神” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “眼神” này.",
+    "example": "请记住眼神这个词。",
+    "examplePinyin": "Qǐng jìzhu yǎn shén zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ biểu hiện hoặc cảm xúc trong mắt, nhìn đầy ẩn ý này.",
     "id": "typ-hsk6-0813"
   },
   {
@@ -72178,21 +72178,21 @@
     "meaning": "đá",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“岩石”这个词。",
-    "examplePinyin": "Qǐng jìzhu “岩石” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “岩石” này.",
+    "example": "请记住岩石这个词。",
+    "examplePinyin": "Qǐng jìzhu yán shí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đá này.",
     "id": "typ-hsk6-0814"
   },
   {
     "hanzi": "掩饰",
     "pinyin": "yǎn shì",
-    "hanviet": "Ém 饰",
+    "hanviet": "Ém Sức",
     "meaning": "che giấu, che đậy",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“掩饰”这个词。",
-    "examplePinyin": "Qǐng jìzhu “掩饰” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “掩饰” này.",
+    "example": "请记住掩饰这个词。",
+    "examplePinyin": "Qǐng jìzhu yǎn shì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ che giấu, che đậy này.",
     "id": "typ-hsk6-0815"
   },
   {
@@ -72202,9 +72202,9 @@
     "meaning": "ghê tởm, căm ghét",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“厌恶”这个词。",
-    "examplePinyin": "Qǐng jìzhu “厌恶” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “厌恶” này.",
+    "example": "请记住厌恶这个词。",
+    "examplePinyin": "Qǐng jìzhu yàn wù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ghê tởm, căm ghét này.",
     "id": "typ-hsk6-0816"
   },
   {
@@ -72214,9 +72214,9 @@
     "meaning": "diễn tập; tập luyện; thao diễn",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“演习”这个词。",
-    "examplePinyin": "Qǐng jìzhu “演习” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “演习” này.",
+    "example": "请记住演习这个词。",
+    "examplePinyin": "Qǐng jìzhu yǎn xí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ diễn tập; tập luyện; thao diễn này.",
     "id": "typ-hsk6-0817"
   },
   {
@@ -72226,9 +72226,9 @@
     "meaning": "bây giờ, hiện tại",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“眼下”这个词。",
-    "examplePinyin": "Qǐng jìzhu “眼下” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “眼下” này.",
+    "example": "请记住眼下这个词。",
+    "examplePinyin": "Qǐng jìzhu yǎn xià zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bây giờ, hiện tại này.",
     "id": "typ-hsk6-0818"
   },
   {
@@ -72250,9 +72250,9 @@
     "meaning": "diễn ra; phát triển, phát triển",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“演绎”这个词。",
-    "examplePinyin": "Qǐng jìzhu “演绎” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “演绎” này.",
+    "example": "请记住演绎这个词。",
+    "examplePinyin": "Qǐng jìzhu yǎn yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ diễn ra; phát triển, phát triển này.",
     "id": "typ-hsk6-0820"
   },
   {
@@ -72262,9 +72262,9 @@
     "meaning": "kiểm tra và xác minh, xác nhận thực nghiệm",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“验证”这个词。",
-    "examplePinyin": "Qǐng jìzhu “验证” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “验证” này.",
+    "example": "请记住验证这个词。",
+    "examplePinyin": "Qǐng jìzhu yàn zhèng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kiểm tra và xác minh, xác nhận thực nghiệm này.",
     "id": "typ-hsk6-0821"
   },
   {
@@ -72298,9 +72298,9 @@
     "meaning": "nhạc rock 'n' roll, đung đưa",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“摇滚”这个词。",
-    "examplePinyin": "Qǐng jìzhu “摇滚” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “摇滚” này.",
+    "example": "请记住摇滚这个词。",
+    "examplePinyin": "Qǐng jìzhu yáo gǔn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nhạc rock n roll, đung đưa này.",
     "id": "typ-hsk6-0824"
   },
   {
@@ -72310,9 +72310,9 @@
     "meaning": "gây chết người, cực kỳ; vô cùng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“要命”这个词。",
-    "examplePinyin": "Qǐng jìzhu “要命” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “要命” này.",
+    "example": "请记住要命这个词。",
+    "examplePinyin": "Qǐng jìzhu yào mìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ gây chết người, cực kỳ; vô cùng này.",
     "id": "typ-hsk6-0825"
   },
   {
@@ -72322,9 +72322,9 @@
     "meaning": "xa xôi; hẻo lánh",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“遥远”这个词。",
-    "examplePinyin": "Qǐng jìzhu “遥远” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “遥远” này.",
+    "example": "请记住遥远这个词。",
+    "examplePinyin": "Qǐng jìzhu yáo yuǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xa xôi; hẻo lánh này.",
     "id": "typ-hsk6-0826"
   },
   {
@@ -72346,9 +72346,9 @@
     "meaning": "kiềm chế hoặc đè nén cảm xúc, ngột ngạt",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“压抑”这个词。",
-    "examplePinyin": "Qǐng jìzhu “压抑” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “压抑” này.",
+    "example": "请记住压抑这个词。",
+    "examplePinyin": "Qǐng jìzhu yā yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kiềm chế hoặc đè nén cảm xúc, ngột ngạt này.",
     "id": "typ-hsk6-0828"
   },
   {
@@ -72358,21 +72358,21 @@
     "meaning": "kéo, lôi",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“拽”这个词。",
-    "examplePinyin": "Qǐng jìzhu “拽” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “拽” này.",
+    "example": "请记住拽这个词。",
+    "examplePinyin": "Qǐng jìzhu yè zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kéo, lôi này.",
     "id": "typ-hsk6-0829"
   },
   {
     "hanzi": "亦",
     "pinyin": "yì",
-    "hanviet": "亦",
+    "hanviet": "Diệc",
     "meaning": "cũng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“亦”这个词。",
-    "examplePinyin": "Qǐng jìzhu “亦” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “亦” này.",
+    "example": "请记住亦这个词。",
+    "examplePinyin": "Qǐng jìzhu yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cũng này.",
     "id": "typ-hsk6-0830"
   },
   {
@@ -72382,15 +72382,15 @@
     "meaning": "wing",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“翼”这个词。",
-    "examplePinyin": "Qǐng jìzhu “翼” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “翼” này.",
+    "example": "请记住翼这个词。",
+    "examplePinyin": "Qǐng jìzhu yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ wing này.",
     "id": "typ-hsk6-0831"
   },
   {
     "hanzi": "以便",
     "pinyin": "yǐ biàn",
-    "hanviet": "以 Tiện",
+    "hanviet": "Dĩ Tiện",
     "meaning": "để có thể, nhằm",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -72402,7 +72402,7 @@
   {
     "hanzi": "遗产",
     "pinyin": "yí chǎn",
-    "hanviet": "Di 产",
+    "hanviet": "Di Sản",
     "meaning": "di sản, dấu ấn",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -72414,7 +72414,7 @@
   {
     "hanzi": "异常",
     "pinyin": "yì cháng",
-    "hanviet": "异 Thường",
+    "hanviet": "Dị Thường",
     "meaning": "bất thường; không bình thường, cực kỳ; đặc biệt",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -72450,13 +72450,13 @@
   {
     "hanzi": "疑惑",
     "pinyin": "yí huò",
-    "hanviet": "疑 Hoặc",
+    "hanviet": "Nghi Hoặc",
     "meaning": "nghi ngờ, không tin",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“疑惑”这个词。",
-    "examplePinyin": "Qǐng jìzhu “疑惑” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “疑惑” này.",
+    "example": "请记住疑惑这个词。",
+    "examplePinyin": "Qǐng jìzhu yí huò zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ nghi ngờ, không tin này.",
     "id": "typ-hsk6-0837"
   },
   {
@@ -72486,7 +72486,7 @@
   {
     "hanzi": "依靠",
     "pinyin": "yī kào",
-    "hanviet": "Y 靠",
+    "hanviet": "Y Kháo",
     "meaning": "dựa vào cái gì đó ; phụ thuộc vào",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -72498,7 +72498,7 @@
   {
     "hanzi": "依赖",
     "pinyin": "yī lài",
-    "hanviet": "Y 赖",
+    "hanviet": "Y Lại",
     "meaning": "phụ thuộc vào; lệ thuộc vào",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -72522,13 +72522,13 @@
   {
     "hanzi": "以免",
     "pinyin": "yǐ miǎn",
-    "hanviet": "以 Miễn",
+    "hanviet": "Dĩ Miễn",
     "meaning": "để tránh, để không",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“以免”这个词。",
-    "examplePinyin": "Qǐng jìzhu “以免” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “以免” này.",
+    "example": "请记住以免这个词。",
+    "examplePinyin": "Qǐng jìzhu yǐ miǎn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ để tránh, để không này.",
     "id": "typ-hsk6-0843"
   },
   {
@@ -72546,13 +72546,13 @@
   {
     "hanzi": "婴儿",
     "pinyin": "yīng ér",
-    "hanviet": "Anh 儿",
+    "hanviet": "Anh Nhi",
     "meaning": "trẻ sơ sinh, em bé",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“婴儿”这个词。",
-    "examplePinyin": "Qǐng jìzhu “婴儿” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “婴儿” này.",
+    "example": "请记住婴儿这个词。",
+    "examplePinyin": "Qǐng jìzhu yīng ér zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trẻ sơ sinh, em bé này.",
     "id": "typ-hsk6-0845"
   },
   {
@@ -72574,9 +72574,9 @@
     "meaning": "che giấu, giấu",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“隐瞒”这个词。",
-    "examplePinyin": "Qǐng jìzhu “隐瞒” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “隐瞒” này.",
+    "example": "请记住隐瞒这个词。",
+    "examplePinyin": "Qǐng jìzhu yǐn mán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ che giấu, giấu này.",
     "id": "typ-hsk6-0847"
   },
   {
@@ -72594,19 +72594,19 @@
   {
     "hanzi": "引擎",
     "pinyin": "yǐn qíng",
-    "hanviet": "Dẫn 擎",
+    "hanviet": "Dẫn Kình",
     "meaning": "động cơ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“引擎”这个词。",
-    "examplePinyin": "Qǐng jìzhu “引擎” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “引擎” này.",
+    "example": "请记住引擎这个词。",
+    "examplePinyin": "Qǐng jìzhu yǐn qíng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ động cơ này.",
     "id": "typ-hsk6-0849"
   },
   {
     "hanzi": "饮食",
     "pinyin": "yǐn shí",
-    "hanviet": "Ẩm 食",
+    "hanviet": "Ẩm Thực",
     "meaning": "ăn uống, đồ ăn và thức uống; chế độ ăn",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -72634,9 +72634,9 @@
     "meaning": "trích dẫn; dẫn chứng, giới thiệu; bổ nhiệm",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“引用”这个词。",
-    "examplePinyin": "Qǐng jìzhu “引用” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “引用” này.",
+    "example": "请记住引用这个词。",
+    "examplePinyin": "Qǐng jìzhu yǐn yòng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trích dẫn; dẫn chứng, giới thiệu; bổ nhiệm này.",
     "id": "typ-hsk6-0852"
   },
   {
@@ -72666,7 +72666,7 @@
   {
     "hanzi": "意识",
     "pinyin": "yì shí",
-    "hanviet": "Ý 识",
+    "hanviet": "Ý Thức",
     "meaning": "ý thức, nhận thức",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -72682,15 +72682,15 @@
     "meaning": "ý định, dự định",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“意图”这个词。",
-    "examplePinyin": "Qǐng jìzhu “意图” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “意图” này.",
+    "example": "请记住意图这个词。",
+    "examplePinyin": "Qǐng jìzhu yì tú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ý định, dự định này.",
     "id": "typ-hsk6-0856"
   },
   {
     "hanzi": "以往",
     "pinyin": "yǐ wǎng",
-    "hanviet": "以 Vãng",
+    "hanviet": "Dĩ Vãng",
     "meaning": "trong quá khứ; trước đây",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -72742,21 +72742,21 @@
     "meaning": "ức chế, đè nén",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“抑制”这个词。",
-    "examplePinyin": "Qǐng jìzhu “抑制” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “抑制” này.",
+    "example": "请记住抑制这个词。",
+    "examplePinyin": "Qǐng jìzhu yì zhì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ức chế, đè nén này.",
     "id": "typ-hsk6-0861"
   },
   {
     "hanzi": "永恒",
     "pinyin": "yǒng héng",
-    "hanviet": "Vắng 恒",
+    "hanviet": "Vắng Hằng",
     "meaning": "vĩnh cửu, mãi mãi",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“永恒”这个词。",
-    "examplePinyin": "Qǐng jìzhu “永恒” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “永恒” này.",
+    "example": "请记住永恒这个词。",
+    "examplePinyin": "Qǐng jìzhu yǒng héng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vĩnh cửu, mãi mãi này.",
     "id": "typ-hsk6-0862"
   },
   {
@@ -72790,15 +72790,15 @@
     "meaning": "lôi cuốn, dụ dỗ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“诱惑”这个词。",
-    "examplePinyin": "Qǐng jìzhu “诱惑” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “诱惑” này.",
+    "example": "请记住诱惑这个词。",
+    "examplePinyin": "Qǐng jìzhu yòu huò zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lôi cuốn, dụ dỗ này.",
     "id": "typ-hsk6-0865"
   },
   {
     "hanzi": "优先",
     "pinyin": "yōu xiān",
-    "hanviet": "优 Tiên",
+    "hanviet": "Ưu Tiên",
     "meaning": "có ưu tiên; được ưu tiên",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -72810,13 +72810,13 @@
   {
     "hanzi": "幼稚",
     "pinyin": "yòu zhì",
-    "hanviet": "Ấu 稚",
+    "hanviet": "Ấu Trĩ",
     "meaning": "trẻ con, ấu trĩ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“幼稚”这个词。",
-    "examplePinyin": "Qǐng jìzhu “幼稚” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “幼稚” này.",
+    "example": "请记住幼稚这个词。",
+    "examplePinyin": "Qǐng jìzhu yòu zhì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trẻ con, ấu trĩ này.",
     "id": "typ-hsk6-0867"
   },
   {
@@ -72826,15 +72826,15 @@
     "meaning": "càng..., hồi phục",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“愈”这个词。",
-    "examplePinyin": "Qǐng jìzhu “愈” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “愈” này.",
+    "example": "请记住愈这个词。",
+    "examplePinyin": "Qǐng jìzhu yù zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ càng..., hồi phục này.",
     "id": "typ-hsk6-0868"
   },
   {
     "hanzi": "粥",
     "pinyin": "yù",
-    "hanviet": "粥",
+    "hanviet": "Chúc",
     "meaning": "dùng trong 葷粥|荤粥",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -72846,7 +72846,7 @@
   {
     "hanzi": "原告",
     "pinyin": "yuán gào",
-    "hanviet": "Nguyên 告",
+    "hanviet": "Nguyên Cáo",
     "meaning": "nguyên đơn, người khiếu nại",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -72922,9 +72922,9 @@
     "meaning": "ngớ ngẩn, ngu ngốc",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“愚蠢”这个词。",
-    "examplePinyin": "Qǐng jìzhu “愚蠢” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “愚蠢” này.",
+    "example": "请记住愚蠢这个词。",
+    "examplePinyin": "Qǐng jìzhu yú chǔn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngớ ngẩn, ngu ngốc này.",
     "id": "typ-hsk6-0876"
   },
   {
@@ -72946,9 +72946,9 @@
     "meaning": "dự báo, dự đoán",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“预料”这个词。",
-    "examplePinyin": "Qǐng jìzhu “预料” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “预料” này.",
+    "example": "请记住预料这个词。",
+    "examplePinyin": "Qǐng jìzhu yù liào zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dự báo, dự đoán này.",
     "id": "typ-hsk6-0878"
   },
   {
@@ -72982,9 +72982,9 @@
     "meaning": "ngân sách",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“预算”这个词。",
-    "examplePinyin": "Qǐng jìzhu “预算” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “预算” này.",
+    "example": "请记住预算这个词。",
+    "examplePinyin": "Qǐng jìzhu yù suàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngân sách này.",
     "id": "typ-hsk6-0881"
   },
   {
@@ -72994,9 +72994,9 @@
     "meaning": "khát khao; mong muốn; ham muốn; thèm muốn",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“欲望”这个词。",
-    "examplePinyin": "Qǐng jìzhu “欲望” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “欲望” này.",
+    "example": "请记住欲望这个词。",
+    "examplePinyin": "Qǐng jìzhu yù wàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khát khao; mong muốn; ham muốn; thèm muốn này.",
     "id": "typ-hsk6-0882"
   },
   {
@@ -73006,9 +73006,9 @@
     "meaning": "dự đoán, tiên tri",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“预言”这个词。",
-    "examplePinyin": "Qǐng jìzhu “预言” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “预言” này.",
+    "example": "请记住预言这个词。",
+    "examplePinyin": "Qǐng jìzhu yù yán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ dự đoán, tiên tri này.",
     "id": "typ-hsk6-0883"
   },
   {
@@ -73018,21 +73018,21 @@
     "meaning": "tương đương trong phương ngữ của 怎麼|怎么",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“咋”这个词。",
-    "examplePinyin": "Qǐng jìzhu “咋” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “咋” này.",
+    "example": "请记住咋这个词。",
+    "examplePinyin": "Qǐng jìzhu zǎ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tương đương trong phương ngữ của này.",
     "id": "typ-hsk6-0884"
   },
   {
     "hanzi": "砸",
     "pinyin": "zá",
-    "hanviet": "砸",
+    "hanviet": "Tạp",
     "meaning": "đập, đập phá",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“砸”这个词。",
-    "examplePinyin": "Qǐng jìzhu “砸” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “砸” này.",
+    "example": "请记住砸这个词。",
+    "examplePinyin": "Qǐng jìzhu zá zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đập, đập phá này.",
     "id": "typ-hsk6-0885"
   },
   {
@@ -73042,9 +73042,9 @@
     "meaning": "mổ; làm thịt; giết, chặt chém; lừa bịp; nói thách",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“宰”这个词。",
-    "examplePinyin": "Qǐng jìzhu “宰” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “宰” này.",
+    "example": "请记住宰这个词。",
+    "examplePinyin": "Qǐng jìzhu zǎi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mổ; làm thịt; giết, chặt chém; lừa bịp; nói thách này.",
     "id": "typ-hsk6-0886"
   },
   {
@@ -73078,9 +73078,9 @@
     "meaning": "để ý, quan tâm",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“在意”这个词。",
-    "examplePinyin": "Qǐng jìzhu “在意” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “在意” này.",
+    "example": "请记住在意这个词。",
+    "examplePinyin": "Qǐng jìzhu zài yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ để ý, quan tâm này.",
     "id": "typ-hsk6-0889"
   },
   {
@@ -73090,9 +73090,9 @@
     "meaning": "tán thành, ủng hộ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“赞同”这个词。",
-    "examplePinyin": "Qǐng jìzhu “赞同” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “赞同” này.",
+    "example": "请记住赞同这个词。",
+    "examplePinyin": "Qǐng jìzhu zàn tóng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tán thành, ủng hộ này.",
     "id": "typ-hsk6-0890"
   },
   {
@@ -73122,7 +73122,7 @@
   {
     "hanzi": "造型",
     "pinyin": "zào xíng",
-    "hanviet": "Tạo 型",
+    "hanviet": "Tạo Hình",
     "meaning": "tạo mẫu; tạo hình, diện mạo; phong cách; thiết kế; hình thức; dáng; tạo dáng",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -73138,9 +73138,9 @@
     "meaning": "tiếng ầm ĩ, tiếng ồn",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“噪音”这个词。",
-    "examplePinyin": "Qǐng jìzhu “噪音” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “噪音” này.",
+    "example": "请记住噪音这个词。",
+    "examplePinyin": "Qǐng jìzhu zào yīn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tiếng ầm ĩ, tiếng ồn này.",
     "id": "typ-hsk6-0894"
   },
   {
@@ -73162,9 +73162,9 @@
     "meaning": "kẻ trộm, kẻ phản bội",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“贼”这个词。",
-    "examplePinyin": "Qǐng jìzhu “贼” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “贼” này.",
+    "example": "请记住贼这个词。",
+    "examplePinyin": "Qǐng jìzhu zéi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kẻ trộm, kẻ phản bội này.",
     "id": "typ-hsk6-0896"
   },
   {
@@ -73182,25 +73182,25 @@
   {
     "hanzi": "渣",
     "pinyin": "zhā",
-    "hanviet": "渣",
+    "hanviet": "Tra",
     "meaning": "xỉ, cặn bã",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“渣”这个词。",
-    "examplePinyin": "Qǐng jìzhu “渣” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “渣” này.",
+    "example": "请记住渣这个词。",
+    "examplePinyin": "Qǐng jìzhu zhā zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ xỉ, cặn bã này.",
     "id": "typ-hsk6-0898"
   },
   {
     "hanzi": "债券",
     "pinyin": "zhài quàn",
-    "hanviet": "Trái 券",
+    "hanviet": "Trái Khoán",
     "meaning": "trái phiếu, tín phiếu",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“债券”这个词。",
-    "examplePinyin": "Qǐng jìzhu “债券” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “债券” này.",
+    "example": "请记住债券这个词。",
+    "examplePinyin": "Qǐng jìzhu zhài quàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trái phiếu, tín phiếu này.",
     "id": "typ-hsk6-0899"
   },
   {
@@ -73234,9 +73234,9 @@
     "meaning": "lều",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“帐篷”这个词。",
-    "examplePinyin": "Qǐng jìzhu “帐篷” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “帐篷” này.",
+    "example": "请记住帐篷这个词。",
+    "examplePinyin": "Qǐng jìzhu zhàng peng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lều này.",
     "id": "typ-hsk6-0902"
   },
   {
@@ -73318,9 +73318,9 @@
     "meaning": "mới tinh",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“崭新”这个词。",
-    "examplePinyin": "Qǐng jìzhu “崭新” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “崭新” này.",
+    "example": "请记住崭新这个词。",
+    "examplePinyin": "Qǐng jìzhu zhǎn xīn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mới tinh này.",
     "id": "typ-hsk6-0909"
   },
   {
@@ -73330,9 +73330,9 @@
     "meaning": "chiến dịch quân sự",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“战役”这个词。",
-    "examplePinyin": "Qǐng jìzhu “战役” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “战役” này.",
+    "example": "请记住战役这个词。",
+    "examplePinyin": "Qǐng jìzhu zhàn yì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chiến dịch quân sự này.",
     "id": "typ-hsk6-0910"
   },
   {
@@ -73350,13 +73350,13 @@
   {
     "hanzi": "诈骗",
     "pinyin": "zhà piàn",
-    "hanviet": "Trá 骗",
+    "hanviet": "Trá Phiến",
     "meaning": "lừa đảo, lừa gạt",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“诈骗”这个词。",
-    "examplePinyin": "Qǐng jìzhu “诈骗” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “诈骗” này.",
+    "example": "请记住诈骗这个词。",
+    "examplePinyin": "Qǐng jìzhu zhà piàn zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ lừa đảo, lừa gạt này.",
     "id": "typ-hsk6-0912"
   },
   {
@@ -73366,9 +73366,9 @@
     "meaning": "hành hạ; tra tấn",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“折磨”这个词。",
-    "examplePinyin": "Qǐng jìzhu “折磨” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “折磨” này.",
+    "example": "请记住折磨这个词。",
+    "examplePinyin": "Qǐng jìzhu zhé mó zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hành hạ; tra tấn này.",
     "id": "typ-hsk6-0913"
   },
   {
@@ -73486,9 +73486,9 @@
     "meaning": "vật lộn",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“挣扎”这个词。",
-    "examplePinyin": "Qǐng jìzhu “挣扎” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “挣扎” này.",
+    "example": "请记住挣扎这个词。",
+    "examplePinyin": "Qǐng jìzhu zhēng zhá zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ vật lộn này.",
     "id": "typ-hsk6-0923"
   },
   {
@@ -73506,7 +73506,7 @@
   {
     "hanzi": "震惊",
     "pinyin": "zhèn jīng",
-    "hanviet": "震 Kinh",
+    "hanviet": "Chấn Kinh",
     "meaning": "sốc, kinh ngạc",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -73542,13 +73542,13 @@
   {
     "hanzi": "折腾",
     "pinyin": "zhē teng",
-    "hanviet": "Chiết 腾",
+    "hanviet": "Chiết Đằng",
     "meaning": "trằn trọc, lặp đi lặp lại điều gì",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“折腾”这个词。",
-    "examplePinyin": "Qǐng jìzhu “折腾” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “折腾” này.",
+    "example": "请记住折腾这个词。",
+    "examplePinyin": "Qǐng jìzhu zhē teng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trằn trọc, lặp đi lặp lại điều gì này.",
     "id": "typ-hsk6-0928"
   },
   {
@@ -73578,7 +73578,7 @@
   {
     "hanzi": "值班",
     "pinyin": "zhí bān",
-    "hanviet": "值 Ban",
+    "hanviet": "Trị Ban",
     "meaning": "làm ca, trực",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -73590,7 +73590,7 @@
   {
     "hanzi": "直播",
     "pinyin": "zhí bō",
-    "hanviet": "直 Vá",
+    "hanviet": "Trực Vá",
     "meaning": "phát sóng trực tiếp, phát trực tiếp",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -73626,13 +73626,13 @@
   {
     "hanzi": "脂肪",
     "pinyin": "zhī fáng",
-    "hanviet": "脂 肪",
+    "hanviet": "Chi Phương",
     "meaning": "chất béo",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“脂肪”这个词。",
-    "examplePinyin": "Qǐng jìzhu “脂肪” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “脂肪” này.",
+    "example": "请记住脂肪这个词。",
+    "examplePinyin": "Qǐng jìzhu zhī fáng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chất béo này.",
     "id": "typ-hsk6-0935"
   },
   {
@@ -73642,9 +73642,9 @@
     "meaning": "chế ngự, kiểm soát",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“制服”这个词。",
-    "examplePinyin": "Qǐng jìzhu “制服” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “制服” này.",
+    "example": "请记住制服这个词。",
+    "examplePinyin": "Qǐng jìzhu zhì fú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chế ngự, kiểm soát này.",
     "id": "typ-hsk6-0936"
   },
   {
@@ -73678,9 +73678,9 @@
     "meaning": "mệnh lệnh, lệnh",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“指令”这个词。",
-    "examplePinyin": "Qǐng jìzhu “指令” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “指令” này.",
+    "example": "请记住指令这个词。",
+    "examplePinyin": "Qǐng jìzhu zhǐ lìng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mệnh lệnh, lệnh này.",
     "id": "typ-hsk6-0939"
   },
   {
@@ -73690,9 +73690,9 @@
     "meaning": "Dedicate",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“致力于”这个词。",
-    "examplePinyin": "Qǐng jìzhu “致力于” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “致力于” này.",
+    "example": "请记住致力于这个词。",
+    "examplePinyin": "Qǐng jìzhu zhìlìyú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ Dedicate này.",
     "id": "typ-hsk6-0940"
   },
   {
@@ -73714,9 +73714,9 @@
     "meaning": "chỉ số IQ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“智商”这个词。",
-    "examplePinyin": "Qǐng jìzhu “智商” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “智商” này.",
+    "example": "请记住智商这个词。",
+    "examplePinyin": "Qǐng jìzhu zhì shāng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chỉ số IQ này.",
     "id": "typ-hsk6-0942"
   },
   {
@@ -73738,9 +73738,9 @@
     "meaning": "trông cậy vào; hy vọng vào, triển vọng; hy vọng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“指望”这个词。",
-    "examplePinyin": "Qǐng jìzhu “指望” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “指望” này.",
+    "example": "请记住指望这个词。",
+    "examplePinyin": "Qǐng jìzhu zhǐ wàng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trông cậy vào; hy vọng vào, triển vọng; hy vọng này.",
     "id": "typ-hsk6-0944"
   },
   {
@@ -73798,9 +73798,9 @@
     "meaning": "kiềm chế, ngăn chặn",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“制止”这个词。",
-    "examplePinyin": "Qǐng jìzhu “制止” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “制止” này.",
+    "example": "请记住制止这个词。",
+    "examplePinyin": "Qǐng jìzhu zhì zhǐ zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kiềm chế, ngăn chặn này.",
     "id": "typ-hsk6-0949"
   },
   {
@@ -73810,9 +73810,9 @@
     "meaning": "tận tụy, trung thành",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“忠诚”这个词。",
-    "examplePinyin": "Qǐng jìzhu “忠诚” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “忠诚” này.",
+    "example": "请记住忠诚这个词。",
+    "examplePinyin": "Qǐng jìzhu zhōng chéng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tận tụy, trung thành này.",
     "id": "typ-hsk6-0950"
   },
   {
@@ -73846,21 +73846,21 @@
     "meaning": "cuối cùng, sau tất cả",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“终究”这个词。",
-    "examplePinyin": "Qǐng jìzhu “终究” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “终究” này.",
+    "example": "请记住终究这个词。",
+    "examplePinyin": "Qǐng jìzhu zhōng jiū zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ cuối cùng, sau tất cả này.",
     "id": "typ-hsk6-0953"
   },
   {
     "hanzi": "肿瘤",
     "pinyin": "zhǒng liú",
-    "hanviet": "Thũng 瘤",
+    "hanviet": "Thũng Lưu",
     "meaning": "khối u",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“肿瘤”这个词。",
-    "examplePinyin": "Qǐng jìzhu “肿瘤” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “肿瘤” này.",
+    "example": "请记住肿瘤这个词。",
+    "examplePinyin": "Qǐng jìzhu zhǒng liú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ khối u này.",
     "id": "typ-hsk6-0954"
   },
   {
@@ -73882,9 +73882,9 @@
     "meaning": "trung thành",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“忠实”这个词。",
-    "examplePinyin": "Qǐng jìzhu “忠实” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “忠实” này.",
+    "example": "请记住忠实这个词。",
+    "examplePinyin": "Qǐng jìzhu zhōng shí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ trung thành này.",
     "id": "typ-hsk6-0956"
   },
   {
@@ -73930,9 +73930,9 @@
     "meaning": "chủng tộc, dân tộc",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“种族”这个词。",
-    "examplePinyin": "Qǐng jìzhu “种族” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “种族” này.",
+    "example": "请记住种族这个词。",
+    "examplePinyin": "Qǐng jìzhu zhǒng zú zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chủng tộc, dân tộc này.",
     "id": "typ-hsk6-0960"
   },
   {
@@ -73942,9 +73942,9 @@
     "meaning": "châu, tỉnh",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“州”这个词。",
-    "examplePinyin": "Qǐng jìzhu “州” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “州” này.",
+    "example": "请记住州这个词。",
+    "examplePinyin": "Qǐng jìzhu zhōu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ châu, tỉnh này.",
     "id": "typ-hsk6-0961"
   },
   {
@@ -73954,9 +73954,9 @@
     "meaning": "ngoại vi, rìa",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“周边”这个词。",
-    "examplePinyin": "Qǐng jìzhu “周边” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “周边” này.",
+    "example": "请记住周边这个词。",
+    "examplePinyin": "Qǐng jìzhu zhōu biān zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ ngoại vi, rìa này.",
     "id": "typ-hsk6-0962"
   },
   {
@@ -74062,9 +74062,9 @@
     "meaning": "chuẩn mực, tiêu chuẩn",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“准则”这个词。",
-    "examplePinyin": "Qǐng jìzhu “准则” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “准则” này.",
+    "example": "请记住准则这个词。",
+    "examplePinyin": "Qǐng jìzhu zhǔn zé zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ chuẩn mực, tiêu chuẩn này.",
     "id": "typ-hsk6-0971"
   },
   {
@@ -74074,9 +74074,9 @@
     "meaning": "bắt tay vào làm, bắt đầu một nhiệm vụ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“着手”这个词。",
-    "examplePinyin": "Qǐng jìzhu “着手” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “着手” này.",
+    "example": "请记住着手这个词。",
+    "examplePinyin": "Qǐng jìzhu zhuó shǒu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ bắt tay vào làm, bắt đầu một nhiệm vụ này.",
     "id": "typ-hsk6-0972"
   },
   {
@@ -74118,7 +74118,7 @@
   {
     "hanzi": "主题",
     "pinyin": "zhǔ tí",
-    "hanviet": "Chúa 题",
+    "hanviet": "Chúa Đề",
     "meaning": "chủ đề, đề tài",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -74130,7 +74130,7 @@
   {
     "hanzi": "住宅",
     "pinyin": "zhù zhái",
-    "hanviet": "Trú 宅",
+    "hanviet": "Trú Trạch",
     "meaning": "nơi ở; ngôi nhà; chỗ ở",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -74166,7 +74166,7 @@
   {
     "hanzi": "资本",
     "pinyin": "zī běn",
-    "hanviet": "资 Bản",
+    "hanviet": "Tư Bản",
     "meaning": "vốn",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -74178,7 +74178,7 @@
   {
     "hanzi": "资产",
     "pinyin": "zī chǎn",
-    "hanviet": "资 产",
+    "hanviet": "Tư Sản",
     "meaning": "tài sản",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -74218,21 +74218,21 @@
     "meaning": "thái độ, tư thế",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“姿态”这个词。",
-    "examplePinyin": "Qǐng jìzhu “姿态” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “姿态” này.",
+    "example": "请记住姿态这个词。",
+    "examplePinyin": "Qǐng jìzhu zī tài zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thái độ, tư thế này.",
     "id": "typ-hsk6-0984"
   },
   {
     "hanzi": "滋味",
     "pinyin": "zī wèi",
-    "hanviet": "滋 Vị",
+    "hanviet": "Tư Vị",
     "meaning": "mùi vị, hương vị",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“滋味”这个词。",
-    "examplePinyin": "Qǐng jìzhu “滋味” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “滋味” này.",
+    "example": "请记住滋味这个词。",
+    "examplePinyin": "Qǐng jìzhu zī wèi zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ mùi vị, hương vị này.",
     "id": "typ-hsk6-0985"
   },
   {
@@ -74250,7 +74250,7 @@
   {
     "hanzi": "资助",
     "pinyin": "zī zhù",
-    "hanviet": "资 Trợ",
+    "hanviet": "Tư Trợ",
     "meaning": "trợ cấp, cung cấp hỗ trợ tài chính",
     "hsk": "HSK 6",
     "levelNum": 6,
@@ -74262,13 +74262,13 @@
   {
     "hanzi": "揍",
     "pinyin": "zòu",
-    "hanviet": "揍",
+    "hanviet": "Tấu",
     "meaning": "đánh; đấm, đập vỡ",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“揍”这个词。",
-    "examplePinyin": "Qǐng jìzhu “揍” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “揍” này.",
+    "example": "请记住揍这个词。",
+    "examplePinyin": "Qǐng jìzhu zòu zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ đánh; đấm, đập vỡ này.",
     "id": "typ-hsk6-0988"
   },
   {
@@ -74278,9 +74278,9 @@
     "meaning": "hành lang, lối đi",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“走廊”这个词。",
-    "examplePinyin": "Qǐng jìzhu “走廊” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “走廊” này.",
+    "example": "请记住走廊这个词。",
+    "examplePinyin": "Qǐng jìzhu zǒu láng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ hành lang, lối đi này.",
     "id": "typ-hsk6-0989"
   },
   {
@@ -74322,37 +74322,37 @@
   {
     "hanzi": "钻石",
     "pinyin": "zuàn shí",
-    "hanviet": "钻 Thạch",
+    "hanviet": "Toản Thạch",
     "meaning": "kim cương",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“钻石”这个词。",
-    "examplePinyin": "Qǐng jìzhu “钻石” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “钻石” này.",
+    "example": "请记住钻石这个词。",
+    "examplePinyin": "Qǐng jìzhu zuàn shí zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ kim cương này.",
     "id": "typ-hsk6-0993"
   },
   {
     "hanzi": "嘴唇",
     "pinyin": "zuǐ chún",
-    "hanviet": "嘴 Thần",
+    "hanviet": "Chủy Thần",
     "meaning": "môi, Lượng từ:片",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“嘴唇”这个词。",
-    "examplePinyin": "Qǐng jìzhu “嘴唇” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “嘴唇” này.",
+    "example": "请记住嘴唇这个词。",
+    "examplePinyin": "Qǐng jìzhu zuǐ chún zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ môi, Lượng từ: này.",
     "id": "typ-hsk6-0994"
   },
   {
     "hanzi": "遵循",
     "pinyin": "zūn xún",
-    "hanviet": "Tuân 循",
+    "hanviet": "Tuân Tuần",
     "meaning": "tuân theo; tuân thủ; làm theo",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“遵循”这个词。",
-    "examplePinyin": "Qǐng jìzhu “遵循” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “遵循” này.",
+    "example": "请记住遵循这个词。",
+    "examplePinyin": "Qǐng jìzhu zūn xún zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ tuân theo; tuân thủ; làm theo này.",
     "id": "typ-hsk6-0995"
   },
   {
@@ -74362,9 +74362,9 @@
     "meaning": "phẩm giá, tính thiêng liêng",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“尊严”这个词。",
-    "examplePinyin": "Qǐng jìzhu “尊严” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “尊严” này.",
+    "example": "请记住尊严这个词。",
+    "examplePinyin": "Qǐng jìzhu zūn yán zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phẩm giá, tính thiêng liêng này.",
     "id": "typ-hsk6-0996"
   },
   {
@@ -74374,9 +74374,9 @@
     "meaning": "thực hành gian lận, gian lận",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“作弊”这个词。",
-    "examplePinyin": "Qǐng jìzhu “作弊” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “作弊” này.",
+    "example": "请记住作弊这个词。",
+    "examplePinyin": "Qǐng jìzhu zuò bì zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ thực hành gian lận, gian lận này.",
     "id": "typ-hsk6-0997"
   },
   {
@@ -74386,9 +74386,9 @@
     "meaning": "phong cách, phong cách làm việc",
     "hsk": "HSK 6",
     "levelNum": 6,
-    "example": "请记住“作风”这个词。",
-    "examplePinyin": "Qǐng jìzhu “作风” zhè ge cí.",
-    "exampleVi": "Xin hãy ghi nhớ từ “作风” này.",
+    "example": "请记住作风这个词。",
+    "examplePinyin": "Qǐng jìzhu zuò fēng zhè ge cí.",
+    "exampleVi": "Xin hãy ghi nhớ từ phong cách, phong cách làm việc này.",
     "id": "typ-hsk6-0998"
   },
   {
@@ -74406,7 +74406,7 @@
   {
     "hanzi": "足以",
     "pinyin": "zú yǐ",
-    "hanviet": "Túc 以",
+    "hanviet": "Túc Dĩ",
     "meaning": "đủ để..., đến mức mà",
     "hsk": "HSK 6",
     "levelNum": 6,

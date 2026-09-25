@@ -5462,7 +5462,7 @@ function initVocabTypingStudio() {
   let currentLevel = "HSK 4";
   let currentStatus = "all";
   let searchQuery = "";
-  let pageSize = 25;
+  let pageSize = 10;
   let currentPage = 1;
   let isExamMode = false;
   let viewMode = "table";
@@ -5549,19 +5549,30 @@ function initVocabTypingStudio() {
     });
   }
 
-  // Highlight keyword in example sentence
+  // Format example sentence: strip all quotes; highlight in red ONLY when passed
   function formatHighlightedExample(sentence, keyword, passed) {
     if (!sentence) return "";
+    // Clean all quotes
+    const quoteRegex = /[\u201c\u201d\u2018\u2019"'\u300c\u300d\u300e\u300f]/g;
+    let cleanSentence = sentence.replace(quoteRegex, "");
+
     if (isExamMode && !passed) {
       // In Exam mode, mask the keyword until the user solves it!
       const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-      return sentence.replace(new RegExp(escaped, "g"), 
+      return cleanSentence.replace(new RegExp(escaped, "g"), 
         '<span class="bg-gray-200 text-gray-400 px-2 py-0.5 rounded font-mono font-bold select-none">[ ? ? ? ]</span>'
       );
     }
+
+    if (!passed) {
+      // Khi chưa gõ đúng: KHÔNG TÔ ĐỎ từ đó! Hiển thị câu tự nhiên bình thường
+      return escapeHtml(cleanSentence);
+    }
+
+    // CHỈ KHI NÀO GÕ ĐÚNG RỒI: Từ khóa mới được tô đỏ nổi bật!
     const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    return sentence.replace(new RegExp(escaped, "g"), 
-      `<span class="text-rose-600 font-bold bg-rose-50 px-1.5 py-0.5 rounded border border-rose-200/80 shadow-2xs">${keyword}</span>`
+    return cleanSentence.replace(new RegExp(escaped, "g"), 
+      `<span class="text-rose-600 font-bold bg-rose-50 px-1.5 py-0.5 rounded border border-rose-200/80 shadow-2xs">${escapeHtml(keyword)}</span>`
     );
   }
 
@@ -5693,22 +5704,23 @@ function initVocabTypingStudio() {
           </td>
           <td class="py-3 px-4 text-xs font-semibold text-gray-700 border-r border-gray-100 leading-snug">
             <div>${escapeHtml(word.meaning)}</div>
-            <div class="text-[11px] text-gray-400 font-normal mt-0.5">
-              Âm HV: <span class="text-pink-600 font-bold">${escapeHtml(word.hanviet || "")}</span>
-              ${word.pinyin ? `<span class="ml-2 font-mono text-gray-500 font-medium">(${escapeHtml(word.pinyin)})</span>` : ""}
-            </div>
+            ${(word.hanviet && !/[\u4e00-\u9fa5]/.test(word.hanviet) && word.hanviet !== word.hanzi) ? `
+              <div class="text-[11px] text-gray-400 font-normal mt-0.5">
+                Âm HV: <span class="text-pink-600 font-bold">${escapeHtml(word.hanviet)}</span>
+              </div>
+            ` : ""}
           </td>
           <td class="py-3 px-3 text-center border-r border-gray-100" id="check-cell-${word.id}">
             ${checkBadgeHtml}
           </td>
-          <td class="py-3 px-4 text-xs font-chinese text-gray-800 border-r border-gray-100 leading-relaxed font-medium">
+          <td class="py-3 px-4 text-xs font-chinese text-gray-800 border-r border-gray-100 leading-relaxed font-medium" id="example-cell-${word.id}">
             ${highlightedEx}
           </td>
           <td class="py-3 px-4 text-xs font-mono text-gray-500 border-r border-gray-100 leading-relaxed">
-            ${escapeHtml(word.examplePinyin || "")}
+            ${escapeHtml(word.examplePinyin || "").replace(/[\u201c\u201d\u2018\u2019"']/g, "")}
           </td>
           <td class="py-3 px-4 text-xs text-gray-600 border-r border-gray-100 leading-relaxed">
-            ${escapeHtml(word.exampleVi || "")}
+            ${escapeHtml(word.exampleVi || "").replace(/[\u201c\u201d\u2018\u2019"']/g, "")}
           </td>
           <td class="py-3 px-2 text-center">
             <div class="flex items-center justify-center gap-1">
@@ -5766,10 +5778,11 @@ function initVocabTypingStudio() {
 
           <div class="space-y-1">
             <div class="text-xs font-bold text-gray-800 leading-snug">${escapeHtml(word.meaning)}</div>
-            <div class="text-[11px] text-gray-400">
-              Hán Việt: <span class="text-pink-600 font-bold">${escapeHtml(word.hanviet || "")}</span>
-              ${word.pinyin ? `<span class="ml-1.5 font-mono text-gray-500">(${escapeHtml(word.pinyin)})</span>` : ""}
-            </div>
+            ${(word.hanviet && !/[\u4e00-\u9fa5]/.test(word.hanviet) && word.hanviet !== word.hanzi) ? `
+              <div class="text-[11px] text-gray-400">
+                Hán Việt: <span class="text-pink-600 font-bold">${escapeHtml(word.hanviet)}</span>
+              </div>
+            ` : ""}
           </div>
 
           <div>
@@ -5783,9 +5796,9 @@ function initVocabTypingStudio() {
           </div>
 
           <div class="p-3 rounded-2xl bg-gray-50/80 border border-gray-100 space-y-1 text-xs">
-            <div class="font-chinese text-gray-800">${formatHighlightedExample(word.example, word.hanzi, status === "passed")}</div>
-            <div class="font-mono text-[11px] text-gray-400">${escapeHtml(word.examplePinyin || "")}</div>
-            <div class="text-gray-600 text-[11px]">${escapeHtml(word.exampleVi || "")}</div>
+            <div class="font-chinese text-gray-800" id="card-example-${word.id}">${formatHighlightedExample(word.example, word.hanzi, status === "passed")}</div>
+            <div class="font-mono text-[11px] text-gray-400">${escapeHtml(word.examplePinyin || "").replace(/[\u201c\u201d\u2018\u2019"']/g, "")}</div>
+            <div class="text-gray-600 text-[11px]">${escapeHtml(word.exampleVi || "").replace(/[\u201c\u201d\u2018\u2019"']/g, "")}</div>
           </div>
 
           <div class="flex items-center justify-between pt-1">
@@ -5835,8 +5848,19 @@ function initVocabTypingStudio() {
         };
         saveProgressMap(progress);
 
-        // Update check cell in DOM
+        // Update check cell & dynamic example sentence highlighting in DOM
         const checkCell = document.getElementById(`check-cell-${wordId}`);
+        const exampleCell = document.getElementById(`example-cell-${wordId}`);
+        const cardExEl = document.getElementById(`card-example-${wordId}`);
+        const isPassed = (status === "passed");
+
+        if (exampleCell) {
+          exampleCell.innerHTML = formatHighlightedExample(word.example, word.hanzi, isPassed);
+        }
+        if (cardExEl) {
+          cardExEl.innerHTML = formatHighlightedExample(word.example, word.hanzi, isPassed);
+        }
+
         if (checkCell) {
           if (status === "passed") {
             checkCell.innerHTML = `<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-black bg-emerald-100 text-emerald-800 border border-emerald-300 shadow-2xs animate-bounce-short"><i data-lucide="check" class="w-3.5 h-3.5"></i> PASS ✓</span>`;
