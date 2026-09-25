@@ -180,8 +180,75 @@ document.addEventListener("click", (e) => {
 });
 
 /* ==========================================================================
-   3. Dual Profile System (Ngọc Ánh & Bạn Đồng Hành)
+   3. Hệ Thống Tài Khoản Đăng Ký, Đăng Nhập & Bảo Lưu Tiến Độ Vĩnh Viễn
    ========================================================================== */
+const AUTH_USERS_KEY = "mochi_auth_users_v2";
+const AUTH_SESSION_KEY = "mochi_auth_session_v2";
+
+const DEFAULT_AUTH_USERS = {
+  "ngoc_anh": {
+    id: "ngoc_anh",
+    username: "ngoc_anh",
+    password: "123",
+    fullName: "Ngọc Ánh",
+    shortName: "Ngọc Ánh",
+    avatar: "🐰🌸",
+    roleTitle: "Ánh Ánh 🌸",
+    badgeColor: "bg-pink-100 text-pink-700 border-pink-200",
+    goal: "Chinh phục HSK 4 & Vi vu Bắc Kinh",
+    motto: "Cô gái đáng yêu và chăm chỉ nhất! Chinh phục tiếng Trung thật tự tin và tỏa sáng nha Ánh Ánh 💕",
+    greetings: {
+      morning: "Chào buổi sáng rạng rỡ, Ngọc Ánh! Cùng Mochi nạp 15 phút từ vựng tràn đầy năng lượng nha 🌸",
+      afternoon: "Buổi chiều tốt lành Ánh Ánh ơi! Tự thưởng một ly trà sữa và luyện một đoạn hội thoại thật mượt nhé 🧋",
+      evening: "Ngọc Ánh đã chăm chỉ cả ngày rồi! Nghe một mẩu podcast thư giãn trước khi ngủ nhé ✨"
+    },
+    stats: { streak: 7, vocabLearned: 210, lessonsCompleted: 15, targetYear: "Tự tin vi vu Bắc Kinh - Thượng Hải & chốt deal công sở!" }
+  },
+  "companion": {
+    id: "companion",
+    username: "companion",
+    password: "123",
+    fullName: "Bạn Đồng Hành",
+    shortName: "Bạn Đồng Hành",
+    avatar: "🐼✨",
+    roleTitle: "Người Học Cùng 🤍",
+    badgeColor: "bg-purple-100 text-purple-700 border-purple-200",
+    goal: "Đồng hành cùng Ngọc Ánh",
+    motto: "Đồng hành và cùng Ánh Ánh tiến bộ mỗi ngày! Không bỏ cuộc, cùng nhau nói tiếng Trung lưu loát ✨",
+    greetings: {
+      morning: "Chào buổi sáng bạn hiền! Hôm nay mục tiêu học cùng Ngọc Ánh là gì nào? 🌸",
+      afternoon: "Buổi chiều hăng say! Cùng Ánh Ánh ôn lại các từ vựng công sở nhé 💼",
+      evening: "Buổi tối an lành! Cùng tổng kết lại tiến độ học tập hôm nay nhé 🌙"
+    },
+    stats: { streak: 5, vocabLearned: 135, lessonsCompleted: 12, targetYear: "Đồng hành chinh phục tiếng Trung cùng Ngọc Ánh!" }
+  }
+};
+
+function getRegisteredUsers() {
+  try {
+    const raw = localStorage.getItem(AUTH_USERS_KEY);
+    const users = raw ? JSON.parse(raw) : {};
+    return Object.assign({}, DEFAULT_AUTH_USERS, users);
+  } catch (e) {
+    return Object.assign({}, DEFAULT_AUTH_USERS);
+  }
+}
+
+function saveRegisteredUsers(users) {
+  try {
+    localStorage.setItem(AUTH_USERS_KEY, JSON.stringify(users));
+  } catch (e) {
+    console.warn("Save users error:", e);
+  }
+}
+
+function getCurrentUser() {
+  const users = getRegisteredUsers();
+  // Persistent login: session key never expires until localStorage cleared
+  const currentId = localStorage.getItem(AUTH_SESSION_KEY) || localStorage.getItem("mochi_active_profile") || "ngoc_anh";
+  return users[currentId] || users["ngoc_anh"] || Object.values(users)[0];
+}
+
 function initProfileSystem() {
   const profileSelector = document.getElementById("profile-switcher-btn");
   const profileNameEl = document.getElementById("header-profile-name");
@@ -190,43 +257,343 @@ function initProfileSystem() {
   const heroMottoEl = document.getElementById("hero-personal-motto");
   const ownerBadgeEl = document.getElementById("hero-owner-badge");
 
+  // Auth Modal Elements
+  const authModal = document.getElementById("auth-modal");
+  const btnCloseAuthModal = document.getElementById("btn-close-auth-modal");
+  const tabLogin = document.getElementById("tab-auth-login");
+  const tabRegister = document.getElementById("tab-auth-register");
+  const formLogin = document.getElementById("form-auth-login");
+  const formRegister = document.getElementById("form-auth-register");
+  const avatarPicker = document.getElementById("register-avatar-picker");
+  let selectedRegisterAvatar = "🐰🌸";
+
+  // User Profile Modal Elements
+  const profileModal = document.getElementById("user-profile-modal");
+  const btnCloseProfileModal = document.getElementById("btn-close-profile-modal");
+  const userModalAvatar = document.getElementById("user-modal-avatar");
+  const userModalFullname = document.getElementById("user-modal-fullname");
+  const userModalRole = document.getElementById("user-modal-role");
+  const userModalGoal = document.getElementById("user-modal-goal");
+  const userStatTyping = document.getElementById("user-stat-typing-pass");
+  const userStatCards = document.getElementById("user-stat-cards-mastered");
+  const userStatSaved = document.getElementById("user-stat-saved-words");
+  const userStatStreak = document.getElementById("user-stat-streak");
+  const accountsListContainer = document.getElementById("user-modal-accounts-list");
+  const btnOpenRegister = document.getElementById("btn-open-register-from-modal");
+  const btnOpenLogin = document.getElementById("btn-open-login-from-modal");
+  const btnLogout = document.getElementById("btn-logout-current-user");
+
   function getGreetingMessage(profile) {
     const hour = new Date().getHours();
-    if (hour >= 5 && hour < 12) return profile.greetings.morning;
-    if (hour >= 12 && hour < 18) return profile.greetings.afternoon;
-    return profile.greetings.evening;
+    if (hour >= 5 && hour < 12) return profile.greetings?.morning || "Chào buổi sáng!";
+    if (hour >= 12 && hour < 18) return profile.greetings?.afternoon || "Buổi chiều vui vẻ!";
+    return profile.greetings?.evening || "Buổi tối an lành!";
+  }
+
+  function syncActiveUser(user) {
+    activeProfileId = user.id;
+    localStorage.setItem(AUTH_SESSION_KEY, user.id);
+    localStorage.setItem("mochi_active_profile", user.id);
+    if (!MOCHI_DATA.profiles[user.id]) {
+      MOCHI_DATA.profiles[user.id] = user;
+    }
   }
 
   function updateProfileUI() {
-    const currentProfile = MOCHI_DATA.profiles[activeProfileId] || MOCHI_DATA.profiles.ngoc_anh;
-    
-    if (profileNameEl) profileNameEl.textContent = currentProfile.shortName;
-    if (profileAvatarEl) profileAvatarEl.textContent = currentProfile.avatar;
-    if (heroGreetingEl) heroGreetingEl.textContent = getGreetingMessage(currentProfile);
-    if (heroMottoEl) heroMottoEl.textContent = currentProfile.motto;
-    
+    const user = getCurrentUser();
+    syncActiveUser(user);
+
+    if (profileNameEl) profileNameEl.textContent = user.shortName || user.fullName;
+    if (profileAvatarEl) profileAvatarEl.textContent = user.avatar || "🌸";
+    if (heroGreetingEl) heroGreetingEl.textContent = getGreetingMessage(user);
+    if (heroMottoEl) heroMottoEl.textContent = user.motto || "Chăm chỉ tiến bộ mỗi ngày!";
+
     if (ownerBadgeEl) {
-      ownerBadgeEl.className = `inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold shadow-sm transition-all border ${currentProfile.badgeColor}`;
-      ownerBadgeEl.innerHTML = `<span>${currentProfile.avatar}</span> <span>Góc học tập của ${currentProfile.fullName}</span>`;
+      ownerBadgeEl.className = `inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold shadow-sm transition-all border ${user.badgeColor || 'bg-pink-100 text-pink-700 border-pink-200'}`;
+      ownerBadgeEl.innerHTML = `<span>${user.avatar || '🌸'}</span> <span>Góc học tập của ${user.fullName}</span>`;
     }
 
-    initPersonalNotebook();
-    initProgressSection();
-    updateFlashcardMasteryUI();
+    // Refresh sub-views for this user's data
+    if (typeof initPersonalNotebook === "function") initPersonalNotebook();
+    if (typeof initProgressSection === "function") initProgressSection();
+    if (typeof updateFlashcardMasteryUI === "function") updateFlashcardMasteryUI();
+    if (typeof window.refreshTypingStudioForUser === "function") window.refreshTypingStudioForUser();
+    if (typeof window.refreshQuizForUser === "function") window.refreshQuizForUser();
+    if (window.lucide) window.lucide.createIcons();
   }
 
+  function openAuthModal(initialTab = "login") {
+    if (profileModal) profileModal.classList.add("hidden");
+    if (!authModal) return;
+    authModal.classList.remove("hidden");
+    switchAuthTab(initialTab);
+    if (window.lucide) window.lucide.createIcons();
+  }
+
+  function closeAuthModal() {
+    if (authModal) authModal.classList.add("hidden");
+  }
+
+  function switchAuthTab(tab) {
+    if (tab === "login") {
+      tabLogin?.classList.add("bg-white", "text-pink-600", "shadow-2xs");
+      tabLogin?.classList.remove("text-gray-500");
+      tabRegister?.classList.remove("bg-white", "text-pink-600", "shadow-2xs");
+      tabRegister?.classList.add("text-gray-500");
+      formLogin?.classList.remove("hidden");
+      formRegister?.classList.add("hidden");
+    } else {
+      tabRegister?.classList.add("bg-white", "text-pink-600", "shadow-2xs");
+      tabRegister?.classList.remove("text-gray-500");
+      tabLogin?.classList.remove("bg-white", "text-pink-600", "shadow-2xs");
+      tabLogin?.classList.add("text-gray-500");
+      formRegister?.classList.remove("hidden");
+      formLogin?.classList.add("hidden");
+    }
+  }
+
+  function openProfileModal() {
+    const user = getCurrentUser();
+    if (!profileModal) return;
+
+    if (userModalAvatar) userModalAvatar.textContent = user.avatar || "🌸";
+    if (userModalFullname) userModalFullname.textContent = user.fullName;
+    if (userModalRole) userModalRole.textContent = user.roleTitle || "Học viên";
+    if (userModalGoal) userModalGoal.textContent = user.goal || "Chinh phục HSK";
+
+    // Compute live user stats
+    try {
+      const typingProgress = JSON.parse(localStorage.getItem(`mochi_typing_progress_${user.id}`) || "{}");
+      let passedCount = 0;
+      Object.values(typingProgress).forEach(item => {
+        if (item && item.status === "passed") passedCount++;
+      });
+      if (userStatTyping) userStatTyping.textContent = passedCount.toLocaleString("vi-VN");
+    } catch (e) {
+      if (userStatTyping) userStatTyping.textContent = "0";
+    }
+
+    try {
+      const masteredCards = JSON.parse(localStorage.getItem(`mochi_flashcards_mastered_${user.id}`) || "[]");
+      if (userStatCards) userStatCards.textContent = masteredCards.length.toLocaleString("vi-VN");
+    } catch (e) {
+      if (userStatCards) userStatCards.textContent = "0";
+    }
+
+    try {
+      const savedWords = JSON.parse(localStorage.getItem(`mochi_saved_words_${user.id}`) || "[]");
+      if (userStatSaved) userStatSaved.textContent = savedWords.length.toLocaleString("vi-VN");
+    } catch (e) {
+      if (userStatSaved) userStatSaved.textContent = "0";
+    }
+
+    if (userStatStreak) userStatStreak.textContent = `${user.stats?.streak || 7} ngày`;
+
+    // Render registered accounts list for 1-click switching
+    if (accountsListContainer) {
+      const allUsers = getRegisteredUsers();
+      accountsListContainer.innerHTML = Object.values(allUsers).map(u => {
+        const isActive = u.id === user.id;
+        return `
+          <div class="flex items-center justify-between p-2.5 rounded-2xl border transition-all ${
+            isActive ? "bg-pink-50 border-pink-300 shadow-2xs" : "bg-white border-gray-100 hover:bg-gray-50"
+          }">
+            <div class="flex items-center gap-2.5">
+              <span class="text-xl">${u.avatar || '🌸'}</span>
+              <div>
+                <div class="text-xs font-bold text-gray-800 flex items-center gap-1.5">
+                  <span>${u.fullName}</span>
+                  ${isActive ? '<span class="text-[10px] font-black text-pink-600 bg-white px-2 py-0.5 rounded-full border border-pink-200">Đang chọn</span>' : ''}
+                </div>
+                <div class="text-[10px] text-gray-400">@${u.username} • ${u.goal || 'HSK'}</div>
+              </div>
+            </div>
+            ${!isActive ? `
+              <button class="btn-switch-account px-3 py-1 bg-white hover:bg-pink-100 text-pink-700 text-xs font-bold rounded-xl border border-pink-200 transition-colors" data-user-id="${u.id}">
+                Chọn
+              </button>
+            ` : ''}
+          </div>
+        `;
+      }).join("");
+
+      accountsListContainer.querySelectorAll(".btn-switch-account").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const targetId = btn.getAttribute("data-user-id");
+          const allUsers = getRegisteredUsers();
+          const targetUser = allUsers[targetId];
+          if (targetUser) {
+            syncActiveUser(targetUser);
+            updateProfileUI();
+            profileModal.classList.add("hidden");
+            playDingSound(true);
+            showMochiToast(`Đã chuyển sang tài khoản của: ${targetUser.fullName} ✨`);
+          }
+        });
+      });
+    }
+
+    profileModal.classList.remove("hidden");
+    if (window.lucide) window.lucide.createIcons();
+  }
+
+  function closeProfileModal() {
+    if (profileModal) profileModal.classList.add("hidden");
+  }
+
+  // Header profile button click
   if (profileSelector) {
     profileSelector.addEventListener("click", () => {
-      activeProfileId = activeProfileId === "ngoc_anh" ? "companion" : "ngoc_anh";
-      localStorage.setItem("mochi_active_profile", activeProfileId);
-      updateProfileUI();
-      playDingSound(true);
-
-      const profile = MOCHI_DATA.profiles[activeProfileId];
-      showMochiToast(`Đã chuyển sang góc học tập của: ${profile.fullName} ✨`);
+      openProfileModal();
     });
   }
 
+  // Modal triggers
+  if (btnCloseProfileModal) btnCloseProfileModal.onclick = closeProfileModal;
+  if (btnCloseAuthModal) btnCloseAuthModal.onclick = closeAuthModal;
+  if (tabLogin) tabLogin.onclick = () => switchAuthTab("login");
+  if (tabRegister) tabRegister.onclick = () => switchAuthTab("register");
+
+  if (btnOpenRegister) {
+    btnOpenRegister.onclick = () => {
+      closeProfileModal();
+      openAuthModal("register");
+    };
+  }
+
+  if (btnOpenLogin) {
+    btnOpenLogin.onclick = () => {
+      closeProfileModal();
+      openAuthModal("login");
+    };
+  }
+
+  if (btnLogout) {
+    btnLogout.onclick = () => {
+      closeProfileModal();
+      showMochiToast("Đã đăng xuất! Nàng có thể đăng nhập hoặc chọn tài khoản bất kỳ lúc nào 🌸", "info");
+      openAuthModal("login");
+    };
+  }
+
+  // Quick 1-touch login buttons inside Auth Modal
+  document.querySelectorAll(".btn-quick-login-account").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const uId = btn.getAttribute("data-user-id");
+      const allUsers = getRegisteredUsers();
+      const targetUser = allUsers[uId];
+      if (targetUser) {
+        syncActiveUser(targetUser);
+        updateProfileUI();
+        closeAuthModal();
+        playDingSound(true);
+        showMochiToast(`Chào mừng ${targetUser.fullName} đã quay trở lại! 🌸`);
+      }
+    });
+  });
+
+  // Avatar picker in register form
+  if (avatarPicker) {
+    avatarPicker.querySelectorAll(".avatar-option").forEach(btn => {
+      btn.addEventListener("click", () => {
+        avatarPicker.querySelectorAll(".avatar-option").forEach(b => {
+          b.classList.remove("border-2", "border-pink-400", "bg-pink-50");
+          b.classList.add("border", "border-gray-200", "bg-gray-50");
+        });
+        btn.classList.add("border-2", "border-pink-400", "bg-pink-50");
+        btn.classList.remove("border-gray-200", "bg-gray-50");
+        selectedRegisterAvatar = btn.getAttribute("data-avatar") || "🐰🌸";
+      });
+    });
+  }
+
+  // Submit Login Form
+  if (formLogin) {
+    formLogin.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const usernameInput = document.getElementById("login-username")?.value.trim().toLowerCase();
+      const passwordInput = document.getElementById("login-password")?.value;
+
+      if (!usernameInput || !passwordInput) {
+        showMochiToast("Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu!", "error");
+        return;
+      }
+
+      const allUsers = getRegisteredUsers();
+      const foundUser = Object.values(allUsers).find(u => 
+        (u.username && u.username.toLowerCase() === usernameInput) || 
+        (u.fullName && u.fullName.toLowerCase() === usernameInput) ||
+        (u.id && u.id.toLowerCase() === usernameInput)
+      );
+
+      if (foundUser && foundUser.password === passwordInput) {
+        syncActiveUser(foundUser);
+        updateProfileUI();
+        closeAuthModal();
+        playDingSound(true);
+        showMochiToast(`Đăng nhập thành công! Chào mừng ${foundUser.fullName} 💕`);
+      } else {
+        showMochiToast("Tên đăng nhập hoặc mật khẩu chưa đúng. Nàng thử lại nhé!", "error");
+      }
+    });
+  }
+
+  // Submit Register Form
+  if (formRegister) {
+    formRegister.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const fullName = document.getElementById("register-fullname")?.value.trim();
+      const username = document.getElementById("register-username")?.value.trim().toLowerCase();
+      const password = document.getElementById("register-password")?.value;
+      const goal = document.getElementById("register-goal")?.value || "Chinh phục HSK 4";
+
+      if (!fullName || !username || !password) {
+        showMochiToast("Vui lòng điền đầy đủ thông tin để đăng ký!", "error");
+        return;
+      }
+
+      if (password.length < 3) {
+        showMochiToast("Mật khẩu phải có tối thiểu 3 ký tự nhé!", "error");
+        return;
+      }
+
+      const allUsers = getRegisteredUsers();
+      if (allUsers[username] || Object.values(allUsers).some(u => u.username === username)) {
+        showMochiToast("Tên đăng nhập này đã được sử dụng. Nàng chọn tên khác nha!", "error");
+        return;
+      }
+
+      const newUserId = "user_" + Date.now();
+      const newUser = {
+        id: newUserId,
+        username: username,
+        password: password,
+        fullName: fullName,
+        shortName: fullName.split(" ").pop(),
+        avatar: selectedRegisterAvatar,
+        roleTitle: "Học Viên Chăm Chỉ 🌟",
+        badgeColor: "bg-pink-100 text-pink-700 border-pink-200",
+        goal: goal,
+        motto: `Chào mừng ${fullName}! Cùng nhau nói tiếng Trung thật tự tin nhé ✨`,
+        greetings: {
+          morning: `Chào buổi sáng rạng rỡ, ${fullName}! Cùng Mochi bắt đầu bài học nào 🌸`,
+          afternoon: `Buổi chiều vui vẻ, ${fullName}! Tự thưởng một ly trà sữa và luyện tập nhé 🧋`,
+          evening: `Buổi tối thảnh thơi, ${fullName}! Ôn tập nhẹ nhàng trước khi ngủ nha ✨`
+        },
+        stats: { streak: 1, vocabLearned: 0, lessonsCompleted: 0, targetYear: goal }
+      };
+
+      allUsers[newUserId] = newUser;
+      saveRegisteredUsers(allUsers);
+      syncActiveUser(newUser);
+      updateProfileUI();
+      closeAuthModal();
+      playDingSound(true);
+      showMochiToast(`Đăng ký tài khoản thành công! Chào mừng ${fullName} đến với Mochi Chinese 🚀`);
+    });
+  }
+
+  // Initial load
   updateProfileUI();
 }
 
@@ -996,6 +1363,48 @@ function synthesizeDynamicWord(query) {
 }
 
 
+/* ==========================================================================
+   Unified Searchable Vocab Pool (6.200+ Words from HSK 1 - 6)
+   ========================================================================== */
+function getAllSearchableWords() {
+  const bank = (window.MOCHI_VOCAB_BANK && Array.isArray(window.MOCHI_VOCAB_BANK)) ? window.MOCHI_VOCAB_BANK : [];
+  const dict = (window.MOCHI_DATA && MOCHI_DATA.dictionaryBank && Array.isArray(MOCHI_DATA.dictionaryBank)) ? MOCHI_DATA.dictionaryBank : [];
+
+  const seen = new Set();
+  const list = [];
+
+  dict.forEach(w => {
+    if (w && w.hanzi && !seen.has(w.hanzi)) {
+      seen.add(w.hanzi);
+      list.push(w);
+    }
+  });
+
+  bank.forEach(w => {
+    if (w && w.hanzi && !seen.has(w.hanzi)) {
+      seen.add(w.hanzi);
+      list.push({
+        id: w.id || `dict-${w.hanzi}`,
+        hanzi: w.hanzi,
+        pinyin: w.pinyin || "",
+        hanviet: w.hanviet || "",
+        meaning: w.meaning || "",
+        hsk: w.hsk || "HSK",
+        wordType: "Từ vựng chuẩn",
+        strokes: w.hanzi.length,
+        example: w.example || "",
+        exampleVi: w.exampleVi || "",
+        examplePinyin: w.examplePinyin || "",
+        antonym: "",
+        synonym: "",
+        contextTip: `Thuộc cấp độ ${w.hsk || 'HSK'}`
+      });
+    }
+  });
+
+  return list;
+}
+
 function initDictionaryView() {
   const container = document.getElementById("dictionary-cards-container");
   const searchInput = document.getElementById("dict-search-input");
@@ -1038,14 +1447,16 @@ function initDictionaryView() {
   function getFilteredDictionaryWords() {
     const rawQuery = searchInput ? searchInput.value.trim() : "";
     const query = rawQuery.toLowerCase();
-    let words = MOCHI_DATA.dictionaryBank.filter(item => {
+    const allSearchable = getAllSearchableWords();
+
+    let words = allSearchable.filter(item => {
       const matchesFilter = currentDictHskFilter === "all" || 
         (currentDictHskFilter === "Ngành nghề" ? (item.hsk === "Ngành nghề" || (item.wordType && (item.wordType.includes("Logistics") || item.wordType.includes("TMĐT") || item.wordType.includes("Khách sạn") || item.wordType.includes("Thời trang") || item.wordType.includes("Y tế") || item.wordType.includes("Sản xuất")))) : item.hsk === currentDictHskFilter);
       const matchesQuery = !query || 
         item.hanzi.toLowerCase().includes(query) ||
         item.pinyin.toLowerCase().includes(query) ||
-        item.hanviet.toLowerCase().includes(query) ||
-        item.meaning.toLowerCase().includes(query) ||
+        (item.hanviet && item.hanviet.toLowerCase().includes(query)) ||
+        (item.meaning && item.meaning.toLowerCase().includes(query)) ||
         (item.searchTag && item.searchTag.includes(query));
       return matchesFilter && matchesQuery;
     });
@@ -1402,7 +1813,8 @@ function openWordDetailModal(wordId) {
   const body = document.getElementById("word-detail-modal-body");
   if (!modal || !body) return;
 
-  const word = MOCHI_DATA.dictionaryBank.find(w => w.id === wordId);
+  const allSearchable = getAllSearchableWords();
+  const word = allSearchable.find(w => w.id === wordId || w.hanzi === wordId);
   if (!word) return;
 
   body.innerHTML = `
@@ -1510,11 +1922,12 @@ function initSmartSearch() {
       return;
     }
 
-    const matchedVocab = MOCHI_DATA.dictionaryBank.filter(v =>
+    const allSearchable = getAllSearchableWords();
+    const matchedVocab = allSearchable.filter(v =>
       v.hanzi.toLowerCase().includes(q) ||
       v.pinyin.toLowerCase().includes(q) ||
-      v.meaning.toLowerCase().includes(q) ||
-      v.hanviet.toLowerCase().includes(q)
+      (v.meaning && v.meaning.toLowerCase().includes(q)) ||
+      (v.hanviet && v.hanviet.toLowerCase().includes(q))
     );
 
     const matchedLessons = MOCHI_DATA.lessonsCatalog.filter(l =>
@@ -1652,12 +2065,14 @@ function initFlashcardVault() {
   const btnMaster = document.getElementById("btn-flashcard-master");
   const btnReview = document.getElementById("btn-flashcard-review");
 
-  if (!cardInner) return;
+  const allVocabBank = (window.MOCHI_VOCAB_BANK && Array.isArray(window.MOCHI_VOCAB_BANK) && window.MOCHI_VOCAB_BANK.length > 0)
+    ? window.MOCHI_VOCAB_BANK
+    : (MOCHI_DATA.vocabBank || []);
 
-  currentFlashcardDeck = [...MOCHI_DATA.vocabBank];
+  currentFlashcardDeck = [...allVocabBank];
   flashcardIndex = 0;
 
-  const categories = ["Tất cả", "Đời sống", "Trà sữa", "Thả thính", "Mua sắm", "Công sở", "Thành ngữ", "Du lịch"];
+  const categories = ["Tất cả (6.200 từ)", "HSK 1", "HSK 2", "HSK 3", "HSK 4", "HSK 5", "HSK 6", "Đời sống", "Công sở", "Thành ngữ", "Du lịch"];
   if (filterContainer) {
     filterContainer.innerHTML = categories.map((cat, idx) => `
       <button class="flashcard-filter-btn px-3.5 py-1.5 rounded-full text-xs font-bold border transition-all ${
@@ -1679,10 +2094,15 @@ function initFlashcardVault() {
       btn.classList.remove("bg-white", "text-gray-600", "border-gray-200");
 
       const selectedCat = btn.getAttribute("data-cat");
-      if (selectedCat === "Tất cả") {
-        currentFlashcardDeck = [...MOCHI_DATA.vocabBank];
+      if (selectedCat.startsWith("Tất cả")) {
+        currentFlashcardDeck = [...allVocabBank];
+      } else if (selectedCat.startsWith("HSK")) {
+        currentFlashcardDeck = allVocabBank.filter(v => v.hsk === selectedCat);
       } else {
-        currentFlashcardDeck = MOCHI_DATA.vocabBank.filter(v => v.cat === selectedCat);
+        currentFlashcardDeck = allVocabBank.filter(v => (v.cat === selectedCat) || (v.meaning && v.meaning.toLowerCase().includes(selectedCat.toLowerCase())));
+        if (currentFlashcardDeck.length === 0) {
+          currentFlashcardDeck = allVocabBank.slice(0, 50);
+        }
       }
       flashcardIndex = 0;
       renderCurrentFlashcard();
@@ -1705,7 +2125,7 @@ function initFlashcardVault() {
     cardFront.innerHTML = `
       <div class="flex items-center justify-between">
         <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-purple-50 text-purple-600 border border-purple-100">
-          ${item.cat}
+          ${item.hsk || item.cat || 'Từ vựng'}
         </span>
         <div class="flex items-center gap-1.5">
           ${isMastered ? '<span class="text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">Đã thuộc ✔️</span>' : ''}
@@ -1836,7 +2256,8 @@ function updateFlashcardMasteryUI() {
   const statEl = document.getElementById("flashcard-mastery-stat");
   if (!statEl) return;
   const masteredList = JSON.parse(localStorage.getItem(`mochi_flashcards_mastered_${activeProfileId}`) || "[]");
-  const total = MOCHI_DATA.vocabBank ? MOCHI_DATA.vocabBank.length : 0;
+  const allBank = (window.MOCHI_VOCAB_BANK && Array.isArray(window.MOCHI_VOCAB_BANK)) ? window.MOCHI_VOCAB_BANK : (MOCHI_DATA.vocabBank || []);
+  const total = allBank.length;
   statEl.textContent = `Đã thuộc: ${masteredList.length} / ${total}`;
 }
 
@@ -2549,39 +2970,188 @@ function initWritingCanvas() {
     };
   });
 
-  document.querySelectorAll(".select-char-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      document.querySelectorAll(".select-char-btn").forEach(b => {
-        b.classList.remove("bg-pink-500", "text-white", "border-pink-500", "shadow-sm");
-        b.classList.add("bg-white", "text-gray-700", "border-pink-100");
+  // Helper to load a character into Mễ Tự Cách writing canvas
+  function applyCharToCanvas(char, pinyin, hanviet, meaning, strokes, radical, tip) {
+    const ghostChar = document.getElementById("canvas-ghost-char");
+    if (ghostChar) ghostChar.textContent = char;
+    const displayEl = document.getElementById("current-char-display");
+    if (displayEl) displayEl.textContent = char;
+    const pinyinEl = document.getElementById("current-char-pinyin");
+    if (pinyinEl) pinyinEl.textContent = `(${pinyin})`;
+    const hanvietEl = document.getElementById("current-char-hanviet");
+    if (hanvietEl) hanvietEl.textContent = hanviet;
+    const meaningEl = document.getElementById("current-char-meaning");
+    if (meaningEl) meaningEl.textContent = `${meaning} • Bộ thủ: ${radical} (${strokes} nét)`;
+    const tipEl = document.getElementById("current-char-tip");
+    if (tipEl) tipEl.textContent = `💡 Mẹo: ${tip}`;
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    speakChinese(char);
+  }
+
+  // Curated & Dynamic character libraries for Mễ Tự Cách practice
+  const CHAR_LIBRARIES = {
+    romantic: [
+      { char: "爱", pinyin: "ài", hanviet: "Ái", meaning: "Tình yêu", radical: "爪", strokes: 10, tip: "Chữ Ái có chữ Tâm (心) ở giữa, thể hiện yêu thương từ đáy lòng." },
+      { char: "美", pinyin: "měi", hanviet: "Mỹ", meaning: "Xinh đẹp", radical: "羊", strokes: 9, tip: "Bộ Dương (dê béo) ở trên, chữ Đại (to lớn) ở dưới -> vẻ đẹp viên mãn." },
+      { char: "丽", pinyin: "lì", hanviet: "Lệ", meaning: "Diễm lệ", radical: "一", strokes: 7, tip: "Đẹp đẽ, hoa lệ, thanh tú nhẹ nhàng." },
+      { char: "梦", pinyin: "mèng", hanviet: "Mộng", meaning: "Ước mơ", radical: "木", strokes: 11, tip: "Hai cây (rừng rậm) che mờ dưới ánh trăng -> giấc mộng êm đềm." },
+      { char: "悦", pinyin: "yuè", hanviet: "Duyệt", meaning: "Vui vẻ", radical: "忄", strokes: 10, tip: "Bộ Tâm đứng kết hợp chữ Đoái -> niềm vui xuất phát từ tâm." },
+      { char: "晴", pinyin: "qíng", hanviet: "Tình", meaning: "Trời nắng đẹp", radical: "日", strokes: 12, tip: "Mặt trời (Nhật) chiếu sáng thanh bình (Thanh)." },
+      { char: "怡", pinyin: "yí", hanviet: "Di", meaning: "Thảnh thơi", radical: "忄", strokes: 8, tip: "Tâm trạng an vui, thảnh thơi, hài hòa." },
+      { char: "甜", pinyin: "tián", hanviet: "Điềm", meaning: "Ngọt ngào", radical: "甘", strokes: 11, tip: "Bộ Cam (ngọt) và Lưỡi (Thiệt) -> vị ngọt ngào nơi đầu lưỡi." },
+      { char: "欣", pinyin: "xīn", hanviet: "Hân", meaning: "Hân hoan", radical: "欠", strokes: 8, tip: "Niềm vui mừng khôn xiết, hân hoan rạng rỡ." },
+      { char: "雅", pinyin: "yǎ", hanviet: "Nhã", meaning: "Tao nhã", radical: "隹", strokes: 12, tip: "Thanh nhã, đoan trang, lịch thiệp." },
+      { char: "静", pinyin: "jìng", hanviet: "Tĩnh", meaning: "Yên tĩnh", radical: "青", strokes: 14, tip: "Tâm tĩnh lặng như mặt nước hồ mùa thu." },
+      { char: "柔", pinyin: "róu", hanviet: "Nhu", meaning: "Dịu dàng", radical: "木", strokes: 9, tip: "Mềm mại, dịu dàng, uyển chuyển như cành liễu." },
+      { char: "暖", pinyin: "nuǎn", hanviet: "Noãn", meaning: "Ấm áp", radical: "日", strokes: 13, tip: "Có ánh mặt trời chiếu sáng sưởi ấm con tim." },
+      { char: "恋", pinyin: "liàn", hanviet: "Luyến", meaning: "Luyến ái", radical: "心", strokes: 10, tip: "Tình yêu thương nhớ nhung tha thiết." }
+    ],
+    calligraphy: [
+      { char: "永", pinyin: "yǒng", hanviet: "Vĩnh", meaning: "Vĩnh cửu", radical: "水", strokes: 5, tip: "Chữ kinh điển 'Vĩnh tự bát pháp' chứa đủ 8 nét cơ bản trong thư pháp Hán tự." },
+      { char: "龙", pinyin: "lóng", hanviet: "Long", meaning: "Con rồng", radical: "龙", strokes: 5, tip: "Biểu tượng sức mạnh, quyền uy và may mắn cát tường." },
+      { char: "福", pinyin: "fú", hanviet: "Phúc", meaning: "Hạnh phúc, may mắn", radical: "礻", strokes: 13, tip: "Bộ Thị (cầu trời) có ruộng (Điền), có miệng ăn (Khẩu) -> phúc ấm no." },
+      { char: "和", pinyin: "hé", hanviet: "Hòa", meaning: "Hòa thuận, bình an", radical: "口", strokes: 8, tip: "Hòa khí sinh tài, dĩ hòa vi quý." },
+      { char: "德", pinyin: "dé", hanviet: "Đức", meaning: "Đạo đức, đức hạnh", radical: "彳", strokes: 15, tip: "Chim chích mà đậu cành tre, thập trên tứ dưới nhất đè chữ tâm." },
+      { char: "智", pinyin: "zhì", hanviet: "Trí", meaning: "Trí tuệ, thông thái", radical: "日", strokes: 12, tip: "Hiểu biết sáng tỏ như ánh nhật nguyệt." },
+      { char: "道", pinyin: "dào", hanviet: "Đạo", meaning: "Đạo lý, con đường", radical: "辶", strokes: 12, tip: "Thủ (đầu óc) và Quai xước (bước đi) -> con đường dẫn đến chân lý." },
+      { char: "寿", pinyin: "shòu", hanviet: "Thọ", meaning: "Trường thọ", radical: "寸", strokes: 7, tip: "Sống lâu trăm tuổi, bình an vô sự." },
+      { char: "泰", pinyin: "tài", hanviet: "Thái", meaning: "An thái, vững vàng", radical: "水", strokes: 10, tip: "Vững vàng như núi Thái Sơn, thái bình thịnh trị." },
+      { char: "祥", pinyin: "xiáng", hanviet: "Tường", meaning: "Cát tường", radical: "礻", strokes: 10, tip: "Điềm lành, may mắn và hạnh phúc sum vầy." },
+      { char: "顺", pinyin: "shùn", hanviet: "Thuận", meaning: "Thuận lợi", radical: "页", strokes: 9, tip: "Thuận buồm xuôi gió, vạn sự hanh thông." },
+      { char: "康", pinyin: "kāng", hanviet: "Khang", meaning: "An khang", radical: "广", strokes: 11, tip: "Thân tâm an khang, sức khỏe dồi dào." }
+    ],
+    hsk: [
+      { char: "好", pinyin: "hǎo", hanviet: "Hảo", meaning: "Tốt, đẹp", radical: "女", strokes: 6, tip: "Chữ Nữ bên cạnh chữ Tử (con) -> người mẹ bế con là điều tuyệt vời nhất." },
+      { char: "学", pinyin: "xué", hanviet: "Học", meaning: "Học tập", radical: "子", strokes: 8, tip: "Học tập để mở mang trí tuệ, rèn luyện nhân cách." },
+      { char: "看", pinyin: "kàn", hanviet: "Khán", meaning: "Nhìn, xem", radical: "目", strokes: 9, tip: "Tay (Thủ) che trên mắt (Mục) để nhìn ra xa." },
+      { char: "说", pinyin: "shuō", hanviet: "Thuyết", meaning: "Nói", radical: "讠", strokes: 9, tip: "Bộ Ngôn (lời nói) thể hiện diễn đạt bằng ngôn ngữ." },
+      { char: "听", pinyin: "tīng", hanviet: "Thính", meaning: "Nghe", radical: "口", strokes: 7, tip: "Dùng tai lắng nghe mọi thanh âm cuộc sống." },
+      { char: "写", pinyin: "xiě", hanviet: "Tả", meaning: "Viết", radical: "冖", strokes: 5, tip: "Viết từng nét chữ ngay ngắn, nắn nót." },
+      { char: "想", pinyin: "xiǎng", hanviet: "Tưởng", meaning: "Nghĩ, nhớ, muốn", radical: "心", strokes: 13, tip: "Tướng mạo người thương khắc sâu trong tim (Tâm) -> nhớ nhung." },
+      { char: "吃", pinyin: "chī", hanviet: "Cật", meaning: "Ăn", radical: "口", strokes: 6, tip: "Bộ Khẩu (miệng) dùng để ăn uống ngon miệng." },
+      { char: "喝", pinyin: "hē", hanviet: "Hạt", meaning: "Uống", radical: "口", strokes: 12, tip: "Uống ngụm trà thơm hay ngụm nước mát lành." },
+      { char: "买", pinyin: "mǎi", hanviet: "Mãi", meaning: "Mua", radical: "乙", strokes: 6, tip: "Mua hàng hóa, vật phẩm cần thiết." },
+      { char: "做", pinyin: "zuò", hanviet: "Tố", meaning: "Làm, chế tác", radical: "亻", strokes: 11, tip: "Người (Nhân đứng) bắt tay vào làm việc chăm chỉ." },
+      { char: "高", pinyin: "gāo", hanviet: "Cao", meaning: "Cao lớn", radical: "高", strokes: 10, tip: "Hình tháp cao chọc trời, vững chãi kiêu hãnh." },
+      { char: "新", pinyin: "xīn", hanviet: "Tân", meaning: "Mới mẻ", radical: "斤", strokes: 13, tip: "Cắt cành cây mới để đón chào điều tươi mới." },
+      { char: "家", pinyin: "jiā", hanviet: "Gia", meaning: "Nhà, gia đình", radical: "宀", strokes: 10, tip: "Dưới mái nhà (Miên) có cuộc sống ấm no sum vầy." },
+      { char: "友", pinyin: "yǒu", hanviet: "Hữu", meaning: "Bạn bè", radical: "又", strokes: 4, tip: "Hai bàn tay đan vào nhau cùng chung bước." },
+      { char: "钱", pinyin: "qián", hanviet: "Tiền", meaning: "Tiền bạc", radical: "钅", strokes: 10, tip: "Bộ Kim (kim loại, tiền tệ) -> chi tiêu tài chính." }
+    ],
+    radicals: [
+      { char: "亻", pinyin: "rén", hanviet: "Nhân đứng", meaning: "Con người", radical: "亻", strokes: 2, tip: "Biến thể của chữ Nhân (人), đứng ở bên trái các chữ liên quan đến người." },
+      { char: "氵", pinyin: "shuǐ", hanviet: "Ba chấm thủy", meaning: "Nước, chất lỏng", radical: "氵", strokes: 3, tip: "Biến thể của chữ Thủy (水), xuất hiện trong các chữ về sông, hồ, biển, trà..." },
+      { char: "扌", pinyin: "shǒu", hanviet: "Đề thủ", meaning: "Bàn tay, thao tác", radical: "扌", strokes: 3, tip: "Biến thể của chữ Thủ (手), xuất hiện trong các động từ dùng tay (đánh, giữ, ôm...)." },
+      { char: "口", pinyin: "kǒu", hanviet: "Khẩu", meaning: "Cái miệng, lối vào", radical: "口", strokes: 3, tip: "Hình cái miệng mở, dùng trong các chữ liên quan đến ăn, nói, hô, vị giác." },
+      { char: "心", pinyin: "xīn", hanviet: "Tâm", meaning: "Trái tim, tình cảm", radical: "心", strokes: 4, tip: "Hình trái tim với tâm tư, suy nghĩ và tình cảm bên trong." },
+      { char: "木", pinyin: "mù", hanviet: "Mộc", meaning: "Cây cối, gỗ", radical: "木", strokes: 4, tip: "Hình thân cây có rễ cắm sâu dưới đất và cành xòe bên trên." },
+      { char: "艹", pinyin: "cǎo", hanviet: "Thảo đầu", meaning: "Cỏ cây, hoa lá", radical: "艹", strokes: 3, tip: "Nằm trên đầu các chữ liên quan đến cỏ, hoa, rau củ, thảo mộc." },
+      { char: "讠", pinyin: "yán", hanviet: "Ngôn", meaning: "Lời nói, ngôn ngữ", radical: "讠", strokes: 2, tip: "Các chữ liên quan đến nói, đọc, từ ngữ, tranh luận (thuyết, ngữ, đàm...)." },
+      { char: "辶", pinyin: "chuò", hanviet: "Quai xước", meaning: "Bước đi, di chuyển", radical: "辶", strokes: 3, tip: "Bàn chân bước đi trên con đường, gặp trong chữ: tiến, viễn, cận, đạo..." },
+      { char: "女", pinyin: "nǚ", hanviet: "Nữ", meaning: "Phụ nữ, phái đẹp", radical: "女", strokes: 3, tip: "Hình người phụ nữ đoan trang, xuất hiện trong các chữ: mẹ, chị, hảo, muội..." },
+      { char: "宀", pinyin: "mián", hanviet: "Miên", meaning: "Mái nhà, tổ ấm", radical: "宀", strokes: 3, tip: "Mái che của một ngôi nhà, xuất hiện trong chữ: gia, an, thất, định..." },
+      { char: "日", pinyin: "rì", hanviet: "Nhật", meaning: "Mặt trời, ngày", radical: "日", strokes: 4, tip: "Hình mặt trời tròn với điểm chấm ở tâm, chỉ thời gian, ánh sáng." },
+      { char: "月", pinyin: "yuè", hanviet: "Nguyệt", meaning: "Mặt trăng, tháng", radical: "月", strokes: 4, tip: "Hình mảnh trăng khuyết, cũng là bộ nhục (chỉ các bộ phận cơ thể người)." },
+      { char: "火", pinyin: "huǒ", hanviet: "Hỏa", meaning: "Ngọn lửa, nhiệt", radical: "火", strokes: 4, tip: "Hình ngọn lửa bùng cháy, sinh ra nhiệt lượng ấm áp." }
+    ]
+  };
+
+  function renderCharLibrary(catKey) {
+    const grid = document.getElementById("char-library-grid");
+    if (!grid) return;
+    const items = CHAR_LIBRARIES[catKey] || CHAR_LIBRARIES.romantic;
+    grid.innerHTML = items.map((item, idx) => `
+      <button class="select-char-btn w-8 h-8 rounded-lg border text-sm font-chinese font-bold transition-all flex items-center justify-center ${idx === 0 && catKey === 'romantic' ? 'bg-pink-500 text-white border-pink-500 shadow-sm' : 'bg-white text-gray-700 border-pink-100 hover:border-pink-300'}"
+        data-char="${item.char}"
+        data-pinyin="${item.pinyin}"
+        data-hanviet="${item.hanviet}"
+        data-meaning="${item.meaning}"
+        data-strokes="${item.strokes}"
+        data-radical="${item.radical}"
+        data-tip="${item.tip}">
+        ${item.char}
+      </button>
+    `).join("");
+
+    grid.querySelectorAll(".select-char-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        grid.querySelectorAll(".select-char-btn").forEach(b => {
+          b.classList.remove("bg-pink-500", "text-white", "border-pink-500", "shadow-sm");
+          b.classList.add("bg-white", "text-gray-700", "border-pink-100");
+        });
+        btn.classList.add("bg-pink-500", "text-white", "border-pink-500", "shadow-sm");
+        btn.classList.remove("bg-white", "text-gray-700", "border-pink-100");
+
+        const char = btn.getAttribute("data-char");
+        const pinyin = btn.getAttribute("data-pinyin");
+        const hanviet = btn.getAttribute("data-hanviet");
+        const meaning = btn.getAttribute("data-meaning");
+        const strokes = btn.getAttribute("data-strokes");
+        const radical = btn.getAttribute("data-radical");
+        const tip = btn.getAttribute("data-tip");
+
+        applyCharToCanvas(char, pinyin, hanviet, meaning, strokes, radical, tip);
       });
-      btn.classList.add("bg-pink-500", "text-white", "border-pink-500", "shadow-sm");
-      btn.classList.remove("bg-white", "text-gray-700", "border-pink-100");
-
-      const char = btn.getAttribute("data-char");
-      const pinyin = btn.getAttribute("data-pinyin");
-      const hanviet = btn.getAttribute("data-hanviet");
-      const meaning = btn.getAttribute("data-meaning");
-      const strokes = btn.getAttribute("data-strokes");
-      const radical = btn.getAttribute("data-radical");
-      const tip = btn.getAttribute("data-tip");
-
-      if (ghostChar) ghostChar.textContent = char;
-      const displayEl = document.getElementById("current-char-display");
-      if (displayEl) displayEl.textContent = char;
-      const pinyinEl = document.getElementById("current-char-pinyin");
-      if (pinyinEl) pinyinEl.textContent = `(${pinyin})`;
-      const hanvietEl = document.getElementById("current-char-hanviet");
-      if (hanvietEl) hanvietEl.textContent = hanviet;
-      const meaningEl = document.getElementById("current-char-meaning");
-      if (meaningEl) meaningEl.textContent = `${meaning} • Bộ thủ: ${radical} (${strokes} nét)`;
-      const tipEl = document.getElementById("current-char-tip");
-      if (tipEl) tipEl.textContent = `💡 Mẹo: ${tip}`;
-
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      speakChinese(char);
     });
+  }
+
+  // Bind tab switching
+  document.querySelectorAll(".btn-char-lib-tab").forEach(tabBtn => {
+    tabBtn.onclick = () => {
+      document.querySelectorAll(".btn-char-lib-tab").forEach(b => {
+        b.classList.remove("active", "bg-pink-100", "text-pink-700");
+        b.classList.add("bg-gray-100", "text-gray-600");
+      });
+      tabBtn.classList.add("active", "bg-pink-100", "text-pink-700");
+      tabBtn.classList.remove("bg-gray-100", "text-gray-600");
+
+      const catKey = tabBtn.getAttribute("data-cat");
+      renderCharLibrary(catKey);
+    };
   });
+
+  // Custom Hanzi input
+  const customInput = document.getElementById("input-custom-hanzi");
+  const loadCustomBtn = document.getElementById("btn-load-custom-hanzi");
+
+  function handleCustomHanziLoad() {
+    if (!customInput) return;
+    const raw = customInput.value.trim();
+    if (!raw) {
+      showMochiToast("Nàng hãy gõ 1 hoặc 2 chữ Hán cần tập viết nhé! 🌸");
+      return;
+    }
+    const hanzi = raw.match(/[\u4e00-\u9fa5]+/)?.[0] || raw.charAt(0);
+    let found = null;
+    if (window.MOCHI_VOCAB_BANK && Array.isArray(window.MOCHI_VOCAB_BANK)) {
+      found = window.MOCHI_VOCAB_BANK.find(w => w.hanzi === hanzi || w.hanzi.includes(hanzi));
+    }
+    if (!found && MOCHI_DATA.dictionaryBank) {
+      found = MOCHI_DATA.dictionaryBank.find(w => w.hanzi === hanzi || w.hanzi.includes(hanzi));
+    }
+
+    const pinyin = found?.pinyin || (typeof computeDynamicBreakdown === "function" ? computeDynamicBreakdown(hanzi)[0]?.pinyin : "hàn zì") || "hàn zì";
+    const hanviet = found?.hanviet || (typeof computeDynamicHanViet === "function" ? computeDynamicHanViet(hanzi) : "Hán ngữ") || "Hán ngữ";
+    const meaning = found?.meaning || `Mục từ "${hanzi}"`;
+    const strokes = Math.min(32, Math.max(3, hanzi.length * 6));
+    const radical = hanzi.charAt(0);
+    const tip = found?.tip || `Nàng hãy viết theo thứ tự: từ trên xuống dưới, từ trái sang phải, ngang trước sổ sau nhé!`;
+
+    applyCharToCanvas(hanzi, pinyin, hanviet, meaning, strokes, radical, tip);
+    showMochiToast(`Đã nạp chữ "${hanzi}" vào ô Mễ Tự Cách cho nàng tập viết 🌸`);
+    customInput.value = "";
+  }
+
+  if (loadCustomBtn) loadCustomBtn.onclick = handleCustomHanziLoad;
+  if (customInput) {
+    customInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") handleCustomHanziLoad();
+    });
+  }
+
+  // Initial render default to romantic
+  renderCharLibrary("romantic");
 }
 
 function loadCharacterToWritingCanvas(char, wordData) {
@@ -2971,92 +3541,232 @@ function initLessonModal() {
 }
 
 /* ==========================================================================
-   16. Section Luyện Tập Mini Quiz (Interactive Practice Engine)
+   16. Section Luyện Tập Mini Quiz Vô Tận (Endless Dynamic Quiz Engine - 6.200 Từ Vựng)
    ========================================================================== */
 function initInteractivePractice() {
   const container = document.getElementById("practice-quiz-container");
   if (!container) return;
 
-  let currentQuizIdx = 0;
-  const quizzes = MOCHI_DATA.interactiveQuizzes;
+  let currentQuizLevel = "all"; // 'all' or 'HSK 1' - 'HSK 6'
+  let currentQuestion = null;
+  let hasAnswered = false;
 
-  function renderCurrentQuiz() {
-    const q = quizzes[currentQuizIdx];
-    let quizBodyHTML = "";
+  function getQuizStats() {
+    try {
+      const raw = localStorage.getItem(`mochi_quiz_stats_${activeProfileId}`);
+      if (raw) return JSON.parse(raw);
+    } catch (e) {}
+    return { score: 0, streak: 0, bestStreak: 0, total: 0, correct: 0 };
+  }
 
-    if (q.type === "multiple-choice" || q.type === "audio-choice") {
-      quizBodyHTML = `
-        <div class="mb-4">
+  function saveQuizStats(stats) {
+    try {
+      localStorage.setItem(`mochi_quiz_stats_${activeProfileId}`, JSON.stringify(stats));
+    } catch (e) {}
+  }
+
+  function getVocabPool() {
+    const bank = (window.MOCHI_VOCAB_BANK && Array.isArray(window.MOCHI_VOCAB_BANK) && window.MOCHI_VOCAB_BANK.length > 0)
+      ? window.MOCHI_VOCAB_BANK
+      : ((MOCHI_DATA.dictionaryBank && MOCHI_DATA.dictionaryBank.length > 0) ? MOCHI_DATA.dictionaryBank : MOCHI_DATA.vocabBank);
+
+    if (currentQuizLevel === "all") return bank;
+    const filtered = bank.filter(w => w.hsk === currentQuizLevel);
+    return filtered.length >= 4 ? filtered : bank;
+  }
+
+  function generateQuestion() {
+    hasAnswered = false;
+    const pool = getVocabPool();
+    if (!pool || pool.length < 4) {
+      return null;
+    }
+
+    // Pick 1 target word
+    const targetIdx = Math.floor(Math.random() * pool.length);
+    const targetWord = pool[targetIdx];
+
+    // Pick 3 random distinct distractors
+    const distractors = [];
+    const usedIndices = new Set([targetIdx]);
+    let attempts = 0;
+    while (distractors.length < 3 && attempts < 100) {
+      attempts++;
+      const randIdx = Math.floor(Math.random() * pool.length);
+      if (!usedIndices.has(randIdx)) {
+        usedIndices.add(randIdx);
+        const cand = pool[randIdx];
+        if (cand.hanzi !== targetWord.hanzi && cand.meaning !== targetWord.meaning) {
+          distractors.push(cand);
+        }
+      }
+    }
+
+    // Decide question type:
+    // 0: Hanzi -> Vietnamese meaning
+    // 1: Vietnamese meaning -> Hanzi
+    // 2: Listening audio (TTS) -> Hanzi
+    // 3: Fill in sentence blank (if example available)
+    let qType = Math.floor(Math.random() * 4);
+    if (qType === 3 && (!targetWord.example || !targetWord.example.includes(targetWord.hanzi))) {
+      qType = 0;
+    }
+
+    let title = "";
+    let prompt = "";
+    let audioText = "";
+    let options = [];
+
+    if (qType === 0) {
+      title = "CHỌN NGHĨA TIẾNG VIỆT ĐÚNG 🎯";
+      prompt = `Từ Hán tự này có nghĩa là gì?`;
+      audioText = targetWord.hanzi;
+      options = [
+        { text: targetWord.meaning, isCorrect: true, hanzi: targetWord.hanzi },
+        ...distractors.map(d => ({ text: d.meaning, isCorrect: false, hanzi: d.hanzi }))
+      ];
+    } else if (qType === 1) {
+      title = "CHỌN TỪ TIẾNG TRUNG PHÙ HỢP 🌸";
+      prompt = `Từ tiếng Trung nào có nghĩa là: <strong class="text-pink-600">“${targetWord.meaning}”</strong>?`;
+      options = [
+        { text: `${targetWord.hanzi} (${targetWord.pinyin})`, isCorrect: true, hanzi: targetWord.hanzi },
+        ...distractors.map(d => ({ text: `${d.hanzi} (${d.pinyin})`, isCorrect: false, hanzi: d.hanzi }))
+      ];
+    } else if (qType === 2) {
+      title = "LUYỆN TAI NGHE BẢN XỨ 🎧";
+      prompt = `Bấm nút loa để nghe phát âm, sau đó chọn chữ Hán chính xác:`;
+      audioText = targetWord.hanzi;
+      options = [
+        { text: `${targetWord.hanzi}`, isCorrect: true, subText: targetWord.meaning, hanzi: targetWord.hanzi },
+        ...distractors.map(d => ({ text: `${d.hanzi}`, isCorrect: false, subText: d.meaning, hanzi: d.hanzi }))
+      ];
+    } else {
+      title = "ĐIỀN TỪ VÀO CÂU VÍ DỤ 📝";
+      const masked = targetWord.example.replace(new RegExp(targetWord.hanzi, "g"), ` <span class="px-2 py-0.5 border-b-2 border-dashed border-pink-500 font-bold text-pink-600 bg-pink-50 rounded">[ ______ ]</span> `);
+      prompt = `Điền từ thích hợp vào chỗ trống trong câu:<br><div class="font-chinese text-base sm:text-lg text-gray-800 font-medium my-2 p-3 bg-pink-50/50 rounded-xl border border-pink-100">${masked}</div><div class="text-xs text-gray-500">Dịch nghĩa: ${targetWord.exampleVi || targetWord.meaning}</div>`;
+      audioText = targetWord.example;
+      options = [
+        { text: `${targetWord.hanzi} (${targetWord.pinyin})`, isCorrect: true, hanzi: targetWord.hanzi },
+        ...distractors.map(d => ({ text: `${d.hanzi} (${d.pinyin})`, isCorrect: false, hanzi: d.hanzi }))
+      ];
+    }
+
+    // Shuffle options
+    options.sort(() => Math.random() - 0.5);
+
+    return {
+      type: qType,
+      title,
+      prompt,
+      audioText,
+      targetWord,
+      options
+    };
+  }
+
+  function renderQuizUI() {
+    const stats = getQuizStats();
+    if (!currentQuestion) {
+      currentQuestion = generateQuestion();
+    }
+    const q = currentQuestion;
+    if (!q) {
+      container.innerHTML = `<div class="p-6 text-center text-xs text-gray-400">Đang tải kho từ vựng...</div>`;
+      return;
+    }
+
+    const accuracy = stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : 100;
+
+    container.innerHTML = `
+      <div class="mochi-card p-6 sm:p-8">
+        <!-- Header: Stats Bar & Level Selector -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-gray-100">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="badge-pill bg-purple-100 text-purple-700 font-bold">Mini Quiz Vô Tận</span>
+              <span class="text-xs text-gray-400 font-semibold">• Kho 6.200 từ vựng</span>
+            </div>
+            <!-- Level Tabs -->
+            <div class="flex flex-wrap gap-1.5" id="quiz-level-filter-bar">
+              ${[
+                { id: "all", label: "Tất cả" },
+                { id: "HSK 1", label: "HSK 1" },
+                { id: "HSK 2", label: "HSK 2" },
+                { id: "HSK 3", label: "HSK 3" },
+                { id: "HSK 4", label: "HSK 4" },
+                { id: "HSK 5", label: "HSK 5" },
+                { id: "HSK 6", label: "HSK 6" }
+              ].map(lvl => `
+                <button class="quiz-level-btn px-2.5 py-1 rounded-full text-xs font-bold border transition-all ${
+                  lvl.id === currentQuizLevel ? 'bg-[#F59BB0] text-white border-[#F59BB0] shadow-xs' : 'bg-white text-gray-600 border-gray-200 hover:border-pink-300'
+                }" data-level="${lvl.id}">
+                  ${lvl.label}
+                </button>
+              `).join("")}
+            </div>
+          </div>
+
+          <!-- Live Score Indicators -->
+          <div class="flex items-center gap-2 sm:gap-3 bg-[#FFF9FB] p-2.5 sm:p-3 rounded-2xl border border-pink-100 self-start sm:self-center">
+            <div class="text-center px-2 border-r border-pink-100">
+              <div class="text-[10px] uppercase font-bold text-gray-400">Điểm số</div>
+              <div class="text-sm sm:text-base font-black text-pink-600">⭐ ${stats.score}</div>
+            </div>
+            <div class="text-center px-2 border-r border-pink-100">
+              <div class="text-[10px] uppercase font-bold text-gray-400">Chuỗi đúng</div>
+              <div class="text-sm sm:text-base font-black text-amber-500">🔥 ${stats.streak} <span class="text-[10px] font-normal text-gray-400">(Kỷ lục: ${stats.bestStreak})</span></div>
+            </div>
+            <div class="text-center px-2">
+              <div class="text-[10px] uppercase font-bold text-gray-400">Tỉ lệ đúng</div>
+              <div class="text-sm sm:text-base font-black text-emerald-600">🎯 ${stats.correct}/${stats.total} (${accuracy}%)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Question Body -->
+        <div class="mb-5">
           <div class="text-xs font-bold text-[#A98CF0] uppercase tracking-wider mb-1">${q.title}</div>
-          <div class="text-base sm:text-lg font-bold text-gray-800 mb-2">${q.prompt}</div>
+          <div class="text-base sm:text-lg font-bold text-gray-800 mb-3">${q.prompt}</div>
 
-          ${q.audioText ? `
-            <div class="flex items-center gap-3 my-3 p-3 bg-purple-50 rounded-2xl border border-purple-100">
-              <button class="w-10 h-10 rounded-full bg-[#A98CF0] text-white flex items-center justify-center shadow-sm hover:scale-105 transition-transform" data-tts="${q.audioText}" title="Nghe từ">
-                <i data-lucide="volume-2" class="w-5 h-5"></i>
+          ${(q.type === 0 || q.type === 2) ? `
+            <div class="flex items-center gap-4 my-4 p-4 bg-gradient-to-r from-purple-50/80 via-pink-50/60 to-purple-50/80 rounded-2xl border border-purple-100">
+              <button id="btn-quiz-tts" class="w-12 h-12 rounded-full bg-[#A98CF0] hover:bg-[#9370E8] text-white flex items-center justify-center shadow-md hover:scale-105 active:scale-95 transition-transform shrink-0" data-tts="${q.audioText}" title="Nghe phát âm">
+                <i data-lucide="volume-2" class="w-6 h-6"></i>
               </button>
-              <span class="text-xs sm:text-sm text-gray-600 font-medium">Bấm loa để nghe giọng đọc bản xứ</span>
+              <div>
+                ${q.type === 0 ? `
+                  <div class="font-chinese text-3xl sm:text-4xl font-black text-gray-800 tracking-wide">${q.targetWord.hanzi}</div>
+                  <div class="pinyin-text text-sm font-bold text-purple-600">${q.targetWord.pinyin} <span class="text-xs font-normal text-gray-400">(${q.targetWord.hanviet || 'Hán ngữ'})</span></div>
+                ` : `
+                  <div class="text-sm font-bold text-gray-700">Chạm vào nút loa để nghe giọng đọc bản xứ 🔊</div>
+                  <div class="text-xs text-gray-500">Lắng nghe thật kỹ thanh điệu và ngữ âm nhé!</div>
+                `}
+              </div>
             </div>
           ` : ""}
         </div>
 
-        <div class="space-y-2.5 mb-4" id="practice-options-list">
+        <!-- 4 Multiple Choice Options -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5" id="dynamic-quiz-options">
           ${q.options.map((opt, idx) => `
-            <div class="quiz-option p-4 rounded-2xl border border-gray-200 bg-white font-semibold text-xs sm:text-sm text-gray-700 flex items-center justify-between" data-index="${idx}" data-correct="${opt.isCorrect}">
+            <button class="dynamic-quiz-opt p-4 rounded-2xl border border-gray-200 bg-white font-semibold text-xs sm:text-sm text-gray-800 text-left hover:border-pink-300 hover:bg-pink-50/30 transition-all flex items-center justify-between group shadow-2xs" data-index="${idx}" data-correct="${opt.isCorrect}">
               <span>${opt.text}</span>
-              <span class="status-badge text-xs"></span>
-            </div>
+              <span class="status-indicator text-xs font-bold"></span>
+            </button>
           `).join("")}
         </div>
-      `;
-    } else if (q.type === "word-order") {
-      quizBodyHTML = `
-        <div class="mb-4">
-          <div class="text-xs font-bold text-[#A98CF0] uppercase tracking-wider mb-1">${q.title}</div>
-          <div class="text-base sm:text-lg font-bold text-gray-800 mb-2">${q.prompt}</div>
-          <div class="text-xs text-gray-500 mb-3">Chạm vào từng từ theo đúng thứ tự câu tiếng Trung:</div>
 
-          <div id="word-order-result" class="min-h-[50px] p-3 rounded-2xl bg-pink-50/70 border-2 border-dashed border-pink-200 flex flex-wrap gap-2 items-center mb-4">
-            <span class="text-xs text-gray-400 italic placeholder-text">Các từ bạn chọn sẽ xuất hiện ở đây...</span>
-          </div>
+        <!-- Result Feedback Banner -->
+        <div id="dynamic-quiz-feedback" class="hidden text-xs sm:text-sm font-medium p-4 rounded-2xl mb-4"></div>
 
-          <div id="word-order-bank" class="flex flex-wrap gap-2 mb-4">
-            ${q.words.map(w => `
-              <button class="word-chip px-3.5 py-2 bg-white border border-gray-200 hover:border-pink-300 font-chinese font-bold text-gray-800 text-sm rounded-xl shadow-sm transition-all" data-word="${w}">
-                ${w}
-              </button>
-            `).join("")}
-          </div>
-
-          <div class="flex gap-2">
-            <button id="btn-reset-order" class="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs font-bold rounded-xl transition-all">
-              Chọn lại từ đầu
-            </button>
-            <button id="btn-check-order" class="px-5 py-2 bg-[#A98CF0] hover:bg-[#9370E8] text-white text-xs font-bold rounded-xl transition-all shadow-sm">
-              Kiểm tra câu
-            </button>
-          </div>
-        </div>
-      `;
-    }
-
-    container.innerHTML = `
-      <div class="mochi-card p-6 sm:p-8">
-        <div class="flex items-center justify-between mb-4 pb-3 border-b border-gray-100">
-          <span class="badge-pill bg-purple-100 text-purple-700">Câu hỏi ${currentQuizIdx + 1} / ${quizzes.length}</span>
-          <span class="text-xs text-gray-500 italic">Dễ thương & Dễ nhớ</span>
-        </div>
-
-        ${quizBodyHTML}
-
-        <div id="practice-feedback" class="hidden text-xs sm:text-sm font-medium p-4 rounded-2xl mb-4"></div>
-
+        <!-- Footer Actions -->
         <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-          <button id="btn-prev-quiz" class="text-xs font-bold text-gray-500 hover:text-gray-800 disabled:opacity-40" ${currentQuizIdx === 0 ? "disabled" : ""}>
-            ← Câu trước
+          <button id="btn-reset-quiz-stats" class="text-xs font-bold text-gray-400 hover:text-red-500 transition-colors">
+            Làm mới điểm 🔄
           </button>
-          <button id="btn-next-quiz" class="px-5 py-2 bg-pink-50 hover:bg-[#F59BB0] text-[#F59BB0] hover:text-white text-xs font-bold rounded-full transition-all">
-            ${currentQuizIdx === quizzes.length - 1 ? "Làm lại từ đầu 🔄" : "Câu tiếp theo →"}
+          <button id="btn-next-dynamic-quiz" class="px-6 py-2.5 bg-[#F59BB0] hover:bg-[#E8839B] text-white text-xs sm:text-sm font-bold rounded-full shadow-sm hover:scale-105 active:scale-95 transition-all flex items-center gap-1.5">
+            <span>Câu tiếp theo</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </button>
         </div>
       </div>
@@ -3064,99 +3774,137 @@ function initInteractivePractice() {
 
     if (window.lucide) window.lucide.createIcons();
 
-    const optionCards = container.querySelectorAll(".quiz-option");
-    const feedbackEl = container.querySelector("#practice-feedback");
+    // Auto-play audio for listening questions
+    if (q.type === 2 && !hasAnswered) {
+      setTimeout(() => speakChinese(q.audioText), 200);
+    }
 
-    optionCards.forEach(card => {
-      card.addEventListener("click", () => {
-        const isCorrect = card.getAttribute("data-correct") === "true";
-        optionCards.forEach(c => c.style.pointerEvents = "none");
+    // Bind level buttons
+    container.querySelectorAll(".quiz-level-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const lvl = btn.getAttribute("data-level");
+        currentQuizLevel = lvl;
+        currentQuestion = generateQuestion();
+        renderQuizUI();
+      });
+    });
+
+    // Bind option click
+    const optButtons = container.querySelectorAll(".dynamic-quiz-opt");
+    const feedbackEl = container.querySelector("#dynamic-quiz-feedback");
+
+    optButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        if (hasAnswered) return;
+        hasAnswered = true;
+
+        const isCorrect = btn.getAttribute("data-correct") === "true";
+        optButtons.forEach(b => b.style.pointerEvents = "none");
+
+        const curStats = getQuizStats();
+        curStats.total += 1;
 
         if (isCorrect) {
-          card.classList.add("correct");
-          feedbackEl.className = "p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-800 font-medium block";
-          feedbackEl.innerHTML = `🎉 Tuyệt đỉnh! Nàng trả lời hoàn toàn chính xác rồi!`;
+          btn.classList.remove("border-gray-200", "bg-white");
+          btn.classList.add("bg-emerald-50", "border-emerald-400", "text-emerald-900");
+          const icon = btn.querySelector(".status-indicator");
+          if (icon) icon.innerHTML = "✔️ Đúng";
+
+          curStats.score += 10;
+          curStats.streak += 1;
+          curStats.correct += 1;
+          if (curStats.streak > curStats.bestStreak) curStats.bestStreak = curStats.streak;
+          saveQuizStats(curStats);
+
+          feedbackEl.className = "p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-xs sm:text-sm text-emerald-800 font-medium block";
+          feedbackEl.innerHTML = `
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <div class="font-bold text-emerald-800 mb-1">🎉 Xuất sắc! Nàng trả lời chuẩn xác 100%! (+10 điểm)</div>
+                <div>Từ <strong class="font-chinese text-base">${q.targetWord.hanzi}</strong> (${q.targetWord.pinyin}) có nghĩa là: <em>${q.targetWord.meaning}</em></div>
+                ${q.targetWord.example ? `<div class="text-[11px] text-emerald-700/80 mt-1 italic">Ví dụ: ${q.targetWord.example} — ${q.targetWord.exampleVi || ''}</div>` : ''}
+              </div>
+              <button class="btn-save-quiz-word px-3 py-1.5 bg-white text-emerald-700 hover:bg-emerald-100 rounded-xl font-bold text-xs shrink-0 flex items-center gap-1 border border-emerald-200" data-hanzi="${q.targetWord.hanzi}" data-pinyin="${q.targetWord.pinyin}" data-meaning="${q.targetWord.meaning}">
+                <span>Ghim từ 🔖</span>
+              </button>
+            </div>
+          `;
           playDingSound(true);
         } else {
-          card.classList.add("wrong");
-          const correctCard = container.querySelector('.quiz-option[data-correct="true"]');
-          if (correctCard) correctCard.classList.add("correct");
-          feedbackEl.className = "p-4 rounded-2xl bg-rose-50 border border-rose-200 text-xs text-rose-800 font-medium block";
-          feedbackEl.innerHTML = `🌸 Chưa chính xác xíu rồi! Thử ghi nhớ lại đáp án màu xanh nhé! ${q.tip || ""}`;
+          btn.classList.remove("border-gray-200", "bg-white");
+          btn.classList.add("bg-rose-50", "border-rose-300", "text-rose-900");
+          const icon = btn.querySelector(".status-indicator");
+          if (icon) icon.innerHTML = "❌";
+
+          // Highlight the correct one
+          const correctBtn = container.querySelector('.dynamic-quiz-opt[data-correct="true"]');
+          if (correctBtn) {
+            correctBtn.classList.remove("border-gray-200", "bg-white");
+            correctBtn.classList.add("bg-emerald-50", "border-emerald-400", "text-emerald-900");
+            const corIcon = correctBtn.querySelector(".status-indicator");
+            if (corIcon) corIcon.innerHTML = "✔️ Đáp án đúng";
+          }
+
+          curStats.streak = 0;
+          saveQuizStats(curStats);
+
+          feedbackEl.className = "p-4 rounded-2xl bg-rose-50 border border-rose-200 text-xs sm:text-sm text-rose-800 font-medium block";
+          feedbackEl.innerHTML = `
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <div class="font-bold text-rose-800 mb-1">🌸 Chưa chính xác xíu rồi! Nàng cùng xem lại đáp án nhé:</div>
+                <div>Đáp án đúng là: <strong class="font-chinese text-base">${q.targetWord.hanzi}</strong> (${q.targetWord.pinyin}) = <em>${q.targetWord.meaning}</em></div>
+                ${q.targetWord.example ? `<div class="text-[11px] text-rose-700/80 mt-1 italic">Ví dụ: ${q.targetWord.example} — ${q.targetWord.exampleVi || ''}</div>` : ''}
+              </div>
+              <button class="btn-save-quiz-word px-3 py-1.5 bg-white text-rose-700 hover:bg-rose-100 rounded-xl font-bold text-xs shrink-0 flex items-center gap-1 border border-rose-200" data-hanzi="${q.targetWord.hanzi}" data-pinyin="${q.targetWord.pinyin}" data-meaning="${q.targetWord.meaning}">
+                <span>Ghim từ 🔖</span>
+              </button>
+            </div>
+          `;
           playDingSound(false);
+        }
+
+        const saveQuizWordBtn = feedbackEl.querySelector(".btn-save-quiz-word");
+        if (saveQuizWordBtn) {
+          saveQuizWordBtn.addEventListener("click", () => {
+            const h = saveQuizWordBtn.getAttribute("data-hanzi");
+            const p = saveQuizWordBtn.getAttribute("data-pinyin");
+            const m = saveQuizWordBtn.getAttribute("data-meaning");
+            addWordToNotebook(h, p, m);
+          });
         }
       });
     });
 
-    if (q.type === "word-order") {
-      const resultBox = container.querySelector("#word-order-result");
-      const bank = container.querySelector("#word-order-bank");
-      const resetBtn = container.querySelector("#btn-reset-order");
-      const checkBtn = container.querySelector("#btn-check-order");
-      const placeholder = resultBox.querySelector(".placeholder-text");
-      let selectedWords = [];
-
-      bank.addEventListener("click", (e) => {
-        const chip = e.target.closest(".word-chip");
-        if (!chip || chip.disabled) return;
-
-        const word = chip.getAttribute("data-word");
-        selectedWords.push(word);
-        chip.disabled = true;
-        chip.classList.add("opacity-40", "bg-gray-100");
-
-        if (placeholder) placeholder.style.display = "none";
-
-        const selectedChip = document.createElement("span");
-        selectedChip.className = "px-3 py-1.5 bg-pink-500 text-white font-chinese font-bold text-xs rounded-lg shadow-sm";
-        selectedChip.textContent = word;
-        resultBox.appendChild(selectedChip);
-      });
-
-      resetBtn.addEventListener("click", () => {
-        selectedWords = [];
-        resultBox.innerHTML = `<span class="text-xs text-gray-400 italic placeholder-text">Các từ bạn chọn sẽ xuất hiện ở đây...</span>`;
-        bank.querySelectorAll(".word-chip").forEach(c => {
-          c.disabled = false;
-          c.classList.remove("opacity-40", "bg-gray-100");
-        });
-        feedbackEl.className = "hidden";
-      });
-
-      checkBtn.addEventListener("click", () => {
-        const joined = selectedWords.join(" ");
-        if (joined === q.correctOrder) {
-          feedbackEl.className = "p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-800 font-medium block";
-          feedbackEl.innerHTML = `🎉 Chuẩn 100%! Câu đúng là: <strong>${q.correctSentence}</strong><br><span class="text-gray-600 font-normal">Nghĩa: ${q.meaning}</span>`;
-          playDingSound(true);
-          speakChinese(q.correctSentence.split(" ")[0]);
-        } else {
-          feedbackEl.className = "p-4 rounded-2xl bg-rose-50 border border-rose-200 text-xs text-rose-800 font-medium block";
-          feedbackEl.innerHTML = `🌸 Thứ tự từ chưa đúng rồi nàng ơi! Nhấn "Chọn lại từ đầu" để thử lại nhé!`;
-          playDingSound(false);
-        }
+    // Next question button
+    const nextBtn = container.querySelector("#btn-next-dynamic-quiz");
+    if (nextBtn) {
+      nextBtn.addEventListener("click", () => {
+        currentQuestion = generateQuestion();
+        renderQuizUI();
       });
     }
 
-    const nextBtn = container.querySelector("#btn-next-quiz");
-    const prevBtn = container.querySelector("#btn-prev-quiz");
-
-    nextBtn.addEventListener("click", () => {
-      currentQuizIdx = (currentQuizIdx + 1) % quizzes.length;
-      renderCurrentQuiz();
-    });
-
-    if (prevBtn) {
-      prevBtn.addEventListener("click", () => {
-        if (currentQuizIdx > 0) {
-          currentQuizIdx -= 1;
-          renderCurrentQuiz();
+    // Reset stats button
+    const resetStatsBtn = container.querySelector("#btn-reset-quiz-stats");
+    if (resetStatsBtn) {
+      resetStatsBtn.addEventListener("click", () => {
+        if (confirm("Nàng có muốn làm mới lại điểm số và chuỗi đúng của tài khoản này không? 🌸")) {
+          saveQuizStats({ score: 0, streak: 0, bestStreak: 0, total: 0, correct: 0 });
+          showMochiToast("Đã làm mới điểm số thành công! Chúc nàng đạt kỷ lục mới nhé 🌸");
+          renderQuizUI();
         }
       });
     }
   }
 
-  renderCurrentQuiz();
+  // Expose global hook to refresh when active user switches
+  window.refreshQuizForUser = function() {
+    currentQuestion = null;
+    renderQuizUI();
+  };
+
+  renderQuizUI();
 }
 
 /* ==========================================================================
@@ -5440,11 +6188,21 @@ function initVocabTypingStudio() {
 
   if (!tableBody && !cardsGrid) return;
 
-  const STORAGE_KEY = "mochi_typing_studio_progress_v2";
+  function getTypingStorageKey() {
+    return `mochi_typing_progress_${activeProfileId || 'ngoc_anh'}`;
+  }
 
   function getProgressMap() {
     try {
-      return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+      const key = getTypingStorageKey();
+      const userProgress = localStorage.getItem(key);
+      if (userProgress) return JSON.parse(userProgress);
+      // Migration from legacy key for default user
+      const legacy = localStorage.getItem("mochi_typing_studio_progress_v2");
+      if (legacy && (activeProfileId === "ngoc_anh" || !activeProfileId)) {
+        return JSON.parse(legacy);
+      }
+      return {};
     } catch (e) {
       return {};
     }
@@ -5452,11 +6210,16 @@ function initVocabTypingStudio() {
 
   function saveProgressMap(map) {
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(map));
+      localStorage.setItem(getTypingStorageKey(), JSON.stringify(map));
     } catch (e) {
       console.warn("Storage warning:", e);
     }
   }
+
+  window.refreshTypingStudioForUser = function() {
+    renderTypingStudio();
+    updateStats();
+  };
 
   // Active state - Default to HSK 4 (1.200 words) as requested by user
   let currentLevel = "HSK 4";

@@ -119,11 +119,11 @@
           <span class="hidden sm:inline">Pinyin</span>
         </button>
 
-        <!-- Profile Switcher Button (Ngọc Ánh / Bạn Đồng Hành) -->
-        <button id="profile-switcher-btn" class="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-50 hover:bg-pink-100 border border-pink-200 text-xs font-bold transition-all shadow-xs" title="Chuyển đổi góc học tập">
+        <!-- Profile / Account Button (Đăng nhập, Đăng ký & Tiến độ học) -->
+        <button id="profile-switcher-btn" class="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-50 hover:bg-pink-100 border border-pink-200 text-xs font-bold transition-all shadow-xs" title="Tài khoản & Tiến độ học tập">
           <span id="header-profile-avatar" class="text-base">🐰🌸</span>
           <span id="header-profile-name" class="text-gray-800">Ngọc Ánh</span>
-          <i data-lucide="refresh-cw" class="w-3 h-3 text-pink-500 ml-0.5"></i>
+          <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-pink-500 ml-0.5"></i>
         </button>
 
         <!-- Mobile Menu Toggle Button -->
@@ -1511,6 +1511,207 @@
           Lưu vào Sổ Tay 🌸
         </button>
       </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL ĐĂNG KÝ & ĐĂNG NHẬP (AUTHENTICATION & PERSISTENCE)
+       ========================================================================= -->
+  <div id="auth-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 mochi-modal-backdrop hidden">
+    <div class="relative w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden border border-pink-100">
+      
+      <!-- Modal Header -->
+      <div class="p-6 bg-gradient-to-r from-pink-100 via-purple-50 to-amber-50 border-b border-pink-100 flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <div class="w-10 h-10 rounded-2xl bg-white shadow-2xs flex items-center justify-center text-xl" id="auth-modal-header-icon">🌸</div>
+          <div>
+            <h4 class="font-extrabold font-heading text-base text-gray-800" id="auth-modal-title">Tài Khoản Học Tập</h4>
+            <p class="text-[11px] text-gray-500" id="auth-modal-subtitle">Lưu giữ mãi mãi toàn bộ kiến thức & tiến độ học của bạn</p>
+          </div>
+        </div>
+        <button id="btn-close-auth-modal" class="w-8 h-8 rounded-full bg-white text-gray-400 hover:text-gray-700 flex items-center justify-center shadow-2xs border border-gray-200 transition-transform active:scale-90">
+          ✕
+        </button>
+      </div>
+
+      <!-- Tabs: Đăng Nhập vs Đăng Ký -->
+      <div class="flex border-b border-gray-100 bg-gray-50/50 p-1.5 m-4 rounded-2xl border">
+        <button id="tab-auth-login" type="button" class="flex-1 py-2 rounded-xl text-xs font-bold transition-all bg-white text-pink-600 shadow-2xs">
+          🔑 Đăng Nhập
+        </button>
+        <button id="tab-auth-register" type="button" class="flex-1 py-2 rounded-xl text-xs font-bold transition-all text-gray-500 hover:text-gray-800">
+          ✨ Đăng Ký Mới
+        </button>
+      </div>
+
+      <!-- Form Đăng Nhập -->
+      <form id="form-auth-login" class="p-6 pt-2 space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1.5">Tên đăng nhập hoặc Biệt danh:</label>
+          <input id="login-username" type="text" placeholder="ngoc_anh, companion hoặc tên bạn..." autocomplete="username" required class="w-full px-4 py-2.5 rounded-2xl border border-gray-200 text-xs sm:text-sm font-semibold text-gray-700 focus:outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-100">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1.5">Mật khẩu:</label>
+          <input id="login-password" type="password" placeholder="••••••••" autocomplete="current-password" required class="w-full px-4 py-2.5 rounded-2xl border border-gray-200 text-xs sm:text-sm text-gray-700 focus:outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-100">
+        </div>
+
+        <div class="flex items-center justify-between text-xs">
+          <label class="flex items-center gap-2 cursor-pointer text-gray-600 font-medium">
+            <input type="checkbox" id="login-remember" checked disabled class="accent-pink-500 rounded">
+            <span>Duy trì đăng nhập vĩnh viễn</span>
+          </label>
+          <span class="text-pink-500 font-semibold text-[11px]">Bảo lưu trọn đời ✨</span>
+        </div>
+
+        <button type="submit" class="w-full py-3 bg-gradient-to-r from-[#F59BB0] to-[#A98CF0] hover:opacity-95 text-white text-xs sm:text-sm font-bold rounded-2xl shadow-sm transition-all active:scale-[0.99] flex items-center justify-center gap-2">
+          <span>Đăng Nhập Vào Học Ngay</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+
+        <div class="pt-2 border-t border-gray-100">
+          <div class="text-[11px] font-bold text-gray-400 uppercase tracking-wider text-center mb-2">Hoặc đăng nhập nhanh 1 chạm:</div>
+          <div class="grid grid-cols-2 gap-2">
+            <button type="button" class="btn-quick-login-account p-2.5 rounded-2xl border border-pink-200 bg-pink-50/60 hover:bg-pink-100 text-left transition-all flex items-center gap-2" data-user-id="ngoc_anh">
+              <span class="text-lg">🐰🌸</span>
+              <div class="truncate">
+                <div class="text-xs font-bold text-gray-800">Ngọc Ánh</div>
+                <div class="text-[10px] text-pink-600 font-medium">Chủ phòng học</div>
+              </div>
+            </button>
+            <button type="button" class="btn-quick-login-account p-2.5 rounded-2xl border border-purple-200 bg-purple-50/60 hover:bg-purple-100 text-left transition-all flex items-center gap-2" data-user-id="companion">
+              <span class="text-lg">🐼✨</span>
+              <div class="truncate">
+                <div class="text-xs font-bold text-gray-800">Bạn Đồng Hành</div>
+                <div class="text-[10px] text-purple-600 font-medium">Người học cùng</div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <!-- Form Đăng Ký -->
+      <form id="form-auth-register" class="p-6 pt-2 space-y-3.5 hidden">
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1">Tên hiển thị / Biệt danh:</label>
+          <input id="register-fullname" type="text" placeholder="Ví dụ: Ánh Ánh, Tiểu Yến, Khang..." required class="w-full px-4 py-2 rounded-2xl border border-gray-200 text-xs sm:text-sm font-semibold text-gray-700 focus:outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-100">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1">Tên đăng nhập (Username):</label>
+          <input id="register-username" type="text" placeholder="Chỉ chữ cái, số, không dấu cách..." required autocomplete="username" class="w-full px-4 py-2 rounded-2xl border border-gray-200 text-xs sm:text-sm font-semibold text-gray-700 focus:outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-100">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1">Mật khẩu:</label>
+          <input id="register-password" type="password" placeholder="Tối thiểu 3 ký tự..." required autocomplete="new-password" class="w-full px-4 py-2 rounded-2xl border border-gray-200 text-xs sm:text-sm text-gray-700 focus:outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-100">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1.5">Chọn Avatar đại diện đáng yêu:</label>
+          <div id="register-avatar-picker" class="flex flex-wrap items-center gap-2">
+            <button type="button" class="avatar-option w-9 h-9 rounded-2xl border-2 border-pink-400 bg-pink-50 text-base flex items-center justify-center selected transition-transform hover:scale-105" data-avatar="🐰🌸">🐰🌸</button>
+            <button type="button" class="avatar-option w-9 h-9 rounded-2xl border border-gray-200 bg-gray-50 text-base flex items-center justify-center transition-transform hover:scale-105" data-avatar="🐼✨">🐼✨</button>
+            <button type="button" class="avatar-option w-9 h-9 rounded-2xl border border-gray-200 bg-gray-50 text-base flex items-center justify-center transition-transform hover:scale-105" data-avatar="🦊🎀">🦊🎀</button>
+            <button type="button" class="avatar-option w-9 h-9 rounded-2xl border border-gray-200 bg-gray-50 text-base flex items-center justify-center transition-transform hover:scale-105" data-avatar="🐱💖">🐱💖</button>
+            <button type="button" class="avatar-option w-9 h-9 rounded-2xl border border-gray-200 bg-gray-50 text-base flex items-center justify-center transition-transform hover:scale-105" data-avatar="🌸👑">🌸👑</button>
+            <button type="button" class="avatar-option w-9 h-9 rounded-2xl border border-gray-200 bg-gray-50 text-base flex items-center justify-center transition-transform hover:scale-105" data-avatar="🐻⭐">🐻⭐</button>
+            <button type="button" class="avatar-option w-9 h-9 rounded-2xl border border-gray-200 bg-gray-50 text-base flex items-center justify-center transition-transform hover:scale-105" data-avatar="🦄💫">🦄💫</button>
+            <button type="button" class="avatar-option w-9 h-9 rounded-2xl border border-gray-200 bg-gray-50 text-base flex items-center justify-center transition-transform hover:scale-105" data-avatar="🐯🔥">🐯🔥</button>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1">Mục tiêu học tập chính:</label>
+          <select id="register-goal" class="w-full px-4 py-2 rounded-2xl border border-gray-200 text-xs font-semibold text-gray-700 focus:outline-none focus:border-pink-400">
+            <option value="Chinh phục HSK 4 & Giao tiếp công sở">Chinh phục HSK 4 & Giao tiếp công sở</option>
+            <option value="Nhập môn HSK 1 - 2 vững chắc">Nhập môn HSK 1 - 2 vững chắc</option>
+            <option value="Đột phá HSK 5 - 6 chuyên sâu">Đột phá HSK 5 - 6 chuyên sâu</option>
+            <option value="Nói lưu loát như người bản xứ & Du lịch">Nói lưu loát như người bản xứ & Du lịch</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full py-3 bg-gradient-to-r from-[#F59BB0] to-[#A98CF0] hover:opacity-95 text-white text-xs sm:text-sm font-bold rounded-2xl shadow-sm transition-all active:scale-[0.99] flex items-center justify-center gap-2">
+          <span>Tạo Tài Khoản & Bắt Đầu Học</span>
+          <i data-lucide="sparkles" class="w-4 h-4"></i>
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL THÔNG TIN TÀI KHOẢN & TIẾN ĐỘ HỌC TẬP CỦA TÔI
+       ========================================================================= -->
+  <div id="user-profile-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 mochi-modal-backdrop hidden">
+    <div class="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl overflow-hidden border border-pink-100">
+      
+      <!-- Profile Header -->
+      <div class="p-6 bg-gradient-to-r from-pink-100 via-purple-100 to-amber-50 border-b border-pink-200/60 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-14 h-14 rounded-2xl bg-white shadow-sm flex items-center justify-center text-3xl border border-pink-200" id="user-modal-avatar">🐰🌸</div>
+          <div>
+            <div class="flex items-center gap-2">
+              <h3 class="font-extrabold font-heading text-lg text-gray-800" id="user-modal-fullname">Ngọc Ánh</h3>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-pink-100 text-pink-700 border border-pink-200" id="user-modal-role">Chủ phòng học</span>
+            </div>
+            <p class="text-xs text-gray-500 font-medium mt-0.5" id="user-modal-goal">Chinh phục HSK 4 & Vi vu Bắc Kinh</p>
+          </div>
+        </div>
+        <button id="btn-close-profile-modal" class="w-8 h-8 rounded-full bg-white text-gray-400 hover:text-gray-700 flex items-center justify-center shadow-2xs border border-gray-200">
+          ✕
+        </button>
+      </div>
+
+      <!-- Stats Grid -->
+      <div class="p-6 space-y-5 max-h-[70vh] overflow-y-auto">
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+          <div class="p-3 rounded-2xl bg-pink-50/70 border border-pink-100 text-center">
+            <div class="text-lg font-black text-pink-600" id="user-stat-typing-pass">0</div>
+            <div class="text-[10px] font-bold text-gray-500">Từ gõ Pass ✓</div>
+          </div>
+          <div class="p-3 rounded-2xl bg-purple-50/70 border border-purple-100 text-center">
+            <div class="text-lg font-black text-purple-600" id="user-stat-cards-mastered">0</div>
+            <div class="text-[10px] font-bold text-gray-500">Flashcard thuộc</div>
+          </div>
+          <div class="p-3 rounded-2xl bg-amber-50/70 border border-amber-100 text-center">
+            <div class="text-lg font-black text-amber-600" id="user-stat-saved-words">0</div>
+            <div class="text-[10px] font-bold text-gray-500">Từ trong sổ tay</div>
+          </div>
+          <div class="p-3 rounded-2xl bg-emerald-50/70 border border-emerald-100 text-center">
+            <div class="text-lg font-black text-emerald-600" id="user-stat-streak">7 ngày</div>
+            <div class="text-[10px] font-bold text-gray-500">Chuỗi học tập 🔥</div>
+          </div>
+        </div>
+
+        <!-- Account List & Switching -->
+        <div class="space-y-2">
+          <div class="text-xs font-bold text-gray-700 flex items-center justify-between">
+            <span>Danh sách tài khoản trên máy này:</span>
+            <span class="text-[11px] text-pink-600">Đăng nhập vĩnh viễn</span>
+          </div>
+          <div id="user-modal-accounts-list" class="space-y-1.5">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="flex items-center gap-2 pt-2 border-t border-gray-100">
+          <button id="btn-open-register-from-modal" class="flex-1 py-2.5 rounded-2xl bg-pink-50 hover:bg-pink-100 text-pink-700 text-xs font-bold border border-pink-200 transition-colors flex items-center justify-center gap-1.5">
+            <i data-lucide="user-plus" class="w-4 h-4"></i>
+            <span>Đăng ký mới</span>
+          </button>
+          <button id="btn-open-login-from-modal" class="flex-1 py-2.5 rounded-2xl bg-purple-50 hover:bg-purple-100 text-purple-700 text-xs font-bold border border-purple-200 transition-colors flex items-center justify-center gap-1.5">
+            <i data-lucide="key" class="w-4 h-4"></i>
+            <span>Đổi tài khoản</span>
+          </button>
+          <button id="btn-logout-current-user" class="py-2.5 px-4 rounded-2xl bg-gray-100 hover:bg-red-50 text-gray-600 hover:text-red-600 text-xs font-bold border border-gray-200 transition-colors flex items-center justify-center gap-1" title="Đăng xuất">
+            <i data-lucide="log-out" class="w-4 h-4"></i>
+            <span>Đăng xuất</span>
+          </button>
+        </div>
+      </div>
+
     </div>
   </div>
 
