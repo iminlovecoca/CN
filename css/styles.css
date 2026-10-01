@@ -638,3 +638,118 @@ html {
   border-color: #F59BB0 !important;
   box-shadow: 0 4px 10px rgba(245, 155, 176, 0.35);
 }
+
+/* ==========================================================================
+   ADVANCED RESPONSIVE ENGINE & DEVICE OPTIMIZATIONS
+   Hỗ trợ: iPhone 14 Pro Max (430x932 & 932x430), Mọi màn hình Mobile, Tablet, Desktop
+   Hướng hiển thị: Vertical (Dọc / Portrait) & Horizontal (Ngang / Landscape)
+   ========================================================================== */
+
+/* 1. iOS Safe Areas & Dynamic Island */
+:root {
+  --sat: env(safe-area-inset-top, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+}
+
+html, body {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+  padding-left: var(--sal);
+  padding-right: var(--sar);
+}
+
+header {
+  padding-top: var(--sat);
+}
+
+/* 2. Fixed Mobile Bottom Navigation Bar Safe Area */
+.bottom-nav-mobile-bar {
+  padding-bottom: max(0.5rem, var(--sab)) !important;
+  padding-left: max(0.5rem, var(--sal)) !important;
+  padding-right: max(0.5rem, var(--sar)) !important;
+}
+
+/* 3. Modal Responsive Container System */
+.mochi-modal-box {
+  max-height: 90vh !important;
+  max-height: 90dvh !important;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 4. Touch Momentum Scrolling for Tables, Grids & Chips */
+.overflow-x-auto, .overflow-y-auto {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 5. iPhone 14 Pro Max & Small Mobile Screen Tuning (<= 440px) */
+@media (max-width: 440px) {
+  .mochi-card {
+    border-radius: 1.35rem;
+    padding: 1.15rem !important;
+  }
+  
+  .badge-pill {
+    padding: 0.25rem 0.65rem;
+    font-size: 0.75rem;
+  }
+
+  .mizige-box {
+    width: 200px;
+    height: 200px;
+  }
+  .mizige-ghost-char {
+    font-size: 110px;
+  }
+}
+
+/* 6. Landscape Mode on Mobile & Tablets (Height <= 520px) */
+@media (max-height: 520px) and (orientation: landscape) {
+  header .h-20 {
+    height: 3.5rem !important;
+  }
+
+  .bottom-nav-mobile-bar {
+    padding-top: 0.2rem !important;
+    padding-bottom: max(0.25rem, var(--sab)) !important;
+    height: 46px !important;
+  }
+  .bottom-nav-mobile-bar span {
+    display: none !important;
+  }
+  .bottom-nav-mobile-bar .nav-icon-wrapper {
+    padding: 0.15rem !important;
+  }
+
+  .mochi-modal-box {
+    max-height: 94vh !important;
+    max-height: 94dvh !important;
+    border-radius: 1.25rem !important;
+  }
+  
+  section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .flashcard-inner {
+    min-height: 250px !important;
+  }
+}
+
+/* 7. Tablet (iPad vertical & horizontal, 768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mochi-card {
+    border-radius: 1.5rem;
+  }
+}
+
+/* 8. Text & Card Break Protections */
+.break-words {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}

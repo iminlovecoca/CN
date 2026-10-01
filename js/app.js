@@ -387,7 +387,10 @@ function initProfileSystem() {
       if (userStatSaved) userStatSaved.textContent = "0";
     }
 
-    if (userStatStreak) userStatStreak.textContent = `${user.stats?.streak || 7} ngày`;
+    if (userStatStreak) {
+      const realStreak = calculateRealStreak(user.id);
+      userStatStreak.textContent = `${realStreak} ngày`;
+    }
 
     // Render registered accounts list for 1-click switching
     if (accountsListContainer) {
@@ -1593,24 +1596,68 @@ function initDictionaryView() {
       return;
     }
 
-    let pagesHtml = `
-      <button class="page-nav-btn px-3 py-1.5 rounded-full border border-gray-200 text-xs font-bold text-gray-600 hover:bg-pink-50 transition-all ${currentDictPage === 1 ? 'opacity-40 pointer-events-none' : ''}" data-dir="prev">
-        ← Trang trước
-      </button>
-    `;
+    // Smart windowed page numbers - Never overflow screen
+    const pageNumbers = [];
+    if (totalPages <= 7) {
+      for (let i = 1; i <= totalPages; i++) pageNumbers.push(i);
+    } else {
+      pageNumbers.push(1);
+      let start = Math.max(2, currentDictPage - 1);
+      let end = Math.min(totalPages - 1, currentDictPage + 1);
 
-    for (let p = 1; p <= totalPages; p++) {
-      pagesHtml += `
-        <button class="page-btn ${p === currentDictPage ? 'active' : ''}" data-page="${p}">
-          ${p}
-        </button>
-      `;
+      if (currentDictPage <= 3) {
+        start = 2;
+        end = 4;
+      } else if (currentDictPage >= totalPages - 2) {
+        start = totalPages - 3;
+        end = totalPages - 1;
+      }
+
+      if (start > 2) pageNumbers.push('...');
+      for (let i = start; i <= end; i++) pageNumbers.push(i);
+      if (end < totalPages - 1) pageNumbers.push('...');
+      pageNumbers.push(totalPages);
     }
 
+    let pagesHtml = `
+      <div class="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 w-full max-w-full px-2">
+        <button class="page-nav-btn px-3 py-1.5 rounded-full border border-gray-200 text-xs font-bold text-gray-600 hover:bg-pink-50 transition-all shadow-2xs ${currentDictPage === 1 ? 'opacity-40 pointer-events-none' : ''}" data-dir="prev">
+          ← Trước
+        </button>
+        <div class="flex items-center gap-1 flex-wrap justify-center">
+    `;
+
+    pageNumbers.forEach(p => {
+      if (p === '...') {
+        pagesHtml += `<span class="px-2 py-1 text-gray-400 font-bold select-none text-xs">...</span>`;
+      } else {
+        pagesHtml += `
+          <button class="page-btn ${p === currentDictPage ? 'active' : ''}" data-page="${p}">
+            ${p}
+          </button>
+        `;
+      }
+    });
+
     pagesHtml += `
-      <button class="page-nav-btn px-3 py-1.5 rounded-full border border-gray-200 text-xs font-bold text-gray-600 hover:bg-pink-50 transition-all ${currentDictPage === totalPages ? 'opacity-40 pointer-events-none' : ''}" data-dir="next">
-        Trang sau →
-      </button>
+        </div>
+        <button class="page-nav-btn px-3 py-1.5 rounded-full border border-gray-200 text-xs font-bold text-gray-600 hover:bg-pink-50 transition-all shadow-2xs ${currentDictPage === totalPages ? 'opacity-40 pointer-events-none' : ''}" data-dir="next">
+          Sau →
+        </button>
+      </div>
+
+      <!-- Quick Jump & Counter Indicator -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mt-3 text-xs text-gray-500 font-medium">
+        <span>Trang <strong>${currentDictPage}</strong> / <strong>${totalPages}</strong></span>
+        <span class="text-gray-300">•</span>
+        <label class="flex items-center gap-1.5">
+          <span>Đến trang:</span>
+          <input type="number" id="dict-jump-page-input" min="1" max="${totalPages}" value="${currentDictPage}" class="w-16 px-2 py-1 text-center font-bold text-gray-700 rounded-lg border border-pink-200 focus:outline-none focus:border-pink-400 focus:ring-1 focus:ring-pink-300 bg-white shadow-2xs text-xs" />
+          <button id="btn-dict-jump-page" class="px-2.5 py-1 bg-pink-100 hover:bg-pink-200 text-pink-700 font-bold rounded-lg text-xs transition-colors">
+            Đi ➔
+          </button>
+        </label>
+      </div>
     `;
 
     paginationContainer.innerHTML = pagesHtml;
@@ -1642,6 +1689,24 @@ function initDictionaryView() {
           renderDictionaryList();
           document.getElementById("dictionary").scrollIntoView({ behavior: "smooth" });
         }
+      });
+    }
+
+    const jumpInput = paginationContainer.querySelector("#dict-jump-page-input");
+    const jumpBtn = paginationContainer.querySelector("#btn-dict-jump-page");
+    function doJump() {
+      if (!jumpInput) return;
+      let target = parseInt(jumpInput.value, 10);
+      if (isNaN(target) || target < 1) target = 1;
+      if (target > totalPages) target = totalPages;
+      currentDictPage = target;
+      renderDictionaryList();
+      document.getElementById("dictionary").scrollIntoView({ behavior: "smooth" });
+    }
+    if (jumpBtn) jumpBtn.addEventListener("click", doJump);
+    if (jumpInput) {
+      jumpInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") doJump();
       });
     }
   }
@@ -2232,6 +2297,7 @@ function initFlashcardVault() {
         localStorage.setItem(`mochi_flashcards_mastered_${activeProfileId}`, JSON.stringify(masteredList));
         playDingSound(true);
         showMochiToast(`Đã thuộc từ "${item.hanzi}"! Tuyệt đỉnh 🌸`);
+        recordUserActivity(activeProfileId, 'flashcard');
       }
       renderCurrentFlashcard();
     });
@@ -3285,26 +3351,45 @@ function initLessonsCatalog() {
       if (totalPages <= 1) {
         paginationContainer.innerHTML = "";
       } else {
+        const catPageNumbers = [];
+        if (totalPages <= 7) {
+          for (let i = 1; i <= totalPages; i++) catPageNumbers.push(i);
+        } else {
+          catPageNumbers.push(1);
+          let start = Math.max(2, currentCatalogPage - 1);
+          let end = Math.min(totalPages - 1, currentCatalogPage + 1);
+          if (currentCatalogPage <= 3) { start = 2; end = 4; }
+          else if (currentCatalogPage >= totalPages - 2) { start = totalPages - 3; end = totalPages - 1; }
+          if (start > 2) catPageNumbers.push('...');
+          for (let i = start; i <= end; i++) catPageNumbers.push(i);
+          if (end < totalPages - 1) catPageNumbers.push('...');
+          catPageNumbers.push(totalPages);
+        }
+
         let pagesHtml = `
-          <button id="btn-catalog-prev-page" class="px-4 py-2 rounded-full border border-gray-200 bg-white hover:bg-pink-50 text-gray-700 text-xs font-bold transition-all flex items-center gap-1 shadow-2xs ${currentCatalogPage === 1 ? 'opacity-40 pointer-events-none' : ''}">
+          <button id="btn-catalog-prev-page" class="px-3 sm:px-4 py-2 rounded-full border border-gray-200 bg-white hover:bg-pink-50 text-gray-700 text-xs font-bold transition-all flex items-center gap-1 shadow-2xs ${currentCatalogPage === 1 ? 'opacity-40 pointer-events-none' : ''}">
             <i data-lucide="chevron-left" class="w-4 h-4"></i>
-            <span>Trang trước</span>
+            <span>Trước</span>
           </button>
-          <div class="flex items-center gap-1.5 px-2">
+          <div class="flex items-center gap-1.5 px-1 sm:px-2 flex-wrap justify-center">
         `;
 
-        for (let p = 1; p <= totalPages; p++) {
-          pagesHtml += `
-            <button class="catalog-page-btn ${p === currentCatalogPage ? 'active' : ''}" data-page="${p}">
-              ${p}
-            </button>
-          `;
-        }
+        catPageNumbers.forEach(p => {
+          if (p === '...') {
+            pagesHtml += `<span class="px-2 py-1 text-gray-400 font-bold select-none text-xs">...</span>`;
+          } else {
+            pagesHtml += `
+              <button class="catalog-page-btn ${p === currentCatalogPage ? 'active' : ''}" data-page="${p}">
+                ${p}
+              </button>
+            `;
+          }
+        });
 
         pagesHtml += `
           </div>
-          <button id="btn-catalog-next-page" class="px-4 py-2 rounded-full border border-gray-200 bg-white hover:bg-pink-50 text-gray-700 text-xs font-bold transition-all flex items-center gap-1 shadow-2xs ${currentCatalogPage === totalPages ? 'opacity-40 pointer-events-none' : ''}">
-            <span>Trang sau</span>
+          <button id="btn-catalog-next-page" class="px-3 sm:px-4 py-2 rounded-full border border-gray-200 bg-white hover:bg-pink-50 text-gray-700 text-xs font-bold transition-all flex items-center gap-1 shadow-2xs ${currentCatalogPage === totalPages ? 'opacity-40 pointer-events-none' : ''}">
+            <span>Sau</span>
             <i data-lucide="chevron-right" class="w-4 h-4"></i>
           </button>
         `;
@@ -3508,7 +3593,8 @@ function initLessonModal() {
         closeLessonModal();
 
         const p = MOCHI_DATA.profiles[activeProfileId];
-        p.stats.lessonsCompleted += 1;
+        if (p && p.stats) p.stats.lessonsCompleted = (p.stats.lessonsCompleted || 0) + 1;
+        recordUserActivity(activeProfileId, 'lesson');
         initProgressSection();
       });
     }
@@ -3803,6 +3889,7 @@ function initInteractivePractice() {
 
         const curStats = getQuizStats();
         curStats.total += 1;
+        recordUserActivity(activeProfileId, 'quiz');
 
         if (isCorrect) {
           btn.classList.remove("border-gray-200", "bg-white");
@@ -3908,61 +3995,261 @@ function initInteractivePractice() {
 }
 
 /* ==========================================================================
-   17. Section Tiến Độ Học Tập (Progress Tracker)
+   17. Section Tiến Độ Học Tập & Hệ Thống Đo Lường Hoạt Động Thực Tế (Real Data Engine)
    ========================================================================== */
+
+function getTodayDateString() {
+  const d = new Date();
+  const year = d.getFullYear();
+  const month = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
+function getUserActivityDates(userId = activeProfileId) {
+  try {
+    const raw = localStorage.getItem(`mochi_activity_dates_${userId}`);
+    if (raw) {
+      const arr = JSON.parse(raw);
+      if (Array.isArray(arr) && arr.length > 0) return arr;
+    }
+  } catch (e) {}
+
+  // Initial migration / seeding for users with existing progress
+  const typing = JSON.parse(localStorage.getItem(`mochi_typing_progress_${userId}`) || "{}");
+  const typingCount = Object.values(typing).filter(v => v && v.status === "passed").length;
+  const cards = JSON.parse(localStorage.getItem(`mochi_flashcards_mastered_${userId}`) || "[]").length;
+  const quiz = JSON.parse(localStorage.getItem(`mochi_quiz_stats_${userId}`) || "{}");
+  const quizTotal = quiz.total || 0;
+
+  if (typingCount > 0 || cards > 0 || quizTotal > 0) {
+    const seedStreak = Math.min(14, Math.max(1, Math.ceil((typingCount + cards + quizTotal) / 3)));
+    const seedDates = [];
+    const now = new Date();
+    for (let i = seedStreak - 1; i >= 0; i--) {
+      const past = new Date(now);
+      past.setDate(past.getDate() - i);
+      const y = past.getFullYear();
+      const m = String(past.getMonth() + 1).padStart(2, '0');
+      const d = String(past.getDate()).padStart(2, '0');
+      seedDates.push(`${y}-${m}-${d}`);
+    }
+    localStorage.setItem(`mochi_activity_dates_${userId}`, JSON.stringify(seedDates));
+    return seedDates;
+  }
+
+  return [];
+}
+
+function recordUserActivity(userId = activeProfileId, actionType = 'general') {
+  if (!userId) userId = activeProfileId || 'ngoc_anh';
+  const todayStr = getTodayDateString();
+  const dates = getUserActivityDates(userId);
+  if (!dates.includes(todayStr)) {
+    dates.push(todayStr);
+    dates.sort();
+    localStorage.setItem(`mochi_activity_dates_${userId}`, JSON.stringify(dates));
+  }
+
+  const todayKey = `mochi_today_actions_${userId}_${todayStr}`;
+  const currentCount = parseInt(localStorage.getItem(todayKey) || "0", 10);
+  localStorage.setItem(todayKey, String(currentCount + 1));
+
+  // Live refresh of progress section
+  if (typeof initProgressSection === "function") initProgressSection();
+}
+
+function calculateRealStreak(userId = activeProfileId) {
+  if (!userId) userId = activeProfileId || 'ngoc_anh';
+  const dates = getUserActivityDates(userId);
+  if (!dates || dates.length === 0) return 0;
+
+  const dateSet = new Set(dates);
+  const now = new Date();
+
+  const fmt = (d) => {
+    const y = d.getFullYear();
+    const m = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    return `${y}-${m}-${day}`;
+  };
+
+  const todayStr = fmt(now);
+  const yesterday = new Date(now);
+  yesterday.setDate(yesterday.getDate() - 1);
+  const yesterdayStr = fmt(yesterday);
+
+  let streak = 0;
+  let checkDate = new Date(now);
+
+  if (dateSet.has(todayStr)) {
+    streak = 1;
+    checkDate.setDate(checkDate.getDate() - 1);
+    while (dateSet.has(fmt(checkDate))) {
+      streak++;
+      checkDate.setDate(checkDate.getDate() - 1);
+    }
+  } else if (dateSet.has(yesterdayStr)) {
+    streak = 1;
+    checkDate = new Date(yesterday);
+    checkDate.setDate(checkDate.getDate() - 1);
+    while (dateSet.has(fmt(checkDate))) {
+      streak++;
+      checkDate.setDate(checkDate.getDate() - 1);
+    }
+  } else {
+    streak = 0;
+  }
+
+  return streak;
+}
+
 function initProgressSection() {
   const profile = MOCHI_DATA.profiles[activeProfileId] || MOCHI_DATA.profiles.ngoc_anh;
+  const realStreak = calculateRealStreak(activeProfileId);
 
+  // 1. Live Streak Counter
   const streakCountEl = document.getElementById("streak-days-count");
-  if (streakCountEl) streakCountEl.textContent = profile.stats.streak;
+  if (streakCountEl) streakCountEl.textContent = realStreak;
 
+  // 2. Real Week Calendar (T2 - CN for the current calendar week)
   const weekList = document.getElementById("streak-week-list");
   if (weekList) {
-    const days = [
-      { day: "T2", done: true },
-      { day: "T3", done: true },
-      { day: "T4", done: true },
-      { day: "T5", done: true },
-      { day: "T6", done: true },
-      { day: "T7", done: profile.stats.streak >= 6 },
-      { day: "CN", done: profile.stats.streak >= 7 }
-    ];
+    const activityDates = new Set(getUserActivityDates(activeProfileId));
+    const now = new Date();
+    const currentDayOfWeek = now.getDay();
+    const distanceToMonday = (currentDayOfWeek + 6) % 7;
+    const monday = new Date(now);
+    monday.setDate(monday.getDate() - distanceToMonday);
 
-    weekList.innerHTML = days.map(w => `
-      <div class="flex flex-col items-center gap-1.5">
-        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl flex items-center justify-center text-sm font-bold ${
-          w.done ? "bg-[#F59BB0] text-white shadow-sm shadow-pink-200" : "bg-gray-100 text-gray-400"
-        }">
-          ${w.done ? "🌸" : "•"}
+    const weekDaysNames = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"];
+    const todayStr = getTodayDateString();
+
+    const weekData = [];
+    for (let i = 0; i < 7; i++) {
+      const dayDate = new Date(monday);
+      dayDate.setDate(dayDate.getDate() + i);
+      const y = dayDate.getFullYear();
+      const m = String(dayDate.getMonth() + 1).padStart(2, '0');
+      const d = String(dayDate.getDate()).padStart(2, '0');
+      const dateStr = `${y}-${m}-${d}`;
+      const isDone = activityDates.has(dateStr);
+      const isToday = dateStr === todayStr;
+
+      weekData.push({
+        dayName: weekDaysNames[i],
+        dateStr,
+        isDone,
+        isToday
+      });
+    }
+
+    weekList.innerHTML = weekData.map(w => `
+      <div class="flex flex-col items-center gap-1.5 group">
+        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl flex items-center justify-center text-sm font-bold transition-all ${
+          w.isDone 
+            ? "bg-[#F59BB0] text-white shadow-sm shadow-pink-200 ring-2 ring-pink-100" 
+            : (w.isToday ? "bg-pink-50 border-2 border-dashed border-pink-400 text-pink-500 animate-pulse" : "bg-gray-100 text-gray-400")
+        }" title="${w.dateStr}: ${w.isDone ? 'Đã hoàn thành hoạt động học tập' : (w.isToday ? 'Hôm nay - Hãy học để duy trì streak!' : 'Chưa ghi nhận')}">
+          ${w.isDone ? "🌸" : (w.isToday ? "✍️" : "•")}
         </div>
-        <span class="text-[11px] font-bold ${w.done ? "text-pink-600" : "text-gray-400"}">${w.day}</span>
+        <span class="text-[11px] font-bold ${w.isDone ? "text-pink-600" : (w.isToday ? "text-pink-500 underline" : "text-gray-400")}">${w.dayName}</span>
       </div>
     `).join("");
   }
 
+  // 3. Real Daily Goal (Based on actual activities completed today)
+  const todayStr = getTodayDateString();
+  const todayActions = parseInt(localStorage.getItem(`mochi_today_actions_${activeProfileId}_${todayStr}`) || "0", 10);
+  const TARGET_DAILY_ACTIONS = 5;
+  const goalPercentNum = Math.min(100, Math.round((todayActions / TARGET_DAILY_ACTIONS) * 100));
+
   const goalText = document.getElementById("daily-goal-text");
   const goalBar = document.getElementById("daily-goal-bar");
   const goalPercent = document.getElementById("daily-goal-percent");
-  const completed = profile.stats.lessonsCompleted % 5;
-  const percent = Math.round((completed / 5) * 100);
 
-  if (goalText) goalText.textContent = `${completed} / 5 bài học`;
-  if (goalBar) goalBar.style.width = `${percent}%`;
-  if (goalPercent) goalPercent.textContent = `${percent}%`;
+  if (goalText) goalText.textContent = `${todayActions} / ${TARGET_DAILY_ACTIONS} hoạt động hôm nay`;
+  if (goalBar) goalBar.style.width = `${goalPercentNum}%`;
+  if (goalPercent) goalPercent.textContent = `${goalPercentNum}%`;
 
+  // 4. Real Badges (Dynamically evaluated based on real metrics)
+  const typing = JSON.parse(localStorage.getItem(`mochi_typing_progress_${activeProfileId}`) || "{}");
+  const realPassedWords = Object.values(typing).filter(v => v && v.status === "passed").length;
+  const realMasteredCards = JSON.parse(localStorage.getItem(`mochi_flashcards_mastered_${activeProfileId}`) || "[]").length;
+  const realQuizStats = JSON.parse(localStorage.getItem(`mochi_quiz_stats_${activeProfileId}`) || "{}");
+  const realQuizTotal = realQuizStats.total || 0;
+  const realQuizScore = realQuizStats.score || 0;
+
+  const evaluatedBadges = [
+    {
+      id: "b1",
+      icon: "🌸",
+      title: "Nàng Thơ Hán Ngữ 🌸",
+      desc: "Bắt đầu hành trình học tập (Ghi nhận hoạt động đầu tiên)",
+      unlocked: (realPassedWords + realMasteredCards + realQuizTotal) > 0,
+      progressText: (realPassedWords + realMasteredCards + realQuizTotal) > 0 ? "Đã đạt ✔️" : "Chưa mở"
+    },
+    {
+      id: "b2",
+      icon: "✨",
+      title: "Thần đồng Pinyin ✨",
+      desc: "Tham gia ít nhất 5 câu hỏi Mini Quiz trắc nghiệm",
+      unlocked: realQuizTotal >= 5,
+      progressText: `${Math.min(5, realQuizTotal)} / 5 câu quiz`
+    },
+    {
+      id: "b3",
+      icon: "🔥",
+      title: "Chăm chỉ Level Max 🔥",
+      desc: "Duy trì chuỗi streak thực tế từ 3 ngày liên tiếp trở lên",
+      unlocked: realStreak >= 3,
+      progressText: `${Math.min(3, realStreak)} / 3 ngày streak`
+    },
+    {
+      id: "b4",
+      icon: "✍️",
+      title: "Bút thần tỏa sáng ✍️",
+      desc: "Gõ đúng (PASS) từ 15 từ vựng trở lên trong Studio",
+      unlocked: realPassedWords >= 15,
+      progressText: `${Math.min(15, realPassedWords)} / 15 từ pass`
+    },
+    {
+      id: "b5",
+      icon: "💼",
+      title: "Nữ hoàng công sở 💼",
+      desc: "Đạt 50 điểm Mini Quiz hoặc hoàn thành 50 từ vựng",
+      unlocked: (realQuizScore >= 50 || realPassedWords >= 50),
+      progressText: `${Math.max(realQuizScore, realPassedWords)} / 50 điểm`
+    }
+  ];
+
+  const unlockedCount = evaluatedBadges.filter(b => b.unlocked).length;
   const badgeContainer = document.getElementById("user-badges-list");
   if (badgeContainer) {
-    badgeContainer.innerHTML = MOCHI_DATA.badges.map(b => `
-      <div class="p-3 rounded-2xl border flex items-center gap-3 ${
-        b.unlocked ? "bg-white border-pink-100 shadow-sm" : "bg-gray-50 border-gray-100 opacity-60"
+    badgeContainer.innerHTML = evaluatedBadges.map(b => `
+      <div class="p-3 rounded-2xl border flex items-center justify-between gap-3 transition-all ${
+        b.unlocked ? "bg-white border-pink-200 shadow-2xs" : "bg-gray-50/70 border-gray-100 opacity-60"
       }">
-        <div class="text-2xl">${b.title.split(" ")[b.title.split(" ").length - 1]}</div>
-        <div>
-          <div class="text-xs sm:text-sm font-bold text-gray-800">${b.title.replace(/[^\p{L}\s]/gu, "").trim()}</div>
-          <div class="text-[11px] text-gray-500">${b.desc}</div>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl ${b.unlocked ? 'bg-pink-100 text-pink-600' : 'bg-gray-100 text-gray-400'} flex items-center justify-center text-xl shrink-0">
+            ${b.icon}
+          </div>
+          <div>
+            <div class="text-xs sm:text-sm font-bold text-gray-800 flex items-center gap-1.5">
+              <span>${b.title}</span>
+              ${b.unlocked ? '<span class="text-[9px] font-black text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded-full border border-emerald-200">Đã mở</span>' : ''}
+            </div>
+            <div class="text-[11px] text-gray-500">${b.desc}</div>
+          </div>
+        </div>
+        <div class="text-[10px] font-bold ${b.unlocked ? 'text-pink-600' : 'text-gray-400'} shrink-0 text-right">
+          ${b.progressText}
         </div>
       </div>
     `).join("");
+
+    const badgeHeaderCount = document.querySelector("#progress .mochi-card:nth-child(3) .text-gray-400");
+    if (badgeHeaderCount) badgeHeaderCount.textContent = `Đã mở khóa ${unlockedCount}/${evaluatedBadges.length}`;
   }
 }
 
@@ -6629,6 +6916,7 @@ function initVocabTypingStudio() {
             checkCell.innerHTML = `<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-black bg-emerald-100 text-emerald-800 border border-emerald-300 shadow-2xs animate-bounce-short"><i data-lucide="check" class="w-3.5 h-3.5"></i> PASS ✓</span>`;
             input.className = "typing-input w-full px-3 py-1.5 rounded-xl border text-sm font-chinese tracking-wide transition-all focus:outline-none focus:ring-2 border-emerald-400 bg-emerald-50/70 text-emerald-900 font-bold focus:ring-emerald-200";
             if (window.playRewardChime) window.playRewardChime();
+            recordUserActivity(activeProfileId, 'typing_pass');
           } else if (status === "failed") {
             checkCell.innerHTML = `<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-black bg-rose-100 text-rose-800 border border-rose-300 shadow-2xs"><i data-lucide="x" class="w-3.5 h-3.5"></i> FAILED ✗</span>`;
             input.className = "typing-input w-full px-3 py-1.5 rounded-xl border text-sm font-chinese tracking-wide transition-all focus:outline-none focus:ring-2 border-rose-400 bg-rose-50/60 text-rose-900 font-semibold focus:ring-rose-200";

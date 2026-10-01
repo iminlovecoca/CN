@@ -2,7 +2,7 @@
 <html lang="vi" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Mochi Chinese (米米汉语) — Cuốn Sổ Tay Tri Thức & Từ Điển Của Ngọc Ánh 🌸</title>
   
   <!-- Phông chữ Google Fonts: Nunito, Quicksand, Noto Sans SC -->
@@ -48,7 +48,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-[#FFF8FB] text-[#4A4A4A] min-h-screen flex flex-col pb-20 md:pb-0 selection:bg-pink-100 selection:text-pink-700">
+<body class="bg-[#FFF8FB] text-[#4A4A4A] min-h-screen flex flex-col pb-[calc(4.75rem+env(safe-area-inset-bottom,0px))] md:pb-0 selection:bg-pink-100 selection:text-pink-700 overflow-x-hidden w-full">
 
   <!-- =========================================================================
        A. HEADER & NAVIGATION BAR
@@ -1307,7 +1307,7 @@
                 <div class="text-xs font-bold text-gray-400 uppercase tracking-wider">Chuỗi ngày siêng năng</div>
                 <div class="text-xl sm:text-2xl font-extrabold text-gray-800 font-heading flex items-center gap-2">
                   <span>Streak</span>
-                  <span class="text-pink-600" id="streak-days-count">7</span>
+                  <span class="text-pink-600" id="streak-days-count">0</span>
                   <span>ngày liên tiếp! 🔥</span>
                 </div>
               </div>
@@ -1325,13 +1325,13 @@
             <div class="flex items-center justify-between mb-3">
               <div>
                 <div class="text-xs font-bold text-gray-400 uppercase tracking-wider">Mục tiêu học hôm nay</div>
-                <div class="text-lg font-bold text-gray-800 font-heading" id="daily-goal-text">3 / 5 bài học</div>
+                <div class="text-lg font-bold text-gray-800 font-heading" id="daily-goal-text">0 / 5 hoạt động</div>
               </div>
-              <span class="text-sm font-extrabold text-emerald-600" id="daily-goal-percent">60%</span>
+              <span class="text-sm font-extrabold text-emerald-600" id="daily-goal-percent">0%</span>
             </div>
 
             <div class="w-full h-3 bg-gray-100 rounded-full overflow-hidden mb-4">
-              <div id="daily-goal-bar" class="h-full bg-gradient-to-r from-pink-400 to-[#74C69D] rounded-full transition-all duration-500" style="width: 60%"></div>
+              <div id="daily-goal-bar" class="h-full bg-gradient-to-r from-pink-400 to-[#74C69D] rounded-full transition-all duration-500" style="width: 0%"></div>
             </div>
           </div>
 
@@ -1340,7 +1340,7 @@
               <h4 class="text-base font-bold text-gray-800 font-heading flex items-center gap-2">
                 <span>🎖️</span> Huy hiệu học tập
               </h4>
-              <span class="text-xs text-gray-400">Đã mở khóa 4/5</span>
+              <span class="text-xs text-gray-400">Đang đồng bộ...</span>
             </div>
             <div id="user-badges-list" class="space-y-2.5"></div>
           </div>
@@ -1469,7 +1469,7 @@
        MODAL SOẠN GHI CHÚ SỔ TAY PASTEL
        ========================================================================= -->
   <div id="note-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 mochi-modal-backdrop hidden">
-    <div class="relative w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden border border-pink-100">
+    <div class="mochi-modal-box relative w-full max-w-md max-h-[90vh] max-h-[90dvh] bg-white rounded-3xl shadow-2xl overflow-y-auto border border-pink-100">
       <div class="p-6 bg-gradient-to-r from-pink-50 via-purple-50 to-amber-50 border-b border-pink-100 flex items-center justify-between">
         <div class="flex items-center gap-2">
           <span class="text-xl">📝</span>
@@ -1518,7 +1518,7 @@
        MODAL ĐĂNG KÝ & ĐĂNG NHẬP (AUTHENTICATION & PERSISTENCE)
        ========================================================================= -->
   <div id="auth-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 mochi-modal-backdrop hidden">
-    <div class="relative w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden border border-pink-100">
+    <div class="mochi-modal-box relative w-full max-w-md max-h-[90vh] max-h-[90dvh] bg-white rounded-3xl shadow-2xl overflow-y-auto border border-pink-100">
       
       <!-- Modal Header -->
       <div class="p-6 bg-gradient-to-r from-pink-100 via-purple-50 to-amber-50 border-b border-pink-100 flex items-center justify-between">
@@ -1644,7 +1644,7 @@
        MODAL THÔNG TIN TÀI KHOẢN & TIẾN ĐỘ HỌC TẬP CỦA TÔI
        ========================================================================= -->
   <div id="user-profile-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 mochi-modal-backdrop hidden">
-    <div class="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl overflow-hidden border border-pink-100">
+    <div class="mochi-modal-box relative w-full max-w-lg max-h-[90vh] max-h-[90dvh] bg-white rounded-3xl shadow-2xl overflow-y-auto border border-pink-100">
       
       <!-- Profile Header -->
       <div class="p-6 bg-gradient-to-r from-pink-100 via-purple-100 to-amber-50 border-b border-pink-200/60 flex items-center justify-between">
@@ -1679,7 +1679,7 @@
             <div class="text-[10px] font-bold text-gray-500">Từ trong sổ tay</div>
           </div>
           <div class="p-3 rounded-2xl bg-emerald-50/70 border border-emerald-100 text-center">
-            <div class="text-lg font-black text-emerald-600" id="user-stat-streak">7 ngày</div>
+            <div class="text-lg font-black text-emerald-600" id="user-stat-streak">0 ngày</div>
             <div class="text-[10px] font-bold text-gray-500">Chuỗi học tập 🔥</div>
           </div>
         </div>
@@ -1764,7 +1764,7 @@
   <!-- =========================================================================
        MOBILE BOTTOM NAVIGATION BAR
        ========================================================================= -->
-  <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-[#F7EBF0] px-3 py-2 flex items-center justify-around shadow-lg">
+  <div class="bottom-nav-mobile-bar md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-[#F7EBF0] px-3 py-2 flex items-center justify-around shadow-lg">
     
     <a href="#hero" class="bottom-nav-btn active flex flex-col items-center gap-1 text-[10px] font-bold text-gray-500">
       <div class="nav-icon-wrapper p-1 rounded-xl transition-all">
@@ -1812,7 +1812,7 @@
        MODAL CÀI ĐẶT TRÍ TUỆ NHÂN TẠO AI SONG HÀNH (GEMINI + OPENAI FAILOVER)
        ========================================================================= -->
   <div id="chat-ai-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 mochi-modal-backdrop hidden">
-    <div class="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl p-6 sm:p-7 border border-pink-100 animate-gentle-pulse-once space-y-5">
+    <div class="mochi-modal-box relative w-full max-w-lg max-h-[90vh] max-h-[90dvh] bg-white rounded-3xl shadow-2xl p-6 sm:p-7 border border-pink-100 animate-gentle-pulse-once space-y-5 overflow-y-auto">
       
       <div class="flex items-center justify-between border-b border-pink-100 pb-3">
         <div class="flex items-center gap-2">
