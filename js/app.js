@@ -202,7 +202,7 @@ const DEFAULT_AUTH_USERS = {
       afternoon: "Buổi chiều tốt lành Ánh Ánh ơi! Tự thưởng một ly trà sữa và luyện một đoạn hội thoại thật mượt nhé 🧋",
       evening: "Ngọc Ánh đã chăm chỉ cả ngày rồi! Nghe một mẩu podcast thư giãn trước khi ngủ nhé ✨"
     },
-    stats: { streak: 7, vocabLearned: 210, lessonsCompleted: 15, targetYear: "Tự tin vi vu Bắc Kinh - Thượng Hải & chốt deal công sở!" }
+    stats: { streak: 0, vocabLearned: 0, lessonsCompleted: 0, targetYear: "Chinh phục toàn diện HSK 1 — 6" }
   },
   "companion": {
     id: "companion",
@@ -220,7 +220,7 @@ const DEFAULT_AUTH_USERS = {
       afternoon: "Buổi chiều hăng say! Cùng Ánh Ánh ôn lại các từ vựng công sở nhé 💼",
       evening: "Buổi tối an lành! Cùng tổng kết lại tiến độ học tập hôm nay nhé 🌙"
     },
-    stats: { streak: 5, vocabLearned: 135, lessonsCompleted: 12, targetYear: "Đồng hành chinh phục tiếng Trung cùng Ngọc Ánh!" }
+    stats: { streak: 0, vocabLearned: 0, lessonsCompleted: 0, targetYear: "Đồng hành chinh phục tiếng Trung cùng Ngọc Ánh!" }
   }
 };
 
@@ -1884,11 +1884,13 @@ function openWordDetailModal(wordId) {
 
   body.innerHTML = `
     <div class="p-6 sm:p-8 bg-gradient-to-r from-pink-100/90 via-purple-50 to-pink-50 border-b border-pink-100 rounded-t-3xl text-center relative">
-      <div class="flex items-center justify-center gap-2 mb-2">
-        <span class="badge-pill bg-white text-pink-600 shadow-2xs">${word.hsk}</span>
-        <span class="badge-pill bg-white/80 text-gray-600">${word.wordType}</span>
-        <span class="badge-pill bg-white/80 text-gray-600">${word.strokes} nét</span>
-        <span class="badge-pill bg-white/80 text-gray-600">Bộ ${word.radical}</span>
+      <div class="flex flex-wrap items-center justify-center gap-2 text-xs font-semibold text-gray-500 mb-2">
+        <span class="px-2.5 py-0.5 rounded-full bg-white text-pink-600 font-bold border border-pink-200 shadow-2xs font-mono">${word.hsk}</span>
+        <span>•</span>
+        <span>${word.strokes} nét</span>
+        <span>•</span>
+        <span>Bộ ${word.radical}</span>
+        ${word.wordType ? `<span>•</span><span>${word.wordType}</span>` : ""}
       </div>
 
       <div class="font-chinese text-4xl sm:text-5xl font-black text-gray-800 my-2">${word.hanzi}</div>
@@ -3459,10 +3461,12 @@ function initLessonModal() {
 
     modalBody.innerHTML = `
       <div class="p-6 sm:p-8 bg-gradient-to-r from-pink-100/90 via-purple-50 to-pink-50 border-b border-pink-100 rounded-t-3xl">
-        <div class="flex items-center gap-2 mb-2">
-          <span class="badge-pill bg-white text-pink-600 shadow-sm">${lesson.badge}</span>
-          <span class="badge-pill bg-white/80 text-gray-700">${lesson.levelName}</span>
-          <span class="badge-pill bg-white/80 text-gray-700">⏱️ ${lesson.duration}</span>
+        <div class="flex flex-wrap items-center gap-2 text-xs font-semibold text-gray-600 mb-2">
+          <span class="px-2.5 py-0.5 rounded-full bg-white text-pink-600 font-bold border border-pink-200 shadow-2xs">${lesson.badge}</span>
+          <span>•</span>
+          <span>${lesson.levelName}</span>
+          <span>•</span>
+          <span>⏱️ ${lesson.duration}</span>
         </div>
         <h3 class="text-2xl sm:text-3xl font-extrabold text-gray-800 font-heading mb-2">${lesson.title}</h3>
         <p class="text-xs sm:text-sm text-gray-600"><strong>Mục tiêu:</strong> ${lesson.detail.objective}</p>
@@ -4011,32 +4015,9 @@ function getUserActivityDates(userId = activeProfileId) {
     const raw = localStorage.getItem(`mochi_activity_dates_${userId}`);
     if (raw) {
       const arr = JSON.parse(raw);
-      if (Array.isArray(arr) && arr.length > 0) return arr;
+      if (Array.isArray(arr)) return arr;
     }
   } catch (e) {}
-
-  // Initial migration / seeding for users with existing progress
-  const typing = JSON.parse(localStorage.getItem(`mochi_typing_progress_${userId}`) || "{}");
-  const typingCount = Object.values(typing).filter(v => v && v.status === "passed").length;
-  const cards = JSON.parse(localStorage.getItem(`mochi_flashcards_mastered_${userId}`) || "[]").length;
-  const quiz = JSON.parse(localStorage.getItem(`mochi_quiz_stats_${userId}`) || "{}");
-  const quizTotal = quiz.total || 0;
-
-  if (typingCount > 0 || cards > 0 || quizTotal > 0) {
-    const seedStreak = Math.min(14, Math.max(1, Math.ceil((typingCount + cards + quizTotal) / 3)));
-    const seedDates = [];
-    const now = new Date();
-    for (let i = seedStreak - 1; i >= 0; i--) {
-      const past = new Date(now);
-      past.setDate(past.getDate() - i);
-      const y = past.getFullYear();
-      const m = String(past.getMonth() + 1).padStart(2, '0');
-      const d = String(past.getDate()).padStart(2, '0');
-      seedDates.push(`${y}-${m}-${d}`);
-    }
-    localStorage.setItem(`mochi_activity_dates_${userId}`, JSON.stringify(seedDates));
-    return seedDates;
-  }
 
   return [];
 }
@@ -4172,84 +4153,133 @@ function initProgressSection() {
   if (goalBar) goalBar.style.width = `${goalPercentNum}%`;
   if (goalPercent) goalPercent.textContent = `${goalPercentNum}%`;
 
-  // 4. Real Badges (Dynamically evaluated based on real metrics)
-  const typing = JSON.parse(localStorage.getItem(`mochi_typing_progress_${activeProfileId}`) || "{}");
-  const realPassedWords = Object.values(typing).filter(v => v && v.status === "passed").length;
-  const realMasteredCards = JSON.parse(localStorage.getItem(`mochi_flashcards_mastered_${activeProfileId}`) || "[]").length;
-  const realQuizStats = JSON.parse(localStorage.getItem(`mochi_quiz_stats_${activeProfileId}`) || "{}");
-  const realQuizTotal = realQuizStats.total || 0;
-  const realQuizScore = realQuizStats.score || 0;
+  // 4. REAL DATA ANALYTICS DASHBOARD (HSK 1 - 6 Breakdown & Learning Metrics)
+  const allVocab = (window.MOCHI_VOCAB_BANK && Array.isArray(window.MOCHI_VOCAB_BANK)) ? window.MOCHI_VOCAB_BANK : [];
+  const typingMap = JSON.parse(localStorage.getItem(`mochi_typing_progress_${activeProfileId}`) || "{}");
+  const masteredCards = JSON.parse(localStorage.getItem(`mochi_flashcards_mastered_${activeProfileId}`) || "[]");
+  const quizStats = JSON.parse(localStorage.getItem(`mochi_quiz_stats_${activeProfileId}`) || "{}");
+  const savedWords = JSON.parse(localStorage.getItem(`mochi_saved_words_${activeProfileId}`) || "[]");
+  const activityDates = getUserActivityDates(activeProfileId);
 
-  const evaluatedBadges = [
-    {
-      id: "b1",
-      icon: "🌸",
-      title: "Nàng Thơ Hán Ngữ 🌸",
-      desc: "Bắt đầu hành trình học tập (Ghi nhận hoạt động đầu tiên)",
-      unlocked: (realPassedWords + realMasteredCards + realQuizTotal) > 0,
-      progressText: (realPassedWords + realMasteredCards + realQuizTotal) > 0 ? "Đã đạt ✔️" : "Chưa mở"
-    },
-    {
-      id: "b2",
-      icon: "✨",
-      title: "Thần đồng Pinyin ✨",
-      desc: "Tham gia ít nhất 5 câu hỏi Mini Quiz trắc nghiệm",
-      unlocked: realQuizTotal >= 5,
-      progressText: `${Math.min(5, realQuizTotal)} / 5 câu quiz`
-    },
-    {
-      id: "b3",
-      icon: "🔥",
-      title: "Chăm chỉ Level Max 🔥",
-      desc: "Duy trì chuỗi streak thực tế từ 3 ngày liên tiếp trở lên",
-      unlocked: realStreak >= 3,
-      progressText: `${Math.min(3, realStreak)} / 3 ngày streak`
-    },
-    {
-      id: "b4",
-      icon: "✍️",
-      title: "Bút thần tỏa sáng ✍️",
-      desc: "Gõ đúng (PASS) từ 15 từ vựng trở lên trong Studio",
-      unlocked: realPassedWords >= 15,
-      progressText: `${Math.min(15, realPassedWords)} / 15 từ pass`
-    },
-    {
-      id: "b5",
-      icon: "💼",
-      title: "Nữ hoàng công sở 💼",
-      desc: "Đạt 50 điểm Mini Quiz hoặc hoàn thành 50 từ vựng",
-      unlocked: (realQuizScore >= 50 || realPassedWords >= 50),
-      progressText: `${Math.max(realQuizScore, realPassedWords)} / 50 điểm`
+  // Group all vocab by HSK tier and count PASS
+  const hskLevels = ["HSK 1", "HSK 2", "HSK 3", "HSK 4", "HSK 5", "HSK 6"];
+  const hskCounts = {
+    "HSK 1": { total: 0, passed: 0 },
+    "HSK 2": { total: 0, passed: 0 },
+    "HSK 3": { total: 0, passed: 0 },
+    "HSK 4": { total: 0, passed: 0 },
+    "HSK 5": { total: 0, passed: 0 },
+    "HSK 6": { total: 0, passed: 0 }
+  };
+
+  allVocab.forEach(w => {
+    if (hskCounts[w.hsk]) {
+      hskCounts[w.hsk].total++;
+      const p = typingMap[w.id];
+      if (p && p.status === "passed") {
+        hskCounts[w.hsk].passed++;
+      }
     }
-  ];
+  });
 
-  const unlockedCount = evaluatedBadges.filter(b => b.unlocked).length;
-  const badgeContainer = document.getElementById("user-badges-list");
-  if (badgeContainer) {
-    badgeContainer.innerHTML = evaluatedBadges.map(b => `
-      <div class="p-3 rounded-2xl border flex items-center justify-between gap-3 transition-all ${
-        b.unlocked ? "bg-white border-pink-200 shadow-2xs" : "bg-gray-50/70 border-gray-100 opacity-60"
-      }">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl ${b.unlocked ? 'bg-pink-100 text-pink-600' : 'bg-gray-100 text-gray-400'} flex items-center justify-center text-xl shrink-0">
-            ${b.icon}
-          </div>
-          <div>
-            <div class="text-xs sm:text-sm font-bold text-gray-800 flex items-center gap-1.5">
-              <span>${b.title}</span>
-              ${b.unlocked ? '<span class="text-[9px] font-black text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded-full border border-emerald-200">Đã mở</span>' : ''}
+  const totalBankWords = allVocab.length || 6200;
+  const totalPassedWords = Object.values(hskCounts).reduce((acc, cur) => acc + cur.passed, 0);
+  const overallPassedPercent = totalBankWords > 0 ? ((totalPassedWords / totalBankWords) * 100).toFixed(1) : "0.0";
+
+  // Summary badge in header
+  const summaryBadge = document.getElementById("hsk-progress-summary-badge");
+  if (summaryBadge) {
+    summaryBadge.textContent = `${totalPassedWords.toLocaleString("vi-VN")} / ${totalBankWords.toLocaleString("vi-VN")} từ (${overallPassedPercent}%)`;
+  }
+
+  // Render 6 HSK Levels Progress Bars
+  const hskListContainer = document.getElementById("hsk-levels-progress-list");
+  if (hskListContainer) {
+    hskListContainer.innerHTML = hskLevels.map(lvl => {
+      const data = hskCounts[lvl];
+      const total = data.total || (lvl === "HSK 4" ? 1200 : 1000);
+      const passed = data.passed;
+      const pct = total > 0 ? ((passed / total) * 100).toFixed(1) : "0.0";
+      const pctNum = parseFloat(pct);
+
+      return `
+        <div class="p-3 rounded-2xl bg-gray-50/70 border border-gray-100 hover:border-pink-200 transition-colors">
+          <div class="flex items-center justify-between text-xs mb-1.5">
+            <div class="font-bold text-gray-800 flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded-lg bg-white border border-gray-200 text-gray-700 font-mono text-[11px] font-black">${lvl}</span>
+              <span class="text-gray-500 font-medium">${passed.toLocaleString("vi-VN")} / ${total.toLocaleString("vi-VN")} từ</span>
             </div>
-            <div class="text-[11px] text-gray-500">${b.desc}</div>
+            <span class="font-mono text-xs font-black ${pctNum > 0 ? 'text-pink-600' : 'text-gray-400'}">${pct}%</span>
+          </div>
+          <div class="w-full h-2 bg-gray-200/80 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-pink-400 to-[#A98CF0] rounded-full transition-all duration-500" style="width: ${pctNum}%"></div>
           </div>
         </div>
-        <div class="text-[10px] font-bold ${b.unlocked ? 'text-pink-600' : 'text-gray-400'} shrink-0 text-right">
-          ${b.progressText}
-        </div>
+      `;
+    }).join("");
+  }
+
+  // Render Real Metrics Dashboard Grid (6 Tiles of real data)
+  const metricsGrid = document.getElementById("real-metrics-dashboard-grid");
+  if (metricsGrid) {
+    const quizTotal = quizStats.total || 0;
+    const quizCorrect = quizStats.correct || 0;
+    const quizAccuracy = quizTotal > 0 ? Math.round((quizCorrect / quizTotal) * 100) : 0;
+    const quizScore = quizStats.score || 0;
+    const quizBestStreak = quizStats.bestStreak || 0;
+
+    const tiles = [
+      {
+        label: "Từ vựng gõ PASS",
+        val: `${totalPassedWords.toLocaleString("vi-VN")}`,
+        sub: `Trên tổng ${totalBankWords.toLocaleString("vi-VN")} từ`,
+        color: "text-pink-600",
+        bg: "bg-pink-50/60 border-pink-100"
+      },
+      {
+        label: "Flashcard thuộc",
+        val: `${masteredCards.length.toLocaleString("vi-VN")}`,
+        sub: `Trên ${totalBankWords.toLocaleString("vi-VN")} thẻ`,
+        color: "text-purple-600",
+        bg: "bg-purple-50/60 border-purple-100"
+      },
+      {
+        label: "Câu hỏi Mini Quiz",
+        val: `${quizTotal.toLocaleString("vi-VN")}`,
+        sub: `Đúng ${quizCorrect} (${quizAccuracy}%)`,
+        color: "text-emerald-600",
+        bg: "bg-emerald-50/60 border-emerald-100"
+      },
+      {
+        label: "Điểm thưởng Quiz",
+        val: `${quizScore.toLocaleString("vi-VN")}`,
+        sub: `Kỷ lục chuỗi: ${quizBestStreak}`,
+        color: "text-amber-600",
+        bg: "bg-amber-50/60 border-amber-100"
+      },
+      {
+        label: "Từ vựng trong sổ",
+        val: `${savedWords.length.toLocaleString("vi-VN")}`,
+        sub: `Đã ghim lưu trữ`,
+        color: "text-rose-600",
+        bg: "bg-rose-50/60 border-rose-100"
+      },
+      {
+        label: "Ngày học ghi nhận",
+        val: `${activityDates.length}`,
+        sub: `Streak: ${realStreak} ngày`,
+        color: "text-indigo-600",
+        bg: "bg-indigo-50/60 border-indigo-100"
+      }
+    ];
+
+    metricsGrid.innerHTML = tiles.map(t => `
+      <div class="p-3 rounded-2xl border ${t.bg} text-center flex flex-col justify-center">
+        <div class="text-[10px] font-bold text-gray-500 mb-0.5">${t.label}</div>
+        <div class="text-base sm:text-lg font-black ${t.color} font-mono">${t.val}</div>
+        <div class="text-[10px] text-gray-400 font-medium truncate">${t.sub}</div>
       </div>
     `).join("");
-
-    const badgeHeaderCount = document.querySelector("#progress .mochi-card:nth-child(3) .text-gray-400");
-    if (badgeHeaderCount) badgeHeaderCount.textContent = `Đã mở khóa ${unlockedCount}/${evaluatedBadges.length}`;
   }
 }
 

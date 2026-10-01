@@ -19,10 +19,10 @@ const MOCHI_DATA = {
         "evening": "Ngọc Ánh đã chăm chỉ cả ngày rồi! Nghe một mẩu podcast thư giãn trước khi ngủ nhé ✨"
       },
       "stats": {
-        "streak": 7,
-        "vocabLearned": 210,
-        "lessonsCompleted": 15,
-        "targetYear": "Tự tin vi vu Bắc Kinh - Thượng Hải & chốt deal công sở!"
+        "streak": 0,
+        "vocabLearned": 0,
+        "lessonsCompleted": 0,
+        "targetYear": "Chinh phục toàn diện HSK 1 — 6"
       }
     },
     "companion": {
@@ -39,9 +39,9 @@ const MOCHI_DATA = {
         "evening": "Buổi tối an lành! Cùng tổng kết lại tiến độ học tập hôm nay nhé 🌙"
       },
       "stats": {
-        "streak": 5,
-        "vocabLearned": 135,
-        "lessonsCompleted": 12,
+        "streak": 0,
+        "vocabLearned": 0,
+        "lessonsCompleted": 0,
         "targetYear": "Đồng hành chinh phục tiếng Trung cùng Ngọc Ánh!"
       }
     }
