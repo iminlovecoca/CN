@@ -65,17 +65,13 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       
       <!-- Brand Logo -->
-      <a href="#" class="flex items-center gap-2.5 group">
-        <div class="w-9 h-9 rounded-lg bg-[#FBECEF] text-[#E9819A] flex items-center justify-center font-bold font-chinese text-base transition-transform group-hover:scale-105">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-9 h-9 rounded-xl bg-[#FBECEF] text-[#E9819A] flex items-center justify-center font-bold font-chinese text-base transition-transform group-hover:scale-105 shadow-2xs shrink-0">
           米
         </div>
-        <div>
-          <div class="text-base sm:text-lg font-bold font-heading text-gray-900 tracking-tight flex items-center gap-1.5 leading-none">
-            Mochi <span class="text-[#E9819A]">Chinese</span>
-            <span class="text-[10px] font-chinese font-semibold px-1.5 py-0.5 rounded bg-gray-100 text-gray-600">米米</span>
-          </div>
-          <div class="text-[11px] text-gray-500 font-medium tracking-normal mt-0.5">Sổ tay tiếng Trung ứng dụng</div>
-        </div>
+        <span class="text-base sm:text-lg font-bold font-heading text-gray-900 tracking-tight leading-normal">
+          Mochi <span class="text-[#E9819A]">Chinese</span>
+        </span>
       </a>
 
       <!-- Desktop Navigation Menu (Direct, Clean, No Emoji Spam) -->
@@ -235,19 +231,18 @@
         <!-- Left: Summary & CTA -->
         <div class="lg:col-span-7 space-y-4 text-center lg:text-left">
           
-          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2">
-            <div id="hero-owner-badge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FBECEF] text-[#E9819A] border border-pink-100 text-xs font-semibold">
-              <i data-lucide="sparkles" class="w-3 h-3"></i>
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
+            <div id="hero-owner-badge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FBECEF] text-[#E9819A] border border-pink-100 text-xs font-semibold shadow-2xs">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
               <span>Góc học tập cá nhân</span>
+            </div>
+            <div id="hero-personal-greeting" class="text-xs sm:text-sm font-medium text-gray-700 bg-white px-3 py-1 rounded-full border border-[#EAE8E5] inline-flex items-center shadow-2xs">
+              Chào buổi sáng, Ngọc Ánh. Hãy tiếp tục bài học hôm nay!
             </div>
           </div>
 
-          <div id="hero-personal-greeting" class="text-xs sm:text-sm font-medium text-gray-700 bg-white px-3.5 py-2 rounded-lg border border-[#EAE8E5] inline-block shadow-2xs">
-            Chào buổi sáng, Ngọc Ánh. Hãy tiếp tục bài học hôm nay!
-          </div>
-
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 font-heading leading-tight tracking-tight">
-            Học tiếng Trung <br class="hidden sm:inline">
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 font-heading leading-snug sm:leading-[1.28] lg:leading-[1.3] tracking-tight mb-3">
+            <span class="inline-block pb-1 sm:pb-1.5">Học tiếng Trung</span><br class="hidden sm:inline">
             <span class="text-[#E9819A]">mỗi ngày</span> cùng Mochi
           </h1>
 
@@ -303,15 +298,15 @@
               </p>
             </div>
 
-            <div class="grid grid-cols-2 gap-2 text-xs">
-              <div class="p-2.5 rounded-lg bg-gray-50 border border-gray-100 flex items-center gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
-                <span class="text-gray-600 text-[11px] font-medium">Phát âm chuẩn âm Bắc Kinh</span>
-              </div>
-              <div class="p-2.5 rounded-lg bg-gray-50 border border-gray-100 flex items-center gap-2">
-                <i data-lucide="book-marked" class="w-4 h-4 text-purple-600 shrink-0"></i>
-                <span class="text-gray-600 text-[11px] font-medium">Bách khoa 6,200 từ vựng</span>
-              </div>
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100 text-xs text-gray-500">
+              <span class="text-[11px] font-medium text-gray-500 flex items-center gap-1.5">
+                <i data-lucide="tag" class="w-3.5 h-3.5 text-gray-400"></i>
+                Giao tiếp đời sống & công sở
+              </span>
+              <button class="btn-save-dict-word text-[#E9819A] hover:text-[#DA718B] font-semibold flex items-center gap-1 text-[11px] transition-colors" data-hanzi="辛苦了" data-pinyin="xīnkǔ le" data-meaning="Vất vả cho bạn rồi / Cảm ơn vì đã vất vả" title="Lưu vào sổ tay">
+                <i data-lucide="bookmark" class="w-3.5 h-3.5"></i>
+                <span>Lưu vào sổ tay</span>
+              </button>
             </div>
 
           </div>
@@ -1397,11 +1392,13 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-8">
         
         <div class="lg:col-span-4 space-y-3">
-          <div class="flex items-center gap-2">
-            <div class="w-8 h-8 rounded-lg bg-[#FBECEF] text-[#E9819A] flex items-center justify-center font-chinese font-bold text-sm">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-xl bg-[#FBECEF] text-[#E9819A] flex items-center justify-center font-chinese font-bold text-sm shadow-2xs shrink-0">
               米
             </div>
-            <span class="text-base font-bold font-heading text-gray-900">Mochi Chinese</span>
+            <span class="text-base font-bold font-heading text-gray-900 tracking-tight">
+              Mochi <span class="text-[#E9819A]">Chinese</span>
+            </span>
           </div>
           <p class="text-xs text-gray-500 leading-relaxed">
             Ứng dụng học tiếng Trung ứng dụng hiện đại, tối giản và hiệu quả. Tích hợp từ điển HSK, luyện gõ từ và hội thoại tương tác.

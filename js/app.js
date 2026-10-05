@@ -312,7 +312,7 @@ function initProfileSystem() {
     if (heroMottoEl) heroMottoEl.textContent = user.motto || "Chăm chỉ tiến bộ mỗi ngày!";
 
     if (ownerBadgeEl) {
-      ownerBadgeEl.className = `inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold shadow-sm transition-all border ${user.badgeColor || 'bg-pink-100 text-pink-700 border-pink-200'}`;
+      ownerBadgeEl.className = `inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold shadow-2xs transition-all border ${user.badgeColor || 'bg-[#FBECEF] text-[#E9819A] border-pink-100'}`;
       ownerBadgeEl.innerHTML = `<span>${user.avatar || '🌸'}</span> <span>Góc học tập của ${user.fullName}</span>`;
     }
 
