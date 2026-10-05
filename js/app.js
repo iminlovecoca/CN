@@ -74,8 +74,11 @@ function showMochiToast(message, type = "success") {
     type === "success" ? "bg-white text-gray-800 border-pink-200" : "bg-white text-gray-800 border-purple-200"
   }`;
 
-  const icon = type === "success" ? "🌸" : "✨";
-  toast.innerHTML = `<span class="text-lg">${icon}</span> <span>${message}</span>`;
+  let dotColor = "bg-[#E9819A]";
+  if (type === "error") dotColor = "bg-rose-500";
+  else if (type === "warning") dotColor = "bg-amber-500";
+  else if (type === "info") dotColor = "bg-sky-500";
+  toast.innerHTML = `<span class="w-2 h-2 rounded-full ${dotColor} shrink-0"></span> <span class="text-xs font-semibold text-gray-800">${message}</span>`;
   toastContainer.appendChild(toast);
 
   requestAnimationFrame(() => {
@@ -196,11 +199,11 @@ const DEFAULT_AUTH_USERS = {
     roleTitle: "Ánh Ánh 🌸",
     badgeColor: "bg-pink-100 text-pink-700 border-pink-200",
     goal: "Chinh phục HSK 4 & Vi vu Bắc Kinh",
-    motto: "Cô gái đáng yêu và chăm chỉ nhất! Chinh phục tiếng Trung thật tự tin và tỏa sáng nha Ánh Ánh 💕",
+    motto: "Học tiếng Trung đều đặn mỗi ngày để tự tin giao tiếp và làm việc hiệu quả.",
     greetings: {
-      morning: "Chào buổi sáng rạng rỡ, Ngọc Ánh! Cùng Mochi nạp 15 phút từ vựng tràn đầy năng lượng nha 🌸",
-      afternoon: "Buổi chiều tốt lành Ánh Ánh ơi! Tự thưởng một ly trà sữa và luyện một đoạn hội thoại thật mượt nhé 🧋",
-      evening: "Ngọc Ánh đã chăm chỉ cả ngày rồi! Nghe một mẩu podcast thư giãn trước khi ngủ nhé ✨"
+      morning: "Chào buổi sáng, Ngọc Ánh. Hãy nạp thêm từ vựng mới cho ngày hôm nay nhé!",
+      afternoon: "Buổi chiều làm việc hiệu quả! Dành 15 phút ôn lại mẫu câu giao tiếp nha.",
+      evening: "Buổi tối thư giãn và ôn tập nhẹ nhàng trước khi kết thúc ngày."
     },
     stats: { streak: 0, vocabLearned: 0, lessonsCompleted: 0, targetYear: "Chinh phục toàn diện HSK 1 — 6" }
   },
@@ -214,7 +217,7 @@ const DEFAULT_AUTH_USERS = {
     roleTitle: "Người Học Cùng 🤍",
     badgeColor: "bg-purple-100 text-purple-700 border-purple-200",
     goal: "Đồng hành cùng Ngọc Ánh",
-    motto: "Đồng hành và cùng Ánh Ánh tiến bộ mỗi ngày! Không bỏ cuộc, cùng nhau nói tiếng Trung lưu loát ✨",
+    motto: "Cùng nhau tiến bộ mỗi ngày! Nói tiếng Trung lưu loát và tự tin.",
     greetings: {
       morning: "Chào buổi sáng bạn hiền! Hôm nay mục tiêu học cùng Ngọc Ánh là gì nào? 🌸",
       afternoon: "Buổi chiều hăng say! Cùng Ánh Ánh ôn lại các từ vựng công sở nhé 💼",
@@ -613,7 +616,7 @@ function initDailyDiscovery() {
 
   function renderDiscoveryCard(item) {
     container.innerHTML = `
-      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 p-5 sm:p-6 bg-gradient-to-r from-pink-50 via-purple-50 to-amber-50 rounded-3xl border border-pink-100 shadow-sm transition-all duration-300">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 p-5 sm:p-6 bg-white rounded-xl border border-[#EAE8E5] shadow-2xs transition-all duration-300">
         <div class="space-y-1.5 text-center sm:text-left">
           <div class="flex items-center justify-center sm:justify-start gap-2">
             <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-white text-pink-600 border border-pink-200">
@@ -634,7 +637,7 @@ function initDailyDiscovery() {
         </div>
 
         <div class="flex sm:flex-col gap-2 shrink-0">
-          <button class="btn-save-discovery px-4 py-2 bg-white hover:bg-pink-50 border border-pink-200 text-pink-600 rounded-full text-xs font-bold shadow-xs flex items-center gap-1.5 transition-all" data-hanzi="${item.hanzi}" data-pinyin="${item.pinyin}" data-meaning="${item.meaning}">
+          <button class="btn-save-discovery px-3 py-1.5 bg-white hover:bg-gray-50 border border-gray-200 text-gray-700 rounded-lg text-xs font-semibold shadow-2xs flex items-center gap-1.5 transition-all" data-hanzi="${item.hanzi}" data-pinyin="${item.pinyin}" data-meaning="${item.meaning}">
             <span>Ghim vào sổ tay</span>
             <i data-lucide="bookmark" class="w-3.5 h-3.5"></i>
           </button>
@@ -1501,17 +1504,15 @@ function initDictionaryView() {
       if (curQ && curQ.length >= 2) {
         container.innerHTML = `
           <div class="col-span-full p-10 text-center mochi-card border-2 border-dashed border-pink-200 animate-pulse">
-            <div class="text-3xl mb-2">⚡</div>
-            <div class="font-bold text-pink-600 text-sm">Đang tra cứu & dịch thuật trực tiếp từ Bách Khoa Toàn Thư...</div>
-            <div class="text-xs text-gray-500 mt-1">Hệ thống đang dịch nghĩa, phân tích Pinyin và chiết tự Hán Việt cho "<strong>${curQ}</strong>" nha 🌸</div>
+            <div class="font-semibold text-gray-700 text-sm">Đang tra cứu từ điển cho "<strong>${curQ}</strong>"...</div>
+            <div class="text-xs text-gray-400 mt-1">Hệ thống đang phân tích Pinyin, âm Hán Việt và nghĩa của từ.</div>
           </div>
         `;
       } else {
         container.innerHTML = `
           <div class="col-span-full p-10 text-center mochi-card">
-            <div class="text-3xl mb-2">🔍</div>
-            <div class="font-bold text-gray-700 text-sm">Chưa tìm thấy từ phù hợp trong Bách Khoa</div>
-            <div class="text-xs text-gray-400 mt-1">Nàng hãy thử tìm bằng Hán tự, Pinyin hoặc nghĩa tiếng Việt khác xem sao nhé!</div>
+            <div class="font-semibold text-gray-700 text-sm">Chưa tìm thấy từ vựng phù hợp</div>
+            <div class="text-xs text-gray-400 mt-1">Hãy thử tìm theo chữ Hán, Pinyin hoặc nghĩa tiếng Việt khác.</div>
           </div>
         `;
       }
@@ -1746,7 +1747,7 @@ function renderRadicalsList() {
         </div>
 
         <div class="text-xs font-bold text-gray-700 mb-1.5">${r.meaning}</div>
-        <p class="text-[11px] text-gray-500 italic mb-3 leading-relaxed">💡 ${r.mnemonic}</p>
+        <p class="text-[11px] text-gray-500 italic mb-3 leading-relaxed"><span class="font-semibold text-gray-700 not-italic">Ghi nhớ:</span> ${r.mnemonic}</p>
       </div>
 
       <div class="pt-2 border-t border-gray-100 flex flex-wrap items-center gap-1.5">
@@ -1837,7 +1838,7 @@ function renderChengyuList() {
         </div>
 
         <div class="text-xs sm:text-sm font-bold text-gray-700 mb-2">${c.meaning}</div>
-        <p class="text-[11px] text-gray-500 italic leading-relaxed mb-3">📖 ${c.origin}</p>
+        <p class="text-[11px] text-gray-500 italic leading-relaxed mb-3"><span class="font-semibold text-gray-700 not-italic">Xuất xứ:</span> ${c.origin}</p>
       </div>
 
       <div class="p-3 bg-pink-50/50 rounded-2xl border border-pink-100/60 text-xs">
@@ -1883,7 +1884,7 @@ function openWordDetailModal(wordId) {
   if (!word) return;
 
   body.innerHTML = `
-    <div class="p-6 sm:p-8 bg-gradient-to-r from-pink-100/90 via-purple-50 to-pink-50 border-b border-pink-100 rounded-t-3xl text-center relative">
+    <div class="p-6 sm:p-8 bg-gray-50 border-b border-[#EAE8E5] rounded-t-2xl text-center relative">
       <div class="flex flex-wrap items-center justify-center gap-2 text-xs font-semibold text-gray-500 mb-2">
         <span class="px-2.5 py-0.5 rounded-full bg-white text-pink-600 font-bold border border-pink-200 shadow-2xs font-mono">${word.hsk}</span>
         <span>•</span>
@@ -1924,7 +1925,7 @@ function openWordDetailModal(wordId) {
 
       ${word.tip ? `
         <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200/70 text-xs sm:text-sm text-amber-900 leading-relaxed">
-          💡 <strong>Mẹo chiết tự & ghi nhớ:</strong> ${word.tip}
+          <strong>Gợi ý ghi nhớ:</strong> ${word.tip}
         </div>
       ` : ""}
 
@@ -1940,7 +1941,7 @@ function openWordDetailModal(wordId) {
     <div class="p-5 bg-gray-50 border-t border-gray-100 rounded-b-3xl flex flex-wrap items-center justify-between gap-3">
       <button class="btn-bridge-to-canvas px-4 py-2.5 bg-[#A98CF0] hover:bg-[#9370E8] text-white rounded-full text-xs font-bold transition-all shadow-xs flex items-center gap-2" data-char="${word.hanzi.charAt(0)}">
         <i data-lucide="edit-3" class="w-3.5 h-3.5"></i>
-        <span>Luyện viết chữ "${word.hanzi.charAt(0)}" trên ô Mễ Tự Cách ✍️</span>
+        <span>Tập viết chữ "${word.hanzi.charAt(0)}"</span>
       </button>
 
       <button class="btn-pin-from-modal px-4 py-2.5 bg-white hover:bg-pink-50 text-pink-600 border border-pink-200 rounded-full text-xs font-bold transition-all flex items-center gap-1.5 shadow-2xs">
@@ -2195,7 +2196,7 @@ function initFlashcardVault() {
           ${item.hsk || item.cat || 'Từ vựng'}
         </span>
         <div class="flex items-center gap-1.5">
-          ${isMastered ? '<span class="text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">Đã thuộc ✔️</span>' : ''}
+          ${isMastered ? '<span class="badge-pill bg-emerald-50 text-emerald-700 text-[10px] font-bold">Đã thuộc</span>' : ''}
           <button class="p-2 rounded-full hover:bg-pink-50 text-gray-400 hover:text-pink-500 transition-colors" data-tts="${item.hanzi}" title="Nghe phát âm">
             <i data-lucide="volume-2" class="w-4 h-4"></i>
           </button>
@@ -2236,7 +2237,7 @@ function initFlashcardVault() {
 
       <div class="flex items-center justify-between text-xs text-gray-400 border-t border-purple-100 pt-3">
         <span class="text-purple-500 font-bold">← Lật lại mặt trước</span>
-        <button class="text-xs text-pink-600 font-bold" data-tts="${item.example}">Nghe ví dụ 🔊</button>
+        <button class="text-xs text-[#E9819A] font-semibold hover:underline" data-tts="${item.example}">Nghe ví dụ</button>
       </div>
     `;
 
@@ -2733,7 +2734,7 @@ function initCategoriesSection() {
               <div class="flex items-center gap-1.5 max-w-[320px] mb-2">
                 <input type="text" id="input-custom-hanzi" maxlength="2" placeholder="Gõ chữ Hán muốn viết (爱, 龙, 福, 美, 梦...)..." class="flex-1 px-3 py-1.5 text-xs font-chinese font-bold rounded-xl border border-pink-200 focus:outline-none focus:border-pink-400 focus:ring-1 focus:ring-pink-200" />
                 <button id="btn-load-custom-hanzi" class="px-3 py-1.5 bg-[#F59BB0] hover:bg-[#E8839B] text-white text-[11px] font-bold rounded-xl shadow-2xs transition-transform active:scale-95 shrink-0 flex items-center gap-1">
-                  <span>Nạp chữ ✍️</span>
+                  <span>Nạp chữ</span>
                 </button>
               </div>
 
@@ -2758,7 +2759,7 @@ function initCategoriesSection() {
                   Ẩn/Hiện nét mờ
                 </button>
                 <button id="btn-download-canvas" class="px-3 py-2 bg-purple-50 hover:bg-purple-100 text-purple-700 rounded-xl text-xs font-bold transition-all" title="Lưu tác phẩm">
-                  Tải ảnh 📥
+                  Tải ảnh
                 </button>
               </div>
             </div>
@@ -3466,7 +3467,7 @@ function initLessonModal() {
           <span>•</span>
           <span>${lesson.levelName}</span>
           <span>•</span>
-          <span>⏱️ ${lesson.duration}</span>
+          <span>${lesson.duration}</span>
         </div>
         <h3 class="text-2xl sm:text-3xl font-extrabold text-gray-800 font-heading mb-2">${lesson.title}</h3>
         <p class="text-xs sm:text-sm text-gray-600"><strong>Mục tiêu:</strong> ${lesson.detail.objective}</p>
@@ -3475,7 +3476,7 @@ function initLessonModal() {
       <div class="p-6 sm:p-8 space-y-6">
         <div>
           <h4 class="text-base font-bold text-gray-800 mb-3 flex items-center gap-2">
-            <span>📝</span> Từ vựng trọng tâm (Bấm loa để nghe phát âm)
+            <span>Từ vựng trọng tâm</span>
           </h4>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
             ${lesson.detail.vocab.map(v => `
@@ -3502,7 +3503,7 @@ function initLessonModal() {
 
         <div>
           <h4 class="text-base font-bold text-gray-800 mb-3 flex items-center gap-2">
-            <span>💬</span> Hội thoại / Mẫu câu thực tế
+            <span>Mẫu câu giao tiếp</span>
           </h4>
           <div class="space-y-3">
             ${lesson.detail.dialog.map(d => `
@@ -3526,7 +3527,7 @@ function initLessonModal() {
         </div>
 
         <div class="p-5 rounded-2xl bg-purple-50/80 border border-purple-100">
-          <div class="text-xs font-bold text-purple-700 uppercase tracking-wider mb-1">⚡ Bài tập nhanh kiểm tra</div>
+          <div class="text-xs font-bold text-purple-700 uppercase tracking-wider mb-1">Bài tập củng cố</div>
           <div class="font-bold text-gray-800 text-sm sm:text-base mb-3">${lesson.detail.miniQuiz.question}</div>
           <div class="space-y-2" id="modal-quiz-options">
             ${lesson.detail.miniQuiz.options.map((opt, i) => `
@@ -3541,11 +3542,11 @@ function initLessonModal() {
       </div>
 
       <div class="p-6 bg-gray-50 border-t border-gray-100 rounded-b-3xl flex items-center justify-between">
-        <button id="btn-modal-close-bottom" class="px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold text-gray-600 hover:bg-gray-200 transition-all">
+        <button id="btn-modal-close-bottom" class="px-4 py-2 rounded-lg text-xs font-semibold text-gray-600 hover:bg-gray-100 transition-all">
           Đóng lại
         </button>
-        <button id="btn-complete-lesson" class="px-6 py-2.5 bg-[#74C69D] hover:bg-[#62B88D] text-white rounded-full text-xs sm:text-sm font-bold shadow-sm transition-all flex items-center gap-2">
-          <span>Đánh dấu hoàn thành 🎉</span>
+        <button id="btn-complete-lesson" class="px-5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs sm:text-sm font-bold shadow-sm transition-all flex items-center gap-2">
+          <span>Đánh dấu hoàn thành</span>
         </button>
       </div>
     `;
@@ -3800,15 +3801,15 @@ function initInteractivePractice() {
           <div class="flex items-center gap-2 sm:gap-3 bg-[#FFF9FB] p-2.5 sm:p-3 rounded-2xl border border-pink-100 self-start sm:self-center">
             <div class="text-center px-2 border-r border-pink-100">
               <div class="text-[10px] uppercase font-bold text-gray-400">Điểm số</div>
-              <div class="text-sm sm:text-base font-black text-pink-600">⭐ ${stats.score}</div>
+              <div class="text-sm sm:text-base font-black text-pink-600">${stats.score}</div>
             </div>
             <div class="text-center px-2 border-r border-pink-100">
               <div class="text-[10px] uppercase font-bold text-gray-400">Chuỗi đúng</div>
-              <div class="text-sm sm:text-base font-black text-amber-500">🔥 ${stats.streak} <span class="text-[10px] font-normal text-gray-400">(Kỷ lục: ${stats.bestStreak})</span></div>
+              <div class="text-sm sm:text-base font-black text-amber-500">${stats.streak} <span class="text-[10px] font-normal text-gray-400">(Kỷ lục: ${stats.bestStreak})</span></div>
             </div>
             <div class="text-center px-2">
               <div class="text-[10px] uppercase font-bold text-gray-400">Tỉ lệ đúng</div>
-              <div class="text-sm sm:text-base font-black text-emerald-600">🎯 ${stats.correct}/${stats.total} (${accuracy}%)</div>
+              <div class="text-sm sm:text-base font-black text-emerald-600">${stats.correct}/${stats.total} (${accuracy}%)</div>
             </div>
           </div>
         </div>
@@ -3828,7 +3829,7 @@ function initInteractivePractice() {
                   <div class="font-chinese text-3xl sm:text-4xl font-black text-gray-800 tracking-wide">${q.targetWord.hanzi}</div>
                   <div class="pinyin-text text-sm font-bold text-purple-600">${q.targetWord.pinyin} <span class="text-xs font-normal text-gray-400">(${q.targetWord.hanviet || 'Hán ngữ'})</span></div>
                 ` : `
-                  <div class="text-sm font-bold text-gray-700">Chạm vào nút loa để nghe giọng đọc bản xứ 🔊</div>
+                  <div class="text-sm font-bold text-gray-700">Bấm nút loa để nghe phát âm</div>
                   <div class="text-xs text-gray-500">Lắng nghe thật kỹ thanh điệu và ngữ âm nhé!</div>
                 `}
               </div>
@@ -3852,9 +3853,9 @@ function initInteractivePractice() {
         <!-- Footer Actions -->
         <div class="flex items-center justify-between pt-3 border-t border-gray-100">
           <button id="btn-reset-quiz-stats" class="text-xs font-bold text-gray-400 hover:text-red-500 transition-colors">
-            Làm mới điểm 🔄
+            Đặt lại điểm
           </button>
-          <button id="btn-next-dynamic-quiz" class="px-6 py-2.5 bg-[#F59BB0] hover:bg-[#E8839B] text-white text-xs sm:text-sm font-bold rounded-full shadow-sm hover:scale-105 active:scale-95 transition-all flex items-center gap-1.5">
+          <button id="btn-next-dynamic-quiz" class="px-4 py-2 bg-[#E9819A] hover:bg-[#DA718B] text-white text-xs sm:text-sm font-semibold rounded-lg shadow-2xs transition-colors flex items-center gap-1.5">
             <span>Câu tiếp theo</span>
             <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </button>
@@ -3911,12 +3912,12 @@ function initInteractivePractice() {
           feedbackEl.innerHTML = `
             <div class="flex items-start justify-between gap-3">
               <div>
-                <div class="font-bold text-emerald-800 mb-1">🎉 Xuất sắc! Nàng trả lời chuẩn xác 100%! (+10 điểm)</div>
+                <div class="font-bold text-emerald-800 mb-1">Chính xác! (+10 điểm)</div>
                 <div>Từ <strong class="font-chinese text-base">${q.targetWord.hanzi}</strong> (${q.targetWord.pinyin}) có nghĩa là: <em>${q.targetWord.meaning}</em></div>
                 ${q.targetWord.example ? `<div class="text-[11px] text-emerald-700/80 mt-1 italic">Ví dụ: ${q.targetWord.example} — ${q.targetWord.exampleVi || ''}</div>` : ''}
               </div>
               <button class="btn-save-quiz-word px-3 py-1.5 bg-white text-emerald-700 hover:bg-emerald-100 rounded-xl font-bold text-xs shrink-0 flex items-center gap-1 border border-emerald-200" data-hanzi="${q.targetWord.hanzi}" data-pinyin="${q.targetWord.pinyin}" data-meaning="${q.targetWord.meaning}">
-                <span>Ghim từ 🔖</span>
+                <span>Lưu từ</span>
               </button>
             </div>
           `;
@@ -3943,7 +3944,7 @@ function initInteractivePractice() {
           feedbackEl.innerHTML = `
             <div class="flex items-start justify-between gap-3">
               <div>
-                <div class="font-bold text-rose-800 mb-1">🌸 Chưa chính xác xíu rồi! Nàng cùng xem lại đáp án nhé:</div>
+                <div class="font-bold text-rose-800 mb-1">Chưa chính xác. Đáp án đúng:</div>
                 <div>Đáp án đúng là: <strong class="font-chinese text-base">${q.targetWord.hanzi}</strong> (${q.targetWord.pinyin}) = <em>${q.targetWord.meaning}</em></div>
                 ${q.targetWord.example ? `<div class="text-[11px] text-rose-700/80 mt-1 italic">Ví dụ: ${q.targetWord.example} — ${q.targetWord.exampleVi || ''}</div>` : ''}
               </div>
@@ -5082,7 +5083,7 @@ function initWritingStudio() {
             Đã chuyển sang đề bài mới
           </h4>
           <p class="text-xs text-gray-500 max-w-sm">
-            Hãy viết bài hoặc bấm "Dán bài mẫu để tham khảo", sau đó bấm <strong>Chấm điểm thông minh ✨</strong>.
+            Hãy viết bài hoặc bấm "Dán bài mẫu để tham khảo", sau đó bấm <strong>Chấm điểm</strong>.
           </p>
         `;
       });
@@ -5114,7 +5115,7 @@ function initWritingStudio() {
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
         <div class="space-y-1.5">
           <div class="text-xs font-bold text-gray-500 flex items-center gap-1">
-            <span>📌 Tiêu chuẩn cần có trong bài:</span>
+            <span>Yêu cầu bài viết:</span>
           </div>
           <div class="space-y-1">
             ${p.requirements.map(req => `
@@ -5128,7 +5129,7 @@ function initWritingStudio() {
 
         <div class="space-y-1.5">
           <div class="text-xs font-bold text-gray-500 flex items-center gap-1">
-            <span>✨ Từ khóa gợi ý nên dùng (Bấm để chèn vào bài):</span>
+            <span>Từ khóa gợi ý:</span>
           </div>
           <div class="flex flex-wrap gap-1.5">
             ${p.clues.map(clue => `
@@ -5358,8 +5359,8 @@ BẮT BUỘC TRẢ VỀ JSON HỢP LỆ VỚI CẤU TRÚC:
         <div class="p-5 rounded-3xl bg-gradient-to-r from-purple-100 via-pink-50 to-amber-50 border border-purple-200 flex items-center justify-between">
           <div>
             <div class="flex items-center gap-2">
-              <span class="badge-pill ${engineName.includes('OpenAI') ? 'bg-emerald-600' : 'bg-purple-600'} text-white shadow-2xs text-[10px]">✨ Thẩm định bằng ${engineName}</span>
-              <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Đánh giá chuẩn bản xứ</span>
+              <span class="badge-pill ${engineName.includes('OpenAI') ? 'bg-emerald-600' : 'bg-purple-600'} text-white shadow-2xs text-[10px]">Đánh giá bởi ${engineName}</span>
+              <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Đánh giá bài viết</span>
             </div>
             <div class="text-xl sm:text-2xl font-black text-gray-800 font-heading mt-1">
               ${ai.verdict || (ai.score >= 90 ? '🌟 Xuất sắc & Chuẩn phong thái bản xứ!' : '🌸 Khá tốt, luận điểm mạch lạc!')}
@@ -5394,7 +5395,7 @@ BẮT BUỘC TRẢ VỀ JSON HỢP LỆ VỚI CẤU TRÚC:
         ${ai.sentenceCorrections && ai.sentenceCorrections.length > 0 ? `
           <div class="space-y-2.5">
             <div class="text-xs font-bold text-gray-700 flex items-center gap-1.5">
-              <span>🔍 Gợi ý trau chuốt từng câu (逐句润色 - AI Khuyên dùng):</span>
+              <span>Gợi ý sửa từng câu:</span>
             </div>
             <div class="space-y-2">
               ${ai.sentenceCorrections.map(sc => `
@@ -5412,7 +5413,7 @@ BẮT BUỘC TRẢ VỀ JSON HỢP LỆ VỚI CẤU TRÚC:
         <div class="p-4 sm:p-5 rounded-2xl bg-gray-50 border border-gray-200 space-y-2">
           <div class="flex items-center justify-between">
             <span class="text-xs font-bold text-gray-700 font-heading flex items-center gap-1.5">
-              <span>👑 Đoạn văn mẫu chuẩn mực của người bản xứ:</span>
+              <span>Đoạn văn mẫu tham khảo:</span>
             </span>
             <button class="p-1.5 rounded-full bg-white hover:bg-pink-100 text-pink-600 border border-pink-200 shadow-2xs" data-tts="${prompt.sampleEssay.hanzi}" title="Nghe đọc toàn bộ đoạn mẫu">
               <i data-lucide="volume-2" class="w-3.5 h-3.5"></i>
@@ -6756,13 +6757,13 @@ function initVocabTypingStudio() {
       let inputBorderClass = "border-gray-200 bg-white text-gray-800 focus:border-pink-400 focus:ring-pink-200";
 
       if (status === "passed") {
-        checkBadgeHtml = `<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-black bg-emerald-100 text-emerald-800 border border-emerald-300 shadow-2xs"><i data-lucide="check" class="w-3.5 h-3.5"></i> PASS ✓</span>`;
+        checkBadgeHtml = `<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">PASS</span>`;
         inputBorderClass = "border-emerald-400 bg-emerald-50/70 text-emerald-900 font-bold focus:ring-emerald-200";
       } else if (status === "failed") {
-        checkBadgeHtml = `<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-black bg-rose-100 text-rose-800 border border-rose-300 shadow-2xs"><i data-lucide="x" class="w-3.5 h-3.5"></i> FAILED ✗</span>`;
+        checkBadgeHtml = `<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200">FAIL</span>`;
         inputBorderClass = "border-rose-400 bg-rose-50/60 text-rose-900 font-semibold focus:ring-rose-200";
       } else {
-        checkBadgeHtml = `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-gray-100 text-gray-500 border border-gray-200">Chờ gõ ⏳</span>`;
+        checkBadgeHtml = `<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-50 text-gray-400 border border-gray-200">—</span>`;
       }
 
       const highlightedEx = formatHighlightedExample(word.example, word.hanzi, status === "passed");
@@ -6838,10 +6839,10 @@ function initVocabTypingStudio() {
       let borderClass = "border-gray-200 bg-white";
 
       if (status === "passed") {
-        checkBadgeHtml = `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-black bg-emerald-100 text-emerald-800 border border-emerald-300">PASS ✓</span>`;
+        checkBadgeHtml = `<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">PASS</span>`;
         borderClass = "border-emerald-300 bg-emerald-50/20";
       } else if (status === "failed") {
-        checkBadgeHtml = `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-black bg-rose-100 text-rose-800 border border-rose-300">FAILED ✗</span>`;
+        checkBadgeHtml = `<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200">FAIL</span>`;
         borderClass = "border-rose-300 bg-rose-50/20";
       } else {
         checkBadgeHtml = `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-gray-100 text-gray-500">Chờ gõ ⏳</span>`;
@@ -6943,12 +6944,12 @@ function initVocabTypingStudio() {
 
         if (checkCell) {
           if (status === "passed") {
-            checkCell.innerHTML = `<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-black bg-emerald-100 text-emerald-800 border border-emerald-300 shadow-2xs animate-bounce-short"><i data-lucide="check" class="w-3.5 h-3.5"></i> PASS ✓</span>`;
+            checkCell.innerHTML = `<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">PASS</span>`;
             input.className = "typing-input w-full px-3 py-1.5 rounded-xl border text-sm font-chinese tracking-wide transition-all focus:outline-none focus:ring-2 border-emerald-400 bg-emerald-50/70 text-emerald-900 font-bold focus:ring-emerald-200";
             if (window.playRewardChime) window.playRewardChime();
             recordUserActivity(activeProfileId, 'typing_pass');
           } else if (status === "failed") {
-            checkCell.innerHTML = `<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-black bg-rose-100 text-rose-800 border border-rose-300 shadow-2xs"><i data-lucide="x" class="w-3.5 h-3.5"></i> FAILED ✗</span>`;
+            checkCell.innerHTML = `<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200">FAIL</span>`;
             input.className = "typing-input w-full px-3 py-1.5 rounded-xl border text-sm font-chinese tracking-wide transition-all focus:outline-none focus:ring-2 border-rose-400 bg-rose-50/60 text-rose-900 font-semibold focus:ring-rose-200";
           } else {
             checkCell.innerHTML = `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-gray-100 text-gray-500 border border-gray-200">Chờ gõ ⏳</span>`;
