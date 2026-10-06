@@ -51,6 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initTranslatorStudio();
   initVocabTypingStudio();
   initFloatingQuickNav();
+  initLiveOnlineCounter();
+  initHSKExamStudio();
 });
 
 /* ==========================================================================
@@ -180,7 +182,28 @@ document.addEventListener("click", (e) => {
       setTimeout(() => ttsBtn.classList.remove("scale-95"), 150);
     }
   }
+
+  const saveWordBtn = e.target.closest(".btn-save-dict-word");
+  if (saveWordBtn) {
+    const hanzi = saveWordBtn.getAttribute("data-hanzi");
+    const pinyin = saveWordBtn.getAttribute("data-pinyin");
+    const meaning = saveWordBtn.getAttribute("data-meaning");
+    if (hanzi && typeof addWordToNotebook === "function") {
+      addWordToNotebook(hanzi, pinyin, meaning);
+    }
+  }
 });
+
+function initLiveOnlineCounter() {
+  const counterEl = document.getElementById("live-online-counter");
+  if (!counterEl) return;
+  let currentCount = 1248;
+  setInterval(() => {
+    const delta = Math.floor(Math.random() * 7) - 3;
+    currentCount = Math.max(1210, Math.min(1290, currentCount + delta));
+    counterEl.textContent = currentCount.toLocaleString();
+  }, 9000);
+}
 
 /* ==========================================================================
    3. Hệ Thống Tài Khoản Đăng Ký, Đăng Nhập & Bảo Lưu Tiến Độ Vĩnh Viễn
@@ -1577,16 +1600,6 @@ function initDictionaryView() {
       });
     });
 
-    container.querySelectorAll(".btn-save-dict-word").forEach(btn => {
-      btn.addEventListener("click", (e) => {
-        e.stopPropagation();
-        const hanzi = btn.getAttribute("data-hanzi");
-        const pinyin = btn.getAttribute("data-pinyin");
-        const meaning = btn.getAttribute("data-meaning");
-        addWordToNotebook(hanzi, pinyin, meaning);
-      });
-    });
-
     renderPagination(totalPages);
   }
 
@@ -2767,7 +2780,96 @@ function initCategoriesSection() {
         </div>
       `;
     } else if (cat.id === "read") {
-      interactivePreviewHTML = `
+      const storiesList = (window.MOCHI_DATA && window.MOCHI_DATA.richStories) || cat.stories || [];
+      if (storiesList.length > 0) {
+        if (!window.currentMochiStory) {
+          window.currentMochiStory = storiesList[0];
+        }
+        const activeStory = window.currentMochiStory;
+        interactivePreviewHTML = `
+          <div class="bg-white p-5 sm:p-6 rounded-2xl border border-[#EAE8E5] shadow-sm space-y-4">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-3 border-b border-gray-100 gap-2">
+              <div>
+                <span class="text-xs font-bold px-2.5 py-0.5 bg-pink-50 text-[#E9819A] rounded-full border border-pink-100">Kho truyện song ngữ có Pinyin</span>
+                <span class="text-xs text-gray-500 ml-1.5">Bấm loa để nghe giọng đọc bản xứ từng câu</span>
+              </div>
+              <div class="text-xs font-semibold text-gray-400">
+                ${storiesList.length} câu chuyện chọn lọc
+              </div>
+            </div>
+
+            <!-- Story Tabs Selector -->
+            <div class="flex items-center gap-1.5 overflow-x-auto pb-2 no-scrollbar" id="story-tabs-selector">
+              ${storiesList.map((st) => `
+                <button class="btn-select-story px-3 py-1.5 rounded-lg text-xs font-semibold transition-all shrink-0 ${
+                  st.id === activeStory.id ? 'bg-[#E9819A] text-white shadow-2xs' : 'bg-gray-50 hover:bg-gray-100 text-gray-700 border border-gray-200'
+                }" data-story-id="${st.id}">
+                  <span>${st.title.split('—')[0].trim()}</span>
+                </button>
+              `).join('')}
+            </div>
+
+            <!-- Active Story Presentation -->
+            <div class="p-4 sm:p-5 rounded-xl bg-[#FAFAF8] border border-[#EAE8E5] space-y-4">
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="text-[11px] font-bold text-[#E9819A] px-2 py-0.5 rounded bg-pink-50 border border-pink-100">${activeStory.categoryName || 'Song ngữ'}</span>
+                  <span class="text-xs text-gray-400 font-medium">${activeStory.pinyin || ''}</span>
+                </div>
+                <h4 class="text-base sm:text-lg font-bold text-gray-900 font-heading">${activeStory.title}</h4>
+                <p class="text-xs text-gray-500 mt-1">${activeStory.summary || ''}</p>
+              </div>
+
+              <!-- Paragraphs -->
+              <div class="space-y-3 pt-1">
+                ${activeStory.paragraphs.map(p => `
+                  <div class="p-3.5 rounded-xl bg-white border border-[#EAE8E5] hover:border-pink-200 transition-all flex items-start justify-between gap-3 shadow-2xs">
+                    <div class="space-y-1">
+                      <div class="pinyin-text text-xs text-[#E9819A] font-semibold">${p.pinyin}</div>
+                      <div class="font-chinese text-sm sm:text-base text-gray-900 font-medium leading-relaxed">${p.hanzi}</div>
+                      <div class="text-xs text-gray-600 leading-relaxed pt-0.5">${p.vi}</div>
+                    </div>
+                    <button class="p-2 rounded-lg bg-pink-50 text-[#E9819A] hover:bg-[#E9819A] hover:text-white shrink-0 transition-colors" data-tts="${p.hanzi}" title="Nghe câu này">
+                      <i data-lucide="volume-2" class="w-4 h-4"></i>
+                    </button>
+                  </div>
+                `).join('')}
+              </div>
+
+              <!-- Moral / Triết lý -->
+              ${activeStory.moral ? `
+                <div class="p-3.5 rounded-xl bg-amber-50/80 border border-amber-200/70 text-xs text-amber-900 flex items-start gap-2">
+                  <i data-lucide="sparkles" class="w-4 h-4 text-amber-600 shrink-0 mt-0.5"></i>
+                  <div><strong>Bài học rút ra:</strong> ${activeStory.moral}</div>
+                </div>
+              ` : ''}
+
+              <!-- Vocab list -->
+              ${activeStory.vocab && activeStory.vocab.length > 0 ? `
+                <div class="pt-2">
+                  <div class="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                    <i data-lucide="bookmark" class="w-3.5 h-3.5 text-[#E9819A]"></i>
+                    <span>Từ vựng trọng tâm trong bài:</span>
+                  </div>
+                  <div class="flex flex-wrap gap-2">
+                    ${activeStory.vocab.map(v => `
+                      <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white border border-[#EAE8E5] text-xs shadow-2xs">
+                        <span class="font-chinese font-bold text-gray-900">${v.hanzi}</span>
+                        <span class="text-[#E9819A] text-[11px] font-semibold">(${v.pinyin})</span>
+                        <span class="text-gray-500 text-[11px]">: ${v.meaning}</span>
+                        <button class="btn-save-dict-word text-gray-400 hover:text-[#E9819A] ml-1" data-hanzi="${v.hanzi}" data-pinyin="${v.pinyin}" data-meaning="${v.meaning}" title="Lưu vào sổ tay">
+                          <i data-lucide="bookmark" class="w-3 h-3"></i>
+                        </button>
+                      </div>
+                    `).join('')}
+                  </div>
+                </div>
+              ` : ''}
+            </div>
+          </div>
+        `;
+      } else {
+        interactivePreviewHTML = `
         <div class="bg-white p-5 sm:p-6 rounded-3xl border border-purple-100 shadow-sm">
           <div class="flex items-center justify-between mb-4">
             <span class="text-xs font-bold px-3 py-1 bg-purple-100 text-purple-700 rounded-full">Đọc song ngữ có Pinyin</span>
@@ -2790,6 +2892,7 @@ function initCategoriesSection() {
           </div>
         </div>
       `;
+      }
     } else if (cat.id === "speak") {
       interactivePreviewHTML = `
         <div class="bg-white p-5 sm:p-6 rounded-3xl border border-amber-100 shadow-sm">
@@ -2905,6 +3008,20 @@ function initCategoriesSection() {
 
     if (cat.id === "write") {
       setTimeout(() => initWritingCanvas(), 50);
+    }
+
+    if (cat.id === "read") {
+      displayContainer.querySelectorAll(".btn-select-story").forEach(sb => {
+        sb.addEventListener("click", () => {
+          const sId = sb.getAttribute("data-story-id");
+          const allStories = (window.MOCHI_DATA && window.MOCHI_DATA.richStories) || cat.stories || [];
+          const found = allStories.find(st => st.id === sId);
+          if (found) {
+            window.currentMochiStory = found;
+            renderCategoryContent(cat);
+          }
+        });
+      });
     }
   }
 
@@ -3997,6 +4114,586 @@ function initInteractivePractice() {
   };
 
   renderQuizUI();
+}
+
+/* ==========================================================================
+   16B. Phòng Thi Thử HSK Thực Chiến (HSK Mock Exam Studio Engine)
+   Hơn 50 bộ đề thi chuẩn hóa + Thuật toán sinh đề ngẫu nhiên không giới hạn
+   ========================================================================== */
+function initHSKExamStudio() {
+  const container = document.getElementById("hsk-exam-studio");
+  if (!container) return;
+
+  const levelTabs = container.querySelectorAll(".exam-level-tab");
+  const presetSelect = document.getElementById("select-exam-preset");
+  const randomBtn = document.getElementById("btn-generate-random-exam");
+  const stageContainer = document.getElementById("exam-stage-container");
+
+  if (!stageContainer || typeof HSKExamEngine === "undefined") return;
+
+  let currentLevel = 1;
+  let activeExam = null;
+  let currentQuestionIndex = 0;
+  let userAnswers = {};
+  let timerInterval = null;
+  let remainingSeconds = 0;
+  let isPaused = false;
+  let isSubmitted = false;
+
+  function populatePresetSelect(level) {
+    if (!presetSelect) return;
+    const presetsForLevel = HSKExamEngine.presets.filter(p => p.level === level);
+    presetSelect.innerHTML = presetsForLevel.map(p => `
+      <option value="${p.id}">${p.title} (${p.questionCount} câu • ${p.durationMinutes}p)</option>
+    `).join("");
+  }
+
+  function renderExamIntro(exam) {
+    if (timerInterval) clearInterval(timerInterval);
+    activeExam = exam;
+    isPaused = false;
+    isSubmitted = false;
+
+    stageContainer.innerHTML = `
+      <div class="bg-white rounded-2xl border border-[#EAE8E5] p-6 sm:p-9 shadow-sm text-center max-w-2xl mx-auto space-y-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold bg-pink-50 text-[#E9819A] border border-pink-100">
+          <i data-lucide="award" class="w-4 h-4"></i>
+          <span>${exam.badge || exam.levelLabel} • Mô phỏng thi thật</span>
+        </div>
+
+        <div>
+          <h3 class="text-xl sm:text-2xl font-bold text-gray-900 font-heading mb-2">${exam.title}</h3>
+          <p class="text-xs sm:text-sm text-gray-500 leading-relaxed max-w-lg mx-auto">${exam.description || 'Đề thi chuẩn hóa bao gồm các phần Nghe hiểu, Đọc hiểu và Vận dụng ngữ pháp sát với đề thi thực tế.'}</p>
+        </div>
+
+        <!-- Metric grid -->
+        <div class="grid grid-cols-3 gap-3 py-4 border-y border-gray-100 text-center">
+          <div class="p-3 rounded-xl bg-[#FAFAF8] border border-gray-100">
+            <div class="text-[11px] font-semibold text-gray-400 mb-1">Thời gian</div>
+            <div class="text-base sm:text-lg font-bold text-gray-900 font-mono">${exam.durationMinutes} phút</div>
+          </div>
+          <div class="p-3 rounded-xl bg-[#FAFAF8] border border-gray-100">
+            <div class="text-[11px] font-semibold text-gray-400 mb-1">Số câu hỏi</div>
+            <div class="text-base sm:text-lg font-bold text-gray-900 font-mono">${exam.questionCount} câu</div>
+          </div>
+          <div class="p-3 rounded-xl bg-[#FAFAF8] border border-gray-100">
+            <div class="text-[11px] font-semibold text-gray-400 mb-1">Điểm đạt</div>
+            <div class="text-base sm:text-lg font-bold text-emerald-600 font-mono">${exam.passingScore} / ${exam.totalScore}</div>
+          </div>
+        </div>
+
+        <!-- Note items -->
+        <div class="text-left text-xs text-gray-500 space-y-2 bg-[#FAFAF8] p-4 sm:p-5 rounded-xl border border-gray-100">
+          <div class="flex items-center gap-2 text-gray-800 font-bold mb-1">
+            <i data-lucide="info" class="w-4 h-4 text-[#E9819A]"></i>
+            <span>Quy chế và hướng dẫn phòng thi:</span>
+          </div>
+          <div class="flex items-start gap-2">• Có hỗ trợ phát âm Audio giọng chuẩn Bắc Kinh cho các câu nghe hiểu.</div>
+          <div class="flex items-start gap-2">• Có thể di chuyển qua lại giữa các câu hỏi bằng Bảng câu hỏi bất kỳ lúc nào.</div>
+          <div class="flex items-start gap-2">• Khi hết giờ đếm ngược, bài thi sẽ tự động được nộp và chấm điểm tức thì.</div>
+        </div>
+
+        <!-- CTA -->
+        <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <button id="btn-start-exam-now" class="w-full sm:w-auto px-8 py-3 rounded-xl bg-[#E9819A] hover:bg-[#DA718B] text-white text-sm font-bold shadow-2xs transition-all flex items-center justify-center gap-2">
+            <i data-lucide="play" class="w-4 h-4"></i>
+            <span>Bắt đầu làm bài thi</span>
+          </button>
+        </div>
+      </div>
+    `;
+
+    if (window.lucide) window.lucide.createIcons();
+
+    const startBtn = document.getElementById("btn-start-exam-now");
+    if (startBtn) {
+      startBtn.addEventListener("click", () => {
+        startExam(exam);
+      });
+    }
+  }
+
+  function startExam(exam) {
+    if (timerInterval) clearInterval(timerInterval);
+    activeExam = exam;
+    currentQuestionIndex = 0;
+    userAnswers = {};
+    isPaused = false;
+    isSubmitted = false;
+    remainingSeconds = (exam.durationMinutes || 20) * 60;
+
+    renderActiveExamStage();
+    startTimer();
+  }
+
+  function startTimer() {
+    if (timerInterval) clearInterval(timerInterval);
+    timerInterval = setInterval(() => {
+      if (!isPaused && !isSubmitted) {
+        if (remainingSeconds > 0) {
+          remainingSeconds--;
+          updateTimerDisplay();
+        } else {
+          clearInterval(timerInterval);
+          submitExam(true);
+        }
+      }
+    }, 1000);
+  }
+
+  function updateTimerDisplay() {
+    const timerEl = document.getElementById("exam-timer-text");
+    if (!timerEl) return;
+    const mins = Math.floor(remainingSeconds / 60);
+    const secs = remainingSeconds % 60;
+    timerEl.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    if (remainingSeconds <= 180) {
+      timerEl.className = "font-mono text-sm sm:text-base font-extrabold text-rose-600 animate-pulse";
+    }
+  }
+
+  function renderActiveExamStage() {
+    if (!activeExam || !activeExam.questions || activeExam.questions.length === 0) return;
+
+    const q = activeExam.questions[currentQuestionIndex];
+    const totalQ = activeExam.questions.length;
+    const answeredCount = Object.keys(userAnswers).length;
+
+    stageContainer.innerHTML = `
+      <div class="bg-white rounded-2xl border border-[#EAE8E5] p-5 sm:p-7 shadow-sm">
+        
+        <!-- Header Info & Timer -->
+        <div class="flex flex-col sm:flex-row items-center justify-between pb-5 mb-6 border-b border-gray-100 gap-4">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-pink-50 text-[#E9819A] border border-pink-100">${activeExam.badge || activeExam.levelLabel}</span>
+              <span class="text-xs font-semibold text-gray-400">${activeExam.code}</span>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-gray-900 font-heading">${activeExam.title}</h3>
+          </div>
+
+          <!-- Timer & Pause Controls -->
+          <div class="flex items-center gap-2.5">
+            <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-gray-50 border border-gray-200">
+              <i data-lucide="clock" class="w-4 h-4 text-[#E9819A]"></i>
+              <span id="exam-timer-text" class="font-mono text-sm sm:text-base font-bold text-gray-800">
+                ${Math.floor(remainingSeconds / 60).toString().padStart(2, '0')}:${(remainingSeconds % 60).toString().padStart(2, '0')}
+              </span>
+            </div>
+            <button id="btn-toggle-exam-pause" class="p-2 rounded-xl border border-gray-200 bg-white hover:bg-gray-50 text-gray-600 transition-colors" title="${isPaused ? 'Tiếp tục làm bài' : 'Tạm dừng thời gian'}">
+              <i data-lucide="${isPaused ? 'play' : 'pause'}" class="w-4 h-4"></i>
+            </button>
+            <button id="btn-submit-exam" class="px-4 py-2 rounded-xl bg-[#E9819A] hover:bg-[#DA718B] text-white text-xs font-bold shadow-2xs transition-colors flex items-center gap-1.5">
+              <i data-lucide="send" class="w-3.5 h-3.5"></i>
+              <span>Nộp bài</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          
+          <!-- Left: Active Question -->
+          <div class="lg:col-span-8 space-y-5">
+            <div class="p-5 sm:p-6 rounded-2xl bg-[#FAFAF8] border border-[#EAE8E5]">
+              <div class="flex items-center justify-between mb-3 text-xs text-gray-500">
+                <span class="font-bold text-[#E9819A] uppercase tracking-wider flex items-center gap-1.5">
+                  <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+                  <span>Câu ${currentQuestionIndex + 1} / ${totalQ} • Phần: ${q.section}</span>
+                </span>
+                <span class="font-medium text-gray-400">Đã làm: ${answeredCount}/${totalQ} câu</span>
+              </div>
+
+              <!-- Question text -->
+              <h4 class="text-sm sm:text-base font-bold text-gray-800 mb-4 leading-relaxed">${q.question}</h4>
+
+              ${q.audio ? `
+                <div class="mb-4 p-3.5 rounded-xl bg-white border border-[#EAE8E5] flex items-center justify-between gap-3 shadow-2xs">
+                  <div class="flex items-center gap-2">
+                    <span class="w-8 h-8 rounded-lg bg-pink-50 text-[#E9819A] flex items-center justify-center font-bold text-xs">
+                      <i data-lucide="volume-2" class="w-4 h-4"></i>
+                    </span>
+                    <div>
+                      <div class="text-xs font-semibold text-gray-800">Đoạn nghe Audio hội thoại</div>
+                      <div class="text-[11px] text-gray-400">Bấm nút để nghe giọng đọc chuẩn Bắc Kinh</div>
+                    </div>
+                  </div>
+                  <button class="px-3.5 py-1.5 rounded-lg bg-[#E9819A] hover:bg-[#DA718B] text-white text-xs font-semibold flex items-center gap-1.5 transition-colors" data-tts="${q.audio}">
+                    <i data-lucide="play" class="w-3.5 h-3.5"></i>
+                    <span>Phát âm thanh</span>
+                  </button>
+                </div>
+              ` : ''}
+
+              <!-- Options List -->
+              <div class="space-y-2.5">
+                ${q.options.map((opt, optIdx) => {
+                  const isSelected = userAnswers[q.id] === optIdx;
+                  return `
+                    <button class="exam-option-card w-full text-left p-3.5 sm:p-4 rounded-xl border transition-all flex items-center justify-between ${
+                      isSelected ? 'border-[#E9819A] bg-[#FBECEF]/40 text-gray-900 font-bold shadow-2xs' : 'border-gray-200 bg-white text-gray-700 hover:border-gray-300 hover:bg-gray-50'
+                    }" data-opt-idx="${optIdx}">
+                      <span class="text-xs sm:text-sm">${opt}</span>
+                      <div class="w-4 h-4 rounded-full border flex items-center justify-center shrink-0 ${
+                        isSelected ? 'border-[#E9819A] bg-[#E9819A] text-white' : 'border-gray-300'
+                      }">
+                        ${isSelected ? '<i data-lucide="check" class="w-3 h-3 text-white"></i>' : ''}
+                      </div>
+                    </button>
+                  `;
+                }).join('')}
+              </div>
+
+            </div>
+
+            <!-- Bottom Question Navigation Buttons -->
+            <div class="flex items-center justify-between pt-2">
+              <button id="btn-exam-prev-q" class="px-4 py-2 rounded-lg border border-[#EAE8E5] bg-white hover:bg-gray-50 text-gray-700 text-xs font-semibold transition-all flex items-center gap-1.5 ${currentQuestionIndex === 0 ? 'opacity-40 pointer-events-none' : ''}">
+                <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                <span>Câu trước</span>
+              </button>
+
+              <div class="text-xs font-semibold text-gray-400">
+                Câu ${currentQuestionIndex + 1} của ${totalQ}
+              </div>
+
+              <button id="btn-exam-next-q" class="px-4 py-2 rounded-lg border border-[#EAE8E5] bg-white hover:bg-gray-50 text-gray-700 text-xs font-semibold transition-all flex items-center gap-1.5 ${currentQuestionIndex === totalQ - 1 ? 'opacity-40 pointer-events-none' : ''}">
+                <span>Câu tiếp theo</span>
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Question Palette / Navigator -->
+          <div class="lg:col-span-4 space-y-4">
+            <div class="p-5 rounded-2xl bg-[#FAFAF8] border border-[#EAE8E5]">
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-xs font-bold text-gray-700 uppercase tracking-wider">Bảng câu hỏi</span>
+                <span class="text-[11px] text-gray-500 font-medium">${answeredCount}/${totalQ} đã làm</span>
+              </div>
+
+              <!-- Question Numbers Grid -->
+              <div class="grid grid-cols-5 sm:grid-cols-6 gap-2 mb-4">
+                ${activeExam.questions.map((ques, idx) => {
+                  const isCurrent = idx === currentQuestionIndex;
+                  const isAnswered = userAnswers[ques.id] !== undefined;
+                  let bgClasses = "bg-white text-gray-700 border-gray-200 hover:border-gray-300";
+                  if (isCurrent) {
+                    bgClasses = "border-2 border-[#E9819A] text-[#E9819A] font-extrabold bg-[#FBECEF]/60";
+                  } else if (isAnswered) {
+                    bgClasses = "bg-emerald-50 text-emerald-800 border-emerald-200 font-bold";
+                  }
+                  return `
+                    <button class="exam-palette-btn w-9 h-9 rounded-lg border text-xs flex items-center justify-center transition-all ${bgClasses}" data-q-idx="${idx}">
+                      ${idx + 1}
+                    </button>
+                  `;
+                }).join('')}
+              </div>
+
+              <div class="space-y-1.5 pt-3 border-t border-gray-200/80 text-[11px] text-gray-500">
+                <div class="flex items-center gap-2">
+                  <div class="w-3 h-3 rounded bg-emerald-50 border border-emerald-200"></div>
+                  <span>Đã chọn đáp án</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div class="w-3 h-3 rounded border-2 border-[#E9819A] bg-[#FBECEF]"></div>
+                  <span>Câu đang xem</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div class="w-3 h-3 rounded bg-white border border-gray-200"></div>
+                  <span>Chưa trả lời</span>
+                </div>
+              </div>
+
+              <div class="mt-4 pt-3 border-t border-gray-200/80">
+                <button id="btn-quick-submit" class="w-full py-2.5 rounded-xl bg-[#E9819A] hover:bg-[#DA718B] text-white text-xs font-bold transition-all shadow-2xs flex items-center justify-center gap-1.5">
+                  <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+                  <span>Hoàn thành & Chấm điểm</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    `;
+
+    if (window.lucide) window.lucide.createIcons();
+
+    // Attach click handlers
+    stageContainer.querySelectorAll(".exam-option-card").forEach(card => {
+      card.addEventListener("click", () => {
+        const optIdx = parseInt(card.getAttribute("data-opt-idx"), 10);
+        userAnswers[q.id] = optIdx;
+        renderActiveExamStage();
+      });
+    });
+
+    stageContainer.querySelectorAll(".exam-palette-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        currentQuestionIndex = parseInt(btn.getAttribute("data-q-idx"), 10);
+        renderActiveExamStage();
+      });
+    });
+
+    const prevBtn = document.getElementById("btn-exam-prev-q");
+    if (prevBtn) prevBtn.addEventListener("click", () => {
+      if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        renderActiveExamStage();
+      }
+    });
+
+    const nextBtn = document.getElementById("btn-exam-next-q");
+    if (nextBtn) nextBtn.addEventListener("click", () => {
+      if (currentQuestionIndex < totalQ - 1) {
+        currentQuestionIndex++;
+        renderActiveExamStage();
+      }
+    });
+
+    const pauseBtn = document.getElementById("btn-toggle-exam-pause");
+    if (pauseBtn) pauseBtn.addEventListener("click", () => {
+      isPaused = !isPaused;
+      showMochiToast(isPaused ? "Đã tạm dừng thời gian làm bài" : "Tiếp tục đếm ngược thời gian");
+      renderActiveExamStage();
+    });
+
+    const submitBtn = document.getElementById("btn-submit-exam");
+    if (submitBtn) submitBtn.addEventListener("click", () => submitExam(false));
+
+    const quickSubmitBtn = document.getElementById("btn-quick-submit");
+    if (quickSubmitBtn) quickSubmitBtn.addEventListener("click", () => submitExam(false));
+  }
+
+  function submitExam(isTimeout = false) {
+    if (!activeExam || isSubmitted) return;
+
+    const totalQ = activeExam.questions.length;
+    const answeredCount = Object.keys(userAnswers).length;
+
+    if (!isTimeout && answeredCount < totalQ) {
+      if (!confirm(`Bạn còn ${totalQ - answeredCount} câu chưa làm. Bạn có chắc chắn muốn nộp bài ngay không?`)) {
+        return;
+      }
+    }
+
+    if (timerInterval) clearInterval(timerInterval);
+    isSubmitted = true;
+
+    // Calculate score
+    let correctCount = 0;
+    activeExam.questions.forEach(q => {
+      if (userAnswers[q.id] === q.correctIndex) {
+        correctCount++;
+      }
+    });
+
+    const scoreRatio = correctCount / totalQ;
+    const achievedScore = Math.round(scoreRatio * activeExam.totalScore);
+    const passed = achievedScore >= activeExam.passingScore;
+    const timeSpentSeconds = (activeExam.durationMinutes * 60) - remainingSeconds;
+    const timeSpentMins = Math.floor(timeSpentSeconds / 60);
+    const timeSpentSecs = timeSpentSeconds % 60;
+
+    if (typeof playDingSound === "function") playDingSound(passed);
+
+    if (typeof recordUserActivity === "function" && typeof activeProfileId !== "undefined") {
+      recordUserActivity(activeProfileId, 'exam');
+      const p = MOCHI_DATA.profiles[activeProfileId];
+      if (p && p.stats) {
+        p.stats.lessonsCompleted = (p.stats.lessonsCompleted || 0) + 1;
+      }
+    }
+    if (typeof initProgressSection === "function") initProgressSection();
+
+    renderExamResultStage(achievedScore, correctCount, totalQ, passed, `${timeSpentMins} phút ${timeSpentSecs} giây`);
+  }
+
+  function renderExamResultStage(score, correctCount, totalQ, passed, timeStr) {
+    stageContainer.innerHTML = `
+      <div class="bg-white rounded-2xl border border-[#EAE8E5] p-6 sm:p-8 shadow-sm space-y-8">
+        
+        <!-- Result Banner -->
+        <div class="text-center p-6 sm:p-8 rounded-2xl ${passed ? 'bg-emerald-50/80 border border-emerald-200' : 'bg-rose-50/80 border border-rose-200'}">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold mb-3 ${passed ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'}">
+            <i data-lucide="${passed ? 'check-circle' : 'alert-circle'}" class="w-4 h-4"></i>
+            <span>${passed ? 'KẾT QUẢ: ĐẠT TIÊU CHUẨN HSK' : 'KẾT QUẢ: CHƯA ĐẠT (CẦN ÔN TẬP THÊM)'}</span>
+          </div>
+          
+          <div class="text-4xl sm:text-5xl font-extrabold font-heading ${passed ? 'text-emerald-700' : 'text-rose-700'} mb-2">
+            ${score} <span class="text-xl sm:text-2xl font-semibold text-gray-500">/ ${activeExam.totalScore}</span>
+          </div>
+
+          <p class="text-xs sm:text-sm text-gray-600 max-w-md mx-auto">
+            ${passed 
+              ? 'Chúc mừng bạn đã hoàn thành xuất sắc đề thi thử! Điểm số đã đủ điều kiện vượt qua bài thi chuẩn.' 
+              : `Điểm chuẩn yêu cầu là ${activeExam.passingScore}/${activeExam.totalScore}. Hãy xem lại phân tích các câu sai bên dưới để củng cố kiến thức nhé!`}
+          </p>
+
+          <!-- Stats Pill row -->
+          <div class="flex flex-wrap items-center justify-center gap-4 mt-6 pt-5 border-t border-gray-200/60 text-xs font-semibold text-gray-700">
+            <div>Số câu đúng: <span class="font-bold text-emerald-600">${correctCount} / ${totalQ}</span> (${Math.round((correctCount/totalQ)*100)}%)</div>
+            <div>•</div>
+            <div>Thời gian làm bài: <span class="font-bold text-gray-900">${timeStr}</span></div>
+            <div>•</div>
+            <div>Cấp độ: <span class="font-bold text-gray-900">${activeExam.levelLabel}</span></div>
+          </div>
+
+          <!-- Actions -->
+          <div class="flex flex-wrap items-center justify-center gap-3 mt-6">
+            <button id="btn-retry-same-exam" class="px-5 py-2.5 rounded-lg bg-[#E9819A] hover:bg-[#DA718B] text-white text-xs font-semibold shadow-2xs transition-colors flex items-center gap-1.5">
+              <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
+              <span>Làm lại đề này</span>
+            </button>
+            <button id="btn-next-random-exam" class="px-5 py-2.5 rounded-lg bg-white hover:bg-gray-50 text-gray-700 border border-[#EAE8E5] text-xs font-semibold shadow-2xs transition-colors flex items-center gap-1.5">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 text-[#E9819A]"></i>
+              <span>Luyện bộ đề ngẫu nhiên mới</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Detailed Question Explanations -->
+        <div>
+          <div class="flex items-center justify-between mb-4 pb-2 border-b border-gray-100">
+            <h4 class="text-base font-bold text-gray-900 font-heading flex items-center gap-2">
+              <i data-lucide="list-checks" class="w-4 h-4 text-[#E9819A]"></i>
+              <span>Phân tích chi tiết từng câu hỏi (${totalQ} câu)</span>
+            </h4>
+            <span class="text-xs text-gray-500">Bấm lưu từ vựng để ôn tập vào sổ tay cá nhân</span>
+          </div>
+
+          <div class="space-y-4">
+            ${activeExam.questions.map((q, idx) => {
+              const userPick = userAnswers[q.id];
+              const isCorrect = userPick === q.correctIndex;
+              return `
+                <div class="p-4 sm:p-5 rounded-2xl border ${isCorrect ? 'border-emerald-100 bg-[#FBFDFB]' : 'border-rose-100 bg-[#FFFDFD]'} space-y-3">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="flex items-center gap-2">
+                      <span class="w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold ${isCorrect ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'}">
+                        ${idx + 1}
+                      </span>
+                      <span class="text-xs font-bold text-gray-700">${q.section}</span>
+                    </div>
+                    <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold ${isCorrect ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-rose-50 text-rose-700 border border-rose-200'}">
+                      ${isCorrect ? 'Chính xác' : 'Chưa đúng'}
+                    </span>
+                  </div>
+
+                  <div class="text-xs sm:text-sm font-semibold text-gray-800">${q.question}</div>
+
+                  ${q.audio ? `
+                    <div class="p-2.5 rounded-lg bg-gray-50 border border-gray-100 flex items-center justify-between text-xs">
+                      <span class="font-chinese font-medium text-gray-700">Audio: ${q.audio}</span>
+                      <button class="p-1 rounded bg-white hover:bg-gray-100 text-[#E9819A] border border-gray-200" data-tts="${q.audio}">
+                        <i data-lucide="volume-2" class="w-3.5 h-3.5"></i>
+                      </button>
+                    </div>
+                  ` : ''}
+
+                  <!-- Options Review -->
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                    ${q.options.map((opt, optIdx) => {
+                      const isChosen = userPick === optIdx;
+                      const isRealCorrect = optIdx === q.correctIndex;
+                      let badge = "";
+                      let optClass = "p-2.5 rounded-lg border border-gray-100 bg-white text-gray-600";
+                      if (isRealCorrect) {
+                        optClass = "p-2.5 rounded-lg border border-emerald-300 bg-emerald-50 text-emerald-900 font-bold";
+                        badge = '<span class="text-[10px] text-emerald-700 font-semibold ml-1">(Đáp án đúng)</span>';
+                      } else if (isChosen && !isRealCorrect) {
+                        optClass = "p-2.5 rounded-lg border border-rose-300 bg-rose-50 text-rose-900 font-semibold";
+                        badge = '<span class="text-[10px] text-rose-700 font-semibold ml-1">(Lựa chọn của bạn)</span>';
+                      }
+                      return `<div class="${optClass}">${opt} ${badge}</div>`;
+                    }).join('')}
+                  </div>
+
+                  <!-- Explanation Box -->
+                  <div class="p-3 rounded-xl bg-gray-50 border border-gray-200/80 text-xs text-gray-600 space-y-1">
+                    <div class="font-bold text-gray-800 flex items-center gap-1">
+                      <i data-lucide="lightbulb" class="w-3.5 h-3.5 text-amber-500"></i>
+                      <span>Giải thích chi tiết:</span>
+                    </div>
+                    <div>${q.explanation}</div>
+                    ${q.translation ? `<div class="text-gray-500 italic">Dịch nghĩa: ${q.translation}</div>` : ''}
+                  </div>
+
+                  <!-- Save word to notebook action -->
+                  ${q.pinyin ? `
+                    <div class="flex justify-end pt-1">
+                      <button class="btn-save-dict-word px-3 py-1 rounded-lg text-[11px] font-semibold text-[#E9819A] hover:bg-pink-50 transition-colors flex items-center gap-1" data-hanzi="${(q.options[q.correctIndex] || '').split(' ')[1] || '词语'}" data-pinyin="${q.pinyin}" data-meaning="${q.translation || q.explanation}">
+                        <i data-lucide="bookmark" class="w-3 h-3"></i>
+                        <span>Lưu từ vựng câu này vào Sổ tay</span>
+                      </button>
+                    </div>
+                  ` : ''}
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+
+      </div>
+    `;
+
+    if (window.lucide) window.lucide.createIcons();
+
+    // Attach retry actions
+    const retryBtn = document.getElementById("btn-retry-same-exam");
+    if (retryBtn) retryBtn.addEventListener("click", () => startExam(activeExam));
+
+    const nextRndBtn = document.getElementById("btn-next-random-exam");
+    if (nextRndBtn) nextRndBtn.addEventListener("click", () => {
+      const rnd = HSKExamEngine.generateRandomExam(currentLevel);
+      startExam(rnd);
+    });
+  }
+
+  // Bind Level Tabs
+  levelTabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      levelTabs.forEach(t => {
+        t.classList.remove("active", "bg-[#E9819A]", "text-white", "shadow-2xs");
+        t.classList.add("bg-white", "text-gray-700", "border", "border-[#EAE8E5]");
+      });
+      tab.classList.add("active", "bg-[#E9819A]", "text-white", "shadow-2xs");
+      tab.classList.remove("bg-white", "text-gray-700", "border", "border-[#EAE8E5]");
+
+      currentLevel = parseInt(tab.getAttribute("data-level"), 10) || 1;
+      populatePresetSelect(currentLevel);
+      const firstPreset = HSKExamEngine.presets.find(p => p.level === currentLevel);
+      if (firstPreset) {
+        renderExamIntro(HSKExamEngine.getExamById(firstPreset.id));
+      }
+    });
+  });
+
+  // Bind Preset Dropdown Change
+  if (presetSelect) {
+    presetSelect.addEventListener("change", () => {
+      const selectedId = presetSelect.value;
+      renderExamIntro(HSKExamEngine.getExamById(selectedId));
+    });
+  }
+
+  // Bind Random Button
+  if (randomBtn) {
+    randomBtn.addEventListener("click", () => {
+      const rnd = HSKExamEngine.generateRandomExam(currentLevel);
+      renderExamIntro(rnd);
+      showMochiToast(`Đã chuẩn bị bộ đề ngẫu nhiên mới: ${rnd.title}`);
+    });
+  }
+
+  // Initialize first preset for Level 1
+  populatePresetSelect(1);
+  const initialPreset = HSKExamEngine.presets[0];
+  if (initialPreset) {
+    renderExamIntro(HSKExamEngine.getExamById(initialPreset.id));
+  }
 }
 
 /* ==========================================================================

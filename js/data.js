@@ -8339,5 +8339,15 @@ const MOCHI_DATA = {
             "vi": "Chuyện nhỏ tiện tay thôi mà, đi thôi em, cẩn thận đường trơn nhé."
         }
     ]
-}
+  }
 };
+
+if (typeof window !== 'undefined') {
+  window.MOCHI_DATA = MOCHI_DATA;
+}
+if (typeof global !== 'undefined') {
+  global.MOCHI_DATA = MOCHI_DATA;
+}
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = MOCHI_DATA;
+}
