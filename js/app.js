@@ -198,27 +198,58 @@ function initLiveOnlineCounter() {
   const counterEls = document.querySelectorAll(".live-online-counter-val, #live-online-counter");
   if (counterEls.length === 0) return;
 
-  // Con số trực tuyến thực tế, hữu cơ cho cộng đồng học tập (dao động từ 18 - 35 bạn cùng học)
-  let currentCount = 22 + Math.floor(Math.random() * 7); // Bắt đầu ở 22 - 28
+  // Lấy hoặc tạo Client ID riêng biệt cho thiết bị duyệt web hiện tại (không trùng lặp khi mở nhiều tab)
+  let clientId = localStorage.getItem("mochi_presence_client_id");
+  if (!clientId) {
+    clientId = "mc_" + Date.now().toString(36) + "_" + Math.random().toString(36).slice(2, 9);
+    localStorage.setItem("mochi_presence_client_id", clientId);
+  }
 
-  function updateDisplays() {
+  function updateDisplays(count) {
+    const safeCount = Math.max(1, parseInt(count, 10) || 1);
     counterEls.forEach(el => {
-      el.textContent = currentCount;
+      el.textContent = safeCount;
     });
   }
 
-  updateDisplays();
+  // Khởi điểm hiển thị thực tế: 1 (chính người dùng đang có mặt trên trang)
+  updateDisplays(1);
 
-  // Biến thiên nhẹ nhàng, tự nhiên (+1, 0, -1) mỗi 14 giây
-  setInterval(() => {
-    const roll = Math.random();
-    let delta = 0;
-    if (roll < 0.28) delta = 1;
-    else if (roll > 0.72) delta = -1;
+  // Gửi heartbeat thực đến serverless API để ghi nhận sự hiện diện thực tế
+  async function sendHeartbeat() {
+    try {
+      const response = await fetch("/api/presence", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ clientId: clientId, action: "ping" })
+      });
+      if (response.ok) {
+        const data = await response.json();
+        if (data && typeof data.online === "number") {
+          updateDisplays(data.online);
+        }
+      }
+    } catch (_) {
+      // Khi mất mạng hoặc chạy local file, giữ đúng giá trị thực là 1
+      updateDisplays(1);
+    }
+  }
 
-    currentCount = Math.max(18, Math.min(35, currentCount + delta));
-    updateDisplays();
-  }, 14000);
+  // Gửi ping ngay khi tải trang
+  sendHeartbeat();
+
+  // Chu kỳ gửi nhịp tim mỗi 15 giây để xác nhận phiên hoạt động thực
+  setInterval(sendHeartbeat, 15000);
+
+  // Khi đóng tab hoặc chuyển trang: gửi beacon rời phòng để giảm tức thì
+  window.addEventListener("beforeunload", () => {
+    try {
+      if (navigator.sendBeacon) {
+        const payload = JSON.stringify({ clientId: clientId, action: "leave" });
+        navigator.sendBeacon("/api/presence", new Blob([payload], { type: "application/json" }));
+      }
+    } catch (_) {}
+  });
 }
 
 /* ==========================================================================
