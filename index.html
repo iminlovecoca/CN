@@ -64,7 +64,7 @@
   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-[#EAE8E5] transition-all">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       
-      <!-- Brand Logo & Live Online Indicator -->
+      <!-- Brand Logo -->
       <div class="flex items-center gap-3">
         <a href="#" class="flex items-center gap-3 group">
           <div class="w-9 h-9 rounded-xl bg-[#FBECEF] text-[#E9819A] flex items-center justify-center font-bold font-chinese text-base transition-transform group-hover:scale-105 shadow-2xs shrink-0">
@@ -74,16 +74,6 @@
             Mochi <span class="text-[#E9819A]">Chinese</span>
           </span>
         </a>
-
-        <!-- Live Online Counter with glowing green dot -->
-        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50/90 border border-emerald-200/80 text-[11px] font-medium text-emerald-800 shadow-2xs" title="Số học viên đang trực tuyến cùng lúc">
-          <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span>
-          </span>
-          <span id="live-online-counter" class="font-bold text-emerald-900">1,248</span>
-          <span class="hidden sm:inline text-emerald-700">online</span>
-        </div>
       </div>
 
       <!-- Desktop Navigation Menu (Direct, Clean, No Emoji Spam) -->
@@ -125,6 +115,16 @@
       <!-- Action Utilities & Profile Switcher -->
       <div class="flex items-center gap-2">
         
+        <!-- Live Online Counter (Hiển thị nhẹ nhàng, tinh tế trên PC màn hình rộng; ẩn trên mobile để giữ thanh header thoáng đãng) -->
+        <div class="hidden xl:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50/80 border border-emerald-150 text-[11px] font-medium text-emerald-800" title="Số bạn học đang cùng trực tuyến lúc này">
+          <span class="relative flex h-1.5 w-1.5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
+          </span>
+          <span class="live-online-counter-val font-bold text-emerald-900">26</span>
+          <span class="text-emerald-700/80">đang học</span>
+        </div>
+
         <!-- Pinyin Toggle Button -->
         <button class="btn-toggle-pinyin px-2.5 py-1.5 rounded-lg border border-[#EAE8E5] bg-white hover:bg-gray-50 text-xs font-semibold text-gray-700 transition-all flex items-center gap-1.5" title="Bật/Tắt Pinyin">
           <span class="font-chinese text-xs font-bold text-[#E9819A]">拼</span>
@@ -1516,7 +1516,14 @@
       </div>
 
       <div class="pt-6 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-3">
-        <div>© 2026 Mochi Chinese. All rights reserved.</div>
+        <div class="flex items-center gap-3">
+          <span>© 2026 Mochi Chinese. All rights reserved.</span>
+          <span class="hidden sm:inline text-gray-300">•</span>
+          <div class="hidden sm:inline-flex items-center gap-1.5 text-[11px] text-gray-500">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+            <span><span class="live-online-counter-val font-semibold text-gray-700">26</span> bạn đang cùng học</span>
+          </div>
+        </div>
         <div class="flex items-center gap-4">
           <a href="#" class="hover:underline">Điều khoản</a>
           <a href="#" class="hover:underline">Chính sách bảo mật</a>
@@ -1879,6 +1886,20 @@
         <button id="btn-close-drawer" class="p-1.5 rounded-lg hover:bg-gray-100 text-gray-500">
           <i data-lucide="x" class="w-4 h-4"></i>
         </button>
+      </div>
+
+      <!-- Trạng thái học viên trực tuyến trong menu 3 gạch Mobile -->
+      <div class="mb-3.5 px-3 py-2.5 rounded-xl bg-emerald-50/70 border border-emerald-100 flex items-center justify-between text-xs text-emerald-900 shadow-2xs">
+        <div class="flex items-center gap-2">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+          </span>
+          <span class="font-medium text-emerald-800">Cộng đồng đang trực tuyến</span>
+        </div>
+        <span class="font-bold text-xs text-emerald-900 font-mono bg-white px-2 py-0.5 rounded-md border border-emerald-200/60">
+          <span class="live-online-counter-val">26</span> bạn
+        </span>
       </div>
 
       <nav class="space-y-1 text-xs font-semibold text-gray-700">

@@ -195,14 +195,30 @@ document.addEventListener("click", (e) => {
 });
 
 function initLiveOnlineCounter() {
-  const counterEl = document.getElementById("live-online-counter");
-  if (!counterEl) return;
-  let currentCount = 1248;
+  const counterEls = document.querySelectorAll(".live-online-counter-val, #live-online-counter");
+  if (counterEls.length === 0) return;
+
+  // Con số trực tuyến thực tế, hữu cơ cho cộng đồng học tập (dao động từ 18 - 35 bạn cùng học)
+  let currentCount = 22 + Math.floor(Math.random() * 7); // Bắt đầu ở 22 - 28
+
+  function updateDisplays() {
+    counterEls.forEach(el => {
+      el.textContent = currentCount;
+    });
+  }
+
+  updateDisplays();
+
+  // Biến thiên nhẹ nhàng, tự nhiên (+1, 0, -1) mỗi 14 giây
   setInterval(() => {
-    const delta = Math.floor(Math.random() * 7) - 3;
-    currentCount = Math.max(1210, Math.min(1290, currentCount + delta));
-    counterEl.textContent = currentCount.toLocaleString();
-  }, 9000);
+    const roll = Math.random();
+    let delta = 0;
+    if (roll < 0.28) delta = 1;
+    else if (roll > 0.72) delta = -1;
+
+    currentCount = Math.max(18, Math.min(35, currentCount + delta));
+    updateDisplays();
+  }, 14000);
 }
 
 /* ==========================================================================
